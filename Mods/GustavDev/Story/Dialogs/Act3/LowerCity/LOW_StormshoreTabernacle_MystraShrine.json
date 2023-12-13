@@ -1,0 +1,2108 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_StormshoreTabernacle_MystraShrine.lsj",
+  "UUID": "204304c2-b72b-da77-3333-84f1943a48aa",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "db27314f-cefc-4742-7680-234f7dd5a174",
+    "03dd4554-b76f-d881-8597-2a31dc29e45d",
+    "39853470-77fa-4f38-87a5-37a9eb94fa46",
+    "fd8ff5a7-f691-48b7-b080-05dd85ed4c1d",
+    "dc9ab370-b36b-4061-9450-6a9248df35c1"
+  ],
+  "Nodes": {
+    "03dd4554-b76f-d881-8597-2a31dc29e45d": {
+      "UUID": "03dd4554-b76f-d881-8597-2a31dc29e45d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9b0354c0-56d9-4723-8034-918ac9abab19",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_GALE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2359358d-7335-4c38-95ee-367ad49697de",
+              "Text": {
+                "Handle": "h026d12bcgbae2g494fg8e34g71fa1908c04a",
+                "Value": "*Mystra has already spoken. There is nothing else for you here.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N99",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "0e2a8914-0ae6-4265-bc0b-d05014969ad8": {
+      "UUID": "0e2a8914-0ae6-4265-bc0b-d05014969ad8",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e2e8746b-b0c1-4daf-bc08-7bea2e0381e6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b0ef683c-94aa-486d-8989-7b66ee9709e8",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_State_MystraOfferingGiven"
+            },
+            {
+              "UUID": "f96f3610-fc0a-4dee-bf2a-ca06aca8a4a6",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_State_AnyOfferingGiven"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0b9ce9ec-4439-47e5-a944-968bf62e8b2d",
+              "Text": {
+                "Handle": "hef839d65ga5beg45b7g95b9geaade69bd9a6",
+                "Value": "<i>Make an offering to Mystra.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "10fa7069-21e2-254b-efbf-0b63a7a5d74c": {
+      "UUID": "10fa7069-21e2-254b-efbf-0b63a7a5d74c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f457ece9-56d6-8896-562f-b336e4452f80"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0c93c004-99c4-4609-8409-c764e10f10c1",
+              "Text": {
+                "Handle": "hddd72335g6326g4c76gabb7gb591cbc4505f",
+                "Value": "*You're not sure what you expected. After all, she's not deigned to speak with you for some time.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N87",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "16c8dd7b-6a40-cfd3-4d17-5189f8905651": {
+      "JumpTarget": "b7e8f689-8e6e-4abb-9fe2-ee861d50eb46",
+      "JumpTargetPoint": 1,
+      "UUID": "16c8dd7b-6a40-cfd3-4d17-5189f8905651",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N96",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-305;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "3234fae6-6d53-bc06-48f0-c02cec473f44": {
+      "RollSuccess": true,
+      "UUID": "3234fae6-6d53-bc06-48f0-c02cec473f44",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fb648110-aebb-dec4-335c-a3451299b797"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N75",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "39853470-77fa-4f38-87a5-37a9eb94fa46": {
+      "UUID": "39853470-77fa-4f38-87a5-37a9eb94fa46",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b696b37f-b5a0-410f-910d-8d216fb66936",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_State_AngeredMystra"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b9abe859-7a50-4ec1-bb95-08e822b75956",
+              "Text": {
+                "Handle": "h32f6d283g84bcg4677ga9fbgd17f783d400a",
+                "Value": "*Mystra, Goddess of Magic, is offended that you would rob her altar. Her disapproval hovers heavily around you - best to keep your hands to yourself.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "48bfd6b9-2ad4-4632-8095-9dccdfbc5b70": {
+      "UUID": "48bfd6b9-2ad4-4632-8095-9dccdfbc5b70",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d6b2b9af-a589-4a05-9b49-a2b66dc3cc3a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6b189e45-6b68-41bc-b530-77bc81453299",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_State_BlessingGiven"
+            },
+            {
+              "UUID": "b0ef683c-94aa-486d-8989-7b66ee9709e8",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_State_MystraOfferingGiven"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4521b842-e723-4c99-b46f-592eb11f95a8",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_Event_GiveBlessing"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "74edb86a-67f7-4f2c-8f9f-cd735ade9c36",
+              "Text": {
+                "Handle": "hfdcc9ec3g7100g4699g9d6ag9688d4f6f3ec",
+                "Value": "<i>Beseech a blessing from Mystra.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "5060234e-8ef2-4d16-abf8-42e533aedcd2": {
+      "UUID": "5060234e-8ef2-4d16-abf8-42e533aedcd2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "db321d55-98ab-3eb6-1784-2cc1ce42de30"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b0ef683c-94aa-486d-8989-7b66ee9709e8",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_State_MystraOfferingGiven"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f96f3610-fc0a-4dee-bf2a-ca06aca8a4a6",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_State_AnyOfferingGiven"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ddafa3e1-daad-493a-bfd3-5ffa1bb45433",
+              "Text": {
+                "Handle": "hc73dccd5g1bebg467cg9947ga916886e3672",
+                "Value": "*The amount you've offered proves your faith and devotion. You may now pray here once a day for a divine blessing.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "554c1c66-d206-4acc-ad5c-d7fa40cac6b2": {
+      "UUID": "554c1c66-d206-4acc-ad5c-d7fa40cac6b2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b8010ae9-3b69-7c84-29bb-af35163ee932",
+        "89d70eb3-dc84-4856-bf00-da8435d854c2",
+        "0e2a8914-0ae6-4265-bc0b-d05014969ad8",
+        "48bfd6b9-2ad4-4632-8095-9dccdfbc5b70",
+        "d3aade4b-fc3d-4c0d-a7c5-42cc5560a4ca"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3a3d0f4c-b181-b91f-12c6-6baf1b33537d",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_Gale"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N90",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "13fad692-0008-4cb5-9d73-bd00b632a00b",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "335;-642",
+        "sourcetemplate": "INCLUSION_Gale"
+      }
+    },
+    "657d1648-39b0-aeab-5fb1-ec838c425009": {
+      "JumpTarget": "554c1c66-d206-4acc-ad5c-d7fa40cac6b2",
+      "JumpTargetPoint": 2,
+      "UUID": "657d1648-39b0-aeab-5fb1-ec838c425009",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N97",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "665a510b-90f8-43bc-dd1d-e501ad7d50e2": {
+      "UUID": "665a510b-90f8-43bc-dd1d-e501ad7d50e2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "db321d55-98ab-3eb6-1784-2cc1ce42de30"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ab4c1e95-f8f2-48ef-8978-96497288a1d5",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_Event_GiveSomething"
+            },
+            {
+              "UUID": "b0ef683c-94aa-486d-8989-7b66ee9709e8",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_State_MystraOfferingGiven"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a93fcc33-2009-4f7e-bf09-e74208192d7f",
+              "Text": {
+                "Handle": "h165ae7c7gaaa9g4c00g83c8g8ccb029be855",
+                "Value": "*Your offering is accepted, but more evidence of devotion is required.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N77",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;15",
+        "sourcetemplate": ""
+      }
+    },
+    "89d70eb3-dc84-4856-bf00-da8435d854c2": {
+      "UUID": "89d70eb3-dc84-4856-bf00-da8435d854c2",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9df442d3-e5ee-48de-833e-43d1729f1651"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0d31decd-29c1-4484-bd7d-09f478ae6805",
+              "Text": {
+                "Handle": "h20f5d56cgb304g480fg8aacg4493ee34c730",
+                "Value": "<i>Read the words inscribed on the altar.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "960aaf0a-4545-4e17-9b8b-200dd49d78b0": {
+      "UUID": "960aaf0a-4545-4e17-9b8b-200dd49d78b0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5060234e-8ef2-4d16-abf8-42e533aedcd2",
+        "665a510b-90f8-43bc-dd1d-e501ad7d50e2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "9771b65a-ca6f-43ad-88a6-8891b50bb4c8": {
+      "UUID": "9771b65a-ca6f-43ad-88a6-8891b50bb4c8",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "554c1c66-d206-4acc-ad5c-d7fa40cac6b2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "40a7e59c-2473-504b-27ec-b2903fd5cf96",
+              "value": false,
+              "paramval": null,
+              "Name": "ORI_Gale_State_MystraOM"
+            },
+            {
+              "UUID": "617d8194-0aa8-4fd9-9c8c-c6fd545afd64",
+              "value": false,
+              "paramval": null,
+              "Name": "ORI_Gale_MystraOM_State_RefusedOM"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "ebcb7b03-1026-8e2a-c944-926579d882a8",
+              "value": false,
+              "paramval": null,
+              "Name": "204304c2-b72b-da77-3333-84f1943a48aa_GaleOM_OnlyOnce"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4830dc0f-9027-f7cf-86ff-cf1f64af30de",
+              "value": true,
+              "paramval": null,
+              "Name": "204304c2-b72b-da77-3333-84f1943a48aa_GaleOM"
+            },
+            {
+              "UUID": "ebcb7b03-1026-8e2a-c944-926579d882a8",
+              "value": true,
+              "paramval": null,
+              "Name": "204304c2-b72b-da77-3333-84f1943a48aa_GaleOM_OnlyOnce"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3ef40995-1801-4f37-a88f-d054a3b1b992",
+              "Text": {
+                "Handle": "hbec0c465g0d3ag488cgac7dg54140364f54e",
+                "Value": "Whatever you want with this idol, I'd prefer we make it quick. I'm not sure I'm comfortable catching Mystra's eye, even if it is made of stone."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N91",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "4224b948-ea7b-4fa9-a7b3-a9110238825a",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION LINE",
+        "position": "15;-642",
+        "sourcetemplate": "INCLUSION_Gale"
+      }
+    },
+    "98a00fa8-6cd8-8475-1b84-9042de1f318a": {
+      "UUID": "98a00fa8-6cd8-8475-1b84-9042de1f318a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b268329c-da9b-f1cf-8cca-8a09c8d04826"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "598aa755-e0a9-4ebd-8050-9239d912ca8d",
+              "Text": {
+                "Handle": "hfadbd662g1f67g4be0g8ad1g6286c09e08c8",
+                "Value": "Trust me - it will take a lot more than a few gold pieces and some fervent thoughts to convince Mystra to break her silence. On my account, at least."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N94",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "9df442d3-e5ee-48de-833e-43d1729f1651": {
+      "UUID": "9df442d3-e5ee-48de-833e-43d1729f1651",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f1dd6b00-9ea9-efd0-8a95-c229ec7eab75",
+        "ffe53b6e-f065-1ae1-d3c9-afbd57ec8f97"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fa3f2d18-3545-4202-90f1-43d5d6f41d63",
+              "Text": {
+                "Handle": "h30b4b723g7af2g413dgb995g39816a6c3f10",
+                "Value": "*Mystra, Mother of All Magic, is the patron of wizards, and often called upon by other spellcasters as well. She's said to be a jealous goddess.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "b268329c-da9b-f1cf-8cca-8a09c8d04826": {
+      "UUID": "b268329c-da9b-f1cf-8cca-8a09c8d04826",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "90de46bd-9f0c-4c2f-9505-56063b31b360"
+                ],
+                "TagNames": [
+                  "CLERIC_MYSTRA"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_MYSTRA"
+          },
+          "TagTexts": [
+            {
+              "LineId": "e7d16ec9-2992-4905-a1d3-5c242a7c43e3",
+              "Text": {
+                "Handle": "h9064ea73g7c0bg4cf1ga6a8gb1f8d6f82dd1",
+                "Value": "Commune with her as you see fit. She's your goddess, and I've no wish to stand between you and any blessing she might deign to offer."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5b4b1773-f8e2-4353-baa1-642807820e9c",
+              "Text": {
+                "Handle": "hd7534ba4g34f3g43e8gaff9g2ffd95ce44ae",
+                "Value": "Commune with her as you see fit. I've no wish to stand between you and any inspiration she might deign to offer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N95",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "b7e8f689-8e6e-4abb-9fe2-ee861d50eb46": {
+      "UUID": "b7e8f689-8e6e-4abb-9fe2-ee861d50eb46",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9771b65a-ca6f-43ad-88a6-8891b50bb4c8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4830dc0f-9027-f7cf-86ff-cf1f64af30de",
+              "value": false,
+              "paramval": null,
+              "Name": "204304c2-b72b-da77-3333-84f1943a48aa_GaleOM"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8809f689-ad97-6823-b4e3-e8e39d3d684a",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_Gale"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N92",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "61a4c141-34ba-49ea-bb92-d3b43e2bfbe0",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "-305;-642",
+        "sourcetemplate": "INCLUSION_Gale"
+      }
+    },
+    "b8010ae9-3b69-7c84-29bb-af35163ee932": {
+      "UUID": "b8010ae9-3b69-7c84-29bb-af35163ee932",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "98a00fa8-6cd8-8475-1b84-9042de1f318a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4830dc0f-9027-f7cf-86ff-cf1f64af30de",
+              "value": true,
+              "paramval": null,
+              "Name": "204304c2-b72b-da77-3333-84f1943a48aa_GaleOM"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9b0354c0-56d9-4723-8034-918ac9abab19",
+              "value": true,
+              "paramval": 3,
+              "Name": "REALLY_GALE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c9d1d795-9ec5-4628-9ec0-590b7ccfa85b",
+              "Text": {
+                "Handle": "h25ec7a9fg6fd9g46e8g8feagba233ea86f4b",
+                "Value": "You don't want to make an offering? A prayer of some kind?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N93",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Gale Prsent",
+        "position": "975;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "bb50ed43-6250-5108-eb2b-5dd0ff24beeb": {
+      "RollSuccess": false,
+      "UUID": "bb50ed43-6250-5108-eb2b-5dd0ff24beeb",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ef55afaf-ce14-ef17-b231-7340bef1be1d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N76",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "d3aade4b-fc3d-4c0d-a7c5-42cc5560a4ca": {
+      "UUID": "d3aade4b-fc3d-4c0d-a7c5-42cc5560a4ca",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d05fe575-0b49-435e-b2d5-a755fa502e4b",
+              "Text": {
+                "Handle": "hc7316a9ag45f8g47f4gae48g1c3d89f6de56",
+                "Value": "<i>Leave</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "d6b2b9af-a589-4a05-9b49-a2b66dc3cc3a": {
+      "UUID": "d6b2b9af-a589-4a05-9b49-a2b66dc3cc3a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ebb076dc-5018-4935-8ee6-f2d73a2521d2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b944114f-f6b1-4fdd-88d3-5956a242d2aa",
+              "Text": {
+                "Handle": "h73ad9891ge5b5g424eg9dcag369db89081a3",
+                "Value": "<i>Show reverence before your deity and open your soul to their divine power.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "db27314f-cefc-4742-7680-234f7dd5a174": {
+      "UUID": "db27314f-cefc-4742-7680-234f7dd5a174",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "10fa7069-21e2-254b-efbf-0b63a7a5d74c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "40a7e59c-2473-504b-27ec-b2903fd5cf96",
+              "value": false,
+              "paramval": null,
+              "Name": "ORI_Gale_State_MystraOM"
+            },
+            {
+              "UUID": "617d8194-0aa8-4fd9-9c8c-c6fd545afd64",
+              "value": false,
+              "paramval": null,
+              "Name": "ORI_Gale_MystraOM_State_RefusedOM"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9b0354c0-56d9-4723-8034-918ac9abab19",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_GALE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4c0ddcd5-7f4b-4af3-81e6-9a117271732c",
+              "Text": {
+                "Handle": "ha9bfe859gd380g4be4g9c20ge1a70e2caf7b",
+                "Value": "*Mystra's idol stands before you, as silent as the goddess herself.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N86",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "db321d55-98ab-3eb6-1784-2cc1ce42de30": {
+      "UUID": "db321d55-98ab-3eb6-1784-2cc1ce42de30",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "657d1648-39b0-aeab-5fb1-ec838c425009"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ab4c1e95-f8f2-48ef-8978-96497288a1d5",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_StormshoreTabernacle_Event_GiveSomething"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N98",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Clear flags",
+        "position": "2255;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "dc9ab370-b36b-4061-9450-6a9248df35c1": {
+      "UUID": "dc9ab370-b36b-4061-9450-6a9248df35c1",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "16c8dd7b-6a40-cfd3-4d17-5189f8905651"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34bd6f97-ac40-482e-ae44-fba6017424a4",
+              "Text": {
+                "Handle": "h3cc9044cgbcb3g4ffdg928cg5d2d15410f8f",
+                "Value": "*You see an altar dedicated to Mystra.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "e2e8746b-b0c1-4daf-bc08-7bea2e0381e6": {
+      "UUID": "e2e8746b-b0c1-4daf-bc08-7bea2e0381e6",
+      "Constructor": "Trade",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "960aaf0a-4545-4e17-9b8b-200dd49d78b0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N7",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Trade",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ebb076dc-5018-4935-8ee6-f2d73a2521d2": {
+      "UUID": "ebb076dc-5018-4935-8ee6-f2d73a2521d2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e1042bed-d6a7-41b6-851f-9cfa63a0419a",
+              "Text": {
+                "Handle": "h0e0a57b6g2b8cg46dfg80d8g6b637b464f6f",
+                "Value": "*The Mistress of Magic blesses you with an enhanced attunement to the Weave. Praise her!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ef55afaf-ce14-ef17-b231-7340bef1be1d": {
+      "UUID": "ef55afaf-ce14-ef17-b231-7340bef1be1d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d369000e-b694-4a48-991f-99d7542f32bd",
+              "Text": {
+                "Handle": "hebc74db6g0575g482cga0c5gababacfe4b28",
+                "Value": "*Your studies of Religion don't suffice to tell you more.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N73",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "f1dd6b00-9ea9-efd0-8a95-c229ec7eab75": {
+      "UUID": "f1dd6b00-9ea9-efd0-8a95-c229ec7eab75",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "90de46bd-9f0c-4c2f-9505-56063b31b360",
+              "value": true,
+              "paramval": 1,
+              "Name": "CLERIC_MYSTRA"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "00b65320-6d4d-497b-9548-495acf0dd251",
+              "Text": {
+                "Handle": "h557ddc76ge3e5g490cg9f4dg2769041b1802",
+                "Value": "*As her cleric, even standing in her statue's presence makes you feel more sensitive to the Weave, and to her power.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N80",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "CLERIC OF MYSTRA",
+        "position": "1615;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "f457ece9-56d6-8896-562f-b336e4452f80": {
+      "UUID": "f457ece9-56d6-8896-562f-b336e4452f80",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b72bd698-8cdc-431d-9e03-ac8e94aca115",
+              "Text": {
+                "Handle": "h9f5cbd67g52beg45d8gb60cg74e88e567ed4",
+                "Value": "*If your refusal to detonate the orb did not get her attention, perhaps pursuing the crown will. But until then, it seems you are on your own.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N88",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "fb648110-aebb-dec4-335c-a3451299b797": {
+      "UUID": "fb648110-aebb-dec4-335c-a3451299b797",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0cb8f51b-3562-424a-bc70-8c53ca65d9d8",
+              "Text": {
+                "Handle": "h37e0058eg8cd0g4687g8cabg91a77a69f4fd",
+                "Value": "*Even though you do not follow her, you feel her power resonating from the statue. She is the One True Spell at the heart of all spells. The Weave could not be in better hands.* "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N65",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "fd8ff5a7-f691-48b7-b080-05dd85ed4c1d": {
+      "UUID": "fd8ff5a7-f691-48b7-b080-05dd85ed4c1d",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b7e8f689-8e6e-4abb-9fe2-ee861d50eb46"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "90de46bd-9f0c-4c2f-9505-56063b31b360",
+              "value": true,
+              "paramval": 1,
+              "Name": "CLERIC_MYSTRA"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "23936371-ed1f-40ea-a0ae-a944b021d916",
+              "Text": {
+                "Handle": "ha5d4a18dg099dg47ffgadf5g57b072f733e6",
+                "Value": "*Mystra is attentive - the Lady of Magic welcomes your presence.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "MYSTRA CLERIC",
+        "position": "-625;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "ffe53b6e-f065-1ae1-d3c9-afbd57ec8f97": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "ffe53b6e-f065-1ae1-d3c9-afbd57ec8f97",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3234fae6-6d53-bc06-48f0-c02cec473f44",
+        "bb50ed43-6250-5108-eb2b-5dd0ff24beeb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N57",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Religion",
+        "position": "1615;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "8c29a8bd-74f0-4be2-af6d-e0e5ac3639eb",
+      "Index": 0,
+      "List": [
+        "ab6b7142-2333-4b38-9506-fb3e72157145"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Statue of Mystra",
+        "Type": "item",
+        "MapKey": "ab6b7142-2333-4b38-9506-fb3e72157145",
+        "Name": "S_LOW_MystraStatue",
+        "ParentTemplateId": null,
+        "TemplateName": "31c87824-2d19-44a6-bd51-ec4b270a341f"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "0eef4d40-a27b-4979-914a-fbcfc36927b3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ae3adb58-eb37-4820-a020-7b6deab2245e",
+      "Index": 2,
+      "List": [
+        "c5470b50-3ab0-4d5f-b84a-ed68cdc65676"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Mystra",
+        "Type": "character",
+        "MapKey": "c5470b50-3ab0-4d5f-b84a-ed68cdc65676",
+        "Name": "S_LOW_Mystra_InvisibleHelper",
+        "ParentTemplateId": null,
+        "TemplateName": "d4f410d9-ecee-4225-9b87-e24e1f2cfaa8"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "9651ba4f-a294-4a49-8993-d18071d309c4",
+      "Index": 3,
+      "List": [
+        "ad9af97d-75da-406a-ae13-7071c563f604"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Gale",
+        "Type": "character",
+        "MapKey": "ad9af97d-75da-406a-ae13-7071c563f604",
+        "Name": "S_Player_Gale",
+        "ParentTemplateId": null,
+        "TemplateName": "7d427a86-81f0-418d-a32a-3b5676c86bfa"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Dialog when interactin with the shrine dedicated to Mystra in Stormshore Tabernacle. All players will be able to read some lore about the god. Additionally, if the player is a cleric of Mystra they'll be able to give offerings and pray/communicate with the god to get a blessing."
+}

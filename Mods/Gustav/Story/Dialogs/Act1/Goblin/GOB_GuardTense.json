@@ -1,0 +1,379 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_GuardTense.lsj",
+  "UUID": "c94a87d9-21c7-465d-77b5-abc482cde44f",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "2de86341-00cc-5ae9-cfcd-9b21ea0a2335",
+    "6246665a-b562-0705-b1ad-556fac18e67f",
+    "8eb8a9bd-b0c9-de51-9d2c-ca2636e4fb25",
+    "015670b3-64b3-7fa0-7918-cee58abf8fbf"
+  ],
+  "Nodes": {
+    "015670b3-64b3-7fa0-7918-cee58abf8fbf": {
+      "UUID": "015670b3-64b3-7fa0-7918-cee58abf8fbf",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "310f7186-bb0b-4905-b8f6-dfc2fe62570a",
+              "value": true,
+              "paramval": 1,
+              "Name": "BRANDED"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "43c40fb6-03fe-b87f-be5a-8bd4ae3c7168",
+              "Text": {
+                "Handle": "h86dd1f37gf9b8g4a31ga0b9g1b70fa9f514b",
+                "Value": "Priestess burned ya, then? Thought I smelled somethin' tasty cookin'."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Sniffs player before delivering line.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Sniffs at player again before delivering line. Tone is mocking but friendly.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "2de86341-00cc-5ae9-cfcd-9b21ea0a2335": {
+      "UUID": "2de86341-00cc-5ae9-cfcd-9b21ea0a2335",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c1ecdaa-7863-e5de-5ef9-4cbb3333f17b",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_GuardTense_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "a848a6f2-43d6-4e6e-8e17-55d82c1f180b",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_GoblinThroneCheckpoint_Pass"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "13ec14ed-2baa-32c2-8945-bda5c463b1f7",
+              "value": true,
+              "paramval": 1,
+              "Name": "TeleportOutOfTrespass"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2eb6f1ed-18c5-6575-de8a-7a603eafd13f",
+              "Text": {
+                "Handle": "hb45b3278ga2bfg4cc3g978cg77447a693a76",
+                "Value": "Oi! We ain't said you pass - <i>you don't pass.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "'Oi' is shouted. You've tried to pass without permission, and he threatens you to go back. Should be intimidating as ignoring this leads to combat.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "6246665a-b562-0705-b1ad-556fac18e67f": {
+      "UUID": "6246665a-b562-0705-b1ad-556fac18e67f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c1ecdaa-7863-e5de-5ef9-4cbb3333f17b",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_GuardTense_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "a848a6f2-43d6-4e6e-8e17-55d82c1f180b",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_GoblinThroneCheckpoint_Pass"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b3fdd11d-7eca-df01-c256-6221c265cfcf",
+              "Text": {
+                "Handle": "h322beec4g4c14g4b48ga925g2a95d5242e7e",
+                "Value": "Been boozin'? Won't make the brandin' go any easier - I tried."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Goblin sniffs player's breath before delivering line.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Goblin sniffs player's breath before delivering line - laconic, offering advice.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "85;14",
+        "sourcetemplate": ""
+      }
+    },
+    "8eb8a9bd-b0c9-de51-9d2c-ca2636e4fb25": {
+      "UUID": "8eb8a9bd-b0c9-de51-9d2c-ca2636e4fb25",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c1ecdaa-7863-e5de-5ef9-4cbb3333f17b",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GuardTense_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "310f7186-bb0b-4905-b8f6-dfc2fe62570a",
+              "value": false,
+              "paramval": 1,
+              "Name": "BRANDED"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c8145957-321a-d5ec-1a6f-b384a142c95a",
+              "Text": {
+                "Handle": "h52cc7d1cgf4a4g41cdg85b2gcfa6c4c4a4ca",
+                "Value": "Go on. Sooner yer marked, sooner ye'll heal. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Bored. Giving advice to one less wise than he.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "5d1a677c-c3b4-45b2-2872-3cf54f4b933d",
+      "Index": 0,
+      "List": [
+        "97409af2-6e52-4e9d-83df-bd4827ca7992"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Warrior Nrog",
+        "Type": "character",
+        "MapKey": "97409af2-6e52-4e9d-83df-bd4827ca7992",
+        "Name": "S_GOB_GuardTense",
+        "ParentTemplateId": null,
+        "TemplateName": "69db8d35-02c6-4a5b-ac5f-719c5ade777b"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d45f08f7-ad65-024d-c9f1-984613fbd1ed",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "This goblin is standing guard inside temple - he's a little more relaxed than his zealous companion. Offers 'beginners' advice to player. As hostile as any other goblin if you try to pass without his superior's permission."
+}

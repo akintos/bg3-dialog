@@ -1,0 +1,336 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_GurCamp_Hunter_006.lsj",
+  "UUID": "677cdbc5-30b1-95dc-0ae4-a4b4e4d2e52e",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "e295f730-43e8-b814-97e5-21618362f5e8",
+    "d67c7e88-081b-b302-24e1-c66be92737b4",
+    "bfc9d38d-8b46-0cc1-c92a-a4d9236e0362"
+  ],
+  "Nodes": {
+    "8aa47628-6a09-db02-0f70-5246098653d4": {
+      "UUID": "8aa47628-6a09-db02-0f70-5246098653d4",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "da363c86-cd9d-4a3e-867e-e09574aa5c66",
+              "Text": {
+                "Handle": "h9783896egebc5g4fd3gb3a6gdbf8335f7e19",
+                "Value": "Ulma insists the tribe is not cursed, but I have my doubts."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "bfc9d38d-8b46-0cc1-c92a-a4d9236e0362": {
+      "UUID": "bfc9d38d-8b46-0cc1-c92a-a4d9236e0362",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8aa47628-6a09-db02-0f70-5246098653d4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd4cd6c4-ae8d-4179-b972-b6e0c8242921",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_GurCamp_HasMet_Hunter_006"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "40ccc8a8-4726-49df-9ee5-6015a450a6fb",
+              "Text": {
+                "Handle": "h512ef5d4g6f62g4a76gb3cfgec25b292d3ad",
+                "Value": "To lose our children is a tragedy. To fail so utterly in saving them is something else entirely."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT MET",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "d67c7e88-081b-b302-24e1-c66be92737b4": {
+      "UUID": "d67c7e88-081b-b302-24e1-c66be92737b4",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8aa47628-6a09-db02-0f70-5246098653d4"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bfa0791f-097f-4a3a-83d5-df0ff9fbb880",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_GurHunter_Event_KillAfterDialog"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd4cd6c4-ae8d-4179-b972-b6e0c8242921",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_GurCamp_HasMet_Hunter_006"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c32d7782-f9d5-48a6-9116-08f5bf3e6867",
+              "Text": {
+                "Handle": "hda287070gba2eg4ae1g9927g0efd083b31b0",
+                "Value": "First we lose our children, then Gandrel, and now this?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT MET - AstarionKilledGandrel",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e295f730-43e8-b814-97e5-21618362f5e8": {
+      "UUID": "e295f730-43e8-b814-97e5-21618362f5e8",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd4cd6c4-ae8d-4179-b972-b6e0c8242921",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_GurCamp_HasMet_Hunter_006"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6c5373a5-e982-4227-a35b-c994ea12ad60",
+              "Text": {
+                "Handle": "h819ad223gb7a5g41b1gac33g38d239d00233",
+                "Value": "Perhaps the gods have abandoned us. Perhaps they have abandoned all of Faerûn."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "MET",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "987cb78b-3c19-4442-89e1-ecfac897c434",
+      "Index": 0,
+      "List": [
+        "4c42f14a-c99a-4ba0-891c-136bf7ed38bb"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Oliver Quarlic",
+        "Type": "character",
+        "MapKey": "4c42f14a-c99a-4ba0-891c-136bf7ed38bb",
+        "Name": "S_WYR_GurCamp_Hunter_006",
+        "ParentTemplateId": null,
+        "TemplateName": "d3b7cade-c52e-47dc-816d-067c00d08f37"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9085b8c3-5325-4783-a208-bfa5c3288dd7",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "One-liner with a Gur Hunter at the Gur Camp in Wyrm's Crossing. Hunter is morose, fatalistic."
+}

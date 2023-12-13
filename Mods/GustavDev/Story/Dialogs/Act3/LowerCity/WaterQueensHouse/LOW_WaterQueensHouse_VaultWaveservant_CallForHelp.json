@@ -1,0 +1,129 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/WaterQueensHouse/LOW_WaterQueensHouse_VaultWaveservant_CallForHelp.lsj",
+  "UUID": "9c892e0a-8587-856e-0bac-cda7af703fef",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "b2b77d90-894f-47e6-8133-b9c546d9613b"
+  ],
+  "Nodes": {
+    "b2b77d90-894f-47e6-8133-b9c546d9613b": {
+      "UUID": "b2b77d90-894f-47e6-8133-b9c546d9613b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "19f987b3-2cb9-6391-3069-8757f5580371",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_WaterQueensHouse_Event_SahuaginsCalled"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b9d86303-0f01-44d4-99e3-9fd013635721",
+              "Text": {
+                "Handle": "hce7dcfdbgfd1dg446egb7a0g51b1f897f522",
+                "Value": "Umberlee, heed my call!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Exultantly",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HasMet (angry)",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "4a54ee31-746f-4a82-8d3a-01db5661ab13",
+      "Index": 0,
+      "List": [
+        "f9ee4d8f-0c1a-4b49-8859-7e3fab474c91"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Untaken Fitzy Relma",
+        "Type": "character",
+        "MapKey": "f9ee4d8f-0c1a-4b49-8859-7e3fab474c91",
+        "Name": "S_LOW_VaultWaveservant",
+        "ParentTemplateId": null,
+        "TemplateName": "ddbcf49d-4a08-4d7b-a15d-0b24f6740ee8"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f8286d96-7f0a-47dc-8857-68eb0862b110",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Next time a player is spotted by S_LOW_VaultWaveservant, or commits a crime, in Offering's Vault, she'll call sahuagins for help."
+}

@@ -1,0 +1,2328 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shar/SHA_ObjectOfDarknessTrial.lsj",
+  "UUID": "542ac950-9296-7fbb-0b0a-90a564091704",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "c7681d64-e2d8-0653-63dc-03d6dabceb17",
+    "79a4a074-c127-6b20-4332-3e81188fce16",
+    "67ea657e-c9c2-0a15-8265-b998b6005be8"
+  ],
+  "Nodes": {
+    "0c58f83b-0aa4-3817-a602-6035ed3df29b": {
+      "UUID": "0c58f83b-0aa4-3817-a602-6035ed3df29b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e09bfd3b-cd40-de8d-d497-d6d938ddf713",
+        "9b71985d-d749-7fcb-5db3-b975a7a552f3",
+        "4c516674-8a50-4eac-994c-c67b86da8f15",
+        "3f7faee2-6657-d9cc-e29a-49bf277010f2",
+        "af34c030-038a-4407-a37e-466d4afa2455"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N78",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "2255;234",
+        "sourcetemplate": ""
+      }
+    },
+    "19bc82dd-741f-2c5b-b4f9-11a588aa6926": {
+      "UUID": "19bc82dd-741f-2c5b-b4f9-11a588aa6926",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0152d9aa-dc28-47f9-bbb7-d67e7b19b9dd",
+              "Text": {
+                "Handle": "h22f2609fg92b5g4793g8aadg2a553685439d",
+                "Value": "Reach the other side to receive my gift."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player looks at the Shar statue before them and hear's Shar's disembodied voice",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Haunting, disembodied voice offering guidance ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;891",
+        "sourcetemplate": ""
+      }
+    },
+    "1f518ac6-3cc4-9348-703a-1576b6e81df4": {
+      "UUID": "1f518ac6-3cc4-9348-703a-1576b6e81df4",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1f5debdb-a796-39fd-317a-e328d7fed628"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6a3a641b-1b49-4ea7-8498-bec2dd6028ce",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Shadowheart_State_NightsongPoint_AgreedToTrials"
+            },
+            {
+              "UUID": "9fdb5f3e-8fa6-4dcf-a794-1cb6b36a793e",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_SneakTrial_State_ShadowheartOffered"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01073d74-18a4-c1c0-31c6-fe526e235773",
+              "value": false,
+              "paramval": 1,
+              "Name": "SHA_ObjectOfDarknessTrial_Event_RefusedSH"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "70a124c8-4578-4187-9780-2c8c584650fb",
+              "Text": {
+                "Handle": "h77f19029g55cag4761gb590g8b433c1c0e92",
+                "Value": "As you wish."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1f5debdb-a796-39fd-317a-e328d7fed628": {
+      "UUID": "1f5debdb-a796-39fd-317a-e328d7fed628",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "67e07de9-10d2-41f1-9097-2b6308a5537c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c7b9e1bd-b623-3d2a-c952-4a210a1740dc",
+              "value": true,
+              "paramval": 0,
+              "Name": "SHA_Trials_Event_ShadowheartUsedAltar"
+            },
+            {
+              "UUID": "e585331b-2acc-2624-2f7e-07dd8d425f06",
+              "value": true,
+              "paramval": 0,
+              "Name": "SHA_Trials_Event_StartTrial"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Companion SH produces a dagger in her right hand and cuts their left hand with it. Contact with dagger and hand doesn't need to be seen - can just show dagger poised, then a close-up of the player wincing as the cut themselves off-camera. NOTE - dagger appears in cinematic only",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N64",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "1935;15",
+        "sourcetemplate": ""
+      }
+    },
+    "299e4213-f3f7-49dc-965f-f1ca18bcbe4d": {
+      "UUID": "299e4213-f3f7-49dc-965f-f1ca18bcbe4d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2d4c552e-b23f-17ab-da6c-d0689df3784e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cdc93794-08f8-4563-b721-c00872170dbf",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_ShadowHeart"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N69",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "25c2fa23-5664-42fd-99f2-6997708698f5",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "3535;672",
+        "sourcetemplate": "INCLUSION_ShadowHeart"
+      }
+    },
+    "2d4c552e-b23f-17ab-da6c-d0689df3784e": {
+      "UUID": "2d4c552e-b23f-17ab-da6c-d0689df3784e",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": false,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cdc93794-08f8-4563-b721-c00872170dbf",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_ShadowHeart"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The (non-SH) player produces a dagger in their right hand and cuts their left hand with it. Contact with dagger and hand doesn't need to be seen - can just show dagger poised, then a close-up of the player wincing as the cut themselves off-camera. NOTE - dagger appears in cinematic only",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "3855;672",
+        "sourcetemplate": ""
+      }
+    },
+    "30300184-fdd8-424b-8ca3-36ffdd218d11": {
+      "UUID": "30300184-fdd8-424b-8ca3-36ffdd218d11",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dd3dc0ff-6057-4db7-94d8-f864b305c085"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b7b419d9-2148-4acd-af40-85a1cae55204",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_ShadowHeart"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N70",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "63eba75f-8c1d-458a-af60-51f785e3e880",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "2895;672",
+        "sourcetemplate": "INCLUSION_ShadowHeart"
+      }
+    },
+    "38cc6157-4a39-81ae-9c52-f1fd50af9bda": {
+      "UUID": "38cc6157-4a39-81ae-9c52-f1fd50af9bda",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": false,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cdc93794-08f8-4563-b721-c00872170dbf",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_ShadowHeart"
+            },
+            {
+              "UUID": "e585331b-2acc-2624-2f7e-07dd8d425f06",
+              "value": true,
+              "paramval": 0,
+              "Name": "SHA_Trials_Event_StartTrial"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Avatar SH produces a dagger in her right hand and cuts their left hand with it. Contact with dagger and hand doesn't need to be seen - can just show dagger poised, then a close-up of the player wincing as the cut themselves off-camera. NOTE - dagger appears in cinematic only",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N87",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "2895;453",
+        "sourcetemplate": ""
+      }
+    },
+    "3f7faee2-6657-d9cc-e29a-49bf277010f2": {
+      "UUID": "3f7faee2-6657-d9cc-e29a-49bf277010f2",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "19bc82dd-741f-2c5b-b4f9-11a588aa6926"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a32250a4-703e-47d1-a447-68b8831faab6",
+              "Text": {
+                "Handle": "h6780af3fg1844g4ac8ga136g84e164df3261",
+                "Value": "<i>Gaze at the statue.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2575;891",
+        "sourcetemplate": ""
+      }
+    },
+    "4c516674-8a50-4eac-994c-c67b86da8f15": {
+      "UUID": "4c516674-8a50-4eac-994c-c67b86da8f15",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "30300184-fdd8-424b-8ca3-36ffdd218d11"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "87772420-50d7-4937-85ec-95c42fd9fd14",
+              "value": false,
+              "paramval": 0,
+              "Name": "SHA_Trials_State_TrialInProgress"
+            },
+            {
+              "UUID": "a2bf1d24-4f81-4bae-ac3f-68a5760d122c",
+              "value": false,
+              "paramval": 0,
+              "Name": "SHA_Trials_Event_TrialPassed"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": false,
+              "paramval": 1,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e585331b-2acc-2624-2f7e-07dd8d425f06",
+              "value": true,
+              "paramval": 0,
+              "Name": "SHA_Trials_Event_StartTrial"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "0d1d64b8-70d6-4702-8643-be348b0f3fc6",
+                  "62f5382a-27c3-441c-bd57-33db4ca00f10"
+                ],
+                "TagNames": [
+                  "CLERIC_SHAR",
+                  "PALADIN_SHAR"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_SHAR or PALADIN_SHAR"
+          },
+          "TagTexts": [
+            {
+              "LineId": "3de5f15b-0470-4d3b-a5dd-ddd56089d1d4",
+              "Text": {
+                "Handle": "h4ecb0243g7f2eg4cfag9c91g2c1ff8dc97cc",
+                "Value": "<i>Offer your blood in Shar's name.</i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f7b94895-d14f-48b7-bed3-140f5af15a6d",
+              "Text": {
+                "Handle": "hf9c8656dg1d5fg46a6g9131g0da7bc52706b",
+                "Value": "<i>Spill some of your blood in the bowl.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2575;672",
+        "sourcetemplate": ""
+      }
+    },
+    "4c805ab5-3fbd-13c5-e953-5ae96cae6112": {
+      "UUID": "4c805ab5-3fbd-13c5-e953-5ae96cae6112",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5b96bbee-9b99-f389-9c3a-141955eeef14"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b21fe54-5553-651a-418e-da6d9b465cde",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_Trials_Event_SHAskedtoDoTrial"
+            },
+            {
+              "UUID": "9fdb5f3e-8fa6-4dcf-a794-1cb6b36a793e",
+              "value": false,
+              "paramval": null,
+              "Name": "SHA_SneakTrial_State_ShadowheartOffered"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1fb5b64a-e70c-e27f-8241-7ea042416729",
+              "value": false,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_TrialRequested"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01073d74-18a4-c1c0-31c6-fe526e235773",
+              "value": true,
+              "paramval": 1,
+              "Name": "SHA_ObjectOfDarknessTrial_Event_RefusedSH"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8a4a686d-6c47-411f-a0b3-d79ff33e2922",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_3"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1fb5b64a-e70c-e27f-8241-7ea042416729",
+              "value": true,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_TrialRequested"
+            },
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": true,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "72fd118b-ecc1-4d9b-853b-2a8beed947ec",
+              "Text": {
+                "Handle": "h09f378e1g326bg45ffga617g502c5139c159",
+                "Value": "If you're going to hesitate, just stand aside and let me do the trial myself."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N61",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Refused SH this trial",
+        "position": "975;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "52564af3-fbc5-540f-bcdc-6d5f3748b229": {
+      "UUID": "52564af3-fbc5-540f-bcdc-6d5f3748b229",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0c58f83b-0aa4-3817-a602-6035ed3df29b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "91cfff92-fb1e-caf5-9d5c-9c5971b96d04",
+              "value": true,
+              "paramval": 2,
+              "Name": "Approval_AtLeast_20_For_Sp2"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "daca5889-e39b-46a6-a416-ed74cb7acdee",
+              "Text": {
+                "Handle": "h40d6f56dg9bbdg42f4gb41egc2b3d5276418",
+                "Value": "These trials mean something to me, don't you understand? I thought I could rely on you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N37",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Disappointed",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "APPROVAL 20 OR MORE",
+        "position": "1935;234",
+        "sourcetemplate": ""
+      }
+    },
+    "5b96bbee-9b99-f389-9c3a-141955eeef14": {
+      "JumpTarget": "f4a34ed9-34aa-4ce3-b48e-95a1647a3032",
+      "JumpTargetPoint": 2,
+      "UUID": "5b96bbee-9b99-f389-9c3a-141955eeef14",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N74",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "67e07de9-10d2-41f1-9097-2b6308a5537c": {
+      "UUID": "67e07de9-10d2-41f1-9097-2b6308a5537c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": false,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cdc93794-08f8-4563-b721-c00872170dbf",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_ShadowHeart"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "25c2fa23-5664-42fd-99f2-6997708698f5",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "2255;15",
+        "sourcetemplate": "INCLUSION_ShadowHeart"
+      }
+    },
+    "67ea657e-c9c2-0a15-8265-b998b6005be8": {
+      "UUID": "67ea657e-c9c2-0a15-8265-b998b6005be8",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dd4f8262-068c-fe83-d420-d737bf8ddd17"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "75e56e06-650c-4542-8670-c8f40f501f93",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_Trials_State_StatueUsed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "10e18387-38a5-42b0-9a8f-4ccd285a641f",
+              "Text": {
+                "Handle": "h8bf1035dg35b2g4585gb4acg3dbece50fb6a",
+                "Value": "*Another bowl, bearing the stains of an ancient blood offering.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player looks at a large bowl being held by a Shar statue. Close-up of a dried blood stain in the base of the bowl.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N84",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Subsequent altar",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "7920e5df-a52b-6db3-5915-f44bb3305435": {
+      "JumpTarget": "1f518ac6-3cc4-9348-703a-1576b6e81df4",
+      "JumpTargetPoint": 2,
+      "UUID": "7920e5df-a52b-6db3-5915-f44bb3305435",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N68",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;234",
+        "sourcetemplate": ""
+      }
+    },
+    "79a4a074-c127-6b20-4332-3e81188fce16": {
+      "UUID": "79a4a074-c127-6b20-4332-3e81188fce16",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "858b844c-644d-13b2-64e3-9b56e275f150"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "75e56e06-650c-4542-8670-c8f40f501f93",
+              "value": false,
+              "paramval": null,
+              "Name": "SHA_Trials_State_StatueUsed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "75e56e06-650c-4542-8670-c8f40f501f93",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_Trials_State_StatueUsed"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "e3b1e9f2-e4e8-4a1c-868b-77c08f7b7e19",
+              "value": true,
+              "paramval": 0,
+              "Name": "SHA_Trials_State_FirstStatueUsed"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7462b4cc-bc25-41d8-b4bd-1ac1b71d05da",
+              "Text": {
+                "Handle": "h5ca16743g8d2dg4bfag914eg4f6abb1ca2e7",
+                "Value": "*The bowl contains an ancient, rust-coloured bloodstain. It forms a neat disc, as if spilled calmly and willingly.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player looks at a large bowl being held by a Shar statue. Close-up of a dried blood stain in the base of the bowl.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "First altar",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "858b844c-644d-13b2-64e3-9b56e275f150": {
+      "UUID": "858b844c-644d-13b2-64e3-9b56e275f150",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b60f1318-c70e-4f1a-820c-402c6dfd73d6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a9d9efe0-9031-4b82-8c72-8518c178e485",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_Trials_Knows_LearnedAboutTrials"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c20653b2-3960-428a-ad76-70214f4c4c08",
+              "Text": {
+                "Handle": "hb7603648g0a4dg4157g9654g2fe7487a13fa",
+                "Value": "*You recognise this as a trial, where initiates would prove themselves to Lady Shar. This one would put their skills of stealth and infiltration to the test.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Shadowheart-only narration. Visuals should favour her here.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N90",
+        "InternalNodeContext": "SH-only narration",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "9b71985d-d749-7fcb-5db3-b975a7a552f3": {
+      "UUID": "9b71985d-d749-7fcb-5db3-b975a7a552f3",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "38cc6157-4a39-81ae-9c52-f1fd50af9bda"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "87772420-50d7-4937-85ec-95c42fd9fd14",
+              "value": false,
+              "paramval": 0,
+              "Name": "SHA_Trials_State_TrialInProgress"
+            },
+            {
+              "UUID": "a2bf1d24-4f81-4bae-ac3f-68a5760d122c",
+              "value": false,
+              "paramval": 0,
+              "Name": "SHA_Trials_Event_TrialPassed"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9fdb5f3e-8fa6-4dcf-a794-1cb6b36a793e",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_SneakTrial_State_ShadowheartOffered"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cdc93794-08f8-4563-b721-c00872170dbf",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_ShadowHeart"
+            },
+            {
+              "UUID": "e585331b-2acc-2624-2f7e-07dd8d425f06",
+              "value": true,
+              "paramval": 0,
+              "Name": "SHA_Trials_Event_StartTrial"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "333fd648-c81a-452a-8224-2a6cc8a1d080",
+              "Text": {
+                "Handle": "h854c7bb2gc6aag44e6g9a7egee051981b5a3",
+                "Value": "<i>Offer your blood in Shar's name.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N46",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SHADOWHEART",
+        "position": "2575;453",
+        "sourcetemplate": ""
+      }
+    },
+    "af34c030-038a-4407-a37e-466d4afa2455": {
+      "UUID": "af34c030-038a-4407-a37e-466d4afa2455",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": false,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cdc93794-08f8-4563-b721-c00872170dbf",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_ShadowHeart"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "814ec38d-bda9-4244-8ebb-14332e23bbe3",
+              "Text": {
+                "Handle": "h48b4b7f0g6d70g42e5gb540g943680b95608",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2575;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "b60f1318-c70e-4f1a-820c-402c6dfd73d6": {
+      "UUID": "b60f1318-c70e-4f1a-820c-402c6dfd73d6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4c805ab5-3fbd-13c5-e953-5ae96cae6112",
+        "de06d819-45e4-0e49-d6f5-eb73cef1ebfb",
+        "f4a34ed9-34aa-4ce3-b48e-95a1647a3032",
+        "ee0ba253-2e62-b23c-2834-f7f1e578c7f7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "87772420-50d7-4937-85ec-95c42fd9fd14",
+              "value": false,
+              "paramval": 0,
+              "Name": "SHA_Trials_State_TrialInProgress"
+            },
+            {
+              "UUID": "a2bf1d24-4f81-4bae-ac3f-68a5760d122c",
+              "value": false,
+              "paramval": 0,
+              "Name": "SHA_Trials_Event_TrialPassed"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ec32e446-4b01-df05-ae9f-887fbfce5ecf",
+              "value": true,
+              "paramval": null,
+              "Name": "TEST_PDD_A"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b7b419d9-2148-4acd-af40-85a1cae55204",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_ShadowHeart"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "63eba75f-8c1d-458a-af60-51f785e3e880",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "655;15",
+        "sourcetemplate": "INCLUSION_ShadowHeart"
+      }
+    },
+    "c7681d64-e2d8-0653-63dc-03d6dabceb17": {
+      "SourceNode": "79a4a074-c127-6b20-4332-3e81188fce16",
+      "UUID": "c7681d64-e2d8-0653-63dc-03d6dabceb17",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "858b844c-644d-13b2-64e3-9b56e275f150"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e3b1e9f2-e4e8-4a1c-868b-77c08f7b7e19",
+              "value": true,
+              "paramval": 0,
+              "Name": "SHA_Trials_State_FirstStatueUsed"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N88",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (First altar)",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "dd3dc0ff-6057-4db7-94d8-f864b305c085": {
+      "UUID": "dd3dc0ff-6057-4db7-94d8-f864b305c085",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "299e4213-f3f7-49dc-965f-f1ca18bcbe4d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "771bac4c-a231-4bcb-ad49-26f07a63e3a3",
+              "Text": {
+                "Handle": "h651e3561g5cd1g4c86g9fc6g9e091cdc62e0",
+                "Value": "Try not to hit an artery."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N71",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Cynical/displeased",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "cd0e825e-2cb3-442a-b306-29ae1c832ae2",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION LINE",
+        "position": "3215;672",
+        "sourcetemplate": "INCLUSION_ShadowHeart"
+      }
+    },
+    "dd4f8262-068c-fe83-d420-d737bf8ddd17": {
+      "UUID": "dd4f8262-068c-fe83-d420-d737bf8ddd17",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b60f1318-c70e-4f1a-820c-402c6dfd73d6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a9d9efe0-9031-4b82-8c72-8518c178e485",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_Trials_Knows_LearnedAboutTrials"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "76d82a98-a5d6-4412-ac51-a702d5125af5",
+              "Text": {
+                "Handle": "hf1f99e0cgc5bag402dga28fgdffd671a8986",
+                "Value": "*Another trial, for Lady Shar's initiates. This one would put their skills of stealth and infiltration to the test.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Shadowheart-only narration. Visuals should favour her here.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N89",
+        "InternalNodeContext": "SH-only narration",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "de06d819-45e4-0e49-d6f5-eb73cef1ebfb": {
+      "UUID": "de06d819-45e4-0e49-d6f5-eb73cef1ebfb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5b96bbee-9b99-f389-9c3a-141955eeef14"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b21fe54-5553-651a-418e-da6d9b465cde",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_Trials_Event_SHAskedtoDoTrial"
+            },
+            {
+              "UUID": "9fdb5f3e-8fa6-4dcf-a794-1cb6b36a793e",
+              "value": false,
+              "paramval": null,
+              "Name": "SHA_SneakTrial_State_ShadowheartOffered"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1fb5b64a-e70c-e27f-8241-7ea042416729",
+              "value": false,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_TrialRequested"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01073d74-18a4-c1c0-31c6-fe526e235773",
+              "value": false,
+              "paramval": 1,
+              "Name": "SHA_ObjectOfDarknessTrial_Event_RefusedSH"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8a4a686d-6c47-411f-a0b3-d79ff33e2922",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_3"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1fb5b64a-e70c-e27f-8241-7ea042416729",
+              "value": true,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_TrialRequested"
+            },
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": true,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7b31a0c1-5505-40c3-bc9f-f83391202018",
+              "Text": {
+                "Handle": "h0a3479afgaf68g4ad0gb239ge4eebbce5133",
+                "Value": "Another trial. I should do this one as well."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SH asked to to a trial before",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e09bfd3b-cd40-de8d-d497-d6d938ddf713": {
+      "UUID": "e09bfd3b-cd40-de8d-d497-d6d938ddf713",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7920e5df-a52b-6db3-5915-f44bb3305435"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": true,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8a4a686d-6c47-411f-a0b3-d79ff33e2922",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_3"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6a3a641b-1b49-4ea7-8498-bec2dd6028ce",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Shadowheart_State_NightsongPoint_AgreedToTrials"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": false,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01073d74-18a4-c1c0-31c6-fe526e235773",
+              "value": false,
+              "paramval": 1,
+              "Name": "SHA_ObjectOfDarknessTrial_Event_RefusedSH"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aec48eb7-a231-42e1-bbe4-2c95eedd208b",
+              "Text": {
+                "Handle": "h19d225ffg9386g4613g9a68g18e5b9296b90",
+                "Value": "Fine, go ahead."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N67",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2575;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e7186f4b-4c62-eaf4-4474-49a3d8232a5e": {
+      "UUID": "e7186f4b-4c62-eaf4-4474-49a3d8232a5e",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "52564af3-fbc5-540f-bcdc-6d5f3748b229",
+        "f1c2978e-a269-f84d-2fc9-567d241985cb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01073d74-18a4-c1c0-31c6-fe526e235773",
+              "value": true,
+              "paramval": 1,
+              "Name": "SHA_ObjectOfDarknessTrial_Event_RefusedSH"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c0177300-6297-4c76-b456-d5abe214115e",
+              "Text": {
+                "Handle": "h1b2b898dg6011g40aag88d9ge82348f03291",
+                "Value": "No, stand down."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N33",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1615;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ee0ba253-2e62-b23c-2834-f7f1e578c7f7": {
+      "JumpTarget": "0c58f83b-0aa4-3817-a602-6035ed3df29b",
+      "JumpTargetPoint": 1,
+      "UUID": "ee0ba253-2e62-b23c-2834-f7f1e578c7f7",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N80",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "f1c2978e-a269-f84d-2fc9-567d241985cb": {
+      "UUID": "f1c2978e-a269-f84d-2fc9-567d241985cb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0c58f83b-0aa4-3817-a602-6035ed3df29b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "91cfff92-fb1e-caf5-9d5c-9c5971b96d04",
+              "value": false,
+              "paramval": 2,
+              "Name": "Approval_AtLeast_20_For_Sp2"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5ab471f4-aa3e-4883-9c1f-4dbb08442389",
+              "Text": {
+                "Handle": "h3f03f8c8g9ce4g411cg8e3cgfcdb6e87898c",
+                "Value": "This is no time to indulge your pettiness. These trials are important to me."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N66",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Angry",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "APPROVAL LESS THAN 20",
+        "position": "1935;453",
+        "sourcetemplate": ""
+      }
+    },
+    "f4a34ed9-34aa-4ce3-b48e-95a1647a3032": {
+      "UUID": "f4a34ed9-34aa-4ce3-b48e-95a1647a3032",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1f518ac6-3cc4-9348-703a-1576b6e81df4",
+        "e7186f4b-4c62-eaf4-4474-49a3d8232a5e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9fdb5f3e-8fa6-4dcf-a794-1cb6b36a793e",
+              "value": false,
+              "paramval": null,
+              "Name": "SHA_SneakTrial_State_ShadowheartOffered"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1fb5b64a-e70c-e27f-8241-7ea042416729",
+              "value": false,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_TrialRequested"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8a4a686d-6c47-411f-a0b3-d79ff33e2922",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_3"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b21fe54-5553-651a-418e-da6d9b465cde",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_Trials_Event_SHAskedtoDoTrial"
+            },
+            {
+              "UUID": "a9d9efe0-9031-4b82-8c72-8518c178e485",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_Trials_Knows_LearnedAboutTrials"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1fb5b64a-e70c-e27f-8241-7ea042416729",
+              "value": true,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_TrialRequested"
+            },
+            {
+              "UUID": "d235c01f-ab02-4f84-beda-d261bb301279",
+              "value": true,
+              "paramval": null,
+              "Name": "542ac950-9296-7fbb-0b0a-90a564091704_PermissionGranted"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "310ee1aa-14e3-4c51-84ea-dee6dc6b92ec",
+              "Text": {
+                "Handle": "h803b1000g320dg40abgbb2dgcd03b575f5fb",
+                "Value": "This is one of Lady Shar's trials. Allow me - it's important."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N21",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "cd0e825e-2cb3-442a-b306-29ae1c832ae2",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION LINE",
+        "position": "975;15",
+        "sourcetemplate": "INCLUSION_ShadowHeart"
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e5011b10-3e65-6db3-2087-717b06937b8d",
+      "Index": 0,
+      "List": [
+        "4df2c222-7892-7fed-d214-dbcdfa323945"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shar",
+        "Type": "character",
+        "MapKey": "9293e853-5c10-45a1-a158-ebcde08c02ee",
+        "Name": "S_GLO_VoiceOfShar_OverrideSpeaker",
+        "ParentTemplateId": null,
+        "TemplateName": "c9dd1c5f-96ea-4d35-8c2f-2b41a6eac09d"
+      },
+      "SpeakerGroupName": "GROUP_SHA_VoiceOfShar"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "58a3871b-9980-02ca-e376-24397801ebf3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "535f49ea-235a-46f2-9900-ad023d0a6820",
+      "Index": 2,
+      "List": [
+        "3ed74f06-3c60-42dc-83f6-f034cb47c679"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowheart",
+        "Type": "character",
+        "MapKey": "3ed74f06-3c60-42dc-83f6-f034cb47c679",
+        "Name": "S_Player_ShadowHeart",
+        "ParentTemplateId": null,
+        "TemplateName": "2ac51f22-e357-4639-b81d-022d462c8c6a"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "For when a player interacts with the statue to begin the stealth trial in the Shar temple."
+}

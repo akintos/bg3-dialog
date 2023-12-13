@@ -1,0 +1,1463 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Chapel/CHA_LaezelRecruitment_PickASide.lsj",
+  "UUID": "0e39193f-1b9c-38f8-10e2-0b5922cb098e",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "0969c279-5e11-ad11-961d-4d254703bd84",
+    "c122fd1b-d7e7-10ab-1f2d-0f553a1d6a5f"
+  ],
+  "Nodes": {
+    "0969c279-5e11-ad11-961d-4d254703bd84": {
+      "UUID": "0969c279-5e11-ad11-961d-4d254703bd84",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7d00d0e0-2e3d-1251-1f9b-fd2bc8b51942",
+        "395774dc-7881-9493-5ce2-58655ff63ba5",
+        "f2adb7bd-d330-423e-b48b-bbd488d5e5a9",
+        "ff9a2052-2126-41ac-e71d-51c86fcdc9d3",
+        "805a9668-8a3c-c349-898d-0202b86631a2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a3a395fa-8744-8e7b-0bd4-eaf0fee1736a",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_PersuadedKillLaezel"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "94aba044-6b30-fbeb-a823-a7cb5c723a7d",
+              "Text": {
+                "Handle": "h8c4015d2g2a35g4c0bgadebgd92e7921aaea",
+                "Value": "You've but one chance. Join me, or die."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "The player persuaded the tieflings that they should kill the creature",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Dust dissipating after the fall",
+        "collapsed": "False",
+        "logicalname": "Persuaded tieflings to kill Lae'zel",
+        "position": "-305;15",
+        "sourcetemplate": ""
+      }
+    },
+    "0eea326a-6672-c09a-b0e7-dbf68cfa536f": {
+      "SourceNode": "97193cb1-e747-70cb-32cd-4a86fa378f38",
+      "UUID": "0eea326a-6672-c09a-b0e7-dbf68cfa536f",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bd524027-ea7c-4368-6a10-c9e748c6118e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d85ab2d-5c23-498c-a61e-98f05a00177a",
+              "value": true,
+              "paramval": 3,
+              "Name": "PALADIN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0246da96-5ef8-4c65-9f0d-c2856bd17674",
+              "value": true,
+              "paramval": 3,
+              "Name": "GLO_PaladinOathbreaker_Event_BrokeOath"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N91",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (OATHBREAKER LOGIC)",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "28860afe-c7dd-fb2a-1c78-356966c84f24": {
+      "UUID": "28860afe-c7dd-fb2a-1c78-356966c84f24",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "94d8fdc1-3d0e-6ad3-dffe-725465d0107b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player draws weapon",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "32657af3-63c8-9905-4da1-0377f3354d31": {
+      "JumpTarget": "0969c279-5e11-ad11-961d-4d254703bd84",
+      "JumpTargetPoint": 2,
+      "UUID": "32657af3-63c8-9905-4da1-0377f3354d31",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N21",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "35b9142e-b187-fa79-45cb-064c2c540a1c": {
+      "UUID": "35b9142e-b187-fa79-45cb-064c2c540a1c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a3a395fa-8744-8e7b-0bd4-eaf0fee1736a",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_PersuadedKillLaezel"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bce55dae-233b-00e8-a14b-e9ab8c5d766a",
+              "Text": {
+                "Handle": "hc07fd61agec5dg49b2g9954g4b6f4ec7a9c7",
+                "Value": "You lying rat!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Damays is missing + betray tiefling",
+        "position": "975;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "395774dc-7881-9493-5ce2-58655ff63ba5": {
+      "UUID": "395774dc-7881-9493-5ce2-58655ff63ba5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0eea326a-6672-c09a-b0e7-dbf68cfa536f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d40bbf05-3884-42aa-b639-c20697703d6d",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling1Missing"
+            },
+            {
+              "UUID": "d6342f1d-f875-460a-b6eb-769c8790c86b",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling2Missing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "856bc630-9ad2-d2ed-db8c-7baafee77404",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_TieflingsHostile"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "6970368d-b146-4718-b6b4-207380b3eb8f",
+              "value": true,
+              "paramval": 3,
+              "Name": "CHA_LaezelRecruit.SidedLaezelAlt"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7cd774d7-8dd2-8657-5555-4423db6de0c3",
+              "Text": {
+                "Handle": "h81d89ecfg4619g4b4bgb767g72498a1a5637",
+                "Value": "<i>Attack the tiefling.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Side with Lae'zel",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "6f400509-ffbf-dde4-234b-4f41ee1f35c0": {
+      "UUID": "6f400509-ffbf-dde4-234b-4f41ee1f35c0",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a3a395fa-8744-8e7b-0bd4-eaf0fee1736a",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_PersuadedKillLaezel"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e6d50701-bbb4-be3a-84cf-2fcafa24996a",
+              "Text": {
+                "Handle": "hf57cf7dbg786fg4641ga5c8g26bd7f900d1a",
+                "Value": "You lying rat!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Persuaded them to lower trap",
+        "position": "1295;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "7d00d0e0-2e3d-1251-1f9b-fd2bc8b51942": {
+      "UUID": "7d00d0e0-2e3d-1251-1f9b-fd2bc8b51942",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "97193cb1-e747-70cb-32cd-4a86fa378f38"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d40bbf05-3884-42aa-b639-c20697703d6d",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling1Missing"
+            },
+            {
+              "UUID": "d6342f1d-f875-460a-b6eb-769c8790c86b",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling2Missing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "856bc630-9ad2-d2ed-db8c-7baafee77404",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_TieflingsHostile"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "df662e42-3a07-449d-9f69-2baf93b8ceb6",
+              "value": true,
+              "paramval": 3,
+              "Name": "CHA_LaezelRecruit.SidedLaezel"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ef954197-6961-7cb0-2689-bf7d61a81a8c",
+              "Text": {
+                "Handle": "h19380e19gb157g4c4cgafe2g5dd8ad65fa15",
+                "Value": "<i>Attack the tieflings.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Side with Lae'zel",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "805a9668-8a3c-c349-898d-0202b86631a2": {
+      "UUID": "805a9668-8a3c-c349-898d-0202b86631a2",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c47bf363-ab71-9485-5635-8673c2476b94"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a3a395fa-8744-8e7b-0bd4-eaf0fee1736a",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_PersuadedKillLaezel"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "510657f4-4dd5-4b51-16bd-707942066182",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_LaezelHostile"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "158cfa88-617c-4e18-bed3-b28eea95ceb2",
+              "value": true,
+              "paramval": 3,
+              "Name": "CHA_LaezelRecruit.RefusedInvolvement"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "e49c027c-6ec6-4158-9afb-8b59236d10fd"
+                ],
+                "TagNames": [
+                  "REALLY_GITHYANKI"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_GITHYANKI"
+          },
+          "TagTexts": [
+            {
+              "LineId": "16ccb210-355e-1b86-045e-8fafdf77690f",
+              "Text": {
+                "Handle": "h40ecb366gec8cg4f32gab33ge17999ed5a58",
+                "Value": "Fight for yourself. This is not my responsibility."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bc172fe1-cdb2-fc3d-8f2c-f4b87d787ec5",
+              "Text": {
+                "Handle": "h0247db52ge85cg462egbd7bg5778fccb8aee",
+                "Value": "This isn't my fight. I'm not picking sides."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "Trying to remain neutral while the tiefling(s) want(s) to take Lae'zel away. Not available if the player explicitely persuaded the tieflings that Lae'zel must be killed",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Trying to stay neutral",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "8b1b1033-7575-ef46-45fb-b09097795b16": {
+      "UUID": "8b1b1033-7575-ef46-45fb-b09097795b16",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6f400509-ffbf-dde4-234b-4f41ee1f35c0",
+        "a05d46f6-786c-0a68-57af-73a3f507bca2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d40bbf05-3884-42aa-b639-c20697703d6d",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling1Missing"
+            },
+            {
+              "UUID": "d6342f1d-f875-460a-b6eb-769c8790c86b",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling2Missing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cd461906-63da-7a08-79bd-801fc2d35fff",
+              "Text": {
+                "Handle": "hb2dadf6eg0e4eg4ec3g8783ga9fe8bfa8f2f",
+                "Value": "No!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Both are present",
+        "position": "975;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "94d8fdc1-3d0e-6ad3-dffe-725465d0107b": {
+      "UUID": "94d8fdc1-3d0e-6ad3-dffe-725465d0107b",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "677ffa76-2562-4217-873e-2253d4720ba4"
+                ],
+                "TagNames": [
+                  "GITHYANKI"
+                ]
+              }
+            ],
+            "RuleString": "GITHYANKI"
+          },
+          "TagTexts": [
+            {
+              "LineId": "27a90a1c-f208-9a9c-5c78-7e3f82fcdf34",
+              "Text": {
+                "Handle": "h75b3ff0ag0560g4c4bg953fgfec61b380b56",
+                "Value": "<i>Traitor.</i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aaf6c537-0325-f202-7147-bea25b84258c",
+              "Text": {
+                "Handle": "h326c8792g01c7g493dg8490g3ac58b4c825f",
+                "Value": "<i>Coward.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "97193cb1-e747-70cb-32cd-4a86fa378f38": {
+      "UUID": "97193cb1-e747-70cb-32cd-4a86fa378f38",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8b1b1033-7575-ef46-45fb-b09097795b16",
+        "9cb20152-7975-fb8b-71df-3a2b58b8f399",
+        "35b9142e-b187-fa79-45cb-064c2c540a1c",
+        "df6046f6-e50e-04f2-2ebd-38f213d42810"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d85ab2d-5c23-498c-a61e-98f05a00177a",
+              "value": true,
+              "paramval": 3,
+              "Name": "PALADIN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0246da96-5ef8-4c65-9f0d-c2856bd17674",
+              "value": true,
+              "paramval": 3,
+              "Name": "GLO_PaladinOathbreaker_Event_BrokeOath"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N90",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "OATHBREAKER LOGIC",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "9cb20152-7975-fb8b-71df-3a2b58b8f399": {
+      "UUID": "9cb20152-7975-fb8b-71df-3a2b58b8f399",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d6342f1d-f875-460a-b6eb-769c8790c86b",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling2Missing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2b392a06-e611-bdd7-2fc6-ea6cc87c75db",
+              "Text": {
+                "Handle": "hca630a54gcb26g483egb060gd074572fc6bf",
+                "Value": "No!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N45",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Damays is present",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "a05d46f6-786c-0a68-57af-73a3f507bca2": {
+      "UUID": "a05d46f6-786c-0a68-57af-73a3f507bca2",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ddc73992-c04f-d4e4-93dd-34f6fbd1efcf",
+              "Text": {
+                "Handle": "h045c2cf6g1910g4b96g8c2fg5ba6800e3a19",
+                "Value": "You rat!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "a87fa210-3623-8077-0975-17a9482c9a5e": {
+      "JumpTarget": "a05d46f6-786c-0a68-57af-73a3f507bca2",
+      "JumpTargetPoint": 1,
+      "UUID": "a87fa210-3623-8077-0975-17a9482c9a5e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N62",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "bd524027-ea7c-4368-6a10-c9e748c6118e": {
+      "JumpTarget": "7d00d0e0-2e3d-1251-1f9b-fd2bc8b51942",
+      "JumpTargetPoint": 2,
+      "UUID": "bd524027-ea7c-4368-6a10-c9e748c6118e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N25",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "c122fd1b-d7e7-10ab-1f2d-0f553a1d6a5f": {
+      "UUID": "c122fd1b-d7e7-10ab-1f2d-0f553a1d6a5f",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "32657af3-63c8-9905-4da1-0377f3354d31"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2d28ea43-b022-f3f4-59a3-a38f46eed925",
+              "Text": {
+                "Handle": "h122a2b74ge758g49e5g8a4fg8db7be2345e4",
+                "Value": "Prove you're not a craven. Join me, or die."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "The player took their leave in the dialog, or perhaps they failed all the persuasions, so the tieflings are acting on their own and wants to bring Lae'zel to camp",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Dust dissipating after the fall",
+        "collapsed": "False",
+        "logicalname": "Tieflings are trying to take Lae'zel",
+        "position": "-305;234",
+        "sourcetemplate": ""
+      }
+    },
+    "c47bf363-ab71-9485-5635-8673c2476b94": {
+      "SourceNode": "94d8fdc1-3d0e-6ad3-dffe-725465d0107b",
+      "UUID": "c47bf363-ab71-9485-5635-8673c2476b94",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N53",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias Not picking sides, but LZ attacks",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "df6046f6-e50e-04f2-2ebd-38f213d42810": {
+      "UUID": "df6046f6-e50e-04f2-2ebd-38f213d42810",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a87fa210-3623-8077-0975-17a9482c9a5e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N60",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player draws weapon on Nymessa",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f2adb7bd-d330-423e-b48b-bbd488d5e5a9": {
+      "UUID": "f2adb7bd-d330-423e-b48b-bbd488d5e5a9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0eea326a-6672-c09a-b0e7-dbf68cfa536f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d40bbf05-3884-42aa-b639-c20697703d6d",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling1Missing"
+            },
+            {
+              "UUID": "d6342f1d-f875-460a-b6eb-769c8790c86b",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_Tiefling2Missing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "856bc630-9ad2-d2ed-db8c-7baafee77404",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_TieflingsHostile"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "6970368d-b146-4718-b6b4-207380b3eb8f",
+              "value": true,
+              "paramval": 3,
+              "Name": "CHA_LaezelRecruit.SidedLaezelAlt"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a1b64d8-bc0e-bf34-bbf8-eb745364dd35",
+              "Text": {
+                "Handle": "h77620a1dgf13cg4243ga21dg2aef02798343",
+                "Value": "<i>Attack the tiefling.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Side with Lae'zel",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ff9a2052-2126-41ac-e71d-51c86fcdc9d3": {
+      "UUID": "ff9a2052-2126-41ac-e71d-51c86fcdc9d3",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "28860afe-c7dd-fb2a-1c78-356966c84f24"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "510657f4-4dd5-4b51-16bd-707942066182",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_Event_LaezelHostile"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "2134a9f7-d447-425d-b0b1-76e5880a992c",
+              "value": true,
+              "paramval": 3,
+              "Name": "CHA_LaezelRecruit.SidedTieflings"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "381de066-f44f-88f0-8287-cad8693c1133",
+              "Text": {
+                "Handle": "h8df36e6bgbb70g46baga9d3g23069e96992c",
+                "Value": "<i>Attack Lae'zel.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Side with tieflings",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cee3f2c5-9608-9736-b31f-02ea73268c7d",
+      "Index": 0,
+      "List": [
+        "58a69333-40bf-8358-1d17-fff240d7fb12"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lae'zel",
+        "Type": "character",
+        "MapKey": "58a69333-40bf-8358-1d17-fff240d7fb12",
+        "Name": "S_Player_Laezel",
+        "ParentTemplateId": null,
+        "TemplateName": "3a0351bd-0b2f-4fbf-84a6-30ad80bb3100"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "53113543-1ec8-dcd4-b1dd-3b6e3c76d436",
+      "Index": 1,
+      "List": [
+        "2c8537fb-bf73-43a2-a8ff-48e41453adea"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Nymessa",
+        "Type": "character",
+        "MapKey": "2c8537fb-bf73-43a2-a8ff-48e41453adea",
+        "Name": "S_CHA_CagerLaezel1",
+        "ParentTemplateId": null,
+        "TemplateName": "9103fce3-6423-4f8a-af04-83ac1af2a1d7"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a5ea9b51-e635-cef4-85ac-ac62652190f3",
+      "Index": 2,
+      "List": [
+        "863d6788-5887-45c8-bafa-87128631904e"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Damays",
+        "Type": "character",
+        "MapKey": "863d6788-5887-45c8-bafa-87128631904e",
+        "Name": "S_CHA_CagerLaezel2",
+        "ParentTemplateId": null,
+        "TemplateName": "a5856190-08e3-4741-b697-8b1cbf03eaa1"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "8f2c5393-1531-0931-6d3b-092110115e89",
+      "Index": 3,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Occurs if the player tells the tieflings to lower Lae'zel and kill her, or if player lets the tieflings try to take her away. One last chance to choose a side."
+}

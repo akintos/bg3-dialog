@@ -1,0 +1,3163 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_CazadorsPalace_GuardTower_Guard_001.lsj",
+  "UUID": "6591efce-5c01-0bb2-abd3-e70566e6db3e",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "3c34829c-373b-0a15-ba17-61b0188fa474",
+    "d4c19b0e-3e35-5706-0677-5259ce7e79b7",
+    "325f8055-f4e2-9c9a-142c-4cde6ba073ab",
+    "b5d88109-9d88-8709-b533-88c99deab32b",
+    "34e6b728-c17e-7527-ee1a-02566ce6d32f",
+    "8e2460f5-c6dd-c7b5-8972-a9fa25ffe1d8",
+    "875064b5-5932-3f37-a514-a82229842682"
+  ],
+  "Nodes": {
+    "025bca07-65ae-bc30-874d-6a6dbc66baad": {
+      "UUID": "025bca07-65ae-bc30-874d-6a6dbc66baad",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02559dde-4560-4244-8d18-ccde95a19ade",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_GainedAccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "e8e26cd0-5d12-482f-b7cd-d6b2b9f8f482",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_Event_GiveKey"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0324f285-617a-4334-a5c1-af2f0aef2b56",
+              "Text": {
+                "Handle": "h0718cefeg2d84g491cga32ega991aa8b5715",
+                "Value": "Be quick!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N95",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "067b81ea-092f-3b9a-d1dd-6fe029473b8f": {
+      "RollSuccess": false,
+      "UUID": "067b81ea-092f-3b9a-d1dd-6fe029473b8f",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "936db381-c546-7812-e205-6c3c0f9c4c10"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N110",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "0b5100a6-6dc8-60c7-a52c-eb49eab966e1": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "0b5100a6-6dc8-60c7-a52c-eb49eab966e1",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "47cc8fbe-4414-66b3-37c3-2450e8124e29",
+        "2f65524d-fb6d-e1aa-c594-2f3f00a54b5b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5521edfc-743e-4ae2-acb6-d9bb4b08084a",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_TriedToConvince"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5521edfc-743e-4ae2-acb6-d9bb4b08084a",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_TriedToConvince"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "efaf7005-97c5-40c5-a189-7291d2904cc6",
+              "Text": {
+                "Handle": "h5591e646gf658g4bbbg910cg04c67852f8af",
+                "Value": "Another word from you and you'll fly out of this tower."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Intimidation",
+        "position": "1615;891",
+        "sourcetemplate": ""
+      }
+    },
+    "12345d9e-dc88-2d5e-964c-73dc59a74e8b": {
+      "RollSuccess": true,
+      "UUID": "12345d9e-dc88-2d5e-964c-73dc59a74e8b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "42fe03ee-5e67-d051-c33c-7a2a85233ab3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N109",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;891",
+        "sourcetemplate": ""
+      }
+    },
+    "13139264-46ca-25b3-448e-c11ebe497c5a": {
+      "UUID": "13139264-46ca-25b3-448e-c11ebe497c5a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2cbe3251-50e7-ee4d-4bd9-2c7b6988a757"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "afff495c-0910-4b2b-806f-8d2d90e91217",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_AstarionMentionedCharm"
+            },
+            {
+              "UUID": "c59d126f-b3ce-4e00-8449-b0ad589a8ad8",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_Knows_Charmed"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dba7a42c-0906-4df7-a891-bb43fb5e5e9f",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_MadePassiveInsightCheck"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N117",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DOESN'T KNOW CHARMED",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "2250a7f6-4c27-4fcc-9a60-043f3baea116": {
+      "UUID": "2250a7f6-4c27-4fcc-9a60-043f3baea116",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "dac4e9ac-2ff0-fd2f-5ef9-f0103494dda7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "109ed582-3803-4e0d-9e4a-7440e4fe02d0",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_GurCamp_State_GaveQuestToKillCazador"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e14bfd1d-108b-467d-b782-51e14a76f60b",
+              "Text": {
+                "Handle": "h48d173d4gcf13g42f2gaa71g11b109df50d6",
+                "Value": "<i>Attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N97",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1615;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "266ca42c-a047-85dc-2e86-ffe945f0a201": {
+      "RollSuccess": true,
+      "UUID": "266ca42c-a047-85dc-2e86-ffe945f0a201",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a65ff197-85f7-dd43-cb0f-75a13a1fdb5d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N6",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "2cbe3251-50e7-ee4d-4bd9-2c7b6988a757": {
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "2cbe3251-50e7-ee4d-4bd9-2c7b6988a757",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "12345d9e-dc88-2d5e-964c-73dc59a74e8b",
+        "067b81ea-092f-3b9a-d1dd-6fe029473b8f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dba7a42c-0906-4df7-a891-bb43fb5e5e9f",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_MadePassiveInsightCheck"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N108",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INSIGHT",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "2f65524d-fb6d-e1aa-c594-2f3f00a54b5b": {
+      "RollSuccess": false,
+      "UUID": "2f65524d-fb6d-e1aa-c594-2f3f00a54b5b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "709a4d14-1a9d-e454-8e91-a277872dad2b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N4",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "3030624c-e61d-c3a4-c47e-7ae95ba65274": {
+      "JumpTarget": "4af94c32-223e-a4b8-ae54-b206e0856f40",
+      "JumpTargetPoint": 2,
+      "UUID": "3030624c-e61d-c3a4-c47e-7ae95ba65274",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N122",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "30d79f38-8fc1-6bd0-1de5-6dc61406d947": {
+      "JumpTarget": "a65ff197-85f7-dd43-cb0f-75a13a1fdb5d",
+      "JumpTargetPoint": 1,
+      "UUID": "30d79f38-8fc1-6bd0-1de5-6dc61406d947",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N130",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "325f8055-f4e2-9c9a-142c-4cde6ba073ab": {
+      "UUID": "325f8055-f4e2-9c9a-142c-4cde6ba073ab",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02559dde-4560-4244-8d18-ccde95a19ade",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_GainedAccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9428f0d4-e066-48e8-af70-c533f05b30fa",
+              "Text": {
+                "Handle": "heea5aecag326cg46a1g9e4eg4ba1e498d456",
+                "Value": "Enter freely. You are welcome."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N86",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "GAINED ACCESS",
+        "position": "15;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "34e6b728-c17e-7527-ee1a-02566ce6d32f": {
+      "UUID": "34e6b728-c17e-7527-ee1a-02566ce6d32f",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "410d1bdc-1901-486e-33b6-f0fe41baccdc"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b5b48aa-ecba-4fe2-ab6f-0f326fa59fd2",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_HasMet_Guard001"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "109ed582-3803-4e0d-9e4a-7440e4fe02d0",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_GurCamp_State_GaveQuestToKillCazador"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b5b48aa-ecba-4fe2-ab6f-0f326fa59fd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_HasMet_Guard001"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "01e9e6bb-61c4-4702-a280-8dfa60c265a8",
+              "Text": {
+                "Handle": "h29c610d1g9843g439eg9994g2f72b38ca543",
+                "Value": "You are intruding in the palace of Cazador Szarr. Leave now, citizen."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N89",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NO CAZADOR QUEST",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    },
+    "37558f90-cd1f-7a8a-fcbb-6564ba1801f3": {
+      "UUID": "37558f90-cd1f-7a8a-fcbb-6564ba1801f3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c5ce6b39-877c-399b-b055-9443af6481a7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9c372448-e792-4c00-92c7-eb9c8250e2ae",
+              "Text": {
+                "Handle": "h71356006g0dbdg4effga50ag125590520b87",
+                "Value": "The master needs no 'inspections'. The master sees all."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "3c34829c-373b-0a15-ba17-61b0188fa474": {
+      "UUID": "3c34829c-373b-0a15-ba17-61b0188fa474",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02559dde-4560-4244-8d18-ccde95a19ade",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_GainedAccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "5830acc8-8aaf-3148-e0d2-0c079705964f",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_CazadorsPalace_GuardTower_Guard_001_State_Intimidated"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7e4023f8-88df-41e0-b61e-fc175a42e9c3",
+              "Text": {
+                "Handle": "hf33bb0f7ged8fg4d97g9ccbg184e578c39c3",
+                "Value": "*She doesn't say a word. In fact, she barely seems there at all.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N40",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "GAINED ACCESS - Intimidated",
+        "position": "15;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "410d1bdc-1901-486e-33b6-f0fe41baccdc": {
+      "JumpTarget": "8e2460f5-c6dd-c7b5-8972-a9fa25ffe1d8",
+      "JumpTargetPoint": 2,
+      "UUID": "410d1bdc-1901-486e-33b6-f0fe41baccdc",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N90",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "414dcebe-5dd7-f373-452b-0006735e7c22": {
+      "UUID": "414dcebe-5dd7-f373-452b-0006735e7c22",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c7e929d4-fb8e-4493-b2bb-daa477db1daf",
+              "Text": {
+                "Handle": "h46b67831gc45bg4186g824agf0dbf9149b09",
+                "Value": "You will be brought to the master. You will answer for your blasphemy."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N101",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "4259bce2-b1a4-1059-ad5c-e4866634ef80": {
+      "UUID": "4259bce2-b1a4-1059-ad5c-e4866634ef80",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c5ce6b39-877c-399b-b055-9443af6481a7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "91fa9707-249d-48b7-9332-435406050918",
+              "Text": {
+                "Handle": "h5c2f3de1gd839g47e2gbc7cg871c6ab6f6ad",
+                "Value": "The master did not mention you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N128",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "42fe03ee-5e67-d051-c33c-7a2a85233ab3": {
+      "UUID": "42fe03ee-5e67-d051-c33c-7a2a85233ab3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "0b5100a6-6dc8-60c7-a52c-eb49eab966e1",
+        "e11b8823-317a-241d-cc57-cf9a78852c76",
+        "855f6125-a5ee-6ebd-e41d-0fdd69c43ae2",
+        "f2301c00-9634-e7da-79d0-efa325a4e12c",
+        "2250a7f6-4c27-4fcc-9a60-043f3baea116",
+        "8afa6dce-1414-8f0d-773a-fe0f1edb241b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c59d126f-b3ce-4e00-8449-b0ad589a8ad8",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_Knows_Charmed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "eaf951a6-b8e3-4e8f-ba14-34c4a44a49d7",
+              "Text": {
+                "Handle": "h1ba87ff0g8f3cg4ddbg9c76g6cc26409b671",
+                "Value": "*The guard's words are clear, but spoken without thought or intent. Behind her eyes you see - nothing. She's a drone under some magical charm.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N111",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;891",
+        "sourcetemplate": ""
+      }
+    },
+    "45a8bafd-d39a-5bef-c935-67355b90277a": {
+      "RollSuccess": false,
+      "UUID": "45a8bafd-d39a-5bef-c935-67355b90277a",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4259bce2-b1a4-1059-ad5c-e4866634ef80"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N127",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "47cc8fbe-4414-66b3-37c3-2450e8124e29": {
+      "RollSuccess": true,
+      "UUID": "47cc8fbe-4414-66b3-37c3-2450e8124e29",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "75480c1b-dc77-cd6d-ac98-ebca4b2ae4a5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;891",
+        "sourcetemplate": ""
+      }
+    },
+    "4aaab864-fd3c-c789-4457-c2ee6f6e73d5": {
+      "UUID": "4aaab864-fd3c-c789-4457-c2ee6f6e73d5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "025bca07-65ae-bc30-874d-6a6dbc66baad"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "851b6859-aa88-4179-a8dc-223d0fd49bbd",
+              "Text": {
+                "Handle": "he6cd2f0fgce6eg448ag87fbgb2b523bc98ad",
+                "Value": "I'll hurry up."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N93",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "4af94c32-223e-a4b8-ae54-b206e0856f40": {
+      "UUID": "4af94c32-223e-a4b8-ae54-b206e0856f40",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ca9006cb-06a4-3768-b4bd-cb53d20e30b7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N121",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGICAL",
+        "position": "335;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "504bebb4-cd21-21f3-efd2-e87ce61104d1": {
+      "UUID": "504bebb4-cd21-21f3-efd2-e87ce61104d1",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b15fb197-0243-94ac-26ba-caca1462c8b9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ab2209f6-f110-4d3f-8a50-6b50b74c213e",
+              "Text": {
+                "Handle": "h2fc3a2e0gaf36g452cgb31eg322354c4bd0c",
+                "Value": "You'll be free of 'the master' soon. I'll see to that."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N100",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "59fc08b4-fde7-80e9-9ac0-939e9de98d84": {
+      "UUID": "59fc08b4-fde7-80e9-9ac0-939e9de98d84",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f5ed63fe-a5f0-28bc-4cb6-209a623653a4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6409e62f-fe93-48b6-83cb-6aa10e43632f",
+              "Text": {
+                "Handle": "hc45e240dgd77dg4816g87ecg582169617a6e",
+                "Value": "<i>Attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N94",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "6bd540a3-eb48-e8d7-dc4d-09caabfab080": {
+      "UUID": "6bd540a3-eb48-e8d7-dc4d-09caabfab080",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "cfda3efd-fd9a-552c-b34f-43c09e2adc64",
+        "4aaab864-fd3c-c789-4457-c2ee6f6e73d5",
+        "504bebb4-cd21-21f3-efd2-e87ce61104d1",
+        "59fc08b4-fde7-80e9-9ac0-939e9de98d84"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "149d255c-c923-4614-a44b-73f557b32f81",
+              "Text": {
+                "Handle": "h546c2bd9g0527g49begb541g79e74f4d469e",
+                "Value": "Hurry, the palace is being sealed. You must not be late. You must not anger the master."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N44",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "709a4d14-1a9d-e454-8e91-a277872dad2b": {
+      "UUID": "709a4d14-1a9d-e454-8e91-a277872dad2b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b6b82136-85e4-5b30-a58f-eab499f564c1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7e864be9-b67e-4952-82ee-27df5127c8f3",
+              "Text": {
+                "Handle": "he7bf454dg4cf6g4f2fgaee4g4f18cb06517e",
+                "Value": "My life belongs to the master. I live and die in his service."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "75480c1b-dc77-cd6d-ac98-ebca4b2ae4a5": {
+      "UUID": "75480c1b-dc77-cd6d-ac98-ebca4b2ae4a5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02559dde-4560-4244-8d18-ccde95a19ade",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_GainedAccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "5830acc8-8aaf-3148-e0d2-0c079705964f",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_CazadorsPalace_GuardTower_Guard_001_State_Intimidated"
+            },
+            {
+              "UUID": "e8e26cd0-5d12-482f-b7cd-d6b2b9f8f482",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_Event_GiveKey"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "682b64ee-c6f2-4de8-9a7d-21865d4c1405",
+              "Text": {
+                "Handle": "h085e8570g384bg4ab6gb262g2a85ed18ccab",
+                "Value": "*She pauses for a moment, but keeps her mouth shut. It seems you're free to enter.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;891",
+        "sourcetemplate": ""
+      }
+    },
+    "7f2d237b-4bba-0252-f973-018280467811": {
+      "UUID": "7f2d237b-4bba-0252-f973-018280467811",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02559dde-4560-4244-8d18-ccde95a19ade",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_GainedAccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "e8e26cd0-5d12-482f-b7cd-d6b2b9f8f482",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_Event_GiveKey"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b89631e7-aefb-4e7b-b97d-01324db90dda",
+              "Text": {
+                "Handle": "h97f01763g33d6g4edag8d22gb3ce61b0511c",
+                "Value": "It is the Ascension - the master expects all his children to attend. You must not be late."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N96",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "855f6125-a5ee-6ebd-e41d-0fdd69c43ae2": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "855f6125-a5ee-6ebd-e41d-0fdd69c43ae2",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "928e4f28-0468-fa8b-e8a7-4e579dfbf478",
+        "45a8bafd-d39a-5bef-c935-67355b90277a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5521edfc-743e-4ae2-acb6-d9bb4b08084a",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_TriedToConvince"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f8a0608b-666c-4be6-a49c-03b369c10bd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "ROGUE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5521edfc-743e-4ae2-acb6-d9bb4b08084a",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_TriedToConvince"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "446b3971-5cc7-4d1d-8ea7-f19edfda0a31",
+              "Text": {
+                "Handle": "h36921246gc2deg4e8fgb889gd81fd5883631",
+                "Value": "Cazador hired me for a job - it's very hush, hush.<i> </i>If you don't let me in, he's going to be most upset."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N125",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "rogue",
+        "position": "1615;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "875064b5-5932-3f37-a514-a82229842682": {
+      "UUID": "875064b5-5932-3f37-a514-a82229842682",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b4ffd011-fd0f-9867-684a-2841544611d8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b5b48aa-ecba-4fe2-ab6f-0f326fa59fd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_HasMet_Guard001"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d7e9907a-f144-4787-9007-0f3f8633beda",
+              "Text": {
+                "Handle": "h1141d5ccgf6f0g49a5g9b29g7d85bfe4b8ac",
+                "Value": "You cannot be here - it is forbidden."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "8a171e9c-2562-f5b8-265c-5ba194437678": {
+      "JumpTarget": "8e2460f5-c6dd-c7b5-8972-a9fa25ffe1d8",
+      "JumpTargetPoint": 2,
+      "UUID": "8a171e9c-2562-f5b8-265c-5ba194437678",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N22",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "8afa6dce-1414-8f0d-773a-fe0f1edb241b": {
+      "UUID": "8afa6dce-1414-8f0d-773a-fe0f1edb241b",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "13ec14ed-2baa-32c2-8945-bda5c463b1f7",
+              "value": true,
+              "paramval": 1,
+              "Name": "TeleportOutOfTrespass"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a3ae38b5-9b81-4528-afa6-2bff1bef895e",
+              "Text": {
+                "Handle": "hceb84df3g28efg4b23g8b93gb50071f242d2",
+                "Value": "All right, I'll go."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1615;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "8e2460f5-c6dd-c7b5-8972-a9fa25ffe1d8": {
+      "UUID": "8e2460f5-c6dd-c7b5-8972-a9fa25ffe1d8",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "13139264-46ca-25b3-448e-c11ebe497c5a",
+        "ccf83a5b-28be-dff7-6ced-74caabfe734e",
+        "4af94c32-223e-a4b8-ae54-b206e0856f40"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b5b48aa-ecba-4fe2-ab6f-0f326fa59fd2",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_HasMet_Guard001"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b5b48aa-ecba-4fe2-ab6f-0f326fa59fd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_HasMet_Guard001"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ac15b31f-994f-47d0-8cfa-063b545a58dd",
+              "Text": {
+                "Handle": "hf1d83d05gf149g4c1eg925dgf2bad6ef01fb",
+                "Value": "This is the palace of Cazador Szarr. Entry is forbidden. Leave now, citizen."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HAS CAZADOR QUEST",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    },
+    "928e4f28-0468-fa8b-e8a7-4e579dfbf478": {
+      "RollSuccess": true,
+      "UUID": "928e4f28-0468-fa8b-e8a7-4e579dfbf478",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "30d79f38-8fc1-6bd0-1de5-6dc61406d947"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N126",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "936db381-c546-7812-e205-6c3c0f9c4c10": {
+      "JumpTarget": "42fe03ee-5e67-d051-c33c-7a2a85233ab3",
+      "JumpTargetPoint": 2,
+      "UUID": "936db381-c546-7812-e205-6c3c0f9c4c10",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N123",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "a65ff197-85f7-dd43-cb0f-75a13a1fdb5d": {
+      "UUID": "a65ff197-85f7-dd43-cb0f-75a13a1fdb5d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c2b3eaf1-9034-27c6-3f2b-a475fabe1513"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7184112c-781c-4479-8d92-8c68996c40e3",
+              "Text": {
+                "Handle": "hb10433b2gc1c8g44afga63dga15bccedb47a",
+                "Value": "Of course, whatever the master desires."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N41",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "b15fb197-0243-94ac-26ba-caca1462c8b9": {
+      "UUID": "b15fb197-0243-94ac-26ba-caca1462c8b9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "414dcebe-5dd7-f373-452b-0006735e7c22"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "599278c4-4b9e-44bc-9c7c-78ce44c46348",
+              "Text": {
+                "Handle": "h2966acc3gc574g46caga922g39cb4c6d5143",
+                "Value": "Free of the master? But the master is freedom. The master is everything."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N102",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "emphasis on 'is' in 'is freedom'",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "b4ffd011-fd0f-9867-684a-2841544611d8": {
+      "UUID": "b4ffd011-fd0f-9867-684a-2841544611d8",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "8a171e9c-2562-f5b8-265c-5ba194437678"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ed1abf8c-0e53-46d0-9187-8d6e73483f10",
+              "Text": {
+                "Handle": "hf458e32fgf649g4a65g997ag8e4d283cc7ee",
+                "Value": "<i>Leave</i>, citizen."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N32",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "b5d88109-9d88-8709-b533-88c99deab32b": {
+      "UUID": "b5d88109-9d88-8709-b533-88c99deab32b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "6bd540a3-eb48-e8d7-dc4d-09caabfab080"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b5b48aa-ecba-4fe2-ab6f-0f326fa59fd2",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_HasMet_Guard001"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "23a46e79-e73c-4043-940f-cb0aace9ab2e",
+              "value": true,
+              "paramval": 1,
+              "Name": "ASTARION"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b5b48aa-ecba-4fe2-ab6f-0f326fa59fd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_HasMet_Guard001"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7b25cdc-87e0-49a3-b0bd-91e721698cbb",
+              "Text": {
+                "Handle": "h4cde0d0dg2acdg459eg8a76gadd5d7fc8767",
+                "Value": "Master Astarion? But the time is almost here - you should be at the ritual."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "b6b82136-85e4-5b30-a58f-eab499f564c1": {
+      "JumpTarget": "c5ce6b39-877c-399b-b055-9443af6481a7",
+      "JumpTargetPoint": 1,
+      "UUID": "b6b82136-85e4-5b30-a58f-eab499f564c1",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N43",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "c2b3eaf1-9034-27c6-3f2b-a475fabe1513": {
+      "UUID": "c2b3eaf1-9034-27c6-3f2b-a475fabe1513",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02559dde-4560-4244-8d18-ccde95a19ade",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_GainedAccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "e8e26cd0-5d12-482f-b7cd-d6b2b9f8f482",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_Event_GiveKey"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a290fa29-75d4-42a3-9104-9ca9fadd964e",
+              "Text": {
+                "Handle": "h3bf35de9gd8a4g44d0g8947gb4fd202bc9e9",
+                "Value": "Enter freely and of your own will."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "c5ce6b39-877c-399b-b055-9443af6481a7": {
+      "UUID": "c5ce6b39-877c-399b-b055-9443af6481a7",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "11c26083-abfe-4048-a9ed-9ffc9df8b785",
+              "Text": {
+                "Handle": "h15f2d3c2g4a4eg44b3g84bfgf6b18c42c9ed",
+                "Value": "This place is forbidden. Leave."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Stressing the last word as a threat",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "ca9006cb-06a4-3768-b4bd-cb53d20e30b7": {
+      "JumpTarget": "42fe03ee-5e67-d051-c33c-7a2a85233ab3",
+      "JumpTargetPoint": 2,
+      "UUID": "ca9006cb-06a4-3768-b4bd-cb53d20e30b7",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N124",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "ccf83a5b-28be-dff7-6ced-74caabfe734e": {
+      "UUID": "ccf83a5b-28be-dff7-6ced-74caabfe734e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3030624c-e61d-c3a4-c47e-7ae95ba65274"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "afff495c-0910-4b2b-806f-8d2d90e91217",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_AstarionMentionedCharm"
+            },
+            {
+              "UUID": "c59d126f-b3ce-4e00-8449-b0ad589a8ad8",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_Knows_Charmed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c59d126f-b3ce-4e00-8449-b0ad589a8ad8",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_Knows_Charmed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ae27fbd0-f933-47ff-829d-cd9a39233bfb",
+              "Text": {
+                "Handle": "h63d8f0adg5659g4f4egb956ga10bb6629f2b",
+                "Value": "*The guard's words are clear, but spoken without thought or intent. Behind her eyes you see - nothing. She must be one of the charmed thralls Astarion mentioned.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N113",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ASTARION TOLD CHARM",
+        "position": "335;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "cfda3efd-fd9a-552c-b34f-43c09e2adc64": {
+      "UUID": "cfda3efd-fd9a-552c-b34f-43c09e2adc64",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7f2d237b-4bba-0252-f973-018280467811"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d1dc0f8a-b77d-4e40-a501-a66e163b8376",
+              "value": false,
+              "paramval": null,
+              "Name": "ORI_Astarion_Knows_RitualsPurpose"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "64d92adb-6bf5-4f4d-9580-b9f9be6dd7c1",
+              "Text": {
+                "Handle": "h401048e1g522fg4d5cgb87bg7d3a98a26c48",
+                "Value": "What ritual are you talking about?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N92",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DOESN'T KNOW RITUAL",
+        "position": "655;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "d1755cc0-34a8-29a6-48f9-56e2cb2d030d": {
+      "UUID": "d1755cc0-34a8-29a6-48f9-56e2cb2d030d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a11ae8a9-e6f9-4a4a-90a7-49a9c44e4c47",
+              "Text": {
+                "Handle": "hbd063d32g9bf0g41aag9c26g9deabf9c65eb",
+                "Value": "Blasphemy against the master! Blasphemy!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N98",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "d4c19b0e-3e35-5706-0677-5259ce7e79b7": {
+      "UUID": "d4c19b0e-3e35-5706-0677-5259ce7e79b7",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02559dde-4560-4244-8d18-ccde95a19ade",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_GainedAccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "23a46e79-e73c-4043-940f-cb0aace9ab2e",
+              "value": true,
+              "paramval": 1,
+              "Name": "ASTARION"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f8f77bc8-6b54-4c15-9060-9ecec297ff1d",
+              "Text": {
+                "Handle": "hb3708db5g4485g465fg958dge53c1b4f5515",
+                "Value": "Our master awaits. Go!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "GAINED ACCESS - ASTARION",
+        "position": "15;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "dac4e9ac-2ff0-fd2f-5ef9-f0103494dda7": {
+      "UUID": "dac4e9ac-2ff0-fd2f-5ef9-f0103494dda7",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0546ff10-a387-4aeb-bd8c-c98f07f4e3d7",
+              "Text": {
+                "Handle": "he367d6deg794dg46c7gb48cg71131234460b",
+                "Value": "Protect the palace! Protect the master's sanctuary!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N106",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "e07385b4-0746-7d0e-a930-2a844ab42139": {
+      "RollSuccess": false,
+      "UUID": "e07385b4-0746-7d0e-a930-2a844ab42139",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "37558f90-cd1f-7a8a-fcbb-6564ba1801f3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N7",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "e11b8823-317a-241d-cc57-cf9a78852c76": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "e11b8823-317a-241d-cc57-cf9a78852c76",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "266ca42c-a047-85dc-2e86-ffe945f0a201",
+        "e07385b4-0746-7d0e-a930-2a844ab42139"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5521edfc-743e-4ae2-acb6-d9bb4b08084a",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_TriedToConvince"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f8a0608b-666c-4be6-a49c-03b369c10bd2",
+              "value": false,
+              "paramval": 1,
+              "Name": "ROGUE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5521edfc-743e-4ae2-acb6-d9bb4b08084a",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_CazadorsPalace_GuardTower_State_TriedToConvince"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1c6baffa-f94d-4e4c-b097-ddfbb8c02cc5",
+              "Text": {
+                "Handle": "hc753ca8cgffc8g45e7g8f71gd2296f307a58",
+                "Value": "I am inspecting the security, on your master's orders."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "non-rogue",
+        "position": "1615;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "f2301c00-9634-e7da-79d0-efa325a4e12c": {
+      "UUID": "f2301c00-9634-e7da-79d0-efa325a4e12c",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d1755cc0-34a8-29a6-48f9-56e2cb2d030d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "109ed582-3803-4e0d-9e4a-7440e4fe02d0",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_GurCamp_State_GaveQuestToKillCazador"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4d3a8843-7f11-4e9b-b159-3c1d87c8cc42",
+              "Text": {
+                "Handle": "h925d818ag5977g476bg8adbg9792a1f47fe9",
+                "Value": "I'm here to kill Cazador Szarr."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1615;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "f5ed63fe-a5f0-28bc-4cb6-209a623653a4": {
+      "JumpTarget": "dac4e9ac-2ff0-fd2f-5ef9-f0103494dda7",
+      "JumpTargetPoint": 1,
+      "UUID": "f5ed63fe-a5f0-28bc-4cb6-209a623653a4",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N107",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e3bf6c80-9bb0-4e1f-a1b5-362bc4ed80b3",
+      "Index": 0,
+      "List": [
+        "e0f6ebdc-e19a-4ae4-a487-f192b9edcfac"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Merony",
+        "Type": "character",
+        "MapKey": "e0f6ebdc-e19a-4ae4-a487-f192b9edcfac",
+        "Name": "S_LOW_CazadorsPalace_GuardTower_Guard_001",
+        "ParentTemplateId": null,
+        "TemplateName": "1ad176b6-d4df-49b9-b487-c0751c39e55e"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "947fac84-4c70-4e48-bf32-d9c8b2cad4c9",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Main guard's dialog in Guard Tower in Cazador's Palace.\r\nTriggered automatically when you enter the tower, but also can be triggered by clicking on the guard. \r\nGuard is a female dwarf mesmerised to do the bidding of a powerful vampire. She speaks in a slightly dreamy tone."
+}

@@ -1,0 +1,889 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Plains/PLA_TavernInvestigation_DesireDoor.lsj",
+  "UUID": "b5af6c55-8696-e708-bb74-825ac7725b8a",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "a5103744-dd75-d518-2b1d-5b35014f6c40"
+  ],
+  "Nodes": {
+    "04d9fc40-7cfb-d2f1-6e04-59be27b7a1bb": {
+      "JumpTarget": "0de06fac-af7d-cac8-f7e2-5281f13d011d",
+      "JumpTargetPoint": 1,
+      "UUID": "04d9fc40-7cfb-d2f1-6e04-59be27b7a1bb",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N38",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "0de06fac-af7d-cac8-f7e2-5281f13d011d": {
+      "UUID": "0de06fac-af7d-cac8-f7e2-5281f13d011d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "fddc83b7-d324-e256-addf-970ba0d9399a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2d1a3366-4600-d042-1488-9735c79a3756",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_Desire_Quest_TriedForceDoor"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "6e4af16c-bd4e-ae09-3c67-82c3da549fda",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_Desire_Quest_BreakDoor"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f4fed82b-13e0-9738-7a6e-b84f3e096b5a",
+              "Text": {
+                "Handle": "h4ade00ebge8a7g432ag92b9g145a66e942d0",
+                "Value": "*The door gives way with a loud crack.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The door gives way and lets out a crack",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "Loud crack from door being broken open",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "2e4bb550-d43b-47c2-33f7-161b4f05b66b": {
+      "UUID": "2e4bb550-d43b-47c2-33f7-161b4f05b66b",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2d1a3366-4600-d042-1488-9735c79a3756",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_Desire_Quest_TriedForceDoor"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fadcc6d7-3f10-1684-e077-e070bef0a13f",
+              "Text": {
+                "Handle": "h28d483dcgc9a6g4693g8c25g7dadeaebc538",
+                "Value": "*The door remains intact, despite your efforts.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "Solid bang from hitting door but not opening",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;672",
+        "sourcetemplate": ""
+      }
+    },
+    "4c7e8458-3b5c-c4ce-9100-36ec20ac45c3": {
+      "RollSuccess": true,
+      "UUID": "4c7e8458-3b5c-c4ce-9100-36ec20ac45c3",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0de06fac-af7d-cac8-f7e2-5281f13d011d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N6",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "91de0793-4b4b-90f2-d7ad-0519e9b9d301": {
+      "UUID": "91de0793-4b4b-90f2-d7ad-0519e9b9d301",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "94d1cc43-f934-7e04-c8fa-aacfbbcd0aba",
+              "Text": {
+                "Handle": "h6c4355adg0d83g42bfg8c07g92e5247fa3ce",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "9d95a3e7-1e67-3211-05e2-003bb500196d": {
+      "UUID": "9d95a3e7-1e67-3211-05e2-003bb500196d",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "eb73a54c-0856-92d8-e386-d395f2174e30"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6f4311c6-492a-65c9-db3c-5fffee313050",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_Desire_Quest_LockedDoorKey"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aa767947-c6f0-b7e3-7d2a-3f7614fc1856",
+              "Text": {
+                "Handle": "h420cbdf1g632dg4508ga1d9g8b19dc8bdeef",
+                "Value": "I can't, it's locked."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a5103744-dd75-d518-2b1d-5b35014f6c40": {
+      "UUID": "a5103744-dd75-d518-2b1d-5b35014f6c40",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9d95a3e7-1e67-3211-05e2-003bb500196d",
+        "dd9b59c5-f09d-f59e-a5c8-c97479207911",
+        "bcae62a5-7b5e-84f0-9c98-81efccce2cb5",
+        "eca03641-6457-bcd6-c38e-dc3d2a95218f",
+        "91de0793-4b4b-90f2-d7ad-0519e9b9d301"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3e204650-4ad0-4034-9acc-4db633b7ce49",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_GrandDukeRescue.FoundCounsellor"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1aae67e7-7cec-bec3-71c1-27b8329428f1",
+              "Text": {
+                "Handle": "heb7911d4g2ccbg47d6gb8adge9291f72e26f",
+                "Value": "I'm trapped! Someone, open this door!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "Banging on door",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "bcae62a5-7b5e-84f0-9c98-81efccce2cb5": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Strength",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "bcae62a5-7b5e-84f0-9c98-81efccce2cb5",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "4c7e8458-3b5c-c4ce-9100-36ec20ac45c3",
+        "cd7e726c-c3bb-e835-309d-c645c1aa1488"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2d1a3366-4600-d042-1488-9735c79a3756",
+              "value": false,
+              "paramval": 1,
+              "Name": "PLA_Desire_Quest_TriedForceDoor"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ed05973d-99dc-18d5-d8ff-1968b38dc867",
+              "Text": {
+                "Handle": "h64fabed3g15f9g4f70ga168g1b575fd64c33",
+                "Value": "<i>Try to force it open.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player strikes door with their fist, hoping to open it.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Active Roll",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "cd7e726c-c3bb-e835-309d-c645c1aa1488": {
+      "RollSuccess": false,
+      "UUID": "cd7e726c-c3bb-e835-309d-c645c1aa1488",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2e4bb550-d43b-47c2-33f7-161b4f05b66b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N7",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    },
+    "dd9b59c5-f09d-f59e-a5c8-c97479207911": {
+      "UUID": "dd9b59c5-f09d-f59e-a5c8-c97479207911",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e36e2302-14d1-0cb4-788b-11f6d921e011"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "694a4db1-1e02-858c-05d1-881adc9d0076",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_Desire_State_HasDesireKey"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3dd059aa-82a4-524d-c478-311ad14c3011",
+              "Text": {
+                "Handle": "h55d523b8g3144g41c7g89d9g0fb85b313f9a",
+                "Value": "<i>Unlock the door.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N26",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e36e2302-14d1-0cb4-788b-11f6d921e011": {
+      "UUID": "e36e2302-14d1-0cb4-788b-11f6d921e011",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "fddc83b7-d324-e256-addf-970ba0d9399a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "233986ed-f17a-f9a2-4ca5-918ce0488f3d",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_Desire_Quest_OpenDoor"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N40",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "eb73a54c-0856-92d8-e386-d395f2174e30": {
+      "UUID": "eb73a54c-0856-92d8-e386-d395f2174e30",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6f4311c6-492a-65c9-db3c-5fffee313050",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_Desire_Quest_LockedDoorKey"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22f00b9f-6376-22f8-08f8-9a333bd539c4",
+              "Text": {
+                "Handle": "h407473cbg420eg4a2dgb114gdfab63fd18b2",
+                "Value": "The key must be with the innkeep. Please - hurry!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "eca03641-6457-bcd6-c38e-dc3d2a95218f": {
+      "UUID": "eca03641-6457-bcd6-c38e-dc3d2a95218f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "04d9fc40-7cfb-d2f1-6e04-59be27b7a1bb"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": true,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d6e695bf-bce3-220d-47e9-f768668bf05b",
+              "Text": {
+                "Handle": "hd0cc4ed8gc730g490cgbdd0g91616f55283a",
+                "Value": "<i>Charge at the door.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player charges at the door.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N36",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "fddc83b7-d324-e256-addf-970ba0d9399a": {
+      "UUID": "fddc83b7-d324-e256-addf-970ba0d9399a",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8fef5755-969f-4986-2e6a-62686752e56f",
+              "Text": {
+                "Handle": "hf77d49b1g9a6ag4f36ga5e4g7bf08ead012e",
+                "Value": "Let's move. Quickly - before the whole place collapses!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "67dd7207-ad6f-a76c-acc9-ef4825c3d642",
+      "Index": 0,
+      "List": [
+        "8b9fa503-7205-4ddd-bdfa-bfaa781d9ea9"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Counsellor Florrick",
+        "Type": "character",
+        "MapKey": "8b9fa503-7205-4ddd-bdfa-bfaa781d9ea9",
+        "Name": "S_GLO_Desire",
+        "ParentTemplateId": null,
+        "TemplateName": "58f75d85-2b4c-4a66-a67d-adbd264cfe95"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "bb8b4bf1-0936-fc69-d963-ce3f623c70a1",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "You approach a door inside the burning building. Someone is trapped behind it."
+}

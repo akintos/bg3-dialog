@@ -1,0 +1,191 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shar/SHA_NightsongPrison_GatherYourParty.lsj",
+  "UUID": "d4e9df38-bca5-f31a-7f8a-fe558496e019",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "971fc1b9-3950-7e9c-9b2e-458ae22633b5",
+    "52e21e30-6846-40ff-bca5-b9ffc24e1175"
+  ],
+  "Nodes": {
+    "52e21e30-6846-40ff-bca5-b9ffc24e1175": {
+      "UUID": "52e21e30-6846-40ff-bca5-b9ffc24e1175",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "51388e61-179d-4aa0-9d1c-a1039a19ffc6",
+              "Text": {
+                "Handle": "h6cfbf808g3512g4b6fgb99ag1e898478135c",
+                "Value": "*You must gather your party before venturing forth.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "971fc1b9-3950-7e9c-9b2e-458ae22633b5": {
+      "UUID": "971fc1b9-3950-7e9c-9b2e-458ae22633b5",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bcb4d489-aa30-236c-5a85-77d2ec1f939d",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_NightsongPrison_State_AllPlayersAtEntrance"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9344260b-727a-6a3f-34da-fb28a1ba1116",
+              "value": true,
+              "paramval": 1,
+              "Name": "SHA_NightsongPrison_Event_StartReadyCheck"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2504df2b-a968-4ab4-ae48-a7fd8837e299",
+              "Text": {
+                "Handle": "h42e33be1gfc95g4ad6ga920g5ed485024080",
+                "Value": "*Your party is gathered. You are ready - or so you hope.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "520c063e-ae8e-4078-9726-d1ec5f0241b6",
+      "Index": 0,
+      "List": [
+        "1fc893ad-277f-4bb3-914c-9bdef4ff0385"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowfell Entrance",
+        "Type": "item",
+        "MapKey": "1fc893ad-277f-4bb3-914c-9bdef4ff0385",
+        "Name": "S_SHA_NightsongPrison_ShadowfellEntranceHelper",
+        "ParentTemplateId": null,
+        "TemplateName": "8b4b3076-0434-4c53-a457-a39da41c5c19"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "7ef76767-dd34-430b-ac7e-f726a77e0d58",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "When a player attempts to enter the Shadowfell they will be reminded that they need to have all their party members present.\r\n\r\nIf all their party are present a Ready Check will be started"
+}

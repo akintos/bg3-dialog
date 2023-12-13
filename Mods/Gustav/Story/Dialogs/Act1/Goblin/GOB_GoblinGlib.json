@@ -1,0 +1,476 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_GoblinGlib.lsj",
+  "UUID": "a10708b3-3eaf-a5b6-8898-d92c30dd87a5",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "a522f041-c037-771b-524e-6daac9b8e0dc",
+    "78763d59-89d7-53ae-d85c-e4c83291ac68",
+    "8a31daec-deb2-2df1-555e-8f8550be59c8",
+    "93a1b9c1-c3a7-f8f6-ddfa-c414548fad4b"
+  ],
+  "Nodes": {
+    "1e056080-b780-8be8-641b-5e7ff6817cf3": {
+      "UUID": "1e056080-b780-8be8-641b-5e7ff6817cf3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "78ecaeae-023b-cddf-6ad4-ac06ec05ca19",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Absolute_Knows_GoblinsWorship"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a0275bd4-26eb-46d3-9a09-160892fa7427",
+              "Text": {
+                "Handle": "h8869e525g6957g491bg9a8dg5da7e7acc675",
+                "Value": "Make sure whoever we're stickin' it to knows we're doin' it for the Absolute."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "proud",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "78763d59-89d7-53ae-d85c-e4c83291ac68": {
+      "UUID": "78763d59-89d7-53ae-d85c-e4c83291ac68",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1e056080-b780-8be8-641b-5e7ff6817cf3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "61f2d869-9c09-02e7-148b-e1fbf0a607d7",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_GoblinGlib_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "310f7186-bb0b-4905-b8f6-dfc2fe62570a",
+              "value": true,
+              "paramval": 1,
+              "Name": "BRANDED"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "61f2d869-9c09-02e7-148b-e1fbf0a607d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GoblinGlib_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f62a6592-ff0f-00aa-446d-0f413ad8a9ac",
+              "Text": {
+                "Handle": "h8a719077g2ec1g4bf6gbd83gbbf122afd829",
+                "Value": "Brand looks good on you. Priestess reckons we should all be marked up before the next raid.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N34",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "warm - sees us as allies",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "Player Branded",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Brand of the Absolute",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;15",
+        "sourcetemplate": ""
+      }
+    },
+    "8a31daec-deb2-2df1-555e-8f8550be59c8": {
+      "UUID": "8a31daec-deb2-2df1-555e-8f8550be59c8",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "61f2d869-9c09-02e7-148b-e1fbf0a607d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GoblinGlib_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "310f7186-bb0b-4905-b8f6-dfc2fe62570a",
+              "value": true,
+              "paramval": 1,
+              "Name": "BRANDED"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6dacd28b-b5e2-4424-7863-3878a6cec933",
+              "Text": {
+                "Handle": "hb9a1a9adgbc68g4cb9g96cag85d597bdac9e",
+                "Value": "Good to see you again."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Happiness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "warm",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "Player Branded",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Brand of the Absolute",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;234",
+        "sourcetemplate": ""
+      }
+    },
+    "93a1b9c1-c3a7-f8f6-ddfa-c414548fad4b": {
+      "UUID": "93a1b9c1-c3a7-f8f6-ddfa-c414548fad4b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "61f2d869-9c09-02e7-148b-e1fbf0a607d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GoblinGlib_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "310f7186-bb0b-4905-b8f6-dfc2fe62570a",
+              "value": false,
+              "paramval": 1,
+              "Name": "BRANDED"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "45871084-5da0-c461-5b18-3347e9618502",
+              "Text": {
+                "Handle": "he55d6af6g076cg4b13gba41g3b6a6df13d31",
+                "Value": "You still 'ere?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "dismissive",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;453",
+        "sourcetemplate": ""
+      }
+    },
+    "a522f041-c037-771b-524e-6daac9b8e0dc": {
+      "UUID": "a522f041-c037-771b-524e-6daac9b8e0dc",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1e056080-b780-8be8-641b-5e7ff6817cf3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "61f2d869-9c09-02e7-148b-e1fbf0a607d7",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_GoblinGlib_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "310f7186-bb0b-4905-b8f6-dfc2fe62570a",
+              "value": false,
+              "paramval": 1,
+              "Name": "BRANDED"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "61f2d869-9c09-02e7-148b-e1fbf0a607d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GoblinGlib_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0b1bc312-59e1-5277-700a-13fd981a761a",
+              "Text": {
+                "Handle": "h57966be6g3544g44feg89dcg16622aa56884",
+                "Value": "You 'ere to get branded too? Priestess reckons we should be marked up before the next raid."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "curious",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "0524cdd8-e513-8f96-8ce6-c17e9f5229d1",
+      "Index": 0,
+      "List": [
+        "f63f921c-ae35-4574-9a70-30aee55fdb26"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Devout Mrak",
+        "Type": "character",
+        "MapKey": "f63f921c-ae35-4574-9a70-30aee55fdb26",
+        "Name": "S_GOB_GoblinGlib",
+        "ParentTemplateId": null,
+        "TemplateName": "19aafe06-624c-4dd4-9480-60a359fb9c50"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "80316a6f-3e21-e094-9e2c-3920822b4730",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Goblin is recently converted to new religion and eager to head out on a raid."
+}

@@ -1,0 +1,695 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_DruidLair_FrescoAlliance.lsj",
+  "UUID": "62b59036-89d1-a245-26cc-b3d5b024c3f5",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "99475990-8620-de28-4a56-cdfa97708a85",
+    "cd0eeb73-5c38-b65c-1c42-3aa237966484",
+    "18675c09-10f1-afcd-5453-96e4872921e2"
+  ],
+  "Nodes": {
+    "15296dfb-f664-3c2f-5927-8caf72a714f7": {
+      "UUID": "15296dfb-f664-3c2f-5927-8caf72a714f7",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "365eb5fe-5133-4df4-f33d-d330bce62ad9",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidLair_Knows_DruidsAlliance"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "46463dc0-461b-3ba0-c60e-aeda218f3b59",
+              "Text": {
+                "Handle": "hb10b3e00g90f9g4a00g9234g71bb590da728",
+                "Value": "*'Harp and wild'? You recall stories of an alliance between druids and the Harpers, but the details are vague.* "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "18675c09-10f1-afcd-5453-96e4872921e2": {
+      "UUID": "18675c09-10f1-afcd-5453-96e4872921e2",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "6604d12d-2765-b3ec-cc4b-3e94e7e9fafd",
+        "5b252014-51bd-e7d8-cf45-d96ae6584fd4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0bd19322-5a7b-4cab-3a51-8fe1c6e543fd",
+              "Text": {
+                "Handle": "h8ef70254g680ag4c32gb171ga30f11252cd2",
+                "Value": "<br><i>*'In darkest hour, a concord made,<br>'Twixt harp and wild against the shade.'*</i><br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N96",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "5b252014-51bd-e7d8-cf45-d96ae6584fd4": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "8d398021-34e0-40b9-b7b2-0445f38a4c0b",
+      "DifficultyClassValue": 5,
+      "UUID": "5b252014-51bd-e7d8-cf45-d96ae6584fd4",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a189b69d-4fe5-e30a-8d3c-e6e4aafd741c",
+        "edf0da3c-db4e-615b-1b57-15775e5abf02"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Passive Roll",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "6604d12d-2765-b3ec-cc4b-3e94e7e9fafd": {
+      "UUID": "6604d12d-2765-b3ec-cc4b-3e94e7e9fafd",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "af64a592-688d-fd2c-179f-940a0ed05e63"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d93434bd-6b71-4789-b128-ee24156057cc",
+              "value": true,
+              "paramval": 1,
+              "Name": "BARD"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "08d269ee-f063-44db-d2d4-285371382919",
+              "Text": {
+                "Handle": "h51f8936dgaafdg4102g914ag9e59906e1713",
+                "Value": "*'Harp and wild'? A riddle to some, but you understand the meaning immediately.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N78",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "99475990-8620-de28-4a56-cdfa97708a85": {
+      "UUID": "99475990-8620-de28-4a56-cdfa97708a85",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "cdfdc108-831a-a637-f14a-e020391e2147"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "365eb5fe-5133-4df4-f33d-d330bce62ad9",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidLair_Knows_DruidsAlliance"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "18ee4966-6d87-53a7-f4ca-c00fd1544d4f",
+              "Text": {
+                "Handle": "h2ce62fc7g771eg46afga9e4g14befccc5ee8",
+                "Value": "<br><i>*'In darkest hour, a concord made,<br>'Twixt harp and wild against the shade.'*</i><br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Team succeeded the check",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "a05c7005-7329-c299-d8ac-b2fe95039805": {
+      "UUID": "a05c7005-7329-c299-d8ac-b2fe95039805",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "61b51a1c-76e4-5343-7169-e6b934eb3917",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidLair_State_FailedAllianceFresco"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cbe258e2-2f2f-7f6a-fe2a-e688d0e5dc28",
+              "Text": {
+                "Handle": "h2ace9863gc1f0g4cc0g94bag67dfaa026a6a",
+                "Value": "*Local history, written in riddles.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "a189b69d-4fe5-e30a-8d3c-e6e4aafd741c": {
+      "RollSuccess": true,
+      "UUID": "a189b69d-4fe5-e30a-8d3c-e6e4aafd741c",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "15296dfb-f664-3c2f-5927-8caf72a714f7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N4",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "af64a592-688d-fd2c-179f-940a0ed05e63": {
+      "UUID": "af64a592-688d-fd2c-179f-940a0ed05e63",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "365eb5fe-5133-4df4-f33d-d330bce62ad9",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidLair_Knows_DruidsAlliance"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6e1ddc5d-8288-71ff-5640-5f386094ca66",
+              "Text": {
+                "Handle": "hab2e0e89gbaddg4bcfg8eacgaaa5c2ff8e11",
+                "Value": "*The druids turned to the Harpers for help. Unusual for such a territorial group.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N80",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "cd0eeb73-5c38-b65c-1c42-3aa237966484": {
+      "UUID": "cd0eeb73-5c38-b65c-1c42-3aa237966484",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "61b51a1c-76e4-5343-7169-e6b934eb3917",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidLair_State_FailedAllianceFresco"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "33b21a5b-30dd-9a96-e8e2-5c625a5a54a1",
+              "Text": {
+                "Handle": "h04fb4f9egc5e8g4129gbeaag564f7025118c",
+                "Value": "<br><i>*'In darkest hour, a concord made,<br>'Twixt harp and wild against the shade.'*</i><br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "failed check",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "cdfdc108-831a-a637-f14a-e020391e2147": {
+      "UUID": "cdfdc108-831a-a637-f14a-e020391e2147",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "19beccc8-fc5e-2771-6ee0-2f46f774e2ca",
+              "Text": {
+                "Handle": "h5c5bf4b7gbdbbg41e0g8549g4b32b2ec1f7c",
+                "Value": "*You surmise that the druids allied with the Harpers. A formidable force.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N56",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "edf0da3c-db4e-615b-1b57-15775e5abf02": {
+      "RollSuccess": false,
+      "UUID": "edf0da3c-db4e-615b-1b57-15775e5abf02",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a05c7005-7329-c299-d8ac-b2fe95039805"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d524f956-f74e-a995-cfd1-5bd4e9b6f3a0",
+      "Index": 0,
+      "List": [
+        "5620d87b-f41f-45ec-847a-6c382950070d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "'Union' Plaque",
+        "Type": "item",
+        "MapKey": "5620d87b-f41f-45ec-847a-6c382950070d",
+        "Name": "S_DEN_PlaqueAlliance",
+        "ParentTemplateId": null,
+        "TemplateName": "a5e3f06f-0467-44c5-974e-2d4b24aa26ec"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "06b4caeb-6ae6-b374-508e-9a6f8e75e687",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "In a well-lit cave. Player looks at a fresco depicting two sides agreeing an alliance. Pass a test to realise that one side are the druids of the wild, and the other the Harpers - a secret organisation."
+}

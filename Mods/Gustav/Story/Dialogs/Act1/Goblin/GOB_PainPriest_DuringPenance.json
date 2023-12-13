@@ -1,0 +1,733 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_PainPriest_DuringPenance.lsj",
+  "UUID": "aa5f6c36-fcb2-bc3c-4bdc-e36a2513cd11",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 1,
+    "1": 0
+  },
+  "RootNodes": [
+    "0aa4c5b3-2e8b-fc67-6f62-c7882e4fb409",
+    "c5887b98-2ac6-bf8d-a652-85722e79a272",
+    "7e36334f-6e04-db09-2c78-0a15be183bfc"
+  ],
+  "Nodes": {
+    "0aa4c5b3-2e8b-fc67-6f62-c7882e4fb409": {
+      "UUID": "0aa4c5b3-2e8b-fc67-6f62-c7882e4fb409",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e71e269f-8f41-3e82-ba3a-dfc9c1055959",
+        "2441c017-9398-e720-4c50-ea5b0612c31c",
+        "b545110d-2120-55ca-4d0f-1d7205eaa6fb",
+        "ec60ab71-fa25-09a2-8227-ea1e3dfc2f83"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5e6ff7d1-7018-4938-8030-20ec00b3ce64",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_PainPriest_State_Penitent"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f823562a-138d-09b2-c2fd-6e7f62f25e22",
+              "Text": {
+                "Handle": "h2bf8e505geaddg4631g8c81gd1e1645ebb90",
+                "Value": "Come now, dear child. It is time to repent. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N80",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Penance was interrupted. Player has returned to speak to Abdirak. Voice low and inviting as he wishes to continue the beating. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "player is the penitent",
+        "position": "-2545;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "2441c017-9398-e720-4c50-ea5b0612c31c": {
+      "UUID": "2441c017-9398-e720-4c50-ea5b0612c31c",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b2ac3062-e9d7-8ca1-ad19-564c41928701"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cdcd32a0-b0b6-e3bf-5d82-2674a67b0c3b",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_PainPriest_Event_FirstHitDone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "da5a0931-e591-94d4-8f26-e567a4e36071",
+              "Text": {
+                "Handle": "h8b6fbd4cgbcddg488bg95f5gfa2ad835b7d5",
+                "Value": "What do you want me to do?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N21",
+        "InternalNodeContext": "The penance didn't really start yet, the player wasn't hit yet.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player didn't really start yet",
+        "position": "-2225;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "7a0ab6f6-d6c9-41d6-9d7d-26ca4116bdfe": {
+      "UUID": "7a0ab6f6-d6c9-41d6-9d7d-26ca4116bdfe",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "049cf29a-0493-4325-9b40-e349ada24d71",
+              "Text": {
+                "Handle": "hf0524830g65b3g4226gae3age163fb49b915",
+                "Value": "A pity. We would have such <i>fun</i> together. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Sadness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N85",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Sigh and a shrug at the player's refusal of his penance. But a smile and a wink as he says the player can always return to him. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-1905;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "7e36334f-6e04-db09-2c78-0a15be183bfc": {
+      "UUID": "7e36334f-6e04-db09-2c78-0a15be183bfc",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d00c6e83-6a2c-9f6e-97d8-d02ed9d041b4",
+              "Text": {
+                "Handle": "ha8aa4e22g6720g4ac5g9112g05a6fabc8986",
+                "Value": "Now, now - I'm dealing with your friend. I'll be just a moment."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N67",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Another player has tried to 'interrupt' the penance. Smile in his face. Intimate. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "any other player",
+        "position": "-2545;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "81341268-9ce1-2ee1-4170-7ff35f6c3c95": {
+      "UUID": "81341268-9ce1-2ee1-4170-7ff35f6c3c95",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2af12cd2-d99b-09ed-b0ca-7bf0e138dac9",
+              "Text": {
+                "Handle": "haece99dag4badg4bcdgbaccg963e1885aeb4",
+                "Value": "And there is more to come, but I promise it shall be worth it. Now, face the wall - and stay <i>absolutely </i>still."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3595",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Authorative tone but also a warning. He wants to hurt the player but not badly, and not outside of his realm of control. Safety first!",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-1905;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "b2ac3062-e9d7-8ca1-ad19-564c41928701": {
+      "UUID": "b2ac3062-e9d7-8ca1-ad19-564c41928701",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9f8a96e3-90e6-5c7f-aacd-a311a7f326bf",
+              "Text": {
+                "Handle": "hb9debac5gf42cg4cd9gb473g96102ecf2a4e",
+                "Value": "Simply face that wall - and stay <i>absolutely </i>still. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N40",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Authorative tone but also a warning. He wants to hurt the player but not badly, and not outside of his realm of control. Safety first!",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-1905;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "b545110d-2120-55ca-4d0f-1d7205eaa6fb": {
+      "UUID": "b545110d-2120-55ca-4d0f-1d7205eaa6fb",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7a0ab6f6-d6c9-41d6-9d7d-26ca4116bdfe"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5e6ff7d1-7018-4938-8030-20ec00b3ce64",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_PainPriest_State_Penitent"
+            },
+            {
+              "UUID": "d7784d7b-bab3-4f4e-500d-aba2b4da0bc1",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_PainPriest_State_CancelledPenitent"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc4daba8-83d2-ceed-4811-c43b91484b00",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_PainPriest_Event_CancelPenance"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "02252f04-4049-00d2-1d28-35400891dbd7",
+              "Text": {
+                "Handle": "h05fe0535g2fcbg4468g9687g1c5e1a16a443",
+                "Value": "I've changed my mind."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cancel",
+        "position": "-2225;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "c5887b98-2ac6-bf8d-a652-85722e79a272": {
+      "UUID": "c5887b98-2ac6-bf8d-a652-85722e79a272",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e7e7879a-9838-d423-4243-8221ca391048",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_PainPriest_State_NeedMoreHP"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e7e7879a-9838-d423-4243-8221ca391048",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_PainPriest_State_NeedMoreHP"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f9006224-81f8-28e6-60f0-66cf19ddd26d",
+              "Text": {
+                "Handle": "ha1b41c48g7b7fg49ccgbdc0g5a96c9e007b1",
+                "Value": "I'm afraid someone took your place, dear one."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N52",
+        "InternalNodeContext": "The speaker player character tried to accept the penance, but was too low HP. Another PC came along with enough HP and started the penance, so the PC that was too low HP lost their spot",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "player was too low HP",
+        "position": "-2545;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "e71e269f-8f41-3e82-ba3a-dfc9c1055959": {
+      "UUID": "e71e269f-8f41-3e82-ba3a-dfc9c1055959",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "81341268-9ce1-2ee1-4170-7ff35f6c3c95"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cdcd32a0-b0b6-e3bf-5d82-2674a67b0c3b",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_PainPriest_Event_FirstHitDone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "07814e82-8001-6dba-95dd-c1e30977630e",
+              "Text": {
+                "Handle": "h2d3a47d8ge9b0g42a9gac26gcb27f71b964f",
+                "Value": "Hurry up and hit me already."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "The player was hit at least once by the priest during the penance",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player was hit at least once",
+        "position": "-2225;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "ec60ab71-fa25-09a2-8227-ea1e3dfc2f83": {
+      "UUID": "ec60ab71-fa25-09a2-8227-ea1e3dfc2f83",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "02bac3b8-aba6-eda2-c5bd-0a0615159f09",
+              "Text": {
+                "Handle": "h092c0aa0g6fc1g456agaf2bg156a2f45c9e3",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N34",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "-2225;4614",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "7be69de8-1c9c-db8a-a224-b1a7e69427d7",
+      "Index": 0,
+      "List": [
+        "cad1854b-8f41-4038-b640-156ee0272f81"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Abdirak",
+        "Type": "character",
+        "MapKey": "cad1854b-8f41-4038-b640-156ee0272f81",
+        "Name": "S_GOB_PainPriest",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "6737d4a7-cdbf-1ad5-aaa1-81cd12917ee0",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Father Abdirak is a follower of Loviatar, a goddess that thrives on inflicting pain on others. He is indulging in some private 'worship' (self flagellation). He offers to help alleviate the player's pain by giving them 'penance' - i.e, beating them. \nLoviatar = loh-VEE-a-tar. He is a young and charismatic preacher with a threatening and creepy edge. "
+}

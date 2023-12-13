@@ -1,0 +1,175 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Chapel/CHA_BronzePlaque_AD_SanctumStatue.lsj",
+  "UUID": "9a15e8ce-c6fc-c71f-f89d-f3b506da8732",
+  "Category": "Voice bark",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "e795d7ce-eb0d-dcb1-b7d2-605385aecbba",
+    "ce92744c-dc29-5f72-36ca-38e4d1544066"
+  ],
+  "Nodes": {
+    "ce92744c-dc29-5f72-36ca-38e4d1544066": {
+      "UUID": "ce92744c-dc29-5f72-36ca-38e4d1544066",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6fbe425c-617a-4b84-c2f6-ec564dade2e2",
+              "Text": {
+                "Handle": "h2199ed62g42dbg4d27gbeceg2aab1e1cf569",
+                "Value": "*You do not recognise the language on the plaque.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Neutral",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Reading a plaque Selûne pronounced seh-LOON-eh",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "e795d7ce-eb0d-dcb1-b7d2-605385aecbba": {
+      "UUID": "e795d7ce-eb0d-dcb1-b7d2-605385aecbba",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fdedef69-720c-5b93-06c6-d7547d4cfbd3",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_Shadowheart_SeluneComment"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5",
+                  "6d85ab2d-5c23-498c-a61e-98f05a00177a"
+                ],
+                "TagNames": [
+                  "CLERIC",
+                  "PALADIN"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC or PALADIN"
+          },
+          "TagTexts": [
+            {
+              "LineId": "6d236672-f9d1-f099-3a5c-4fa332f0f178",
+              "Text": {
+                "Handle": "h6a15413fgaf18g46cfg804dgbdca169f27db",
+                "Value": "This text is ancient. A dedication to a forgotten god?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Mockingly reading a plaque. Selûne pronounced seh-LOON-eh",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "0a92070a-9bdd-da72-8b29-b8a89c191abe",
+      "Index": 0,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Reading a bronze plaque at the feet of an unidentified statue."
+}

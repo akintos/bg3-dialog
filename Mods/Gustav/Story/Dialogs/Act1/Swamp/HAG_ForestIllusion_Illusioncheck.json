@@ -1,0 +1,1460 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Swamp/HAG_ForestIllusion_Illusioncheck.lsj",
+  "UUID": "26a47196-87d0-f7fd-ff50-b6d04e075501",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "4671514f-eb64-af20-8f5a-7dc7a78ab8b1",
+    "7626d991-d72c-5d97-1035-df78fcebfc4c",
+    "a722a6b3-63ea-f99a-f66b-6ebebd1860f5",
+    "9a1ef990-c0e6-d5a4-00aa-03e44a6083e8"
+  ],
+  "Nodes": {
+    "04bc1f84-1d61-0362-bd7c-be6aec86b385": {
+      "JumpTarget": "502b5f98-b9d9-6a9c-2e7b-7ba9d9632517",
+      "JumpTargetPoint": 1,
+      "UUID": "04bc1f84-1d61-0362-bd7c-be6aec86b385",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N76",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "0a4de471-a006-31a3-2e15-e154b618b345": {
+      "UUID": "0a4de471-a006-31a3-2e15-e154b618b345",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d1958229-b92f-c0e0-377d-ad670de8d853",
+        "125195a4-6c80-0e9d-2377-4a258d6558e0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c8a36ee5-68eb-a944-8295-55188d026506",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_ForestIllusion_Event_DropIllusion"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N40",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "0e20312e-8c3e-543d-b1e6-b51f0a0bff9f": {
+      "RollSuccess": true,
+      "UUID": "0e20312e-8c3e-543d-b1e6-b51f0a0bff9f",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0a4de471-a006-31a3-2e15-e154b618b345"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N4",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "125195a4-6c80-0e9d-2377-4a258d6558e0": {
+      "SourceNode": "502b5f98-b9d9-6a9c-2e7b-7ba9d9632517",
+      "UUID": "125195a4-6c80-0e9d-2377-4a258d6558e0",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "25bf5042-5bf6-4360-8df8-ab107ccb0d37",
+              "value": false,
+              "paramval": 0,
+              "Name": "PLAYABLE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N75",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "12e553d8-d022-e6a7-ad2b-6d9b03817862": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "12e553d8-d022-e6a7-ad2b-6d9b03817862",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "65030c43-6ad9-fd69-8b97-622bc86052e1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "44ac4317-4d38-4d28-80e2-94024c6e42f0",
+                  "37a733c1-a862-4157-b92a-9cff46232c6a"
+                ],
+                "TagNames": [
+                  "DRUID",
+                  "RANGER"
+                ]
+              }
+            ],
+            "RuleString": "DRUID or RANGER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "9d486fa3-0e01-1e8e-7004-6fa62d1d99d8",
+              "Text": {
+                "Handle": "hfc95f845gc5bag418ag8008ga993233d2b0d",
+                "Value": "<i>Looks for signs of unnatural activity.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid / Ranger",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "1a611f0a-c825-1ffa-05ae-f9702425ce8f": {
+      "RollSuccess": false,
+      "UUID": "1a611f0a-c825-1ffa-05ae-f9702425ce8f",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2e15a29f-c907-3f40-4571-b85c9a1d2c2e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N5",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1a85d770-a139-9553-68f4-a072bae8ffb9": {
+      "UUID": "1a85d770-a139-9553-68f4-a072bae8ffb9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "502b5f98-b9d9-6a9c-2e7b-7ba9d9632517"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c8a36ee5-68eb-a944-8295-55188d026506",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_ForestIllusion_Event_DropIllusion"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N69",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "230d00ed-47f7-9721-ebf3-b413056de6c6": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "ea049218-36a8-4440-a3fc-f3019a57c86b",
+      "DifficultyClassValue": 20,
+      "UUID": "230d00ed-47f7-9721-ebf3-b413056de6c6",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "0e20312e-8c3e-543d-b1e6-b51f0a0bff9f",
+        "1a611f0a-c825-1ffa-05ae-f9702425ce8f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "900f48e2-6925-c65f-0858-3ae56fb26d09",
+              "Text": {
+                "Handle": "h0f5c5bf8g1f03g43feg9040g339a609bb601",
+                "Value": "<i>Look for anything out of the ordinary.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Investigation",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "2e15a29f-c907-3f40-4571-b85c9a1d2c2e": {
+      "UUID": "2e15a29f-c907-3f40-4571-b85c9a1d2c2e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b7276035-5861-a435-0102-0f937db96154",
+              "Text": {
+                "Handle": "h3b77d238gad5fg488dg8ffdg1edb61534171",
+                "Value": "*The place has a quiet sense of calm. You can't see anything strange.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "354afdb5-5d7d-b5c5-a538-9d92b8b93048": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "354afdb5-5d7d-b5c5-a538-9d92b8b93048",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "65030c43-6ad9-fd69-8b97-622bc86052e1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "498946c4-246a-47dc-9c21-89fb538b2614",
+              "value": false,
+              "paramval": 0,
+              "Name": "PALADIN_MYSTRA"
+            },
+            {
+              "UUID": "90de46bd-9f0c-4c2f-9505-56063b31b360",
+              "value": false,
+              "paramval": 0,
+              "Name": "CLERIC_MYSTRA"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "2947a463-3c45-4a70-959a-3e81a943ab92",
+                  "e1e460bb-d0ae-4452-8529-c9e176558731",
+                  "5c09c86d-c068-4ef5-9850-aeb9aefd8038"
+                ],
+                "TagNames": [
+                  "CLERIC_NEUTRAL",
+                  "MONK",
+                  "PALADIN_NEUTRAL"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_NEUTRAL or MONK or PALADIN_NEUTRAL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "29e0aa2d-e0c8-c5db-6bbd-787077bb4723",
+              "Text": {
+                "Handle": "hccd52622g2589g4ba1gb4a3gfffc71765821",
+                "Value": "<i>Reach out with your senses - check the balance of this place.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Monk / Neutral Cleric",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "4671514f-eb64-af20-8f5a-7dc7a78ab8b1": {
+      "UUID": "4671514f-eb64-af20-8f5a-7dc7a78ab8b1",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1a85d770-a139-9553-68f4-a072bae8ffb9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "30c887ff-c8b4-6442-dc43-4602df81d315",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_Event_DropDisguise"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c4c1bbcb-28d2-d607-2658-a06f1cf89d95",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Hag_State_Transformed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "~Ethel dramatically transforms into her true hag form.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N64",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Gold",
+        "SFXTags": "shapeshifting spell",
+        "StateChangeTags": "ethel transform into hag",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cine: Hag Transformation",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "4a9b09ce-23ea-09a8-f7fa-9760646a2d2a": {
+      "JumpTarget": "a722a6b3-63ea-f99a-f66b-6ebebd1860f5",
+      "JumpTargetPoint": 2,
+      "UUID": "4a9b09ce-23ea-09a8-f7fa-9760646a2d2a",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N39",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "502b5f98-b9d9-6a9c-2e7b-7ba9d9632517": {
+      "UUID": "502b5f98-b9d9-6a9c-2e7b-7ba9d9632517",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cb8b4d23-18d5-419e-a681-29f54087a798",
+              "Text": {
+                "Handle": "h61d3eb08gf35fg4c02gaf18g6efe88e5be06",
+                "Value": "*You blink and the wilderness changes. A swamp, stinking and insidious, assaults your senses.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N73",
+        "InternalNodeContext": "Variant without showing player character",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Illusion ending",
+        "StateChangeTags": "Player snaps out of illusion",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "65030c43-6ad9-fd69-8b97-622bc86052e1": {
+      "JumpTarget": "230d00ed-47f7-9721-ebf3-b413056de6c6",
+      "JumpTargetPoint": 2,
+      "UUID": "65030c43-6ad9-fd69-8b97-622bc86052e1",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N37",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "65a5d6ff-7d20-91a7-0531-a265196ecb18": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "5e7ff0e9-6c80-459c-a636-3a3e8417a61a",
+      "DifficultyClassValue": 12,
+      "UUID": "65a5d6ff-7d20-91a7-0531-a265196ecb18",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "65030c43-6ad9-fd69-8b97-622bc86052e1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d85ab2d-5c23-498c-a61e-98f05a00177a",
+              "value": true,
+              "paramval": 0,
+              "Name": "PALADIN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6"
+                ],
+                "TagNames": [
+                  "PALADIN_DEVOTION"
+                ]
+              }
+            ],
+            "RuleString": "PALADIN_DEVOTION"
+          },
+          "TagTexts": [
+            {
+              "LineId": "2b2f217a-8aae-4194-9382-e1129bab9837",
+              "Text": {
+                "Handle": "h9d2c2387g0a93g4916gb030gb273d3919cfe",
+                "Value": "<i>Something here is... unnatural. Reach out with your magic, seek its source. </i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "7c89622b-4194-41df-b2ff-145a5056ee49"
+                ],
+                "TagNames": [
+                  "PALADIN_ANCIENTS"
+                ]
+              }
+            ],
+            "RuleString": "PALADIN_ANCIENTS"
+          },
+          "TagTexts": [
+            {
+              "LineId": "c63abe18-1f98-496a-b654-5b12eba9b225",
+              "Text": {
+                "Handle": "h6239f504g5006g44dbga2e6g24fb292c7ab7",
+                "Value": "<i>Tap into the preternatural awareness granted by your oath. Seek the truth.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N77",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "PALADIN Ability_Charisma",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "7626d991-d72c-5d97-1035-df78fcebfc4c": {
+      "UUID": "7626d991-d72c-5d97-1035-df78fcebfc4c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "04bc1f84-1d61-0362-bd7c-be6aec86b385"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c8a36ee5-68eb-a944-8295-55188d026506",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_ForestIllusion_Event_DropIllusion"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "9a1ef990-c0e6-d5a4-00aa-03e44a6083e8": {
+      "UUID": "9a1ef990-c0e6-d5a4-00aa-03e44a6083e8",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "4a9b09ce-23ea-09a8-f7fa-9760646a2d2a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c8a36ee5-68eb-a944-8295-55188d026506",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_ForestIllusion_Event_DropIllusion"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "25bf5042-5bf6-4360-8df8-ab107ccb0d37",
+              "value": false,
+              "paramval": 0,
+              "Name": "PLAYABLE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "10d09386-9241-4e86-8559-04776d2914c5",
+              "Text": {
+                "Handle": "h96528ce4ge5dfg4670g989bg44aba33dc1b2",
+                "Value": "*A chill runs up your spine. You feel like you're being watched.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Players is shapeshifted - don't show player.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N38",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "a1193e73-d935-4eaf-b034-4348e019f142": {
+      "UUID": "a1193e73-d935-4eaf-b034-4348e019f142",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "df4f451e-7574-1ad3-b1a1-9000d7f29d2e",
+              "Text": {
+                "Handle": "hae7caa57g18f6g40f2g9895ge1d9c8c16497",
+                "Value": "<i>Ignore the feeling.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "a37034e4-4335-ab39-db57-50acf7ca6a8e": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "a37034e4-4335-ab39-db57-50acf7ca6a8e",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "65030c43-6ad9-fd69-8b97-622bc86052e1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "885f8675-e400-4d53-924d-6204ff1d9558",
+              "value": true,
+              "paramval": 0,
+              "Name": "SORCERER_WILDMAGIC"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "12229e4e-24dd-412f-96d3-f70a089640b0",
+              "Text": {
+                "Handle": "h8aa94e0agd73ag41cega431g8050ea1e25e0",
+                "Value": "<i>Carefully probe with your magic. Is the disturbance around you, or within you?</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N36",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Wild Magic",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "a722a6b3-63ea-f99a-f66b-6ebebd1860f5": {
+      "UUID": "a722a6b3-63ea-f99a-f66b-6ebebd1860f5",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "230d00ed-47f7-9721-ebf3-b413056de6c6",
+        "f39dfbb1-59be-b38c-ffd5-dc97d629450a",
+        "a37034e4-4335-ab39-db57-50acf7ca6a8e",
+        "12e553d8-d022-e6a7-ad2b-6d9b03817862",
+        "354afdb5-5d7d-b5c5-a538-9d92b8b93048",
+        "65a5d6ff-7d20-91a7-0531-a265196ecb18",
+        "a1193e73-d935-4eaf-b034-4348e019f142"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c8a36ee5-68eb-a944-8295-55188d026506",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_ForestIllusion_Event_DropIllusion"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "25bf5042-5bf6-4360-8df8-ab107ccb0d37",
+              "value": true,
+              "paramval": 0,
+              "Name": "PLAYABLE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bf6879bb-8967-2cb9-b474-257548242960",
+              "Text": {
+                "Handle": "hf35e4bd3gede0g485cg8f5dg0dcf16dc9f50",
+                "Value": "*A chill runs up your spine. You feel like you're being watched.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Select Speaker",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "d1958229-b92f-c0e0-377d-ad670de8d853": {
+      "UUID": "d1958229-b92f-c0e0-377d-ad670de8d853",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "25bf5042-5bf6-4360-8df8-ab107ccb0d37",
+              "value": true,
+              "paramval": 0,
+              "Name": "PLAYABLE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7a5d5795-ea18-8ee4-b544-61fdfda5da9b",
+              "Text": {
+                "Handle": "he58ca03dge4efg4b2egb596g96691d2d5e17",
+                "Value": "*You blink and the wilderness changes. A swamp, stinking and insidious, assaults your senses.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Illusion ending",
+        "StateChangeTags": "Player snaps out of illusion",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Illustion ending",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f39dfbb1-59be-b38c-ffd5-dc97d629450a": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "f39dfbb1-59be-b38c-ffd5-dc97d629450a",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "65030c43-6ad9-fd69-8b97-622bc86052e1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "6fe3ae27-dc6c-4fc9-9245-710c790c396c"
+                ],
+                "TagNames": [
+                  "WIZARD"
+                ]
+              }
+            ],
+            "RuleString": "WIZARD"
+          },
+          "TagTexts": [
+            {
+              "LineId": "445ab2cd-e6cf-fff0-8257-ba6a34a47949",
+              "Text": {
+                "Handle": "h4d747a70g1fefg4324g91e9gc013555b872c",
+                "Value": "<i>Search for signs of magical interference.</i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "18266c0b-efbc-4c80-8784-ada4a37218d7"
+                ],
+                "TagNames": [
+                  "SORCERER"
+                ]
+              },
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "885f8675-e400-4d53-924d-6204ff1d9558"
+                ],
+                "TagNames": [
+                  "SORCERER_WILDMAGIC"
+                ]
+              }
+            ],
+            "RuleString": "SORCERER and !SORCERER_WILDMAGIC"
+          },
+          "TagTexts": [
+            {
+              "LineId": "ac01ee25-ca81-8227-32e4-5643a84aab39",
+              "Text": {
+                "Handle": "h5a5fb408geb5ag426cg829cg956750c4cff9",
+                "Value": "<i>Attune your magic to find any disturbance.</i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "5804f55a-93f7-4281-9512-8d548a9e2a22"
+                ],
+                "TagNames": [
+                  "WARLOCK"
+                ]
+              }
+            ],
+            "RuleString": "WARLOCK"
+          },
+          "TagTexts": [
+            {
+              "LineId": "60aa3733-c445-1a01-dbdc-3a0080e40505",
+              "Text": {
+                "Handle": "h51ee5469g1567g4135ga8edg250a34bb29a9",
+                "Value": "<i>Draw on your pact to empower your sight.</i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "90de46bd-9f0c-4c2f-9505-56063b31b360"
+                ],
+                "TagNames": [
+                  "CLERIC_MYSTRA"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_MYSTRA"
+          },
+          "TagTexts": [
+            {
+              "LineId": "9bd449bf-ea46-6727-953a-099b8b47d238",
+              "Text": {
+                "Handle": "h791561ebge44ag4fdeg98b4g52175a4a1a78",
+                "Value": "<i>Search for any disruption in the Weave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Wiz / Sorc / War / Mystra",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d929aa91-7ade-1b15-54c3-ce7004078154",
+      "Index": 0,
+      "List": [
+        "02cdc15e-1dc3-5eb4-f73c-9458b4f90b9f"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_PartyMembers"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "5839281f-d371-4c59-ab8b-c9a29166134d",
+      "Index": 1,
+      "List": [
+        "8f730d40-11a5-4e4e-923a-d98c6e61c70a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Auntie Ethel",
+        "Type": "character",
+        "MapKey": "3f461909-81a2-825c-2365-5387db9121f9",
+        "Name": "S_HAG_Hag_HumanDouble",
+        "ParentTemplateId": null,
+        "TemplateName": "2ec6e2a6-2b93-4f7d-899c-bad10d93ea38"
+      },
+      "SpeakerGroupName": "GROUP_Act1_GLO_HagHuman"
+    }
+  },
+  "Synopsis": "Dialogue covers the transition from the pretty illusion that is on the swamp to the fetid reality.\r\n\r\nTriggers when entering the area, or when the illusion is disrupted because of combat or because Ethel is dropping her disguise.\r\n\r\nThis means it may play for a Wildshaped player or even a summon or follower."
+}

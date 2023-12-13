@@ -1,0 +1,546 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_South_SteelWatch_Trespass.lsj",
+  "UUID": "1666eb10-6458-b57e-4803-eb5c5ffe2ad9",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "4862e70a-df1d-8860-e759-b07ac858d290"
+  ],
+  "Nodes": {
+    "3e79bced-f418-4dab-97cd-3d2e313a25e1": {
+      "RollSuccess": false,
+      "UUID": "3e79bced-f418-4dab-97cd-3d2e313a25e1",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "55d123de-81a1-f15f-3bb3-24e68f59424e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N48",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;-6555",
+        "sourcetemplate": ""
+      }
+    },
+    "4862e70a-df1d-8860-e759-b07ac858d290": {
+      "UUID": "4862e70a-df1d-8860-e759-b07ac858d290",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "4d375e81-344b-11ce-e31e-1edea90b049f",
+        "b31bd9bd-9d9e-397d-b2c8-f6b836cd8ef0",
+        "76d8e22c-4bd5-1af4-66f3-e2821ba3b138"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8cb905dc-3480-ee1e-fbdb-03b317c6a46f",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_Crime_Trespassing"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "274ce553-1e92-4383-8dcd-a4531a523214",
+              "Text": {
+                "Handle": "hc63b8534gbc18g475bg8f69gdc3c1f78996c",
+                "Value": "<i>Unauthorised access to the city is a serious offence. Surrender for sentencing, villain.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Trespassing, prison available",
+        "position": "15;-6993",
+        "sourcetemplate": ""
+      }
+    },
+    "4d375e81-344b-11ce-e31e-1edea90b049f": {
+      "UUID": "4d375e81-344b-11ce-e31e-1edea90b049f",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "602741c9-b5be-6479-f456-4781383551ff",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_Arrest_HavePrison"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2677bf25-03f3-6323-c72a-0ca61fe5ad01",
+              "value": true,
+              "paramval": 1,
+              "Name": "Allow_Arrest"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "94aefda5-7a52-45e7-a7f6-bc2341a446f3",
+              "Text": {
+                "Handle": "h16c38e93gf3f5g402dg80b4g92188551f1fc",
+                "Value": "<i>Agree to be imprisoned.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-6993",
+        "sourcetemplate": ""
+      }
+    },
+    "55d123de-81a1-f15f-3bb3-24e68f59424e": {
+      "UUID": "55d123de-81a1-f15f-3bb3-24e68f59424e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "827d3b2c-f154-03a7-227a-16192c201ee2",
+              "value": true,
+              "paramval": 1,
+              "Name": "CRIME_PersuasionFailed"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34f4f7ba-19a8-4832-9c21-0db109af16cd",
+              "Text": {
+                "Handle": "hbda94948g537eg4ba2gaf91g867a5aad12e2",
+                "Value": "<i>By the edicts of Lord Gortash, you are sentenced to death. Please comply.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N49",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-6555",
+        "sourcetemplate": ""
+      }
+    },
+    "69272105-14e1-8c91-15e4-b1b10f3e04e9": {
+      "RollSuccess": true,
+      "UUID": "69272105-14e1-8c91-15e4-b1b10f3e04e9",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b32b66b9-d60a-b48f-6564-9d0a50362b3e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N47",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;-6774",
+        "sourcetemplate": ""
+      }
+    },
+    "76d8e22c-4bd5-1af4-66f3-e2821ba3b138": {
+      "UUID": "76d8e22c-4bd5-1af4-66f3-e2821ba3b138",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "823895df-b05e-4f1b-8fc4-3e5c33110525",
+              "Text": {
+                "Handle": "h91f1b655g781fg4659gad31g404715c8b8f8",
+                "Value": "<i>Attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-6336",
+        "sourcetemplate": ""
+      }
+    },
+    "b31bd9bd-9d9e-397d-b2c8-f6b836cd8ef0": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "6298329e-255c-4826-9209-e911873b64e7",
+      "DifficultyClassValue": 20,
+      "UUID": "b31bd9bd-9d9e-397d-b2c8-f6b836cd8ef0",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "69272105-14e1-8c91-15e4-b1b10f3e04e9",
+        "3e79bced-f418-4dab-97cd-3d2e313a25e1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "827d3b2c-f154-03a7-227a-16192c201ee2",
+              "value": false,
+              "paramval": 1,
+              "Name": "CRIME_PersuasionFailed"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "509c58a0-7d5c-44a0-89ec-11801d5355a8",
+              "Text": {
+                "Handle": "ha4ce4aa7g6c2fg4209gb20ag8567ce30ae39",
+                "Value": "<i>Call on your parasite. Force the watcher to stand down.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N46",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Ability_Wisdom",
+        "position": "335;-6774",
+        "sourcetemplate": ""
+      }
+    },
+    "b32b66b9-d60a-b48f-6564-9d0a50362b3e": {
+      "UUID": "b32b66b9-d60a-b48f-6564-9d0a50362b3e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "13ec14ed-2baa-32c2-8945-bda5c463b1f7",
+              "value": true,
+              "paramval": 1,
+              "Name": "TeleportOutOfTrespass"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f8f4a423-599c-41b6-990e-62e2c3157c8d",
+              "Text": {
+                "Handle": "h7858fb6eg3e31g4e8egaab5ge4f4a118c580",
+                "Value": "<i>An innocent mistake. Please return to the checkpoint to receive proper authorisation.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-6774",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "bd4971d8-7861-48a7-8968-161ef6a22771",
+      "Index": 0,
+      "List": [
+        "86df429e-511e-3ec1-0699-1fec5d93caa7"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Steel Watcher",
+        "Type": "character",
+        "MapKey": "54ba149e-d3a7-402f-8dac-4195f91b51d8",
+        "Name": "SteelWatcher_Voice_F",
+        "ParentTemplateId": null,
+        "TemplateName": "27385ea6-d768-47ce-91b8-8d957c0aabd9"
+      },
+      "SpeakerGroupName": "GROUP_SteelWatchers"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cb89050b-c32c-4998-b36f-28ba85460747",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "A trespass dialog for Steel Watcher at WYR South checkpoint."
+}

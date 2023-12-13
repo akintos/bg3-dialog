@@ -1,0 +1,891 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_BaldursMouth_Wanderer_07.lsj",
+  "UUID": "3dbd14ea-ee24-baf9-00c9-50db70ee4e40",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "f8eeb327-d9fb-131d-68c6-30cef81fa353",
+    "9885d0a9-a873-7f96-93ab-67b0e7169b19",
+    "9ffa10bb-4d5c-43cb-b56e-d558d5ed8bfc",
+    "3df337c9-5c06-48f6-93cc-324e7d1b46aa",
+    "825b1b17-0914-4635-822c-d29809268ea1",
+    "67824a73-5e6b-4bb8-8cd7-6744e6dbc4fa",
+    "51e0d1a1-386f-412e-a708-dbb958d65b56",
+    "0d23911e-4de5-48df-823a-2ec3bf250e2e"
+  ],
+  "Nodes": {
+    "07de080b-d1f8-9dba-d939-39168a7d482e": {
+      "UUID": "07de080b-d1f8-9dba-d939-39168a7d482e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9dfa50b8-abeb-423a-9da1-508c38c69072",
+              "Text": {
+                "Handle": "h71c6159bgfcc8g466agb982g3decf19a7aca",
+                "Value": "Excuse me, I <i>must</i> return to my work. The Baldur's Mouth Tavern Review doesn't write itself. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "0d23911e-4de5-48df-823a-2ec3bf250e2e": {
+      "UUID": "0d23911e-4de5-48df-823a-2ec3bf250e2e",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "07de080b-d1f8-9dba-d939-39168a7d482e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "145b0abe-ed40-4cb1-8714-9c01c6214a18",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_Wanderer_07"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2d1369a5-3fb9-4675-96df-aa5a8c3e0ac6",
+              "Text": {
+                "Handle": "h6d7b9a8bgb136g4a27gacf7g5d415e7c6625",
+                "Value": "<i>The Blushing Mermaid is an adrift shipwreck in more ways than one. For starters -</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "composing a future newspaper article (almost like they're dictating) out lourd ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "0dccd6df-8c41-b72a-5850-cc0aabb154b3": {
+      "SourceNode": "07de080b-d1f8-9dba-d939-39168a7d482e",
+      "UUID": "0dccd6df-8c41-b72a-5850-cc0aabb154b3",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N40",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "3df337c9-5c06-48f6-93cc-324e7d1b46aa": {
+      "UUID": "3df337c9-5c06-48f6-93cc-324e7d1b46aa",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7be2d31d-0314-2818-6cca-4f48db979950"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "14071582-0c75-40e5-9121-251d6a9524e4",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_PositiveArticlePublished"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "145b0abe-ed40-4cb1-8714-9c01c6214a18",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_Wanderer_07"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "103bf59d-fa3c-4e8e-91d3-ec38c58e29d2",
+              "Text": {
+                "Handle": "ha0eb3fc1g6027g4f32gab3bg6a5793d57f1d",
+                "Value": "Oh my word! It's you - from the front page! Could you spare a few words for my article? "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "51e0d1a1-386f-412e-a708-dbb958d65b56": {
+      "UUID": "51e0d1a1-386f-412e-a708-dbb958d65b56",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "145b0abe-ed40-4cb1-8714-9c01c6214a18",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_Wanderer_07"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0d4cc7dc-6141-4763-a335-fcc066211b67",
+              "Text": {
+                "Handle": "hf0fcdffdga14eg4bccg8932g454895b3957b",
+                "Value": "<i>Incessantly interrupting street wanderers ruin the atmosphere outside the Blushing Mermaid...</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "he's composing an article in his head, this is pointedly turned againt the player in annoyance",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "58d3965d-0825-05d0-5f90-9fc508bc03af": {
+      "UUID": "58d3965d-0825-05d0-5f90-9fc508bc03af",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a4b45551-b9c8-4bff-a4eb-136ad5bda1ed",
+              "Text": {
+                "Handle": "h2dae6bbbgfad4g4892g8c13gd4df03107501",
+                "Value": "Some of us have tavern reviews to publish, and your crimes have taken up all the column space. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N26",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "67824a73-5e6b-4bb8-8cd7-6744e6dbc4fa": {
+      "UUID": "67824a73-5e6b-4bb8-8cd7-6744e6dbc4fa",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "58d3965d-0825-05d0-5f90-9fc508bc03af"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "baa834bc-8237-4081-8699-297743dc54d2",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_NegativeArticlePublished"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "145b0abe-ed40-4cb1-8714-9c01c6214a18",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_Wanderer_07"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2bc29a67-f774-4d55-86d6-d9f315535a26",
+              "Text": {
+                "Handle": "h9bc89ff2gd9dcg407aga877g67e73d2f1edc",
+                "Value": "Could you not have been more considerate in your misdemeanours? "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "pissed off",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    },
+    "7be2d31d-0314-2818-6cca-4f48db979950": {
+      "UUID": "7be2d31d-0314-2818-6cca-4f48db979950",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1fb8e283-33ff-4ba9-a2fb-8e8b545443c2",
+              "Text": {
+                "Handle": "ha3442dd9gb3efg497cga27fg7ed1a857a0bd",
+                "Value": "No - that'd take too long. I'll just paraphrase. <i>The hero of Baldur's Gate looked in disgust at the tavern...</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "correcting self, italics are you composing a future newspaper article (almost like they're dictating) out loud ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "825b1b17-0914-4635-822c-d29809268ea1": {
+      "UUID": "825b1b17-0914-4635-822c-d29809268ea1",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "145b0abe-ed40-4cb1-8714-9c01c6214a18",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_Wanderer_07"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "baa834bc-8237-4081-8699-297743dc54d2",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_NegativeArticlePublished"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1c108eba-985c-4696-b5d5-dc88c720a7f3",
+              "Text": {
+                "Handle": "hb96f54abg5b77g42a6g8955g8f62ce06101e",
+                "Value": "<i>The Blushing Mermaid is also frequented by the criminal scum haunting this very gazette's hallowed pages. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "composing a future newspaper article (almost like they're dictating) out lourd ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "9885d0a9-a873-7f96-93ab-67b0e7169b19": {
+      "UUID": "9885d0a9-a873-7f96-93ab-67b0e7169b19",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "0dccd6df-8c41-b72a-5850-cc0aabb154b3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "74dd56ff-7e00-42a6-a0f3-0d122f364769",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Gortash_State_PermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "145b0abe-ed40-4cb1-8714-9c01c6214a18",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_Wanderer_07"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e9db7299-67ec-4953-90d2-5643a0a9d759",
+              "Text": {
+                "Handle": "h4f6f64b0g2d7dg4b0bg811bgb6899bb1ec5a",
+                "Value": "<i>It is a shame Lord Gortash passed before his Steel Watch could condemn this wretched tavern, this absolute hive -</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N35",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "composing a future newspaper article (almost like they're dictating) out lourd ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "9ffa10bb-4d5c-43cb-b56e-d558d5ed8bfc": {
+      "UUID": "9ffa10bb-4d5c-43cb-b56e-d558d5ed8bfc",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "145b0abe-ed40-4cb1-8714-9c01c6214a18",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_Wanderer_07"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "14071582-0c75-40e5-9121-251d6a9524e4",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_PositiveArticlePublished"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bc8e55b0-669b-4111-80fd-4bd215aa7768",
+              "Text": {
+                "Handle": "h08f2e248g882eg43a4gbb59gf31161d4cd74",
+                "Value": "<i>It seems, dear readers, that this spot is often frequented by a hero of Baldur's Gate...</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "composing a future newspaper article (almost like they're dictating) out lourd ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f8eeb327-d9fb-131d-68c6-30cef81fa353": {
+      "UUID": "f8eeb327-d9fb-131d-68c6-30cef81fa353",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "145b0abe-ed40-4cb1-8714-9c01c6214a18",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_Wanderer_07"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "74dd56ff-7e00-42a6-a0f3-0d122f364769",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Gortash_State_PermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "81bbb8e8-717e-489d-a9e0-08ff8dc07b8e",
+              "Text": {
+                "Handle": "h3f79b330ga8c3g4a43g969bgba07812ed3c7",
+                "Value": "<i>This reporter found himself distracted by both Lord Gortash's tragic death and unbearably talkative street vagrants outside the Blushing Mermaid...</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "he's composing an article in his head, this is pointedly turned againt the player in annoyance",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "6c0d2274-5dc0-4f11-aa4b-f09261bfde08",
+      "Index": 0,
+      "List": [
+        "49c62367-b5a3-4542-adaf-df7f2992fd3c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Wrint Sprigley",
+        "Type": "character",
+        "MapKey": "49c62367-b5a3-4542-adaf-df7f2992fd3c",
+        "Name": "S_LOW_BaldursMouth_Wanderer_07",
+        "ParentTemplateId": null,
+        "TemplateName": "e3648cf7-c760-4f6f-854b-49c1e9cceb37"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1173040a-04e7-4494-95ee-ac49c5e6fe71",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "One-liner for gazzete wanderer who roams around Blushing Mermaid"
+}

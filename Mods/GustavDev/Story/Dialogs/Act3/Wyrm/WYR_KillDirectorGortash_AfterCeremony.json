@@ -1,0 +1,435 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_KillDirectorGortash_AfterCeremony.lsj",
+  "UUID": "c8f6ca18-15b1-ddba-cef3-84d5be6167ce",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "15075945-fc8c-9508-2cb2-00d07a5ae3a7",
+    "13893cbb-b01e-9a0b-ee32-391d8d948428",
+    "e99bc24f-c1c0-7926-5c48-d661f0833cef"
+  ],
+  "Nodes": {
+    "13893cbb-b01e-9a0b-ee32-391d8d948428": {
+      "UUID": "13893cbb-b01e-9a0b-ee32-391d8d948428",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d08e9d61-fba3-9861-1618-a5d467315d42"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c6f5c2cc-7724-4af3-b73a-10d8f7518e42",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_KillDirectorGortash_State_RefusedAlliance"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d60b9826-0f78-c9c2-f018-23e79b9bf8fe",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_KillDirectorGortash_AfterCeremony_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "5f40def5-d3ec-4698-a367-01a339888956"
+                ],
+                "TagNames": [
+                  "REALLY_WYLL"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_WYLL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "55d5a92c-52b4-48d2-85c9-ddef67bebccc",
+              "Text": {
+                "Handle": "hfec3e107g9c0fg475fg9e38gd87c5f1e78e2",
+                "Value": "You'll come around. After all - you wouldn't want to fail your own father."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b66c41a5-8540-49ee-9bcd-62a29bacde18",
+              "Text": {
+                "Handle": "heeae0d09g4a2bg4b69g84d2g5fcce60f9556",
+                "Value": "You will see sense. And you will return to me when you do."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player refused alliance",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "15075945-fc8c-9508-2cb2-00d07a5ae3a7": {
+      "UUID": "15075945-fc8c-9508-2cb2-00d07a5ae3a7",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c716e4d9-e6ed-445c-a710-ee4d91c67298",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Orin_State_PermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b73e0d24-c6ba-43a1-b848-18f1a5333c1c",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_KillDirectorGortash_Event_MoveGortashToHisOffice"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "05c12018-3797-473e-8309-8d638ec6316a",
+              "Text": {
+                "Handle": "hb83456e1g533ag4301gbbabga62ca687177e",
+                "Value": "Bring me Orin's Netherstone. I'll be waiting upstairs."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ORIN IS DEAD",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "baa410cb-2682-4b77-f8b1-7c391a753041": {
+      "UUID": "baa410cb-2682-4b77-f8b1-7c391a753041",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ee4ec8c0-8352-4249-b7ed-97dc7b3b33a3",
+              "Text": {
+                "Handle": "hb194e080ga92ag4fd0gba2dg31253c474eec",
+                "Value": "And do not return until it is done. Let this be my one warning."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "d08e9d61-fba3-9861-1618-a5d467315d42": {
+      "UUID": "d08e9d61-fba3-9861-1618-a5d467315d42",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5c64bd44-ba1d-4f2e-ac43-18d5b0568d24",
+              "Text": {
+                "Handle": "haae496f5g9d53g4ae2g8768g33f46cd9ee7d",
+                "Value": "Bring Orin's Netherstone with you. Come without it, and my Lord's wrath will be loosed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "e99bc24f-c1c0-7926-5c48-d661f0833cef": {
+      "UUID": "e99bc24f-c1c0-7926-5c48-d661f0833cef",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "baa410cb-2682-4b77-f8b1-7c391a753041"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d60b9826-0f78-c9c2-f018-23e79b9bf8fe",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_KillDirectorGortash_AfterCeremony_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "359fb501-1f75-4da4-ac44-b978e4d46a4f",
+              "Text": {
+                "Handle": "h950e029dg60e1g4969g80c0gb14ef2fd8162",
+                "Value": "Kill Orin and take her Netherstone. Find me in my office upstairs when it's done."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ORIN IS ALIVE",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b65c7233-7404-492a-be25-4b244a95e960",
+      "Index": 0,
+      "List": [
+        "b878a854-f790-4999-95c4-3f20f00f65ac"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lord Enver Gortash",
+        "Type": "character",
+        "MapKey": "b878a854-f790-4999-95c4-3f20f00f65ac",
+        "Name": "S_GLO_Gortash",
+        "ParentTemplateId": null,
+        "TemplateName": "2071fae1-d2d2-48bd-aa44-bda0b554ca76"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "45252042-4324-4010-8e0d-0b7b2ed09ede",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Dialog with Gortash after he became an arch duke, but haven't left the Audience Hall yet."
+}

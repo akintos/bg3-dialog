@@ -1,0 +1,2402 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_EntranceStatue.lsj",
+  "UUID": "81a137d3-9f6f-3e68-2943-4c4343315c5f",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "ab8f28a9-c88f-3e05-3075-cc182f1623fa",
+    "57536cb4-d7f0-6be5-c4f9-a52e00387dbb",
+    "02737e38-8eb9-b76f-9575-a355e92d2c7c",
+    "067dd9ab-20fb-8f3b-d9b8-7871510a4c59",
+    "991d1805-5209-8ebe-7c08-9ddca4b75f0a"
+  ],
+  "Nodes": {
+    "0174f7ba-af5c-15b9-558b-9d22d10e5b72": {
+      "SourceNode": "1f3a97ef-d7d6-17b0-6349-4e92231e2984",
+      "UUID": "0174f7ba-af5c-15b9-558b-9d22d10e5b72",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c9c1ef5c-bda9-6799-0d58-ccce87d8d1bc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dd41db78-064e-b8b4-5a9a-8dd9271b7fb0",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_MuralHelper1_Knows_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N94",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Baldurian)",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "02737e38-8eb9-b76f-9575-a355e92d2c7c": {
+      "UUID": "02737e38-8eb9-b76f-9575-a355e92d2c7c",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7bfeab2f-3413-3736-e8fa-285a35b479a5",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_Event_HasMetOpen"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f13a55a2-1e12-44f4-8a29-24733c88a02f",
+              "Text": {
+                "Handle": "h3fd928d2gd871g49a6g9ac4gab50c28478af",
+                "Value": "Enter and be judged."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N105",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Door has been opened hasmet",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    },
+    "067dd9ab-20fb-8f3b-d9b8-7871510a4c59": {
+      "UUID": "067dd9ab-20fb-8f3b-d9b8-7871510a4c59",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8be5f01a-1a65-0bae-efaa-7b9bfcd47d8a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "99e8c929-4b71-3e03-2b43-6e7421896f7a",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Balduran_Event_OpenDoor"
+            },
+            {
+              "UUID": "d8cad828-82f3-4a9b-ad0d-6f1637792d4e",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_State_EntryOpened"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7bfeab2f-3413-3736-e8fa-285a35b479a5",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_Event_HasMetOpen"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "806637dd-6c1a-4176-a9da-2d0366e4afd5",
+              "Text": {
+                "Handle": "hbab1199bgaebeg4b5aga72cg926048aff04b",
+                "Value": "Be you so bold to seek the wyrm? <br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "0ea0ec28-050a-f480-a320-61d47d3bddac": {
+      "RollSuccess": false,
+      "UUID": "0ea0ec28-050a-f480-a320-61d47d3bddac",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f5562703-1d95-02ef-1597-45c677218190"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N75",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "3215;672",
+        "sourcetemplate": ""
+      }
+    },
+    "0eac0208-8acb-4c14-f4ff-c50d3df44306": {
+      "UUID": "0eac0208-8acb-4c14-f4ff-c50d3df44306",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2fdf939c-522e-45f3-9f29-9dd245f0346c",
+              "Text": {
+                "Handle": "hf7b4174bgb187g435dg9718g44b5eaf2656b",
+                "Value": "*You sense neither life nor spirit within the statue. A powerful variant of Magic Mouth has been cast on it, allowing it to speak only recorded messages.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N71",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;453",
+        "sourcetemplate": ""
+      }
+    },
+    "10ba143e-5f01-d4ba-a517-3610776a231e": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 2,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "10ba143e-5f01-d4ba-a517-3610776a231e",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "63096c62-2664-fdaa-0a16-c18e8884eb96",
+        "1f23bab4-038d-836e-01fa-55b96c12a681"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dd41db78-064e-b8b4-5a9a-8dd9271b7fb0",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_MuralHelper1_Knows_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "67cdf8c3-6e77-e1f2-f891-f4217b0372c0",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_State_Attempted"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4cb02915-7ad7-4141-907e-93253c6a8644",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_PLANAR"
+            },
+            {
+              "UUID": "f15e9b0d-676c-4f52-9abf-365cff89ef0f",
+              "value": false,
+              "paramval": 1,
+              "Name": "BALDURIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N109",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_History",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1db9b4d9-6f25-57ee-018d-16dc4f51c9a2": {
+      "UUID": "1db9b4d9-6f25-57ee-018d-16dc4f51c9a2",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c5deb278-630e-47ad-a433-af2d4acbd308",
+              "Text": {
+                "Handle": "he635b96agfcdcg4277gbcbegbf001338be91",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N83",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2895;672",
+        "sourcetemplate": ""
+      }
+    },
+    "1f23bab4-038d-836e-01fa-55b96c12a681": {
+      "RollSuccess": false,
+      "UUID": "1f23bab4-038d-836e-01fa-55b96c12a681",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c9c1ef5c-bda9-6799-0d58-ccce87d8d1bc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N93",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1f3a97ef-d7d6-17b0-6349-4e92231e2984": {
+      "UUID": "1f3a97ef-d7d6-17b0-6349-4e92231e2984",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "28f2bf31-daa0-a54b-f5c2-3ae0dfc40b3e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dd41db78-064e-b8b4-5a9a-8dd9271b7fb0",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_MuralHelper1_Knows_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f15e9b0d-676c-4f52-9abf-365cff89ef0f",
+              "value": true,
+              "paramval": 1,
+              "Name": "BALDURIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e52650dc-4273-485c-a1a7-515589fd6232",
+              "Text": {
+                "Handle": "hf387c271ged06g4990gb239gce19ba00c5d4",
+                "Value": "*The statue before you bears a familiar likeness. It is Balduran, the celebrated adventurer who founded the city of Baldur's Gate.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Camera shows statue",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N90",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Baldurian",
+        "position": "975;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "1fc31412-ec7f-3544-4ca5-acc62c73f4c7": {
+      "UUID": "1fc31412-ec7f-3544-4ca5-acc62c73f4c7",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "432e3ccf-4b42-e99a-7ed4-8a7d6d1ce956"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9bc505eb-3531-2f9e-1e55-477ed0e475bc",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Wyll_Knows_SentToFindAnsur"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "14b51c01-0473-1a5c-85b7-23760bd92710",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_Balduran_State_AskedDragon"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "67eed55b-ad62-4fb8-98d7-c811521bae17",
+              "Text": {
+                "Handle": "h4b70cc2fgc288g47f2gb243gbd4128d0f187",
+                "Value": "Let me pass. I have come to free the city's great protector."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2895;15",
+        "sourcetemplate": ""
+      }
+    },
+    "26edb50f-b3be-e4c2-e3b4-3acc7f84af54": {
+      "UUID": "26edb50f-b3be-e4c2-e3b4-3acc7f84af54",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5181cfde-3169-4b8b-a031-43759806dc71"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9ab1aaa7-9441-4730-b162-ab8843bdbf03",
+              "Text": {
+                "Handle": "h64165a4dgdd55g40d0g9c79g6ac162dbe1a4",
+                "Value": "Be you the deluge, turn away. <br>Be you the hero, answer true: <br><i>Are you worthy?</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;15",
+        "sourcetemplate": ""
+      }
+    },
+    "28f2bf31-daa0-a54b-f5c2-3ae0dfc40b3e": {
+      "UUID": "28f2bf31-daa0-a54b-f5c2-3ae0dfc40b3e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3164f209-1f22-0dbe-f75c-7ac4918391fd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f376de84-e6d4-4d7a-8611-90960b86d928",
+              "Text": {
+                "Handle": "h2b92de5fgad76g4a5cg9cfegfc48f6d8da41",
+                "Value": "Peril floods my province, <br>The palisades fall, the earth does tremble, <br>The servants of shadow and blood assemble."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "3164f209-1f22-0dbe-f75c-7ac4918391fd": {
+      "UUID": "3164f209-1f22-0dbe-f75c-7ac4918391fd",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "26edb50f-b3be-e4c2-e3b4-3acc7f84af54"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1d8ce01e-c870-42ae-9275-6d4a1fe8baa2",
+              "Text": {
+                "Handle": "hf54e12a3g4f45g4120ga976gb64c9c3b03dd",
+                "Value": "Beyond lies the grand wyrm deep in slumber, <br>Awaiting a true hero's advent, <br>Should my domain drown in torment."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N26",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "d56f7979-74a7-412d-840c-4fc435352515",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;15",
+        "sourcetemplate": "OriginMoment_COM"
+      }
+    },
+    "3c89b51d-4a66-8ba8-2574-b4227bf4c07e": {
+      "JumpTarget": "3164f209-1f22-0dbe-f75c-7ac4918391fd",
+      "JumpTargetPoint": 1,
+      "UUID": "3c89b51d-4a66-8ba8-2574-b4227bf4c07e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N115",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "3d8ab07d-c593-14f0-97ba-998960abbe90": {
+      "UUID": "3d8ab07d-c593-14f0-97ba-998960abbe90",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "99e8c929-4b71-3e03-2b43-6e7421896f7a",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Balduran_Event_OpenDoor"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3fbc063b-ec2f-473b-aaa5-71d7257d60b2",
+              "Text": {
+                "Handle": "h3cc7b104g5eb5g477ega602gf3cbda9213f7",
+                "Value": "Ancient Ansur, hear me: A champion is proclaimed. <br>The test begins; Let your judgement follow."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "The door dramatically opens after the line is spoken.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The door dramatically opens after the line is spoken.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N46",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "4a63f1b8-4c22-4756-89c6-8bc90c21acc5",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;234",
+        "sourcetemplate": "OriginMoment_COM"
+      }
+    },
+    "432e3ccf-4b42-e99a-7ed4-8a7d6d1ce956": {
+      "UUID": "432e3ccf-4b42-e99a-7ed4-8a7d6d1ce956",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "14b51c01-0473-1a5c-85b7-23760bd92710",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Balduran_State_AskedDragon"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aac81edb-9e4a-4d10-8472-078bd048c142",
+              "Text": {
+                "Handle": "h085bbdc0g0574g4764g9d6cg3c30982c79a0",
+                "Value": "Then answer, for it is asked: <br><i>Are you worthy?</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;15",
+        "sourcetemplate": ""
+      }
+    },
+    "491c3507-0f4a-59ec-d128-573d042e4a5f": {
+      "UUID": "491c3507-0f4a-59ec-d128-573d042e4a5f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ed5de3e4-b481-426c-bbc8-c5e0c891854f",
+              "Text": {
+                "Handle": "h2aec0d34g42c2g4253g9adag14082fb13137",
+                "Value": "*The statue gives no response.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N54",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "4d124442-5bde-4b38-8e42-2740c05bd200": {
+      "UUID": "4d124442-5bde-4b38-8e42-2740c05bd200",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5b281656-1c52-21f6-dfab-7d27f9b5c7c0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "51c81a82-b1f7-4cb4-b6a9-abe16240bdd4",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_Wyll"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N97",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "1a8ab2c3-6eb5-4b82-a115-cce384b43ce4",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "975;453",
+        "sourcetemplate": "INCLUSION_Wyll"
+      }
+    },
+    "4d8c376a-2f46-78df-bfcf-37c5d6cb3413": {
+      "SourceNode": "1f3a97ef-d7d6-17b0-6349-4e92231e2984",
+      "UUID": "4d8c376a-2f46-78df-bfcf-37c5d6cb3413",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "28f2bf31-daa0-a54b-f5c2-3ae0dfc40b3e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dd41db78-064e-b8b4-5a9a-8dd9271b7fb0",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_MuralHelper1_Knows_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N113",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Baldurian)",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "5181cfde-3169-4b8b-a031-43759806dc71": {
+      "UUID": "5181cfde-3169-4b8b-a031-43759806dc71",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "aa59b447-1e66-8637-993a-83e7296739dd",
+        "de1f75c6-4da9-2ee4-09d1-a89332789c39",
+        "1fc31412-ec7f-3544-4ca5-acc62c73f4c7",
+        "d5842f63-c9b6-a090-f86e-26df94b837c9",
+        "63b10c99-6a6b-de2d-41eb-33dca441c4b6",
+        "1db9b4d9-6f25-57ee-018d-16dc4f51c9a2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a9bec397-9efd-469e-96f6-47493d92a9ba",
+              "Text": {
+                "Handle": "h457e7a7cg01b0g4e99g9599g9944d4568804",
+                "Value": "<i>Poetic nonsense. There is no wyrm, and no saviour.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N95",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[PK] Emperor's voice should have some sort of reverb due to Mindmeld",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "55ac017b-eddc-b2da-3db9-178b651099cb",
+        "TemplateVersion": "0",
+        "VFXTags": "[PK] Mindmeld on Player",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;15",
+        "sourcetemplate": "INCLUSION_Daisy"
+      }
+    },
+    "57536cb4-d7f0-6be5-c4f9-a52e00387dbb": {
+      "UUID": "57536cb4-d7f0-6be5-c4f9-a52e00387dbb",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8c34f8d2-8618-4cf8-99ac-03a61e237b30"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "325e4c7f-26cf-6771-0ef2-da5fabb434b3",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Balduran_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d8cad828-82f3-4a9b-ad0d-6f1637792d4e",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_State_EntryOpened"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7fd47f2-705c-4959-b113-e16f21f4d2d7",
+              "Text": {
+                "Handle": "h96b55567g0d75g45feg972ag90b039622aab",
+                "Value": "Be you the hero, answer true: <br><i>Are you worthy?</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "5b281656-1c52-21f6-dfab-7d27f9b5c7c0": {
+      "JumpTarget": "5181cfde-3169-4b8b-a031-43759806dc71",
+      "JumpTargetPoint": 2,
+      "UUID": "5b281656-1c52-21f6-dfab-7d27f9b5c7c0",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N103",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;453",
+        "sourcetemplate": ""
+      }
+    },
+    "63096c62-2664-fdaa-0a16-c18e8884eb96": {
+      "RollSuccess": true,
+      "UUID": "63096c62-2664-fdaa-0a16-c18e8884eb96",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0174f7ba-af5c-15b9-558b-9d22d10e5b72"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N92",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "63b10c99-6a6b-de2d-41eb-33dca441c4b6": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "63b10c99-6a6b-de2d-41eb-33dca441c4b6",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8e6608ab-de23-9518-ea24-aff66619a551",
+        "0ea0ec28-050a-f480-a320-61d47d3bddac"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a131fe33-0906-7eae-f856-52a47c6cb21f",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_Event_ArcanaCheck"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a131fe33-0906-7eae-f856-52a47c6cb21f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_Event_ArcanaCheck"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aa583d6f-51af-44db-8670-bf6cb96b5df6",
+              "Text": {
+                "Handle": "h974d3f93g90c4g4231g8b22g9c08370e8f60",
+                "Value": "<i>Examine the statue. What magic might be at work?</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Arcana",
+        "position": "2895;453",
+        "sourcetemplate": ""
+      }
+    },
+    "6dca9b71-ce00-fc12-c1da-25c4f8ff5e0d": {
+      "JumpTarget": "3d8ab07d-c593-14f0-97ba-998960abbe90",
+      "JumpTargetPoint": 1,
+      "UUID": "6dca9b71-ce00-fc12-c1da-25c4f8ff5e0d",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N102",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3215;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "8be5f01a-1a65-0bae-efaa-7b9bfcd47d8a": {
+      "UUID": "8be5f01a-1a65-0bae-efaa-7b9bfcd47d8a",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f548214b-1c8b-4f93-b8d4-3ed1e2b003ba",
+              "Text": {
+                "Handle": "h14bfbf76g3218g4a9eg8d43g70356d57c472",
+                "Value": "My domain imperilled, so it's claimed. <br>Enter, then, and prove thy merit, <br>Hero be? March forth and swear it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N104",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "8c34f8d2-8618-4cf8-99ac-03a61e237b30": {
+      "UUID": "8c34f8d2-8618-4cf8-99ac-03a61e237b30",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dbd87d73-fc86-4646-800d-ad4058f997e4"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "956ef70a-21d0-9df7-df5c-af1531cc98a3",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_EntranceStatue_WyllOM_Event_OMHappened"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9e865128-576c-0a42-6a6a-a5ffff44fe02",
+              "value": false,
+              "paramval": null,
+              "Name": "81a137d3-9f6f-3e68-2943-4c4343315c5f_WyllSpokeInclusion"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "31aca0be-c868-47bb-a1c2-601ff756b863",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_Wyll"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N98",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "53c4a858-205b-4c37-8b5f-83b127d3d805",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "335;453",
+        "sourcetemplate": "INCLUSION_Wyll"
+      }
+    },
+    "8e6608ab-de23-9518-ea24-aff66619a551": {
+      "RollSuccess": true,
+      "UUID": "8e6608ab-de23-9518-ea24-aff66619a551",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0eac0208-8acb-4c14-f4ff-c50d3df44306"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N67",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "3215;453",
+        "sourcetemplate": ""
+      }
+    },
+    "991d1805-5209-8ebe-7c08-9ddca4b75f0a": {
+      "UUID": "991d1805-5209-8ebe-7c08-9ddca4b75f0a",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "99e8c929-4b71-3e03-2b43-6e7421896f7a",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Balduran_Event_OpenDoor"
+            },
+            {
+              "UUID": "d8cad828-82f3-4a9b-ad0d-6f1637792d4e",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_State_EntryOpened"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7bfeab2f-3413-3736-e8fa-285a35b479a5",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_Event_HasMetOpen"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f9109a88-99d0-4af2-a599-45b42e2d43f4",
+              "Text": {
+                "Handle": "hb8794f42g10a0g40f5ga6a5g6d3ad07a633b",
+                "Value": "The wyrm rises, if you be so true. <br>Breath of fire, righteous fury, <br>Ansur - take flight, judge and jury.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "a9a3e1b5-d17d-ca87-0c8f-1a8950502484": {
+      "SourceNode": "28f2bf31-daa0-a54b-f5c2-3ae0dfc40b3e",
+      "UUID": "a9a3e1b5-d17d-ca87-0c8f-1a8950502484",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3c89b51d-4a66-8ba8-2574-b4227bf4c07e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dd41db78-064e-b8b4-5a9a-8dd9271b7fb0",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_MuralHelper1_Knows_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "67cdf8c3-6e77-e1f2-f891-f4217b0372c0",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_State_Attempted"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N114",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "975;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "aa59b447-1e66-8637-993a-83e7296739dd": {
+      "UUID": "aa59b447-1e66-8637-993a-83e7296739dd",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6dca9b71-ce00-fc12-c1da-25c4f8ff5e0d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5f40def5-d3ec-4698-a367-01a339888956",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_WYLL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2762c262-f7fd-4bdd-b4b3-faee034996d8",
+              "Text": {
+                "Handle": "hec27f444g1d3dg461bg9ce2g21235542c9d3",
+                "Value": "Venerable Balduran, Father of the Gate, let it be known: I am worthy."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N101",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Wyll",
+        "position": "2895;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "ab8f28a9-c88f-3e05-3075-cc182f1623fa": {
+      "UUID": "ab8f28a9-c88f-3e05-3075-cc182f1623fa",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a9a3e1b5-d17d-ca87-0c8f-1a8950502484",
+        "4d8c376a-2f46-78df-bfcf-37c5d6cb3413",
+        "1f3a97ef-d7d6-17b0-6349-4e92231e2984",
+        "f075ba8a-c2a5-12a9-84a8-42682d186672",
+        "10ba143e-5f01-d4ba-a517-3610776a231e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "325e4c7f-26cf-6771-0ef2-da5fabb434b3",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_Balduran_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d8cad828-82f3-4a9b-ad0d-6f1637792d4e",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_State_EntryOpened"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "325e4c7f-26cf-6771-0ef2-da5fabb434b3",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Balduran_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N88",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "c9c1ef5c-bda9-6799-0d58-ccce87d8d1bc": {
+      "UUID": "c9c1ef5c-bda9-6799-0d58-ccce87d8d1bc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "28f2bf31-daa0-a54b-f5c2-3ae0dfc40b3e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "67cdf8c3-6e77-e1f2-f891-f4217b0372c0",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_State_Attempted"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N116",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d5842f63-c9b6-a090-f86e-26df94b837c9": {
+      "UUID": "d5842f63-c9b6-a090-f86e-26df94b837c9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3d8ab07d-c593-14f0-97ba-998960abbe90"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5f40def5-d3ec-4698-a367-01a339888956",
+              "value": false,
+              "paramval": 1,
+              "Name": "REALLY_WYLL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0b46821f-7bfb-4f52-87bb-689ed7665e4a",
+              "Text": {
+                "Handle": "hb2e0c710g05fag41a0gb1ecg91c340dccfef",
+                "Value": "I am worthy. Open the way."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "574ea1e9-6c6b-4c9e-9f09-c563ab19e391",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2895;234",
+        "sourcetemplate": "OriginMoment_COM"
+      }
+    },
+    "dbd87d73-fc86-4646-800d-ad4058f997e4": {
+      "UUID": "dbd87d73-fc86-4646-800d-ad4058f997e4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 1,
+      "Children": [
+        "4d124442-5bde-4b38-8e42-2740c05bd200"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9e865128-576c-0a42-6a6a-a5ffff44fe02",
+              "value": false,
+              "paramval": null,
+              "Name": "81a137d3-9f6f-3e68-2943-4c4343315c5f_WyllSpokeInclusion"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9e865128-576c-0a42-6a6a-a5ffff44fe02",
+              "value": true,
+              "paramval": null,
+              "Name": "81a137d3-9f6f-3e68-2943-4c4343315c5f_WyllSpokeInclusion"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9d0b540e-fff3-4655-9303-dda720742216",
+              "Text": {
+                "Handle": "h7aa95e30g699cg4727gbe4bgc2d90811416d",
+                "Value": "The great dragon lies beyond. He must be freed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N99",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "f0a74f00-00ab-40f7-8454-024d350b6459",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION LINE",
+        "position": "655;453",
+        "sourcetemplate": "INCLUSION_Wyll"
+      }
+    },
+    "de1f75c6-4da9-2ee4-09d1-a89332789c39": {
+      "UUID": "de1f75c6-4da9-2ee4-09d1-a89332789c39",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "491c3507-0f4a-59ec-d128-573d042e4a5f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "04c09fe7-6832-064a-b48b-d3d02c49fab3",
+              "value": false,
+              "paramval": 2,
+              "Name": "WYR_EntranceStatue_Event_AskedAboutPlace"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "04c09fe7-6832-064a-b48b-d3d02c49fab3",
+              "value": true,
+              "paramval": 2,
+              "Name": "WYR_EntranceStatue_Event_AskedAboutPlace"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "00d42b9b-0e8f-4f09-9ff3-8b6d3c4dc4ef",
+              "Text": {
+                "Handle": "h77003c76g2c1bg4bf6g8b2egd578e87671e0",
+                "Value": "What are you? What is this place?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2895;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f075ba8a-c2a5-12a9-84a8-42682d186672": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "f075ba8a-c2a5-12a9-84a8-42682d186672",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "63096c62-2664-fdaa-0a16-c18e8884eb96",
+        "1f23bab4-038d-836e-01fa-55b96c12a681"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dd41db78-064e-b8b4-5a9a-8dd9271b7fb0",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Wyrmway_MuralHelper1_Knows_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "67cdf8c3-6e77-e1f2-f891-f4217b0372c0",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_EntranceStatue_State_Attempted"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4cb02915-7ad7-4141-907e-93253c6a8644",
+              "value": false,
+              "paramval": 1,
+              "Name": "REALLY_PLANAR"
+            },
+            {
+              "UUID": "f15e9b0d-676c-4f52-9abf-365cff89ef0f",
+              "value": false,
+              "paramval": 1,
+              "Name": "BALDURIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N91",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_History",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f5562703-1d95-02ef-1597-45c677218190": {
+      "UUID": "f5562703-1d95-02ef-1597-45c677218190",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6768a139-2e28-4bbe-9531-f97264c75f7d",
+              "Text": {
+                "Handle": "h55b11f0bgfc1bg4f69g9080g68d15a193dd3",
+                "Value": "*Whatever magic allows this statue to speak, it lies beyond your grasp.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N79",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;672",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fdb7fcc8-af3c-4e3d-bcc8-49c59445f062",
+      "Index": 0,
+      "List": [
+        "15a67462-18cd-b420-1349-561b640cfb6c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Balduran",
+        "Type": "character",
+        "MapKey": "97b22123-6825-4b24-8c47-437b0774e7a1",
+        "Name": "S_WYR_Balduran",
+        "ParentTemplateId": null,
+        "TemplateName": "18148ffa-c1be-475f-bd40-0e9dbf1e95b5"
+      },
+      "SpeakerGroupName": "GROUP_Act3_WYR_WyrmwayAnnouncer"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d2c457f4-303e-4476-a087-f3e94c7d69a5",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "563ccf5c-7450-45e7-b701-474e3459dc36",
+      "Index": 2,
+      "List": [
+        "a9edc89f-398b-a703-1a90-7330adb60ed9"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "The Emperor",
+        "Type": "character",
+        "MapKey": "73d49dc5-8b8b-45dc-a98c-927bb4e3169b",
+        "Name": "S_GLO_Emperor",
+        "ParentTemplateId": null,
+        "TemplateName": "6efb2704-a025-49e0-ba9f-2b4f62dd2195"
+      },
+      "SpeakerGroupName": "GROUP_Emperors"
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "18b4ee1c-f703-408c-b1ac-9c3b6c584d5d",
+      "Index": 3,
+      "List": [
+        "c774d764-4a17-48dc-b470-32ace9ce447d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Wyll",
+        "Type": "character",
+        "MapKey": "c774d764-4a17-48dc-b470-32ace9ce447d",
+        "Name": "S_Player_Wyll",
+        "ParentTemplateId": null,
+        "TemplateName": "159cdf9e-6665-4450-9375-8494e233b0e4"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Player interacts with statue when reaching the wyrmway, and professes themselves worthy in order to enter."
+}

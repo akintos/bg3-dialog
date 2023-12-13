@@ -1,0 +1,1136 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_Festivities_Trader.lsj",
+  "UUID": "4851562f-89f0-1626-87ef-46fc44091639",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "162fe1d3-ee70-cd25-61f3-625e94fc144b",
+    "4c2a93b9-23ef-6465-9fb7-47b2f7155383",
+    "86c06461-e4f8-8e54-9a59-92be6fee1695",
+    "3e488da9-858f-050f-1fc6-bd305af609c3",
+    "8f44c71f-03d0-7121-4a1f-6965d7f1c060",
+    "386bb9fa-b446-b927-8b67-89e10b4feb6b"
+  ],
+  "Nodes": {
+    "15e4bc90-9cc0-25cf-6b98-dd2b6a54f948": {
+      "UUID": "15e4bc90-9cc0-25cf-6b98-dd2b6a54f948",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7e715d40-b20f-1775-7e60-05dfc080dcae"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1540d9fa-9441-5b62-75f0-df7ed62e1bcc",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Trader_Knows_Goods"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1540d9fa-9441-5b62-75f0-df7ed62e1bcc",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Trader_Knows_Goods"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "00d2529a-bf37-a0ec-66d2-faf1774d370b",
+              "Text": {
+                "Handle": "ha2a9e07bg71bdg4db0gaa96g2321c1befe79",
+                "Value": "Quite the trove. How'd you get your hands on all this?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "162fe1d3-ee70-cd25-61f3-625e94fc144b": {
+      "UUID": "162fe1d3-ee70-cd25-61f3-625e94fc144b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0e867c08-b2b9-4f43-8260-168026663e2c",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_GoblinToast_State_RealizedPoison"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c"
+                ],
+                "TagNames": [
+                  "DROWELF"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "d2247248-c156-e8bb-99e8-2b2e0276e0af",
+              "Text": {
+                "Handle": "h28a928f4g1df7g4098g8762geeabedf6599c",
+                "Value": "Be careful, your gloriousness. Someone's got it out for us."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Submissive",
+        "CinematicNodeContext": "Eyes the player suspciously.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Suspicious. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Goblins Poisoned - Drow",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "1c94f576-e257-be19-90eb-6cabc04dc5df": {
+      "JumpTarget": "9ed8800b-db60-02a3-42c7-78bd856c1904",
+      "JumpTargetPoint": 2,
+      "UUID": "1c94f576-e257-be19-90eb-6cabc04dc5df",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N30",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "31653e62-a5b6-2db1-a9eb-0710ae70b348": {
+      "JumpTarget": "9ed8800b-db60-02a3-42c7-78bd856c1904",
+      "JumpTargetPoint": 2,
+      "UUID": "31653e62-a5b6-2db1-a9eb-0710ae70b348",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N13",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "386bb9fa-b446-b927-8b67-89e10b4feb6b": {
+      "UUID": "386bb9fa-b446-b927-8b67-89e10b4feb6b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "31653e62-a5b6-2db1-a9eb-0710ae70b348"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "030d528e-f649-3a8e-8416-ae146afbfd47",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_Trader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a598e347-9559-d76f-ea58-54dd9901e4d3",
+              "Text": {
+                "Handle": "hcc70e5c3gb044g49fbga157g1d9935088835",
+                "Value": "I got stuff if you got coin."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HasMet",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    },
+    "3e488da9-858f-050f-1fc6-bd305af609c3": {
+      "UUID": "3e488da9-858f-050f-1fc6-bd305af609c3",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9ed8800b-db60-02a3-42c7-78bd856c1904"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "030d528e-f649-3a8e-8416-ae146afbfd47",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Festivities_Trader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "030d528e-f649-3a8e-8416-ae146afbfd47",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_Trader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5d81ac47-5a35-e629-473a-16e0f6dd7694",
+              "Text": {
+                "Handle": "h845899feg8569g4c47ga9a1geaa08e5950b2",
+                "Value": "You look like you got something jingling in your pocket. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "Standing in front of his goods, laid out on a blanket",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting - Nondrow",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "4c2a93b9-23ef-6465-9fb7-47b2f7155383": {
+      "UUID": "4c2a93b9-23ef-6465-9fb7-47b2f7155383",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0e867c08-b2b9-4f43-8260-168026663e2c",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_GoblinToast_State_RealizedPoison"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f453ec35-5631-f07e-aa99-31b2e5cf0fd4",
+              "Text": {
+                "Handle": "hc3c05a1agfb8ag4568ga805g93ac6ce82834",
+                "Value": "Keep walkin'. Shop's closed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "Eyes the player suspciously.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Suspicious. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Goblins Poisoned - NonDrow",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "55b519f6-1c38-2961-f81c-2aac176b20d1": {
+      "UUID": "55b519f6-1c38-2961-f81c-2aac176b20d1",
+      "Constructor": "Trade",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e6dd8570-ec01-e797-8064-d1a1f2a1a2c6",
+        "5c03750a-f98c-8a51-8693-20ea8990a6a8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N32",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Trade",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "5c03750a-f98c-8a51-8693-20ea8990a6a8": {
+      "UUID": "5c03750a-f98c-8a51-8693-20ea8990a6a8",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2ca16dee-1f46-6e01-bf96-39b846c2839c",
+              "Text": {
+                "Handle": "h6806864cg0e94g4578g9e5eg0e262994463a",
+                "Value": "Get movin'. I got other customers."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Nondrow",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "7e715d40-b20f-1775-7e60-05dfc080dcae": {
+      "UUID": "7e715d40-b20f-1775-7e60-05dfc080dcae",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "91a200f7-ec31-1e00-545f-51567b4b6f08"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "968f351a-deaf-1c31-7002-00c440a53717",
+              "Text": {
+                "Handle": "h9b92d2cdg2b5bg433dga91eg19c8b4fd2b58",
+                "Value": "Nicked 'em off the dead, didn't I?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Happiness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Nondrow",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "86c06461-e4f8-8e54-9a59-92be6fee1695": {
+      "UUID": "86c06461-e4f8-8e54-9a59-92be6fee1695",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1c94f576-e257-be19-90eb-6cabc04dc5df"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "030d528e-f649-3a8e-8416-ae146afbfd47",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Festivities_Trader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "030d528e-f649-3a8e-8416-ae146afbfd47",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_Trader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c"
+                ],
+                "TagNames": [
+                  "DROWELF"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "30f44fc5-66c0-951b-7bb4-d741d206b07d",
+              "Text": {
+                "Handle": "h02fabe72ge6b8g4fc3g946ege9be5a42d9ea",
+                "Value": "Welcome, your greatness. I got some good stuff, if you're lookin' to buy."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Submissive",
+        "CinematicNodeContext": "Standing in front of his goods, laid out on a blanket",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Making a sales pitch to his superior",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting - Drow",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "8f44c71f-03d0-7121-4a1f-6965d7f1c060": {
+      "UUID": "8f44c71f-03d0-7121-4a1f-6965d7f1c060",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "31653e62-a5b6-2db1-a9eb-0710ae70b348"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "030d528e-f649-3a8e-8416-ae146afbfd47",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_Trader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c"
+                ],
+                "TagNames": [
+                  "DROWELF"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "0fb5d1f1-929d-30a0-3242-2c569be32cf8",
+              "Text": {
+                "Handle": "h2533a26ag61dcg4260g82b4gec093a3ed45b",
+                "Value": "Your greatness. Somethin' catch your eye?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Submissive",
+        "CinematicNodeContext": "Bows a bit when he says 'your greatness'",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "'Your greatness' is said like an honorific. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HasMet - Drow",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    },
+    "91a200f7-ec31-1e00-545f-51567b4b6f08": {
+      "UUID": "91a200f7-ec31-1e00-545f-51567b4b6f08",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c"
+                ],
+                "TagNames": [
+                  "DROWELF"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "d5a6bd0f-4cc8-c6ee-18ba-efa1ca96f6d9",
+              "Text": {
+                "Handle": "hab7527d1g006eg44cfg9cfcgfc4a77a5c56a",
+                "Value": "Erh, I mean - raid spoils, your majesticality."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Submissive",
+        "CinematicNodeContext": "Wide-eyed, bowing",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N24",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Regretting his choice of words",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Drow",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "9ed8800b-db60-02a3-42c7-78bd856c1904": {
+      "UUID": "9ed8800b-db60-02a3-42c7-78bd856c1904",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ca834c80-196d-0546-fd83-4e83dbcea7d5",
+        "15e4bc90-9cc0-25cf-6b98-dd2b6a54f948",
+        "df15dbb5-2fbe-baea-5378-a00be2140a49"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6853bda0-ecb4-de8b-e698-eb15eaeab6df",
+              "Text": {
+                "Handle": "h6d01b211g5e5dg4b33gaafagf98388b7cd7c",
+                "Value": "Lookin' to spend it?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ca834c80-196d-0546-fd83-4e83dbcea7d5": {
+      "UUID": "ca834c80-196d-0546-fd83-4e83dbcea7d5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "55b519f6-1c38-2961-f81c-2aac176b20d1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7794696-1ab4-3734-0f2d-d8b99c501256",
+              "Text": {
+                "Handle": "h50d2e42bgf07fg4944gb1afg9e8978ebb916",
+                "Value": "Let me see what you have."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "df15dbb5-2fbe-baea-5378-a00be2140a49": {
+      "UUID": "df15dbb5-2fbe-baea-5378-a00be2140a49",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "85bfe187-2cd8-eb37-6f61-f816c62dd64b",
+              "Text": {
+                "Handle": "hea1ed442gcebeg4391ga8d4ga0d3a7f6ecb1",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "e6dd8570-ec01-e797-8064-d1a1f2a1a2c6": {
+      "UUID": "e6dd8570-ec01-e797-8064-d1a1f2a1a2c6",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c",
+                  "4fa13243-199d-4c9a-b455-d844276a98f5"
+                ],
+                "TagNames": [
+                  "DROWELF",
+                  "DROWHALFELF"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF or DROWHALFELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "30a3b1e8-6a3c-ed35-f8cd-aeab094aa337",
+              "Text": {
+                "Handle": "h6b2c8672g15b4g41cdga02bg574a9e771382",
+                "Value": "Been a pleasure, your greatness."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Submissive",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Coyness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Drow",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "86abc009-f7fc-5813-6537-ac147ef0d5ec",
+      "Index": 0,
+      "List": [
+        "3c9f9d17-835c-46bf-929d-240e3b4adb55"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Grat the Trader",
+        "Type": "character",
+        "MapKey": "3c9f9d17-835c-46bf-929d-240e3b4adb55",
+        "Name": "S_GOB_Festivities_Trader",
+        "ParentTemplateId": null,
+        "TemplateName": "35e843cf-bc73-4754-aaee-fd8272d99ea6"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "5877d4cd-0cc0-8f6e-448f-d9cbdaf5e671",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Grat is selling items laid out on a blanket in the middle of a drunken celebration in the goblin camp. He's not participating in the drinking - he expects to make a good bit of coin off his drunk mates."
+}

@@ -1,0 +1,374 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/ADs/GOB_Torturers_AD_DoPenance.lsj",
+  "UUID": "55ff7bc3-d969-a3e8-0607-a2ce19fc39bb",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "602685ca-79dc-62d8-4f6c-ff2d69165c9e",
+    "1861626f-a5d2-5b8f-fb94-65869b8bb2ca"
+  ],
+  "Nodes": {
+    "1861626f-a5d2-5b8f-fb94-65869b8bb2ca": {
+      "UUID": "1861626f-a5d2-5b8f-fb94-65869b8bb2ca",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b2c00c77-b02b-2c5f-14bf-37d6225f313b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "60e93ec5-15f5-49ed-add6-c583962f94e2",
+              "value": true,
+              "paramval": 0,
+              "Name": "GOB_Torturers_State_MissedPlayerPenance"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "78a4fa17-eb98-bb22-5813-069c9a20f1ce",
+              "Text": {
+                "Handle": "h8467f274g3d96g400dg962cgae9c9d053d8c",
+                "Value": "What's he doin'? Doesn't he need someone to torture?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "The player's penance was completed before Spike and Goblet came to the priest's room",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "puzzled, he doesn't understand the pain priest.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Missed player's penance",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "602685ca-79dc-62d8-4f6c-ff2d69165c9e": {
+      "UUID": "602685ca-79dc-62d8-4f6c-ff2d69165c9e",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9a038e97-767c-fe72-ba38-1cf50c252e07"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "60e93ec5-15f5-49ed-add6-c583962f94e2",
+              "value": false,
+              "paramval": 0,
+              "Name": "GOB_Torturers_State_MissedPlayerPenance"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "28f94e32-38f6-1407-b523-3bca7c667cf3",
+              "Text": {
+                "Handle": "hb3124206gff0bg479cgbcddg8cafc3018d55",
+                "Value": "Grush, I need to see that again. Ask him if you can do the penance thing too."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "Spike and Goblet were there during the player's penance",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "interested, an idea is forming in his head.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Playing after Player's Penance",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "9a038e97-767c-fe72-ba38-1cf50c252e07": {
+      "UUID": "9a038e97-767c-fe72-ba38-1cf50c252e07",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ef48d070-33cd-fbf3-1805-69ef6fca3bea"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c9ff73e1-6350-6ee6-7b36-9e18bff3733e",
+              "Text": {
+                "Handle": "hbd26218bg6461g4678ga401gda6a993a0545",
+                "Value": "But -"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "unsure - he doesn't really want to disobey Spike, but he's going to get hurt.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "b2c00c77-b02b-2c5f-14bf-37d6225f313b": {
+      "UUID": "b2c00c77-b02b-2c5f-14bf-37d6225f313b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9a038e97-767c-fe72-ba38-1cf50c252e07"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "977b6ff0-464f-d6e7-2642-8c94b2e66403",
+              "Text": {
+                "Handle": "hd3e4ce42gb63cg4544gaf59g492c8620665d",
+                "Value": "Grush, go help him."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "commanding, looking forward to seeing the other goblin get beat up.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ef48d070-33cd-fbf3-1805-69ef6fca3bea": {
+      "UUID": "ef48d070-33cd-fbf3-1805-69ef6fca3bea",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3d9846fb-7f65-5cef-7901-c1adf002d6b0",
+              "Text": {
+                "Handle": "h9cf38c70g5f22g49aega06dga7370a6958d0",
+                "Value": "Get in there! We might learn somethin'."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "commanding and excited - he won't allow Grush to talk back to him, and he's looking forward to seeing the other goblin get beat up.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c75f85c8-e0f3-9efe-2c2f-69d806b3d415",
+      "Index": 0,
+      "List": [
+        "3f1fa953-6a0d-4589-adfd-23c69603da2f"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Torturer Spike",
+        "Type": "character",
+        "MapKey": "3f1fa953-6a0d-4589-adfd-23c69603da2f",
+        "Name": "S_GOB_Torturers_Spike",
+        "ParentTemplateId": null,
+        "TemplateName": "35e843cf-bc73-4754-aaee-fd8272d99ea6"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c5661783-35fb-39bb-0a55-88d70ad41bfc",
+      "Index": 1,
+      "List": [
+        "0f18201e-2836-4642-8a26-d0a6e1a8a8cc"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lookout Grush",
+        "Type": "character",
+        "MapKey": "0f18201e-2836-4642-8a26-d0a6e1a8a8cc",
+        "Name": "S_GOB_Torturers_Goblet",
+        "ParentTemplateId": null,
+        "TemplateName": "35e843cf-bc73-4754-aaee-fd8272d99ea6"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Spike orders Grush to go to the pain priest to undergo penance/torture."
+}

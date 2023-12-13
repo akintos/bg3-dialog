@@ -1,0 +1,263 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/UND_MyconidCircle_InjuredGnome_SporeServant.lsj",
+  "UUID": "baf8005b-94e4-31fe-ad7d-be1e415dbfde",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "527f9155-bad2-4e6f-bb19-55f6299fa045",
+    "eb006160-781b-0ac1-4ac1-35edd8cf2afd"
+  ],
+  "Nodes": {
+    "48e31b72-7613-4343-2e97-377e293137d3": {
+      "UUID": "48e31b72-7613-4343-2e97-377e293137d3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "64c13712-bea7-4dd6-9f11-ad72c8bb6a9e",
+              "Text": {
+                "Handle": "h8f14f1a5g9d7eg4313gbac5g8575fe00a423",
+                "Value": "*It stands quietly, awaiting its myconid master's command.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N41",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "527f9155-bad2-4e6f-bb19-55f6299fa045": {
+      "UUID": "527f9155-bad2-4e6f-bb19-55f6299fa045",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "48e31b72-7613-4343-2e97-377e293137d3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f6add231-7a58-b841-cea4-a5a6259519e2",
+              "value": false,
+              "paramval": 1,
+              "Name": "UND_InjuredGnome_ServantHasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f6add231-7a58-b841-cea4-a5a6259519e2",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_InjuredGnome_ServantHasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0ef4d595-8306-4f05-8eb0-dcb7aefbde9b",
+              "Text": {
+                "Handle": "hacc51a80g8dbdg403ag922dgf0ca6716fb77",
+                "Value": "*It is not a gnome who stands before you, but a mere husk.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "SVFX Spore Telepathic/Vision",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "eb006160-781b-0ac1-4ac1-35edd8cf2afd": {
+      "UUID": "eb006160-781b-0ac1-4ac1-35edd8cf2afd",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f6add231-7a58-b841-cea4-a5a6259519e2",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_InjuredGnome_ServantHasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "299cf19a-a6ba-4f82-a1b5-4250f816abb2",
+              "Text": {
+                "Handle": "ha8f9341agd128g46f2gb3dcg3916d3e78554",
+                "Value": "*The servant remains silent.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "450d72b2-eb6e-e2d4-ded2-fc09884e5605",
+      "Index": 0,
+      "List": [
+        "fcf53ac7-1805-4e57-b6ed-4f7b0f90cf96"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Thulla",
+        "Type": "character",
+        "MapKey": "fcf53ac7-1805-4e57-b6ed-4f7b0f90cf96",
+        "Name": "S_GLO_InjuredGnome",
+        "ParentTemplateId": null,
+        "TemplateName": "98cb4442-1824-4f76-b428-cd377a7d7c1b"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fa1658d1-3abb-07df-45be-e4963a8fc669",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Player speaks with Thulla - the injured gnome, - after she dies from duergar poison and is resurrected by the myconids as a spore servant."
+}

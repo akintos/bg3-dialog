@@ -1,0 +1,132 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shar/SHA_NGB_NightsongPrison_PlayerAttackedNecro.lsj",
+  "UUID": "5047a196-4d1b-851e-c269-6b2ab25b1661",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "25963b60-2a98-5a20-2d59-05db304d8a79"
+  ],
+  "Nodes": {
+    "25963b60-2a98-5a20-2d59-05db304d8a79": {
+      "UUID": "25963b60-2a98-5a20-2d59-05db304d8a79",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ed6e37a5-ea65-cf0b-f70b-8e9e2a7e4ed2",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_NightsongPrison_State_PlayerBetrayedNecro"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "37aa79c2-8058-48fd-b19d-1badc91fe1f8",
+              "Text": {
+                "Handle": "he7b78274gdf34g47d0ga5a4gda26460afe2d",
+                "Value": "A cheap attack, just as I'm finally reunited with my masterwork? This will not stand."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "Balthazar is hostile to the player as they attacked him before the normal scene flow triggered.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Furious.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting - Hostile",
+        "position": "15;4395",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cf1a5d7e-72bc-434b-a96b-128137a3069f",
+      "Index": 0,
+      "List": [
+        "53651a9f-7ea8-444f-ba2d-224390b72f7d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Balthazar",
+        "Type": "character",
+        "MapKey": "53651a9f-7ea8-444f-ba2d-224390b72f7d",
+        "Name": "S_SHA_Necromancer",
+        "ParentTemplateId": null,
+        "TemplateName": "167ee470-5f36-4618-a423-b04f6d8dbbb2"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "91be6cdf-6221-44d3-86fa-2e874cfdeb85",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Balthazar responds to the player's attack before becoming hostile"
+}

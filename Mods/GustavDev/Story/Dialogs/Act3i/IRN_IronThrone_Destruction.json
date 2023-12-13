@@ -1,0 +1,540 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3i/IRN_IronThrone_Destruction.lsj",
+  "UUID": "04c6f121-7b00-a1c8-ded2-c3e31c20a0c1",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1
+  },
+  "RootNodes": [
+    "76656cae-093c-d36c-7741-3e7dc3a01c50",
+    "c9aab4b6-d064-498b-79c8-8a8710d0f38c"
+  ],
+  "Nodes": {
+    "0452b82f-0403-09fd-2b84-1937a4ebd3bf": {
+      "UUID": "0452b82f-0403-09fd-2b84-1937a4ebd3bf",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PN][Tag in previous node for PLYR]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "We see the player step up to the window and stare out. The Iron Throne is collapsing, with a deep glow within it. As one of the wings collapses, the entire place explodes. A perfect circle of light engulfs the Throne, with a rumbling, roiling boom. Eventually, it transitions into an orb of water, the explosion's light making it look like shattered glass, that implodes into a cloud of underwater smoke. (look up Underwater Explosions at 120,000fps for visual ref)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "0f7dd3db-0044-980b-9082-38ebb6ee4432": {
+      "UUID": "0f7dd3db-0044-980b-9082-38ebb6ee4432",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PN][Tag in previous node for PLYR]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The Iron Throne is collapsing, with a deep glow within it. As one of the wings collapses, the entire place explodes. A perfect circle of light engulfs the Throne, with a rumbling, roiling boom. Eventually, it transitions into an orb of water, the explosion's light making it look like shattered glass, that implodes into a cloud of underwater smoke. (look up Underwater Explosions at 120,000fps for visual ref). The Submersible does not escape in this branch.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N52",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "No players managed to reach submersible",
+        "position": "-945;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "2fe9766b-53e6-d151-3a84-e2bd94df520f": {
+      "UUID": "2fe9766b-53e6-d151-3a84-e2bd94df520f",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0452b82f-0403-09fd-2b84-1937a4ebd3bf"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8a4a686d-6c47-411f-a0b3-d79ff33e2922",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_3"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PN] PLYR walks over to Ravengard standing by the window (hands bound), reacts with disgust to the player. He moves away as PLYR moves toward the Window. The PLYR / Ravengaard performance also needs to work independently, as not guaranteed present.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "At one of the windows, we see duke ravengard, hands still bound, staring out. as the player takes a step towards him, he startles, then fixes us with a filthy scowl, and moves away as the player moves towards the window. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "RAVENGARD",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "570fa1b4-0221-e876-52ed-a0a58292bee3": {
+      "UUID": "570fa1b4-0221-e876-52ed-a0a58292bee3",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2fe9766b-53e6-d151-3a84-e2bd94df520f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6e4b66e9-0f72-5171-04ba-441108b45b0e",
+              "value": true,
+              "paramval": null,
+              "Name": "IMPOSSIBLE"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "7fd98b6e-11d5-28e0-bc67-bb0925834fa3",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_4"
+            },
+            {
+              "UUID": "8a4a686d-6c47-411f-a0b3-d79ff33e2922",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_3"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PN] Tagged in previous node",
+        "Attitude": "Default",
+        "CinematicNodeContext": "He notices the player looking at him, and nods towards the submersible's side windows. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N48",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "OMELUUM + RAVENGARD",
+        "position": "-305;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "76656cae-093c-d36c-7741-3e7dc3a01c50": {
+      "UUID": "76656cae-093c-d36c-7741-3e7dc3a01c50",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0f7dd3db-0044-980b-9082-38ebb6ee4432"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "41939631-a0e4-4fa1-8220-e080e468afee",
+              "value": true,
+              "paramval": null,
+              "Name": "IRN_IronThrone_State_NoPlayersEscaped"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N77",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE - No players escaped",
+        "position": "-1265;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "88288f75-dd77-e1bc-7fa9-f2f98e67f0c0": {
+      "UUID": "88288f75-dd77-e1bc-7fa9-f2f98e67f0c0",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "570fa1b4-0221-e876-52ed-a0a58292bee3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7fd98b6e-11d5-28e0-bc67-bb0925834fa3",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_4"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PN] Omeluum in pain hand clutching his side, wordlessly indicates Ravengard who is standing over by the window. Plyr reaction, looking over. This reaction of the player needs to work the same if Omeluum isn't present (hasn't been saved.)",
+        "Attitude": "Default",
+        "CinematicNodeContext": "A winded Omelluum leans against another end side of the submersible, hand clutching his side in pain.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N39",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "OMELUUM ",
+        "position": "-625;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "c9aab4b6-d064-498b-79c8-8a8710d0f38c": {
+      "UUID": "c9aab4b6-d064-498b-79c8-8a8710d0f38c",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f787019c-7da7-c2b3-5f02-24e7d8d595e9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PN] Animation of player escaping the collapsing Iron Throne. Some nice contact anims with environment (hands on door frames etc.) would help to ground it. sahaugin being crushed allowing the player to escape. Ideally something that reinforces the danger to the player and feels motivated, not random. e.g. Sahaugin sees player, points and roars, attacks and misses hitting the structure causing a pipe to explode and collapse on it. PLYR runs off in the other direction down the hallway dodging debris and being thrown around as the building is collapsing",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The Iron Throne is falling apart. Player runs to the escape ladder connecting the Iron Throne to the Submerisble",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic (IRON THRONE FALLING APART)",
+        "position": "-1265;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f787019c-7da7-c2b3-5f02-24e7d8d595e9": {
+      "UUID": "f787019c-7da7-c2b3-5f02-24e7d8d595e9",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "88288f75-dd77-e1bc-7fa9-f2f98e67f0c0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PN] Show players’ party arriving at ladder (this should be set up in a way that can work for solo player). Other party members ascend the ladder first. Player runs from the corner over to the ladder and ascends, , 1. Show Obelia Toobin running to and climbing up ladder. (Can be absent if not rescued), 2. Show Player 2 encourage trailing player, and goes up the ladder. (Can be absent if solo party)., 3. Show Player 1 arrive late and make up the rear following party up the ladder. (Will always play), , Player ascends the ladder, party cheers them on (this should be set up in a way that can work for solo player e.g. no interaction). PLYR reaction to a door exploding with water pressure below/behind them. Player reaches the top, quickly turns around and shuts airlock door.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player continues climbing the escape ladder and boards the Submersible to escape. Other party members encourage them if they're present.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic (RUNNING TO SUBMERSIBLE)",
+        "position": "-945;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "dd68ecbb-e42d-4084-8748-98fe4862a0db",
+      "Index": 0,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "85ec67a2-cf49-4644-8315-d8228aa2268f",
+      "Index": 1,
+      "List": [
+        "614ceeec-24a5-4491-98b3-a83ab235f158"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Obelia Toobin",
+        "Type": "character",
+        "MapKey": "614ceeec-24a5-4491-98b3-a83ab235f158",
+        "Name": "S_GLO_IronThrone_EscapingHostage",
+        "ParentTemplateId": null,
+        "TemplateName": "308574bb-5a2e-4395-b9df-75c9f4645ae6"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "4bc61563-b441-47e2-a530-3bae1c460388",
+      "Index": 2,
+      "List": [
+        "f6620372-ebd0-4511-a39d-8c2d4ad03f03"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Duke Ulder Ravengard",
+        "Type": "character",
+        "MapKey": "f6620372-ebd0-4511-a39d-8c2d4ad03f03",
+        "Name": "S_GLO_Ravengard",
+        "ParentTemplateId": null,
+        "TemplateName": "f37e77ff-18f9-466f-a860-53d3edbadcd8"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "eb438c88-4bd0-4cf9-9e1e-8ac32c1b5b2b",
+      "Index": 3,
+      "List": [
+        "1f9937ef-9207-4db6-a833-e4083d571f53",
+        "df88c3a5-9ee1-4a23-a7b6-34c07cef8a33"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Omeluum",
+        "Type": "character",
+        "MapKey": "1f9937ef-9207-4db6-a833-e4083d571f53",
+        "Name": "S_GLO_SocietyOfBrilliance_MindFlayer",
+        "ParentTemplateId": null,
+        "TemplateName": "23ac81c1-597e-41c3-8c3c-6688ca399be1"
+      },
+      "SpeakerGroupName": null
+    },
+    "4": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "bce52174-a6d6-448b-86be-2936af806429",
+      "Index": 4,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "5": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "6cf79dfb-3358-4fd1-8442-6aa295b1ab49",
+      "Index": 5,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "6": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "67ebb5b5-1890-4f41-84f2-9ba44b48f0ea",
+      "Index": 6,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The Iron Throne is seen collapsing under the water pressure. If players managed to escape, they are seen escaping with the submersible."
+}

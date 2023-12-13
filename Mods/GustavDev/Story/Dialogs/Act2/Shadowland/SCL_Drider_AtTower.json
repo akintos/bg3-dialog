@@ -1,0 +1,373 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shadowland/SCL_Drider_AtTower.lsj",
+  "UUID": "3e097ec8-b9ae-dcaf-4154-ea8237e99039",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "c5d8b314-658a-2cbd-a97e-23928d00b012",
+    "8812799d-6e1d-f645-0076-f3dec0961095",
+    "f77024cd-ca82-446c-6070-fa96e86e2c1f"
+  ],
+  "Nodes": {
+    "57f469a8-0eee-de8c-e85c-91a5d3cd89ba": {
+      "UUID": "57f469a8-0eee-de8c-e85c-91a5d3cd89ba",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3d07c2f9-3f49-4ef5-b107-eb01162204ac",
+              "Text": {
+                "Handle": "h18996b60ga440g4450ga834g591181ee9f27",
+                "Value": "<i>Be worthy of Her.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Leaning forward with glint of madness - could be take as encouragement or threat",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "8812799d-6e1d-f645-0076-f3dec0961095": {
+      "UUID": "8812799d-6e1d-f645-0076-f3dec0961095",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a6ab6a2b-0c26-8fc5-c0a2-3593f0b29ce3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2af6450a-480a-32bd-65cb-505587c2b0f3",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "98d5c214-6a86-39a5-cff3-ad0020c53de9",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_AtTower_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2f7b15b0-b45b-4cda-a80a-86632a56a97e",
+              "Text": {
+                "Handle": "h8c5c36fbg850cg403fgb34bg821e84d89913",
+                "Value": "To think, it was we who brought you to Our Majesty's blessing."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Barely controlled excitement - we're a random acquaintance who basically became a celebrity. He expects a great reward by association,.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "a6ab6a2b-0c26-8fc5-c0a2-3593f0b29ce3": {
+      "JumpTarget": "57f469a8-0eee-de8c-e85c-91a5d3cd89ba",
+      "JumpTargetPoint": 1,
+      "UUID": "a6ab6a2b-0c26-8fc5-c0a2-3593f0b29ce3",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N13",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "c5d8b314-658a-2cbd-a97e-23928d00b012": {
+      "UUID": "c5d8b314-658a-2cbd-a97e-23928d00b012",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "98d5c214-6a86-39a5-cff3-ad0020c53de9",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_AtTower_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c308be31-1f56-4b15-90c0-67cd7bd9b6bb",
+              "Text": {
+                "Handle": "h4a6303c4g892ag4e32ga5ddg63c11ccca71e",
+                "Value": "Outcast no longer. I will <i>ascend.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "More to himself - fervent and not entirely sane",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f77024cd-ca82-446c-6070-fa96e86e2c1f": {
+      "UUID": "f77024cd-ca82-446c-6070-fa96e86e2c1f",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "57f469a8-0eee-de8c-e85c-91a5d3cd89ba"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2af6450a-480a-32bd-65cb-505587c2b0f3",
+              "value": false,
+              "paramval": 1,
+              "Name": "SCL_Drider_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "98d5c214-6a86-39a5-cff3-ad0020c53de9",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_AtTower_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ffd1468f-392e-4036-9cfc-57c284804f3f",
+              "Text": {
+                "Handle": "h61e56ba2gbf58g4ac0gb698g9c6a27f3ac63",
+                "Value": "An interloper receives the Majesty's blessing before us?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Looking at us with barely-reined in disgust - he is more deserving thatn we are, surely",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "dc9bf1cf-849f-c037-c158-a57249b64ee6",
+      "Index": 0,
+      "List": [
+        "aa59ce01-3d2e-42e8-a539-c07e0ea292ab"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Kar'niss",
+        "Type": "character",
+        "MapKey": "aa59ce01-3d2e-42e8-a539-c07e0ea292ab",
+        "Name": "S_SCL_Drider",
+        "ParentTemplateId": null,
+        "TemplateName": "6145f104-895d-4023-8fc7-1ba2cea1480a"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "4b154d96-2055-828e-28c4-c6e4003c5ff7",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The Drider stands at the top of Moonrise tower - present just before we get our reward."
+}

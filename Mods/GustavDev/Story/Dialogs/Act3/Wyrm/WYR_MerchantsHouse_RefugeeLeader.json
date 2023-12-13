@@ -1,0 +1,5106 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_MerchantsHouse_RefugeeLeader.lsj",
+  "UUID": "64fc8031-08ac-951e-3844-7b9056ba3504",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "9a2c9810-d5ea-78c8-b4b1-7ce9f6baffb2",
+    "5fb22ef3-910e-8a69-5bef-ca84852737a0",
+    "eb78e11e-ae1a-8cdd-4c03-5da945bb47a6",
+    "9bef0b5b-fdf8-6de2-6296-38e73eb3aed2",
+    "b53f62c6-f408-d4c3-ce93-caf2d46bb93e",
+    "efb811d1-5aca-f5f9-4e37-4cfd583da475",
+    "a44895c3-fc96-abac-37b4-9c912b37b0e3",
+    "f70758af-b15e-accc-1c01-efe6884c9c01",
+    "a002116a-ad2d-0850-993b-7e4db4b355a8",
+    "c796f17d-c3b1-1353-397a-b8244737510a"
+  ],
+  "Nodes": {
+    "045625a0-354b-86be-62f4-6e1e9749702f": {
+      "JumpTarget": "bf29ba68-10a3-62a0-4e00-2821a31e4801",
+      "JumpTargetPoint": 1,
+      "UUID": "045625a0-354b-86be-62f4-6e1e9749702f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N283",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;453",
+        "sourcetemplate": ""
+      }
+    },
+    "06d660c0-7080-94ce-9719-d261bc56c017": {
+      "RollSuccess": true,
+      "UUID": "06d660c0-7080-94ce-9719-d261bc56c017",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5b0d8919-4a61-9dbc-0c8f-06e1c47878da"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N8",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "06f997ac-2663-ad42-0d20-89fe6afa6e13": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "b9cea18d-f40a-444d-a692-76582a69130c",
+      "DifficultyClassValue": 7,
+      "UUID": "06f997ac-2663-ad42-0d20-89fe6afa6e13",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "06d660c0-7080-94ce-9719-d261bc56c017",
+        "96d7e550-1e2e-377e-cd1b-0d30238b99b8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "88f8607e-5f14-8474-9879-e1b36f2e50dd",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_RefugeeLeader_State_TriedIntimidation"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "88f8607e-5f14-8474-9879-e1b36f2e50dd",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_RefugeeLeader_State_TriedIntimidation"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d67673e4-4c89-4f09-b97a-4b60d95f5818",
+              "Text": {
+                "Handle": "h1a53d799gaf77g408bg8ec9g1d7f2f63ef64",
+                "Value": "This is private property. You need to leave - or I'll make you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Intimidation",
+        "position": "335;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "09e502c3-8ba8-5eab-7922-55c0891ae219": {
+      "UUID": "09e502c3-8ba8-5eab-7922-55c0891ae219",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "61c99517-2e56-a3e7-31a6-3cca2889a09c",
+        "d9c3bb98-4566-bfd7-6388-7631eaf5b054"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            },
+            {
+              "UUID": "eb05b8a4-44a1-4a0a-98aa-f70cea57b541",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_State_ThugsGone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22291cee-d67d-4777-84bb-f04036112a59",
+              "Text": {
+                "Handle": "h54961270g02c9g494ega0c5g10a84dd69a24",
+                "Value": "There's no one here to throw you out - I don't see why you can't stay."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N39",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "10410551-87e5-dbe1-c3a8-001fc706d7ba": {
+      "RollSuccess": true,
+      "UUID": "10410551-87e5-dbe1-c3a8-001fc706d7ba",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b4fc0e28-8eac-cf39-2251-5af89df14066"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N281",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1615;453",
+        "sourcetemplate": ""
+      }
+    },
+    "116f7c6c-1e3f-867e-995a-f97e872f6693": {
+      "UUID": "116f7c6c-1e3f-867e-995a-f97e872f6693",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8e86e7f2-4047-4a71-8523-fd35f72e7c6d",
+              "Text": {
+                "Handle": "haf7f8ddag2a46g40b7gbd3eg18c879cee8b9",
+                "Value": "Off with you, then! We don't need an audience, that's for sure."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N230",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Irritated",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "135e2f25-1b31-1c71-82c4-a4ac82ea170c": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "77cee1c4-384a-4217-b670-67db3c7add57",
+      "DifficultyClassValue": 15,
+      "UUID": "135e2f25-1b31-1c71-82c4-a4ac82ea170c",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "cd6ed08b-5590-b8ff-c499-26eb674b6bc6",
+        "3567031a-d082-7f15-48ea-823a920f66b1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "878eb820-f08d-0999-91dc-3892219c2f61",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_RefugeeLeader_State_TriedPersuasion"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            },
+            {
+              "UUID": "eb05b8a4-44a1-4a0a-98aa-f70cea57b541",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_State_ThugsGone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "878eb820-f08d-0999-91dc-3892219c2f61",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_RefugeeLeader_State_TriedPersuasion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a3505439-ac1e-48eb-bfdf-127f6a0655bd",
+              "Text": {
+                "Handle": "hb751cf70g8349g4c3eg9dfeg299e10038235",
+                "Value": "You should leave - there'll be trouble if you stay."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "335;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "13e1719a-18bd-f192-a5e9-fbae52b39650": {
+      "JumpTarget": "a002116a-ad2d-0850-993b-7e4db4b355a8",
+      "JumpTargetPoint": 2,
+      "UUID": "13e1719a-18bd-f192-a5e9-fbae52b39650",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N55",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "15a22777-b6a1-58b6-9fa5-6cdcbc111b34": {
+      "UUID": "15a22777-b6a1-58b6-9fa5-6cdcbc111b34",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a629f5b7-9623-040e-e7e8-ec017d98e2af"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "81fce7f6-2c65-4980-85d1-38e114579fd2",
+              "Text": {
+                "Handle": "h82e9b85egd611g443cgb0a3g5ebc38fc7dcd",
+                "Value": "And you'd better be grateful for it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N240",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "18e4b878-c219-32e2-428a-6ed69bd21852": {
+      "JumpTarget": "b43a7e02-9fbe-42e6-4cfa-c490cf665564",
+      "JumpTargetPoint": 1,
+      "UUID": "18e4b878-c219-32e2-428a-6ed69bd21852",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N239",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;672",
+        "sourcetemplate": ""
+      }
+    },
+    "1c8bb5ab-4021-f4b1-ab7f-6f52fd024f1b": {
+      "JumpTarget": "b43a7e02-9fbe-42e6-4cfa-c490cf665564",
+      "JumpTargetPoint": 1,
+      "UUID": "1c8bb5ab-4021-f4b1-ab7f-6f52fd024f1b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N85",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "2374528e-02b0-db28-1b58-00ccfcd546d9": {
+      "JumpTarget": "c5d88747-0620-318c-98fc-dde6e347add8",
+      "JumpTargetPoint": 1,
+      "UUID": "2374528e-02b0-db28-1b58-00ccfcd546d9",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N268",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "23eb6d81-6839-99fb-1a1c-529fde44f078": {
+      "JumpTarget": "06f997ac-2663-ad42-0d20-89fe6afa6e13",
+      "JumpTargetPoint": 1,
+      "UUID": "23eb6d81-6839-99fb-1a1c-529fde44f078",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N34",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "24b96f73-00a6-4cd5-4ed5-dfbf3d0e485f": {
+      "SourceNode": "5b0d8919-4a61-9dbc-0c8f-06e1c47878da",
+      "UUID": "24b96f73-00a6-4cd5-4ed5-dfbf3d0e485f",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d9a28697-26ad-a24a-fc3f-81e1522f07fd"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN_DEVOTION"
+            },
+            {
+              "UUID": "7c89622b-4194-41df-b2ff-145a5056ee49",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN_ANCIENTS"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0246da96-5ef8-4c65-9f0d-c2856bd17674",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_PaladinOathbreaker_Event_BrokeOath"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N298",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (ANC DEV OATHBREAK)",
+        "position": "1935;672",
+        "sourcetemplate": ""
+      }
+    },
+    "25844b9e-da04-ebee-f151-e0085a14f11d": {
+      "JumpTarget": "311b640c-01ac-58cc-26c0-6a84c2a3924d",
+      "JumpTargetPoint": 2,
+      "UUID": "25844b9e-da04-ebee-f151-e0085a14f11d",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N291",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "27ac15bb-aaf9-94af-cb67-e699356b76cc": {
+      "UUID": "27ac15bb-aaf9-94af-cb67-e699356b76cc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f0d3ec2e-aa09-be86-b1bb-611818ed7aaf"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ef97f196-fe3c-414b-b508-ba2a68cc676e",
+              "Text": {
+                "Handle": "h87b3b7b6g4517g4917gba47g5a0dbc8b3381",
+                "Value": "...Thank you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N207",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "With some difficulty due to being conflicted about accepting charity",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "2eb97c30-e868-ec87-2fef-37e3ca3ec9ba": {
+      "UUID": "2eb97c30-e868-ec87-2fef-37e3ca3ec9ba",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "fca36dbe-8fe6-9f8e-72c7-79f040be66f5",
+        "116f7c6c-1e3f-867e-995a-f97e872f6693"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "98c7eb51-4290-4a86-b6ba-0d3b827e7779",
+              "Text": {
+                "Handle": "hc2b136fbg5d41g477fg8820g3bf596bce195",
+                "Value": "I could <i>not </i>care less."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "311b640c-01ac-58cc-26c0-6a84c2a3924d": {
+      "UUID": "311b640c-01ac-58cc-26c0-6a84c2a3924d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "8f1bd33f-af8d-8148-f78f-9c2bb40baf70",
+        "15a22777-b6a1-58b6-9fa5-6cdcbc111b34",
+        "2374528e-02b0-db28-1b58-00ccfcd546d9",
+        "8690b7f1-4f95-6260-f955-31b5704396e8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e119c1b6-2939-4a36-bae2-e28b4b3fb14b",
+              "Text": {
+                "Handle": "h10d93b56gd5e3g4b36gb0a0ga54c56e00760",
+                "Value": "Thank you - and may Torm keep you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N273",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "3567031a-d082-7f15-48ea-823a920f66b1": {
+      "RollSuccess": false,
+      "UUID": "3567031a-d082-7f15-48ea-823a920f66b1",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fab37096-a205-7f5d-2261-7941b839ab18"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N29",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "36cc5311-40d9-6913-a28f-23175f0841d1": {
+      "SourceNode": "449c9a90-b9e5-6a5f-6cef-6da67cd7479f",
+      "UUID": "36cc5311-40d9-6913-a28f-23175f0841d1",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N272",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "655;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "3797383d-2549-b67f-797e-1685ec98ffde": {
+      "UUID": "3797383d-2549-b67f-797e-1685ec98ffde",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "607a024e-00f9-493e-8187-bd2c403bb5ad",
+              "Text": {
+                "Handle": "hba434324g6368g435cg9663gdecba0beea02",
+                "Value": "More defensible, too..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N82",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Contemplative; he clearly anticipates an attack",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "4486b3f4-4cc0-bab4-6d42-d011fef699e6": {
+      "UUID": "4486b3f4-4cc0-bab4-6d42-d011fef699e6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "77337752-8ea7-7c13-3543-64ed1947b318"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0f65583f-9415-4e0e-8cb7-9c885a1198bf",
+              "Text": {
+                "Handle": "had0937b7g0835g4162gb714gae01ec4508a7",
+                "Value": "I spend most of my life hunting things that'd kill you as soon as they looked at you and you're telling <i>me</i> about 'trouble'?!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Rising anger",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "449c9a90-b9e5-6a5f-6cef-6da67cd7479f": {
+      "UUID": "449c9a90-b9e5-6a5f-6cef-6da67cd7479f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f1a7fb93-f858-48c7-9041-8ddb53d2ef0f",
+              "Text": {
+                "Handle": "h19eee8aegec5cg4fb3g9fe5ge09f8cbc432e",
+                "Value": "The selfish ponce who owns this place was trying to hire some gang to throw us out - but it looks like you got rid of them."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N49",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Cautiously pleased",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "458a069f-bb27-5d1f-102b-57e20bf0bfc3": {
+      "UUID": "458a069f-bb27-5d1f-102b-57e20bf0bfc3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3d6e87d4-c2c0-45a4-b500-f64d6be575a2",
+              "Text": {
+                "Handle": "haab4a029g0d05g4a96ga893g0e84ffe50592",
+                "Value": "You're the first person in this city to have our backs. Thank you. Really."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N233",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Gruffly grateful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "4ac0e1a7-04e6-07f7-180c-e46ff20415f7": {
+      "RollSuccess": false,
+      "UUID": "4ac0e1a7-04e6-07f7-180c-e46ff20415f7",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "24b96f73-00a6-4cd5-4ed5-dfbf3d0e485f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N282",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1615;672",
+        "sourcetemplate": ""
+      }
+    },
+    "4bed3877-942d-a718-9889-be740cb54c08": {
+      "UUID": "4bed3877-942d-a718-9889-be740cb54c08",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7f1604d0-a97f-5aeb-7aec-86aa680f6f71"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "466eb806-e438-47ce-ae04-7ccdce197981",
+              "Text": {
+                "Handle": "h7a7648b7geca1g42dcg9fdfgaba63cf12d79",
+                "Value": "Your word? Well... if you're sure. And you're definitely not pulling my leg..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N261",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little wary",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;2862",
+        "sourcetemplate": ""
+      }
+    },
+    "54b25b74-f999-77ce-4ab8-15b8c2b9eda6": {
+      "UUID": "54b25b74-f999-77ce-4ab8-15b8c2b9eda6",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e13c0f46-449a-4572-b06d-b9c5bc165bb0",
+              "Text": {
+                "Handle": "hc3e3272bg06aeg4b4dg95ecg234ceb382385",
+                "Value": "Make it quick if you can - I don't like the way he's looking at us."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N37",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Still a little wary (but matter of fact)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "54d50459-89bd-1a78-2d3d-c2ab1b4dc425": {
+      "JumpTarget": "efb811d1-5aca-f5f9-4e37-4cfd583da475",
+      "JumpTargetPoint": 2,
+      "UUID": "54d50459-89bd-1a78-2d3d-c2ab1b4dc425",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N44",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "55d8b517-e36b-c287-bf5b-2a9456fed7cb": {
+      "JumpTarget": "b96a92cc-6abe-88bc-e89c-44cbba547fca",
+      "JumpTargetPoint": 1,
+      "UUID": "55d8b517-e36b-c287-bf5b-2a9456fed7cb",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N278",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "5b0d8919-4a61-9dbc-0c8f-06e1c47878da": {
+      "UUID": "5b0d8919-4a61-9dbc-0c8f-06e1c47878da",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "bf29ba68-10a3-62a0-4e00-2821a31e4801"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN_DEVOTION"
+            },
+            {
+              "UUID": "7c89622b-4194-41df-b2ff-145a5056ee49",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN_ANCIENTS"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0246da96-5ef8-4c65-9f0d-c2856bd17674",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_PaladinOathbreaker_Event_BrokeOath"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N295",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ANC DEV OATHBREAK",
+        "position": "975;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "5d8f35c7-4452-5307-199d-0563a6a6330d": {
+      "JumpTarget": "a002116a-ad2d-0850-993b-7e4db4b355a8",
+      "JumpTargetPoint": 2,
+      "UUID": "5d8f35c7-4452-5307-199d-0563a6a6330d",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N26",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "5fb22ef3-910e-8a69-5bef-ca84852737a0": {
+      "UUID": "5fb22ef3-910e-8a69-5bef-ca84852737a0",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "32104c89-03a4-915d-3c31-b67b3fa42620",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader_Housed"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9755156e-b1d9-462a-87c1-430613f87fd5",
+              "Text": {
+                "Handle": "h647cb815gc767g421dg9b61gf32ba52b530f",
+                "Value": "You did your good deed, but Torm's still watching you - don't disappoint him now."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N220",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Gruff but good natured",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Housed HasMet",
+        "position": "15;-3489",
+        "sourcetemplate": ""
+      }
+    },
+    "61c99517-2e56-a3e7-31a6-3cca2889a09c": {
+      "UUID": "61c99517-2e56-a3e7-31a6-3cca2889a09c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "311b640c-01ac-58cc-26c0-6a84c2a3924d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6c49ac2a-8e88-0c3d-588a-0fa3a82ae071",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_Defeated"
+            },
+            {
+              "UUID": "9c5cdc84-7fa5-8499-dc3b-63df44288d3c",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_PermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "35bd7d6e-1f54-443e-8c33-732d086a03a8",
+              "Text": {
+                "Handle": "h5d04848dgf12cg4c55g943fg32a3bca43fb0",
+                "Value": "We will stay. For now. I just hope he doesn't pay anyone else to come sniffing round."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Grateful - but also a little concerned",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "679a27f9-cad3-32c1-2eb7-586b62d89da1": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "5028066b-6ea0-4a6a-9e3e-53bee62559a7",
+      "DifficultyClassValue": 10,
+      "UUID": "679a27f9-cad3-32c1-2eb7-586b62d89da1",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "10410551-87e5-dbe1-c3a8-001fc706d7ba",
+        "4ac0e1a7-04e6-07f7-180c-e46ff20415f7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "88f8607e-5f14-8474-9879-e1b36f2e50dd",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_RefugeeLeader_State_TriedIntimidation"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            },
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "88f8607e-5f14-8474-9879-e1b36f2e50dd",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_RefugeeLeader_State_TriedIntimidation"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a8b20bdb-2dad-4cd2-9e01-ec49ca721f98",
+              "Text": {
+                "Handle": "h7849528dgb96eg4e77g90b7g6c844d91e3da",
+                "Value": "Look, this place doesn't belong to you - get out or I'll have to throw you out."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N247",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Intimidation",
+        "position": "1295;453",
+        "sourcetemplate": ""
+      }
+    },
+    "6f4272d5-6cc9-3408-cf93-6ddcaa0d559b": {
+      "JumpTarget": "09e502c3-8ba8-5eab-7922-55c0891ae219",
+      "JumpTargetPoint": 2,
+      "UUID": "6f4272d5-6cc9-3408-cf93-6ddcaa0d559b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N266",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "7671cb93-a400-d6f8-9859-2e4135754f31": {
+      "UUID": "7671cb93-a400-d6f8-9859-2e4135754f31",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "54b25b74-f999-77ce-4ab8-15b8c2b9eda6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            },
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c90c43e1-6b08-4cef-be1c-dfd97f194b87",
+              "Text": {
+                "Handle": "hec1f0a5bg668cg486ag8a34g1f596816aac2",
+                "Value": "I'm trying to help you - I just need to talk to the man in charge."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N36",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "77337752-8ea7-7c13-3543-64ed1947b318": {
+      "UUID": "77337752-8ea7-7c13-3543-64ed1947b318",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f624f0ed-26a2-c83c-855e-5853a0b9c3f3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7a65b64-5315-4924-88bc-32d72c7c842d",
+              "Text": {
+                "Handle": "h124d604dg4808g4b71g8af1gad6e7fd93be6",
+                "Value": "But... you're right. I can't risk those people getting a hold of my daughter."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N83",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Calming himself for the sake of his family; resignation and a tinge of sadness when speaking about the kids",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "7dc44db6-7645-8079-1fd1-180603f1d2de": {
+      "UUID": "7dc44db6-7645-8079-1fd1-180603f1d2de",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0d5282d8-e572-4932-a47b-960eabe427b1",
+              "Text": {
+                "Handle": "h229d7c59ga7a1g48f6g9faegd5076d1c46c8",
+                "Value": "We're much more interested in the beds and the pantry - but I'll make sure Cinta knows the basement's off-limits."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N229",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little worried - but glad for the warning",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "7e3ea07b-d51c-4c9d-8bf9-1eceb464e6c9": {
+      "UUID": "7e3ea07b-d51c-4c9d-8bf9-1eceb464e6c9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "27ac15bb-aaf9-94af-cb67-e699356b76cc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "15d26518-ac0b-4092-8906-5c9f06b8b046",
+              "Text": {
+                "Handle": "h4ba7317cgd5bag42ecg95f2g75dfb512da1d",
+                "Value": "I don't want to take charity from some stranger. But... I will. For the sake of my daughter."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N203",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Clearly conflicted about the charity",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "7f1604d0-a97f-5aeb-7aec-86aa680f6f71": {
+      "UUID": "7f1604d0-a97f-5aeb-7aec-86aa680f6f71",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f9da5527-d457-4447-99ca-b873ebe76a80",
+              "Text": {
+                "Handle": "h655d7908g78a8g4740gb496gb2ec504799ea",
+                "Value": "I don't know if it's your place to give us permission to stay here, but thank you. Really. My family needs this."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N271",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Gruffly grateful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;2862",
+        "sourcetemplate": ""
+      }
+    },
+    "830c8765-7e6d-4783-f8be-8a68d7787a33": {
+      "JumpTarget": "15a22777-b6a1-58b6-9fa5-6cdcbc111b34",
+      "JumpTargetPoint": 1,
+      "UUID": "830c8765-7e6d-4783-f8be-8a68d7787a33",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N270",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "85e39b6a-5ca7-6d9f-b990-6e8628045315": {
+      "UUID": "85e39b6a-5ca7-6d9f-b990-6e8628045315",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "dc06e45e-f920-fd1a-fdbc-ffb2cb03eb28"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9710514e-74d0-4edc-bad5-f0770c86608d",
+              "Text": {
+                "Handle": "h37d57d99gcbe9g46e0g896eg551417c1a998",
+                "Value": "I'm trying to help you - wait here."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N254",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "8690b7f1-4f95-6260-f955-31b5704396e8": {
+      "JumpTarget": "b43a7e02-9fbe-42e6-4cfa-c490cf665564",
+      "JumpTargetPoint": 1,
+      "UUID": "8690b7f1-4f95-6260-f955-31b5704396e8",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N238",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "8f1bd33f-af8d-8148-f78f-9c2bb40baf70": {
+      "UUID": "8f1bd33f-af8d-8148-f78f-9c2bb40baf70",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "458a069f-bb27-5d1f-102b-57e20bf0bfc3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "41eac6d5-47ba-4fd3-bb72-8f807b9658d5",
+              "Text": {
+                "Handle": "h17ccfcd5g19deg4cebg9afeg6b66f3e0c357",
+                "Value": "You are quite welcome."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N231",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "96d7e550-1e2e-377e-cd1b-0d30238b99b8": {
+      "RollSuccess": false,
+      "UUID": "96d7e550-1e2e-377e-cd1b-0d30238b99b8",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ecb80672-b943-f463-07d0-bf4bd7b9dc09"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N9",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "97899957-1b85-7338-f30a-d5c5d1bceef8": {
+      "UUID": "97899957-1b85-7338-f30a-d5c5d1bceef8",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3c26cd3f-9ec7-4db1-8bca-246638584798",
+              "Text": {
+                "Handle": "h6bfc7b24g5bbdg42b7g82c6g2c382a465607",
+                "Value": "You city thugs are all the same. I'll protect my family with my life if I have to!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Desperate bravery; will do anything to protect his family",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "9a2c9810-d5ea-78c8-b4b1-7ce9f6baffb2": {
+      "UUID": "9a2c9810-d5ea-78c8-b4b1-7ce9f6baffb2",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            },
+            {
+              "UUID": "9dc06a8d-c8d6-3086-615a-6b77d2cf3fdb",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_RefugeeCamp_State_BigBarnSolved"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b3ff0359-1b76-4708-9eab-f26fd0c91d85",
+              "Text": {
+                "Handle": "hac134165g3322g4841g9971g1c8649041737",
+                "Value": "The poncy prat who owns this place is long gone - so I think we can both agree he doesn't need it anymore."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N263",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little bit pleased about it",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Crime solved (the player might not met them! might be in prison or dead!)",
+        "position": "15;-3708",
+        "sourcetemplate": ""
+      }
+    },
+    "9bef0b5b-fdf8-6de2-6296-38e73eb3aed2": {
+      "UUID": "9bef0b5b-fdf8-6de2-6296-38e73eb3aed2",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c061c8a9-32bb-19dc-0914-610a4d8c123b",
+        "830c8765-7e6d-4783-f8be-8a68d7787a33",
+        "ef10d4e7-e4a8-4231-c50b-758440e4b30e",
+        "c5d88747-0620-318c-98fc-dde6e347add8",
+        "af74245b-1ead-927a-5ea1-638ae565a3ab"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            },
+            {
+              "UUID": "74338e62-6273-1d74-5609-90c9eccdabcc",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_Intimidated"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a010dab-16ab-4aef-bbed-594652ffd543",
+              "Text": {
+                "Handle": "hd5bbd8ccgfb7dg46c8g9d35g07cde5f93980",
+                "Value": "Not quite sure <i>why </i>you stood up for us like that, but I won't say I'm not grateful. Thanks. And may Torm keep you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N77",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little confused but grateful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Merchant was intimidated",
+        "position": "15;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "9ead26f4-5ee1-dad0-1f38-0ccbcb99a029": {
+      "SourceNode": "54b25b74-f999-77ce-4ab8-15b8c2b9eda6",
+      "UUID": "9ead26f4-5ee1-dad0-1f38-0ccbcb99a029",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N246",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a002116a-ad2d-0850-993b-7e4db4b355a8": {
+      "UUID": "a002116a-ad2d-0850-993b-7e4db4b355a8",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d49b55ca-b21a-af7c-4aeb-fe71f8f36fb7",
+        "85e39b6a-5ca7-6d9f-b990-6e8628045315",
+        "fc9ca7aa-a0e5-1fd0-a250-823814ad4b7a",
+        "b96a92cc-6abe-88bc-e89c-44cbba547fca",
+        "135e2f25-1b31-1c71-82c4-a4ac82ea170c",
+        "06f997ac-2663-ad42-0d20-89fe6afa6e13",
+        "b43a7e02-9fbe-42e6-4cfa-c490cf665564"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7cb16b6b-bc16-8c52-73cd-c8b244bd3c2a",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7cb16b6b-bc16-8c52-73cd-c8b244bd3c2a",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6c97f226-8f51-4dfb-b927-f8998be8f3fa",
+              "Text": {
+                "Handle": "hc8cb1202g6e75g4dbcga8a9g3e51df41c653",
+                "Value": "Who are you? Some thug here to do that stuffed shirt's dirty work?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Wary; unsure of the player's intentions",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (bandits are still there)",
+        "position": "15;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "a44895c3-fc96-abac-37b4-9c912b37b0e3": {
+      "UUID": "a44895c3-fc96-abac-37b4-9c912b37b0e3",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "54d50459-89bd-1a78-2d3d-c2ab1b4dc425"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fc5eec58-bc32-b076-a8e4-1b41939373d6",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader_ThugsGone"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "eb05b8a4-44a1-4a0a-98aa-f70cea57b541",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_State_ThugsGone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "032077f6-588c-4458-9454-1307facfcb6b",
+              "Text": {
+                "Handle": "h1e226859ga8b1g4a3fgb47bg47cfda5b0773",
+                "Value": "What's the word? Can we stay?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N43",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Tentative/wary",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Bandits left HasMet",
+        "position": "15;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "a629f5b7-9623-040e-e7e8-ec017d98e2af": {
+      "UUID": "a629f5b7-9623-040e-e7e8-ec017d98e2af",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9576cf51-c8de-4484-a3ac-126f7da30f60",
+              "Text": {
+                "Handle": "h67dbeafcgf9d5g446ag91b8g075adff7b6ea",
+                "Value": "I am. It's been days since my family slept under a roof - so thank you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N241",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Gruffly grateful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "a68f8279-0a69-f0ae-9d0b-35fc94c87c99": {
+      "UUID": "a68f8279-0a69-f0ae-9d0b-35fc94c87c99",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d931bae2-d0d2-3dd9-e6d0-737c83e8c7b5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e6a3a5b2-7c4c-4831-a30c-0d684ad6a96d",
+              "Text": {
+                "Handle": "h42bf5265gb55bg4fe9g92b3g09824d71ba74",
+                "Value": "Same way lots of us did - trying to get away from the army of the Absolute."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N88",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Grimly",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "a9aa47c7-870c-2f98-3e66-fabe9375c2bd": {
+      "SourceNode": "116f7c6c-1e3f-867e-995a-f97e872f6693",
+      "UUID": "a9aa47c7-870c-2f98-3e66-fabe9375c2bd",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N251",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "1615;234",
+        "sourcetemplate": ""
+      }
+    },
+    "af74245b-1ead-927a-5ea1-638ae565a3ab": {
+      "UUID": "af74245b-1ead-927a-5ea1-638ae565a3ab",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a1221dd0-a43c-4d7c-b353-671681df0d5a",
+              "Text": {
+                "Handle": "h6c533d5bg6005g46f4gb6d6gaf231425e697",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N227",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "af7b823e-d9b2-a76f-200c-9b9b109cfd56": {
+      "UUID": "af7b823e-d9b2-a76f-200c-9b9b109cfd56",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ea641ed2-5d06-f485-5fd3-a6f4e6377905"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a53bafdf-c461-4622-bb3e-5c0bed36cade",
+              "Text": {
+                "Handle": "h344cb755gf729g4170g8a0bg58925a6b28a9",
+                "Value": "You're just as bad as the rest of them."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N84",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Angry disappointment",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "b43a7e02-9fbe-42e6-4cfa-c490cf665564": {
+      "UUID": "b43a7e02-9fbe-42e6-4cfa-c490cf665564",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1074ba54-0544-4183-8444-2b045516e753",
+              "Text": {
+                "Handle": "hd9411476g44d5g4f16g985dg1d8bda05211c",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "b4fc0e28-8eac-cf39-2251-5af89df14066": {
+      "SourceNode": "5b0d8919-4a61-9dbc-0c8f-06e1c47878da",
+      "UUID": "b4fc0e28-8eac-cf39-2251-5af89df14066",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "045625a0-354b-86be-62f4-6e1e9749702f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN_DEVOTION"
+            },
+            {
+              "UUID": "7c89622b-4194-41df-b2ff-145a5056ee49",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN_ANCIENTS"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0246da96-5ef8-4c65-9f0d-c2856bd17674",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_PaladinOathbreaker_Event_BrokeOath"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N297",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (ANC DEV OATHBREAK)",
+        "position": "1935;453",
+        "sourcetemplate": ""
+      }
+    },
+    "b53f62c6-f408-d4c3-ce93-caf2d46bb93e": {
+      "SourceNode": "9bef0b5b-fdf8-6de2-6296-38e73eb3aed2",
+      "UUID": "b53f62c6-f408-d4c3-ce93-caf2d46bb93e",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f0751b43-08e7-e0e5-aaea-2af14b005622"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            },
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            },
+            {
+              "UUID": "eb05b8a4-44a1-4a0a-98aa-f70cea57b541",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_State_ThugsGone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N293",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Merchant was intimidated)",
+        "position": "15;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "b96a92cc-6abe-88bc-e89c-44cbba547fca": {
+      "UUID": "b96a92cc-6abe-88bc-e89c-44cbba547fca",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7e3ea07b-d51c-4c9d-8bf9-1eceb464e6c9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "e678bd59-74f4-4a7b-8776-aca807d9ef22",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CheckPocketGold"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "41179aa7-bc85-02b5-1399-71a651d9dc85",
+              "value": true,
+              "paramval": 1,
+              "Name": "GEN_TransferNPCPayment"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "f8a0608b-666c-4be6-a49c-03b369c10bd2"
+                ],
+                "TagNames": [
+                  "ROGUE"
+                ]
+              }
+            ],
+            "RuleString": "ROGUE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "2380aa27-a20b-46e7-b2e2-f60f82667709",
+              "Text": {
+                "Handle": "h3005c1c5gecaeg46e0g8b8dg8a02dece27f8",
+                "Value": "Take this coin, find a safe-house in the city. You don't want mercenaries near your kids. ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f9264c8c-b787-4c22-9456-4fd6043a0564",
+              "Text": {
+                "Handle": "h6b1c1eb3ga0a3g4189g953fg72d2e8f70dcb",
+                "Value": "Here - take this. You'll be much better off in an inn than waiting to get chased out of here. ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N221",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "bf29ba68-10a3-62a0-4e00-2821a31e4801": {
+      "UUID": "bf29ba68-10a3-62a0-4e00-2821a31e4801",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "af7b823e-d9b2-a76f-200c-9b9b109cfd56"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fbf9730a-e401-4b89-b826-26f7a1320501",
+              "Text": {
+                "Handle": "h469f0deeg12d7g4806ga594g585aad8e332a",
+                "Value": "You're seriously gonna throw us out? Throw <i>my child </i>out?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Disbelief at the player's callousness",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "c061c8a9-32bb-19dc-0914-610a4d8c123b": {
+      "JumpTarget": "8f1bd33f-af8d-8148-f78f-9c2bb40baf70",
+      "JumpTargetPoint": 1,
+      "UUID": "c061c8a9-32bb-19dc-0914-610a4d8c123b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N269",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "c5d88747-0620-318c-98fc-dde6e347add8": {
+      "UUID": "c5d88747-0620-318c-98fc-dde6e347add8",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7dc44db6-7645-8079-1fd1-180603f1d2de"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8f53ab96-0dff-ec9e-d9e8-30620e8733d3",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_SecretInBasement"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "239a4b4d-6dfc-4479-8b02-a5ad329d1abe",
+              "Text": {
+                "Handle": "hd51f3390g07e4g4b2egb0d9g5bef11456d90",
+                "Value": "One thing: stay out of the basement. It's not safe."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N228",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "c796f17d-c3b1-1353-397a-b8244737510a": {
+      "UUID": "c796f17d-c3b1-1353-397a-b8244737510a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "5d8f35c7-4452-5307-199d-0563a6a6330d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7cb16b6b-bc16-8c52-73cd-c8b244bd3c2a",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "727133c9-5348-4b4a-ad7a-41a88148422f",
+              "Text": {
+                "Handle": "he4b3ab6eg04cag48cegb606ga4d363f688da",
+                "Value": "Back again, are you? What do you want with us now?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Slightly wary (not sure of the player's intentions)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting HasMet",
+        "position": "15;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "ca8f9bcc-ca48-9021-ac86-8771380f9574": {
+      "UUID": "ca8f9bcc-ca48-9021-ac86-8771380f9574",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a68f8279-0a69-f0ae-9d0b-35fc94c87c99"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1c290dff-52ea-19c7-bd0f-471142e9d5d0",
+              "value": false,
+              "paramval": 1,
+              "Name": "MerchantsHouse_State_AskedRefugeesOrigin"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c290dff-52ea-19c7-bd0f-471142e9d5d0",
+              "value": true,
+              "paramval": 1,
+              "Name": "MerchantsHouse_State_AskedRefugeesOrigin"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4467c4b5-3834-424f-8453-e71515f61e85",
+              "Text": {
+                "Handle": "hecb6f37agb996g462fga6cbg4d7b7fc43d46",
+                "Value": "How did you end up here?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N86",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "cac74797-8dda-1a7c-ee6c-38fcfb591e6e": {
+      "UUID": "cac74797-8dda-1a7c-ee6c-38fcfb591e6e",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "449c9a90-b9e5-6a5f-6cef-6da67cd7479f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1b287d55-045d-48ea-9ac8-77dc5c27adaf",
+              "Text": {
+                "Handle": "h56bd6392g6c23g44e7ga115g025261ba76a4",
+                "Value": "Stay? What are you talking about?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N48",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "cd6ed08b-5590-b8ff-c499-26eb674b6bc6": {
+      "RollSuccess": true,
+      "UUID": "cd6ed08b-5590-b8ff-c499-26eb674b6bc6",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4486b3f4-4cc0-bab4-6d42-d011fef699e6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N28",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "d49b55ca-b21a-af7c-4aeb-fe71f8f36fb7": {
+      "UUID": "d49b55ca-b21a-af7c-4aeb-fe71f8f36fb7",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "36cc5311-40d9-6913-a28f-23175f0841d1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0848b6b5-822a-4d67-bdd2-b1af353d1183",
+              "Text": {
+                "Handle": "h6eeae415ga8b0g4b6dga526g6fedff38e15a",
+                "Value": "What exactly is going on here?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N223",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "d5e5b973-476b-1b75-0b5e-bc762baec15a": {
+      "UUID": "d5e5b973-476b-1b75-0b5e-bc762baec15a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9ead26f4-5ee1-dad0-1f38-0ccbcb99a029"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            },
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f12507f1-40d2-4a67-8a16-c11fb1f9c6e5",
+              "Text": {
+                "Handle": "h23c33f88gb1d5g433cg8724g06f2ccfee7cb",
+                "Value": "I understand. Let me talk to the owner of this place - maybe I can help."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N234",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d931bae2-d0d2-3dd9-e6d0-737c83e8c7b5": {
+      "UUID": "d931bae2-d0d2-3dd9-e6d0-737c83e8c7b5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e303e6b8-e382-6197-384d-89fc6ae0a0a3",
+        "d5e5b973-476b-1b75-0b5e-bc762baec15a",
+        "e553f96c-48b4-8e5d-5f86-3f2d8a8761f9",
+        "679a27f9-cad3-32c1-2eb7-586b62d89da1",
+        "18e4b878-c219-32e2-428a-6ed69bd21852"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e02015ef-596a-4df5-b222-69b0ab36ca99",
+              "Text": {
+                "Handle": "hcf85c916g52b0g4112g8c22gf430f266fd36",
+                "Value": "If you had the chance to put a roof over your family's heads after being on the run for Torm knows how long, wouldn't you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N89",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Matter of fact; expects the player to see where he's coming from",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "d9a28697-26ad-a24a-fc3f-81e1522f07fd": {
+      "JumpTarget": "97899957-1b85-7338-f30a-d5c5d1bceef8",
+      "JumpTargetPoint": 1,
+      "UUID": "d9a28697-26ad-a24a-fc3f-81e1522f07fd",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N284",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;672",
+        "sourcetemplate": ""
+      }
+    },
+    "d9c3bb98-4566-bfd7-6388-7631eaf5b054": {
+      "UUID": "d9c3bb98-4566-bfd7-6388-7631eaf5b054",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "25844b9e-da04-ebee-f151-e0085a14f11d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cb5fdaa7-17cd-46d3-84bf-1711c1899e9c",
+              "Text": {
+                "Handle": "h855c5b55g2d30g4772g9041g717dfbcda6ee",
+                "Value": "Oh. Well. Thank you. I think?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N258",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Somewhat confused; wasn't expecting to be told they could stay",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "dc06e45e-f920-fd1a-fdbc-ffb2cb03eb28": {
+      "JumpTarget": "54b25b74-f999-77ce-4ab8-15b8c2b9eda6",
+      "JumpTargetPoint": 1,
+      "UUID": "dc06e45e-f920-fd1a-fdbc-ffb2cb03eb28",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N256",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "e247fbb0-a7e1-c16a-bf7e-93a863e34147": {
+      "JumpTarget": "311b640c-01ac-58cc-26c0-6a84c2a3924d",
+      "JumpTargetPoint": 2,
+      "UUID": "e247fbb0-a7e1-c16a-bf7e-93a863e34147",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N292",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;672",
+        "sourcetemplate": ""
+      }
+    },
+    "e303e6b8-e382-6197-384d-89fc6ae0a0a3": {
+      "UUID": "e303e6b8-e382-6197-384d-89fc6ae0a0a3",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "6f4272d5-6cc9-3408-cf93-6ddcaa0d559b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "694972ef-75c6-4040-8574-40b235d42172",
+              "Text": {
+                "Handle": "ha9669d14gac69g4036ga207g66de46ca04f6",
+                "Value": "No one's telling you to leave - have all the roof you want."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N265",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e553f96c-48b4-8e5d-5f86-3f2d8a8761f9": {
+      "UUID": "e553f96c-48b4-8e5d-5f86-3f2d8a8761f9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a9aa47c7-870c-2f98-3e66-fabe9375c2bd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5119e0ef-7638-4241-85a1-b5c205aea430",
+              "Text": {
+                "Handle": "h9f81a37eg8bb0g4a64gbf5fgd8b4803c0861",
+                "Value": "I'm not interested in sob stories."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N235",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ea641ed2-5d06-f485-5fd3-a6f4e6377905": {
+      "UUID": "ea641ed2-5d06-f485-5fd3-a6f4e6377905",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9b71e835-73a7-4c00-8c3d-31f64370f726",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Event_RefugeesLeave"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d82d5201-23b4-49fe-a187-5c7a5b2823e4",
+              "Text": {
+                "Handle": "he95871fcg8cffg4925gb37fg673c819d34c9",
+                "Value": "Don't worry - we'll go. May Torm split open that hard, blackened heart of yours some day."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N80",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Bitter resignation",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "eb78e11e-ae1a-8cdd-4c03-5da945bb47a6": {
+      "UUID": "eb78e11e-ae1a-8cdd-4c03-5da945bb47a6",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "32104c89-03a4-915d-3c31-b67b3fa42620",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader_Housed"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "32104c89-03a4-915d-3c31-b67b3fa42620",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader_Housed"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cce7def8-2ee6-45ba-bf15-dd1d6eefe6d3",
+              "Text": {
+                "Handle": "h6486dc78gb8f3g4594gaf3cg513bfad82f08",
+                "Value": "I don't like being cooped up inside, but it's what's best for Cinta - I'll make sure she knows you had a hand in it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Gruffly grateful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Housed",
+        "position": "15;-3270",
+        "sourcetemplate": ""
+      }
+    },
+    "ecb80672-b943-f463-07d0-bf4bd7b9dc09": {
+      "SourceNode": "5b0d8919-4a61-9dbc-0c8f-06e1c47878da",
+      "UUID": "ecb80672-b943-f463-07d0-bf4bd7b9dc09",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "97899957-1b85-7338-f30a-d5c5d1bceef8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN_DEVOTION"
+            },
+            {
+              "UUID": "7c89622b-4194-41df-b2ff-145a5056ee49",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN_ANCIENTS"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0246da96-5ef8-4c65-9f0d-c2856bd17674",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_PaladinOathbreaker_Event_BrokeOath"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N296",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (ANC DEV OATHBREAK)",
+        "position": "975;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "ef10d4e7-e4a8-4231-c50b-758440e4b30e": {
+      "JumpTarget": "ca8f9bcc-ca48-9021-ac86-8771380f9574",
+      "JumpTargetPoint": 1,
+      "UUID": "ef10d4e7-e4a8-4231-c50b-758440e4b30e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N252",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "efb811d1-5aca-f5f9-4e37-4cfd583da475": {
+      "UUID": "efb811d1-5aca-f5f9-4e37-4cfd583da475",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "cac74797-8dda-1a7c-ee6c-38fcfb591e6e",
+        "09e502c3-8ba8-5eab-7922-55c0891ae219",
+        "ca8f9bcc-ca48-9021-ac86-8771380f9574",
+        "55d8b517-e36b-c287-bf5b-2a9456fed7cb",
+        "7671cb93-a400-d6f8-9859-2e4135754f31",
+        "2eb97c30-e868-ec87-2fef-37e3ca3ec9ba",
+        "23eb6d81-6839-99fb-1a1c-529fde44f078",
+        "1c8bb5ab-4021-f4b1-ab7f-6f52fd024f1b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fc5eec58-bc32-b076-a8e4-1b41939373d6",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader_ThugsGone"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "eb05b8a4-44a1-4a0a-98aa-f70cea57b541",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_State_ThugsGone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fc5eec58-bc32-b076-a8e4-1b41939373d6",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader_ThugsGone"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3f7f76dc-3f29-453f-bd92-92e2d5a3e86c",
+              "Text": {
+                "Handle": "h166d7124g5509g459fg87c2g7921afaa43a3",
+                "Value": "I see those animals are out of the picture - can we stay now, or are you going to turn on us next?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N33",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Wary",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Bandits left",
+        "position": "15;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "f0751b43-08e7-e0e5-aaea-2af14b005622": {
+      "JumpTarget": "9bef0b5b-fdf8-6de2-6296-38e73eb3aed2",
+      "JumpTargetPoint": 2,
+      "UUID": "f0751b43-08e7-e0e5-aaea-2af14b005622",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N294",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "f0d3ec2e-aa09-be86-b1bb-611818ed7aaf": {
+      "JumpTarget": "f624f0ed-26a2-c83c-855e-5853a0b9c3f3",
+      "JumpTargetPoint": 1,
+      "UUID": "f0d3ec2e-aa09-be86-b1bb-611818ed7aaf",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N216",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "f624f0ed-26a2-c83c-855e-5853a0b9c3f3": {
+      "UUID": "f624f0ed-26a2-c83c-855e-5853a0b9c3f3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "31e66d81-e646-4086-97c0-1e4fb3d35da6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_State_ChasedOutNoForce"
+            },
+            {
+              "UUID": "9b71e835-73a7-4c00-8c3d-31f64370f726",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Event_RefugeesLeave"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ad03c1af-addd-4abf-b91d-ec4caf56fbd4",
+              "Text": {
+                "Handle": "hf7739583g39dag42b6gb057ge3f60ee0d8cc",
+                "Value": "We'll get going as soon as we've got our things together."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N208",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Trying to gather himself",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "f70758af-b15e-accc-1c01-efe6884c9c01": {
+      "UUID": "f70758af-b15e-accc-1c01-efe6884c9c01",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "13e1719a-18bd-f192-a5e9-fbae52b39650"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "437d7d53-a886-7ef3-fa5b-bbc20b514ae8",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader_HeardChasingOut"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            },
+            {
+              "UUID": "0b5bffb8-4204-98e5-f27f-429c065c9d37",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_State_ChasingOutSuggested"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "437d7d53-a886-7ef3-fa5b-bbc20b514ae8",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_MerchantsHouse_HasMet_RefugeeLeader_HeardChasingOut"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5801e30c-883e-4889-930e-d0e7332e685e",
+              "Text": {
+                "Handle": "h63eea0fega248g40d3g8412g4af9aaa35ceb",
+                "Value": "I heard you talking about us - you gonna kick my little girl out onto the streets, are you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N54",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Angry; worried about his family and defensive of them",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (suggested chasing out refugess)",
+        "position": "15;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "fab37096-a205-7f5d-2261-7941b839ab18": {
+      "UUID": "fab37096-a205-7f5d-2261-7941b839ab18",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3797383d-2549-b67f-797e-1685ec98ffde"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "54c4f6d3-1b66-4670-b244-56a31f2e10a8",
+              "Text": {
+                "Handle": "h1da3558dg4605g4322gad02g54556060c4dd",
+                "Value": "Thanks for your concern, but it'll be safer for my family to have four walls and a roof over their heads."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Matter of factly",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "fc9ca7aa-a0e5-1fd0-a250-823814ad4b7a": {
+      "UUID": "fc9ca7aa-a0e5-1fd0-a250-823814ad4b7a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "4bed3877-942d-a718-9889-be740cb54c08"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "05669a06-6699-4872-8fc2-cba690aa3ee4",
+              "Text": {
+                "Handle": "hcccf4a0agcb9bg4396g801bgb440fbaff691",
+                "Value": "The owner won't mind if you stay - you have my word."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N259",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;2862",
+        "sourcetemplate": ""
+      }
+    },
+    "fca36dbe-8fe6-9f8e-72c7-79f040be66f5": {
+      "SourceNode": "d9c3bb98-4566-bfd7-6388-7631eaf5b054",
+      "UUID": "fca36dbe-8fe6-9f8e-72c7-79f040be66f5",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e247fbb0-a7e1-c16a-bf7e-93a863e34147"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5e40419b-d67c-4bde-8b91-bdace8bad309",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Merchant_State_GoneFromHouse"
+            },
+            {
+              "UUID": "8e235664-43aa-304d-1a1f-839214b598d6",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Knows_Refugees"
+            },
+            {
+              "UUID": "eb05b8a4-44a1-4a0a-98aa-f70cea57b541",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_State_ThugsGone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0481d093-1539-1a06-b3b2-246270b82a12",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_MerchantsHouse_Refugees_State_Housed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N289",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "044bc714-3c91-4cd0-8c51-a23ae78f9e43",
+      "Index": 0,
+      "List": [
+        "7ef493d6-4e5f-490a-96dd-e5bb10446055"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Ben Golewits",
+        "Type": "character",
+        "MapKey": "7ef493d6-4e5f-490a-96dd-e5bb10446055",
+        "Name": "S_WYR_MerchantsHouse_RefugeeLeader",
+        "ParentTemplateId": null,
+        "TemplateName": "c99dfa96-829c-41c1-853a-45bb7bc445df"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "6c5bb05c-2301-45f8-960a-5211207ef0e3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "General dialog for the refugee leader - father of the refugee family who stayed in the merchant's house when he was away."
+}

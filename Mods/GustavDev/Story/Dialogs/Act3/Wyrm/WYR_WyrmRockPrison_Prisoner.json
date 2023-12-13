@@ -1,0 +1,729 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_WyrmRockPrison_Prisoner.lsj",
+  "UUID": "8a0c7acc-bb66-d4bb-493e-a33cd6a17b1f",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "3cd31c22-7454-1412-3809-d8a509e500f9",
+    "529c4947-d79a-49ed-9eca-8936311f7130",
+    "fd009815-608c-4621-8053-c19e22b71471",
+    "1400b462-7b54-aa9e-4e5c-0f56978761cf"
+  ],
+  "Nodes": {
+    "1400b462-7b54-aa9e-4e5c-0f56978761cf": {
+      "UUID": "1400b462-7b54-aa9e-4e5c-0f56978761cf",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4e7161c6-b1f2-9e16-a593-9fa11bc0da57",
+        "17d35e2c-86f8-4f8d-9488-fe521c39b6ac",
+        "e3430aa5-a418-696a-cc6d-24d53529da1c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "66093b30-5949-4870-852e-594a810a528f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_WyrmRockPrison_HasMet_Prisoner"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1f491730-e351-405e-aea1-7c354a0db0e5",
+              "Text": {
+                "Handle": "he045261fg3e0fg48b5gbe01g420b0cf32347",
+                "Value": "What do <i>you</i> want?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT MET, OUTSIDE CELL",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "17d35e2c-86f8-4f8d-9488-fe521c39b6ac": {
+      "UUID": "17d35e2c-86f8-4f8d-9488-fe521c39b6ac",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "873e7032-a4c9-f9e2-a8e6-c1d659d741b5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "81b3ff05-af60-47a4-a3af-893adb31a4e8",
+              "Text": {
+                "Handle": "hb6c780b3g3266g418cg8ea0g75386c79985e",
+                "Value": "To help you escape, if I can."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "3cd31c22-7454-1412-3809-d8a509e500f9": {
+      "UUID": "3cd31c22-7454-1412-3809-d8a509e500f9",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "66093b30-5949-4870-852e-594a810a528f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_WyrmRockPrison_HasMet_Prisoner"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "93c607be-4a97-47d0-8b6b-cf0309a5c65f",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_WyrmRockPrison_State_InsideOldPrisonerCell"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bc48ba9d-860b-4991-b3d3-94af3534bc8c",
+              "Text": {
+                "Handle": "h1e12d441gbd2cg475bgae2dgef0c170ee6f6",
+                "Value": "For Balduran's sake, leave an old man in peace!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HAS MET, INSIDE CELL",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "4e7161c6-b1f2-9e16-a593-9fa11bc0da57": {
+      "UUID": "4e7161c6-b1f2-9e16-a593-9fa11bc0da57",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8a5a633d-a905-399a-0308-624618bedac2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7d4fa1cc-24da-466c-ac0f-44b3c84f7c7f",
+              "Text": {
+                "Handle": "hcbd82e65g3f30g41a1gb670g4b22f45c4fdd",
+                "Value": "Not your attitude, that's for certain."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "529c4947-d79a-49ed-9eca-8936311f7130": {
+      "UUID": "529c4947-d79a-49ed-9eca-8936311f7130",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "66093b30-5949-4870-852e-594a810a528f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_WyrmRockPrison_HasMet_Prisoner"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "da11961a-0fdc-4c39-bddf-28e9d12d867f",
+              "Text": {
+                "Handle": "h627db6e6g6c94g48d8g8a00g5cc03a3400e7",
+                "Value": "For Balduran's sake, leave an old man in peace!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HAS MET, OUTSIDE CELL",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "579c1af2-b8cc-1932-b19e-755dbe93d1e7": {
+      "UUID": "579c1af2-b8cc-1932-b19e-755dbe93d1e7",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8a5a633d-a905-399a-0308-624618bedac2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a6a35659-0b22-45a7-98e6-48fb532e83e6",
+              "Text": {
+                "Handle": "h17fb982eg4156g4cfag9d40g959799b94b09",
+                "Value": "Divinely pathetic. A louse fated to suffer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N32",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DARK URGE",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "873e7032-a4c9-f9e2-a8e6-c1d659d741b5": {
+      "UUID": "873e7032-a4c9-f9e2-a8e6-c1d659d741b5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7226e8ff-3446-4561-8723-fc34237f438b",
+              "Text": {
+                "Handle": "hafe914d1gc959g4f1aga695ge777a1e64dbf",
+                "Value": "I don't need to <i>escape</i>. I've got food, water, privacy. And I mean to keep it that way."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "8a5a633d-a905-399a-0308-624618bedac2": {
+      "UUID": "8a5a633d-a905-399a-0308-624618bedac2",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1e58cb7e-eac3-4762-8803-1d87379323c2",
+              "Text": {
+                "Handle": "h9e97e0e8g37cdg44aeg9c29g6ab6674dde5d",
+                "Value": "You're the one pestering old men in cages. Now scram with your sour puss - you're disturbing my sitting time."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e3430aa5-a418-696a-cc6d-24d53529da1c": {
+      "UUID": "e3430aa5-a418-696a-cc6d-24d53529da1c",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "49e7725c-fc6c-49e8-b580-d4e6132761d4",
+              "Text": {
+                "Handle": "h8162da37gb3c3g4380ga162gf308ab240d5c",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "fd009815-608c-4621-8053-c19e22b71471": {
+      "UUID": "fd009815-608c-4621-8053-c19e22b71471",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "579c1af2-b8cc-1932-b19e-755dbe93d1e7",
+        "4e7161c6-b1f2-9e16-a593-9fa11bc0da57",
+        "17d35e2c-86f8-4f8d-9488-fe521c39b6ac",
+        "e3430aa5-a418-696a-cc6d-24d53529da1c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "93c607be-4a97-47d0-8b6b-cf0309a5c65f",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_WyrmRockPrison_State_InsideOldPrisonerCell"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "66093b30-5949-4870-852e-594a810a528f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_WyrmRockPrison_HasMet_Prisoner"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3136685e-3525-4a56-b0bf-50f22509e760",
+              "Text": {
+                "Handle": "h5963c3eegfe92g4b51gad26g3dda86c4e9ad",
+                "Value": "What do <i>you</i> want?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT MET, INSIDE CELL",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "eea97273-91cd-43a2-8424-3f2ffc29188a",
+      "Index": 0,
+      "List": [
+        "55f621e8-c702-45d8-89a7-d38d1a4ebb1d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Otto Ott",
+        "Type": "character",
+        "MapKey": "55f621e8-c702-45d8-89a7-d38d1a4ebb1d",
+        "Name": "S_WYR_WyrmRockPrison_Prisoner",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "706e04e3-30eb-48f7-b69b-54827a2a2ca3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Dialog with a prisoner in Wyrm Rock Prison.\r\nOld man, doesn't want to get out - here he has a place to sleep and food & water."
+}

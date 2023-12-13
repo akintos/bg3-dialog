@@ -1,0 +1,637 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_PaintingPuzzle_Painting4.lsj",
+  "UUID": "a5a273fd-5880-e6ae-be10-e2fc02fdd305",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "1": -1
+  },
+  "RootNodes": [
+    "cbae39e1-c377-4f9d-b1b7-833042b03f70",
+    "8d4b3fd3-af01-c447-73cb-56240a48506c"
+  ],
+  "Nodes": {
+    "1115fe21-0415-78c9-2f1b-3528cd78f96e": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "5028066b-6ea0-4a6a-9e3e-53bee62559a7",
+      "DifficultyClassValue": 10,
+      "UUID": "1115fe21-0415-78c9-2f1b-3528cd78f96e",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ce864901-f861-20d7-854e-e98c7434f9f8",
+        "da521b36-d7e3-b9d2-9034-83a6e9dc413b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a488d8e2-fedb-843b-7979-c7576800a229",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aa56edc2-1873-ddf9-2968-751d86293433",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_TriedCheck"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aa68eccb-7875-436f-881e-c3775eee37f6",
+              "value": false,
+              "paramval": 1,
+              "Name": "REALLY_GENASI"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "aa56edc2-1873-ddf9-2968-751d86293433",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_TriedCheck"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Arcana",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "8434c4a0-6dc4-8a7c-8878-8bfde894b6c7": {
+      "SourceNode": "ed3332ac-e62b-0ddc-7e7d-fa314457e9de",
+      "UUID": "8434c4a0-6dc4-8a7c-8878-8bfde894b6c7",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a488d8e2-fedb-843b-7979-c7576800a229",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aa56edc2-1873-ddf9-2968-751d86293433",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_TriedCheck"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N15",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "8d4b3fd3-af01-c447-73cb-56240a48506c": {
+      "UUID": "8d4b3fd3-af01-c447-73cb-56240a48506c",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "73347d78-42b9-c56f-2f9b-0896e326d509",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_SawCheckExplanation"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d59d223f-4622-416d-8e53-39eddbc5e010",
+              "Text": {
+                "Handle": "hecca7f8fg3563g4bc3g917ag293b15cf836b",
+                "Value": "*'The Theft'. A red-haired man is depicted in the Hall of Wonders, thieving an astrolabe of entrapment.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;234",
+        "sourcetemplate": ""
+      }
+    },
+    "9539211c-9ea3-d405-f43c-0b948b83f5e1": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "5028066b-6ea0-4a6a-9e3e-53bee62559a7",
+      "DifficultyClassValue": 10,
+      "UUID": "9539211c-9ea3-d405-f43c-0b948b83f5e1",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ce864901-f861-20d7-854e-e98c7434f9f8",
+        "da521b36-d7e3-b9d2-9034-83a6e9dc413b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a488d8e2-fedb-843b-7979-c7576800a229",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aa56edc2-1873-ddf9-2968-751d86293433",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_TriedCheck"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aa68eccb-7875-436f-881e-c3775eee37f6",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_GENASI"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "aa56edc2-1873-ddf9-2968-751d86293433",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_TriedCheck"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Arcana",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a24ed7a1-54f6-80a5-7687-5bd96463118a": {
+      "SourceNode": "e426f4f8-13d2-4cde-8800-b0d9827b2069",
+      "UUID": "a24ed7a1-54f6-80a5-7687-5bd96463118a",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a488d8e2-fedb-843b-7979-c7576800a229",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_MadeCheck"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "73347d78-42b9-c56f-2f9b-0896e326d509",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_SawCheckExplanation"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N16",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "cbae39e1-c377-4f9d-b1b7-833042b03f70": {
+      "UUID": "cbae39e1-c377-4f9d-b1b7-833042b03f70",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1115fe21-0415-78c9-2f1b-3528cd78f96e",
+        "9539211c-9ea3-d405-f43c-0b948b83f5e1",
+        "8434c4a0-6dc4-8a7c-8878-8bfde894b6c7",
+        "a24ed7a1-54f6-80a5-7687-5bd96463118a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "73347d78-42b9-c56f-2f9b-0896e326d509",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_SawCheckExplanation"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fef1a5b0-18c6-43d8-9cc2-3b0e524880ea",
+              "Text": {
+                "Handle": "hf2705d40g6fb6g4e7agb8b1gca8015e50db8",
+                "Value": "*'The Theft'. A red-haired man is depicted in the Hall of Wonders, thieving what looks to be a priceless artefact.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ce864901-f861-20d7-854e-e98c7434f9f8": {
+      "RollSuccess": true,
+      "UUID": "ce864901-f861-20d7-854e-e98c7434f9f8",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e426f4f8-13d2-4cde-8800-b0d9827b2069"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N12",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "da521b36-d7e3-b9d2-9034-83a6e9dc413b": {
+      "RollSuccess": false,
+      "UUID": "da521b36-d7e3-b9d2-9034-83a6e9dc413b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ed3332ac-e62b-0ddc-7e7d-fa314457e9de"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N13",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "e426f4f8-13d2-4cde-8800-b0d9827b2069": {
+      "UUID": "e426f4f8-13d2-4cde-8800-b0d9827b2069",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "73347d78-42b9-c56f-2f9b-0896e326d509",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_PaintingPuzzle_Painting4_State_SawCheckExplanation"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "827f3aab-954c-4266-b0b2-5ded595fa50e",
+              "Text": {
+                "Handle": "h50bd32ecgc7e9g4121ga5dbge4d46148fd81",
+                "Value": "*It's an astrolabe of entrapment. It could hold a dozen djinn within it - perhaps even more.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "8712a021-4221-4dc4-b29c-f6c202926004",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ed3332ac-e62b-0ddc-7e7d-fa314457e9de": {
+      "UUID": "ed3332ac-e62b-0ddc-7e7d-fa314457e9de",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cc531099-ec0e-4d7d-97a2-f9f949f868e9",
+      "Index": 0,
+      "List": [
+        "cfbd3cd2-3723-4672-a870-1dcb9f1071cb"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "'The Theft'",
+        "Type": "item",
+        "MapKey": "cfbd3cd2-3723-4672-a870-1dcb9f1071cb",
+        "Name": "S_WYR_PaintingPuzzle_Painting4",
+        "ParentTemplateId": null,
+        "TemplateName": "96a2c017-06d4-4dd4-880d-ad3dcde2b3d4"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "6f221197-7fe4-4411-b8ab-75d3b7f58a29",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Tells part of the story conveyed by the paintings in a puzzle."
+}

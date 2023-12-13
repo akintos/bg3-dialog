@@ -1,0 +1,192 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_SmugglersCave_AD_FightImminent.lsj",
+  "UUID": "5289ea3f-9c78-84ee-1695-f05847f73f7d",
+  "Category": "Repeated automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "c376bf77-96e0-4bac-8c48-40f3e754f559"
+  ],
+  "Nodes": {
+    "2892ecec-bffa-4244-80c6-55428718f23c": {
+      "UUID": "2892ecec-bffa-4244-80c6-55428718f23c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [],
+                "TagNames": []
+              }
+            ],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d9d6990a-978a-49c3-8640-78f66fe922c1",
+              "Text": {
+                "Handle": "h00e4344fg5386g41edgb28dgd81be861a13d",
+                "Value": "Run your mouth, Cairos. My blade does <i>my </i>talking!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Almost frenzied; she's keen to slice",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "c376bf77-96e0-4bac-8c48-40f3e754f559": {
+      "UUID": "c376bf77-96e0-4bac-8c48-40f3e754f559",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2892ecec-bffa-4244-80c6-55428718f23c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a6487901-b349-b3d6-97ce-53c2d7488ff6",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_SmugglersCave_State_CombatBegun"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [],
+                "TagNames": []
+              }
+            ],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "84e6cfc9-2ccf-4df0-ac55-a3c1d660a292",
+              "Text": {
+                "Handle": "h735e7306g402fg45e4g807bg1c1c82c89e09",
+                "Value": "You little Guild shit! Time to die!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "About to attack (and extremely ready to)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-861",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2b94cdba-73af-42db-8aa5-4e8803c77ef5",
+      "Index": 0,
+      "List": [
+        "2457049b-d7ee-43bc-932e-cc9e104933bc"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Farlin",
+        "Type": "character",
+        "MapKey": "2457049b-d7ee-43bc-932e-cc9e104933bc",
+        "Name": "S_WYR_SmugglersCave_Guild_Leader",
+        "ParentTemplateId": null,
+        "TemplateName": "e30cb6c6-0a79-4ca8-aabd-0bf993b5db93"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "451a257d-336b-4a65-8673-53f929a7b42d",
+      "Index": 1,
+      "List": [
+        "40756dfd-a16c-4586-b1c3-6f0de1c7f515"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Cairos",
+        "Type": "character",
+        "MapKey": "40756dfd-a16c-4586-b1c3-6f0de1c7f515",
+        "Name": "S_WYR_SmugglersCave_StoneLord_Leader",
+        "ParentTemplateId": null,
+        "TemplateName": "80fa035d-5248-45c3-a9c2-1c74749833dc"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Players enter a cave where there can see a pitch battle between Farlin and Caïros forces are about to be underway.\r\nThe first line’s speaker is Cairos. The second line’s speaker is Farlin. \r\nWhen the players approach even closer, they will trigger an invisible area which will begin this final AD between the Attackers and Smugglers before the fight between them begins."
+}

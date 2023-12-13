@@ -1,0 +1,3006 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_Posthouse_BroadsheetSeller.lsj",
+  "UUID": "ffe013d8-99df-31cf-eb5c-300d3b3b5872",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "c3089436-e680-0adf-5e7f-917d9c159b4f",
+    "0352f2fc-92c8-e623-5191-0849f4634e5d",
+    "cfb98eee-9dd2-76d2-28ac-a46687305176",
+    "aec4cc7e-bf9b-e56e-7b3f-1594c61e7f6e",
+    "4fe2ea98-de94-a962-9674-75fb3312441e",
+    "a899a25c-ac16-1aaf-602d-e335bd5befdb"
+  ],
+  "Nodes": {
+    "0352f2fc-92c8-e623-5191-0849f4634e5d": {
+      "UUID": "0352f2fc-92c8-e623-5191-0849f4634e5d",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7b3271e1-a3ef-7e43-7fab-a1bb3a582dee"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d865bfce-5341-71b9-1ef5-2a85a3243d1b",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_BroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f9c8a94d-746f-4687-b991-0959e73aee79",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_BroadSheetSellerGoodAtSelling"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d865bfce-5341-71b9-1ef5-2a85a3243d1b",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_BroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7cf2937d-8b59-42e0-82c5-07871777af59",
+              "Text": {
+                "Handle": "h196f6929g69cfg4806gb3e4gc93dd6a009f6",
+                "Value": "Ah! You look like someone who can probably read."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "nervous sales attempt, trying to sound confident. Oblivious to how insulting this sounds",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "08e4d70e-2885-1338-396c-eaeed7436baf": {
+      "UUID": "08e4d70e-2885-1338-396c-eaeed7436baf",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "576027da-b439-9315-6b8d-ae87aed79d51"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": true,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d1262f41-4cfa-47db-ac80-601e77d4202b",
+              "Text": {
+                "Handle": "hea00b3f0gf328g4df2g8a08ga251ecb181ee",
+                "Value": "SELL YOUR WARES <b>LOUDER</b>, LITTLE FRIEND! TRY <b><i>SHOUTING</i>!</b>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N61",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "BARBARIAN",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "0acfd076-41ad-f8d6-bac6-8fd24f49d1bb": {
+      "SourceNode": "27bd0da1-c357-0eb5-19b1-06dd65a51019",
+      "UUID": "0acfd076-41ad-f8d6-bac6-8fd24f49d1bb",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "92fe3a68-d54d-1a37-6d01-ec7ef4559486",
+              "value": false,
+              "paramval": null,
+              "Name": "ffe013d8-99df-31cf-eb5c-300d3b3b5872_SoldFirst"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "92fe3a68-d54d-1a37-6d01-ec7ef4559486",
+              "value": true,
+              "paramval": null,
+              "Name": "ffe013d8-99df-31cf-eb5c-300d3b3b5872_SoldFirst"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N38",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (First Purchase)",
+        "position": "335;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "16e079a8-7ba5-0e3e-6638-aadfd98357e2": {
+      "UUID": "16e079a8-7ba5-0e3e-6638-aadfd98357e2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "25dbed8f-31fa-9354-35a4-d315efd9a2e2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6d5c02b2-e96b-4f82-8255-de223ae51ff8",
+              "Text": {
+                "Handle": "h392f0e2cgd5f0g4251ga9f8g7d1f7d46163a",
+                "Value": "Um... no, it's okay. I don't think Mr Needle would like that very much. We're not supposed to, um, <i>deface</i> the merchandise."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N46",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Trying to politely refuse, finiding it hard to say no to an adult. 'Deface' is an unfamiliar word, Silfy's quoting Mr. Needle without knowing exactly what it means",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "1dbdcc30-4696-ea89-b9d1-b24c2f21fbaf": {
+      "UUID": "1dbdcc30-4696-ea89-b9d1-b24c2f21fbaf",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9c1c57b6-a5c5-626a-1753-f67ea3b8f18f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b1f2debb-9174-441f-9b1e-0e3bc9aba3eb",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_NegativeArticleStarted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7ae53edb-bd19-4219-b203-89697121049e",
+              "Text": {
+                "Handle": "h1e91b5ecge2e7g42f9g93bag524f7b6905cc",
+                "Value": "Oh, sweet child. That rag isn't worth the paper it's printed on. It's full of lies."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NEGATIVE ARTICLE STARTED",
+        "position": "15;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "223a6877-3c11-bd1a-015d-ed324144021e": {
+      "UUID": "223a6877-3c11-bd1a-015d-ed324144021e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7658ebf8-a738-24a4-d818-61d775b43fda"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0d816a0f-a543-47df-940d-e448c91fabb7",
+              "Text": {
+                "Handle": "h0d86760dg168bg442dgbd07gdde71a658af3",
+                "Value": "I'm new, that's all. I just need to p-practice. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "25dbed8f-31fa-9354-35a4-d315efd9a2e2": {
+      "UUID": "25dbed8f-31fa-9354-35a4-d315efd9a2e2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fb3c44b3-9795-4f19-9210-a5604a665bd5",
+              "Text": {
+                "Handle": "h44e31d29g6defg45dag8acdg386c40d922cb",
+                "Value": "How about I sell you a copy, and then you can draw on it all you want? ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N47",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Brightening - found a solution",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "27bd0da1-c357-0eb5-19b1-06dd65a51019": {
+      "UUID": "27bd0da1-c357-0eb5-19b1-06dd65a51019",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "92fe3a68-d54d-1a37-6d01-ec7ef4559486",
+              "value": false,
+              "paramval": null,
+              "Name": "ffe013d8-99df-31cf-eb5c-300d3b3b5872_SoldFirst"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "92fe3a68-d54d-1a37-6d01-ec7ef4559486",
+              "value": true,
+              "paramval": null,
+              "Name": "ffe013d8-99df-31cf-eb5c-300d3b3b5872_SoldFirst"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1df05c09-3106-4b6f-8f0d-36bc087fbbe0",
+              "Text": {
+                "Handle": "h8c40568fga1b2g42d9g960bgb5fedbcca5b6",
+                "Value": "Thank you! My first sale! I can't wait to tell Mol."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Silfy hands over the paper (unseen)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Trade complete",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "2817536f-130b-dd92-3379-29af040a24ce": {
+      "UUID": "2817536f-130b-dd92-3379-29af040a24ce",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c48bfe70-9527-4a7f-b65e-5d50ab7c1d61",
+              "Text": {
+                "Handle": "h07fc9a8cga873g42f3gaebag7fc0bf45220b",
+                "Value": "It's, um, <i>relative</i>. Doesn't mean it's not worth reading. So what do you say - buy a copy? ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Hesitantly using an adult phrase she's picked up somewhere",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "3975e3d7-a76b-3628-e1c1-1fe59b34e8eb": {
+      "UUID": "3975e3d7-a76b-3628-e1c1-1fe59b34e8eb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f3b79aa9-3319-40f0-ae99-4e7cffa36b9d",
+              "Text": {
+                "Handle": "h3288cb38g729eg4632ga08bg172f9cc9b523",
+                "Value": "So, how's about buying a copy of today's edition? ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N44",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Adopting an awkward sales voice - slightly too loud",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "3a0da145-6c33-3734-9dea-39b6d7ca25f3": {
+      "UUID": "3a0da145-6c33-3734-9dea-39b6d7ca25f3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9c952eb9-9e53-071c-c0ed-705452e907bc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "078ec6de-e1ab-438e-9dcc-d83ec8636c86",
+              "Text": {
+                "Handle": "hc14c2f4fg9e51g42eagb751gc1f88b33e7ae",
+                "Value": "Oh, um, she's very busy. I think she's made new f-friends in the city."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N33",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "4fe2ea98-de94-a962-9674-75fb3312441e": {
+      "UUID": "4fe2ea98-de94-a962-9674-75fb3312441e",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d19544ec-9ada-8e47-0bdc-036270b92b41",
+        "f2a31f3e-15a1-e886-a431-508e9f43aec7",
+        "1dbdcc30-4696-ea89-b9d1-b24c2f21fbaf",
+        "8b516ffd-4f60-ebce-211e-a21c56087a75",
+        "a11e1540-89ba-5e65-bd3e-159aa0cb07d9",
+        "6b83e70a-8d17-e4ae-29e9-4bee8a2d19a8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "60054269-ebf4-46f7-4d1c-90598d0e1a64",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_BroadsheetSellerGood"
+            },
+            {
+              "UUID": "a6fdb074-0b7f-424c-8bdd-882dd719d1e3",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_State_BoughtFromBroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f9c8a94d-746f-4687-b991-0959e73aee79",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_BroadSheetSellerGoodAtSelling"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "60054269-ebf4-46f7-4d1c-90598d0e1a64",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_BroadsheetSellerGood"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "63cd761e-140c-490b-b3d8-5c354c177adb",
+              "Text": {
+                "Handle": "he5a9909eg33beg4a93ga67dgbff9e87d38d6",
+                "Value": "How about it? I've got a copy of the Gazette with your name on it... ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N35",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "After Long Rest (Regular ADs triggering)",
+        "position": "-305;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "576027da-b439-9315-6b8d-ae87aed79d51": {
+      "UUID": "576027da-b439-9315-6b8d-ae87aed79d51",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e842ca11-fde6-2357-3ddf-49a8618fc617"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d62ba7ef-53dd-43c6-ae8b-0d45e7f2137f",
+              "Text": {
+                "Handle": "h5fc11e0fgfbebg45d5g89cegfe59eecc402c",
+                "Value": "Um... Okay... CAN I INTEREST YOU IN A C-COPY OF THE BALDUR'S MOUTH GAZETTE? ...Ple- PLEASE? "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N62",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "shouting, but uncomfortable with doing so ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "5c8e5576-52a6-755c-1e8e-5d49c508a774": {
+      "UUID": "5c8e5576-52a6-755c-1e8e-5d49c508a774",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "223a6877-3c11-bd1a-015d-ed324144021e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "90070be5-b2dd-1ab6-3178-881b6aed8175",
+              "value": false,
+              "paramval": 1,
+              "Name": "DEN_Thieflings_Pickpocket2_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0cfdc43e-907d-44ee-b6c3-b9518406c2cd",
+              "Text": {
+                "Handle": "h8c627ddbg7826g461fg9e33gdab5c8035a5e",
+                "Value": "Not the best salesperson, are you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player never met silfy",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "61028c72-4211-3526-e688-80b05f37f355": {
+      "UUID": "61028c72-4211-3526-e688-80b05f37f355",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "27bd0da1-c357-0eb5-19b1-06dd65a51019",
+        "f71acfc4-3afe-3364-a829-b0c82054fd82"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e678bd59-74f4-4a7b-8776-aca807d9ef22",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CheckPocketGold"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a6fdb074-0b7f-424c-8bdd-882dd719d1e3",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_State_BoughtFromBroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "41179aa7-bc85-02b5-1399-71a651d9dc85",
+              "value": true,
+              "paramval": 1,
+              "Name": "GEN_TransferNPCPayment"
+            },
+            {
+              "UUID": "77519879-6ebf-c7fb-6afd-ae06729ac685",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_Event_BoughtPaperFromSilfy"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "036fbf01-d59a-4fc9-801e-72da1d84338b",
+              "Text": {
+                "Handle": "h87354970gca24g44aagaeb3g3eef7a7f1fa6",
+                "Value": "I'll take one. ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HAS GOLD",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "610adc06-7be2-13d5-eea0-32d2e875b88b": {
+      "UUID": "610adc06-7be2-13d5-eea0-32d2e875b88b",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7295329b-6427-9142-ae48-1592f9f19310"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5b109d25-9542-4b66-88a6-fbd729d85020",
+              "Text": {
+                "Handle": "he22af812gb66fg4a95gb53dg22f2d21b1385",
+                "Value": "I wouldn't be caught dead reading that useless rag."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N55",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "661ea0ce-8bc9-62c0-ae60-bbbd1ee9a3a3": {
+      "UUID": "661ea0ce-8bc9-62c0-ae60-bbbd1ee9a3a3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6e993d02-56ee-4bc8-bc45-7cd0ca62ca4b",
+              "Text": {
+                "Handle": "h1726aaceg8d64g4a9ag9bb6g9b746bd16730",
+                "Value": "Want to buy another one? Today's is particularly legible. ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N60",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "6b83e70a-8d17-e4ae-29e9-4bee8a2d19a8": {
+      "UUID": "6b83e70a-8d17-e4ae-29e9-4bee8a2d19a8",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a61f0e3f-3f7d-20d9-fdbf-93372cef0626"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3f0b9af9-4915-4acc-bcbd-7c37b7deae4f",
+              "Text": {
+                "Handle": "hb0e752e3g8e0bg484eg95e6g47e8698eace4",
+                "Value": "Not interested. Now bugger off."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N40",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "7295329b-6427-9142-ae48-1592f9f19310": {
+      "UUID": "7295329b-6427-9142-ae48-1592f9f19310",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "18c33451-2588-487c-83a0-cc3785e67bd8",
+              "Text": {
+                "Handle": "hc0edaa42g6c70g4a9ag8efag3b3caa63ff98",
+                "Value": "Oh. Well, um... I'll be sure to pass on your comments to the editor."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N56",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "7658ebf8-a738-24a4-d818-61d775b43fda": {
+      "UUID": "7658ebf8-a738-24a4-d818-61d775b43fda",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c181f4eb-3681-4766-b160-cf0c07cb4742",
+              "Text": {
+                "Handle": "hd165c0c2g2837g48a6gae94g214847af6c37",
+                "Value": "It's a really good paper, though. No spelling mistakes in it or anything!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Desperately trying to make a sale",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "7b3271e1-a3ef-7e43-7fab-a1bb3a582dee": {
+      "UUID": "7b3271e1-a3ef-7e43-7fab-a1bb3a582dee",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a92c090e-f28e-6a4b-fd1c-e6ab275176d3",
+        "5c8e5576-52a6-755c-1e8e-5d49c508a774",
+        "c976b0c8-ab4b-5ac9-f48d-fee973e8aa4e",
+        "61028c72-4211-3526-e688-80b05f37f355",
+        "610adc06-7be2-13d5-eea0-32d2e875b88b",
+        "08e4d70e-2885-1338-396c-eaeed7436baf",
+        "7b8ec31c-e507-4de5-3af8-844633f5f706"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3d9a316e-e6ff-4d39-bc70-47a53b98feb9",
+              "Text": {
+                "Handle": "hb885269cg317eg42d6ga9d4g0fae1692404e",
+                "Value": "Can I interest you in, um, a copy of the Baldur's Mouth Gazette? Please buy one... ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Trying to sound confident, but a bit desperate at the end ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "7b8ec31c-e507-4de5-3af8-844633f5f706": {
+      "UUID": "7b8ec31c-e507-4de5-3af8-844633f5f706",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e7756cda-0c99-7781-501e-c0fbff8bd666"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d52c2d27-9ab8-47cf-b90d-a58e9b50e5d8",
+              "Text": {
+                "Handle": "hfbb7e5dbga242g4291g8e2bgf2dfdaeeeb0b",
+                "Value": "Another time, perhaps."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "8b516ffd-4f60-ebce-211e-a21c56087a75": {
+      "UUID": "8b516ffd-4f60-ebce-211e-a21c56087a75",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "0acfd076-41ad-f8d6-bac6-8fd24f49d1bb",
+        "90e26c4f-c105-75f9-81ac-6af1a2f032af"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e678bd59-74f4-4a7b-8776-aca807d9ef22",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CheckPocketGold"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a6fdb074-0b7f-424c-8bdd-882dd719d1e3",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_State_BoughtFromBroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "41179aa7-bc85-02b5-1399-71a651d9dc85",
+              "value": true,
+              "paramval": 1,
+              "Name": "GEN_TransferNPCPayment"
+            },
+            {
+              "UUID": "77519879-6ebf-c7fb-6afd-ae06729ac685",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_Event_BoughtPaperFromSilfy"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e3cdbac6-5a77-4413-9d48-6fc386530884",
+              "Text": {
+                "Handle": "h624f1f6bg2212g44eeg8058gf02c561a4497",
+                "Value": "<i>Buy a copy.</i> ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N37",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "8ce9a6e9-1265-d3af-23c4-99c97a79f732": {
+      "JumpTarget": "4fe2ea98-de94-a962-9674-75fb3312441e",
+      "JumpTargetPoint": 2,
+      "UUID": "8ce9a6e9-1265-d3af-23c4-99c97a79f732",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N50",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "15;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "90e26c4f-c105-75f9-81ac-6af1a2f032af": {
+      "SourceNode": "f71acfc4-3afe-3364-a829-b0c82054fd82",
+      "UUID": "90e26c4f-c105-75f9-81ac-6af1a2f032af",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "92fe3a68-d54d-1a37-6d01-ec7ef4559486",
+              "value": true,
+              "paramval": null,
+              "Name": "ffe013d8-99df-31cf-eb5c-300d3b3b5872_SoldFirst"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N64",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Repeat purchase)",
+        "position": "335;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "9c1c57b6-a5c5-626a-1753-f67ea3b8f18f": {
+      "UUID": "9c1c57b6-a5c5-626a-1753-f67ea3b8f18f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2817536f-130b-dd92-3379-29af040a24ce"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e30a123c-1828-4b9d-8775-38738b969a2a",
+              "Text": {
+                "Handle": "h7a82adbdg9e31g4a10ga3eagdb98dd14d8be",
+                "Value": "It is? Oh, well... um... the truth depends on who you ask, doesn't it?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Momentarily thrown/confused - this never occurred to her",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "9c952eb9-9e53-071c-c0ed-705452e907bc": {
+      "UUID": "9c952eb9-9e53-071c-c0ed-705452e907bc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6d60f52c-3387-4c0e-b2a0-8cb9051c9f69",
+              "Text": {
+                "Handle": "hebf262ceg5390g4c9dgbfbag98e317c2833e",
+                "Value": "I'm going to join her there when the gates open."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N34",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "a11e1540-89ba-5e65-bd3e-159aa0cb07d9": {
+      "UUID": "a11e1540-89ba-5e65-bd3e-159aa0cb07d9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e681e8ee-f5eb-b2bd-89d2-326f80f00984"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bd60a9dd-c8f3-47e6-b31b-3a1f4b2872de",
+              "Text": {
+                "Handle": "h52b218c0g92f7g418agb24bged53b061e620",
+                "Value": "Perhaps later."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N57",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;2862",
+        "sourcetemplate": ""
+      }
+    },
+    "a61f0e3f-3f7d-20d9-fdbf-93372cef0626": {
+      "UUID": "a61f0e3f-3f7d-20d9-fdbf-93372cef0626",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "07957909-d417-43e9-ad1f-0123291807a3",
+              "Text": {
+                "Handle": "h72d43fc4g084cg48e5gadccg7250f5b4845e",
+                "Value": "I - I can't. I'm supposed to stand here. You don't have to buy one."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "a899a25c-ac16-1aaf-602d-e335bd5befdb": {
+      "UUID": "a899a25c-ac16-1aaf-602d-e335bd5befdb",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "8ce9a6e9-1265-d3af-23c4-99c97a79f732"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "60054269-ebf4-46f7-4d1c-90598d0e1a64",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_BroadsheetSellerGood"
+            },
+            {
+              "UUID": "a6fdb074-0b7f-424c-8bdd-882dd719d1e3",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_State_BoughtFromBroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f9c8a94d-746f-4687-b991-0959e73aee79",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_BroadSheetSellerGoodAtSelling"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5438f8ce-9a2c-407f-bb6c-89fcf3e277ee",
+              "Text": {
+                "Handle": "h940966d6g4f57g4d53g8140g7057a2305f4c",
+                "Value": "Changed your mind? Go on - buy a Gazette. ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N49",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HASMET, AFTER LONG REST, DIDN'T BUY ",
+        "position": "-305;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "a92c090e-f28e-6a4b-fd1c-e6ab275176d3": {
+      "UUID": "a92c090e-f28e-6a4b-fd1c-e6ab275176d3",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f75c0dec-980e-413b-34be-fd9bc5239dbb"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "90070be5-b2dd-1ab6-3178-881b6aed8175",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Thieflings_Pickpocket2_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bee2848c-1c69-4e02-be61-7b761333f030",
+              "Text": {
+                "Handle": "hdafa414dg1bd7g476cgb7d8g35b7b89bf3c0",
+                "Value": "You're selling broadsheets now, Silfy?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player met Silfy",
+        "position": "335;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "aec4cc7e-bf9b-e56e-7b3f-1594c61e7f6e": {
+      "UUID": "aec4cc7e-bf9b-e56e-7b3f-1594c61e7f6e",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a6fdb074-0b7f-424c-8bdd-882dd719d1e3",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_State_BoughtFromBroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f9c8a94d-746f-4687-b991-0959e73aee79",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_BroadSheetSellerGoodAtSelling"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "15f4f1de-2f04-4ea1-b454-575c183fdc30",
+              "Text": {
+                "Handle": "h7a7da163g061bg4023gaa5agedee08943692",
+                "Value": "Come back tomorrow for the next edition."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N54",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HASMET, AFTER LONG REST, BOUGHT PAPER ",
+        "position": "-305;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "b2a68d4c-e527-742e-bed4-61d007227c64": {
+      "JumpTarget": "7b3271e1-a3ef-7e43-7fab-a1bb3a582dee",
+      "JumpTargetPoint": 2,
+      "UUID": "b2a68d4c-e527-742e-bed4-61d007227c64",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N23",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "c3089436-e680-0adf-5e7f-917d9c159b4f": {
+      "UUID": "c3089436-e680-0adf-5e7f-917d9c159b4f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a6fdb074-0b7f-424c-8bdd-882dd719d1e3",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_State_BoughtFromBroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f9c8a94d-746f-4687-b991-0959e73aee79",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_BroadSheetSellerGoodAtSelling"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f56cf356-a68c-44b1-a0bc-476b6946af95",
+              "Text": {
+                "Handle": "h7fbb6124g5e27g43f6gb95bg03e5ef0b13ac",
+                "Value": "Sorry, can't talk. I might miss my next customer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "nervous excitement",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Hasmet, bought paper",
+        "position": "-305;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "c976b0c8-ab4b-5ac9-f48d-fee973e8aa4e": {
+      "UUID": "c976b0c8-ab4b-5ac9-f48d-fee973e8aa4e",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3a0da145-6c33-3734-9dea-39b6d7ca25f3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d018a0dc-99de-2652-813c-19450c65a6a3",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_HideoutLeader_HasMet"
+            }
+          ],
+          "Type": "Party"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ff90f38e-1168-452f-a10a-0bd64029bbb1",
+              "Text": {
+                "Handle": "h8edbba62g5ca3g4653g9475g136ca34e7ecb",
+                "Value": "Where's Mol? Did she make it to the city too?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N32",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "cfb98eee-9dd2-76d2-28ac-a46687305176": {
+      "UUID": "cfb98eee-9dd2-76d2-28ac-a46687305176",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b2a68d4c-e527-742e-bed4-61d007227c64"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d865bfce-5341-71b9-1ef5-2a85a3243d1b",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_BroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f9c8a94d-746f-4687-b991-0959e73aee79",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_BroadSheetSellerGoodAtSelling"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4db047e5-db0d-4414-a140-f20b1a71fbc2",
+              "Text": {
+                "Handle": "h9e754749g1cbcg4075g80c7gcf88e0f23f33",
+                "Value": "Baldur's Mouth Gazette. For stories with, um, teeth? Buy a copy? ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "nervous sales attempt, reciting a script",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Hasmet, didn't buy - before Long Rest",
+        "position": "-305;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "d19544ec-9ada-8e47-0bdc-036270b92b41": {
+      "UUID": "d19544ec-9ada-8e47-0bdc-036270b92b41",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d6d8e629-a016-b170-30ec-f98ae32d0d9f",
+        "e98c2aa1-26c0-9c10-624c-5dabf16043de"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d865bfce-5341-71b9-1ef5-2a85a3243d1b",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_HasMet_BroadsheetSeller"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a232856f-9a9f-413b-9128-0a04e19fd606",
+              "Text": {
+                "Handle": "h03853756g0777g47c4gbf89gc3a118e2b4a6",
+                "Value": "Your sales technique's improving - I'll give you that."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "d6d8e629-a016-b170-30ec-f98ae32d0d9f": {
+      "UUID": "d6d8e629-a016-b170-30ec-f98ae32d0d9f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "661ea0ce-8bc9-62c0-ae60-bbbd1ee9a3a3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0bcf4d71-354a-4459-932f-fcc78eadf6ae",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursMouth_State_BoughtFromBroadsheetSellerBeforeGood"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "132b0b90-9c43-4ad9-8ab0-0e0703972953",
+              "Text": {
+                "Handle": "h94e75cd0g8845g4ccag853fg825b04b8bf18",
+                "Value": "The first sale was the hardest. Once I sold to you, I just kept going!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N59",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player bought copy prior to long rest",
+        "position": "335;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "e681e8ee-f5eb-b2bd-89d2-326f80f00984": {
+      "UUID": "e681e8ee-f5eb-b2bd-89d2-326f80f00984",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "64184d23-fa48-47b2-a362-9126cd73ea0c",
+              "Text": {
+                "Handle": "had5e105cgf388g4836gb4c6g34f0942dc71f",
+                "Value": "If you don't like today's news, come back tomorrow. It changes every day!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N41",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Growing confidence, Like she's amazed at the fact the news changes daily",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;2862",
+        "sourcetemplate": ""
+      }
+    },
+    "e7756cda-0c99-7781-501e-c0fbff8bd666": {
+      "UUID": "e7756cda-0c99-7781-501e-c0fbff8bd666",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "accaf4dc-7cd2-468c-a6cf-39c9b77f3f07",
+              "Text": {
+                "Handle": "had67ff9bga2f9g4a8bg870dg26a6bda1d34f",
+                "Value": "Oh. C-come back again if you change your mind."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Trade not complete",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    },
+    "e842ca11-fde6-2357-3ddf-49a8618fc617": {
+      "UUID": "e842ca11-fde6-2357-3ddf-49a8618fc617",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "35cb3928-315c-4ff1-90bc-53d2b4975a2a",
+              "Text": {
+                "Handle": "h525e405dga584g431dgba31g8d5fe6e2ea69",
+                "Value": "Oh, I'm just <i>no</i> good at shouting. I'll never sell this broadsheet."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "e98c2aa1-26c0-9c10-624c-5dabf16043de": {
+      "UUID": "e98c2aa1-26c0-9c10-624c-5dabf16043de",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3975e3d7-a76b-3628-e1c1-1fe59b34e8eb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fc4431a8-53fc-4504-916f-f787eabbf8ac",
+              "Text": {
+                "Handle": "h9011840bgb2e9g4095g8d55gbabe503ab402",
+                "Value": "N-nothing to it really. The secret is saying things very loudly."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N43",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Pleased to have figured this out",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "f2a31f3e-15a1-e886-a431-508e9f43aec7": {
+      "UUID": "f2a31f3e-15a1-e886-a431-508e9f43aec7",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "16e079a8-7ba5-0e3e-6638-aadfd98357e2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "14071582-0c75-40e5-9121-251d6a9524e4",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BaldursMouth_State_PositiveArticlePublished"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7e1c8ec8-e6ef-424c-a331-18c36f5597bc",
+              "Text": {
+                "Handle": "h9e58f9d3g60bag4807gb2b7gd0caf348dcef",
+                "Value": "There's a wonderful article about me in there. Would you like me to sign it?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N45",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "POSITIVE ARTICLES STARTED",
+        "position": "15;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "f71acfc4-3afe-3364-a829-b0c82054fd82": {
+      "UUID": "f71acfc4-3afe-3364-a829-b0c82054fd82",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e901e1ba-464b-4109-86eb-13c6b78e609f",
+              "Text": {
+                "Handle": "h0dbcc0a1g4bd4g490bg9df7g2dc7afb1400c",
+                "Value": "Another sale! I think I'm getting the hang of this."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Silfy hands over the paper (unseen)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N39",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Repeat purchase",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "f75c0dec-980e-413b-34be-fd9bc5239dbb": {
+      "UUID": "f75c0dec-980e-413b-34be-fd9bc5239dbb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7658ebf8-a738-24a4-d818-61d775b43fda"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "959b69b9-30f8-4b2d-b184-6f251f21e839",
+              "Text": {
+                "Handle": "hfd58d39dgcd24g48f2gb0c3gedc4b2f1192d",
+                "Value": "We're all doing our bit. Better than s-sitting around waiting for the gates to open."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player Knows ",
+        "position": "655;-861",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "689871b2-4830-4308-ab4e-dbaed1dfd004",
+      "Index": 0,
+      "List": [
+        "540ddc1f-42c6-4347-ba03-b3cf3d3942ab"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Silfy",
+        "Type": "character",
+        "MapKey": "540ddc1f-42c6-4347-ba03-b3cf3d3942ab",
+        "Name": "S_DEN_Pickpocket",
+        "ParentTemplateId": null,
+        "TemplateName": "a5766603-e5dc-49a2-9856-75383e2279b5"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d84fd263-b131-4602-a2d7-2dcb32801599",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Interact with Silfy as the broadsheet seller near the Post House.\r\nSmall introduction + option to buy broadsheets."
+}

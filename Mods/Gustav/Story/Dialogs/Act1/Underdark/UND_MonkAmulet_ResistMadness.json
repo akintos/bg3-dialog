@@ -1,0 +1,2851 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/UND_MonkAmulet_ResistMadness.lsj",
+  "UUID": "4871c722-28fc-12a5-0bb6-50af6d1d9024",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "fe72b89b-796f-c176-32c3-c28df4c28159",
+    "5681f9e2-7228-b96d-7070-5188bff2855b",
+    "ee753132-ebac-95dc-10a6-ba1d442031cd",
+    "aad8a65f-c87b-6512-7e45-5b7780adcdc8",
+    "37c43bde-92b5-7043-ce77-cd894270a21b"
+  ],
+  "Nodes": {
+    "018d1ebb-968f-73ac-f262-be152693b6a2": {
+      "RollSuccess": false,
+      "UUID": "018d1ebb-968f-73ac-f262-be152693b6a2",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8a81451a-d051-881f-f517-f775994b0eab"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N8",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "01fda207-56af-1ff1-86b2-2f298fa22f06": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "01fda207-56af-1ff1-86b2-2f298fa22f06",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "eb2beedd-63f0-8520-cd7f-b41f9ad91e5a",
+        "d8d67fdc-32e2-3993-6310-b62478254a22"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8b7cddc9-6599-45e0-90ed-b191ae626b7a",
+              "Text": {
+                "Handle": "hde0d35b8g5fa9g4b87gb80dgd42923e49a90",
+                "Value": "<i>Resist happiness.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N106",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Saving_Throw",
+        "position": "655;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "06e8b064-49cb-5f6e-86bb-806f7e529fac": {
+      "UUID": "06e8b064-49cb-5f6e-86bb-806f7e529fac",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ed3fa304-f32f-44f5-9654-da46d5fe3c8a",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_State_ModerateMadness"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "33528dab-1f91-411c-b5dd-1caa0dc32370",
+              "Text": {
+                "Handle": "h7ed00312g968ag404bg9458g1802cd7e6cec",
+                "Value": "*Such unbearable happiness. Laughter bubbles within you, eager to escape.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Player] Laughter erupts uncontrollably, leaves player breathless <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "12bbcaad-93b1-21bd-4409-914d50c4ee89": {
+      "UUID": "12bbcaad-93b1-21bd-4409-914d50c4ee89",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d229862e-80c1-9008-9a1c-12c2d458569b",
+        "9c1c2e32-930c-d27c-9659-a123c11c5c41",
+        "23a732ff-5e86-8598-57cf-5646507492f9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "0d1d64b8-70d6-4702-8643-be348b0f3fc6",
+                  "62f5382a-27c3-441c-bd57-33db4ca00f10"
+                ],
+                "TagNames": [
+                  "CLERIC_SHAR",
+                  "PALADIN_SHAR"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_SHAR or PALADIN_SHAR"
+          },
+          "TagTexts": [
+            {
+              "LineId": "7acef8c8-a933-4964-8574-15a8ac77c54d",
+              "Text": {
+                "Handle": "hddc692cfg4c43g4a50gab35g5197268a909a",
+                "Value": "Goodness, but what hath come over thee?"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a293bcc3-6427-4ae5-8000-268af6a528b3",
+              "Text": {
+                "Handle": "h7ed322f5g60dcg44bag8fdegaf28342c4e25",
+                "Value": "Mine curse hast become thine. Hehe hehee - alack!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N38",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "15578043-6d52-3216-546e-0b4f9182228c": {
+      "UUID": "15578043-6d52-3216-546e-0b4f9182228c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "18749e7c-6d5a-4819-b008-a0bccd34a834",
+              "Text": {
+                "Handle": "h53b0b7c5g5292g4c77g8ff6g1b8fa3041b65",
+                "Value": "*Your mood levels out. You have found balance.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Player] regains composure and normality <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N82",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "1f349919-898d-ef99-69fa-760b9f686a42": {
+      "UUID": "1f349919-898d-ef99-69fa-760b9f686a42",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "54ac97db-ba13-a060-fbdf-ac75c2fe2ad4"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "aab71b5d-e0b2-3208-8716-7d445d2f6c02",
+              "value": false,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_Event_AskedWhatsHappening"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "aab71b5d-e0b2-3208-8716-7d445d2f6c02",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_Event_AskedWhatsHappening"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6af74f7d-9f4e-4e4b-a5f3-9fd2aae67f13",
+              "Text": {
+                "Handle": "h66d3a0dbg2993g4fe4g81a4gc7411ee85dca",
+                "Value": "What's happening? What are you doing to me?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N128",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "23a732ff-5e86-8598-57cf-5646507492f9": {
+      "JumpTarget": "1f349919-898d-ef99-69fa-760b9f686a42",
+      "JumpTargetPoint": 1,
+      "UUID": "23a732ff-5e86-8598-57cf-5646507492f9",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N130",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "27822bde-7d69-cd90-2be2-e7cfe227a485": {
+      "UUID": "27822bde-7d69-cd90-2be2-e7cfe227a485",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ed3fa304-f32f-44f5-9654-da46d5fe3c8a",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_State_ModerateMadness"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22002ef4-f11b-4dd4-ab4a-5abf467572c7",
+              "Text": {
+                "Handle": "hb3f2115bg2a88g4b4egb755gda071c93096b",
+                "Value": "*A smile reaches your lips, then melts away. A full laugh could be next.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player smiles momentarily",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N90",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "2c10742f-fcd1-861b-7f62-4598df8575ff": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "2c10742f-fcd1-861b-7f62-4598df8575ff",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8cade8f9-bc28-5687-1426-6e29dafd1206",
+        "018d1ebb-968f-73ac-f262-be152693b6a2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9123b575-8674-4e28-aef8-11f21a9c992c",
+              "Text": {
+                "Handle": "hd5b3c3ffg7225g45a8g859bgaa8f6fe50675",
+                "Value": "<i>Think dark thoughts. Suppress the cheer.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Saving_Throw",
+        "position": "655;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "36e7e732-b3cf-b13a-1adc-7945144e1883": {
+      "JumpTarget": "1f349919-898d-ef99-69fa-760b9f686a42",
+      "JumpTargetPoint": 1,
+      "UUID": "36e7e732-b3cf-b13a-1adc-7945144e1883",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N133",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "37c43bde-92b5-7043-ce77-cd894270a21b": {
+      "UUID": "37c43bde-92b5-7043-ce77-cd894270a21b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "af13fc28-6a64-67c5-0787-e9ca504d0b0f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "215ba870-3d12-620b-9b71-954243aed0f5",
+              "value": true,
+              "paramval": null,
+              "Name": "4871c722-28fc-12a5-0bb6-50af6d1d9024_A"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c287be4e-a837-4857-b4a8-7816d863f442",
+              "Text": {
+                "Handle": "hcd74d4d3g1291g4a3fgb699gb438db5166c5",
+                "Value": "*You suddenly feel cheerful. <i>Too</i> cheerful - as if even the grimmest sight might make you laugh.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] Holding the Amulet, a happy feeling washes over <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player is shown laughing",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Madness level 1",
+        "position": "15;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "46a581a3-b23f-7fd0-ca68-9d568aa9755e": {
+      "UUID": "46a581a3-b23f-7fd0-ca68-9d568aa9755e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "10b7083f-3b2f-4b00-83ee-7d7a845f9e1e",
+              "Text": {
+                "Handle": "h7ca7a535g4deag4ec9ga3fdg6f49a1f78c24",
+                "Value": "*The moment is over. The awful, horrible joy has passed.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] regains composure and normality <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "5499cc06-172f-36b7-c856-493895b71dd1": {
+      "UUID": "5499cc06-172f-36b7-c856-493895b71dd1",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "27822bde-7d69-cd90-2be2-e7cfe227a485"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "906d1476-abd2-4aa2-b7f8-760e0f551d72",
+              "Text": {
+                "Handle": "h07a10f4agceb5g49c2gafe6gecf4b487fa2b",
+                "Value": "<i>Give in to your joy.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N94",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "54ac97db-ba13-a060-fbdf-ac75c2fe2ad4": {
+      "UUID": "54ac97db-ba13-a060-fbdf-ac75c2fe2ad4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "62f5382a-27c3-441c-bd57-33db4ca00f10",
+                  "9fd9e0bb-bfc5-4696-90c7-133fd7e8e9f8"
+                ],
+                "TagNames": [
+                  "PALADIN_SHAR",
+                  "SHARK"
+                ]
+              }
+            ],
+            "RuleString": "PALADIN_SHAR or SHARK"
+          },
+          "TagTexts": [
+            {
+              "LineId": "fcd4a136-399b-47e9-bdf1-e753fd987cff",
+              "Text": {
+                "Handle": "he3f7b6e6gf3f7g45abgb78eg521b3e4aee68",
+                "Value": "Thou think this is mine doing? Ha ha ha! Why, perish the thought!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d149235c-1297-40d6-acd5-e355991bd4b3",
+              "Text": {
+                "Handle": "h068b1592gdb7bg46c8gb684gd90274639358",
+                "Value": "Ha ha! This is the madness the Sharrans wrought. Whilst thou wearest me, so sharest thou my curse."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N129",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "5681f9e2-7228-b96d-7070-5188bff2855b": {
+      "UUID": "5681f9e2-7228-b96d-7070-5188bff2855b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c5ff0acf-99a9-a654-4716-a04c97e2a45d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ed3fa304-f32f-44f5-9654-da46d5fe3c8a",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_State_ModerateMadness"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d721114-4bf4-0065-eb4d-18d4a088caf9",
+              "value": true,
+              "paramval": null,
+              "Name": "4871c722-28fc-12a5-0bb6-50af6d1d9024_C"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "41b7c30c-9762-40a0-9cc2-8e5c537396ed",
+              "Text": {
+                "Handle": "hda2074bfg6754g4186g940dg2c8b18069a6c",
+                "Value": "*You are overcome by irrational cheer, bordering on madness.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] Laughter, becoming more hysterical <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Madness level 2",
+        "position": "15;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "5b9e0180-3a6c-3e25-1805-189cd623baa0": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "5b9e0180-3a6c-3e25-1805-189cd623baa0",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b2072ec9-b414-abaa-03f1-a3d4d110e935",
+        "d0de3ca3-8bf9-9eed-2712-43763ce92ef8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "72196d01-7b26-4181-86b2-b5b5839fc5fa",
+              "Text": {
+                "Handle": "hdaf97d41g3d6fg4f7cgbc66gefbbfb9f1e8c",
+                "Value": "<i>Resist happiness.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Saving_Throw",
+        "position": "655;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "620cdeba-afa7-e8f9-439f-b7034c243684": {
+      "UUID": "620cdeba-afa7-e8f9-439f-b7034c243684",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cb463ada-23b1-49fb-9fbc-0bfb54520922",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_State_MajorMadness"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d8d51222-fec5-4e44-b4c9-ccf213edc411",
+              "Text": {
+                "Handle": "h1dbcb93dg2908g4b0dg965agf4de86cd0335",
+                "Value": "*You are rotted with joy; you are sick with pleasure. This is not happiness - it's an illusion.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] Laughter erupts uncontrollably, leaves player pained <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "67f712dc-af18-bbd6-93f6-d49d6da1e13f": {
+      "UUID": "67f712dc-af18-bbd6-93f6-d49d6da1e13f",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fe72b89b-796f-c176-32c3-c28df4c28159"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N143",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;-2394",
+        "sourcetemplate": "",
+        "stateContext": "Player is holding amulet"
+      }
+    },
+    "68c25017-1b87-1ae5-49bd-0b0c3c94e0da": {
+      "JumpTarget": "1f349919-898d-ef99-69fa-760b9f686a42",
+      "JumpTargetPoint": 1,
+      "UUID": "68c25017-1b87-1ae5-49bd-0b0c3c94e0da",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N132",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "6c9ed391-3373-71f8-ca75-fdc5cf70e4ca": {
+      "RollSuccess": true,
+      "UUID": "6c9ed391-3373-71f8-ca75-fdc5cf70e4ca",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "15578043-6d52-3216-546e-0b4f9182228c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N78",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "82439674-33ed-cef9-38d7-4a629aed65db": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "82439674-33ed-cef9-38d7-4a629aed65db",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6c9ed391-3373-71f8-ca75-fdc5cf70e4ca",
+        "8eace68d-d0a9-afd4-01bb-138e71c96d33"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7847a54d-e295-4d1e-b712-21b6235a84ff",
+              "Text": {
+                "Handle": "hd90475dagbb56g4026g9ebdg16d3ecbde8a5",
+                "Value": "<i>Contain your joy.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N74",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Saving_Throw",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "83cd8936-e490-2912-1963-b1e62de04f32": {
+      "UUID": "83cd8936-e490-2912-1963-b1e62de04f32",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8054aa06-3a99-4458-bc2f-ef08cc78a768",
+              "Text": {
+                "Handle": "hcb165d22g6f2dg409cgad24g6be8639f6cf5",
+                "Value": "*The maddening cheer withers away, leaving you breathless.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Player] surpress laughter, but left feeling breathless <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N114",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "8a81451a-d051-881f-f517-f775994b0eab": {
+      "UUID": "8a81451a-d051-881f-f517-f775994b0eab",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ed3fa304-f32f-44f5-9654-da46d5fe3c8a",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_State_ModerateMadness"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fe4ad644-3771-48e6-b1a8-a56920ccb81c",
+              "Text": {
+                "Handle": "hdf00d80cg7cf2g41d7ga387gcbd27f9ceabb",
+                "Value": "*You are taken by an unnatural, unbidden bliss. You could fall down laughing at any moment.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] Big smile and happy swagger <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "8cade8f9-bc28-5687-1426-6e29dafd1206": {
+      "RollSuccess": true,
+      "UUID": "8cade8f9-bc28-5687-1426-6e29dafd1206",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "46a581a3-b23f-7fd0-ca68-9d568aa9755e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N5",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "8d5c2ad6-8dcb-4206-8e8f-8c817c2cb761": {
+      "UUID": "8d5c2ad6-8dcb-4206-8e8f-8c817c2cb761",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "296d5921-d9ce-46df-8ded-85616f6342f2",
+              "Text": {
+                "Handle": "h68baa1dcg62bfg4f64ga98fga568c7bc543f",
+                "Value": "*The joy fades as quickly as it came.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Player] regains composure and normality <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;891",
+        "sourcetemplate": ""
+      }
+    },
+    "8eace68d-d0a9-afd4-01bb-138e71c96d33": {
+      "RollSuccess": false,
+      "UUID": "8eace68d-d0a9-afd4-01bb-138e71c96d33",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "27822bde-7d69-cd90-2be2-e7cfe227a485"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N86",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "906d1f2b-c125-6f45-f41f-8e64b233ab4c": {
+      "UUID": "906d1f2b-c125-6f45-f41f-8e64b233ab4c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "82439674-33ed-cef9-38d7-4a629aed65db",
+        "5499cc06-172f-36b7-c856-493895b71dd1",
+        "bc60bdf7-851e-c98a-6494-4afd36dd5b50"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "0d1d64b8-70d6-4702-8643-be348b0f3fc6",
+                  "62f5382a-27c3-441c-bd57-33db4ca00f10"
+                ],
+                "TagNames": [
+                  "CLERIC_SHAR",
+                  "PALADIN_SHAR"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_SHAR or PALADIN_SHAR"
+          },
+          "TagTexts": [
+            {
+              "LineId": "a497a8ae-fc51-4329-a9de-21400ed2ed87",
+              "Text": {
+                "Handle": "h0b87efc0gf007g40b3g8ffdga96c1847c2d7",
+                "Value": "Thou dost look quite jolly. What might this mean? Ho ho hee!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b5d2d535-e235-4978-8884-4504f31407f9",
+              "Text": {
+                "Handle": "h29545dfbg50a6g4f9ag9237g611060e32a5f",
+                "Value": "The agony of ecstasy - ha ha HEE! Why must pleasure bring such pain?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N70",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "9bbc333d-aa79-b410-5337-af9193426b17": {
+      "UUID": "9bbc333d-aa79-b410-5337-af9193426b17",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "01fda207-56af-1ff1-86b2-2f298fa22f06",
+        "eb4ccc21-2522-faba-e8d0-979028da25ed",
+        "36e7e732-b3cf-b13a-1adc-7945144e1883"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "0d1d64b8-70d6-4702-8643-be348b0f3fc6",
+                  "62f5382a-27c3-441c-bd57-33db4ca00f10"
+                ],
+                "TagNames": [
+                  "CLERIC_SHAR",
+                  "PALADIN_SHAR"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_SHAR or PALADIN_SHAR"
+          },
+          "TagTexts": [
+            {
+              "LineId": "9fc409b4-e16a-44bd-83c0-93ba04a201ff",
+              "Text": {
+                "Handle": "hde481e1eg4bc7g4015g95fag4daf885b65bf",
+                "Value": "Again? Hehee. Thou art delirious!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f358d94a-7249-4816-a4da-2df5d33b9491",
+              "Text": {
+                "Handle": "h83b5cdd0g9845g4e7eg9d78g757d55ae36ad",
+                "Value": "The madness worsens. Thou must resist. Ha ha HO!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N102",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "9c1c2e32-930c-d27c-9659-a123c11c5c41": {
+      "UUID": "9c1c2e32-930c-d27c-9659-a123c11c5c41",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "06e8b064-49cb-5f6e-86bb-806f7e529fac"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "204b9aa9-4e20-4c17-a659-0f8bd6d3aba9",
+              "Text": {
+                "Handle": "ha7887d85gebd2g40a5g8ca7g250fbd9f87e5",
+                "Value": "<i>Invite the glee into you.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N62",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "a3fefbcc-7416-1155-2695-6cc684cbfef9": {
+      "RollSuccess": true,
+      "UUID": "a3fefbcc-7416-1155-2695-6cc684cbfef9",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8d5c2ad6-8dcb-4206-8e8f-8c817c2cb761"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N46",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;891",
+        "sourcetemplate": ""
+      }
+    },
+    "a469447f-92b7-f8bf-ca38-e7386c2804eb": {
+      "UUID": "a469447f-92b7-f8bf-ca38-e7386c2804eb",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "37c43bde-92b5-7043-ce77-cd894270a21b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N139",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;1986",
+        "sourcetemplate": "",
+        "stateContext": "Player is holding amulet"
+      }
+    },
+    "a57309e3-ed1d-3a38-1086-b8777c43da15": {
+      "UUID": "a57309e3-ed1d-3a38-1086-b8777c43da15",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5681f9e2-7228-b96d-7070-5188bff2855b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N142",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;-1299",
+        "sourcetemplate": "",
+        "stateContext": "Player is holding amulet"
+      }
+    },
+    "a824f0d0-5364-e535-9fa5-2cb521b479a8": {
+      "UUID": "a824f0d0-5364-e535-9fa5-2cb521b479a8",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "620cdeba-afa7-e8f9-439f-b7034c243684"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fe5e8ce5-fb54-4de8-bcb5-9f14bb114a1c",
+              "Text": {
+                "Handle": "hafeba838gea79g4844g8cccg8378898f0cc5",
+                "Value": "<i>Accept happiness.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N97",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "aad8a65f-c87b-6512-7e45-5b7780adcdc8": {
+      "UUID": "aad8a65f-c87b-6512-7e45-5b7780adcdc8",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "12bbcaad-93b1-21bd-4409-914d50c4ee89"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "215ba870-3d12-620b-9b71-954243aed0f5",
+              "value": true,
+              "paramval": null,
+              "Name": "4871c722-28fc-12a5-0bb6-50af6d1d9024_A"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a9b1ca32-2d1f-a932-7d15-155f89179363",
+              "value": true,
+              "paramval": null,
+              "Name": "4871c722-28fc-12a5-0bb6-50af6d1d9024_B"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "98931f8e-5490-4bf7-bfdf-66de99a01252",
+              "Text": {
+                "Handle": "h1f7451cdgc90cg482cga808ga00418267fbe",
+                "Value": "*A giggle almost erupts from your throat. This moment strikes you as <i>terribly</i> funny.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Player] Holding the Amulet, a happy feeling washes over <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N34",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Madness level 1: Second time",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    },
+    "af13fc28-6a64-67c5-0787-e9ca504d0b0f": {
+      "UUID": "af13fc28-6a64-67c5-0787-e9ca504d0b0f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2c10742f-fcd1-861b-7f62-4598df8575ff",
+        "f34aada6-f7ca-8337-6c98-8a9c13024539",
+        "1f349919-898d-ef99-69fa-760b9f686a42"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "0d1d64b8-70d6-4702-8643-be348b0f3fc6",
+                  "62f5382a-27c3-441c-bd57-33db4ca00f10"
+                ],
+                "TagNames": [
+                  "CLERIC_SHAR",
+                  "PALADIN_SHAR"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_SHAR or PALADIN_SHAR"
+          },
+          "TagTexts": [
+            {
+              "LineId": "284063de-9338-4ba3-b8c5-5b14cb171c83",
+              "Text": {
+                "Handle": "h7ce3362bg15c2g4e0cgb252gafc0fb83185c",
+                "Value": "Hehee - methinks thou looks quite mirthful. Is all well with thee?"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9bf77a48-821f-4ef1-86dd-9b21b513ed5c",
+              "Text": {
+                "Handle": "h28e9e96eg24a3g43d4ga6fbg976111750092",
+                "Value": "Hehee - not all is well with thee. Such is the price of mine favours!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "b2072ec9-b414-abaa-03f1-a3d4d110e935": {
+      "RollSuccess": true,
+      "UUID": "b2072ec9-b414-abaa-03f1-a3d4d110e935",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "eea680e4-af35-072b-5698-6e1a227bba2d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N15",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "b29f206a-2012-4bdb-53fe-10b407d7f0d4": {
+      "RollSuccess": false,
+      "UUID": "b29f206a-2012-4bdb-53fe-10b407d7f0d4",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "06e8b064-49cb-5f6e-86bb-806f7e529fac"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N54",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "bc60bdf7-851e-c98a-6494-4afd36dd5b50": {
+      "JumpTarget": "1f349919-898d-ef99-69fa-760b9f686a42",
+      "JumpTargetPoint": 1,
+      "UUID": "bc60bdf7-851e-c98a-6494-4afd36dd5b50",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N131",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "c22b80b6-23ec-8e26-473e-80c50b8e07cc": {
+      "UUID": "c22b80b6-23ec-8e26-473e-80c50b8e07cc",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ee753132-ebac-95dc-10a6-ba1d442031cd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N141",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;-204",
+        "sourcetemplate": "",
+        "stateContext": "Player is holding amulet"
+      }
+    },
+    "c5ff0acf-99a9-a654-4716-a04c97e2a45d": {
+      "UUID": "c5ff0acf-99a9-a654-4716-a04c97e2a45d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5b9e0180-3a6c-3e25-1805-189cd623baa0",
+        "a824f0d0-5364-e535-9fa5-2cb521b479a8",
+        "68c25017-1b87-1ae5-49bd-0b0c3c94e0da"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "0d1d64b8-70d6-4702-8643-be348b0f3fc6",
+                  "62f5382a-27c3-441c-bd57-33db4ca00f10"
+                ],
+                "TagNames": [
+                  "CLERIC_SHAR",
+                  "PALADIN_SHAR"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_SHAR or PALADIN_SHAR"
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a2d789c-689c-4988-a431-44d87d893357",
+              "Text": {
+                "Handle": "h94384e04gff3bg4b9egb1cdg949bed1cfbc2",
+                "Value": "Again? Hehee. Thou art delirious!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b6b3243-48de-4186-8ff9-0eb52f2fcb16",
+              "Text": {
+                "Handle": "haa0c7923g79edg489eg9bd7ga2803ec62a52",
+                "Value": "The madness worsens. Thou must resist. Ha ha HO!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N95",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "d0de3ca3-8bf9-9eed-2712-43763ce92ef8": {
+      "RollSuccess": false,
+      "UUID": "d0de3ca3-8bf9-9eed-2712-43763ce92ef8",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "620cdeba-afa7-e8f9-439f-b7034c243684"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N23",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "d229862e-80c1-9008-9a1c-12c2d458569b": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "d229862e-80c1-9008-9a1c-12c2d458569b",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a3fefbcc-7416-1155-2695-6cc684cbfef9",
+        "b29f206a-2012-4bdb-53fe-10b407d7f0d4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "46156b25-c3a8-41fd-ba8c-0774ce5f3ef1",
+              "Text": {
+                "Handle": "h4138b981g7953g4224gbee5g870707c5d3c7",
+                "Value": "<i>Stifle the strange sense of glee.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Saving_Throw",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "d8d67fdc-32e2-3993-6310-b62478254a22": {
+      "RollSuccess": false,
+      "UUID": "d8d67fdc-32e2-3993-6310-b62478254a22",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f0a66a84-3a24-5dfc-4b0d-d4822c4bd4d9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N118",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "de8385e4-eabe-09fe-e1ba-36b332bdbe0d": {
+      "UUID": "de8385e4-eabe-09fe-e1ba-36b332bdbe0d",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "aad8a65f-c87b-6512-7e45-5b7780adcdc8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N140",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;891",
+        "sourcetemplate": "",
+        "stateContext": "Player is holding amulet"
+      }
+    },
+    "eb2beedd-63f0-8520-cd7f-b41f9ad91e5a": {
+      "RollSuccess": true,
+      "UUID": "eb2beedd-63f0-8520-cd7f-b41f9ad91e5a",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "83cd8936-e490-2912-1963-b1e62de04f32"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N110",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "eb4ccc21-2522-faba-e8d0-979028da25ed": {
+      "UUID": "eb4ccc21-2522-faba-e8d0-979028da25ed",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f0a66a84-3a24-5dfc-4b0d-d4822c4bd4d9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f912a84b-5105-461e-ac47-0770f278e429",
+              "Text": {
+                "Handle": "h6e289da1g515eg4c5aga2d8g9679dcaef9b9",
+                "Value": "<i>Accept happiness.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N126",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "ee753132-ebac-95dc-10a6-ba1d442031cd": {
+      "UUID": "ee753132-ebac-95dc-10a6-ba1d442031cd",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "906d1f2b-c125-6f45-f41f-8e64b233ab4c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a9b1ca32-2d1f-a932-7d15-155f89179363",
+              "value": true,
+              "paramval": null,
+              "Name": "4871c722-28fc-12a5-0bb6-50af6d1d9024_B"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "215ba870-3d12-620b-9b71-954243aed0f5",
+              "value": false,
+              "paramval": null,
+              "Name": "4871c722-28fc-12a5-0bb6-50af6d1d9024_A"
+            },
+            {
+              "UUID": "a9b1ca32-2d1f-a932-7d15-155f89179363",
+              "value": false,
+              "paramval": null,
+              "Name": "4871c722-28fc-12a5-0bb6-50af6d1d9024_B"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b9ba03b-2f43-4d89-acfa-651557843a93",
+              "Text": {
+                "Handle": "ha9e8f151g2663g42dbgb973ga4b96608521d",
+                "Value": "*Your spirits are sky-high, and your steps unreasonably light.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Player] Holding the Amulet, a happy feeling washes over <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N66",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Madness level 1: Third time",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "eea680e4-af35-072b-5698-6e1a227bba2d": {
+      "UUID": "eea680e4-af35-072b-5698-6e1a227bba2d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c59ab55e-ee23-4bce-8168-ea8804afe68c",
+              "Text": {
+                "Handle": "h840e1d7bg0b07g4889g9a1egd3790b0fc22c",
+                "Value": "*The maddening cheer withers away, leaving you breathless.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] surpress laughter, but left feeling breathless <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "f0a66a84-3a24-5dfc-4b0d-d4822c4bd4d9": {
+      "UUID": "f0a66a84-3a24-5dfc-4b0d-d4822c4bd4d9",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cb463ada-23b1-49fb-9fbc-0bfb54520922",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_State_MajorMadness"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5a4439d5-c723-4703-bb60-72f9c68279a6",
+              "Text": {
+                "Handle": "h4570e0bcg55e5g4d4agb5e7g803ba38a7ee4",
+                "Value": "*You are rotted with joy, sick with pleasure. This isn't true happiness - it's an illusion.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Player] Laughter erupts uncontrollably, leaves player pained <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N122",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "f34aada6-f7ca-8337-6c98-8a9c13024539": {
+      "UUID": "f34aada6-f7ca-8337-6c98-8a9c13024539",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8a81451a-d051-881f-f517-f775994b0eab"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fa59012f-3439-4080-96a8-430ddf6762c1",
+              "Text": {
+                "Handle": "ha9548e49g5696g4af9gb934g1eebfbec112c",
+                "Value": "<i>Let the cheer flow through you.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "fe72b89b-796f-c176-32c3-c28df4c28159": {
+      "UUID": "fe72b89b-796f-c176-32c3-c28df4c28159",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9bbc333d-aa79-b410-5337-af9193426b17"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d721114-4bf4-0065-eb4d-18d4a088caf9",
+              "value": true,
+              "paramval": null,
+              "Name": "4871c722-28fc-12a5-0bb6-50af6d1d9024_C"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "ed3fa304-f32f-44f5-9654-da46d5fe3c8a",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_MonkAmulet_State_ModerateMadness"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "527b1264-fcc0-4897-8c2e-fc6a4eab37ef",
+              "Text": {
+                "Handle": "h1df298dfg7138g4cc9g99f7g2d1f36ac33a9",
+                "Value": "*You feel a joy so sudden, so intense, that you nearly collapse from the force of it.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Player] Laughter, becoming more hysterical <ChrisW>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N98",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Madness level 2: Second time",
+        "position": "15;-2394",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "dc6649de-a9e3-84b5-d503-993bb8e15504",
+      "Index": 0,
+      "List": [
+        "ba7fff96-2087-e1d6-c7bd-d3cecca53f60"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Monk's Manifestation",
+        "Type": "character",
+        "MapKey": "bd1fac9a-f107-4064-85d0-ec392a6f2b30",
+        "Name": "S_GLO_LathanderMonk",
+        "ParentTemplateId": null,
+        "TemplateName": "acd7060a-43bd-4dc9-b050-9d9b2cf7b7df"
+      },
+      "SpeakerGroupName": "GROUP_GLO_MonkAmulet_Spirit"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "7b377161-cde1-cc21-9290-643126d8ddc2",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Player has left the camp. A few moments later, they are overcome with an unnatural sense of cheer. If they fail the check, they will fall over in laughter every time they use the amulet's special power that day.\r\n\r\nThe madness has several levels."
+}

@@ -1,0 +1,160 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/MoonriseTowers/MOO_Assault_AD_BarnabusCombat.lsj",
+  "UUID": "cbf62122-1848-6cd6-4a8c-756719b2ea78",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "a87240f7-c48e-4436-9920-c855d5285f83",
+    "6ca8001c-53c3-44e4-9177-a87cebfed1ab"
+  ],
+  "Nodes": {
+    "6ca8001c-53c3-44e4-9177-a87cebfed1ab": {
+      "UUID": "6ca8001c-53c3-44e4-9177-a87cebfed1ab",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a6e9f625-ac22-4bd8-b675-5deeb11bb093",
+              "Text": {
+                "Handle": "hc6d8f490g1c5bg4069g854bg23c9f8e16186",
+                "Value": "*Howl.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "a87240f7-c48e-4436-9920-c855d5285f83": {
+      "UUID": "a87240f7-c48e-4436-9920-c855d5285f83",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "201c6868-dc18-40fe-9585-987539f17c09",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_Kitchen_State_GnollsAreFree"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c14b6d71-303e-483d-9355-81dbd95b6d5c",
+              "Text": {
+                "Handle": "h54f41ab7gf29dg4edag9338g0760e7cd3ef6",
+                "Value": "Baar-NA-buuuuus. <i>Kill!</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Hoarse, pained speech - this mouth was never made to form 'human speech', but the gnoll is giving a rallying cry to fight on our side. (Saying its own name and attacking)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f0b29033-238b-454c-bf8b-acde8b10e996",
+      "Index": 0,
+      "List": [
+        "21db721c-616c-4385-970c-f18bb7477034"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "'Barnabus'",
+        "Type": "character",
+        "MapKey": "21db721c-616c-4385-970c-f18bb7477034",
+        "Name": "S_MOO_KitchenGnoll_001",
+        "ParentTemplateId": null,
+        "TemplateName": "5c239de6-e94e-4319-bed7-c8e338b1483d"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "A combat AD that plays on Barnabus' turn during the Moonrise Assault. If the player freed them, they are allied with them and will call back to that. Otherwise, he will do a generic combat AD."
+}

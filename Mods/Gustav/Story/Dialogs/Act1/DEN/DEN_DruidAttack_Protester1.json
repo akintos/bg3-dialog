@@ -1,0 +1,274 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_DruidAttack_Protester1.lsj",
+  "UUID": "545b225c-b831-f607-5e94-db76dcb78ebd",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "c7618b45-5162-23c3-5a79-7319da144e12",
+    "5fea07ae-f496-b1c5-1801-60415a14cfa8",
+    "39023012-cd56-4ec6-ab0c-ef5dc42b5378"
+  ],
+  "Nodes": {
+    "39023012-cd56-4ec6-ab0c-ef5dc42b5378": {
+      "UUID": "39023012-cd56-4ec6-ab0c-ef5dc42b5378",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a0ee1e60-4177-6e22-b19e-d4e1142d550f",
+              "Text": {
+                "Handle": "h4b36f144g2531g4709gb1a9g42c6a687dc80",
+                "Value": "The druids have gone mad - save yourself!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Urgent - there's a bloody fight between druids and refugees unfolding in the grove",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid Attack is under way.",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "5fea07ae-f496-b1c5-1801-60415a14cfa8": {
+      "UUID": "5fea07ae-f496-b1c5-1801-60415a14cfa8",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "98ca0f7b-23e4-78b9-e8cd-fa912fbe554f",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_Protester1AfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bb7640e2-ff71-121e-5aed-fccbc261842d",
+              "Text": {
+                "Handle": "h530016a3gabfeg4524g9389g35112ab24e7c",
+                "Value": "Look at this place. Some safe haven it turned out to be."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Post-battle. Worn out.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "c7618b45-5162-23c3-5a79-7319da144e12": {
+      "UUID": "c7618b45-5162-23c3-5a79-7319da144e12",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "98ca0f7b-23e4-78b9-e8cd-fa912fbe554f",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_Protester1AfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "11eca875-05e5-7d52-7358-e743c91d99db",
+              "Text": {
+                "Handle": "h534ae804g87c9g4d81g8414gee8ad19a1fbe",
+                "Value": "The whole place smells of blood. If I could be anywhere else..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Post-battle. Worn out.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "84210d36-855a-bac6-3af6-199c506953c6",
+      "Index": 0,
+      "List": [
+        "bd673fe3-983d-4aee-b73b-6ba6217e8a20"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Rechel",
+        "Type": "character",
+        "MapKey": "bd673fe3-983d-4aee-b73b-6ba6217e8a20",
+        "Name": "S_DEN_Protester_001",
+        "ParentTemplateId": null,
+        "TemplateName": "2248d9d1-581a-4d39-989c-2d6110585f7c"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "11515983-cd0c-fd41-5e47-a88f464951ae",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "A tiefling refugee reacts to the conflict with the druids (during and after)"
+}

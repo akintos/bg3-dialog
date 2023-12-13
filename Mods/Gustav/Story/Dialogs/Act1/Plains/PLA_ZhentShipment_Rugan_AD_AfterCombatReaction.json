@@ -1,0 +1,264 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Plains/PLA_ZhentShipment_Rugan_AD_AfterCombatReaction.lsj",
+  "UUID": "ceb51e71-9d51-e26e-16fe-9ca24e7a2625",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "70ce4b69-fb46-3e21-b0a7-1a7459b82b7a",
+    "dd6c9cf3-d198-1c69-38e6-a797ebbd28c6"
+  ],
+  "Nodes": {
+    "70ce4b69-fb46-3e21-b0a7-1a7459b82b7a": {
+      "UUID": "70ce4b69-fb46-3e21-b0a7-1a7459b82b7a",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4152beef-e7d1-e10f-7b06-62584d3571f2",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ConflictedFlind_State_Gone"
+            },
+            {
+              "UUID": "d7404f8a-8101-90c1-3105-0b49cddf7e1f",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ZhentShipment_State_BothAgentsAreAlive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9a7b0b5f-b661-8e6f-ad72-c52cb1b88029",
+              "Text": {
+                "Handle": "hdd4d15b5g7529g44aag82a7g2fa41ce47593",
+                "Value": "Well, lad. It's our lucky day after all."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "hopeful and gruff",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (both alive)",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "7c654f00-6ce0-9592-cee4-5bd34b9787bf": {
+      "UUID": "7c654f00-6ce0-9592-cee4-5bd34b9787bf",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d7cec36c-5b5a-5354-a225-d1c6d51f7e13",
+              "Text": {
+                "Handle": "h668dfa38g01c3g4642g9591g6f5a42633c27",
+                "Value": "And so does his coin."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N37",
+        "InternalNodeContext": "pocketing the money",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "said while pocketing the money looted from his dead friend",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "dd6c9cf3-d198-1c69-38e6-a797ebbd28c6": {
+      "UUID": "dd6c9cf3-d198-1c69-38e6-a797ebbd28c6",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7c654f00-6ce0-9592-cee4-5bd34b9787bf"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4152beef-e7d1-e10f-7b06-62584d3571f2",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ConflictedFlind_State_Gone"
+            },
+            {
+              "UUID": "d7404f8a-8101-90c1-3105-0b49cddf7e1f",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_ZhentShipment_State_BothAgentsAreAlive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cb00c75c-f325-35bf-8bd3-66fc41c88823",
+              "Text": {
+                "Handle": "h560a26b1g5f4dg45c2gb5bfg063ad67f7d30",
+                "Value": "Poor lad. He deserved better."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "Looting the body",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "sad but pragmatic - standing over a dead companion",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (only Rugan survived)",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "4b60cb02-7a2b-8993-d365-b1c10bececf3",
+      "Index": 0,
+      "List": [
+        "fd9b4edd-7828-4e22-85a9-ead2ba9d29e4"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Rugan",
+        "Type": "character",
+        "MapKey": "fd9b4edd-7828-4e22-85a9-ead2ba9d29e4",
+        "Name": "S_PLA_ZhentShipment_Agent_001",
+        "ParentTemplateId": null,
+        "TemplateName": "d69a8013-83f5-43fc-a2d9-6946016b0d4c"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "7b54ba54-d75b-8f7c-2719-c582fe96b9af",
+      "Index": 1,
+      "List": [
+        "7eda738e-8a85-4975-a1e1-1b3b2c4d641c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Olly",
+        "Type": "character",
+        "MapKey": "7eda738e-8a85-4975-a1e1-1b3b2c4d641c",
+        "Name": "S_PLA_ZhentShipment_Agent_002",
+        "ParentTemplateId": null,
+        "TemplateName": "d69a8013-83f5-43fc-a2d9-6946016b0d4c"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "One-shot AD for the Rugan just after he fought gnolls. If Olly is dead Rugan approaches his body to say alternative node."
+}

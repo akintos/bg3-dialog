@@ -1,0 +1,503 @@
+{
+  "Path": "Mods/Shared/Story/Dialogs/Crimes/NGB_Warning_MovedCorpse.lsj",
+  "UUID": "683f7808-8c75-c4c1-dc26-a1135ccba32f",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "0a3fa9c6-844e-49bd-0258-e509b4d09050",
+    "afb417ed-6502-8761-5c6b-f06ddd82932c"
+  ],
+  "Nodes": {
+    "0a3fa9c6-844e-49bd-0258-e509b4d09050": {
+      "UUID": "0a3fa9c6-844e-49bd-0258-e509b4d09050",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "39fd4ed5-cb85-4427-978d-cd6dc303361b",
+              "value": false,
+              "paramval": 0,
+              "Name": "GEB_CRIME_DroppedOwnedCorpse"
+            },
+            {
+              "UUID": "60a1ad4c-ab66-4ca6-973c-a9b49bb84892",
+              "value": false,
+              "paramval": 0,
+              "Name": "GEB_Crime_IsAngry"
+            },
+            {
+              "UUID": "d843d517-02a3-4675-8bc7-cd48d2cc2ad5",
+              "value": false,
+              "paramval": 0,
+              "Name": "GEB_CRIME_PickUpOwnedCorpse"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "542b58f0-42ad-4157-a28e-27434e0e7b18",
+              "value": false,
+              "paramval": 0,
+              "Name": "NOT_MESSING_AROUND"
+            },
+            {
+              "UUID": "88730ec2-439e-4172-95f4-b7f1875169fa",
+              "value": false,
+              "paramval": 0,
+              "Name": "GOBLIN_KID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b4919b30-0c62-4afd-b373-284f999bb833",
+              "Text": {
+                "Handle": "h75778634gf57dg4f22gbb24g476b96d89136",
+                "Value": "*You were seen interfering with a corpse. Perhaps you should leave the dead to their rest.*"
+              }
+            },
+            {
+              "LineId": "c42af56a-dda4-4721-9fb2-79900e8a7be4",
+              "Text": {
+                "Handle": "h82cf046dgd8c2g4c14g97e5ga4c1569e857b",
+                "Value": "*You were seen trying to move a corpse. Perhaps it should remain unmoved.*"
+              }
+            },
+            {
+              "LineId": "0f7793e1-8f0f-4341-9cdc-2b10738f96e6",
+              "Text": {
+                "Handle": "h04824493g886fg4db0gb44dg744164741700",
+                "Value": "*Moving a corpse is one way to get attention. It seems this is a hobby best indulged privately.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "Consider NOT_MESSING_AROUND and GOBLIN_KID characters as permanently angry in this context",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Not angry",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "3abd778d-f068-b211-438b-74ee0995277c": {
+      "UUID": "3abd778d-f068-b211-438b-74ee0995277c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "fb8fa60c-1e1c-2be0-ba94-4fed6fccc3f5"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "71120d5d-3853-46e4-9762-33f59aa6b4ae",
+              "value": false,
+              "paramval": 0,
+              "Name": "CIVILIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Attack, think they can handle you",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "5aa8fd3c-861c-0bc9-4af9-82a22c629135": {
+      "UUID": "5aa8fd3c-861c-0bc9-4af9-82a22c629135",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "fb8fa60c-1e1c-2be0-ba94-4fed6fccc3f5"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "71120d5d-3853-46e4-9762-33f59aa6b4ae",
+              "value": true,
+              "paramval": 0,
+              "Name": "CIVILIAN"
+            },
+            {
+              "UUID": "91f4b379-63a2-40e9-a509-7b9b2f90e4c8",
+              "value": true,
+              "paramval": 0,
+              "Name": "BADASSCIVILIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N21",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Attack, think they can handle you",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "afb417ed-6502-8761-5c6b-f06ddd82932c": {
+      "UUID": "afb417ed-6502-8761-5c6b-f06ddd82932c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3abd778d-f068-b211-438b-74ee0995277c",
+        "5aa8fd3c-861c-0bc9-4af9-82a22c629135",
+        "e53e0919-8aad-bf78-968b-6a08046f7d70"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Greeting needs to be empty. It's used to cut off this flow from the others",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Angry",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e53e0919-8aad-bf78-968b-6a08046f7d70": {
+      "UUID": "e53e0919-8aad-bf78-968b-6a08046f7d70",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "686bc362-67ee-8d88-384a-25c737aaf740",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FleeHelpFromDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "15566446-edb8-43d0-ba39-2d3b48bfd990",
+              "Text": {
+                "Handle": "h35480e32ga225g4697ga738ge83311d7e868",
+                "Value": "*You were seen moving a corpse. The guards are being summoned.*"
+              }
+            },
+            {
+              "LineId": "01fd092a-243b-4abb-b0ee-e54c0e89a395",
+              "Text": {
+                "Handle": "hd271f9b1gafb9g4f4fg82b9g6eaa108ae1d5",
+                "Value": "*You were witnessed interfering with a dead body. The alarm is being raised.*"
+              }
+            },
+            {
+              "LineId": "84b5f579-2485-468c-8d8c-3b420b853740",
+              "Text": {
+                "Handle": "hb15d3f0agfbb9g43a8g9f5cgb404c6071ec0",
+                "Value": "*You were seen trying to move a body. You're being reported.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Afraid -> call guards and run",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "fb8fa60c-1e1c-2be0-ba94-4fed6fccc3f5": {
+      "UUID": "fb8fa60c-1e1c-2be0-ba94-4fed6fccc3f5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "56f6cc37-c05a-44df-8256-4de0bcd6ce38",
+              "Text": {
+                "Handle": "h2cd9e953gdb7bg4d4dg92c3g608e7e284807",
+                "Value": "*Interfering with a corpse is a good way to become a corpse yourself. Especially when you get caught in the act.*"
+              }
+            },
+            {
+              "LineId": "664926a7-21e0-4f0b-afb9-bc2921e23e86",
+              "Text": {
+                "Handle": "hc8cb4448g6e6dg4517g913bgcc78e877186d",
+                "Value": "*Moving that body has caused quite the upset. Time to defend your actions.*"
+              }
+            },
+            {
+              "LineId": "63ce5921-a08c-4484-826d-43d90b4997d5",
+              "Text": {
+                "Handle": "hb926c9bdgd203g4919g9cf0ga9ce565c1195",
+                "Value": "*You were seen moving a corpse. It seems the punishment is a swift and bloody death of your own.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e0c4b8b0-a82b-f4d1-2417-a3d1196b273f",
+      "Index": 0,
+      "List": [
+        "9bc90704-dda4-244a-2f89-26f7470ed54d",
+        "00efc7b5-aa56-44d2-82f2-eff30e451e1e",
+        "6fe77279-1bba-5cc0-a5e0-34beabd2501d",
+        "74890c9b-878d-4346-9ab6-704c108f4230",
+        "3650e5f8-c146-f0f9-2e89-fae58d6795b5",
+        "fcc5f759-3d1a-4088-99d5-a99b4838b285",
+        "3d751bf0-8a47-4855-9392-cab6aad7e89e",
+        "dedfc55f-cde9-4fa9-9566-8670b0c3e324",
+        "c5f7c2b4-d5a9-890a-673d-7eef6774ff49",
+        "93636b10-874e-a985-3c79-4ca9a5953687",
+        "f5cc68da-6a71-48f5-a2d6-a3c32f858d18",
+        "add5addb-5b80-e30a-c455-19f4a7169256",
+        "11c9e4ad-6b39-c107-8b74-263094040c33",
+        "b0b39454-2bf3-d2cd-04e2-0c5cb500e982",
+        "4bdd9996-42f7-47dc-9a2b-1d9bfa2e738f",
+        "ead76f6a-e541-affe-547b-ae6344cdfc95",
+        "c27cf770-ee6a-4206-a97f-62c9d16f6239",
+        "f29dc9dd-c36b-4ce1-8253-93db1c5d4fe1",
+        "6e51f2eb-9fdf-4f95-a66b-7043e700795b",
+        "dac0f3e5-5103-4316-aedf-5272e8f0ab96"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Bugbear"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e06c127c-09bd-9aa9-a14f-89dc3549855b",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "An NPC reacts to a player moving a corpse of another NPC to which they are allied or neutral (i.e., not enemy)."
+}

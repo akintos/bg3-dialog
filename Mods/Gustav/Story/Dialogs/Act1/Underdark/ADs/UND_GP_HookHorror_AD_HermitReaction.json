@@ -1,0 +1,162 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/ADs/UND_GP_HookHorror_AD_HermitReaction.lsj",
+  "UUID": "269f9336-5932-759f-2182-2708b9d0eed5",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "ddae22dd-f78b-a36a-19a3-993f51e9a2c8",
+    "651f8ee5-d70d-02fb-cc3d-33a24d8fb941"
+  ],
+  "Nodes": {
+    "651f8ee5-d70d-02fb-cc3d-33a24d8fb941": {
+      "UUID": "651f8ee5-d70d-02fb-cc3d-33a24d8fb941",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c7bd749c-18d6-6f04-a236-b2741723849d",
+              "Text": {
+                "Handle": "h3d8fc4dag0dc9g40f4g9f20g9791c3426d24",
+                "Value": "My love! My joy!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Delusionally thinks you've killed his love (you really killed a horrible beast)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ddae22dd-f78b-a36a-19a3-993f51e9a2c8": {
+      "UUID": "ddae22dd-f78b-a36a-19a3-993f51e9a2c8",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d343352a-89c8-4ea5-aee8-551c86da8a37",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_GPHookHorrors_State_BothDied"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f2d32b7a-a86e-512b-6974-ee25caa343e3",
+              "Text": {
+                "Handle": "ha80546d9g6827g45e6gb878g3e1108953dbd",
+                "Value": "No! NO! RAGH!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "You killed a second hook horror. He's incensed.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "7b4a1c52-4525-7bb2-1469-7ca291e3a436",
+      "Index": 0,
+      "List": [
+        "2f00e363-09b2-4573-badc-f0995bef6610"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Filro the Forgotten",
+        "Type": "character",
+        "MapKey": "2f00e363-09b2-4573-badc-f0995bef6610",
+        "Name": "S_UND_HookHorror_Hermit",
+        "ParentTemplateId": null,
+        "TemplateName": "f74ae9cc-f15c-4f41-8f1f-34d1a825e692"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "plays when you kill the hook horrors. There are two nodes: one for the first horror killed and another for when the last one dies."
+}

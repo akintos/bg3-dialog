@@ -1,0 +1,1194 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/MoonriseTowers/MOO_Assault_TentaclelessJump.lsj",
+  "UUID": "57deb687-0c5a-b1fc-a6dd-60c9a412f59c",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": 1,
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 1,
+    "7": 1,
+    "8": 1,
+    "9": -1,
+    "10": -1
+  },
+  "RootNodes": [
+    "2fd29755-5ad2-e4c4-61e2-8b162daa4731",
+    "3c73e15a-1726-4886-bf29-6e0321660c28"
+  ],
+  "Nodes": {
+    "11f36b4f-3f4a-5e3f-fc56-18570fe8b082": {
+      "UUID": "11f36b4f-3f4a-5e3f-fc56-18570fe8b082",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d088d661-4c3e-485e-a7b6-18682436a7de"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "*REUSE* Can use one of the CINE_BrushAwayDirt_XXXX Anims. <LoganP>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Black screen and noise of player sliding - then HEAVY THUD. Fade in to find party standing, dusting themselves off.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KP] sliding noise of character, heavy thud, dusting off noises",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KP] Black screen, then fade into scene.",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "1dc26e79-eb67-4399-8e5c-3987c457510d": {
+      "UUID": "1dc26e79-eb67-4399-8e5c-3987c457510d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "671339ea-98f3-422b-a509-1d2c5cec9da1",
+        "85d31bea-acee-4ed5-b115-d1454c2b0de5",
+        "46e13e73-47b1-4887-9ea1-11a43eb7b7e1",
+        "b620e7f1-3dfa-49c3-9828-6b5797916a02",
+        "702b03ff-043f-4455-bc81-7b549b686613",
+        "a57fa64a-b6ab-45e2-b0da-02f69d914520"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5c169560-2732-c515-9e73-06ba1fd768f0",
+              "value": true,
+              "paramval": 0,
+              "Name": "ORI_Inclusion_Random"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N51",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "335;15",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "2fd29755-5ad2-e4c4-61e2-8b162daa4731": {
+      "UUID": "2fd29755-5ad2-e4c4-61e2-8b162daa4731",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "11f36b4f-3f4a-5e3f-fc56-18570fe8b082"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d349ae9-0879-40ac-951f-1cbd3386a255",
+              "value": true,
+              "paramval": 1,
+              "Name": "Debug_Teleport_MOO_Colony"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d349ae9-0879-40ac-951f-1cbd3386a255",
+              "value": false,
+              "paramval": 1,
+              "Name": "Debug_Teleport_MOO_Colony"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N108",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "3c73e15a-1726-4886-bf29-6e0321660c28": {
+      "UUID": "3c73e15a-1726-4886-bf29-6e0321660c28",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1dc26e79-eb67-4399-8e5c-3987c457510d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1fa5393e-32f5-4933-bc82-35fb7ba6ce39",
+              "Text": {
+                "Handle": "h6f3d81abgc07fg4c9ag8142g062261058b1f",
+                "Value": "*The hole yawns back at you, impossibly wide - a single tentacle burrowed through stone.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player looking at yawning hole warily",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "46e13e73-47b1-4887-9ea1-11a43eb7b7e1": {
+      "UUID": "46e13e73-47b1-4887-9ea1-11a43eb7b7e1",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 4,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "11f36b4f-3f4a-5e3f-fc56-18570fe8b082"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 4,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1a2f70d6-8ead-4eb5-a824-79ee1971764a",
+              "value": true,
+              "paramval": 4,
+              "Name": "REALLY_KARLACH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "24f8d8fe-31ae-436f-8b43-20625e087738",
+              "Text": {
+                "Handle": "hed1f3e9fg533ag4935g8122g3879a7415a7d",
+                "Value": "Looks like a long way down. Shall I go first?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N47",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "With enthusiasm",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_KARLACH",
+        "position": "655;453",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "5ac1858c-362b-f8ba-c322-20bcb2234fa4": {
+      "UUID": "5ac1858c-362b-f8ba-c322-20bcb2234fa4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 9,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "89b6d4fe-f3b6-7b31-b79c-17d557f96985"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3549f056-0826-45ee-a8ae-351449b70fe3"
+                ],
+                "TagNames": [
+                  "DAISY_FEMALE_VOICE"
+                ]
+              }
+            ],
+            "RuleString": "DAISY_FEMALE_VOICE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "29a3025e-00d7-47e4-9cf8-5cb7288c80a3",
+              "Text": {
+                "Handle": "h0b294039g0377g436cg9132gbec79ac7ea28",
+                "Value": "This must be where they harvest the tadpoles. We're close to the source of the infections."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "799118d3-901c-41cc-8f99-25326d23c649"
+                ],
+                "TagNames": [
+                  "DAISY_MALE_VOICE"
+                ]
+              }
+            ],
+            "RuleString": "DAISY_MALE_VOICE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "4e07418f-3948-4646-b946-75209b2a764a",
+              "Text": {
+                "Handle": "h702dc755g7755g4a5cg9815g674a47f926d5",
+                "Value": "This must be where they harvest the tadpoles. We're close to the source of the infections."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Shots of eerie organic architecture.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N110",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Daisy",
+        "position": "1615;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "671339ea-98f3-422b-a509-1d2c5cec9da1": {
+      "UUID": "671339ea-98f3-422b-a509-1d2c5cec9da1",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "11f36b4f-3f4a-5e3f-fc56-18570fe8b082"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 2,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b5682d1d-c395-489c-9675-1f9b0c328ea5",
+              "value": true,
+              "paramval": 2,
+              "Name": "REALLY_LAEZEL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dd59d46f-5edf-48fa-b5e1-9c7814037cf2",
+              "Text": {
+                "Handle": "h9befcb33g090cg4279g8443g3d9ed37c2f82",
+                "Value": "<i>Tsk'va.</i> Fathomless as the gith's suffering under the <i>ghaik</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N45",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_LAE'ZEL",
+        "position": "655;15",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "702b03ff-043f-4455-bc81-7b549b686613": {
+      "UUID": "702b03ff-043f-4455-bc81-7b549b686613",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 6,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "11f36b4f-3f4a-5e3f-fc56-18570fe8b082"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 6,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "5f40def5-d3ec-4698-a367-01a339888956",
+              "value": true,
+              "paramval": 6,
+              "Name": "REALLY_WYLL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "37672baa-4d79-41f6-85a2-43359f248b15",
+              "Text": {
+                "Handle": "ha16122b4g8d6dg497egbc5cg86c83073939d",
+                "Value": "The gaping abyss. You don't intend to jump - or do you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N44",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_WYLL",
+        "position": "655;891",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "85d31bea-acee-4ed5-b115-d1454c2b0de5": {
+      "UUID": "85d31bea-acee-4ed5-b115-d1454c2b0de5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "11f36b4f-3f4a-5e3f-fc56-18570fe8b082"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 3,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": true,
+              "paramval": 3,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "de3ef9d0-abae-425f-8973-94f7741aa472",
+              "Text": {
+                "Handle": "h23728ea6g6810g462fg8cffg2445ccb7440e",
+                "Value": "You don't actually want to <i>jump</i>, do you...?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N46",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Alarm",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_SHADOWHEART",
+        "position": "655;234",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "89b6d4fe-f3b6-7b31-b79c-17d557f96985": {
+      "UUID": "89b6d4fe-f3b6-7b31-b79c-17d557f96985",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 9,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player standing, facing down long dark tunnel ahead.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N111",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Daisy",
+        "position": "1935;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "a57fa64a-b6ab-45e2-b0da-02f69d914520": {
+      "UUID": "a57fa64a-b6ab-45e2-b0da-02f69d914520",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 7,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "11f36b4f-3f4a-5e3f-fc56-18570fe8b082"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 7,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9b0354c0-56d9-4723-8034-918ac9abab19",
+              "value": true,
+              "paramval": 7,
+              "Name": "REALLY_GALE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9c5ab8c2-086e-436c-abed-f4256ea1058e",
+              "Text": {
+                "Handle": "h543e1f2eg49b4g4531ga922g92a71042f805",
+                "Value": "Please tell me you don't mean to jump down that... oesophagus. The thought alone makes my own jump the other way."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_GALE",
+        "position": "655;1110",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "b620e7f1-3dfa-49c3-9828-6b5797916a02": {
+      "UUID": "b620e7f1-3dfa-49c3-9828-6b5797916a02",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 5,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "11f36b4f-3f4a-5e3f-fc56-18570fe8b082"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 5,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3",
+              "value": true,
+              "paramval": 5,
+              "Name": "REALLY_ASTARION"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1a77556c-2b44-4735-a382-f26140868768",
+              "Text": {
+                "Handle": "h866a46bdg398dg48dega10cg534b06c93698",
+                "Value": "What are you - no. We are not jumping down there."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N49",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_ASTARION",
+        "position": "655;672",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "d088d661-4c3e-485e-a7b6-18682436a7de": {
+      "UUID": "d088d661-4c3e-485e-a7b6-18682436a7de",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 9,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5ac1858c-362b-f8ba-c322-20bcb2234fa4"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6c20c630-b213-de42-b23c-0c1a634cb4fa",
+              "value": false,
+              "paramval": null,
+              "Name": "COL_General_Knows_ColonyIsIllithid"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6c20c630-b213-de42-b23c-0c1a634cb4fa",
+              "value": true,
+              "paramval": null,
+              "Name": "COL_General_Knows_ColonyIsIllithid"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3549f056-0826-45ee-a8ae-351449b70fe3"
+                ],
+                "TagNames": [
+                  "DAISY_FEMALE_VOICE"
+                ]
+              }
+            ],
+            "RuleString": "DAISY_FEMALE_VOICE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "ca19feed-5114-4e22-a112-418c3b4c6d82",
+              "Text": {
+                "Handle": "hdc43af89gb3e7g4c9dg91fagf049d078f7fa",
+                "Value": "This is an illithid colony."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "799118d3-901c-41cc-8f99-25326d23c649"
+                ],
+                "TagNames": [
+                  "DAISY_MALE_VOICE"
+                ]
+              }
+            ],
+            "RuleString": "DAISY_MALE_VOICE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "01b75a6e-c975-475b-aa69-c4e28c4583b6",
+              "Text": {
+                "Handle": "h4dd9e685g4c96g46acgb2c1g017baba18ebd",
+                "Value": "This is an illithid colony."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Shots of eerie organic architecture.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N121",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Daisy",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f9860712-ada2-4d66-a667-4b3064921c89",
+      "Index": 0,
+      "List": [
+        "c29cec63-82da-4579-b11d-75a5a08bbe1b"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Hollow Tower",
+        "Type": "item",
+        "MapKey": "c29cec63-82da-4579-b11d-75a5a08bbe1b",
+        "Name": "S_MOO_TentaclelessTeleporter",
+        "ParentTemplateId": null,
+        "TemplateName": "99f900c5-cc40-4852-870b-c412fde0eb1e"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "39f2aa6d-f2b6-442e-af18-c2bdd90a42e5",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "10": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "4e412b19-a304-424e-9d9e-923c36cb0792",
+      "Index": 10,
+      "List": [
+        "25721313-0c15-4935-8176-9f134385451b"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Nightwarden Minthara",
+        "Type": "character",
+        "MapKey": "25721313-0c15-4935-8176-9f134385451b",
+        "Name": "S_GOB_DrowCommander",
+        "ParentTemplateId": null,
+        "TemplateName": "9d85d0f6-5231-4738-a674-bf28ff19e515"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "b8534bad-6df8-47f2-90b7-c222045bd010",
+      "Index": 2,
+      "List": [
+        "58a69333-40bf-8358-1d17-fff240d7fb12"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lae'zel",
+        "Type": "character",
+        "MapKey": "58a69333-40bf-8358-1d17-fff240d7fb12",
+        "Name": "S_Player_Laezel",
+        "ParentTemplateId": null,
+        "TemplateName": "3a0351bd-0b2f-4fbf-84a6-30ad80bb3100"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "9afb93e1-e369-49dd-9785-bd9f727212c6",
+      "Index": 3,
+      "List": [
+        "3ed74f06-3c60-42dc-83f6-f034cb47c679"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowheart",
+        "Type": "character",
+        "MapKey": "3ed74f06-3c60-42dc-83f6-f034cb47c679",
+        "Name": "S_Player_ShadowHeart",
+        "ParentTemplateId": null,
+        "TemplateName": "2ac51f22-e357-4639-b81d-022d462c8c6a"
+      },
+      "SpeakerGroupName": null
+    },
+    "4": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "cc6aa6ea-1ddc-47da-ae16-3a342626c4b7",
+      "Index": 4,
+      "List": [
+        "2c76687d-93a2-477b-8b18-8a14b549304c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Karlach",
+        "Type": "character",
+        "MapKey": "2c76687d-93a2-477b-8b18-8a14b549304c",
+        "Name": "S_Player_Karlach",
+        "ParentTemplateId": null,
+        "TemplateName": "3ab0a797-0904-47cb-955d-cdc3ec32409c"
+      },
+      "SpeakerGroupName": null
+    },
+    "5": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "2b995bad-d303-4316-a34a-a51dbb2c6d8b",
+      "Index": 5,
+      "List": [
+        "c7c13742-bacd-460a-8f65-f864fe41f255"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Astarion",
+        "Type": "character",
+        "MapKey": "c7c13742-bacd-460a-8f65-f864fe41f255",
+        "Name": "S_Player_Astarion",
+        "ParentTemplateId": null,
+        "TemplateName": "5614c25e-0213-479f-864c-e95895adb30f"
+      },
+      "SpeakerGroupName": null
+    },
+    "6": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "9ae4dc20-5be5-4284-87f3-8d5d8e3ca4e0",
+      "Index": 6,
+      "List": [
+        "c774d764-4a17-48dc-b470-32ace9ce447d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Wyll",
+        "Type": "character",
+        "MapKey": "c774d764-4a17-48dc-b470-32ace9ce447d",
+        "Name": "S_Player_Wyll",
+        "ParentTemplateId": null,
+        "TemplateName": "159cdf9e-6665-4450-9375-8494e233b0e4"
+      },
+      "SpeakerGroupName": null
+    },
+    "7": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "4896f731-1426-41ae-a404-8d52e86fc824",
+      "Index": 7,
+      "List": [
+        "ad9af97d-75da-406a-ae13-7071c563f604"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Gale",
+        "Type": "character",
+        "MapKey": "ad9af97d-75da-406a-ae13-7071c563f604",
+        "Name": "S_Player_Gale",
+        "ParentTemplateId": null,
+        "TemplateName": "7d427a86-81f0-418d-a32a-3b5676c86bfa"
+      },
+      "SpeakerGroupName": null
+    },
+    "8": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "18b1ab85-618a-4299-9f6e-4759450651df",
+      "Index": 8,
+      "List": [
+        "91b6b200-7d00-4d62-8dc9-99e8339dfa1a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Jaheira",
+        "Type": "character",
+        "MapKey": "91b6b200-7d00-4d62-8dc9-99e8339dfa1a",
+        "Name": "S_Player_Jaheira",
+        "ParentTemplateId": null,
+        "TemplateName": "7c7e6552-3fc0-4495-bb11-4b9f9a8e71fc"
+      },
+      "SpeakerGroupName": null
+    },
+    "9": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c4bac6b4-0137-4c91-bcbe-ef06f3c02431",
+      "Index": 9,
+      "List": [
+        "6fe77279-1bba-5cc0-a5e0-34beabd2501d"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Daisy"
+    }
+  },
+  "Synopsis": "Roof teleport, Assault on Moonrise path"
+}

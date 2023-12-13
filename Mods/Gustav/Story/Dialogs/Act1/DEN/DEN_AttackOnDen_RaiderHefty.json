@@ -1,0 +1,334 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_AttackOnDen_RaiderHefty.lsj",
+  "UUID": "9cad7ffe-590b-57b4-0d89-2bed6595935b",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": 0
+  },
+  "RootNodes": [
+    "6217ad8f-28c1-2fbf-aa2f-c4d5cdd086e7",
+    "22836b9a-5656-1980-2c37-8ecfbc1d03d3",
+    "c723f1d5-8681-35a4-af83-1a4a296920d5"
+  ],
+  "Nodes": {
+    "2012965e-acca-d8de-0844-9724d37a5d09": {
+      "UUID": "2012965e-acca-d8de-0844-9724d37a5d09",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "13a1ec12-9e03-b5c9-984a-15a4f1b30d04",
+              "Text": {
+                "Handle": "hd2e69512ga818g4c5cgad14gf36b4a60d8ae",
+                "Value": "Just funnin', mate. We know you're one of us. Cold-blooded killer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As if thumping you on the arm playfully, a joke between friends. Last line is said with respect - you're complicit in the slaughter of your own kind.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "22836b9a-5656-1980-2c37-8ecfbc1d03d3": {
+      "UUID": "22836b9a-5656-1980-2c37-8ecfbc1d03d3",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ebe2c997-93ae-93f2-7f11-34057122b19b",
+              "value": true,
+              "paramval": 0,
+              "Name": "DEN_AttackOnDen_State_Victorious"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6228155f-fb1d-921c-b9d0-4ae19318d4ba",
+              "Text": {
+                "Handle": "h80f7eb0fgececg4970g9c38g087a40307ad6",
+                "Value": "Thought their horns would be bigger. What's the use if ya can't even drink from 'em?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Sadness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "a little disappointed",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "6217ad8f-28c1-2fbf-aa2f-c4d5cdd086e7": {
+      "UUID": "6217ad8f-28c1-2fbf-aa2f-c4d5cdd086e7",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2012965e-acca-d8de-0844-9724d37a5d09"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b663552-c5a8-509a-b2f8-8e6087f9d9a8",
+              "value": false,
+              "paramval": 1,
+              "Name": "DEN_AttackOnDen_Event_HeftyTieflingQuip"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aaef5d43-c6f3-434d-b11e-c763290dbe0c",
+              "value": true,
+              "paramval": 1,
+              "Name": "TIEFLING"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7b663552-c5a8-509a-b2f8-8e6087f9d9a8",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_AttackOnDen_Event_HeftyTieflingQuip"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ebbabdaa-5bb7-b875-5896-218ef8561f2d",
+              "Text": {
+                "Handle": "h5ae79588g2db5g418dg943cg20c7a29e612b",
+                "Value": "Oh look, we missed a teef in all the slaughter!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Mock surprise/joy at the prospect of more killing - but he knows you're an ally, you just LOOK like the enemy.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "c723f1d5-8681-35a4-af83-1a4a296920d5": {
+      "UUID": "c723f1d5-8681-35a4-af83-1a4a296920d5",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3e3392f1-3445-583e-cc10-7693a54982ac",
+              "Text": {
+                "Handle": "h0b97a8c2g17ebg4ebdgb759g1318d0f6028b",
+                "Value": "Drow says we can do what we want with the corpses. Gonna take their horns as trophies!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Excited. Preparing for battle",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "74708c05-744c-67f1-a3f6-a3b4d0cad71e",
+      "Index": 0,
+      "List": [
+        "fcbb04a8-f4e6-4065-901c-1a4a708ccd54"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Sharp-Eye Zami",
+        "Type": "character",
+        "MapKey": "fcbb04a8-f4e6-4065-901c-1a4a708ccd54",
+        "Name": "S_GOB_RaiderHefty",
+        "ParentTemplateId": null,
+        "TemplateName": "3ac7d5f6-3125-4c75-9cb3-c2ea485129ed"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c0d4d834-9c8b-9860-5581-a351a5764136",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "A goblin raider before/after the raid on the druid grove."
+}

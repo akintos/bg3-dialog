@@ -1,0 +1,655 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Town/TWN_Finale_LeavingAct.lsj",
+  "UUID": "4ca0b990-036c-ea89-33f0-f850976d47b8",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "1": -1,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1,
+    "7": -1,
+    "8": -1,
+    "9": -1
+  },
+  "RootNodes": [
+    "80d45713-436e-481b-875b-a79e7031d6e7",
+    "e810a241-1d67-4f17-e9b5-297bc6588477",
+    "002fc1cf-af32-f8dd-7515-e9da2fa8684a"
+  ],
+  "Nodes": {
+    "002fc1cf-af32-f8dd-7515-e9da2fa8684a": {
+      "UUID": "002fc1cf-af32-f8dd-7515-e9da2fa8684a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "00adef0c-2e8c-9136-f262-79c41da793ba"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "05cdb523-6246-4d30-8d6d-5fd3ed3acc24",
+              "Text": {
+                "Handle": "hd53dff96g1079g4f6dg8c20g6f7e576597db",
+                "Value": "*Ketheric is defeated, the path ahead clear. You should be elated, but the sight of the land you leave behind does nothing to alleviate your sorrow.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Choices]*REUSE*[Player] may reuse construction anims",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The party look back from the Risen Road, across the cursed lands.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;453",
+        "sourcetemplate": ""
+      }
+    },
+    "00adef0c-2e8c-9136-f262-79c41da793ba": {
+      "UUID": "00adef0c-2e8c-9136-f262-79c41da793ba",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c914c0c2-009c-079d-77ee-972bfd502ace"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "25c1ac70-f65f-4869-8a74-eff5827d9cde",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_2"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "10fd01a6-e179-4efd-a328-4152d3d91c6c",
+              "Text": {
+                "Handle": "hf94725e6g9cdag492dg9532g6a7281569db1",
+                "Value": "*Though however deep your pain, it cannot compare to Halsin's.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Choices][Halsin][Player]The party walk down the road, continuing their journey. Halsin stays behind and watches the party walk away down the road. Then he looks out into the shadows, determined to maintain his vigil over SCL. We will not see him again.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The party walk down the road, continuing their journey. Halsin stays behind and watches the party walk away down the road. Then he looks out into the shadows, determined to maintain his vigil over SCL. We will not see him again.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;453",
+        "sourcetemplate": ""
+      }
+    },
+    "2be3431d-afbd-56ac-2260-294e4165abea": {
+      "UUID": "2be3431d-afbd-56ac-2260-294e4165abea",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a96e812d-f689-9950-69b7-f5e96ad0708b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N37",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "-305;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "7f3d95ec-610c-4c7b-838c-861daa15849e": {
+      "UUID": "7f3d95ec-610c-4c7b-838c-861daa15849e",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "80d45713-436e-481b-875b-a79e7031d6e7",
+        "e810a241-1d67-4f17-e9b5-297bc6588477"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N2",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "CURSE LIFTED",
+        "position": "-945;-423",
+        "sourcetemplate": "",
+        "stateContext": ""
+      }
+    },
+    "80d45713-436e-481b-875b-a79e7031d6e7": {
+      "UUID": "80d45713-436e-481b-875b-a79e7031d6e7",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2be3431d-afbd-56ac-2260-294e4165abea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6e4b66e9-0f72-5171-04ba-441108b45b0e",
+              "value": true,
+              "paramval": null,
+              "Name": "IMPOSSIBLE"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": true,
+              "paramval": 0,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N33",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "-625;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "a96e812d-f689-9950-69b7-f5e96ad0708b": {
+      "UUID": "a96e812d-f689-9950-69b7-f5e96ad0708b",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N38",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "b4f3c490-44c7-c941-906b-0b56ead5d12e": {
+      "UUID": "b4f3c490-44c7-c941-906b-0b56ead5d12e",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[Choices]*REUSE*[Player] may reuse construction anims",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Cut back to party, with Halsin in shot, looking across the rejuvenating region. Halsin takes front and centre, looking back across the 'healed'vista, overjoyed, and then the party turn and continue their journey",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "c914c0c2-009c-079d-77ee-972bfd502ace": {
+      "UUID": "c914c0c2-009c-079d-77ee-972bfd502ace",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Final shot of the curse, still stretching across the whole region.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "d4085dba-4fc9-42b2-a710-360a3fb78aaa": {
+      "UUID": "d4085dba-4fc9-42b2-a710-360a3fb78aaa",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b4f3c490-44c7-c941-906b-0b56ead5d12e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2921b294-772b-46fa-9fd5-4b6b53d0c8a6",
+              "Text": {
+                "Handle": "h2a265f7bg4781g4821gb1e8g1d61dc9ca996",
+                "Value": "*Your courage has been tested, and in this, at least, you have triumphed.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Cut to close up of the shattered statue. An enormous silver tree bursts through the ground where the statue once stood, silver leaves/fruits sprouting, and the light from above intensifies as the shadows disperse.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "d9cb6286-8a67-4ac3-a5a4-a5c4bb43fec9": {
+      "UUID": "d9cb6286-8a67-4ac3-a5a4-a5c4bb43fec9",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "002fc1cf-af32-f8dd-7515-e9da2fa8684a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "CURSE NOT LIFTED",
+        "position": "-945;453",
+        "sourcetemplate": "",
+        "stateContext": ""
+      }
+    },
+    "e810a241-1d67-4f17-e9b5-297bc6588477": {
+      "UUID": "e810a241-1d67-4f17-e9b5-297bc6588477",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d4085dba-4fc9-42b2-a710-360a3fb78aaa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2113b54e-a140-4aa0-97ac-219fa7b7d038",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_LiftingTheCurse_State_BreathHasBeenRestored"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4de2c1d3-5fc8-47f8-b365-061de75c42cb",
+              "Text": {
+                "Handle": "h23da93d4gd07dg404agb9b4g5da581868abc",
+                "Value": "*The curse has been lifted, the lands cleansed of the shadows. Ketheric's reign of living death is over.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Choices][NPC] Townfolks reacting to the moonlight that shines on them and slowly turning back to normal state.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Players leave SCL by the Risen Road. They look back to see beams of light breaking through the clouds.-The curse has been lifted. The clouds above part, and a powerful beam of moonlight shines through and illuminates the town centre where the statue of Ketheric stood. It is now shattered.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "3568b034-f8a2-4cea-b560-7d577a02ec3d",
+      "Index": 0,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "1": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "6985baa2-ac60-4a65-b580-66ab6a67415d",
+      "Index": 1,
+      "List": [
+        "7628bc0e-52b8-42a7-856a-13a6fd413323"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Halsin",
+        "Type": "character",
+        "MapKey": "7628bc0e-52b8-42a7-856a-13a6fd413323",
+        "Name": "S_GLO_Halsin",
+        "ParentTemplateId": null,
+        "TemplateName": "1a3d9848-f86e-4f4c-bba5-125ab605c69e"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "90ce7a05-dd22-46dc-accb-bb5173a61529",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "71c07082-6883-4604-b2f9-742a8c35a090",
+      "Index": 3,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "4": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "fb218ba7-20f7-4bc4-898f-cd8357ddc6bb",
+      "Index": 4,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Scene of players leaving SCL to travel to Intermezzo. This scene triggers when the party leave Moonrise Tower after defeating Ketheric. \r\n\r\nThere are two variants. One where the curse has been lifted, one where the curse hasn't been lifted.\r\n\r\nIf the curse has been lifted, Halsin and/or Art Cullagh will be present at Moonrise if alive, and will tell players that the quest has succeeded, and that when they leave Moonrise, they'll see the restults. They tell you to wrap up your business here first. This happens in the dialogues for those characters, not here.\r\n\r\nIf the curse hasn't been lifted, players see a vista of the shadow-cursed lands on leaving Moonrise, and move on toward the Risen Road."
+}

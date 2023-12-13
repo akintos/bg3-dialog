@@ -1,0 +1,253 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_WyrmRock_SouthBridgeTrespassingReaction.lsj",
+  "UUID": "e3754ac9-e7cb-063f-65e2-e23ed3bd96f2",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "204863fc-4f58-28ed-cc8d-0fd4302bd6f9"
+  ],
+  "Nodes": {
+    "204863fc-4f58-28ed-cc8d-0fd4302bd6f9": {
+      "UUID": "204863fc-4f58-28ed-cc8d-0fd4302bd6f9",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3c81a081-56c3-97da-7302-32bb0475ce43",
+        "489dfe3c-2c7a-d1cc-7b66-65c848044be2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "031c6b37-7329-48a7-89c4-0f2790ed61c7",
+              "Text": {
+                "Handle": "h1676b7bfg9e6eg446egbc1eg300fd03eea26",
+                "Value": "This area's forbidden. Back off or face my blade."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N106",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "3c81a081-56c3-97da-7302-32bb0475ce43": {
+      "UUID": "3c81a081-56c3-97da-7302-32bb0475ce43",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "13ec14ed-2baa-32c2-8945-bda5c463b1f7",
+              "value": true,
+              "paramval": 1,
+              "Name": "TeleportOutOfTrespass"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6e2b9ced-36a0-4b4a-a1b7-27c7e66f4799",
+              "Text": {
+                "Handle": "he813d584g2010g4992ga246g624ded46422f",
+                "Value": "Indeed? Back to the public area, then."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N110",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "489dfe3c-2c7a-d1cc-7b66-65c848044be2": {
+      "UUID": "489dfe3c-2c7a-d1cc-7b66-65c848044be2",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "52a6bac6-7b13-4ed6-8558-aca234261445",
+              "Text": {
+                "Handle": "h9237028dg9da8g421ag93a8g7a2c4dc02acb",
+                "Value": "<i>Attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N114",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2e497189-78fb-3d49-aa10-fbc459c5f9fb",
+      "Index": 0,
+      "List": [
+        "44b0baf1-84e8-4a67-bf45-81ee304bc731",
+        "8d411482-4c7b-419a-ade1-00571a55cd25"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Blaze Elin",
+        "Type": "character",
+        "MapKey": "44b0baf1-84e8-4a67-bf45-81ee304bc731",
+        "Name": "S_WYR_WyrmRock_SouthBridgeGuard_001",
+        "ParentTemplateId": null,
+        "TemplateName": "1a80541e-f990-4a07-ba08-008b9992f7be"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cd650f54-a64f-5246-b613-5120baaaf1d3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Trespassing on South Bridge - back up if player tries to do something sneaky."
+}

@@ -1,0 +1,458 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_SorcerousSundries_RolanProjectionWarning.lsj",
+  "UUID": "6c2f315a-2c7e-c390-8a6b-b086dfea3ba1",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "14ffb046-eee2-498f-80c8-e52cf53bcf89",
+    "dd605534-ad16-4743-a8d1-90f8c7f74756"
+  ],
+  "Nodes": {
+    "101aedee-9497-7ebc-f53d-f7428f9afc8e": {
+      "UUID": "101aedee-9497-7ebc-f53d-f7428f9afc8e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e4a4d044-123f-4499-8714-9a8dca72a583",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_Event_BlacklistedPlayerTeleported"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "36d5be67-701c-4bdf-9f36-f0b16db9a6b8",
+              "Text": {
+                "Handle": "h1f679725gef4eg48acga4c8gf623caadd22d",
+                "Value": "Thank you - do not return."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "as a projection - cheery but stern warning",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "14ffb046-eee2-498f-80c8-e52cf53bcf89": {
+      "UUID": "14ffb046-eee2-498f-80c8-e52cf53bcf89",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "11c39e25-12a2-4c8d-8658-69ca6f4bee1c",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_State_WaitingToBeWarned"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "11c39e25-12a2-4c8d-8658-69ca6f4bee1c",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_State_WaitingToBeWarned"
+            },
+            {
+              "UUID": "591a4170-a732-44a1-aa36-a1be35bf8a28",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_State_Warned"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a8ea0dcb-f726-4dab-b7d2-39cb78f141c9",
+              "Text": {
+                "Handle": "h028f928bg32c1g43b4gb593g5df710224ad0",
+                "Value": "Interfering with the magical staff of Sorcerous Sundries is prohibited. Any further transgressions, and you will be banned."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "as a projection - cheery but stern warning",
+        "Quality": "Bronze",
+        "SFXTags": "[AK] Hologram SFX on Rolan",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[AK] Hologram VFX on Rolan",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "32bf8d0d-f287-42e3-a994-03082ac85544": {
+      "UUID": "32bf8d0d-f287-42e3-a994-03082ac85544",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a80e93bc-1049-4966-a754-e9374792fa87"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "af8b1a3b-728a-42a1-9378-dc2ab5fc5bae",
+              "Text": {
+                "Handle": "hc2090da6g454fg4150gba8ag383bbfbf5a46",
+                "Value": "<i>Attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "3bd71e04-eff3-41e0-899d-5c375a69e666": {
+      "UUID": "3bd71e04-eff3-41e0-899d-5c375a69e666",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "101aedee-9497-7ebc-f53d-f7428f9afc8e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "832ecc36-b3f3-4abe-ba91-348f36482c4e",
+              "Text": {
+                "Handle": "h5e25fca3g369cg4427gbaf4gff0e865bf7c4",
+                "Value": "All right - I'll go."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "a80e93bc-1049-4966-a754-e9374792fa87": {
+      "UUID": "a80e93bc-1049-4966-a754-e9374792fa87",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a3dfac91-37b6-482a-b9f7-75a868135406",
+              "Text": {
+                "Handle": "h13535dfegec7cg439cg92beg23cf2eaf2951",
+                "Value": "Sorcerous Sundries assumes no responsibility for the harm you are about to suffer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "as a projection - cheery but stern warning",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "dd605534-ad16-4743-a8d1-90f8c7f74756": {
+      "UUID": "dd605534-ad16-4743-a8d1-90f8c7f74756",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "32bf8d0d-f287-42e3-a994-03082ac85544",
+        "3bd71e04-eff3-41e0-899d-5c375a69e666"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "803eefe3-e2e0-46d3-8908-d89b40ecdc5d",
+              "Text": {
+                "Handle": "hb33dbedbg4ae0g4436gb3d1g071092b7e126",
+                "Value": "Congratulations - you have been banned from Sorcerous Sundries. You will now be escorted outside."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "as a projection - cheery but stern warning",
+        "Quality": "Bronze",
+        "SFXTags": "[AK] Hologram SFX on Rolan",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[AK] Hologram VFX on Rolan",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b73b3019-8206-4684-8731-ae7371f76723",
+      "Index": 0,
+      "List": [
+        "c6a47d05-5051-42de-86b0-776fe0285cd1"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Rolan's Projection",
+        "Type": "character",
+        "MapKey": "c6a47d05-5051-42de-86b0-776fe0285cd1",
+        "Name": "S_LOW_RolanProjection",
+        "ParentTemplateId": null,
+        "TemplateName": "a5856190-08e3-4741-b697-8b1cbf03eaa1"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "3d47ff8e-1f3c-4cfb-bcb6-840c9415d8e3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Dialog in which Rolan's Projection, who is substituing Rolan after Lorroakan is dead. The projection bars entry to the Sorcerous Sundries shop to a banned player."
+}

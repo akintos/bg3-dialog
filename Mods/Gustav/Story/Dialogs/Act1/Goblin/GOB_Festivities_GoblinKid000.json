@@ -1,0 +1,2033 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_Festivities_GoblinKid000.lsj",
+  "UUID": "40d3399e-d810-31fc-c4b8-98768955d67d",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "abe35813-ee50-cd07-7c73-6128a3e3e51d",
+    "2465bae0-ffd9-caaf-98ee-e6c223931e18",
+    "3e1c24c6-0ef1-8b53-fb84-b5ca193f64fa",
+    "909130a1-6884-0355-7c99-aa6d1962d61a",
+    "c0854825-d5d7-8cd4-807b-cc302d45a9cd",
+    "7bd472fb-0f2e-7020-fdfc-a40ca10a8083",
+    "03a85abe-318a-fa8c-a82f-8aeec73ad4bd",
+    "3179e4aa-6a25-f700-b7cb-dfa301399a51"
+  ],
+  "Nodes": {
+    "03a85abe-318a-fa8c-a82f-8aeec73ad4bd": {
+      "UUID": "03a85abe-318a-fa8c-a82f-8aeec73ad4bd",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5339edfa-defd-b4d0-1859-61c00b715b91",
+        "abec1405-7c80-659f-e882-bee5967ecaf4",
+        "555a2f30-e39d-cd78-b226-b6eeee54a1f5"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "582f68a6-2f05-2410-1ceb-9fe9e1544e4c",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "677ffa76-2562-4217-873e-2253d4720ba4",
+              "value": true,
+              "paramval": 1,
+              "Name": "GITHYANKI"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "582f68a6-2f05-2410-1ceb-9fe9e1544e4c",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5e492d08-4d81-b32e-72ca-302b33b80ed1",
+              "Text": {
+                "Handle": "h948a8925g98f2g4aa6g8c6bg6d1d7c92a2c5",
+                "Value": "Wot are you s'posed to be? You look like a dead elf wot got left out in the sun for too long. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N24",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "sneering, mocking. He's a cocky teenager who just met a gith (alien creature; not well known) for the first time",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Githyanki",
+        "position": "15;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "05f4bc42-8b85-c0a7-769d-b93f9eabae38": {
+      "UUID": "05f4bc42-8b85-c0a7-769d-b93f9eabae38",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1812cca4-f06e-9a34-c4ce-13beb6bf3a2c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c",
+                  "4fa13243-199d-4c9a-b455-d844276a98f5"
+                ],
+                "TagNames": [
+                  "DROWELF",
+                  "DROWHALFELF"
+                ]
+              }
+            ],
+            "RuleString": "!(DROWELF and DROWHALFELF)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "9065ed37-de6d-db74-d356-50b082c3cad5",
+              "Text": {
+                "Handle": "ha2541aa1g8c4eg47d4g91dcg68fc580b47ef",
+                "Value": "Keep threatening me. See what happens."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Not a Drow or Half-Drow",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "0f1a8ef0-0b1e-868f-2068-364699b1421d": {
+      "UUID": "0f1a8ef0-0b1e-868f-2068-364699b1421d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "388e0fe2-891d-8d81-1f6e-e7986dfd4c58"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a5d75fc4-8863-2946-627c-51f1b6759bd1",
+              "Text": {
+                "Handle": "ha52474fag2b28g43d0gb634g7aa3cbc75b1f",
+                "Value": "Sod off or I'll fetch my mum. She was tough as worg meat <i>before</i> the Absolute came along."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N40",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "mocking- Like a teenager doing a \"my dad could beat up your dad\" bit. Heavy emphasis on 'before' to set up the follow-up in the following line.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "175f90e1-bfc8-418b-3738-8771019c1a82": {
+      "UUID": "175f90e1-bfc8-418b-3738-8771019c1a82",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7c3796f5-48ab-b52b-2821-f0c90f6c2950",
+              "Text": {
+                "Handle": "hf6929e73gf0a2g4206gb13ag2074f79eaed5",
+                "Value": "No. I'm going to cut out your tongue."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N53",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1812cca4-f06e-9a34-c4ce-13beb6bf3a2c": {
+      "UUID": "1812cca4-f06e-9a34-c4ce-13beb6bf3a2c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0f1a8ef0-0b1e-868f-2068-364699b1421d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3538858e-efac-44b1-57d3-f501a1104ba0",
+              "Text": {
+                "Handle": "h8b4e7700gcaceg4246gbe04g6d3c8ed5ea70",
+                "Value": "Oh,  you're <i>real</i> tough. Bullying a kid."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "we fell for his bait and now he's mocking us",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "2465bae0-ffd9-caaf-98ee-e6c223931e18": {
+      "UUID": "2465bae0-ffd9-caaf-98ee-e6c223931e18",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "88af1661-eee2-ca0c-3b31-a18ef264149d",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_SaidSurrenderSpeech"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d9a99c62-f755-4719-aaca-4e82ad0de126",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_Festivities_State_KidsSurrendered"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "154a8601-6d76-00c9-e42b-b48fec99cf02",
+              "Text": {
+                "Handle": "h67b9e407g8e88g4a28gb9e2ge686f4225e23",
+                "Value": "That body's all yours - just leave us alone!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N51",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Kids Surrendered",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "2d56106f-b722-c75a-467f-f1527df0dd5d": {
+      "UUID": "2d56106f-b722-c75a-467f-f1527df0dd5d",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6f54f1fe-5468-5a9e-8b02-05d1f6670132"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "ef9c5b74-56a8-48cc-b0b9-169ee16bf026"
+                ],
+                "TagNames": [
+                  "LOLTHDROWELF"
+                ]
+              }
+            ],
+            "RuleString": "LOLTHDROWELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "fa4ca0ed-aea9-a6a2-32f1-aeb284b332f9",
+              "Text": {
+                "Handle": "h45fd3d68gf632g49e3ga101gfc7d27861857",
+                "Value": "A warning, <i>whelp</i>. Do not threaten me."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Drow",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "3179e4aa-6a25-f700-b7cb-dfa301399a51": {
+      "UUID": "3179e4aa-6a25-f700-b7cb-dfa301399a51",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "582f68a6-2f05-2410-1ceb-9fe9e1544e4c",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "92aae5aa-4595-4f1c-96d2-9e2499d35c6f",
+                  "677ffa76-2562-4217-873e-2253d4720ba4"
+                ],
+                "TagNames": [
+                  "BESTIAL",
+                  "GITHYANKI"
+                ]
+              }
+            ],
+            "RuleString": "BESTIAL and GITHYANKI"
+          },
+          "TagTexts": [
+            {
+              "LineId": "2967c7c1-c883-65af-ba5b-0db9fe29f58d",
+              "Text": {
+                "Handle": "hec93a4b8g9905g476bgaa69g0d20f7b21f7d",
+                "Value": "Stop pesterin' us, freakshow.<br>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3d8f7d44-d8c6-7c48-3c7e-c4729b106184",
+              "Text": {
+                "Handle": "he9c6eb5ag47edg48a9ga427g8fafd994c78d",
+                "Value": "Stop pesterin' us, y'old fogey."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Dismissive, smug teen",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Has Met",
+        "position": "15;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "388e0fe2-891d-8d81-1f6e-e7986dfd4c58": {
+      "UUID": "388e0fe2-891d-8d81-1f6e-e7986dfd4c58",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5d8d6057-10c9-ce98-a399-351b7ba00e2e",
+              "Text": {
+                "Handle": "hba051aedg9709g4e08ga94dg4be0d660a3a8",
+                "Value": "Now... she could punch out a dragon!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Exaggerating but kind of believes it. Pause after 'now' as he punches a fist into his other palm",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "3e1c24c6-0ef1-8b53-fb84-b5ca193f64fa": {
+      "SourceNode": "3179e4aa-6a25-f700-b7cb-dfa301399a51",
+      "UUID": "3e1c24c6-0ef1-8b53-fb84-b5ca193f64fa",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cba2b424-30dc-4039-b7a9-6dc8f05c3763",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_Festivities_Event_CorpseShoved"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N58",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (rare case when corpse is not near kid)",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "47aee31d-7234-a1a9-46bf-5ab55850ffea": {
+      "UUID": "47aee31d-7234-a1a9-46bf-5ab55850ffea",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5501e04a-fe72-d385-8b82-909340de5d95",
+              "Text": {
+                "Handle": "h6804c1d9g03edg478fg8e1cg36ec45f1e7ed",
+                "Value": "There's plenty of weirdoes about - you'll fit right in, freakshow."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Mocking. He's replying to a player who just explained that they're from another plane of existence.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "5339edfa-defd-b4d0-1859-61c00b715b91": {
+      "UUID": "5339edfa-defd-b4d0-1859-61c00b715b91",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f719dc19-2c7b-4355-e988-2bb0c685a778"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cc60a156-e1ef-3fed-ac4d-3cea87e5ac4e",
+              "Text": {
+                "Handle": "he1d0c35fg82fag4929ga4acgc682427ef9b9",
+                "Value": "I am an alien warrior from another plane of existence."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "555a2f30-e39d-cd78-b226-b6eeee54a1f5": {
+      "UUID": "555a2f30-e39d-cd78-b226-b6eeee54a1f5",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c0aa9b1d-bff2-bc06-1096-3d6b025e6e06",
+              "Text": {
+                "Handle": "hff3442a3g9074g479fga245gc81eb3395adb",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "6f54f1fe-5468-5a9e-8b02-05d1f6670132": {
+      "UUID": "6f54f1fe-5468-5a9e-8b02-05d1f6670132",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "175f90e1-bfc8-418b-3738-8771019c1a82",
+        "a43f8221-e1f4-c1b3-2c79-704967ad25d4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "78a3a9e9-34a0-5536-8a0b-99074bd92ada",
+              "Text": {
+                "Handle": "hf82452e3gd390g4165gacb6g9c09c0175bda",
+                "Value": "Whatcha gonna do about it? Run off and cry to yer spider-mum?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "talking to a drow - 'spider-mum' refers to the drow goddess Lolth. This is a deeply dangerous and blasphemous thing to say, but he's too immature and cocky to realise he could be getting himself into serious trouble. Doesn't know boundaries.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "7bd472fb-0f2e-7020-fdfc-a40ca10a8083": {
+      "UUID": "7bd472fb-0f2e-7020-fdfc-a40ca10a8083",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a9ee2ce3-a9f5-6bf4-9c46-afce080c45de"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "582f68a6-2f05-2410-1ceb-9fe9e1544e4c",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "677ffa76-2562-4217-873e-2253d4720ba4",
+              "value": false,
+              "paramval": 1,
+              "Name": "GITHYANKI"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "582f68a6-2f05-2410-1ceb-9fe9e1544e4c",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8269ddaf-a538-0735-93a7-16880f30e7e9",
+              "Text": {
+                "Handle": "h2f90c7c7g014bg4eacg9c2ag7b9cbd7af451",
+                "Value": "You look like you think you're hard. Mess with us, and you'll end up like this bleeder."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "gesturing toward or kicking the adventurer's corpse at his feet",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Cocky teenager, in a group of friends, trying to sound tougher than he is - standing over a corpse",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "7dc3f0ed-0bde-65fd-0dae-5663bdfd5cfa": {
+      "UUID": "7dc3f0ed-0bde-65fd-0dae-5663bdfd5cfa",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "90d550af-1cbe-39a7-5686-5226571bc54d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c9cef341-4188-3309-f81d-75f29bf91778",
+              "Text": {
+                "Handle": "hc774567eg3a6cg4a4bga3aeg86a1f192fa06",
+                "Value": "Sorry - I don't want any trouble."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "909130a1-6884-0355-7c99-aa6d1962d61a": {
+      "UUID": "909130a1-6884-0355-7c99-aa6d1962d61a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c8715c70-ae58-e378-fa85-3152baa7c4ff"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9e0c9f92-6563-3e2c-a79c-1e4f77f787a0",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Checkpoint_State_Paint"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "17494369-14a9-3b51-8c22-d3d934a4e89d",
+              "Text": {
+                "Handle": "h5f37a238g012ag47ebg84c4g386d1a1f4b94",
+                "Value": "Ugh. You look like you've been kissin' a worg's backside."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "waving smell away",
+        "Attitude": "Default",
+        "CinematicNodeContext": "waving his hand in front of his nose, exaggerating a bad smell",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Disgust",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "disgusted and amused - reacting to player having dung smeared on their face. Worg is a wolf-like animal (",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "90bb03ae-ffd1-aa5d-5835-3337f4b1d061": {
+      "UUID": "90bb03ae-ffd1-aa5d-5835-3337f4b1d061",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9a382a38-5f02-8c68-69c6-3fba5f2031ab"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "66d67ef7-424e-e38e-2b20-175327c61ff5",
+              "Text": {
+                "Handle": "h08ca839egc7beg4aafgaf41g9a15c908873f",
+                "Value": "Who's the dead man?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N43",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "90d550af-1cbe-39a7-5686-5226571bc54d": {
+      "UUID": "90d550af-1cbe-39a7-5686-5226571bc54d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ec172596-315d-a16a-1b44-280dd516b156"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1e099096-72bd-eb56-f5ee-5d0b37634077",
+              "Text": {
+                "Handle": "h43849366ga6f4g4dc6gad27gbb8be9da008f",
+                "Value": "Yeah, too right."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cocky",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "9a382a38-5f02-8c68-69c6-3fba5f2031ab": {
+      "UUID": "9a382a38-5f02-8c68-69c6-3fba5f2031ab",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e0e005a2-adfc-d21c-aff5-02bab5f3bcf0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "72ff7707-1283-3691-d4a0-e7455ceb31f9",
+              "Text": {
+                "Handle": "h4636e543gb225g4ad1gaefag96ffc63c23b2",
+                "Value": "Don't matter who he was. He ain't nothin' but a stain now. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N44",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "referring to a dead adventurer at his feet - matter of fact",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "a43f8221-e1f4-c1b3-2c79-704967ad25d4": {
+      "UUID": "a43f8221-e1f4-c1b3-2c79-704967ad25d4",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a2bd61eb-27be-61f2-5492-8f35e14d3692",
+              "Text": {
+                "Handle": "h345a550bgce27g4963g9c66gbff33cf33aee",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N56",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "a9ee2ce3-a9f5-6bf4-9c46-afce080c45de": {
+      "JumpTarget": "c8715c70-ae58-e378-fa85-3152baa7c4ff",
+      "JumpTargetPoint": 2,
+      "UUID": "a9ee2ce3-a9f5-6bf4-9c46-afce080c45de",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N52",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "abe35813-ee50-cd07-7c73-6128a3e3e51d": {
+      "UUID": "abe35813-ee50-cd07-7c73-6128a3e3e51d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "88af1661-eee2-ca0c-3b31-a18ef264149d",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_SaidSurrenderSpeech"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d9a99c62-f755-4719-aaca-4e82ad0de126",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_Festivities_State_KidsSurrendered"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "88af1661-eee2-ca0c-3b31-a18ef264149d",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_SaidSurrenderSpeech"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d33a79f3-87c1-79fb-b877-13153241afea",
+              "Text": {
+                "Handle": "hca204a63gf0a6g4d62g9925g12b71f45e0df",
+                "Value": "Stop - stop! Just take 'im."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N47",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Kids Surrendered",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "abec1405-7c80-659f-e882-bee5967ecaf4": {
+      "UUID": "abec1405-7c80-659f-e882-bee5967ecaf4",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "47aee31d-7234-a1a9-46bf-5ab55850ffea"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22c1300e-5c10-e03b-d3fb-6c20a2977879",
+              "Text": {
+                "Handle": "h24d0a061g2360g4cd7gb345g6cd956207d6f",
+                "Value": "I'm a githyanki; a stranger to this land."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "c0854825-d5d7-8cd4-807b-cc302d45a9cd": {
+      "UUID": "c0854825-d5d7-8cd4-807b-cc302d45a9cd",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a9ee2ce3-a9f5-6bf4-9c46-afce080c45de"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "582f68a6-2f05-2410-1ceb-9fe9e1544e4c",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "582f68a6-2f05-2410-1ceb-9fe9e1544e4c",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Festivities_GoblinKid_000_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c"
+                ],
+                "TagNames": [
+                  "DROWELF"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "124ebdaa-c8fe-ea34-8495-d1b5032d75b0",
+              "Text": {
+                "Handle": "hce8f5115gbea5g40e8g9af3gb0697f487e2b",
+                "Value": "Anuvver dirt-elf come to boss us around, eh? Bet I could break your face."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N57",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Cocky teenager, in a group of friends, trying to sound tougher than he is - standing over a corpse",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "c8715c70-ae58-e378-fa85-3152baa7c4ff": {
+      "UUID": "c8715c70-ae58-e378-fa85-3152baa7c4ff",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "05f4bc42-8b85-c0a7-769d-b93f9eabae38",
+        "7dc3f0ed-0bde-65fd-0dae-5663bdfd5cfa",
+        "90bb03ae-ffd1-aa5d-5835-3337f4b1d061",
+        "2d56106f-b722-c75a-467f-f1527df0dd5d",
+        "c91aec8a-826a-0432-b9d1-e729554eac11"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "934262aa-52f0-d6ae-110e-4a0e6e4951b8",
+              "Text": {
+                "Handle": "hfc368c82gcb44g41ebgb841gd476c4be58fd",
+                "Value": "Piss off, or you'll end up like this bleeder."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N46",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cocky, aggressive - 'this bleeder' is a dead adventurer at his feet",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "c91aec8a-826a-0432-b9d1-e729554eac11": {
+      "UUID": "c91aec8a-826a-0432-b9d1-e729554eac11",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3dda75ee-1325-aa1a-6ae0-a3efc6efb745",
+              "Text": {
+                "Handle": "h9e49478dg228bg40e6g83a4gd2af031f43d7",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e0e005a2-adfc-d21c-aff5-02bab5f3bcf0": {
+      "UUID": "e0e005a2-adfc-d21c-aff5-02bab5f3bcf0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "87aa66d9-c7de-ba4c-8d37-813577d5aaba",
+              "Text": {
+                "Handle": "h6d250d03g7aacg492dg82cagf9d3f06236f1",
+                "Value": "Jus' like you'll be if you don't clear off."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N45",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cocky",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ec172596-315d-a16a-1b44-280dd516b156": {
+      "UUID": "ec172596-315d-a16a-1b44-280dd516b156",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8edc5dba-0eb7-c484-7795-8d10e7f97ab5",
+              "Text": {
+                "Handle": "he1aa80c7gff48g411cg971ag7369213f45bf",
+                "Value": "So don't go startin' nothin'."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N41",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cocky",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "f719dc19-2c7b-4355-e988-2bb0c685a778": {
+      "UUID": "f719dc19-2c7b-4355-e988-2bb0c685a778",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "37e04d52-7628-bbc0-aaa1-d983657c9e14",
+              "Text": {
+                "Handle": "h5342519dga848g4d96g802dgf3245ac36c80",
+                "Value": "Sure you are. An' I'm king of the hobgoblins."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "reacting to a player who made an outlandish claim, replying with one of his own. He's a smug teenager",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1110",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e8d9cb19-6d59-3ce1-85c6-3cb455525ef4",
+      "Index": 0,
+      "List": [
+        "c8de613d-be02-42ab-ae91-3ed7ba5edafa"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Four",
+        "Type": "character",
+        "MapKey": "c8de613d-be02-42ab-ae91-3ed7ba5edafa",
+        "Name": "S_GOB_Festivities_GoblinKid_000",
+        "ParentTemplateId": null,
+        "TemplateName": "8aa709db-7aba-4c26-acf8-01fdaaff4c65"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "4001008b-dce9-c26b-bfc0-c0e5e53be616",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "A goblin kid, hanging out with two friends at the goblin camp near the corpse of a dead adventurer. He's trying to sound tough, like a cocky teenager impressing his friends."
+}

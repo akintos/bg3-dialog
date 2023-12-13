@@ -1,0 +1,274 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_DruidAttack_IrritatedTiefling.lsj",
+  "UUID": "6853d4e5-77fb-38fd-60cf-813b8e4055ec",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "b2015137-4e2c-1d2f-e5d9-5775122aa0b7",
+    "e92e5e79-bd1b-6d03-3c7b-dc21941d421d",
+    "95ec4fdf-541b-e29c-d6fa-cd743fdd1422"
+  ],
+  "Nodes": {
+    "95ec4fdf-541b-e29c-d6fa-cd743fdd1422": {
+      "UUID": "95ec4fdf-541b-e29c-d6fa-cd743fdd1422",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fd9adbe0-c9a3-7565-05eb-097d2a85d74c",
+              "Text": {
+                "Handle": "hd2620bd1g8d6cg4986gab08g0e13eff3c286",
+                "Value": "The druids - they're attacking!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Realising danger",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid Attack is under way.",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "b2015137-4e2c-1d2f-e5d9-5775122aa0b7": {
+      "UUID": "b2015137-4e2c-1d2f-e5d9-5775122aa0b7",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4cea3c25-55fb-3fc5-0530-5eb7e58c650b",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_IrritatedAfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6d34cedc-459e-595c-d266-62ae22cc2a38",
+              "Text": {
+                "Handle": "h24f48722g73e8g40bfgb7d2g3a4cf96100cc",
+                "Value": "Still have the goblins to deal with. Can't let our guard down just yet."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "'not out of the woods yet'",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "e92e5e79-bd1b-6d03-3c7b-dc21941d421d": {
+      "UUID": "e92e5e79-bd1b-6d03-3c7b-dc21941d421d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4cea3c25-55fb-3fc5-0530-5eb7e58c650b",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_IrritatedAfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5abe6963-69f8-aefa-75b2-f97a7ec331da",
+              "Text": {
+                "Handle": "h835f903ag1184g41e0g9668gef307bd73b39",
+                "Value": "So much for the druids. Looks like all my sword training did some good."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Surprise",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "relieved to have survived the druid attack",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1956a9eb-606b-4098-bf66-db99dc95637a",
+      "Index": 0,
+      "List": [
+        "65ad9da0-0efb-4cc3-bf82-c006f43dda6c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Guex",
+        "Type": "character",
+        "MapKey": "65ad9da0-0efb-4cc3-bf82-c006f43dda6c",
+        "Name": "S_GLO_IrritatedTiefling",
+        "ParentTemplateId": null,
+        "TemplateName": "80fa035d-5248-45c3-a9c2-1c74749833dc"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f50fe57f-2691-15a7-1506-d4c538fe7cea",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Guex reacts to the druids turning on the tieflings in the grove, and  if the tieflings defeat their attackers."
+}

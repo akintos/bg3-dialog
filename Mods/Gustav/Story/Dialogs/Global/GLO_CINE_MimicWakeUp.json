@@ -1,0 +1,212 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Global/GLO_CINE_MimicWakeUp.lsj",
+  "UUID": "e4665d9c-5b0d-a0d3-4809-129cc8772e6a",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "2faeb617-87c2-589c-da14-ed4b943d23dd",
+    "92b66592-5630-1410-e594-b5695e38e84e"
+  ],
+  "Nodes": {
+    "1f0f3d49-fafc-de80-451e-f700df017292": {
+      "UUID": "1f0f3d49-fafc-de80-451e-f700df017292",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "92b66592-5630-1410-e594-b5695e38e84e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N6",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;15",
+        "sourcetemplate": "",
+        "stateContext": "Distant interaction with mimic"
+      }
+    },
+    "2faeb617-87c2-589c-da14-ed4b943d23dd": {
+      "UUID": "2faeb617-87c2-589c-da14-ed4b943d23dd",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b7e3d436-f1fa-4a0a-ba91-c9684300474c",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_Mimic_WakeFromFar"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The mimic wakes up, player is close by",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "The mimic wakes up, player is close by",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[GR] - slobbery spittle, splitting of wood and lock, use Mimic gameplay sounds as crossreference",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "75a8f01a-8e7f-beff-6ea8-7b93800235d5": {
+      "UUID": "75a8f01a-8e7f-beff-6ea8-7b93800235d5",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2faeb617-87c2-589c-da14-ed4b943d23dd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N5",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;-204",
+        "sourcetemplate": "",
+        "stateContext": "Close interaction with mimic\r\n"
+      }
+    },
+    "92b66592-5630-1410-e594-b5695e38e84e": {
+      "UUID": "92b66592-5630-1410-e594-b5695e38e84e",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b7e3d436-f1fa-4a0a-ba91-c9684300474c",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Mimic_WakeFromFar"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The mimic wakes up, the player is far away",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "The mimic wakes up, the player is far away",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[GR] - slobbery spittle, splitting of wood and lock, use Mimic gameplay sounds as crossreference",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d0500e51-bee5-4e63-93b5-b95161759c1c",
+      "Index": 0,
+      "List": [
+        "ff5a079f-bdf8-9f38-3dc3-fd722f2b6744"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Mimics"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ac33303b-03cf-4dee-91a5-de188adf4628",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ef6ab992-fda2-42f3-bce3-5ce09e3067ce",
+      "Index": 2,
+      "List": [
+        "6ef123cb-83b1-57a9-cb3f-303c28dff234"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_MimicItems"
+    }
+  },
+  "Synopsis": "First-time meeting a mimic chest in Act1 Underdark (Grymforge)"
+}

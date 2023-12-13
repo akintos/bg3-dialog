@@ -1,0 +1,163 @@
+{
+  "Path": "Mods/Shared/Story/Dialogs/Crimes/GEB_AD_Attack_GuardKiller.lsj",
+  "UUID": "ae2b3cfe-f7f3-0f49-f496-6dd74e4b78c5",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "b38f492d-5c27-a0b9-755f-89d9c7f00775"
+  ],
+  "Nodes": {
+    "b38f492d-5c27-a0b9-755f-89d9c7f00775": {
+      "UUID": "b38f492d-5c27-a0b9-755f-89d9c7f00775",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "9753e2e5-34be-48d5-bf05-c6ae9a616f3b"
+                ],
+                "TagNames": [
+                  "AGGRESSIVE_GUARD"
+                ]
+              }
+            ],
+            "RuleString": "AGGRESSIVE_GUARD"
+          },
+          "TagTexts": [
+            {
+              "LineId": "7ead6e41-ea05-f0f8-577d-e9ba893bec3f",
+              "Text": {
+                "Handle": "h378f11e0g9bbfg4010ga1d4gb4986becac1c",
+                "Value": "There's the killer! "
+              }
+            },
+            {
+              "LineId": "76d101dc-8dc2-544d-4a83-d53af06d825c",
+              "Text": {
+                "Handle": "h21d1dc99g1791g4c3ega53dg48fabaa0dc76",
+                "Value": "You're not leaving here alive!"
+              }
+            },
+            {
+              "LineId": "99fd9aca-83e6-0de5-500d-6d2b8b5e7bff",
+              "Text": {
+                "Handle": "h642580a4g625dg4e2cg868eg5fba4579f693",
+                "Value": "Thought you'd get away with that?"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "9753e2e5-34be-48d5-bf05-c6ae9a616f3b"
+                ],
+                "TagNames": [
+                  "AGGRESSIVE_GUARD"
+                ]
+              }
+            ],
+            "RuleString": "AGGRESSIVE_GUARD"
+          },
+          "TagTexts": [
+            {
+              "LineId": "ec95a5ea-9f33-4e4d-9b05-7f530562df16",
+              "Text": {
+                "Handle": "h56ef57dagfc8bg434bgb542gbab83ce11241",
+                "Value": "Time to die!"
+              }
+            },
+            {
+              "LineId": "7924a840-608c-445e-ad7b-70a210ca6229",
+              "Text": {
+                "Handle": "h8ce71594g52f9g42a0g894fg61fd48bd76cd",
+                "Value": "Your life is mine!"
+              }
+            },
+            {
+              "LineId": "5881d7c9-0a7c-4fb5-b02f-d65125d15a13",
+              "Text": {
+                "Handle": "h83387222g8feeg4b7cgbb55gce9c64fe7b33",
+                "Value": "Time to spill your guts!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f22250a5-8f68-0ff4-c3c9-53c17539be95",
+      "Index": 0,
+      "List": [
+        "ed12e346-30d9-4d78-8930-b4f5b09414dc"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Guards"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "56060349-3007-678b-abed-40ea23f23b3f",
+      "Index": 1,
+      "List": [
+        "aee06482-c55a-46d7-b9bb-9ca8498ab14a",
+        "c27cf770-ee6a-4206-a97f-62c9d16f6239"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Henchmen"
+    }
+  },
+  "Synopsis": "An NPC is attacking a player for killing a guard. In this case, the player is currently not in the party (i.e., they're an origin that has since been dismissed) -> AD rather than interactive dialog, since we can't have interactive dialogs between two NPCs."
+}

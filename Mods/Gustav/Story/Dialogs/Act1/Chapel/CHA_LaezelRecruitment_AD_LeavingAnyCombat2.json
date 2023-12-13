@@ -1,0 +1,162 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Chapel/CHA_LaezelRecruitment_AD_LeavingAnyCombat2.lsj",
+  "UUID": "fd725196-b03f-f51b-8428-b5c5b505205f",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "dbc01972-8d93-70f2-9cc0-d35061032659",
+    "0944015a-61e4-206e-afab-bf3fe983d827"
+  ],
+  "Nodes": {
+    "0944015a-61e4-206e-afab-bf3fe983d827": {
+      "UUID": "0944015a-61e4-206e-afab-bf3fe983d827",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ca1615ab-6ab8-15d4-81ce-5de7354c4910",
+              "Text": {
+                "Handle": "heabc5c4ag78c7g48deg83e2g72855580bad7",
+                "Value": "I can't remain here. It's too dangerous."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "dbc01972-8d93-70f2-9cc0-d35061032659": {
+      "UUID": "dbc01972-8d93-70f2-9cc0-d35061032659",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fa1ecbcf-2927-8f5a-e269-f18446b212ef",
+              "value": false,
+              "paramval": null,
+              "Name": "CHA_LaezelRecruitment_State_NymessaIsDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1cf28696-5760-041b-3026-263121a8ac52",
+              "Text": {
+                "Handle": "hdff969ebg4ca2g4a95g8cd8gf150f4eb43a2",
+                "Value": "We can't remain here. It's too dangerous."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Nymessa is alive",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "8bc9b0ab-1147-dd44-2b21-d9a081a9e619",
+      "Index": 0,
+      "List": [
+        "863d6788-5887-45c8-bafa-87128631904e"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Damays",
+        "Type": "character",
+        "MapKey": "863d6788-5887-45c8-bafa-87128631904e",
+        "Name": "S_CHA_CagerLaezel2",
+        "ParentTemplateId": null,
+        "TemplateName": "a5856190-08e3-4741-b697-8b1cbf03eaa1"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "|Tieflings joined a random combat and were dragged far from Lae'zel Recruitment. They will leave out of stage while saying this instead of going back to the scene.|"
+}

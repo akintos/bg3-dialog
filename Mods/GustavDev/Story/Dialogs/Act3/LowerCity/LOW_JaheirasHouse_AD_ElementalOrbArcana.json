@@ -1,0 +1,162 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_JaheirasHouse_AD_ElementalOrbArcana.lsj",
+  "UUID": "3aa0adbe-556b-8e78-231a-c1bdd5291479",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "bb569153-f528-7033-bdc0-42f12dc31c5f",
+    "02da710b-40f1-77b1-20a6-cfcf3852286c"
+  ],
+  "Nodes": {
+    "02da710b-40f1-77b1-20a6-cfcf3852286c": {
+      "UUID": "02da710b-40f1-77b1-20a6-cfcf3852286c",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "eab6101f-6518-45d6-a1de-7f40efa5b61c",
+              "Text": {
+                "Handle": "h3ac42c0fg55a1g4c37g8233gb55ddc504101",
+                "Value": "*A glowing orb, but its purpose is unclear.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "bb569153-f528-7033-bdc0-42f12dc31c5f": {
+      "UUID": "bb569153-f528-7033-bdc0-42f12dc31c5f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b743bfdd-1e54-483a-99db-18c0dc4faf0e",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_JaheirasHouse_State_DecipheredOrbs"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "14ca0caa-caa4-4ec5-bf29-95bf96b334d9",
+              "Text": {
+                "Handle": "hfa4e9bccgc384g4aadg9527g002d8db33346",
+                "Value": "*The orb casts glyphs familiar to the druid of ownership; overwhelming it with the same element can often disable the enchantment.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "Trying to get two beats across - These aren't harmful to Jaheira's friends, and can be dispelled by casting the same element they are at them.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a11f53e3-63ab-4e68-81d7-48087c165665",
+      "Index": 0,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Narrator AD for passing an arcana check when investigating the orbs in Jaheira's Basement "
+}

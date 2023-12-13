@@ -1,0 +1,504 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_RaidingParty_AdventurerAfterKO.lsj",
+  "UUID": "0521ed88-c53a-c84a-2461-f1846cf60e7f",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "dce35683-620c-3b47-4765-d605e64ff100",
+    "b4e0cdb6-406c-a3d5-10f9-310b8bbbd0fe"
+  ],
+  "Nodes": {
+    "401d6e19-fd8c-65c9-c7d1-f6167bff008e": {
+      "UUID": "401d6e19-fd8c-65c9-c7d1-f6167bff008e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e02f4328-2293-91b8-cffc-c7ebee0ffe0e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_RaidingParty_Event_AdventurersLeave"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d18b9424-0760-c536-c4bd-65ba0f964d70",
+              "Text": {
+                "Handle": "h3cfb2837gc50eg4f43g8d51g13731a4a3869",
+                "Value": "I'm <i>done </i>with this hellhole."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "He clears his throat, looking flustered as he barks at the tieflings. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N546",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Flustered and then angry. Trying to be authorative and threatening. Pushing the panic and fear down. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "b4e0cdb6-406c-a3d5-10f9-310b8bbbd0fe": {
+      "UUID": "b4e0cdb6-406c-a3d5-10f9-310b8bbbd0fe",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "401d6e19-fd8c-65c9-c7d1-f6167bff008e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9cb01f1c-e8fa-e02f-82e8-243f5236f392",
+              "Text": {
+                "Handle": "h9ea2635eg043bg421fgbc3ag0f062e3df5ec",
+                "Value": "First I damn near die at the hands of goblins. Then a <i>foulblood </i>takes his frustrations out on me."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N530",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Zevlor KO'd Aradin",
+        "position": "15;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "dce35683-620c-3b47-4765-d605e64ff100": {
+      "UUID": "dce35683-620c-3b47-4765-d605e64ff100",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "401d6e19-fd8c-65c9-c7d1-f6167bff008e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8de314f6-35b8-1519-3a4b-f1001504f3c7",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_RaidingParty_Event_PlayerDidTheKO"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "aaef5d43-c6f3-434d-b11e-c763290dbe0c"
+                ],
+                "TagNames": [
+                  "TIEFLING"
+                ]
+              }
+            ],
+            "RuleString": "TIEFLING"
+          },
+          "TagTexts": [
+            {
+              "LineId": "9014eb42-1c45-2991-4c1f-332dbf0f6792",
+              "Text": {
+                "Handle": "h895e0afdgc5f7g4cb2g87adg802fd9dc012d",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a <i>foulblood</i>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "486a2562-31ae-437b-bf63-30393e18cbdd"
+                ],
+                "TagNames": [
+                  "DWARF"
+                ]
+              }
+            ],
+            "RuleString": "DWARF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "6caa3615-61cd-74f7-3170-2e3189aa52fe",
+              "Text": {
+                "Handle": "h8685f4f9g365cg4a6agb148g6e6bd8ac8090",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a bloody <i>dwarf</i>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "351f4e42-1217-4c06-b47a-443dcf69b111"
+                ],
+                "TagNames": [
+                  "ELF"
+                ]
+              }
+            ],
+            "RuleString": "ELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "8afea0d7-4ae1-b165-0d10-5a68b39af6eb",
+              "Text": {
+                "Handle": "h33a4d51eg24d2g4f16g832agd5c91c319d48",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a bloody <i>elf</i>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "b99b6a5d-8445-44e4-ac58-81b2ee88aab1"
+                ],
+                "TagNames": [
+                  "HALFLING"
+                ]
+              }
+            ],
+            "RuleString": "HALFLING"
+          },
+          "TagTexts": [
+            {
+              "LineId": "2d754d5f-2c0e-1345-e870-ce156ae9d0d4",
+              "Text": {
+                "Handle": "h39885d8cgc0e5g4821g9634g9bdcab5b89c9",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a bloody <i>halfling</i>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "1f0551f3-d769-47a9-b02b-5d3a8c51978c"
+                ],
+                "TagNames": [
+                  "GNOME"
+                ]
+              }
+            ],
+            "RuleString": "GNOME"
+          },
+          "TagTexts": [
+            {
+              "LineId": "25449481-6c4d-b790-0127-3efe420c7a1d",
+              "Text": {
+                "Handle": "hdbaeead5g95b7g40fagafcfge7baf43d6267",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a bloody <i>gnome</i>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "02e5e9ed-b6b2-4524-99cd-cb2bc84c754a"
+                ],
+                "TagNames": [
+                  "DRAGONBORN"
+                ]
+              }
+            ],
+            "RuleString": "DRAGONBORN"
+          },
+          "TagTexts": [
+            {
+              "LineId": "25c12ecf-2797-bd6f-c17f-56bcd3f237c0",
+              "Text": {
+                "Handle": "h942057b0g14d1g4264gafd3ge9e337f12622",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a bloody <i>lizard</i>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "92aae5aa-4595-4f1c-96d2-9e2499d35c6f",
+                  "677ffa76-2562-4217-873e-2253d4720ba4",
+                  "d2f86ec3-c41f-47e1-8acd-984872a4d7d5"
+                ],
+                "TagNames": [
+                  "BESTIAL",
+                  "GITHYANKI",
+                  "RARE"
+                ]
+              }
+            ],
+            "RuleString": "BESTIAL and GITHYANKI and RARE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "55a49e0c-3a92-66d2-73b0-74d83d709d8f",
+              "Text": {
+                "Handle": "h78ce64b5g4a8dg4edcg8075g842c545559a1",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a bloody <i>freak</i>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "4fa13243-199d-4c9a-b455-d844276a98f5",
+                  "34317158-8e6e-45a2-bd1e-6604d82fdda2",
+                  "3311a9a9-cdbc-4b05-9bf6-e02ba1fc72a3"
+                ],
+                "TagNames": [
+                  "DROWHALFELF",
+                  "HALFELF",
+                  "HALFORC"
+                ]
+              }
+            ],
+            "RuleString": "DROWHALFELF or HALFELF or HALFORC"
+          },
+          "TagTexts": [
+            {
+              "LineId": "278b8784-991a-d457-68e5-8c47c6430a2f",
+              "Text": {
+                "Handle": "h12c7cf01gf84cg47c1gbeffg632248274e78",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a bloody <i>half-breed</i>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "61834349-438d-83b8-24a6-205f3c1c3731",
+              "Text": {
+                "Handle": "he9b7bf4egc85fg4e3cg90bfg946a38db8b1a",
+                "Value": "First I damn near die at the hands of goblins. Then I get sucker-punched by a bloody <i>randomer</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N565",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Players KO'd Aradin",
+        "position": "15;-1956",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "681ed084-1dd8-569e-d584-cc75ad10da23",
+      "Index": 0,
+      "List": [
+        "82d1b843-9e8c-48a5-9d87-caddea5c193c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Aradin",
+        "Type": "character",
+        "MapKey": "82d1b843-9e8c-48a5-9d87-caddea5c193c",
+        "Name": "S_DEN_AdventurerLeader",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2745e086-f2b9-2883-c3dc-d8ff55a723ec",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "38875ca2-dbd1-b89c-bf9c-b400593ed086",
+      "Index": 2,
+      "List": [
+        "475200ee-cc3c-4dbe-84b1-1820c02ea26a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Zevlor",
+        "Type": "character",
+        "MapKey": "475200ee-cc3c-4dbe-84b1-1820c02ea26a",
+        "Name": "S_DEN_TieflingLeader",
+        "ParentTemplateId": null,
+        "TemplateName": "a5856190-08e3-4741-b697-8b1cbf03eaa1"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "After the main confrontation dialogue, one leader may attack the other. This dialogue the plays if the Adventurer Leader is the sole survivor regardless of who attacked who."
+}

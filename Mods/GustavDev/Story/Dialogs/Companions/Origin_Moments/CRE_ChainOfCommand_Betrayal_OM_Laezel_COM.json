@@ -1,0 +1,396 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Companions/Origin_Moments/CRE_ChainOfCommand_Betrayal_OM_Laezel_COM.lsj",
+  "UUID": "4869c618-32d0-c83e-7c09-dcf8a8446f61",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "87b112e6-d9e8-4a18-93e7-8c5bfd4e2088"
+  ],
+  "Nodes": {
+    "1777764b-e7bf-19dd-b867-36d9e4fbc0da": {
+      "UUID": "1777764b-e7bf-19dd-b867-36d9e4fbc0da",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "8e736967-8031-9d2f-90b4-a898d891cd65"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a9384800-e83d-412a-9cfb-157c076462a7",
+              "Text": {
+                "Handle": "hffe8a2c9g1da9g40faga65bg2e0b8d7f83dc",
+                "Value": "Irrelevant, <i>ghaik</i> wretch. The queen has spoken - your death is decreed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N113",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "87b112e6-d9e8-4a18-93e7-8c5bfd4e2088": {
+      "UUID": "87b112e6-d9e8-4a18-93e7-8c5bfd4e2088",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e53cd4bb-452c-fd42-2566-180aa4665b7d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "175d8487-99dc-4009-9b45-6e9f29708cd7",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Laezel_State_BetrayedByVlaakith"
+            },
+            {
+              "UUID": "a1279e2b-04d4-4093-97f2-3c3603153d2c",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Laezel_State_ConvincedToSideWithPlayerAgainstInquisitor"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3102699a-88ff-46ad-a733-9ac5a239563f",
+              "Text": {
+                "Handle": "h93783cdbg67c3g4ec1g8c4fg074f97cbc450",
+                "Value": "Lae'zel - I've been waiting."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "6e640ef8-8480-4b27-9896-95649e326123",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "COM - Inquisitor Alive",
+        "position": "15;-204",
+        "sourcetemplate": "OriginMoment_COM"
+      }
+    },
+    "8e736967-8031-9d2f-90b4-a898d891cd65": {
+      "UUID": "8e736967-8031-9d2f-90b4-a898d891cd65",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "57177f28-8f83-457a-9238-9ee4092adbaf",
+              "Text": {
+                "Handle": "ha0ea58e3g822eg467dgb21eg583cb3da1abf",
+                "Value": "*You realise what Lae'zel doesn't: whatever the outcome of your visit to the Astral Prism, Vlaakith had no intention of letting either of you live.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N169",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e42a6a98-a6fe-43e3-a019-5d2c095f9062": {
+      "UUID": "e42a6a98-a6fe-43e3-a019-5d2c095f9062",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1777764b-e7bf-19dd-b867-36d9e4fbc0da"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "383a3864-c9fa-4063-a009-4d98296e7d60",
+              "Text": {
+                "Handle": "hb557fd51g7cf0g4794g9409g01826fc5d612",
+                "Value": "<i>Ch'r'ai</i>, please, summon Vlaakith! There's much -"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Panicking",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "d56f7979-74a7-412d-840c-4fc435352515",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-204",
+        "sourcetemplate": "OriginMoment_COM"
+      }
+    },
+    "e53cd4bb-452c-fd42-2566-180aa4665b7d": {
+      "UUID": "e53cd4bb-452c-fd42-2566-180aa4665b7d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e42a6a98-a6fe-43e3-a019-5d2c095f9062"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3ffcc192-0529-4234-bbcc-2ba579f7bf6f",
+              "Text": {
+                "Handle": "h91de7c18gbe54g4d54g8bc4g9e8f8d48594f",
+                "Value": "You are named <i>Hshar'lak</i>. Bend your head, for my blade is ready."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N107",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a9fe217e-53e9-402d-9458-28f4fea17c4d",
+      "Index": 0,
+      "List": [
+        "378ac93e-03a0-40b4-904c-f37989ac7a8c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Ch'r'ai W'wargaz",
+        "Type": "character",
+        "MapKey": "378ac93e-03a0-40b4-904c-f37989ac7a8c",
+        "Name": "S_CRE_Templar",
+        "ParentTemplateId": null,
+        "TemplateName": "366bca00-1c0c-4fba-bb1c-45c6ae20d691"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "6aa49da3-05b9-433c-9b4f-86ef6ca6c598",
+      "Index": 1,
+      "List": [
+        "58a69333-40bf-8358-1d17-fff240d7fb12"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lae'zel",
+        "Type": "character",
+        "MapKey": "58a69333-40bf-8358-1d17-fff240d7fb12",
+        "Name": "S_Player_Laezel",
+        "ParentTemplateId": null,
+        "TemplateName": "3a0351bd-0b2f-4fbf-84a6-30ad80bb3100"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b5efb155-8288-41fc-aaa2-d28fe5020caf",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Companion Laezel finds out that Vlaakith had ordered her death regardless of what happened when she returned. This is a big moment of betrayal for her."
+}

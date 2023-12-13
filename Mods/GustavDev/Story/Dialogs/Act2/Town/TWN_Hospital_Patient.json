@@ -1,0 +1,396 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Town/TWN_Hospital_Patient.lsj",
+  "UUID": "041f5494-7c59-1514-a89c-5c1990fc0017",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1,
+    "7": -1,
+    "8": -1,
+    "9": -1
+  },
+  "RootNodes": [
+    "240086cc-8521-9cbc-5f50-2ed3b55db7e2"
+  ],
+  "Nodes": {
+    "1a43d1f4-03c3-df88-772a-7b27312126df": {
+      "UUID": "1a43d1f4-03c3-df88-772a-7b27312126df",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1be6e034-9fd3-4753-bfc7-3dcfc64305e4",
+              "Text": {
+                "Handle": "hfe38b56ag8735g4956gade1g9686f8a01915",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "240086cc-8521-9cbc-5f50-2ed3b55db7e2": {
+      "UUID": "240086cc-8521-9cbc-5f50-2ed3b55db7e2",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ac4635a4-c72f-1361-8dc3-54a57b3be8c6",
+        "1a43d1f4-03c3-df88-772a-7b27312126df"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1136d319-0b47-45b6-8164-46b7e079407b",
+              "Text": {
+                "Handle": "he3ac9055ge507g456bg8c20g95486b02280b",
+                "Value": "Rgrl. Gn - ungh. Ngh!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ac4635a4-c72f-1361-8dc3-54a57b3be8c6": {
+      "UUID": "ac4635a4-c72f-1361-8dc3-54a57b3be8c6",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0820e94c-7007-4459-b935-2d33fbbf6aa9",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_State_SurgeonPermaDefeated"
+            },
+            {
+              "UUID": "2d47b88f-3c8e-4f74-8833-6934c7a6b70d",
+              "value": false,
+              "paramval": null,
+              "Name": "TWN_Hospital_State_PatientReleased"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b5dbbbb5-6b24-4451-a3a5-92778311d310",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_State_HasSurgicalBedKey"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b8dd8f9e-a7a1-47c8-a27f-2a84f5201aa4",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Event_ReleasePatient"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6346245e-03af-4a31-a0da-ccdc30d37eea",
+              "Text": {
+                "Handle": "h5b43a69agaec7g4ad0g871agdf24148a52fd",
+                "Value": "<i>Unlock the restraints.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1877d117-4fa3-4e09-87fa-b15f0dfc0d66",
+      "Index": 0,
+      "List": [
+        "70280618-041e-4029-b0b8-9b9cb4b7c494"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Distressed Patient",
+        "Type": "character",
+        "MapKey": "70280618-041e-4029-b0b8-9b9cb4b7c494",
+        "Name": "S_TWN_Hospital_Patient",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1c012b2f-9420-4342-a7ff-87417608c466",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "7640945b-77e1-43d7-a5c7-bf76710e790a",
+      "Index": 2,
+      "List": [
+        "58a69333-40bf-8358-1d17-fff240d7fb12"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lae'zel",
+        "Type": "character",
+        "MapKey": "58a69333-40bf-8358-1d17-fff240d7fb12",
+        "Name": "S_Player_Laezel",
+        "ParentTemplateId": null,
+        "TemplateName": "3a0351bd-0b2f-4fbf-84a6-30ad80bb3100"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "12125206-5008-4604-afff-bb57f4904366",
+      "Index": 3,
+      "List": [
+        "3ed74f06-3c60-42dc-83f6-f034cb47c679"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowheart",
+        "Type": "character",
+        "MapKey": "3ed74f06-3c60-42dc-83f6-f034cb47c679",
+        "Name": "S_Player_ShadowHeart",
+        "ParentTemplateId": null,
+        "TemplateName": "2ac51f22-e357-4639-b81d-022d462c8c6a"
+      },
+      "SpeakerGroupName": null
+    },
+    "4": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "77e113e8-4bf1-4b0b-8b45-b5e13ee05135",
+      "Index": 4,
+      "List": [
+        "2c76687d-93a2-477b-8b18-8a14b549304c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Karlach",
+        "Type": "character",
+        "MapKey": "2c76687d-93a2-477b-8b18-8a14b549304c",
+        "Name": "S_Player_Karlach",
+        "ParentTemplateId": null,
+        "TemplateName": "3ab0a797-0904-47cb-955d-cdc3ec32409c"
+      },
+      "SpeakerGroupName": null
+    },
+    "5": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "34d50dd9-d7af-4d78-800b-afd121427a24",
+      "Index": 5,
+      "List": [
+        "0de603c5-42e2-4811-9dad-f652de080eba"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Minsc",
+        "Type": "character",
+        "MapKey": "0de603c5-42e2-4811-9dad-f652de080eba",
+        "Name": "S_Player_Minsc",
+        "ParentTemplateId": null,
+        "TemplateName": "9d5f838a-8595-490c-85d5-8a2a69414356"
+      },
+      "SpeakerGroupName": null
+    },
+    "6": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "dba89cb0-cb57-4ab5-9b89-54d745ee1209",
+      "Index": 6,
+      "List": [
+        "c7c13742-bacd-460a-8f65-f864fe41f255"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Astarion",
+        "Type": "character",
+        "MapKey": "c7c13742-bacd-460a-8f65-f864fe41f255",
+        "Name": "S_Player_Astarion",
+        "ParentTemplateId": null,
+        "TemplateName": "5614c25e-0213-479f-864c-e95895adb30f"
+      },
+      "SpeakerGroupName": null
+    },
+    "7": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "8181ec04-4699-45b4-9976-ef1010351b85",
+      "Index": 7,
+      "List": [
+        "c774d764-4a17-48dc-b470-32ace9ce447d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Wyll",
+        "Type": "character",
+        "MapKey": "c774d764-4a17-48dc-b470-32ace9ce447d",
+        "Name": "S_Player_Wyll",
+        "ParentTemplateId": null,
+        "TemplateName": "159cdf9e-6665-4450-9375-8494e233b0e4"
+      },
+      "SpeakerGroupName": null
+    },
+    "8": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "1902bdd6-8874-4f89-b1cc-b60ef71fba12",
+      "Index": 8,
+      "List": [
+        "ad9af97d-75da-406a-ae13-7071c563f604"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Gale",
+        "Type": "character",
+        "MapKey": "ad9af97d-75da-406a-ae13-7071c563f604",
+        "Name": "S_Player_Gale",
+        "ParentTemplateId": null,
+        "TemplateName": "7d427a86-81f0-418d-a32a-3b5676c86bfa"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Patient of the surgeon. Eyes, tongue have been removed."
+}

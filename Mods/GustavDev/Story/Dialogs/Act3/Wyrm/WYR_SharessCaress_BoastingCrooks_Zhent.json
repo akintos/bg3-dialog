@@ -1,0 +1,325 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_SharessCaress_BoastingCrooks_Zhent.lsj",
+  "UUID": "4bf79853-5004-54cb-e5b0-26c72760f890",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "a7b4dc22-a961-0d14-b4cf-16035e5a8fc3",
+    "ecb106f8-4f3e-4e8d-afd2-0609699bbe2b",
+    "fd291971-9ff7-4c4c-8bba-9f76dcec565d"
+  ],
+  "Nodes": {
+    "2ce80874-7f94-9af4-ca4b-3ac4e353d514": {
+      "UUID": "2ce80874-7f94-9af4-ca4b-3ac4e353d514",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ecb106f8-4f3e-4e8d-afd2-0609699bbe2b",
+        "fd291971-9ff7-4c4c-8bba-9f76dcec565d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N10",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;234",
+        "sourcetemplate": "",
+        "stateContext": "Sitting on a chair"
+      }
+    },
+    "6e8446fa-7a31-8b85-b40c-6ee34c97a77a": {
+      "UUID": "6e8446fa-7a31-8b85-b40c-6ee34c97a77a",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a7b4dc22-a961-0d14-b4cf-16035e5a8fc3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N5",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;-204",
+        "sourcetemplate": "",
+        "stateContext": "Stands (default state)"
+      }
+    },
+    "a7b4dc22-a961-0d14-b4cf-16035e5a8fc3": {
+      "UUID": "a7b4dc22-a961-0d14-b4cf-16035e5a8fc3",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "837d4b7f-b3dc-11ba-f725-2ef927f21916",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_BoastingCrooks_State_Leaving"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5e509be5-56fa-4643-9719-9db869e46b16",
+              "Text": {
+                "Handle": "he190997fg1cf7g485bg8bb8g6e9c6ed6cf74",
+                "Value": "Get moving."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Standing, dismissive",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (leaving)",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ecb106f8-4f3e-4e8d-afd2-0609699bbe2b": {
+      "UUID": "ecb106f8-4f3e-4e8d-afd2-0609699bbe2b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "954522ed-7862-3a64-6ed7-67ae91e74e19",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_BoastingCrooks_HasMet_Zhent"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "954522ed-7862-3a64-6ed7-67ae91e74e19",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_BoastingCrooks_HasMet_Zhent"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dd5021a6-e9de-4ca3-848a-df6d3b1d6799",
+              "Text": {
+                "Handle": "hb480aff3g0f86g4680g9f9cgaa201d902564",
+                "Value": "Not looking for more company."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Sitting on chair, dismissive.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "fd291971-9ff7-4c4c-8bba-9f76dcec565d": {
+      "UUID": "fd291971-9ff7-4c4c-8bba-9f76dcec565d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "954522ed-7862-3a64-6ed7-67ae91e74e19",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_BoastingCrooks_HasMet_Zhent"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "683ca896-98fa-4566-b9a0-d28cd670eaa6",
+              "Text": {
+                "Handle": "h9b2382a7gdb11g47c1ga470gb99ce72c1be4",
+                "Value": "Hello. And goodbye."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Sitting on chair, dismissive.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c9b2142f-8526-4ffe-9a55-a72a72227fe7",
+      "Index": 0,
+      "List": [
+        "b8cc3112-5a9e-4306-b91a-2eb50391fe94"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Borgus Elamin",
+        "Type": "character",
+        "MapKey": "b8cc3112-5a9e-4306-b91a-2eb50391fe94",
+        "Name": "S_WYR_SharessCaress_BoastingCrooks_Zhent",
+        "ParentTemplateId": null,
+        "TemplateName": "ece5022d-3b19-4152-bb50-e5c6953197f7"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1c52a95c-07b6-4ff3-afcb-14db71579018",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Boasting crooks - Zhent standalone dialog. One liner."
+}

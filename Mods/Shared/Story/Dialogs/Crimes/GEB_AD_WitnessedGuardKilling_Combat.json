@@ -1,0 +1,147 @@
+{
+  "Path": "Mods/Shared/Story/Dialogs/Crimes/GEB_AD_WitnessedGuardKilling_Combat.lsj",
+  "UUID": "cf76ecee-1485-7cb9-9c90-bec9cfcac06b",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "e63411b3-5194-99f7-5935-7b8e87fc1d50"
+  ],
+  "Nodes": {
+    "e63411b3-5194-99f7-5935-7b8e87fc1d50": {
+      "UUID": "e63411b3-5194-99f7-5935-7b8e87fc1d50",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "0b52f35e-fb1f-4865-bcd2-5d21ef7343cd"
+                ],
+                "TagNames": [
+                  "GUARD"
+                ]
+              }
+            ],
+            "RuleString": "GUARD"
+          },
+          "TagTexts": [
+            {
+              "LineId": "cd8c136c-d7b7-4ca8-a4dc-c00de658be87",
+              "Text": {
+                "Handle": "h2c329508g7792g40edg8798gd4610c561a4c",
+                "Value": "Sleep with one eye open - I've got a lot of friends with a lot of weapons."
+              }
+            },
+            {
+              "LineId": "1ba99f52-2a84-4b46-a1b0-31a303da885d",
+              "Text": {
+                "Handle": "h3fc1b279gd0aeg4832gb0c5g9b60405097bb",
+                "Value": "Killing one of us was a mistake. My friends and I will hunt you <i>down.</i>"
+              }
+            },
+            {
+              "LineId": "f826ec8d-7dfd-4b35-9c71-08b2f1c08a95",
+              "Text": {
+                "Handle": "h5e702162gca9fg43f4gba99g14431679af4d",
+                "Value": "Murderer! Everyone will know what you've done here - I swear it!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [],
+                "TagNames": []
+              }
+            ],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bc6f9714-89a0-4a63-9bc4-ed74fb370820",
+              "Text": {
+                "Handle": "h0ff5da0cgbd5eg4c4dgbf3bgdddfb97eb03e",
+                "Value": "You won't get away with this - I'll make sure everyone knows your face!"
+              }
+            },
+            {
+              "LineId": "86ae34f9-46b3-47d7-a3e4-4469d79ad2ab",
+              "Text": {
+                "Handle": "hcb8da534g86d3g4ee2g98cdg9b28f603f9d5",
+                "Value": "I'll see you plastered on every wanted poster for this!"
+              }
+            },
+            {
+              "LineId": "68397238-6305-4c09-b018-8819bc286f20",
+              "Text": {
+                "Handle": "he7afb3d3g4e09g4e3cgb3d4g757c9d8facca",
+                "Value": "Murderer! Everyone will know what you've done here - I swear it!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "956d4cbe-2692-4eb9-aba8-9a52b8660631",
+      "Index": 0,
+      "List": [
+        "ed12e346-30d9-4d78-8930-b4f5b09414dc"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Guards"
+    }
+  },
+  "Synopsis": "Most important message: if the player leaves this NPC alive (e.g. flees from combat), the player will be attacked by sight by guards in this region from then on (because the NPC will report them to the other guards).\r\nSummary: The player killed a guard during combat in a particular region (the Grove, Moonrise Towers, and eventually also the Goblin Camp, Haven, Wyrm's Crossing, Baldur's Gate proper). While that combat is ongoing, other allied NPCs in the combat regular play ADs at the start of their turn to warn the player that they will inform the other guards about this fact if they survive the combat (if they do survice, they will run out of sight and afterwards every other allied guard in the region will attack the player on sight).\r\n"
+}

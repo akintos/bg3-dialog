@@ -1,0 +1,379 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Camp/NPCs/CAMP_GoblinHuntCelebration_Goblin003.lsj",
+  "UUID": "c80829ce-92bc-6f53-fe45-a34f6082dd92",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 1,
+    "1": 0
+  },
+  "RootNodes": [
+    "d32f9ce8-3c66-ead5-cc8f-3051ecbee2b3",
+    "487aa9a1-0453-b529-095b-facda1162058"
+  ],
+  "Nodes": {
+    "2172e819-a7d3-3a48-5562-d9e7e7fa3c41": {
+      "UUID": "2172e819-a7d3-3a48-5562-d9e7e7fa3c41",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "aaef5d43-c6f3-434d-b11e-c763290dbe0c",
+              "value": true,
+              "paramval": 1,
+              "Name": "TIEFLING"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a6a6315-e3ac-f004-89ae-a01b972787ca",
+              "Text": {
+                "Handle": "hb7c37c30g2281g4766g98c8g9583d6f7d2a7",
+                "Value": "Guess ya do have some devil's blood in there, don't ya?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "487aa9a1-0453-b529-095b-facda1162058": {
+      "UUID": "487aa9a1-0453-b529-095b-facda1162058",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2172e819-a7d3-3a48-5562-d9e7e7fa3c41",
+        "fd3adb7f-5614-c04f-e36c-1a3e157b63cc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c81ed1f3-8270-b49c-8447-e26a2dcb1b5c",
+              "value": true,
+              "paramval": 1,
+              "Name": "CAMP_GoblinHuntCelebration_HasMet_Goblin003"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "aaef5d43-c6f3-434d-b11e-c763290dbe0c"
+                ],
+                "TagNames": [
+                  "TIEFLING"
+                ]
+              }
+            ],
+            "RuleString": "TIEFLING"
+          },
+          "TagTexts": [
+            {
+              "LineId": "ba3cbe3d-783c-9cf7-8428-5f6a67ef23e9",
+              "Text": {
+                "Handle": "hd4ed9849gdb55g4c44gbbdag87b4b4984f8a",
+                "Value": "Never thought I'd be followin' a tiefling into battle - and against your own kind!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "ef9c5b74-56a8-48cc-b0b9-169ee16bf026"
+                ],
+                "TagNames": [
+                  "LOLTHDROWELF"
+                ]
+              }
+            ],
+            "RuleString": "LOLTHDROWELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "584d0d7a-fcfe-3d4f-4b94-8ffc25f5cbcc",
+              "Text": {
+                "Handle": "hfdaf041ege5c1g4090gb7dfgc98ae380e0e3",
+                "Value": "Never thought I'd be followin' a drow of my own free will - and then come out of battle alive!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ed5d66a7-a61b-5317-1773-80577da3ba1a",
+              "Text": {
+                "Handle": "h22692ac7ge959g4dc7gac63gba133c90799e",
+                "Value": "Never thought I'd follow someone like you into battle - but you're twice as mean as any hobgoblin!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d32f9ce8-3c66-ead5-cc8f-3051ecbee2b3": {
+      "UUID": "d32f9ce8-3c66-ead5-cc8f-3051ecbee2b3",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c81ed1f3-8270-b49c-8447-e26a2dcb1b5c",
+              "value": true,
+              "paramval": 1,
+              "Name": "CAMP_GoblinHuntCelebration_HasMet_Goblin003"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ff5e75ff-fade-0359-be05-7154f37f3b63",
+              "Text": {
+                "Handle": "hb8de52a4gdbc1g45b1g9b5dg43fe58243b1c",
+                "Value": "We'll show those heretics. Burn them all to the ground!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "fd3adb7f-5614-c04f-e36c-1a3e157b63cc": {
+      "UUID": "fd3adb7f-5614-c04f-e36c-1a3e157b63cc",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8928212c-4436-4588-ebf7-c84189e9c468",
+              "Text": {
+                "Handle": "h6896405dge91ag4e04g97f6g3edf540faf05",
+                "Value": "The Absolute smiles on you. On all of us!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2fb9ba8d-887c-8c5e-bd28-0d445202ff76",
+      "Index": 0,
+      "List": [
+        "409710c9-0b7b-4fa1-b92a-763bea9c04c7"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Goblin Tracker",
+        "Type": "character",
+        "MapKey": "409710c9-0b7b-4fa1-b92a-763bea9c04c7",
+        "Name": "S_CAMP_PartyGoblin_003",
+        "ParentTemplateId": null,
+        "TemplateName": "bdf828ab-4335-4626-b159-312b67397011"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "76611b0d-32af-a959-f44d-d3deef52351f",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Goblin having a party after attack on den at player camp."
+}

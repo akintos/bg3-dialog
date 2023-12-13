@@ -1,0 +1,637 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_SteepsTrader_BooksAndScrolls.lsj",
+  "UUID": "2daf6b97-d993-38c8-1950-c37501e72e60",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "81c0d8ae-2a54-4a69-bc95-a1aa4815accd",
+    "e1bfa6ea-c994-4494-aa7f-861cd2dad0e3"
+  ],
+  "Nodes": {
+    "39f8d3c5-c6ad-a4f2-34ed-fec6d218daa4": {
+      "UUID": "39f8d3c5-c6ad-a4f2-34ed-fec6d218daa4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "708ad138-8f91-496f-8c9a-6be9ebee28a2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "add29700-de6c-4b93-b67d-c0774420965e",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Gazette_Headline_Positive"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "3ce9bbc9-e786-4024-b957-f199eeb80296",
+              "value": false,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_State_ReactedToHeadline"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3ce9bbc9-e786-4024-b957-f199eeb80296",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_State_ReactedToHeadline"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "811ba7de-4f97-4393-91e0-edd72992e8df",
+              "Text": {
+                "Handle": "hf743231fg61d9g4f92g98c6ge7ab588d2f5e",
+                "Value": "*News of your good deeds has travelled fast. The merchant is all too happy to extend a certain generosity towards you, where the price of goods is concerned.* "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N68",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "POSITIVE ARTICLE + PRICES DOWN",
+        "position": "655;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "60d6470d-4ae8-4035-bdbd-fbff29f68e7b": {
+      "JumpTarget": "e1bfa6ea-c994-4494-aa7f-861cd2dad0e3",
+      "JumpTargetPoint": 2,
+      "UUID": "60d6470d-4ae8-4035-bdbd-fbff29f68e7b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N10",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "708ad138-8f91-496f-8c9a-6be9ebee28a2": {
+      "UUID": "708ad138-8f91-496f-8c9a-6be9ebee28a2",
+      "Constructor": "Trade",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fee3eaed-9d32-68ec-c251-20049ebc8955"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Trade",
+        "position": "975;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "81c0d8ae-2a54-4a69-bc95-a1aa4815accd": {
+      "UUID": "81c0d8ae-2a54-4a69-bc95-a1aa4815accd",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "60d6470d-4ae8-4035-bdbd-fbff29f68e7b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b27f16b8-dd10-25ee-e3ac-c88913abce2e",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SteepsTrader_Consumables_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7cc0c6e1-e8ad-416c-8e4e-da022f1d4366",
+              "Text": {
+                "Handle": "heef814b8g8b80g4aa6ga6cfg911e2c2a84e0",
+                "Value": "Back again? I know a reader when I see one. What'll it be?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "salesperson pitching",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "82a97d84-e45c-4d04-9f8e-7a3244c1c78d": {
+      "UUID": "82a97d84-e45c-4d04-9f8e-7a3244c1c78d",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "39f8d3c5-c6ad-a4f2-34ed-fec6d218daa4",
+        "d00e829d-8783-fb55-4792-273369df4df0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dd797a81-6907-4cdc-a90c-d7bcff65758c",
+              "Text": {
+                "Handle": "h44076fdbgb118g41caga713g5429c0b657a7",
+                "Value": "Let me see what you have."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "aa47f2d3-24d9-4532-872c-10ef0c3a7c75": {
+      "UUID": "aa47f2d3-24d9-4532-872c-10ef0c3a7c75",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a964b4ed-035b-4a42-b63d-cb7d9af02c8d",
+              "Text": {
+                "Handle": "h3874b566g39d9g429egb934gd066c340cfe1",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "d00e829d-8783-fb55-4792-273369df4df0": {
+      "UUID": "d00e829d-8783-fb55-4792-273369df4df0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "708ad138-8f91-496f-8c9a-6be9ebee28a2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "087fb6c3-16d6-473f-818b-85fc16d5a93d",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Gazette_Headline_Negative"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "3ce9bbc9-e786-4024-b957-f199eeb80296",
+              "value": false,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_State_ReactedToHeadline"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3ce9bbc9-e786-4024-b957-f199eeb80296",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_State_ReactedToHeadline"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e00ec632-d659-48c1-b4a9-e67273904cb2",
+              "Text": {
+                "Handle": "haaa2d894g7fedg4661g8e0bg205bcd461cda",
+                "Value": "*Your notoriety precedes you. Prices have been moderated to reflect your less than welcome presence in the city.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N72",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NEGATIVE ARTICLE + PRICES UP",
+        "position": "655;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "e1bfa6ea-c994-4494-aa7f-861cd2dad0e3": {
+      "UUID": "e1bfa6ea-c994-4494-aa7f-861cd2dad0e3",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "82a97d84-e45c-4d04-9f8e-7a3244c1c78d",
+        "aa47f2d3-24d9-4532-872c-10ef0c3a7c75"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b27f16b8-dd10-25ee-e3ac-c88913abce2e",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_SteepsTrader_Consumables_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b27f16b8-dd10-25ee-e3ac-c88913abce2e",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SteepsTrader_Consumables_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fcb3493b-49e8-44c9-ade0-15d861cd6230",
+              "Text": {
+                "Handle": "hdb2d8a38g14cag4fe8gaed2gaa247b5911b4",
+                "Value": "Plenty of knowledge to be found in these books and scrolls, friend. That'll stand to you long after the spent gold is forgotten."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "salesperson pitching",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "fee3eaed-9d32-68ec-c251-20049ebc8955": {
+      "UUID": "fee3eaed-9d32-68ec-c251-20049ebc8955",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "40084fcb-4b99-4c1c-b50f-0d3d6ace8532",
+              "Text": {
+                "Handle": "h7b2f8f08g1ea6g4ae8g8b2cg6da8fce6e3bf",
+                "Value": "There's nothing quite like delving through some old parchments, is there? I wish I could bottle that smell and wear it."
+              }
+            },
+            {
+              "LineId": "5a199d3f-4228-47b4-a557-25d9760dde3b",
+              "Text": {
+                "Handle": "h888af1b7gb10eg4023gabd2g4fce451c9c99",
+                "Value": "If a book's dog-eared, you know it's good. That's my rule."
+              }
+            },
+            {
+              "LineId": "6523dd7a-d947-4791-8b07-ceb0779cceb6",
+              "Text": {
+                "Handle": "hbd76f3c5gc461g4a8fga3d8geb103c241968",
+                "Value": "My stall's no Candlekeep Library, I'll admit. But I've got a few nice finds tucked away."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "salesperson pitching",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "POST-TRADE COMMENTS X3 (RANDOM)",
+        "position": "1295;-1299",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ba82c9d1-f343-466e-bcf0-6d913930ed01",
+      "Index": 0,
+      "List": [
+        "70a074ae-db79-4f1a-9b12-62a380adbd18"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Nansi Gretta",
+        "Type": "character",
+        "MapKey": "70a074ae-db79-4f1a-9b12-62a380adbd18",
+        "Name": "S_LOW_SteepsTrader_BooksAndScrolls",
+        "ParentTemplateId": null,
+        "TemplateName": "19dc6cab-aa38-4f09-b9cf-546e1c0ecb8a"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fbd471f2-a193-4067-a07b-8e80bab549f3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "One of the traders from Steeps Strake. She will sell various lore books and low level scroll spells to the player. She is one of the potential "
+}

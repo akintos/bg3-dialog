@@ -1,0 +1,5943 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/MoonriseTowers/MOO_KethericHound_Hound_SwA.lsj",
+  "UUID": "3de45a9a-2c81-6f42-5c6b-06439ab65d9b",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "6d243da2-e058-184d-3617-2cd9aa9392f4",
+    "b7c0a606-fc13-554e-5227-71d67031bf60",
+    "f4c8375a-8f31-4386-8b51-660e2c96e647",
+    "3365e493-ee05-461d-a6e2-0d0aba5a6996",
+    "8721550f-e40d-4f24-9a07-9441bf5e5c7b",
+    "0c81316a-ad2c-4d4a-b041-46d3d444a770"
+  ],
+  "Nodes": {
+    "001fc870-b1b2-4fab-811f-b7996ae6dec0": {
+      "UUID": "001fc870-b1b2-4fab-811f-b7996ae6dec0",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "884fde5d-979c-457e-8532-e613c96f7d2d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c762978-ba29-4260-81fd-f19c9ad1e5a4",
+              "value": true,
+              "paramval": 1,
+              "Name": "HasTaggedItem_FOOD"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a2f94a04-aeaa-4f2d-8a50-94730d51265d",
+              "Text": {
+                "Handle": "hb32efe4fgf462g4fa6ga658g13f273d60995",
+                "Value": "I'm a friend - I have some food to share."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "02da5d16-9121-1cb2-c040-03045885493c": {
+      "RollSuccess": false,
+      "UUID": "02da5d16-9121-1cb2-c040-03045885493c",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d728783f-3389-3f17-e2ce-432fc349813d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N46",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "05e49ef9-9f37-9ad0-0fa0-870acc38816f": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "91fb3598-dd68-4fa8-a306-2c7284709b08",
+      "DifficultyClassValue": 18,
+      "UUID": "05e49ef9-9f37-9ad0-0fa0-870acc38816f",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8a2a5573-655f-43d9-3870-22ca58da3849",
+        "3865152b-09a9-d930-a466-711762709c03"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5064e082-b1a5-67b1-43fb-50d239adcbca",
+              "value": false,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_LoweredDC"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "802fc1d0-28ac-4c47-bbcf-5285132f973c",
+              "Text": {
+                "Handle": "h4f08f66dg6461g41dfg80cfg4094aa171da2",
+                "Value": "<i>Snap off your best salute.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N57",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Performance",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "076dc757-37ec-aa14-9ac4-224a7e5fc126": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "9d1f2171-fef1-4c03-9e83-523485174c46",
+      "DifficultyClassValue": 6,
+      "UUID": "076dc757-37ec-aa14-9ac4-224a7e5fc126",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ac2db14c-4872-24b0-b57f-a536f83f67c8",
+        "02da5d16-9121-1cb2-c040-03045885493c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d66a1ae9-26f9-4647-abf6-c44df7310075",
+              "Text": {
+                "Handle": "h31c8c444g8af5g47b3g87bdgad4969288026",
+                "Value": "<i>Give her your best salute.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N44",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Performance",
+        "position": "655;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "09d9cbb9-7666-4262-a5ee-6f90880633bd": {
+      "UUID": "09d9cbb9-7666-4262-a5ee-6f90880633bd",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5a2acbf7-8d93-44ce-bce6-d37fb5e61a7e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d56de3b0-db8b-4ad6-951a-558769d8b3ac",
+              "Text": {
+                "Handle": "h8935c89cge0abg44f1g8a23gb4a9b95dda51",
+                "Value": "You stumble into trouble like a stray pup. My own litter were the same."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "0a06122c-213a-a274-fd55-1cb639c409c0": {
+      "UUID": "0a06122c-213a-a274-fd55-1cb639c409c0",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2ead38dd-61e7-41f6-a475-8c036d3f9c3e",
+              "Text": {
+                "Handle": "h829f21d7gfe6eg42e0g8b20gc62f8560a822",
+                "Value": "I'm sorry."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N220",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "0b893f82-9f67-4884-b629-868dc44b334f": {
+      "UUID": "0b893f82-9f67-4884-b629-868dc44b334f",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b2094a1a-5523-4972-8edd-60ac6b940c11",
+              "Text": {
+                "Handle": "h1885e706ge58cg4a35gb09cg795f1dfe97b7",
+                "Value": "*The growl only deepens. The hound isn't reassured - or perhaps it is simply taking no chances.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog growls deeper",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;672",
+        "sourcetemplate": ""
+      }
+    },
+    "0c81316a-ad2c-4d4a-b041-46d3d444a770": {
+      "UUID": "0c81316a-ad2c-4d4a-b041-46d3d444a770",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "822296a1-ec5b-2c4d-0514-8107e365cffe"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "05253761-6de3-4ff9-a68e-c07d03ad9013",
+              "Text": {
+                "Handle": "heb190f1fg4628g4e9fgbfc5g5e0b64b835e6",
+                "Value": "Stand, soldier! These are the General's private quarters."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SwA",
+        "position": "15;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "15218d46-09fa-484f-9087-06a1dd6c8aba": {
+      "UUID": "15218d46-09fa-484f-9087-06a1dd6c8aba",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "487945a6-e023-4bd8-857e-54c114edad82",
+              "Text": {
+                "Handle": "hc31e60c6g6b9cg4058g962bg8f0dd62585fc",
+                "Value": "*...but it seems the touch is enough, and for a moment the undead beast is just another dog happily wagging its tail.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[REUSE] existing animation",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Re-use animation from player petting Scratch at camp.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N36",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Scratching undead dog foley (hands against bone and metal)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "16a57665-17e5-868e-8d20-4ab4d328bd6c": {
+      "UUID": "16a57665-17e5-868e-8d20-4ab4d328bd6c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ed85b2f2-24bd-423b-b64b-9b5d5220da82",
+              "Text": {
+                "Handle": "h05844213ga4f8g4e7dgaadbg61822bbb1fde",
+                "Value": "But he brought me back. I will not fail him again."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N205",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "1d34d7fd-a5ea-4ba0-8d15-02614bc4a9e0": {
+      "UUID": "1d34d7fd-a5ea-4ba0-8d15-02614bc4a9e0",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dd72abeb-d2dd-2bd8-82df-d81fb84a817e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c762978-ba29-4260-81fd-f19c9ad1e5a4",
+              "value": true,
+              "paramval": 1,
+              "Name": "HasTaggedItem_FOOD"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "66c95d01-9549-492e-baf9-a8b269cf7512",
+              "Text": {
+                "Handle": "h736ccedag292ag485ega217g3c9f59f6e903",
+                "Value": "<i>Offer up some food from your pack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N26",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Have Food",
+        "position": "655;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "21282ddc-f9c7-c330-35f2-e8e218ee2e30": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "21282ddc-f9c7-c330-35f2-e8e218ee2e30",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8a2a5573-655f-43d9-3870-22ca58da3849",
+        "3865152b-09a9-d930-a466-711762709c03"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5064e082-b1a5-67b1-43fb-50d239adcbca",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_LoweredDC"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d5d797fc-2b69-42f9-aa6a-5d0a2ef23df8",
+              "Text": {
+                "Handle": "h30bf4f68g68f7g4fd9g9049g40247f42467d",
+                "Value": "<i>It's a trained army hound - give it your best salute.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N188",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Performance_DCLOWERED",
+        "position": "655;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "21621036-caa8-4680-8cd6-67de2a3af76a": {
+      "UUID": "21621036-caa8-4680-8cd6-67de2a3af76a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dab65619-cd2c-46cf-a955-993942aa7502"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ea628766-e987-4b2f-99b7-e1859dd6cd3e",
+              "Text": {
+                "Handle": "h11ef9f66g4e9dg474ega6f8g3c700885ab1e",
+                "Value": "Easy - I'm leaving."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "23ae90da-57c1-3355-377c-0e7ade8bf359": {
+      "UUID": "23ae90da-57c1-3355-377c-0e7ade8bf359",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "26b7d56f-ea98-4cc2-93f2-75ba26121585",
+        "c17b20cb-de20-13c0-1031-43dfbfe1a4f4",
+        "05e49ef9-9f37-9ad0-0fa0-870acc38816f",
+        "21282ddc-f9c7-c330-35f2-e8e218ee2e30",
+        "27eb219b-4ddf-cf0f-0d3d-08f4d5fb4ef9",
+        "82493957-16ee-fc2b-b0fc-a0f490827bac",
+        "5fcdaadf-29b1-43d1-df51-cafd1b919ddb",
+        "dea1198f-8651-9a44-aed9-7ad03e77c91e",
+        "1d34d7fd-a5ea-4ba0-8d15-02614bc4a9e0",
+        "6bb6f8e7-89f6-425e-9e86-9071f180b4be"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "efb6aed5-fd07-433b-b0c5-b980bf77bb2c",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TakingIsobel_Event_GiveOintment"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b18d9a1-fbad-5106-c428-38caae51c18c",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_SmelledBlessing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "adcfb00d-d43d-490d-bfb6-58145c97a5d7",
+              "Text": {
+                "Handle": "h6bf85a02g38afg438egb615g48efb0b5b261",
+                "Value": "*And then it hesitates, gleaming muzzle sampling your scent as if in... recognition?*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N167",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog sniffing",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Has Isobel's blessing",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "2687175e-1d33-0af0-1a3b-ba90b33a10ef": {
+      "UUID": "2687175e-1d33-0af0-1a3b-ba90b33a10ef",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bccd3690-10c0-5d4d-bd2f-59a00723e2d6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ea418d2f-11b1-47f8-9826-1d4a933db30e",
+              "Text": {
+                "Handle": "h26bb8ef2g4e6eg4fd4g8c50g96ef2e2562e2",
+                "Value": "Your master's beyond saving. I'm here to end him."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N152",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2255;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "26b7d56f-ea98-4cc2-93f2-75ba26121585": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "91fb3598-dd68-4fa8-a306-2c7284709b08",
+      "DifficultyClassValue": 18,
+      "UUID": "26b7d56f-ea98-4cc2-93f2-75ba26121585",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f1782653-1b13-43f7-ae93-8fcc38c5b3fd",
+        "9e303e8c-7c5b-4a3a-ba97-83add21185f6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5064e082-b1a5-67b1-43fb-50d239adcbca",
+              "value": false,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_LoweredDC"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c0e7bc8c-d111-4d6c-a8a0-47ce91f31643",
+              "Text": {
+                "Handle": "h6c39f0a7g976bg495ag8249g33584575023f",
+                "Value": "<i>Lower your eyes - you're no threat.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_AnimalHandling",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "27eb219b-4ddf-cf0f-0d3d-08f4d5fb4ef9": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "91fb3598-dd68-4fa8-a306-2c7284709b08",
+      "DifficultyClassValue": 18,
+      "UUID": "27eb219b-4ddf-cf0f-0d3d-08f4d5fb4ef9",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a47f66cf-67d0-6bdc-a624-c0b41be87106",
+        "5b061b9f-c8b6-ad73-f89e-ff0d33c1c613"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5064e082-b1a5-67b1-43fb-50d239adcbca",
+              "value": false,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_LoweredDC"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "53d03e2a-8066-417b-a041-3447f4b4c30c",
+              "Text": {
+                "Handle": "hd0af657dg08ceg4ac7ga05egf1e563b1331a",
+                "Value": "<i>Give the creature a snarl of your own.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N174",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Intimidation",
+        "position": "655;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "2f738362-6b73-d971-d98a-907c0215defa": {
+      "UUID": "2f738362-6b73-d971-d98a-907c0215defa",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "72c82964-cf48-48b1-9155-42482a4f2e5e",
+              "Text": {
+                "Handle": "hf64b51c0gfe47g4d61g8526g9ed94b7f98a8",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N224",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3215;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "32babe6a-1ade-7447-de12-39031a87d528": {
+      "UUID": "32babe6a-1ade-7447-de12-39031a87d528",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "daca1c6a-5f85-6046-36dd-eaf8fba3df01"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d1b0f812-83ff-8722-54dd-efa43c989af0",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_KethericHound_Hound_AskedAboutScent"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "02138d92-c4bf-4a51-a9a5-41f8934da06a",
+              "Text": {
+                "Handle": "hdfa624f7ge901g4f3aga7cfg2c2c11b98a18",
+                "Value": "My scent seemed to trigger a memory in you. What was it?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N223",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3215;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "3365e493-ee05-461d-a6e2-0d0aba5a6996": {
+      "UUID": "3365e493-ee05-461d-a6e2-0d0aba5a6996",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f3c08d17-8271-4e61-911a-c58d9432f930",
+        "5c7d3d12-34e1-4d29-adc1-e36dbb13744b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e83e34d3-e213-45a2-8f2f-dc0fc1ed8621",
+              "Text": {
+                "Handle": "h25043f8agfdcbg4ce2g8ddaga6c0ccc3ec85",
+                "Value": "*Smoky, unblinking eyes fix upon you.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N33",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "After Success Non SwA",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "3865152b-09a9-d930-a466-711762709c03": {
+      "RollSuccess": false,
+      "UUID": "3865152b-09a9-d930-a466-711762709c03",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c1c5399c-b3da-1452-b3ca-08943de00489"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N77",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "3c91cb08-7851-045d-669b-62d9f44d9233": {
+      "UUID": "3c91cb08-7851-045d-669b-62d9f44d9233",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f13748cb-95e3-4f46-b29a-b240e2729392",
+              "Text": {
+                "Handle": "h3ceb33a1gfb79g4523ga133gc2d20dfcdad5",
+                "Value": "Pass, then. But I will be watching."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N148",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "437937c4-972a-4bcd-1e41-91365778981b": {
+      "UUID": "437937c4-972a-4bcd-1e41-91365778981b",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a4bbfb3-b66e-4328-b785-369347c3f030",
+              "Text": {
+                "Handle": "hb41ec25dgb6edg400bg9377g44fdc4695bea",
+                "Value": "*It turns away and utterly ignores you - as it would any lowly foot soldier.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N69",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;891",
+        "sourcetemplate": ""
+      }
+    },
+    "4427e7ad-7a2d-44f7-1e4a-5aeede278491": {
+      "UUID": "4427e7ad-7a2d-44f7-1e4a-5aeede278491",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "645155a8-57c8-ae5d-d071-548c454cd247"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7e10ab30-9e6d-4457-8abe-40d42fbab64a",
+              "Text": {
+                "Handle": "h9b402197g6d10g4dd5gbe59g2593f2279c63",
+                "Value": "Ugh. The General has led many soldiers - and your form is by <i>far</i> the sloppiest."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N47",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "462ee6e5-1016-90a6-f0d3-25dc8cbaf227": {
+      "RollSuccess": false,
+      "UUID": "462ee6e5-1016-90a6-f0d3-25dc8cbaf227",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "edd87d09-c189-5093-c39d-12e6660873f3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N197",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "485f9528-b9eb-47ff-9f15-fd10f4d7903a": {
+      "UUID": "485f9528-b9eb-47ff-9f15-fd10f4d7903a",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4cd709bc-6dfe-4a2d-8e78-849e23cd1e2b",
+              "Text": {
+                "Handle": "h0753971dge6b5g451agbd5eg74372d58f568",
+                "Value": "I cannot tell if your stink is lies or stupidity. It doesn't matter."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "48d54521-6cfe-4d94-8b51-d6219b7bfdd4": {
+      "RollSuccess": false,
+      "UUID": "48d54521-6cfe-4d94-8b51-d6219b7bfdd4",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "485f9528-b9eb-47ff-9f15-fd10f4d7903a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N8",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "49652938-44c4-2c4a-785c-76bd0776d0af": {
+      "UUID": "49652938-44c4-2c4a-785c-76bd0776d0af",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b1acf7b9-1629-63ac-7e5f-0a00eb858f95"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3d0a43da-f090-42d9-b2e5-8acfdd6d323e",
+              "Text": {
+                "Handle": "h7c95e021g72c2g4803gbcc8gb13cb0969f89",
+                "Value": "I do not know your face, but your scent... Selûnite magic. It used to fill these halls, back when I was flesh."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N160",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog sniffs",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "49c0ec25-226c-06a9-7585-38119a703f5c": {
+      "UUID": "49c0ec25-226c-06a9-7585-38119a703f5c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bf545575-38c1-e68e-cf8d-d8beffda83c5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5e247f6a-d567-436e-af43-58c604ddf72f",
+              "Text": {
+                "Handle": "h4b630293gb48fg4cafgaaa3g5a213e43124d",
+                "Value": "*Suspicious, the creature leans in for another sniff - and for a moment, its tail wags as if remembering a scent from long ago.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N172",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog sniffing",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "4a37dc59-33d0-d835-4eae-7c0eda134b65": {
+      "JumpTarget": "8d70e5e0-9889-8d23-9a2e-502b785578c5",
+      "JumpTargetPoint": 1,
+      "UUID": "4a37dc59-33d0-d835-4eae-7c0eda134b65",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N180",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "4d34fa25-f254-c881-bef9-80100d84a16d": {
+      "UUID": "4d34fa25-f254-c881-bef9-80100d84a16d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3ffa65e9-c0ca-4e97-8d23-cfde992a44ef",
+              "Text": {
+                "Handle": "h44778e4egcf6eg4c63gb38fgd174f7d9aca1",
+                "Value": "Your scent is familiar to me, stranger - but I can still smell the lies underneath."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N221",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Last words before attacking",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "55bbdbed-a86d-34f6-a376-a50c5eb5aaaf": {
+      "UUID": "55bbdbed-a86d-34f6-a376-a50c5eb5aaaf",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "86d70ef1-06bc-4ce1-c644-7a54aceb534b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d1b0f812-83ff-8722-54dd-efa43c989af0",
+              "value": false,
+              "paramval": 1,
+              "Name": "MOO_KethericHound_Hound_AskedAboutScent"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8b18d9a1-fbad-5106-c428-38caae51c18c",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_SmelledBlessing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7b506b12-b3ff-43c0-9fbc-b3862b9c2de1",
+              "Text": {
+                "Handle": "hf3a7c225gb76dg494ag9fc6gd5aa05507255",
+                "Value": "You seemed to know my scent. How?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N202",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "56e5baea-a383-481b-a9d2-bd91236910a2": {
+      "UUID": "56e5baea-a383-481b-a9d2-bd91236910a2",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b5dfacf0-3ebb-472c-af63-ebb15271ae53"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7fbed0d4-cabc-4a9d-804e-12ca6088a0a8",
+              "value": true,
+              "paramval": 1,
+              "Name": "HUMANOID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "487348ff-e623-4c3c-a654-163cdc4e95df",
+              "Text": {
+                "Handle": "h07509c50g18a9g4c45g8172g3523132ddfc0",
+                "Value": "Would it be all right if I gave you a scratch?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "5a2acbf7-8d93-44ce-bce6-d37fb5e61a7e": {
+      "UUID": "5a2acbf7-8d93-44ce-bce6-d37fb5e61a7e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "da12d3d1-86e6-48d8-a8e3-fb53d19e5ae7",
+              "Text": {
+                "Handle": "h31cc1143ge407g4db2g9887g19705c7ce312",
+                "Value": "But they are long dead, now. Mind where you stray, lest I send you to join them."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "5b061b9f-c8b6-ad73-f89e-ff0d33c1c613": {
+      "RollSuccess": false,
+      "UUID": "5b061b9f-c8b6-ad73-f89e-ff0d33c1c613",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8d70e5e0-9889-8d23-9a2e-502b785578c5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N176",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "5c7d3d12-34e1-4d29-adc1-e36dbb13744b": {
+      "UUID": "5c7d3d12-34e1-4d29-adc1-e36dbb13744b",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9cbf6595-4571-4e9e-b032-9ffb51dd9145",
+              "Text": {
+                "Handle": "hd1cc20f8g28c5g4eefg85f0g7458966864b9",
+                "Value": "Leave."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N35",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "5d0def51-d553-9beb-69d4-b0e70bd37c15": {
+      "UUID": "5d0def51-d553-9beb-69d4-b0e70bd37c15",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b1acf7b9-1629-63ac-7e5f-0a00eb858f95"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "05ed8e56-efb4-4004-b914-47109e66488f",
+              "Text": {
+                "Handle": "h39771f12gd56bg4f2eg972eg76d97e89644c",
+                "Value": "Though whichever whelp owns that thing smells... happy. Safe. I have not scented such a thing since I was flesh."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[REUSE] - DFLT_CINE_React_Sniffing_Air_01",
+        "Attitude": "Default",
+        "CinematicNodeContext": "She hesitates and cocks her head, sniffing the air.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N132",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "She hesitates and cocks her head, sniffing the air.",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog sniffs",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "5fbf444c-e184-eaef-61c0-1747e294b8bf": {
+      "RollSuccess": true,
+      "UUID": "5fbf444c-e184-eaef-61c0-1747e294b8bf",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d92c7d15-6c8c-613e-2b63-e3fe7f573669",
+        "a8124bb8-bc71-9428-1eb1-9e2ab1939e44"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N213",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2575;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "5fcdaadf-29b1-43d1-df51-cafd1b919ddb": {
+      "UUID": "5fcdaadf-29b1-43d1-df51-cafd1b919ddb",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "49c0ec25-226c-06a9-7585-38119a703f5c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01e2ae8a-17d7-4e42-861b-2747bbb59e40",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_TakingIsobel_State_HasSeluneOintment"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b18d9a1-fbad-5106-c428-38caae51c18c",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_SmelledBlessing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5871987c-8ef4-4049-a521-a028c627f632",
+              "Text": {
+                "Handle": "h8be74e18g02b9g403eg897bg8d53b6e51371",
+                "Value": "<i>Stay still and let it sniff you.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N171",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Wearing Isobel's Blessing",
+        "position": "655;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "5ffec326-014e-db60-d9b0-4626ed03d04f": {
+      "UUID": "5ffec326-014e-db60-d9b0-4626ed03d04f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "437937c4-972a-4bcd-1e41-91365778981b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4d00356a-9d75-4e45-aa81-67a3b7811b6c",
+              "Text": {
+                "Handle": "h56145f87g18e8g4a6cga7dag542d92906198",
+                "Value": "*The dog relaxes, as if reassured by your observance of protocol.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N65",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;891",
+        "sourcetemplate": ""
+      }
+    },
+    "645155a8-57c8-ae5d-d071-548c454cd247": {
+      "UUID": "645155a8-57c8-ae5d-d071-548c454cd247",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f8633a60-c520-44e5-975b-7b92acc943ca",
+              "Text": {
+                "Handle": "h73b029edg2df1g4e86gb5c3gc517d5e8fd88",
+                "Value": "Just be about your task then - whatever it is."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N48",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "66d67cbf-5efc-ad66-7d4b-b64694bcb24a": {
+      "UUID": "66d67cbf-5efc-ad66-7d4b-b64694bcb24a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f85072b7-edd5-e76a-bbe6-90c8f80aeb37",
+        "3c91cb08-7851-045d-669b-62d9f44d9233"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0cfd74c7-347d-4f9f-a9e7-a2077725d3ad",
+              "Text": {
+                "Handle": "ha41603d1gf828g482dgae47g134d01b03044",
+                "Value": "I protect my master. What becomes of <i>his </i>master, I care not."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N144",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "6b865767-4808-3326-8879-16a5ddc33309": {
+      "UUID": "6b865767-4808-3326-8879-16a5ddc33309",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "16a57665-17e5-868e-8d20-4ab4d328bd6c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8cc4da5f-49ee-435f-a5f1-51e674f62db6",
+              "Text": {
+                "Handle": "hdec5622egea40g488eg82fagc4a27dd2c69f",
+                "Value": "I... died the same night she did, my master says. Trying to protect her. I do not remember."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N204",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3855;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "6bb6f8e7-89f6-425e-9e86-9071f180b4be": {
+      "UUID": "6bb6f8e7-89f6-425e-9e86-9071f180b4be",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4a37dc59-33d0-d835-4eae-7c0eda134b65"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9304c54c-f3c4-41ea-9ab9-84a791449bd1",
+              "Text": {
+                "Handle": "h2a221258g89b8g46f2g8e87g7c6f7d9192b1",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "6d243da2-e058-184d-3617-2cd9aa9392f4": {
+      "UUID": "6d243da2-e058-184d-3617-2cd9aa9392f4",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cb700236-dfd8-59e0-0383-2f1e0b4696a2",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_Intimidated"
+            },
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ba4dccc4-1ade-4d02-b9aa-8f13f73d0919",
+              "Text": {
+                "Handle": "ha2255908gd40ag4ab0g9524gb241d3f57c0f",
+                "Value": "I let you pass. Do not make me change my mind."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N210",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Stiff, warning",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SwA, HasMet, Intimidated",
+        "position": "15;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "822296a1-ec5b-2c4d-0514-8107e365cffe": {
+      "UUID": "822296a1-ec5b-2c4d-0514-8107e365cffe",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c9e3b090-2873-49b6-aac5-518351de51b9",
+        "076dc757-37ec-aa14-9ac4-224a7e5fc126",
+        "f6a7c720-75b4-3227-67c1-1941b0b244c4",
+        "a2a2bb9f-7155-8cb4-7c07-22539245b3af",
+        "c9149b12-8bfe-6791-70c9-bd3c62b1d167",
+        "001fc870-b1b2-4fab-811f-b7996ae6dec0",
+        "21621036-caa8-4680-8cd6-67de2a3af76a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "efb6aed5-fd07-433b-b0c5-b980bf77bb2c",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TakingIsobel_Event_GiveOintment"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b18d9a1-fbad-5106-c428-38caae51c18c",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_SmelledBlessing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "71868f4c-1d72-471d-aa63-781abf6cdfd1",
+              "Text": {
+                "Handle": "hf8033fc0g7cfdg4a8fgab54g635348d2c7ca",
+                "Value": "...Wait. Something in your scent is... familiar."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N157",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog sniffs",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Has Isobel's blessing",
+        "position": "335;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "82493957-16ee-fc2b-b0fc-a0f490827bac": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "82493957-16ee-fc2b-b0fc-a0f490827bac",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a47f66cf-67d0-6bdc-a624-c0b41be87106",
+        "5b061b9f-c8b6-ad73-f89e-ff0d33c1c613"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5064e082-b1a5-67b1-43fb-50d239adcbca",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_LoweredDC"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2f96f9f5-7e83-4c25-839f-074fef9fa08a",
+              "Text": {
+                "Handle": "h84fc0333g3565g49a6gb358g0609be1db9a2",
+                "Value": "<i>Snarl at the beast's display of weakness.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N192",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Intimidation_DCLOWERED",
+        "position": "655;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "86d70ef1-06bc-4ce1-c644-7a54aceb534b": {
+      "JumpTarget": "32babe6a-1ade-7447-de12-39031a87d528",
+      "JumpTargetPoint": 2,
+      "UUID": "86d70ef1-06bc-4ce1-c644-7a54aceb534b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N226",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "8721550f-e40d-4f24-9a07-9441bf5e5c7b": {
+      "UUID": "8721550f-e40d-4f24-9a07-9441bf5e5c7b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "23ae90da-57c1-3355-377c-0e7ade8bf359"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0f90de9f-00ef-4147-a505-29efcbb4539f",
+              "Text": {
+                "Handle": "h921e80d6g647dg4b08gb2efgbfadd3674610",
+                "Value": "*Even stripped of flesh, the war-hound is formidable. Spectral eyes meet yours as it growls a challenge.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog growl",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Non SwA",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    },
+    "884fde5d-979c-457e-8532-e613c96f7d2d": {
+      "UUID": "884fde5d-979c-457e-8532-e613c96f7d2d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "851a7fdb-63cd-438b-9c9a-6794e47ea886",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_KethericHound_Event_GiveFood"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cdfa59e4-b374-4322-a302-51283c49f431",
+              "Text": {
+                "Handle": "h07d6c5b6g1e98g4c38gb7d8gb84a92cac6d1",
+                "Value": "I've had no stomach to fill for some time. But you will find my teeth are still sharp, stranger."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "8a2a5573-655f-43d9-3870-22ca58da3849": {
+      "RollSuccess": true,
+      "UUID": "8a2a5573-655f-43d9-3870-22ca58da3849",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5ffec326-014e-db60-d9b0-4626ed03d04f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N61",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;891",
+        "sourcetemplate": ""
+      }
+    },
+    "8aac0d07-5aa2-802d-456a-250f4d1b5b63": {
+      "UUID": "8aac0d07-5aa2-802d-456a-250f4d1b5b63",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8bd48bad-857e-2360-3a65-00bfffa211cf"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b214d4cf-727d-4540-bc60-933641f0e88d",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_HostileAfterTame"
+            },
+            {
+              "UUID": "cb700236-dfd8-59e0-0383-2f1e0b4696a2",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_Intimidated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e10e0390-1787-498f-8686-9452411aa8f4",
+              "Text": {
+                "Handle": "hcf36f324gd0feg4ea4gbbd3gfec5a5775099",
+                "Value": "*This is not a creature easily cowed, but something in your display gives it pause.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N177",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Player growls",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "8bd48bad-857e-2360-3a65-00bfffa211cf": {
+      "UUID": "8bd48bad-857e-2360-3a65-00bfffa211cf",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "65d23403-8b41-4504-949e-2b4195106300",
+              "Text": {
+                "Handle": "h881faed5g5da6g4202g818cgeb76fad558be",
+                "Value": "*The growl withers to a whimper, and the hound turns away, sheepish.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N178",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog whimpers",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "8d70e5e0-9889-8d23-9a2e-502b785578c5": {
+      "UUID": "8d70e5e0-9889-8d23-9a2e-502b785578c5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "faee53f9-7140-45ed-a046-591bc68c82c7",
+              "Text": {
+                "Handle": "h76bbeb37g00b9g4fc9gb6cegb1ec71c2af98",
+                "Value": "*Growl.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N94",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog growls deeper",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "93059ada-d3bc-fa5b-b8af-5134e8246fe9": {
+      "UUID": "93059ada-d3bc-fa5b-b8af-5134e8246fe9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "daca1c6a-5f85-6046-36dd-eaf8fba3df01"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d1b0f812-83ff-8722-54dd-efa43c989af0",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_KethericHound_Hound_AskedAboutScent"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "28e8f43a-2b4f-4623-8b4e-b1cb918a62ce",
+              "Text": {
+                "Handle": "h3f2f84bfg97a4g4d4bgaf96g8340992faf22",
+                "Value": "My scent seemed to trigger a memory in you. What was it?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N231",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3215;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "9e303e8c-7c5b-4a3a-ba97-83add21185f6": {
+      "RollSuccess": false,
+      "UUID": "9e303e8c-7c5b-4a3a-ba97-83add21185f6",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0b893f82-9f67-4884-b629-868dc44b334f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N21",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;672",
+        "sourcetemplate": ""
+      }
+    },
+    "a2a2bb9f-7155-8cb4-7c07-22539245b3af": {
+      "UUID": "a2a2bb9f-7155-8cb4-7c07-22539245b3af",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "49652938-44c4-2c4a-785c-76bd0776d0af"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01e2ae8a-17d7-4e42-861b-2747bbb59e40",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_TakingIsobel_State_HasSeluneOintment"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b18d9a1-fbad-5106-c428-38caae51c18c",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_SmelledBlessing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2cce18f5-f0f0-4e66-8d56-d7665d325a58",
+              "Text": {
+                "Handle": "h2184eb57gdfb4g48cag9cd7g532105ecd319",
+                "Value": "<i>Stay still and let her smell you.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N159",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Isobel's Blessing",
+        "position": "655;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "a47f66cf-67d0-6bdc-a624-c0b41be87106": {
+      "RollSuccess": true,
+      "UUID": "a47f66cf-67d0-6bdc-a624-c0b41be87106",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8aac0d07-5aa2-802d-456a-250f4d1b5b63"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N175",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "a48fd86b-855f-3716-f6fa-e162dc0daf0e": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "a48fd86b-855f-3716-f6fa-e162dc0daf0e",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5fbf444c-e184-eaef-61c0-1747e294b8bf",
+        "d6f6605a-d90f-e16b-4ba2-ae0e872cd2a3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dbfabb9b-f4dc-41af-851c-be4b68f68b98",
+              "Text": {
+                "Handle": "h2c794337g90c5g40dbg9b3bg48f8cae2b588",
+                "Value": "To serve Ketheric - as loyally as you do."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N212",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Deception",
+        "position": "2255;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "a8124bb8-bc71-9428-1eb1-9e2ab1939e44": {
+      "SourceNode": "d92c7d15-6c8c-613e-2b63-e3fe7f573669",
+      "UUID": "a8124bb8-bc71-9428-1eb1-9e2ab1939e44",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N222",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "2895;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "abc1abdc-ee37-e594-52d7-a09af1a78d8b": {
+      "UUID": "abc1abdc-ee37-e594-52d7-a09af1a78d8b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5d0def51-d553-9beb-69d4-b0e70bd37c15"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "91887cdd-816c-4071-8e70-701c07348376",
+              "Text": {
+                "Handle": "hbb85c051gd62bg46b7gba07gf082d41eadd4",
+                "Value": "Do you take me for a teething pup? Get that out of my face."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N128",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "ac2db14c-4872-24b0-b57f-a536f83f67c8": {
+      "RollSuccess": true,
+      "UUID": "ac2db14c-4872-24b0-b57f-a536f83f67c8",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4427e7ad-7a2d-44f7-1e4a-5aeede278491"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N45",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "b1acf7b9-1629-63ac-7e5f-0a00eb858f95": {
+      "UUID": "b1acf7b9-1629-63ac-7e5f-0a00eb858f95",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d180e1d8-2d50-3bef-d0fc-bcfc068bf62e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e427c277-164f-4d58-b503-4d7982af941b",
+              "Text": {
+                "Handle": "h8664d5ccgda21g4a8cg85cbgd0ebaf95be59",
+                "Value": "Since my master brought me back... this place smells wrong. His family is gone, replaced by bootlickers and beasts."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N161",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "b3f65703-2348-3b40-4aba-1cd9f8e31051": {
+      "RollSuccess": true,
+      "UUID": "b3f65703-2348-3b40-4aba-1cd9f8e31051",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d576fedd-daf5-2b6e-4105-8f61cb157de3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N196",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "b41a3537-b517-fa3b-707b-c8d01b0e3fd8": {
+      "UUID": "b41a3537-b517-fa3b-707b-c8d01b0e3fd8",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bb461d3c-e2ef-edcd-2539-996497eef182"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "77f170fd-5ebf-4209-a077-dcf269f91247",
+              "Text": {
+                "Handle": "hbf4e25d4g1450g49adg93cfg02136f493c57",
+                "Value": "To make sure your master dies. Screaming, preferably."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N156",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2255;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "b5dfacf0-3ebb-472c-af63-ebb15271ae53": {
+      "UUID": "b5dfacf0-3ebb-472c-af63-ebb15271ae53",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c1a11e24-f573-b76c-46e3-df2f547fb87c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6808c06b-b509-4231-b114-605c3fa11030",
+              "Text": {
+                "Handle": "h1f312c67g5971g48bbg89a1gb14613cbbc0a",
+                "Value": "You'd be the first of the General's soldiers brave enough to try."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "b64e11ac-e3bc-4ff2-9ed9-0eab3630ad84": {
+      "RollSuccess": true,
+      "UUID": "b64e11ac-e3bc-4ff2-9ed9-0eab3630ad84",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "09d9cbb9-7666-4262-a5ee-6f90880633bd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N7",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "b7c0a606-fc13-554e-5227-71d67031bf60": {
+      "UUID": "b7c0a606-fc13-554e-5227-71d67031bf60",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cb700236-dfd8-59e0-0383-2f1e0b4696a2",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_Intimidated"
+            },
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "602a0ea1-07ee-4d23-8246-ff74a4bcbe6e",
+              "Text": {
+                "Handle": "hd0bd7cc9ga4a8g43e5g89a8g9f4aa8b3f5b3",
+                "Value": "*Growl.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N206",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog growling",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Non-SwA, HasMet, Intimidated",
+        "position": "15;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "bb461d3c-e2ef-edcd-2539-996497eef182": {
+      "UUID": "bb461d3c-e2ef-edcd-2539-996497eef182",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "04ae8eef-fb7a-4e2c-820f-0244ba434956",
+              "Text": {
+                "Handle": "h5423e363g2e6fg4147ga5dagd0808591dfa1",
+                "Value": "There will be no screams from you, stranger - not when I take your throat."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N194",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "bccd3690-10c0-5d4d-bd2f-59a00723e2d6": {
+      "UUID": "bccd3690-10c0-5d4d-bd2f-59a00723e2d6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0a06122c-213a-a274-fd55-1cb639c409c0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3eb9b2f6-eb7d-4c88-b2fb-48dad29116fd",
+              "Text": {
+                "Handle": "h71c0aa83g6a66g4a04g968egd94340b35af3",
+                "Value": "No! He may have changed, but he is still my master. I cannot let you pass."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N218",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "bef08da8-24cf-450f-9c59-ed3a10122c27": {
+      "UUID": "bef08da8-24cf-450f-9c59-ed3a10122c27",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cf698c5f-a667-43b3-9acc-7588a08762c3",
+              "Text": {
+                "Handle": "h821fd01cg0d23g4924g96f4g94f4ea6fc38a",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "bf545575-38c1-e68e-cf8d-d8beffda83c5": {
+      "UUID": "bf545575-38c1-e68e-cf8d-d8beffda83c5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5064e082-b1a5-67b1-43fb-50d239adcbca",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_LoweredDC"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "082b85a0-a0eb-4cd6-95e2-c56b1489b6b5",
+              "Text": {
+                "Handle": "h1f5a3d2cgda36g4a19gabd0ga7c4a4ec41fc",
+                "Value": "*Then the beast shakes its head, a ferocious war-hound once more. Though perhaps not <i>quite</i> as ferocious as before.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N173",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "c17b20cb-de20-13c0-1031-43dfbfe1a4f4": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "c17b20cb-de20-13c0-1031-43dfbfe1a4f4",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f1782653-1b13-43f7-ae93-8fcc38c5b3fd",
+        "9e303e8c-7c5b-4a3a-ba97-83add21185f6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5064e082-b1a5-67b1-43fb-50d239adcbca",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_LoweredDC"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7331199-7991-46ee-85de-c64654c5b080",
+              "Text": {
+                "Handle": "hf9e4db05g313cg4182g9a33ga812d32efb72",
+                "Value": "<i>Lower your eyes in respect.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N184",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "AnimalHandling_DCLOWERED",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    },
+    "c1a11e24-f573-b76c-46e3-df2f547fb87c": {
+      "UUID": "c1a11e24-f573-b76c-46e3-df2f547fb87c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dfbd9277-91e6-48bc-9ed2-6e46bd0c0a07",
+              "Text": {
+                "Handle": "hf7030d67gbcc3g469dga42fg105092e93e66",
+                "Value": "Hm. Hmmm... All right, that's enough."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[REUSE] Existing animation",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Re-use animation from player petting Scratch at camp.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N201",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Scratching undead dog foley (hands against bone and metal)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "c1a12819-9dc6-4988-b38b-ce0fecb86532": {
+      "UUID": "c1a12819-9dc6-4988-b38b-ce0fecb86532",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "437937c4-972a-4bcd-1e41-91365778981b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7cf05f98-4a07-4895-80b8-347fe5eb424d",
+              "Text": {
+                "Handle": "hef995caegb94eg4b6cga679g7844d7e277ed",
+                "Value": "*The hound relaxes, clearly accustomed to this show of deference within its master's chamber.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;453",
+        "sourcetemplate": ""
+      }
+    },
+    "c1c5399c-b3da-1452-b3ca-08943de00489": {
+      "UUID": "c1c5399c-b3da-1452-b3ca-08943de00489",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f2cc0d4c-b1b5-4dd2-abf9-93e86528c3a3",
+              "Text": {
+                "Handle": "ha42ce492gdf43g4963gb18fg3c825aee9608",
+                "Value": "*Perhaps your form was sloppy. Or perhaps the creature simply wants to taste your blood.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N81",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog growls deeper",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "c9149b12-8bfe-6791-70c9-bd3c62b1d167": {
+      "UUID": "c9149b12-8bfe-6791-70c9-bd3c62b1d167",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "abc1abdc-ee37-e594-52d7-a09af1a78d8b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c063cc0d-2d9c-4fdc-97ba-75148e71d36a",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_KethericHound_State_HasScratchBall"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "7fbed0d4-cabc-4a9d-804e-12ca6088a0a8",
+              "value": true,
+              "paramval": 1,
+              "Name": "HUMANOID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "41f5464a-29ab-41ff-b52a-7927bf07d40f",
+              "Text": {
+                "Handle": "hf7877619g880fg4bf4g9065g4b13c1220420",
+                "Value": "<i>Show her Scratch's ball.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N103",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "c9e3b090-2873-49b6-aac5-518351de51b9": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "9d1f2171-fef1-4c03-9e83-523485174c46",
+      "DifficultyClassValue": 6,
+      "UUID": "c9e3b090-2873-49b6-aac5-518351de51b9",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b64e11ac-e3bc-4ff2-9ed9-0eab3630ad84",
+        "48d54521-6cfe-4d94-8b51-d6219b7bfdd4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "eb8eb7a8-51a1-43d9-ad99-9a8982d4a632",
+              "Text": {
+                "Handle": "h317ef752ge689g4018gb7a0g73845e51a20b",
+                "Value": "I'm just exploring the tower. I mean no harm."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "655;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "ccfb48e5-33e7-54c4-ef33-4f2eb541d4df": {
+      "UUID": "ccfb48e5-33e7-54c4-ef33-4f2eb541d4df",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "66d67cbf-5efc-ad66-7d4b-b64694bcb24a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "23a12921-2add-42c7-91fa-6500f10b44b7",
+              "Text": {
+                "Handle": "h3e1f941egcaeag480cg8075gb5df076b3d7f",
+                "Value": "I only want to stop the Absolute."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N140",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2255;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "d180e1d8-2d50-3bef-d0fc-bcfc068bf62e": {
+      "UUID": "d180e1d8-2d50-3bef-d0fc-bcfc068bf62e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a48fd86b-855f-3716-f6fa-e162dc0daf0e",
+        "ccfb48e5-33e7-54c4-ef33-4f2eb541d4df",
+        "2687175e-1d33-0af0-1a3b-ba90b33a10ef",
+        "b41a3537-b517-fa3b-707b-c8d01b0e3fd8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "99484af5-f4c0-4d3f-8b23-baf8431e0053",
+              "Text": {
+                "Handle": "hb8cf3d03gcfd9g4c56g9d80g46e1492fa359",
+                "Value": "You are neither. So tell me true - what is your purpose here?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N136",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "d576fedd-daf5-2b6e-4105-8f61cb157de3": {
+      "UUID": "d576fedd-daf5-2b6e-4105-8f61cb157de3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cb700236-dfd8-59e0-0383-2f1e0b4696a2",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_Intimidated"
+            },
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "74ff7a72-5803-4338-8553-720ce052a746",
+              "Text": {
+                "Handle": "h1012d351gaae3g4163ga078gba439554e25e",
+                "Value": "...Hmph. Walk carefully, then. Or I will learn exactly what True Soul tastes like."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N198",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "intimidated, but giving a parting shot",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "d6870f17-a9f5-9909-e79b-caa9ff345552": {
+      "UUID": "d6870f17-a9f5-9909-e79b-caa9ff345552",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "15218d46-09fa-484f-9087-06a1dd6c8aba"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b7bfdb22-1452-460c-939c-6ec3c20ac2d8",
+              "Text": {
+                "Handle": "h2efd4a39gb76fg4a66gbdbeg08a312bd20f2",
+                "Value": "*Warily, it watches you approach. There's no flesh or fur to scratch at, only bone and cold metal...*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[REUSE] existing animation",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N200",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Scratching undead dog foley (hands against bone and metal)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "d6f6605a-d90f-e16b-4ba2-ae0e872cd2a3": {
+      "RollSuccess": false,
+      "UUID": "d6f6605a-d90f-e16b-4ba2-ae0e872cd2a3",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4d34fa25-f254-c881-bef9-80100d84a16d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N214",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2575;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "d728783f-3389-3f17-e2ce-432fc349813d": {
+      "UUID": "d728783f-3389-3f17-e2ce-432fc349813d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ad8f941c-dc43-4c55-99fc-74aecc0ba6af",
+              "Text": {
+                "Handle": "h6609bc10g7baeg4362gbfdfg61d56e8ba707",
+                "Value": "...I do not know which army you fight for, but it is <i>not</i> my master's."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "nonplussed at our terrible salute, attacks",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "d92c7d15-6c8c-613e-2b63-e3fe7f573669": {
+      "UUID": "d92c7d15-6c8c-613e-2b63-e3fe7f573669",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "32babe6a-1ade-7447-de12-39031a87d528",
+        "2f738362-6b73-d971-d98a-907c0215defa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b18d9a1-fbad-5106-c428-38caae51c18c",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_SmelledBlessing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f21bfec7-96bd-4c08-b5be-d046a43a4a1b",
+              "Text": {
+                "Handle": "hf97c1a96gca03g4c47gaa43ga633a294cc7c",
+                "Value": "Good. Death itself cannot release you from that duty. Now be about your business, whatever it is."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N215",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Satisfied",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "d96b53da-e6dd-740e-d48b-16ed343b986b": {
+      "UUID": "d96b53da-e6dd-740e-d48b-16ed343b986b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bf545575-38c1-e68e-cf8d-d8beffda83c5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6e426864-d80a-4e7a-ab17-25ea35e8cd7b",
+              "Text": {
+                "Handle": "h9f7fb7d7g543ag46afg8cf1g4ba5c80364b5",
+                "Value": "*Scratch's scent lies heavy on the toy - the scent of play, comfort, safety. For a moment, the skeletal tail twitches.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N179",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "dab65619-cd2c-46cf-a955-993942aa7502": {
+      "UUID": "dab65619-cd2c-46cf-a955-993942aa7502",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4af56d97-fda4-485a-9b1a-1140a044f985",
+              "Text": {
+                "Handle": "h9dfbd03eg4948g4852gb8a5g22787d80640d",
+                "Value": "No. You are not."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "daca1c6a-5f85-6046-36dd-eaf8fba3df01": {
+      "UUID": "daca1c6a-5f85-6046-36dd-eaf8fba3df01",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6b865767-4808-3326-8879-16a5ddc33309"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22cd622d-47d6-4f40-a510-a67fa52882ba",
+              "Text": {
+                "Handle": "hbffd68efg3b99g4a5cgbbf7g36611df53d7e",
+                "Value": "Not <i>your</i> scent - Selûnite magic on your skin. The General once smelled that way, when his daughter still lived."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N203",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "dd72abeb-d2dd-2bd8-82df-d81fb84a817e": {
+      "UUID": "dd72abeb-d2dd-2bd8-82df-d81fb84a817e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "851a7fdb-63cd-438b-9c9a-6794e47ea886",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_KethericHound_Event_GiveFood"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5d14a065-1c7e-4833-8e47-08f367c2b4a7",
+              "Text": {
+                "Handle": "hf9468ca9g2c58g4b27g85cfg476d4ac703dc",
+                "Value": "*The dog's growl only deepens, echoing in the cavity where its stomach used to be.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N118",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "[EG] Undead dog growls deeper",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "dea1198f-8651-9a44-aed9-7ad03e77c91e": {
+      "UUID": "dea1198f-8651-9a44-aed9-7ad03e77c91e",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d96b53da-e6dd-740e-d48b-16ed343b986b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b18d9a1-fbad-5106-c428-38caae51c18c",
+              "value": false,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_SmelledBlessing"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "c063cc0d-2d9c-4fdc-97ba-75148e71d36a",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_KethericHound_State_HasScratchBall"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a03dd24b-379a-44b8-bcd5-1ac3c79e5846",
+              "Text": {
+                "Handle": "h0752e93cg7daag45fbg9268g32e39a6c940a",
+                "Value": "<i>Wave Scratch's ball.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N96",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Have Scratch's ball",
+        "position": "655;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "edd87d09-c189-5093-c39d-12e6660873f3": {
+      "UUID": "edd87d09-c189-5093-c39d-12e6660873f3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7fdd017-0ded-4adb-87b7-98a249bc25a1",
+              "Text": {
+                "Handle": "h847b67e8gd1b9g4027gb44ag52bb1b9e1f4c",
+                "Value": "You will not walk out again."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N199",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "f1782653-1b13-43f7-ae93-8fcc38c5b3fd": {
+      "RollSuccess": true,
+      "UUID": "f1782653-1b13-43f7-ae93-8fcc38c5b3fd",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c1a12819-9dc6-4988-b38b-ce0fecb86532"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N20",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "f3c08d17-8271-4e61-911a-c58d9432f930": {
+      "UUID": "f3c08d17-8271-4e61-911a-c58d9432f930",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d6870f17-a9f5-9909-e79b-caa9ff345552"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8d756785-492d-4f75-859f-c9357ee38a12",
+              "Text": {
+                "Handle": "hb9f6b9b4g2682g46cagb164g4923fded821b",
+                "Value": "<i>Gently reach out to pet the hound.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N34",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f4c8375a-8f31-4386-8b51-660e2c96e647": {
+      "UUID": "f4c8375a-8f31-4386-8b51-660e2c96e647",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "55bbdbed-a86d-34f6-a376-a50c5eb5aaaf",
+        "56e5baea-a383-481b-a9d2-bd91236910a2",
+        "bef08da8-24cf-450f-9c59-ed3a10122c27"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "da8d23e7-cadf-4d8c-a2f6-c0718d9a522e",
+              "Text": {
+                "Handle": "h73aba07fgb0dcg4028gbfceg7210174a6410",
+                "Value": "Yes, soldier?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "After Success SwA",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "f6a7c720-75b4-3227-67c1-1941b0b244c4": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "91fb3598-dd68-4fa8-a306-2c7284709b08",
+      "DifficultyClassValue": 18,
+      "UUID": "f6a7c720-75b4-3227-67c1-1941b0b244c4",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b3f65703-2348-3b40-4aba-1cd9f8e31051",
+        "462ee6e5-1016-90a6-f0d3-25dc8cbaf227"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6d0672b5-7416-4ff1-8413-72a4d5b505fb",
+              "Text": {
+                "Handle": "hd21b8fd9ge9abg465fg85e0g858b8b73f908",
+                "Value": "Down, lapdog. A True Soul walks where they please."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N195",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Intimidation",
+        "position": "655;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "f79a6f65-3698-459b-f909-6fe095adeab3": {
+      "UUID": "f79a6f65-3698-459b-f909-6fe095adeab3",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "18d22dab-8d1d-405e-b02d-7d9afbf7536f",
+              "Text": {
+                "Handle": "hee71cc2fga8c5g4c5cga149g044d8278e141",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N232",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3215;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "f85072b7-edd5-e76a-bbe6-90c8f80aeb37": {
+      "SourceNode": "3c91cb08-7851-045d-669b-62d9f44d9233",
+      "UUID": "f85072b7-edd5-e76a-bbe6-90c8f80aeb37",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "93059ada-d3bc-fa5b-b8af-5134e8246fe9",
+        "f79a6f65-3698-459b-f909-6fe095adeab3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8b18d9a1-fbad-5106-c428-38caae51c18c",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_SmelledBlessing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d62b15e4-c363-471e-90c4-707eb8327f7b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_KethericHound_State_TameSuccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N227",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "2895;4395",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "56704bb3-d131-8e23-f2fe-0178f98c39aa",
+      "Index": 0,
+      "List": [
+        "9c7a8f97-bae8-4509-ad10-a67c17202a31"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Squire",
+        "Type": "character",
+        "MapKey": "9c7a8f97-bae8-4509-ad10-a67c17202a31",
+        "Name": "S_MOO_KethericHound",
+        "ParentTemplateId": null,
+        "TemplateName": "1d7a1689-9707-4358-bc2b-075e8520cef8"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "19297e12-6443-c898-1b60-1fb890fea9eb",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The players encounters Ketheric's undead hound in his chambers while sneaking around the tower. She's territorial - but if she smells Isobel's blessing on us she'll recognise Selunite magic. She reveals that she misses the way her master used to be."
+}

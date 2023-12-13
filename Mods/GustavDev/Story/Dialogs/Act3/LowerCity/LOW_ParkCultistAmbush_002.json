@@ -1,0 +1,966 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_ParkCultistAmbush_002.lsj",
+  "UUID": "8956e860-d67b-1d17-9310-8b749df5df19",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "2": -1,
+    "3": -1,
+    "4": -1
+  },
+  "RootNodes": [
+    "5fa53fa2-a9cf-74ff-d271-913c10d37ad9",
+    "1038b2d2-0cfe-4cff-822b-f331e4bad140"
+  ],
+  "Nodes": {
+    "1038b2d2-0cfe-4cff-822b-f331e4bad140": {
+      "UUID": "1038b2d2-0cfe-4cff-822b-f331e4bad140",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3faf1b79-347b-9cd8-f2d9-b426d17916ea",
+        "842ccd48-006f-2c06-0cf2-39c7ff904313"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "409a406d-3a19-45cc-aadf-4d16dc53c777",
+              "Text": {
+                "Handle": "haf5f4fc3ga1d3g4f96g82abge6fd18e9cbf6",
+                "Value": "Keep out of this, Captain. Do not forget who you serve."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "Gestures to his temple on 'who you serve', in reference to a tadpole.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Dismissive",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "1aa2cd07-c233-e825-6e25-1244fbbb8dd9": {
+      "JumpTarget": "620eeddb-0826-4e5b-80ee-02b9a9342fe0",
+      "JumpTargetPoint": 1,
+      "UUID": "1aa2cd07-c233-e825-6e25-1244fbbb8dd9",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N13",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "27b44e13-dbe5-b6af-aecc-17704cf2f0b1": {
+      "SourceNode": "ea500e5d-03c2-4212-806d-623dd1d6f064",
+      "UUID": "27b44e13-dbe5-b6af-aecc-17704cf2f0b1",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cde0a074-fa2a-44a5-8025-77a86ff94ce7",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_Park_Event_PlayersSidedWithCutlists"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ea42c40b-c4e9-40a5-bf67-a51f4466d766",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_Park_Event_GuardsJoinCombat"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 1,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N16",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "1295;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "3faf1b79-347b-9cd8-f2d9-b426d17916ea": {
+      "UUID": "3faf1b79-347b-9cd8-f2d9-b426d17916ea",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "920479f6-cf71-08d6-9b06-ad872ca0ca5f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2d35538a-473f-6b01-60ff-6634714e5c1d",
+              "value": true,
+              "paramval": 2,
+              "Name": "LOW_Park_GuardPreCombat_Event_WarnedAgainstInterference"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8f74d144-041e-4035-a9ac-72f41fc32de7"
+                ],
+                "TagNames": [
+                  "MALE"
+                ]
+              }
+            ],
+            "RuleString": "MALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "57424ef1-bf88-496b-bf81-01cc8d3d8334",
+              "Text": {
+                "Handle": "h7a2928dcgc5aag4f93gad9dga850db0ed411",
+                "Value": "Of course, apologies. I warned him not to interfere. I..."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3806477c-65a7-4100-9f92-be4c12c4fa4f"
+                ],
+                "TagNames": [
+                  "FEMALE"
+                ]
+              }
+            ],
+            "RuleString": "FEMALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b61fda6-8b34-4773-b1bf-010eb955c5cd",
+              "Text": {
+                "Handle": "hd0b587d6g97e7g4e13g98abgcdda73894e4a",
+                "Value": "Of course, apologies. I warned her not to interfere. I..."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5b977ce9-3de0-4d87-806a-9385ff46e142",
+              "Text": {
+                "Handle": "h511a6d2cge455g4e1dgafbdg5152b4ee0cc9",
+                "Value": "Of course, apologies. I warned them not to interfere. I..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Admonished/servile, then trailing off at the end, words failing her.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "WARNED PLAYER IN PREVIOUS DIALOGUE",
+        "position": "-305;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "46c4ad4c-7c9f-89b9-a643-67acc555d036": {
+      "UUID": "46c4ad4c-7c9f-89b9-a643-67acc555d036",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ea500e5d-03c2-4212-806d-623dd1d6f064",
+        "27b44e13-dbe5-b6af-aecc-17704cf2f0b1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fa4266ed-d2b9-414f-ad42-00b5d4a3bd7a",
+              "Text": {
+                "Handle": "hef4d2e93g783dg46a9gb9eagded0a2b354cf",
+                "Value": "<i>And we. Do not. Serve</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A halting, croaked manner. (She is being remotely possessed by a powerful netherbrain, which now speaks through her).",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "4fd07c33-b662-d081-a6cf-951e599f0a90": {
+      "UUID": "4fd07c33-b662-d081-a6cf-951e599f0a90",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "620eeddb-0826-4e5b-80ee-02b9a9342fe0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cba2686d-6b4e-0fe9-0ae6-0fcc3adb5bc6",
+              "value": false,
+              "paramval": 2,
+              "Name": "LOW_Park_GuardPreCombat_Event_TadpoleRecognition"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1eec74e8-3673-4500-abec-57b7ed8469ed",
+              "value": true,
+              "paramval": 2,
+              "Name": "ILLITHID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cba2686d-6b4e-0fe9-0ae6-0fcc3adb5bc6",
+              "value": true,
+              "paramval": 2,
+              "Name": "LOW_Park_GuardPreCombat_Event_TadpoleRecognition"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "1eec74e8-3673-4500-abec-57b7ed8469ed",
+                  "11491bda-fa57-44ed-a306-a13fdf8e3b82"
+                ],
+                "TagNames": [
+                  "ILLITHID",
+                  "TRUESOUL"
+                ]
+              }
+            ],
+            "RuleString": "ILLITHID or TRUESOUL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "2d6880b6-e91e-4df6-bea4-ec1c6987771d",
+              "Text": {
+                "Handle": "ha8cedda3gb958g430cg9d67g0d8bdbce8b5a",
+                "Value": "*You feel an all-too-familiar squirm in the recesses of your mind - the Fist has a tadpole. But something's... off.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "Only if the player did not have a moment of tadpole recognition with Cracklewall already",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ILLITHID/TRUE SOUL",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "5fa53fa2-a9cf-74ff-d271-913c10d37ad9": {
+      "UUID": "5fa53fa2-a9cf-74ff-d271-913c10d37ad9",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "6bf7ced9-cf11-2c70-2fe6-8e491fb6812e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cde0a074-fa2a-44a5-8025-77a86ff94ce7",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_Park_Event_PlayersSidedWithCutlists"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3abbff7c-00fd-42dc-b1d4-272d71dfcba2",
+              "Text": {
+                "Handle": "h4d59324ag36eeg43a8ga101g10342c669e42",
+                "Value": "Join us, captain. Your service is welcome."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "PLAYER SIDED WITH CULTISTS",
+        "position": "-625;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "620eeddb-0826-4e5b-80ee-02b9a9342fe0": {
+      "UUID": "620eeddb-0826-4e5b-80ee-02b9a9342fe0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "46c4ad4c-7c9f-89b9-a643-67acc555d036"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f2ee62df-16bb-4a29-947b-1e5503e76436",
+              "Text": {
+                "Handle": "h0b26ca11g1113g49c2g9a19g4c1b071494b9",
+                "Value": "<i>Not I. We. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Cracklewall's face twitches and grimaces, before speaking in a halting, croaked manner.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A strained, angry croak (She is being remotely possessed by a powerful netherbrain, which now speaks through her).",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "6bf7ced9-cf11-2c70-2fe6-8e491fb6812e": {
+      "UUID": "6bf7ced9-cf11-2c70-2fe6-8e491fb6812e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "920479f6-cf71-08d6-9b06-ad872ca0ca5f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "87488d0a-ffcd-4b8a-ac03-6ef48d3c9b6f",
+              "Text": {
+                "Handle": "ha2c9eee1gc0b0g4737g97dcgedb9a3ed8cc1",
+                "Value": "I live to serve."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "as if hypnotised",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "842ccd48-006f-2c06-0cf2-39c7ff904313": {
+      "UUID": "842ccd48-006f-2c06-0cf2-39c7ff904313",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a9c8183c-6a9c-d347-8226-7b68be9f99c9",
+        "4fd07c33-b662-d081-a6cf-951e599f0a90",
+        "1aa2cd07-c233-e825-6e25-1244fbbb8dd9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "705cebed-5968-406a-83fe-1206de638580",
+              "Text": {
+                "Handle": "h7e763c28gb8bcg4a18g9934gf9bcca1f0d8d",
+                "Value": "Of course, I just thought you might need assistance. I..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Admonished/servile, then trailing off at the end, words failing her.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "920479f6-cf71-08d6-9b06-ad872ca0ca5f": {
+      "JumpTarget": "842ccd48-006f-2c06-0cf2-39c7ff904313",
+      "JumpTargetPoint": 2,
+      "UUID": "920479f6-cf71-08d6-9b06-ad872ca0ca5f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N11",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "a9c8183c-6a9c-d347-8226-7b68be9f99c9": {
+      "UUID": "a9c8183c-6a9c-d347-8226-7b68be9f99c9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "620eeddb-0826-4e5b-80ee-02b9a9342fe0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cba2686d-6b4e-0fe9-0ae6-0fcc3adb5bc6",
+              "value": true,
+              "paramval": 2,
+              "Name": "LOW_Park_GuardPreCombat_Event_TadpoleRecognition"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1eec74e8-3673-4500-abec-57b7ed8469ed",
+              "value": true,
+              "paramval": 2,
+              "Name": "ILLITHID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "1eec74e8-3673-4500-abec-57b7ed8469ed",
+                  "11491bda-fa57-44ed-a306-a13fdf8e3b82"
+                ],
+                "TagNames": [
+                  "ILLITHID",
+                  "TRUESOUL"
+                ]
+              }
+            ],
+            "RuleString": "ILLITHID and TRUESOUL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "cd3585c5-e2d6-44f5-bd26-fe0a8f72127c",
+              "Text": {
+                "Handle": "h330eef2bg3672g4282g8bdeg38318688e93a",
+                "Value": "*Again, you feel her tadpole, but something's... off.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ILLITHID/TRUE SOUL",
+        "position": "335;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "ea500e5d-03c2-4212-806d-623dd1d6f064": {
+      "UUID": "ea500e5d-03c2-4212-806d-623dd1d6f064",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cde0a074-fa2a-44a5-8025-77a86ff94ce7",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_Park_Event_PlayersSidedWithCutlists"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "553b1f12-e1b1-401d-930c-0e01a2f9fbb5",
+              "Text": {
+                "Handle": "hf499d383ga51fg4d6cgb496gb5058304f863",
+                "Value": "<i>Defective</i>. Very well - another offering to Bhaal."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "Sneering",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Pronounced 'bawl'. Recognising something's amiss.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "990fbb0f-0347-4337-b227-edf30dda147f",
+      "Index": 0,
+      "List": [
+        "980f2182-100a-4c30-9965-5bbae804a511"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Manip Edenosa",
+        "Type": "character",
+        "MapKey": "980f2182-100a-4c30-9965-5bbae804a511",
+        "Name": "S_LOW_Park_Edenosa_Cracklewall",
+        "ParentTemplateId": null,
+        "TemplateName": "de3de395-7474-4439-85ab-3eb6d5cc1cb1"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c2a250bb-b369-46bb-baec-1ddf8ec81fba",
+      "Index": 1,
+      "List": [
+        "ecb818a4-d67d-4e7f-b917-552654a4cb61"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Reaper of Bhaal Clotilde",
+        "Type": "character",
+        "MapKey": "ecb818a4-d67d-4e7f-b917-552654a4cb61",
+        "Name": "S_LOW_Park_Bhaal_Leader",
+        "ParentTemplateId": null,
+        "TemplateName": "2745bece-b5f0-4d22-920f-c0decdcf5a18"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ff477637-ef43-44a4-b558-dc7b4c19cbca",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Mid combat dialogue between the Bhaal Cultists who are attacking the Players and tadpoled Flaming Fist Mercenaries who come in to aid the Players. Players mostly just watch the exchange and learn about the infighting between the tadpoled Absolutists and the Bhaal Cultists"
+}

@@ -1,0 +1,191 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Epilogue/SCE_Minthara_Debrief.lsj",
+  "UUID": "a664352f-0926-503e-3d61-afec4be40e3d",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "3a5c403d-e62b-4c89-b5c1-5dd154b224ab"
+  ],
+  "Nodes": {
+    "2878e641-15f1-f89b-2b9e-911dcd6b9c40": {
+      "UUID": "2878e641-15f1-f89b-2b9e-911dcd6b9c40",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "38b1311f-6508-485e-a255-f99c5eff0b58",
+              "Text": {
+                "Handle": "hff438a6dgb144g471eg91e1g9a8c08307716",
+                "Value": "| Baldur's Gate awaits. |"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N62",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "3a5c403d-e62b-4c89-b5c1-5dd154b224ab": {
+      "UUID": "3a5c403d-e62b-4c89-b5c1-5dd154b224ab",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2878e641-15f1-f89b-2b9e-911dcd6b9c40"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "73470abc-5503-101d-be8d-fdb391458e4e",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCE_Minthara_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "6efe1069-ca03-cccd-68eb-ffe0cc0e4169",
+              "value": true,
+              "paramval": null,
+              "Name": "SCE_Debrief_State_PartyDebriefed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7301cb71-b277-4c9b-a56e-4e78cb64ac62",
+              "Text": {
+                "Handle": "h14385249g7b6eg4db7gb717g8e71bd157843",
+                "Value": "| Ketheric is defeated, but his army marches on. To rid ourselves of this parasite, we will have to give chase. |"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "99604f57-31f7-4a8b-bd37-a0e4141da1fe",
+      "Index": 0,
+      "List": [
+        "25721313-0c15-4935-8176-9f134385451b"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Nightwarden Minthara",
+        "Type": "character",
+        "MapKey": "25721313-0c15-4935-8176-9f134385451b",
+        "Name": "S_GOB_DrowCommander",
+        "ParentTemplateId": null,
+        "TemplateName": "9d85d0f6-5231-4738-a674-bf28ff19e515"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f19016ca-0d74-40fb-bae8-4f35fa12d47c",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Minthara is present and gives the debrief to the player after the mindflayer colony."
+}

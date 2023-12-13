@@ -1,0 +1,1176 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Town/TWN_CentralSquare_PlaqueOfIntelligence.lsj",
+  "UUID": "cde5ecb2-8885-77a2-205a-82f4921255e4",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "141cc42e-1630-3e42-82b8-5e7ed1feaf92",
+    "ecdebcc2-36d5-ea91-bde8-7bef57a488f7",
+    "beae9ffc-099d-ce4f-43ee-4a54480300c0",
+    "c8dfa8cf-0166-4586-b869-af0ec9b3d8d0",
+    "fa01916d-1215-a7d2-1d77-9041a67b6a96"
+  ],
+  "Nodes": {
+    "141cc42e-1630-3e42-82b8-5e7ed1feaf92": {
+      "UUID": "141cc42e-1630-3e42-82b8-5e7ed1feaf92",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f8921b13-f8c2-47cc-9a4c-88c91adf33b9",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_CentralSquare_State_TrialFailed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6d48f562-7e66-4bea-b2a8-06737a7fd74d",
+              "Text": {
+                "Handle": "h99b53fa2g9db5g4a5bg8113g250b6a27f703",
+                "Value": "*The statue offers you nothing but silence. Whatever secrets it may guard will remain hidden.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N24",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "51a4acaa-8617-4ab2-a765-b09a064677a9": {
+      "UUID": "51a4acaa-8617-4ab2-a765-b09a064677a9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e05022c1-4b8a-4059-99c4-728d8c16c5e9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8eca8027-996c-4c61-bec6-77f853de295b",
+              "value": false,
+              "paramval": 1,
+              "Name": "SHADOWHEART_ENEMYOFSHARPATH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "0d1d64b8-70d6-4702-8643-be348b0f3fc6",
+                  "62f5382a-27c3-441c-bd57-33db4ca00f10",
+                  "642d2aee-e3df-47e3-9f47-bbcd441bb9e0"
+                ],
+                "TagNames": [
+                  "CLERIC_SHAR",
+                  "PALADIN_SHAR",
+                  "REALLY_SHADOWHEART"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_SHAR or PALADIN_SHAR or REALLY_SHADOWHEART"
+          },
+          "TagTexts": [
+            {
+              "LineId": "f7aa636f-ca56-4c41-a2b1-85f121020815",
+              "Text": {
+                "Handle": "h9d034c1ag3ae1g48efg8d06gdf0f4f35e0df",
+                "Value": "<i>You are Shar's child - there is no reason to shy away. Nod in acceptance.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Follower of Shar",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "625b8de1-4615-cb93-feaf-35f89bf1d672": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 1,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "625b8de1-4615-cb93-feaf-35f89bf1d672",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6ff4be27-d0b8-4997-95e6-dfd4aaf96361",
+        "e4a4e242-f464-47f8-b9bf-010b7d5551de"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5",
+              "value": true,
+              "paramval": 1,
+              "Name": "CLERIC"
+            },
+            {
+              "UUID": "8eca8027-996c-4c61-bec6-77f853de295b",
+              "value": false,
+              "paramval": 1,
+              "Name": "SHADOWHEART_ENEMYOFSHARPATH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d569106b-4f3a-42d1-9039-f1743d6a3895",
+              "Text": {
+                "Handle": "h4c9af3b0g3b98g4564gb836g51d030ffbb90",
+                "Value": "<i>Let your faith and devotion guide you - if you are meant to pass this test, you will.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cleric",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "6ff4be27-d0b8-4997-95e6-dfd4aaf96361": {
+      "RollSuccess": true,
+      "UUID": "6ff4be27-d0b8-4997-95e6-dfd4aaf96361",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e05022c1-4b8a-4059-99c4-728d8c16c5e9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N2",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "821b724e-03d3-9971-a819-371371da1e44": {
+      "UUID": "821b724e-03d3-9971-a819-371371da1e44",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "141cc42e-1630-3e42-82b8-5e7ed1feaf92",
+        "ecdebcc2-36d5-ea91-bde8-7bef57a488f7",
+        "beae9ffc-099d-ce4f-43ee-4a54480300c0",
+        "c8dfa8cf-0166-4586-b869-af0ec9b3d8d0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N19",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;15",
+        "sourcetemplate": "",
+        "stateContext": "Player stands before Shar Intelligence statue & plaque."
+      }
+    },
+    "8e4ec583-d20f-4669-8681-38f17d9c603a": {
+      "UUID": "8e4ec583-d20f-4669-8681-38f17d9c603a",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ba723386-6218-4dfb-ba52-a694ff17c516",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_CentralSquare_Event_FailedSave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9a3dacae-91a9-42ad-936a-5ff04a380250",
+              "Text": {
+                "Handle": "h8e252283g27f0g4f78gbd18g66f9598c3118",
+                "Value": "*Your insides seem to churn uneasily. You feel strangely rejected. Strangely <i>unwelcome</i>.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player frowns as the room seems to shudder and darken. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "Three Dark Justiciar undead will appear and attack in gameplay immediately after this",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KB] Subtle negative passive debuff spell",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KB] Subtle negative passive debuff spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ac7de187-92fe-819b-7000-850f03ba8838": {
+      "JumpTarget": "c8dfa8cf-0166-4586-b869-af0ec9b3d8d0",
+      "JumpTargetPoint": 2,
+      "UUID": "ac7de187-92fe-819b-7000-850f03ba8838",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N25",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "beae9ffc-099d-ce4f-43ee-4a54480300c0": {
+      "UUID": "beae9ffc-099d-ce4f-43ee-4a54480300c0",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "eaef5fb6-6aea-a0e0-fefd-3a37aa0db0c9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8eca8027-996c-4c61-bec6-77f853de295b",
+              "value": true,
+              "paramval": 1,
+              "Name": "SHADOWHEART_ENEMYOFSHARPATH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1a4e527a-96a7-4d28-80c3-f2c75ba2deae",
+              "Text": {
+                "Handle": "h664af4bagcb7ag408bga286ge1b20c833e7d",
+                "Value": "*Lady Shar has exiled you. It would be foolish to think you could enjoy any favours found here, surely... yet what do you have to lose from reading on?*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "SH concerned/unsure expression",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N33",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "IS ENEMY OF SHAR",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "bf519d21-504d-49e2-9394-65d7b1d02cc1": {
+      "UUID": "bf519d21-504d-49e2-9394-65d7b1d02cc1",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aae05f48-081a-4111-917d-550f81ef79d4",
+              "Text": {
+                "Handle": "h3fa1d81cgb31eg4491gbe15g5b691b03fde1",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "c5349d4b-d5df-d48c-5750-60ad37b2e9e3": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 2,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "c5349d4b-d5df-d48c-5750-60ad37b2e9e3",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6ff4be27-d0b8-4997-95e6-dfd4aaf96361",
+        "e4a4e242-f464-47f8-b9bf-010b7d5551de"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "10b74e80-a963-420f-8c2a-d518b6aae143",
+              "value": true,
+              "paramval": null,
+              "Name": "CAMP_Shadowheart_State_HadNightsongMeeting"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8eca8027-996c-4c61-bec6-77f853de295b",
+              "value": true,
+              "paramval": 1,
+              "Name": "SHADOWHEART_ENEMYOFSHARPATH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "45873487-f653-4d1c-9abb-f8fc410f6506",
+              "Text": {
+                "Handle": "hcc7e4f4ag56eeg46fdg8a40g2842acd128f0",
+                "Value": "<i>You are clear-headed regarding Shar: she is you foe now. Yet you are not above taking her power.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N39",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ENEMY OF SHAR - HAD MEETING",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "c8dfa8cf-0166-4586-b869-af0ec9b3d8d0": {
+      "UUID": "c8dfa8cf-0166-4586-b869-af0ec9b3d8d0",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "51a4acaa-8617-4ab2-a765-b09a064677a9",
+        "c5349d4b-d5df-d48c-5750-60ad37b2e9e3",
+        "e43dcbf9-7029-1910-085c-134b94bd5d11",
+        "d27699bd-f4e8-40d9-9846-bb2c70dac918",
+        "625b8de1-4615-cb93-feaf-35f89bf1d672",
+        "bf519d21-504d-49e2-9394-65d7b1d02cc1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "64997c75-872e-48b6-892c-50c827940dd4",
+              "value": false,
+              "paramval": 1,
+              "Name": "TWN_CentralSquare_HasMet_PlaqueOfIntelligence"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "64997c75-872e-48b6-892c-50c827940dd4",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_CentralSquare_HasMet_PlaqueOfIntelligence"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8372f09a-191e-4923-94c3-8ceb031e4520",
+              "Text": {
+                "Handle": "h9a070b26g9b3cg447ag8b5dg41bac67f3b5e",
+                "Value": "*Do you accept Shar's test of your intellect?*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player looks at the plaque",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "The text inscribed on a plaque at the base of a Shar statue",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HAS NOT MET STATUE",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d27699bd-f4e8-40d9-9846-bb2c70dac918": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "d27699bd-f4e8-40d9-9846-bb2c70dac918",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6ff4be27-d0b8-4997-95e6-dfd4aaf96361",
+        "e4a4e242-f464-47f8-b9bf-010b7d5551de"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": false,
+              "paramval": 1,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8c0e7e0b-7004-4e09-9d33-2714f7206ef7",
+              "Text": {
+                "Handle": "h3ceb8d76g95e7g4096gb157g250418402b54",
+                "Value": "<i>Nod in acceptance. An untested mind is a dull mind.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT SHADOWHEART",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "e05022c1-4b8a-4059-99c4-728d8c16c5e9": {
+      "UUID": "e05022c1-4b8a-4059-99c4-728d8c16c5e9",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ff2cb0d9-18e7-49c7-81c9-de3b6d004739",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_CentralSquare_State_PlaqueOfIntelligenceActivated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8eca8027-996c-4c61-bec6-77f853de295b"
+                ],
+                "TagNames": [
+                  "SHADOWHEART_ENEMYOFSHARPATH"
+                ]
+              }
+            ],
+            "RuleString": "SHADOWHEART_ENEMYOFSHARPATH"
+          },
+          "TagTexts": [
+            {
+              "LineId": "b4b1ab0c-f2c7-428c-9bdb-0c42dfc43f6b",
+              "Text": {
+                "Handle": "h05250579g3ae4g4bf7g99e2g47f704f43960",
+                "Value": "*You feel a small pulse of energy race up your spine. Though out of favour in this place, your intellect has won you something.*"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9e2fce91-ef46-4dec-9ed9-e15744bffc25",
+              "Text": {
+                "Handle": "hc9eba2dcg759cg4fb4g8d6fg2a1c1d46dc5c",
+                "Value": "*You feel a small pulse of energy race up your spine. And a strange sensation of <i>acceptance</i>.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "A faint purple aura glows from the statue",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KB] Subtle positive passive buff spell",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KB] Subtle positive passive buff spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e43dcbf9-7029-1910-085c-134b94bd5d11": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 2,
+      "RollType": "SavingThrow",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "e43dcbf9-7029-1910-085c-134b94bd5d11",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6ff4be27-d0b8-4997-95e6-dfd4aaf96361",
+        "e4a4e242-f464-47f8-b9bf-010b7d5551de"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "10b74e80-a963-420f-8c2a-d518b6aae143",
+              "value": false,
+              "paramval": null,
+              "Name": "CAMP_Shadowheart_State_HadNightsongMeeting"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8eca8027-996c-4c61-bec6-77f853de295b",
+              "value": true,
+              "paramval": 1,
+              "Name": "SHADOWHEART_ENEMYOFSHARPATH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "833c0581-0d87-4ad3-b51d-5c69cb417ebc",
+              "Text": {
+                "Handle": "he5c87f46gdef3g48b8g8b7fgcfdd89b88743",
+                "Value": "<i>Surely if there is any way to repair your relationship with Lady Shar, your mind is up to the task.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N43",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ENEMY OF SHAR - PRE MEETING",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e4a4e242-f464-47f8-b9bf-010b7d5551de": {
+      "RollSuccess": false,
+      "UUID": "e4a4e242-f464-47f8-b9bf-010b7d5551de",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8e4ec583-d20f-4669-8681-38f17d9c603a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N9",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "eaef5fb6-6aea-a0e0-fefd-3a37aa0db0c9": {
+      "JumpTarget": "c8dfa8cf-0166-4586-b869-af0ec9b3d8d0",
+      "JumpTargetPoint": 2,
+      "UUID": "eaef5fb6-6aea-a0e0-fefd-3a37aa0db0c9",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N34",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "ecdebcc2-36d5-ea91-bde8-7bef57a488f7": {
+      "UUID": "ecdebcc2-36d5-ea91-bde8-7bef57a488f7",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ff2cb0d9-18e7-49c7-81c9-de3b6d004739",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_CentralSquare_State_PlaqueOfIntelligenceActivated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4570c52d-07f5-4ba2-a146-99e6b17396b3",
+              "Text": {
+                "Handle": "h48c4688eg2c7eg448dga247g2cc4efb8f5d3",
+                "Value": "*It seems this statue has nothing to offer. Its challenge has been surmounted.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "A faint purple aura glows from the statue",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KB] A faint purple aura glows from the statue",
+        "collapsed": "False",
+        "logicalname": "STATUE ACTIVATED",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "fa01916d-1215-a7d2-1d77-9041a67b6a96": {
+      "SourceNode": "c8dfa8cf-0166-4586-b869-af0ec9b3d8d0",
+      "UUID": "fa01916d-1215-a7d2-1d77-9041a67b6a96",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ac7de187-92fe-819b-7000-850f03ba8838"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "64997c75-872e-48b6-892c-50c827940dd4",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_CentralSquare_HasMet_PlaqueOfIntelligence"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N17",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (HAS MET STATUE)",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "131dc624-3bc9-491a-b6d8-ca573c779445",
+      "Index": 0,
+      "List": [
+        "28959850-788a-483d-9f4a-74785bba73c1"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Plaque",
+        "Type": "item",
+        "MapKey": "28959850-788a-483d-9f4a-74785bba73c1",
+        "Name": "S_TWN_CentralSquare_PlaqueOfIntelligence",
+        "ParentTemplateId": null,
+        "TemplateName": "85c04e3d-1a3f-4030-a731-545b081a6b76"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2d95ac0b-5903-4193-aed8-8a435857d030",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Secret room in SCL_Main_A, beneath the Central Square. This statue has a dogma of Shar and asks you whether you accept it. Accepting it require a saving throw, on a failure you get a debuff and guardians appear. If you are a follower of Shar / Shadowheart you get have a special option which gives you auto-success."
+}

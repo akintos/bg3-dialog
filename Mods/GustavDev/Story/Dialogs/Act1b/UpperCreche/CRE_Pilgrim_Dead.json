@@ -1,0 +1,2468 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act1b/UpperCreche/CRE_Pilgrim_Dead.lsj",
+  "UUID": "073491ac-4e0a-66b1-bda9-a93edaaa3576",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "e0cd05bf-7775-4929-8ce9-45e52604ce9d",
+    "bf99f28f-bcc3-49cc-8bc7-d9d6e96924ef",
+    "c26af3cc-4543-4b31-9b93-6c7a3fd0a651"
+  ],
+  "Nodes": {
+    "01e1d4bf-aa65-c7c7-e1a8-d57b4a3a48f7": {
+      "UUID": "01e1d4bf-aa65-c7c7-e1a8-d57b4a3a48f7",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N86",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;1110",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "05882d4d-fe84-4131-a8de-f7c8f1628fce": {
+      "UUID": "05882d4d-fe84-4131-a8de-f7c8f1628fce",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a672d40d-3610-4b37-bac4-0da509357080"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "84ecf5df-ba34-4a95-8376-ba51f9fed406",
+              "Text": {
+                "Handle": "he7b2ca8cg71fcg41eeg9d95g3fa4b221c4c0",
+                "Value": "Where are you from?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;453",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "05be3165-3758-4ad9-8047-6a48549177a6": {
+      "UUID": "05be3165-3758-4ad9-8047-6a48549177a6",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "770b2b4d-e52c-47cb-b809-cfb847e22ee0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "134b1939-0251-32a2-4de9-dd6595ae35ac",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_AskedWhyHere"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0a5d3e11-ef2e-cd75-14e8-4b19c2e3ab17",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_MentionedBlood"
+            },
+            {
+              "UUID": "93e91d90-b8d8-80d0-45bc-ce696a70d4f8",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_MentionedRhyme"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "56e6c937-72c0-4e8f-b0bb-39910d3ec1e6",
+              "Text": {
+                "Handle": "hae6fbbfegadb1g4714gbfadg5a17d0bad7d4",
+                "Value": "What did you remember?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;891",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "13e33b28-0eb5-4034-a5f7-15b7e616cb20": {
+      "UUID": "13e33b28-0eb5-4034-a5f7-15b7e616cb20",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "605906aa-1aa0-4d44-a1b2-7fe0ed3768f9",
+              "Text": {
+                "Handle": "hd983c5bcga3c4g4296g9e86gf559e2471537",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;2205",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "1c5b0d7f-8e2c-ee35-df46-e0e8970b0ad3": {
+      "UUID": "1c5b0d7f-8e2c-ee35-df46-e0e8970b0ad3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "99aa4461-8333-a6df-26fe-79e065e5c448"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "53c09ba9-66fd-4d6d-adda-ec09a18db18b",
+              "Text": {
+                "Handle": "h5dfe6010g91fdg4909ga7d1gd3f922b552ad",
+                "Value": "Hidden... inside... couldn't find..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1548",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "2534892f-1139-eb1e-075f-0298fb1ad32a": {
+      "UUID": "2534892f-1139-eb1e-075f-0298fb1ad32a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1c5b0d7f-8e2c-ee35-df46-e0e8970b0ad3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0a5d3e11-ef2e-cd75-14e8-4b19c2e3ab17",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_MentionedBlood"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "73bbde00-42d0-4af8-93d5-9de74dafa24a",
+              "Text": {
+                "Handle": "h2f4a6ff1g6b22g4270gb6edg30fc12f1f99a",
+                "Value": "Where can I find this Blood?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N54",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1548",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "34cce473-e5d4-1607-28c2-bf3a497d596a": {
+      "UUID": "34cce473-e5d4-1607-28c2-bf3a497d596a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "718a401c-5770-831a-1263-32ed9888315b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "951e735b-fedd-4b5a-9c74-3c1dbebf6aff",
+              "Text": {
+                "Handle": "hd16b9f58g3e39g4d43gbb24g9ccb5e557793",
+                "Value": "East... west... blood is blessed..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N82",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1110",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "53a6eb4e-c687-42e1-90b6-30a45810f180": {
+      "UUID": "53a6eb4e-c687-42e1-90b6-30a45810f180",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;234",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "549f199f-acaa-4fd3-a88e-24d53d26b4df": {
+      "UUID": "549f199f-acaa-4fd3-a88e-24d53d26b4df",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "849f7a4e-931c-b098-a8a9-bbb8bd2a2017"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "677ffa76-2562-4217-873e-2253d4720ba4"
+                ],
+                "TagNames": [
+                  "GITHYANKI"
+                ]
+              }
+            ],
+            "RuleString": "!GITHYANKI"
+          },
+          "TagTexts": [
+            {
+              "LineId": "5b71e053-fabf-4e58-8136-4b7c1102c9bd",
+              "Text": {
+                "Handle": "h42f277e5gdf43g48e8g83a2g88e4655f94ca",
+                "Value": "Githyanki... slowly... painfully... "
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "677ffa76-2562-4217-873e-2253d4720ba4"
+                ],
+                "TagNames": [
+                  "GITHYANKI"
+                ]
+              }
+            ],
+            "RuleString": "GITHYANKI"
+          },
+          "TagTexts": [
+            {
+              "LineId": "d87b3d0a-5940-4150-8f0e-e6ac6e386907",
+              "Text": {
+                "Handle": "h4f73d4f7gb27dg4a3egbf7bg9fa001795418",
+                "Value": "Your kind... slowly... painfully..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N106",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1767",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "54d99963-1661-b1a2-239b-595713d2dbdc": {
+      "UUID": "54d99963-1661-b1a2-239b-595713d2dbdc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "8850f9e2-ef51-42fa-b96e-f816b1b5b6bf"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6f3a1566-944d-4c5f-822a-9b89a2e0716c",
+              "Text": {
+                "Handle": "hb5810881g6cbfg4637g88d6g85bac08ae4ed",
+                "Value": "Took new path... found monastery...  remembered... "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N156",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;672",
+        "sourcetemplate": ""
+      }
+    },
+    "5d26472b-633f-b342-5197-78c51b4f58bf": {
+      "UUID": "5d26472b-633f-b342-5197-78c51b4f58bf",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "fd6315f6-9f9d-7b35-76c7-c8557c91b2ee"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f52e7eef-ee58-429d-9053-69f104db1cf8",
+              "Text": {
+                "Handle": "hd0f3620eg1363g4e16gb359gefba0684a5a9",
+                "Value": "Powerful relic... valuable... wanted to sell... start again..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N150",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1329",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "707c48c2-c9be-9fd2-deb7-5fc3c09b3d56": {
+      "UUID": "707c48c2-c9be-9fd2-deb7-5fc3c09b3d56",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "816cccd4-f710-45ca-b3c8-633801d9d25c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a26fb3b1-cb99-4039-b333-9aed1c4f8a50",
+              "Text": {
+                "Handle": "hd29a5f87g0f69g401eg9e87g9a0c72a5d3de",
+                "Value": "Decided to... look for it..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N158",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;891",
+        "sourcetemplate": ""
+      }
+    },
+    "718a401c-5770-831a-1263-32ed9888315b": {
+      "UUID": "718a401c-5770-831a-1263-32ed9888315b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "01e1d4bf-aa65-c7c7-e1a8-d57b4a3a48f7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "127f039e-6c1a-48f7-b9b4-13e6e8d85ad7",
+              "Text": {
+                "Handle": "hd50c7d19gac09g49efg9a17g695137369cca",
+                "Value": "Beneath... sun... it finds... its rest..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N155",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "770b2b4d-e52c-47cb-b809-cfb847e22ee0": {
+      "UUID": "770b2b4d-e52c-47cb-b809-cfb847e22ee0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "707c48c2-c9be-9fd2-deb7-5fc3c09b3d56"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0bebe65f-57a7-40b9-a440-e0327fe63df8",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_BloodOfLathander_Event_PilgrimMentionedWeapon"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b2c7a9e1-1f11-47f5-99a3-d1847dd1ba15",
+              "Text": {
+                "Handle": "h5423551aga61cg43ddg95e8gc74864ee5f7b",
+                "Value": "A rhyme... Blood of Lathander... hidden... guarded by monks..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;891",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "80c65dca-89ed-450b-beef-3e47eccb4fac": {
+      "UUID": "80c65dca-89ed-450b-beef-3e47eccb4fac",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;453",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "816cccd4-f710-45ca-b3c8-633801d9d25c": {
+      "UUID": "816cccd4-f710-45ca-b3c8-633801d9d25c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N26",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;891",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "849f7a4e-931c-b098-a8a9-bbb8bd2a2017": {
+      "UUID": "849f7a4e-931c-b098-a8a9-bbb8bd2a2017",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N110",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;1767",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "8850f9e2-ef51-42fa-b96e-f816b1b5b6bf": {
+      "UUID": "8850f9e2-ef51-42fa-b96e-f816b1b5b6bf",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N21",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;672",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "8e889353-3479-4c85-617e-26dc74f16cd5": {
+      "UUID": "8e889353-3479-4c85-617e-26dc74f16cd5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "549f199f-acaa-4fd3-a88e-24d53d26b4df"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "79854d19-e8d5-9abb-2da3-b7be97881372",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_AskedKiller"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b7a46363-a32f-4b98-b8a7-ac7ad749d650",
+              "Text": {
+                "Handle": "he8068d2fg48ddg440eg8b20g8d20ed452c63",
+                "Value": "Who killed you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N102",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1767",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "954091f9-9373-4d1e-99d8-f63077254d4b": {
+      "UUID": "954091f9-9373-4d1e-99d8-f63077254d4b",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c9d63a95-29f6-481a-bc8b-818461891d77"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "134b1939-0251-32a2-4de9-dd6595ae35ac",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_AskedWhyHere"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3c398540-ceda-45b5-8284-84c3057d32b8",
+              "Text": {
+                "Handle": "hbcd33cf9g705dg43d6gb4a0g729ecfad408c",
+                "Value": "How did you end up <i>here</i>? "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;672",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "99aa4461-8333-a6df-26fe-79e065e5c448": {
+      "UUID": "99aa4461-8333-a6df-26fe-79e065e5c448",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N62",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;1548",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "9f798266-3664-5139-2a3c-29c65abab7d3": {
+      "UUID": "9f798266-3664-5139-2a3c-29c65abab7d3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f271ca5f-b757-253b-98d0-23a1c7a19e40"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7253b35b-2ac8-ce7f-6181-689ef27536d9",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Absolute_Knows_MoonriseTowers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3f811a17-430b-456d-943b-a430aafe266b",
+              "Text": {
+                "Handle": "hcb4cfca4ge9aeg41bbgbc4eg5caf6d1b4869",
+                "Value": "Absolute... Moonrise... couldn't understand..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N70",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1986",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "a672d40d-3610-4b37-bac4-0da509357080": {
+      "UUID": "a672d40d-3610-4b37-bac4-0da509357080",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d45154ae-5a65-f77c-f76e-87f7ae9212f1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9bec465f-e24f-4c88-a2c7-a9910fea997e",
+              "Text": {
+                "Handle": "hdece4c66gd3b3g423bg978fgc3e17098a857",
+                "Value": "Elturel... near Maiden's Bridge... "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;453",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "a784816d-b795-40b3-99ea-aac6cbc83d6d": {
+      "UUID": "a784816d-b795-40b3-99ea-aac6cbc83d6d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "53a6eb4e-c687-42e1-90b6-30a45810f180"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0360048f-c91a-4713-98f1-6f02e8425207",
+              "Text": {
+                "Handle": "h962446adge5e0g4160gb84dgb9608a2e1b7c",
+                "Value": "Ellyka... scout..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;234",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "b6a5a453-7894-edf0-0021-b1df1432b86b": {
+      "UUID": "b6a5a453-7894-edf0-0021-b1df1432b86b",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "34cce473-e5d4-1607-28c2-bf3a497d596a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "93e91d90-b8d8-80d0-45bc-ce696a70d4f8",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_MentionedRhyme"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8ff8b132-11b3-4843-9093-74fd338d32b4",
+              "Text": {
+                "Handle": "hf495be93ga333g44d1gb03bg4b44524a8a71",
+                "Value": "How does this rhyme go?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N78",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1110",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "bf99f28f-bcc3-49cc-8bc7-d9d6e96924ef": {
+      "UUID": "bf99f28f-bcc3-49cc-8bc7-d9d6e96924ef",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8d1097de-2dbe-4845-8284-517a835b3a68",
+              "Text": {
+                "Handle": "h9ef57077gc62bg4c41g9b83gd628e81d8c0e",
+                "Value": "*The corpse does not stir. It will answer no more questions.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;15",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "c26af3cc-4543-4b31-9b93-6c7a3fd0a651": {
+      "UUID": "c26af3cc-4543-4b31-9b93-6c7a3fd0a651",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c5f7244a-56b8-404c-8373-5400be9ab00c",
+        "05882d4d-fe84-4131-a8de-f7c8f1628fce",
+        "954091f9-9373-4d1e-99d8-f63077254d4b",
+        "05be3165-3758-4ad9-8047-6a48549177a6",
+        "b6a5a453-7894-edf0-0021-b1df1432b86b",
+        "ebff90b9-ddea-3bd5-97b2-3c7e2ef41ee0",
+        "2534892f-1139-eb1e-075f-0298fb1ad32a",
+        "8e889353-3479-4c85-617e-26dc74f16cd5",
+        "eec01916-7ba0-76c0-a59c-2fb6c949caed",
+        "13e33b28-0eb5-4034-a5f7-15b7e616cb20",
+        "d18f7c57-51c2-4467-9c6f-b2afed9d6eb5"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "39e9022c-66cd-4407-99a1-98dbb0889032",
+              "Text": {
+                "Handle": "hda9535b0gec2dg4247g8d8agc434a33be9f5",
+                "Value": "*The corpse regards you lifelessly.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;1548",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "c5f7244a-56b8-404c-8373-5400be9ab00c": {
+      "UUID": "c5f7244a-56b8-404c-8373-5400be9ab00c",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a784816d-b795-40b3-99ea-aac6cbc83d6d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "35563b99-f2c2-47a8-a9b6-4d76924bbb60",
+              "Text": {
+                "Handle": "hdaca88bfg68c0g406ag9802g88eb5c9be512",
+                "Value": "Who are you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;234",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "c9d63a95-29f6-481a-bc8b-818461891d77": {
+      "UUID": "c9d63a95-29f6-481a-bc8b-818461891d77",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "54d99963-1661-b1a2-239b-595713d2dbdc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34203f0d-0438-47a2-a9f9-f00483796da4",
+              "Text": {
+                "Handle": "h25035182g41acg4a2cg87degabd4a8e8c420",
+                "Value": "Road to Baldur's Gate... blocked..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;672",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "d18f7c57-51c2-4467-9c6f-b2afed9d6eb5": {
+      "UUID": "d18f7c57-51c2-4467-9c6f-b2afed9d6eb5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3fccee47-106d-4322-ba03-92626a683c5d",
+              "Text": {
+                "Handle": "h41b73839g9ca8g4555g8565ge856119e67fa",
+                "Value": "*The spell's power wanes. You can ask no more questions.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;2424",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "d45154ae-5a65-f77c-f76e-87f7ae9212f1": {
+      "UUID": "d45154ae-5a65-f77c-f76e-87f7ae9212f1",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "80c65dca-89ed-450b-beef-3e47eccb4fac"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "51a1c76d-b39f-4c53-bb70-9e1bcc7eea51",
+              "Text": {
+                "Handle": "h5b828507gbb8dg403bg99acga8311a298202",
+                "Value": "Exiled... lost everything..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N157",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;453",
+        "sourcetemplate": ""
+      }
+    },
+    "e0cd05bf-7775-4929-8ce9-45e52604ce9d": {
+      "UUID": "e0cd05bf-7775-4929-8ce9-45e52604ce9d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7827d93e-1619-402e-b9ec-3ec5d762b6ea",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_SpeakWithDead_State_Killer"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6eba90be-e2b0-4a17-a3aa-a85b50e68a20",
+              "Text": {
+                "Handle": "hbdda66cfgcf2fg4b14g896eg07c5be1e9e90",
+                "Value": "*The corpse seems willing to speak - but not to its killer.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "The Player is the killer",
+        "position": "-305;-204",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "ebff90b9-ddea-3bd5-97b2-3c7e2ef41ee0": {
+      "UUID": "ebff90b9-ddea-3bd5-97b2-3c7e2ef41ee0",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "5d26472b-633f-b342-5197-78c51b4f58bf"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0a5d3e11-ef2e-cd75-14e8-4b19c2e3ab17",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_MentionedBlood"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6564dbc9-9e97-45ec-8227-c52313dd550d",
+              "Text": {
+                "Handle": "h7bc49229g7703g4196g9703ge07fee889f59",
+                "Value": "What is the Blood of Lathander?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N146",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1329",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "eec01916-7ba0-76c0-a59c-2fb6c949caed": {
+      "UUID": "eec01916-7ba0-76c0-a59c-2fb6c949caed",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9f798266-3664-5139-2a3c-29c65abab7d3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "79854d19-e8d5-9abb-2da3-b7be97881372",
+              "value": true,
+              "paramval": null,
+              "Name": "073491ac-4e0a-66b1-bda9-a93edaaa3576_AskedKiller"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "01c40268-4a8d-4787-8566-77e01ff04762",
+              "value": false,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_State_QuestionsLimitReached"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9984cd59-2fad-46cb-bf61-96af6034fbea",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_SpeakWithDead_Event_QuestionAsked"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "154f889d-3a40-4e8a-a5ac-068ae58404cc",
+              "Text": {
+                "Handle": "h1b7c3533g0be5g44bagbf9aga26e80a2fe43",
+                "Value": "What did they want with you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N66",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1986",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "f271ca5f-b757-253b-98d0-23a1c7a19e40": {
+      "UUID": "f271ca5f-b757-253b-98d0-23a1c7a19e40",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N74",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;1986",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    },
+    "fd6315f6-9f9d-7b35-76c7-c8557c91b2ee": {
+      "UUID": "fd6315f6-9f9d-7b35-76c7-c8557c91b2ee",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N154",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "1615;1329",
+        "sourcetemplate": "SpeakWithDead"
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "dce4b734-8d7f-5343-89bb-bcf184b13355",
+      "Index": 0,
+      "List": [
+        "627e03ed-d23c-42fa-90c8-1e8d6f927fd6"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Ellyka",
+        "Type": "character",
+        "MapKey": "627e03ed-d23c-42fa-90c8-1e8d6f927fd6",
+        "Name": "S_PLA_ChokepointScout",
+        "ParentTemplateId": null,
+        "TemplateName": "d0cbec55-ec10-458e-96bb-09edfe2d6b19"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "6b8f8c66-ec9d-1ee3-b2e0-f5bf1e5b929f",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The tiefling scout who was observing the gith at the chokepoint. She will reveal details about the blood of lathander, a relic that the player can discover within the monastery."
+}

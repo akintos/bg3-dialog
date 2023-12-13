@@ -1,0 +1,130 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_BloodMerchant_PAD_ExplosivePotion_NonTadpoled.lsj",
+  "UUID": "9d4cf69e-8c7c-5286-f2da-1e250b44162d",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "3bbd9733-772b-44fb-a835-fde4dbec4422"
+  ],
+  "Nodes": {
+    "3bbd9733-772b-44fb-a835-fde4dbec4422": {
+      "UUID": "3bbd9733-772b-44fb-a835-fde4dbec4422",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8457eb5f-036c-4143-b6cf-447a9f555c7a"
+                ],
+                "TagNames": [
+                  "REALLY_JAHEIRA"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_JAHEIRA"
+          },
+          "TagTexts": [
+            {
+              "LineId": "a38ea7e8-c4fb-49b2-8423-eb1ceacf3c4f",
+              "Text": {
+                "Handle": "h1957a13agd1e9g4ae8g8f2dg9cec778f4189",
+                "Value": "The alchemist... does not brew for flavour. Agh."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "9b8709f9-8d2a-4b4e-a465-8505c561d7f5"
+                ],
+                "TagNames": [
+                  "REALLY_HALSIN"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_HALSIN"
+          },
+          "TagTexts": [
+            {
+              "LineId": "959d221f-2c88-4b41-8768-96f59c6b3dff",
+              "Text": {
+                "Handle": "ha499cabcg3ef3g48efgacacgb4b1b43786a5",
+                "Value": "Ngh... a foul brew. My innards beg for mercy.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "8712a021-4221-4dc4-b29c-f6c202926004",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "335;234",
+        "sourcetemplate": "ORIGINS_PAD_Act3"
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "604bb04d-702d-4067-b36f-5d2bc6abc14b",
+      "Index": 0,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "AD for Halsin and Jaheira if they drink the explosive potion. This AD will be only triggered AFTER drinking the potion, and the character will be poisoned after the explosion."
+}

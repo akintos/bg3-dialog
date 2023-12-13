@@ -1,0 +1,783 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Colony/COL_Barracks_MistressOfSouls_HighAlert.lsj",
+  "UUID": "e6dd8af0-8038-a8ad-5a9c-7b6ab2873598",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "e0d0393d-f96e-4d80-bca8-64953052b869"
+  ],
+  "Nodes": {
+    "0fe3765b-a053-480f-bb1f-f95d9bd702a9": {
+      "UUID": "0fe3765b-a053-480f-bb1f-f95d9bd702a9",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1b4f29aa-ee2a-49e5-bc13-995abab13339",
+              "Text": {
+                "Handle": "h71131c65ge77dg469fgb634gca0e6bdb2b07",
+                "Value": "I shall present your bones to General Thorm as retribution for what you did to him."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Hostile (combat ensues afterward)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "2efb7fff-d24b-4dc9-9348-14245d5710fb": {
+      "UUID": "2efb7fff-d24b-4dc9-9348-14245d5710fb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0fe3765b-a053-480f-bb1f-f95d9bd702a9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a9bf28e5-ef0a-4e25-bc02-c07ba3e5b330",
+              "Text": {
+                "Handle": "h3db05c34gda8dg4d5cga530ga9c1e31e6dd2",
+                "Value": "<i>Lies!</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Unswayed. Convinced the player is a traitor",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "342a5590-1c1f-4612-b8af-4d80a17072f4": {
+      "RollSuccess": true,
+      "UUID": "342a5590-1c1f-4612-b8af-4d80a17072f4",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b6c8a9a2-80c4-4646-beb7-96ef66ca4fc4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N4",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "34b42cc7-8945-4520-a0f6-f23d97969982": {
+      "UUID": "34b42cc7-8945-4520-a0f6-f23d97969982",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "57aed9d1-8e37-4100-851e-491da43e24ac"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4835ba9d-c0d6-40fb-ad62-88f875b536c2",
+              "value": true,
+              "paramval": 1,
+              "Name": "ILLITHID_HIDDEN_CHECK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "356aba54-f9c8-4a56-95db-a0deb278cc6f",
+              "Text": {
+                "Handle": "had0ac79cgaf4eg410bga967g7cd2276ad4e8",
+                "Value": "You should be careful, throwing such accusations at a True Soul."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "43b243ef-09b5-4314-9626-9d0748ed8ea1": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "f3aa825b-785e-4f4a-90af-565c7e943609",
+      "DifficultyClassValue": 21,
+      "UUID": "43b243ef-09b5-4314-9626-9d0748ed8ea1",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "342a5590-1c1f-4612-b8af-4d80a17072f4",
+        "b1792d3f-ee93-4a08-a260-667799755acb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c7f2e653-a433-4cb4-a772-f6fd6815167f",
+              "Text": {
+                "Handle": "hd6b28722g2f9ag448agbf8bgc728fa856cd4",
+                "Value": "This is a misunderstanding. I was sent to support you with the eradication of these traitors."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "Non-bards. No advantage.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Deception",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "57aed9d1-8e37-4100-851e-491da43e24ac": {
+      "UUID": "57aed9d1-8e37-4100-851e-491da43e24ac",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b6f4633e-489e-15b5-4344-3d0fd0b5fd2e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cffe1729-e37d-4ff2-afa5-bdd1ab93e845",
+              "Text": {
+                "Handle": "h36cf0d84g186dg4f63gb5deg1c398a65dece",
+                "Value": "Trying to pull <i>rank</i>? And yet not a word of concern for our dear General."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Unswayed. Convinced the player is a traitor",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "93ced493-b790-4bf4-a457-fc3b95ab55f1": {
+      "UUID": "93ced493-b790-4bf4-a457-fc3b95ab55f1",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f64507bf-aa53-6de9-0b59-c19d649bb0a5",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_Necromancer_State_AtMoonrise"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a0dad320-aea1-4e79-ac93-eba5f7aa3e98",
+              "Text": {
+                "Handle": "h6338e649g4dc4g41edg84bcgb13b7abf6a18",
+                "Value": "Go find Balthazar - he always has use for another body."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Dismissive",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "b1792d3f-ee93-4a08-a260-667799755acb": {
+      "RollSuccess": false,
+      "UUID": "b1792d3f-ee93-4a08-a260-667799755acb",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2efb7fff-d24b-4dc9-9348-14245d5710fb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N12",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "b6c8a9a2-80c4-4646-beb7-96ef66ca4fc4": {
+      "UUID": "b6c8a9a2-80c4-4646-beb7-96ef66ca4fc4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "93ced493-b790-4bf4-a457-fc3b95ab55f1",
+        "bdc99b8e-e048-4d38-adc5-d1df9fbf416b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "43fa9334-ff0d-f39b-d51f-fc996d2bfe90",
+              "value": true,
+              "paramval": 1,
+              "Name": "COL_Barracks_Mistress_Knows_ThinksPlayerIsThrall"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1b4d300f-90d0-f38a-65fa-ed2ad41d7887",
+              "value": true,
+              "paramval": null,
+              "Name": "COL_Barracks_State_InterruptConvinced"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "eb08bdc2-65d2-4f03-84f1-8badb3551196",
+              "Text": {
+                "Handle": "hfda91353g81b2g442bg90bege67320e74cc5",
+                "Value": "I have no need for a thrall - you would merely get in the way."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Suspicion fades. Becomes officious/dismissive",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "b6f4633e-489e-15b5-4344-3d0fd0b5fd2e": {
+      "JumpTarget": "0fe3765b-a053-480f-bb1f-f95d9bd702a9",
+      "JumpTargetPoint": 1,
+      "UUID": "b6f4633e-489e-15b5-4344-3d0fd0b5fd2e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N46",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "bdc99b8e-e048-4d38-adc5-d1df9fbf416b": {
+      "UUID": "bdc99b8e-e048-4d38-adc5-d1df9fbf416b",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c9ba066a-b180-46c7-8fdb-12cad7f10d3f",
+              "Text": {
+                "Handle": "hc1ec9707gab50g4f37ga1eag8c12a03ff49f",
+                "Value": "Go on, make yourself useful somewhere. If you cannot manage that, just stay out of the way."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Dismissive",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "e0d0393d-f96e-4d80-bca8-64953052b869": {
+      "UUID": "e0d0393d-f96e-4d80-bca8-64953052b869",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "34b42cc7-8945-4520-a0f6-f23d97969982",
+        "43b243ef-09b5-4314-9626-9d0748ed8ea1",
+        "e87b80f0-d690-47bb-8005-95d278b0be66"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d3071e21-1e32-4f74-96dd-988e651b74ff",
+              "Text": {
+                "Handle": "he74ddc0bgbf7eg4fc5ga78eg1fe2c9d1112a",
+                "Value": "General Thorm was attacked, the order to evacuate given. You should not be here. I conclude you are one of the attackers."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Suspicious. Believes she's caught a would-be assassin",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "e87b80f0-d690-47bb-8005-95d278b0be66": {
+      "UUID": "e87b80f0-d690-47bb-8005-95d278b0be66",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "99e40812-c597-4481-8d63-c6e7fa0e6a9e",
+              "Text": {
+                "Handle": "hc89564b2g3f73g4dc8g9545g717f24c672c3",
+                "Value": "<i>Attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9e8dc3d3-0db0-40fd-bc73-6dcfa1508415",
+      "Index": 0,
+      "List": [
+        "6068a46e-bbe4-4fc6-b955-cd8886fa5542"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Kressa Bonedaughter",
+        "Type": "character",
+        "MapKey": "6068a46e-bbe4-4fc6-b955-cd8886fa5542",
+        "Name": "S_COL_Barracks_MistressOfSouls",
+        "ParentTemplateId": null,
+        "TemplateName": "8a7af0ec-be10-49df-8ead-f43c9e100bf2"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2a2567dd-32cf-4b97-bd3c-9179ab7521b7",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "If you attacked Ketheric on the rooftop of Moonrise Tower, the Myrkulites in the Colony Barracks will be on high alert. If she spots you, she will assume you are one of the traitors that attacked Ketheric - but you can try to convince her otherwise."
+}

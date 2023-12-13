@@ -1,0 +1,883 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/UND_FearfulRothe_Guard_002.lsj",
+  "UUID": "b4e80b8c-13ff-c1c6-e1bd-0309a1091502",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "a950f0d6-a2d5-6e79-491d-6972a9255a06",
+    "0f06383a-7627-4b4f-8687-8155497fe3bb",
+    "fb55ee1f-c21d-40c4-973b-62c80d153d58",
+    "3b267594-93cf-457d-be1f-3a3820dcd308",
+    "4f164ebd-96e6-45c2-ad85-92ba2dc0284b",
+    "185df249-df48-92f3-96cd-1701ee9a8234"
+  ],
+  "Nodes": {
+    "0f06383a-7627-4b4f-8687-8155497fe3bb": {
+      "UUID": "0f06383a-7627-4b4f-8687-8155497fe3bb",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a0c42cfc-c7f4-448b-98ff-e1ec106b4cbd",
+              "value": false,
+              "paramval": 1,
+              "Name": "UND_FearfulRothe_HasMet_Guard_002"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1f26371b-dbc7-0dcc-123b-3d3b6b06cc0f",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_ConvincedRotheToAttackRubble"
+            },
+            {
+              "UUID": "3edcda99-833f-4f49-9aed-a493d451eec3",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_RotheAreDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a0c42cfc-c7f4-448b-98ff-e1ec106b4cbd",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_FearfulRothe_HasMet_Guard_002"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "137f0418-a964-9a9b-885f-fe74790e88a2",
+              "Text": {
+                "Handle": "he94dde15ge28ag4725g9d7ag4d21331fb22b",
+                "Value": "Here to help? Talk to Skarjall. Here to gawk? Find a ledge to fall off."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "'I just work here.' Skarjall = skar-jall, just like it sounds (duergar in charge)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ROTHE ARE AFRAID, NOT MET",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "185df249-df48-92f3-96cd-1701ee9a8234": {
+      "UUID": "185df249-df48-92f3-96cd-1701ee9a8234",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "4a4f80a0-9cf5-f30d-222b-a6d4dec8d6b0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1f26371b-dbc7-0dcc-123b-3d3b6b06cc0f",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_ConvincedRotheToAttackRubble"
+            },
+            {
+              "UUID": "f20c21ab-db2f-495d-ad0c-986187ec0570",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_RubbleDestroyed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "60f6b464-752f-4970-a855-f729565b5e07"
+                ],
+                "TagNames": [
+                  "UNDERDARK"
+                ]
+              }
+            ],
+            "RuleString": "!UNDERDARK"
+          },
+          "TagTexts": [
+            {
+              "LineId": "9c42f952-1194-43e8-91f3-53bd5ba6d5e2",
+              "Text": {
+                "Handle": "h8194fa32g43dbg413agb1adg262cef30fda7",
+                "Value": "Nicely handled. For sun-scum."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "60f6b464-752f-4970-a855-f729565b5e07"
+                ],
+                "TagNames": [
+                  "UNDERDARK"
+                ]
+              }
+            ],
+            "RuleString": "UNDERDARK"
+          },
+          "TagTexts": [
+            {
+              "LineId": "6da60a89-6f1b-46a6-bad5-2c7b77ac96ec",
+              "Text": {
+                "Handle": "h9a3ce458g3ea3g4cdag8413g8f555521cb30",
+                "Value": "Nicely handled. Those rothé old sweethearts of yours or something?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The player did well, but duergar are rarely the complimentary types.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ROTHE CALM, RUBBLE REMOVED",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    },
+    "2af79f30-7d9d-953f-f771-07c602a21632": {
+      "UUID": "2af79f30-7d9d-953f-f771-07c602a21632",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "36886f92-40fc-499d-afc5-46363c7ce0bb",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_Event_MakeDuergarHostileInDialog"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f42acd0c-136f-4a19-9f59-8dee5595ec15",
+              "Text": {
+                "Handle": "h406dd8f7g22dag4210g8c22g9e68c9978c0f",
+                "Value": "You think we're letting you near that forge? You're as dumb as you are stupid."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N24",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Jargh = fool. ZHARGH!",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;891",
+        "sourcetemplate": ""
+      }
+    },
+    "3b267594-93cf-457d-be1f-3a3820dcd308": {
+      "UUID": "3b267594-93cf-457d-be1f-3a3820dcd308",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3edcda99-833f-4f49-9aed-a493d451eec3",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_RotheAreDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4accfa8f-765b-4247-988e-da000739811f",
+              "Text": {
+                "Handle": "h3b35215ag1d1cg4b9egbabfg6c047d3c37e6",
+                "Value": "And I thought deep rothé stank while they were <i>alive</i>..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Disgust. Zero empathy. The animals being supervised died somehow. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ROTHE ARE DEAD",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "4a4f80a0-9cf5-f30d-222b-a6d4dec8d6b0": {
+      "UUID": "4a4f80a0-9cf5-f30d-222b-a6d4dec8d6b0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "cdab894e-50aa-5a45-784f-3c9746415e13",
+        "91bf38a4-01e3-4464-cc7b-62a0efb64163"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "36886f92-40fc-499d-afc5-46363c7ce0bb",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_Event_MakeDuergarHostileInDialog"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b588c53e-f432-4352-b69d-626e3b5ae105",
+              "Text": {
+                "Handle": "h4e9b2038g9677g41a0g988fg7a759c39842f",
+                "Value": "Pity I got to split you - that forge ain't for sharing."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "4f164ebd-96e6-45c2-ad85-92ba2dc0284b": {
+      "UUID": "4f164ebd-96e6-45c2-ad85-92ba2dc0284b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1f26371b-dbc7-0dcc-123b-3d3b6b06cc0f",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_ConvincedRotheToAttackRubble"
+            },
+            {
+              "UUID": "f20c21ab-db2f-495d-ad0c-986187ec0570",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_RubbleDestroyed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d69543d1-71ab-b7e7-119c-08a98d4b931e",
+              "Text": {
+                "Handle": "h955b5dcbg49c9g4947gb261g09bdeebad8c0",
+                "Value": "You got a knack. Won't be long before the beasts break through."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The player did well, but duergar are rarely the complimentary types.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ROTHE CALM, RUBBLE STILL THERE",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    },
+    "91bf38a4-01e3-4464-cc7b-62a0efb64163": {
+      "UUID": "91bf38a4-01e3-4464-cc7b-62a0efb64163",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "36886f92-40fc-499d-afc5-46363c7ce0bb",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_Event_MakeDuergarHostileInDialog"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22c4342d-a544-4203-8331-74658bc7aa51",
+              "Text": {
+                "Handle": "hf0aaa486g750eg47acgaadeg160770de7999",
+                "Value": "Go ahead. We'll see who ends up split."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N26",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "a950f0d6-a2d5-6e79-491d-6972a9255a06": {
+      "UUID": "a950f0d6-a2d5-6e79-491d-6972a9255a06",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a0c42cfc-c7f4-448b-98ff-e1ec106b4cbd",
+              "value": false,
+              "paramval": 1,
+              "Name": "UND_FearfulRothe_HasMet_Guard_002"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1f26371b-dbc7-0dcc-123b-3d3b6b06cc0f",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_ConvincedRotheToAttackRubble"
+            },
+            {
+              "UUID": "3edcda99-833f-4f49-9aed-a493d451eec3",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_RotheAreDead"
+            },
+            {
+              "UUID": "53f1e115-adf8-4608-b85c-08e0dc7d67ad",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_TheDrowNere_State_PermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a0c42cfc-c7f4-448b-98ff-e1ec106b4cbd",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_FearfulRothe_HasMet_Guard_002"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d81a93c3-cb31-49aa-9b93-fdd6c1ca9993",
+              "Text": {
+                "Handle": "he7f2c9ffge21cg47d6g9faegbf03562825f5",
+                "Value": "Nere was soft. No reason for you to strut about like a damn hero."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Sarcastic",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ROTHE ARE AFRAID, NOT MET, NERE DEAD",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "cdab894e-50aa-5a45-784f-3c9746415e13": {
+      "UUID": "cdab894e-50aa-5a45-784f-3c9746415e13",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2af79f30-7d9d-953f-f771-07c602a21632"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "87c73664-0f7b-47ce-b59a-5974df2ae38f",
+              "Text": {
+                "Handle": "hd4007c32g0b8ag4fa5gb159g156159fd497c",
+                "Value": "I calmed the rothé, and now you want me dead?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "fb55ee1f-c21d-40c4-973b-62c80d153d58": {
+      "UUID": "fb55ee1f-c21d-40c4-973b-62c80d153d58",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a0c42cfc-c7f4-448b-98ff-e1ec106b4cbd",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_FearfulRothe_HasMet_Guard_002"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1f26371b-dbc7-0dcc-123b-3d3b6b06cc0f",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_ConvincedRotheToAttackRubble"
+            },
+            {
+              "UUID": "3edcda99-833f-4f49-9aed-a493d451eec3",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_FearfulRothe_State_RotheAreDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b1e1a19a-6f86-bd2b-16f4-77823d9ca7aa",
+              "Text": {
+                "Handle": "hd37cb0f9g9502g46b9g97a3g56f2ed97f60c",
+                "Value": "Don't see you helping. Best you find a ledge and jump."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "'Go away'.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ROTHE ARE AFRAID, MET",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "03c2f396-3fd4-1032-65df-e8dfcb138669",
+      "Index": 0,
+      "List": [
+        "debc6e8e-10c2-4f6f-866a-220f7e64c4b7"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Grundril",
+        "Type": "character",
+        "MapKey": "debc6e8e-10c2-4f6f-866a-220f7e64c4b7",
+        "Name": "S_UND_FearfulRothe_Guard_002",
+        "ParentTemplateId": null,
+        "TemplateName": "63551b36-2bee-4131-a5db-7c9e0e38a00e"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "8104d26f-7868-a545-e426-2a7cb692e2c5",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "One of the duergar guards near some deep rothe that're being used as hauling animals. Gruff and grim. Little patience and less empathy.\r\nDifferent reactions if:\r\n- animals are panicking;\r\n- animals are calm;\r\n- animals are dead (doesn't matter how);"
+}

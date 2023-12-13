@@ -1,0 +1,202 @@
+{
+  "Path": "Mods/Shared/Story/Dialogs/Crimes/GEB_AD_Attack_Assault_Construct.lsj",
+  "UUID": "3dbb33a8-a0a5-4a7b-a90e-520956876ae2",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "a579e036-00ae-497d-935d-81b56e128f32"
+  ],
+  "Nodes": {
+    "a579e036-00ae-497d-935d-81b56e128f32": {
+      "UUID": "a579e036-00ae-497d-935d-81b56e128f32",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "0bdf874a-3703-49be-b1cf-4d291d4e495b"
+                ],
+                "TagNames": [
+                  "SCRYING_EYE"
+                ]
+              }
+            ],
+            "RuleString": "SCRYING_EYE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "50b9277e-53c2-7e91-642b-6a3d41840078",
+              "Text": {
+                "Handle": "h40800229g180cg4814gaf5dgc02909550f88",
+                "Value": "*WHIRR.*"
+              }
+            },
+            {
+              "LineId": "0c80df15-04ef-4b3d-b850-e84cb918bc35",
+              "Text": {
+                "Handle": "h8c3f2c08g0063g449bga3c9gf9df29ee5b10",
+                "Value": "*HUM.*"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3fb78de4-190d-4ae4-b491-be89959fae56"
+                ],
+                "TagNames": [
+                  "FLESH_GOLEM"
+                ]
+              }
+            ],
+            "RuleString": "FLESH_GOLEM"
+          },
+          "TagTexts": [
+            {
+              "LineId": "f26b81cf-f425-4846-8015-0f37e00b8912",
+              "Text": {
+                "Handle": "h79f14deag443eg4f89gbf65g9d770a02814e",
+                "Value": "*SQUELCH.*"
+              }
+            },
+            {
+              "LineId": "d84af8ef-c789-47a8-8f84-f0fb9feb3358",
+              "Text": {
+                "Handle": "h33465a6cg4a27g40f3g991cgbf0f38fd70ba",
+                "Value": "*GURGLE.*"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "bc09a589-e076-4b2d-8b86-f8cccbb64449"
+                ],
+                "TagNames": [
+                  "STEEL_WATCHER"
+                ]
+              }
+            ],
+            "RuleString": "STEEL_WATCHER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "806fe318-098c-4244-839f-6a70824b17bc",
+              "Text": {
+                "Handle": "he2b18cb7gbbd3g4964ga737g31ec0de24146",
+                "Value": "*Defence mechanisms activated.*"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "3fb78de4-190d-4ae4-b491-be89959fae56",
+                  "0bdf874a-3703-49be-b1cf-4d291d4e495b",
+                  "bc09a589-e076-4b2d-8b86-f8cccbb64449"
+                ],
+                "TagNames": [
+                  "FLESH_GOLEM",
+                  "SCRYING_EYE",
+                  "STEEL_WATCHER"
+                ]
+              }
+            ],
+            "RuleString": "!(FLESH_GOLEM and SCRYING_EYE and STEEL_WATCHER)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b2c0477-6505-468e-a344-1d7f714ab26f",
+              "Text": {
+                "Handle": "h22161e3cg3f35g45f9g849fg45e07b47ed2e",
+                "Value": "*THRUM.*"
+              }
+            },
+            {
+              "LineId": "f1cfd667-ccc5-43d8-8818-528f4e2c3ffc",
+              "Text": {
+                "Handle": "h257d46f4ge8a7g43f5gbeabgef01c7a3de8e",
+                "Value": "*RUMBLE.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cc89f3a2-b056-78a0-4cbf-f229d4e1e829",
+      "Index": 0,
+      "List": [
+        "00efc7b5-aa56-44d2-82f2-eff30e451e1e"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Constructs"
+    }
+  },
+  "Synopsis": "An NPC that is tagged as CONSTRUCT (e.g. a golem) was attacked, and in return becomes hostile to the player and engages them in combat."
+}

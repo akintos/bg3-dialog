@@ -1,0 +1,391 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_AttackOnDen_MindMeldAfterCombat.lsj",
+  "UUID": "544be519-becd-7fd3-c5c1-6a0351331088",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": -1
+  },
+  "RootNodes": [
+    "cc076f21-7b75-4f7a-b491-d6f1c2ed02f4"
+  ],
+  "Nodes": {
+    "10ee87b6-d757-d685-db25-4535561edfa7": {
+      "UUID": "10ee87b6-d757-d685-db25-4535561edfa7",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bb7138b1-532f-27cf-8bd0-2c1dfcbf7d00",
+              "value": false,
+              "paramval": null,
+              "Name": "DEN_AttackOnDen_State_CaveTieflingsDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fabadad6-2a32-1d15-eb83-3a3b6a07e606",
+              "Text": {
+                "Handle": "h83e9b19bg91e5g4550g897age5032d9b6b46",
+                "Value": "<i>The way is clear. Now we can cleanse this place completely. Kill </i>everyone<i>.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "speaking telepathically (we do not see her, only hear her); a command",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "52d4c7f4-0f91-b300-1f54-460e7a0816d4": {
+      "UUID": "52d4c7f4-0f91-b300-1f54-460e7a0816d4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a3eaa7e2-c945-dc80-8e32-1d535b0f0f68",
+        "10ee87b6-d757-d685-db25-4535561edfa7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4b82bf78-2b07-02b4-9f0b-7d179896be2a",
+              "value": false,
+              "paramval": null,
+              "Name": "DEN_General_State_GateOpened"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "87870d5c-74b1-6c3c-2968-c6dea44e7f0b",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_AttackOnDen_Event_OpenGateAfterCombat"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f001ebbf-8ad4-449b-4a34-d373f03c6466",
+              "Text": {
+                "Handle": "h6eec50e5gaf97g4dfbgb95fg0b8f3beef840",
+                "Value": "<i>Open the gate.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "open the gate CDavis: Use mindmeld anims",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "gate",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "speaking telepathically (we do not see her, only hear her); a command",
+        "Quality": "Silver",
+        "SFXTags": "Wood Wheel opening gate sound (WilsonLee)",
+        "StateChangeTags": "gate open",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "open the gate",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "a3eaa7e2-c945-dc80-8e32-1d535b0f0f68": {
+      "UUID": "a3eaa7e2-c945-dc80-8e32-1d535b0f0f68",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bb7138b1-532f-27cf-8bd0-2c1dfcbf7d00",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_AttackOnDen_State_CaveTieflingsDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0fcef456-5095-18b8-a800-f52b0bb81371",
+              "Text": {
+                "Handle": "he3b0107ag56c1g4f33gb82egd8e8279a9822",
+                "Value": "<i>Exquisite work, True Soul. Now we must make sure nothing is hidden in their lair. Join me there.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "speaking telepathically (we do not see her, only hear her); a command",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "cc076f21-7b75-4f7a-b491-d6f1c2ed02f4": {
+      "UUID": "cc076f21-7b75-4f7a-b491-d6f1c2ed02f4",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "52d4c7f4-0f91-b300-1f54-460e7a0816d4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "59cfc0c7-5b6f-f86b-448c-1cd3eab6191c",
+              "Text": {
+                "Handle": "h9bac1079gc8ecg4cb7gbb14gea1822ccfa8b",
+                "Value": "*A splinter of ice works its way into your mind.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "speaking telepathically (we do not see her, only hear her) CDavis: Use mindmeld anims",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "describing the sensation of a drow telepathically communicating with us",
+        "Quality": "Silver",
+        "SFXTags": "Telepathic talking",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Telepathy_Spell_Special",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "40410456-7aa1-c701-c257-27cd6c33af80",
+      "Index": 0,
+      "List": [
+        "25721313-0c15-4935-8176-9f134385451b"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Nightwarden Minthara",
+        "Type": "character",
+        "MapKey": "25721313-0c15-4935-8176-9f134385451b",
+        "Name": "S_GOB_DrowCommander",
+        "ParentTemplateId": null,
+        "TemplateName": "9d85d0f6-5231-4738-a674-bf28ff19e515"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "aed86f4d-417c-c11a-103e-068d69180fdb",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "5b946e47-68f6-1785-0eec-33cf0867fd6c",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "3": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c0d21154-a901-923e-6a7e-d1102249b76a",
+      "Index": 3,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "4": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e4dd401f-4739-cc68-4625-3c14ba210a59",
+      "Index": 4,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "A drow commander telepathically communicates with players who have allied with her to slaughter the inhabitants of a druid's grove"
+}

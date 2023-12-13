@@ -1,0 +1,359 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Plains/PLA_ZhentShipment_Agent_001_Crime.lsj",
+  "UUID": "d127199b-c6e3-7bde-72c5-7488497bf6ef",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "e2fe047d-f574-ad5d-6978-d317b8581c68",
+    "da5929f6-65a4-4327-c5b1-bcda2098a484"
+  ],
+  "Nodes": {
+    "0278c71a-24a3-311a-97bf-319a03bd4aa8": {
+      "UUID": "0278c71a-24a3-311a-97bf-319a03bd4aa8",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4152beef-e7d1-e10f-7b06-62584d3571f2",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ConflictedFlind_State_Gone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "11dd73f0-b141-ba92-c511-5a96b3bccb57",
+              "Text": {
+                "Handle": "hf4063bedg1706g4468g8a47g49b5c8122e1a",
+                "Value": "You've my gratitude for helping with the gnolls - but that ain't yours."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "a stern warning",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "a8c9c138-cb99-60a4-ad83-60a8d21aaa72": {
+      "UUID": "a8c9c138-cb99-60a4-ad83-60a8d21aaa72",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bf65a4cb-0593-94fd-40dd-ae2a2a45781f",
+              "Text": {
+                "Handle": "h278db500gbfcbg4889gafdag40f10bc0b8f1",
+                "Value": "Those beasts are going to kill us all!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "frantic - yelling at player",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "da5929f6-65a4-4327-c5b1-bcda2098a484": {
+      "UUID": "da5929f6-65a4-4327-c5b1-bcda2098a484",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fa343985-4d3a-4e4a-ba0d-31d4d7e93a10",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_ZhentShipment_State_Warned"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "72bfa571-0c5f-9c5f-23a4-a797a69fea24",
+              "Text": {
+                "Handle": "h0640641cga5bcg4cf4gb6bfg4f9e158b15bd",
+                "Value": "By the Black Hand - I told you to leave that alone!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5564",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "furious, beginning hostilities with player who is stealing his belongings",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (crime)",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "e2fe047d-f574-ad5d-6978-d317b8581c68": {
+      "UUID": "e2fe047d-f574-ad5d-6978-d317b8581c68",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "0278c71a-24a3-311a-97bf-319a03bd4aa8",
+        "a8c9c138-cb99-60a4-ad83-60a8d21aaa72"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fa343985-4d3a-4e4a-ba0d-31d4d7e93a10",
+              "value": false,
+              "paramval": 1,
+              "Name": "PLA_ZhentShipment_State_Warned"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fa343985-4d3a-4e4a-ba0d-31d4d7e93a10",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_ZhentShipment_State_Warned"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9d8c50f1-f67d-4290-bb41-9616cb482b88",
+              "value": true,
+              "paramval": 1,
+              "Name": "GEB_CrimeWarning_1"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "74afb27f-b59e-5247-ccf1-f0447f20cb79",
+              "Text": {
+                "Handle": "ha82a2d43gab96g4e16g933egef052d96757d",
+                "Value": "Hands off that!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "shouting at players who are tampering with a nearby chest - his cargo ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (crime)",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "7a31bf05-1a8b-8a7c-55a3-d13f7d3ec35c",
+      "Index": 0,
+      "List": [
+        "fd9b4edd-7828-4e22-85a9-ead2ba9d29e4"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Rugan",
+        "Type": "character",
+        "MapKey": "fd9b4edd-7828-4e22-85a9-ead2ba9d29e4",
+        "Name": "S_PLA_ZhentShipment_Agent_001",
+        "ParentTemplateId": null,
+        "TemplateName": "d69a8013-83f5-43fc-a2d9-6946016b0d4c"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9e1e6c06-82d3-121d-9ccf-4583ae8f3c39",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Chest-related crime-reactions for the first agent."
+}

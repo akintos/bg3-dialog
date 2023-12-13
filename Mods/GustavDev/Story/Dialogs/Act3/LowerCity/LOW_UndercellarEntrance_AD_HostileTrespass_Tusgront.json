@@ -1,0 +1,118 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_UndercellarEntrance_AD_HostileTrespass_Tusgront.lsj",
+  "UUID": "ccce326b-a67b-2fc5-fad7-c8d3db1fee5f",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "915f7645-3967-4be5-b0e2-66608037ac3d"
+  ],
+  "Nodes": {
+    "915f7645-3967-4be5-b0e2-66608037ac3d": {
+      "UUID": "915f7645-3967-4be5-b0e2-66608037ac3d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ae216348-1d54-49fa-a593-90a9797334ed",
+              "Text": {
+                "Handle": "h8c163c94g9badg4cf4ga976g0e5baf5688a1",
+                "Value": "We've got a busybody - blades!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Calling on his guards to attack because the player was spotted trespassing.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Attacking player",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "aeb9b153-aeb0-4a5d-bcc5-78d6b8e09b10",
+      "Index": 0,
+      "List": [
+        "09c051f5-cc01-495d-a290-ab2f5e7479d1"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Tusgront",
+        "Type": "character",
+        "MapKey": "09c051f5-cc01-495d-a290-ab2f5e7479d1",
+        "Name": "S_LOW_Tusgront",
+        "ParentTemplateId": null,
+        "TemplateName": "2f661afa-d227-447d-ad97-4f0b064ba2d5"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2b108951-05de-421e-a601-f71e4d56629f",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Players have tried to get into the Guildhall a little too aggressively - Either ignoring warnings, or getting caught after bypassing the hidden door. They won't always have got a warning, so it will benefit from being a bit on-the-nose about why they're attacking."
+}

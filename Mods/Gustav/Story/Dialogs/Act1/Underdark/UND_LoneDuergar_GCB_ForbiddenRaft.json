@@ -1,0 +1,974 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/UND_LoneDuergar_GCB_ForbiddenRaft.lsj",
+  "UUID": "482f4046-8c9f-8539-ce08-e4fea5080be9",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "7ffc6e7e-e178-7c3b-8e14-33b2f94aae21",
+    "96b1ba8f-5ef6-c5fc-f69b-414b33f68c5d",
+    "58e957dd-3a17-6a76-7c76-b06bb56961fb",
+    "a1e607bd-2dec-4433-c4e6-998fdfd5746f",
+    "aa79b762-8d95-e6bc-6466-0f037401ffea"
+  ],
+  "Nodes": {
+    "06470c35-53c9-8c69-20af-4b70d1a95c77": {
+      "UUID": "06470c35-53c9-8c69-20af-4b70d1a95c77",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d75ec4ad-9311-30a1-aef6-64cb8ea338be",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_LoneDuergar_Quest_ReadyToLeave"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4c3c4aed-dd30-8e1f-5ca4-cccd5d6f4eab",
+              "Text": {
+                "Handle": "h2fa2a847gbb7cg4864g9804g8e2064d3a100",
+                "Value": "Could've told me that before. Go ahead."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1f4debf9-ee77-6072-0ce2-45ab9f0449b4": {
+      "JumpTarget": "7fe3121e-442e-ac1e-8bdf-26ca6dec4358",
+      "JumpTargetPoint": 1,
+      "UUID": "1f4debf9-ee77-6072-0ce2-45ab9f0449b4",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N11",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "3d2e31ef-021f-4bd0-ae54-aa5580b08be3": {
+      "JumpTarget": "e3a2b702-5fec-6223-f515-2f1d64111493",
+      "JumpTargetPoint": 1,
+      "UUID": "3d2e31ef-021f-4bd0-ae54-aa5580b08be3",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N12",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "58e957dd-3a17-6a76-7c76-b06bb56961fb": {
+      "UUID": "58e957dd-3a17-6a76-7c76-b06bb56961fb",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7fe3121e-442e-ac1e-8bdf-26ca6dec4358",
+        "f5346ece-613b-10fa-220f-a961a66011fb",
+        "e3a2b702-5fec-6223-f515-2f1d64111493"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "26ffdb1f-eea2-61a9-5a57-a320c9015491",
+              "value": false,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_State_TouchedRaft"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "26ffdb1f-eea2-61a9-5a57-a320c9015491",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_State_TouchedRaft"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cdaa5f2f-d439-64db-8515-7d5eb07efe10",
+              "Text": {
+                "Handle": "hbe26474bg4de0g4eaeg9e8bg3bf134953e01",
+                "Value": "What're you playing at?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "7fe3121e-442e-ac1e-8bdf-26ca6dec4358": {
+      "UUID": "7fe3121e-442e-ac1e-8bdf-26ca6dec4358",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "06470c35-53c9-8c69-20af-4b70d1a95c77"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "07d9e136-ed69-bbb0-62a7-23b38594c1ad",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_LoneDuergar_Quest_AttackMyconids"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "162c2df2-dd25-407d-a5f1-0c78d09ef515",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_InjuredGnome_State_HasBoots"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d1244ed1-1be6-23ff-7873-0715fc2161ff",
+              "Text": {
+                "Handle": "he9cd4cd3g65a8g4d04gac0fgd302dc54d57b",
+                "Value": "I've got a pair of boots to return."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "7ffc6e7e-e178-7c3b-8e14-33b2f94aae21": {
+      "UUID": "7ffc6e7e-e178-7c3b-8e14-33b2f94aae21",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c73d9e72-1f2f-44c8-b7f3-edebe21bf34f",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_LoneDuergar_State_StoleRaft"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "60f6b464-752f-4970-a855-f729565b5e07"
+                ],
+                "TagNames": [
+                  "UNDERDARK"
+                ]
+              }
+            ],
+            "RuleString": "UNDERDARK"
+          },
+          "TagTexts": [
+            {
+              "LineId": "7eb2b883-9e5b-42d5-98c6-3e891957b041",
+              "Text": {
+                "Handle": "h12d8cc50gd8fcg4a8dgbf67g4f401a1a48f3",
+                "Value": "Saw you, making off with our boat. You should've known better than to come back here."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "39d92b7d-c0be-49cc-afb0-14d094eaceae",
+              "Text": {
+                "Handle": "h95d31659g4121g4715g892agc23ea8537dac",
+                "Value": "Saw you, making off with our boat. You should've stayed away, sun-scum."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Confrontational, believing the player stole the duergar's boat. Combat ensues afterwards",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "96b1ba8f-5ef6-c5fc-f69b-414b33f68c5d": {
+      "UUID": "96b1ba8f-5ef6-c5fc-f69b-414b33f68c5d",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1f4debf9-ee77-6072-0ce2-45ab9f0449b4",
+        "3d2e31ef-021f-4bd0-ae54-aa5580b08be3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c1083e9c-5ff7-4cf2-9326-5d64fe2b5a14",
+              "value": false,
+              "paramval": 0,
+              "Name": "GEB_State_CrimeDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "42a7db02-0326-43e1-9a2f-d858a705ee0f",
+              "Text": {
+                "Handle": "hebbfcf86g2210g4e27g937ag9f53327931a4",
+                "Value": "Gekh does the talking around here - bother him."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "a1e607bd-2dec-4433-c4e6-998fdfd5746f": {
+      "UUID": "a1e607bd-2dec-4433-c4e6-998fdfd5746f",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "acc54d07-143e-0b6b-b58d-cea9bf0fea28",
+        "f14118a1-0644-2792-4661-56e14d858ce1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "26ffdb1f-eea2-61a9-5a57-a320c9015491",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_State_TouchedRaft"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "07d9e136-ed69-bbb0-62a7-23b38594c1ad",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_LoneDuergar_Quest_AttackMyconids"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "162c2df2-dd25-407d-a5f1-0c78d09ef515",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_InjuredGnome_State_HasBoots"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0e605f9e-3299-9646-0642-4dd9c0ca7929",
+              "Text": {
+                "Handle": "h952a1ce8g7704g4126ga144g0aa171bc2e24",
+                "Value": "Told you to keep away from there, didn't I?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    },
+    "aa79b762-8d95-e6bc-6466-0f037401ffea": {
+      "SourceNode": "a1e607bd-2dec-4433-c4e6-998fdfd5746f",
+      "UUID": "aa79b762-8d95-e6bc-6466-0f037401ffea",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "26ffdb1f-eea2-61a9-5a57-a320c9015491",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_State_TouchedRaft"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N15",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Greeting)",
+        "position": "15;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "acc54d07-143e-0b6b-b58d-cea9bf0fea28": {
+      "JumpTarget": "7fe3121e-442e-ac1e-8bdf-26ca6dec4358",
+      "JumpTargetPoint": 1,
+      "UUID": "acc54d07-143e-0b6b-b58d-cea9bf0fea28",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N16",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    },
+    "cf0bc52e-45bf-ec63-9ec3-5b3dbc53280c": {
+      "UUID": "cf0bc52e-45bf-ec63-9ec3-5b3dbc53280c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9e0e0e3e-4f89-47a6-ab78-c961f260565b",
+              "Text": {
+                "Handle": "he685d673g2e56g4bc3g80f4g0c4efbe6e622",
+                "Value": "Speak for yourself - I've got plenty of harm intended."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Aggressive. (combat ensues).",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "d24c097d-216d-1336-70ff-d689b1b4374a": {
+      "UUID": "d24c097d-216d-1336-70ff-d689b1b4374a",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "07d9e136-ed69-bbb0-62a7-23b38594c1ad",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_LoneDuergar_Quest_AttackMyconids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d928494a-d256-78c8-fb03-2469bf96414a",
+              "Text": {
+                "Handle": "h070b0912g287ag43fcg929ega0ea85a9d29d",
+                "Value": "Well you've looked. Now keep away from that raft until I say otherwise."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e3a2b702-5fec-6223-f515-2f1d64111493": {
+      "UUID": "e3a2b702-5fec-6223-f515-2f1d64111493",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "07fc1af1-827b-9848-6478-564c53d688ef",
+              "Text": {
+                "Handle": "h7662144eg03deg432agbac6g3f46c7cf6b07",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "f14118a1-0644-2792-4661-56e14d858ce1": {
+      "JumpTarget": "e3a2b702-5fec-6223-f515-2f1d64111493",
+      "JumpTargetPoint": 1,
+      "UUID": "f14118a1-0644-2792-4661-56e14d858ce1",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N17",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "f5346ece-613b-10fa-220f-a961a66011fb": {
+      "UUID": "f5346ece-613b-10fa-220f-a961a66011fb",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d24c097d-216d-1336-70ff-d689b1b4374a",
+        "cf0bc52e-45bf-ec63-9ec3-5b3dbc53280c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3b5d0487-e6ae-1015-64a2-76e3715fd3a6",
+              "Text": {
+                "Handle": "h8732f19ag0ab6g4f01g99ceg072e2359dda8",
+                "Value": "No harm intended. Just looking."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "6cf54d43-58fd-c05d-7e2a-856781e02a16",
+      "Index": 0,
+      "List": [
+        "8146788d-9d39-4cf2-99ca-03484deb0c55"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Novice Garmor",
+        "Type": "character",
+        "MapKey": "8146788d-9d39-4cf2-99ca-03484deb0c55",
+        "Name": "S_UND_LoneDuergar_BoatGuard",
+        "ParentTemplateId": null,
+        "TemplateName": "85712660-4f7a-46cf-b54f-9f39baf8070c"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "28a8bee5-33b8-d466-490e-0fee07fd1014",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "A henchman of Gekh Coal, a duergar follower of the Absolute, stops the player when he sees them interacting with a raft that'll let them progress across a lake and beyond his reach. If they haven't yet fulfilled their promise to help him, he warns them to leave the raft alone. "
+}

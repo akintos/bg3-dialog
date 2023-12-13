@@ -1,0 +1,538 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_Windmill_Mindflayer_AskPlayerForHelp.lsj",
+  "UUID": "5fc35efe-3f02-baf2-9297-2a9e32e96d3d",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "2ae60ca8-e7d0-6821-ad30-d7e216547fe5"
+  ],
+  "Nodes": {
+    "03d2d350-41d8-6999-77f2-5905e86652ef": {
+      "UUID": "03d2d350-41d8-6999-77f2-5905e86652ef",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4835ba9d-c0d6-40fb-ad62-88f875b536c2",
+              "value": false,
+              "paramval": 1,
+              "Name": "ILLITHID_HIDDEN_CHECK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d39122c3-cd5a-31e7-181d-e5c8c488330f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Windmill_Event_PlayerAssistsMindflayerHunt"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dbeb8144-a998-48c5-8e8d-0c0423c0f77b",
+              "Text": {
+                "Handle": "h57456865g6033g4159gbf95gc0c7f97b45f0",
+                "Value": "<i>A worthy ally - you will be exalted by my people.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "\"worthy ally' is referring to the player",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT TADPOLED",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "2ae60ca8-e7d0-6821-ad30-d7e216547fe5": {
+      "UUID": "2ae60ca8-e7d0-6821-ad30-d7e216547fe5",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "45cc9c90-ac8c-31a0-4e71-ff2bf411c12b",
+        "3d836324-9a44-59c2-6cec-a9d57e6e5623"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bbf37747-b0cd-4caf-a540-28e466d79b3b",
+              "Text": {
+                "Handle": "h3f870081gf332g44a7g95a3g68d75c79c3ac",
+                "Value": "<i>Aid me! Help me subdue this meal.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "'vessel' referring to the player.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "3d836324-9a44-59c2-6cec-a9d57e6e5623": {
+      "UUID": "3d836324-9a44-59c2-6cec-a9d57e6e5623",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "03d2d350-41d8-6999-77f2-5905e86652ef",
+        "600a3d8f-6b67-eb0f-68ff-a52de634267e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7661ddae-e291-425a-98ac-c96262c1bab2",
+              "Text": {
+                "Handle": "h1a03bc78g7d66g449fg8abbg5ee0cd251c4b",
+                "Value": "All right, I'll help."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "45cc9c90-ac8c-31a0-4e71-ff2bf411c12b": {
+      "UUID": "45cc9c90-ac8c-31a0-4e71-ff2bf411c12b",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "af287c16-0fb4-a887-dad0-0e5e5c869447",
+        "ea716ed4-0d20-e299-293f-edbd328739d0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "95ec0446-ad31-418a-b384-e0512972c9a7",
+              "Text": {
+                "Handle": "hd498a1dfg0f50g4660g89feg035bff84ca3a",
+                "Value": "No, I won't let you hurt innocent people."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "600a3d8f-6b67-eb0f-68ff-a52de634267e": {
+      "UUID": "600a3d8f-6b67-eb0f-68ff-a52de634267e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d39122c3-cd5a-31e7-181d-e5c8c488330f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Windmill_Event_PlayerAssistsMindflayerHunt"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8043dcf9-3760-4480-8549-bba4ea3545b2",
+              "Text": {
+                "Handle": "h3430e127gd7cag4682g9efag84d61dcdad13",
+                "Value": "<i>A worthy vessel. When your time comes, you will be a fine addition to our people.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "\"worthy vessel\" is referring to the player",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "TADPOLED",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    },
+    "af287c16-0fb4-a887-dad0-0e5e5c869447": {
+      "UUID": "af287c16-0fb4-a887-dad0-0e5e5c869447",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4835ba9d-c0d6-40fb-ad62-88f875b536c2",
+              "value": false,
+              "paramval": 1,
+              "Name": "ILLITHID_HIDDEN_CHECK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "49b23754-573e-6115-fa21-8659bf8a2654",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Windmill_Event_PlayerBetraysMindflayerHunt"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ab7123c7-942a-4659-8775-a8a8613a64fb",
+              "Text": {
+                "Handle": "h6251b588g743eg47a4g8d39g3f1197a37668",
+                "Value": "<i>Treacherous servant! Then you will share their fate.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "\"Treacherous servant\" is referring to the player",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT TADPOLED",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ea716ed4-0d20-e299-293f-edbd328739d0": {
+      "UUID": "ea716ed4-0d20-e299-293f-edbd328739d0",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "49b23754-573e-6115-fa21-8659bf8a2654",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Windmill_Event_PlayerBetraysMindflayerHunt"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c5f7e01f-77ea-456c-9253-7afd67ceb748",
+              "Text": {
+                "Handle": "h05df6822g395fg44begb520gcbeaa0ba1ca2",
+                "Value": "<i>Treacherous vessel! You are not worthy of the honour you have been given.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "\"Treacherous vessel\" is referring to the player",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "TADPOLED",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2a57a18e-4290-4f2e-969b-3356f38e07f4",
+      "Index": 0,
+      "List": [
+        "2084666f-59fb-470f-bb68-4523cf881d17"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Mind Flayer",
+        "Type": "character",
+        "MapKey": "2084666f-59fb-470f-bb68-4523cf881d17",
+        "Name": "S_WYR_Windmill_MF",
+        "ParentTemplateId": null,
+        "TemplateName": "23ac81c1-597e-41c3-8c3c-6688ca399be1"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f2cef4eb-9b1b-41f2-866a-f780e24ba84b",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "When the player convinces the mind flayer to go hunt, and the mind flayer gets into combat (not according to plan), and the mind flayer sees the player, on his turn he will ask for help."
+}

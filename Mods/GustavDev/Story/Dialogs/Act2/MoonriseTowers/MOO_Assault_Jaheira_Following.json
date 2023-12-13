@@ -1,0 +1,623 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/MoonriseTowers/MOO_Assault_Jaheira_Following.lsj",
+  "UUID": "200aa519-5963-3b2d-3396-d1dcbb013702",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "b752c893-07cf-42a7-96bc-1f90503b2758"
+  ],
+  "Nodes": {
+    "2b37e89e-cf55-a33a-8d98-35b0c30ca9d9": {
+      "UUID": "2b37e89e-cf55-a33a-8d98-35b0c30ca9d9",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cfb6394b-7d4b-4880-aff5-849b4191cf7d",
+              "Text": {
+                "Handle": "hc8a3f4ebg09e0g43begbfd0ga2e1674ee839",
+                "Value": "Yes, saer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "2e5bd285-a194-4d3f-8948-d2ee368dcd89": {
+      "UUID": "2e5bd285-a194-4d3f-8948-d2ee368dcd89",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "23d3838d-f6ee-47b1-be7e-b7246db8c017",
+              "Text": {
+                "Handle": "hb156b55ag5ea2g435agb9afgacd56afdbe0a",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "52aa3c9d-9547-3543-b447-8d52e1ed262c": {
+      "UUID": "52aa3c9d-9547-3543-b447-8d52e1ed262c",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2b37e89e-cf55-a33a-8d98-35b0c30ca9d9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ba466ab9-fb7b-4821-8e31-36e57bab9d78",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_Assault_State_JaheiraLeftParty"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6a6328d4-faab-4d97-9662-eba21c4dd613",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_Assault_State_JaheiraJoinedParty"
+            },
+            {
+              "UUID": "ba466ab9-fb7b-4821-8e31-36e57bab9d78",
+              "value": false,
+              "paramval": 1,
+              "Name": "MOO_Assault_State_JaheiraLeftParty"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3566349b-b217-4c9b-8781-ec4ba3c0343f",
+              "Text": {
+                "Handle": "h4f19dc1bgbac6g4853gb321gd2cbc3cf3805",
+                "Value": "Follow me."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "72858f36-a9a8-4bb5-bb97-672dfafa1ad0": {
+      "UUID": "72858f36-a9a8-4bb5-bb97-672dfafa1ad0",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9467f634-68d1-4411-829e-3f53576761ae"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ba466ab9-fb7b-4821-8e31-36e57bab9d78",
+              "value": false,
+              "paramval": 1,
+              "Name": "MOO_Assault_State_JaheiraLeftParty"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6a6328d4-faab-4d97-9662-eba21c4dd613",
+              "value": false,
+              "paramval": 1,
+              "Name": "MOO_Assault_State_JaheiraJoinedParty"
+            },
+            {
+              "UUID": "ba466ab9-fb7b-4821-8e31-36e57bab9d78",
+              "value": true,
+              "paramval": 1,
+              "Name": "MOO_Assault_State_JaheiraLeftParty"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d465e5c7-116a-45c2-ab60-9a558ee2e00a",
+              "Text": {
+                "Handle": "hc5cb8ffegb6b6g417agbdd9ge591bf533f49",
+                "Value": "Stay here for the moment."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "9467f634-68d1-4411-829e-3f53576761ae": {
+      "UUID": "9467f634-68d1-4411-829e-3f53576761ae",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "219cfb39-ab28-45e4-afbe-b8190208a8a0",
+              "Text": {
+                "Handle": "h651929bfgbab0g4176gab07g19db1403096f",
+                "Value": "I'll watch our backs. Call if you need me."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "b752c893-07cf-42a7-96bc-1f90503b2758": {
+      "UUID": "b752c893-07cf-42a7-96bc-1f90503b2758",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e37f0204-b06a-d8dd-b9c3-6f4b8d4bfe16",
+        "52aa3c9d-9547-3543-b447-8d52e1ed262c",
+        "72858f36-a9a8-4bb5-bb97-672dfafa1ad0",
+        "2e5bd285-a194-4d3f-8948-d2ee368dcd89"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1f0f078f-223b-4f88-aabd-c4de6c97f044",
+              "Text": {
+                "Handle": "h7c5cd6c3g9385g43ffg9b3fg780d1e506ba3",
+                "Value": "Yes?"
+              }
+            },
+            {
+              "LineId": "c4978382-f581-4b0e-836d-d80e799d3a3d",
+              "Text": {
+                "Handle": "h42569320g2d0dg4e23g84b8gd982347f6901",
+                "Value": "Speak."
+              }
+            },
+            {
+              "LineId": "7a3ea748-5e43-4f64-9819-df65989440f9",
+              "Text": {
+                "Handle": "h8cdcc129g225cg42ddg9debgb13363c285fa",
+                "Value": "Our host is at the top of the tower. Rude to keep him waiting, no?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ba2aa529-953f-39b1-0308-4a8db1de5bcb": {
+      "UUID": "ba2aa529-953f-39b1-0308-4a8db1de5bcb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9c6fd4de-0182-40bd-a4f1-2d4c8435ce56",
+              "Text": {
+                "Handle": "hdc9bc1c1gfe3bg41f1gb56ag648f7c6656ac",
+                "Value": "It is I who follows you. But, if I must venture some advice... this is the simple part. Ketheric dies, or we do. And the Sword Coast with us."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "e37f0204-b06a-d8dd-b9c3-6f4b8d4bfe16": {
+      "UUID": "e37f0204-b06a-d8dd-b9c3-6f4b8d4bfe16",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ba2aa529-953f-39b1-0308-4a8db1de5bcb"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c248d969-6ace-76d8-9f50-5c906957e8cc",
+              "value": false,
+              "paramval": null,
+              "Name": "200aa519-5963-3b2d-3396-d1dcbb013702_AskedStrategy"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c248d969-6ace-76d8-9f50-5c906957e8cc",
+              "value": true,
+              "paramval": null,
+              "Name": "200aa519-5963-3b2d-3396-d1dcbb013702_AskedStrategy"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22d5853d-cee1-4c31-8883-e05caa1c82a1",
+              "Text": {
+                "Handle": "h2f824a3eg88a5g44c7gaafdg8dfb19032851",
+                "Value": "What's our strategy?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "af0fa45c-c8fe-450b-80e0-4fa33554bcf6",
+      "Index": 0,
+      "List": [
+        "91b6b200-7d00-4d62-8dc9-99e8339dfa1a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Jaheira",
+        "Type": "character",
+        "MapKey": "91b6b200-7d00-4d62-8dc9-99e8339dfa1a",
+        "Name": "S_Player_Jaheira",
+        "ParentTemplateId": null,
+        "TemplateName": "7c7e6552-3fc0-4495-bb11-4b9f9a8e71fc"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "71cd5858-771c-4a80-9414-38eb6db99014",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Jaheira's follower dialogue for Moonrise when she's actively accompanying the player."
+}

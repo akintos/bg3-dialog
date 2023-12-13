@@ -1,0 +1,748 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Companions/ShadowHeart_InParty2_Nested_ShadowheartHug.lsj",
+  "UUID": "deb850b9-03df-eb30-686d-f9433317087a",
+  "Category": "Companion Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "5df536d1-33bb-448c-a4a4-dea0329b4f6e"
+  ],
+  "Nodes": {
+    "05ee0346-137b-d7b7-54b6-b14f0e8a5264": {
+      "UUID": "05ee0346-137b-d7b7-54b6-b14f0e8a5264",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8acdaadb-f25a-4637-ad82-3f18c79ddf26",
+              "Text": {
+                "Handle": "h5528f361g7d01g4b30gb478g8daa2d6a8d93",
+                "Value": "I hope there's more where that came from."
+              }
+            },
+            {
+              "LineId": "5f9fcc12-d75e-4203-8700-ead81fad67b5",
+              "Text": {
+                "Handle": "h81ce5fcaga1d3g4c0eg931cg7fbdb7ebf9ce",
+                "Value": "That hit the spot."
+              }
+            },
+            {
+              "LineId": "40e3cd39-3a77-496f-8b55-4fa9f12c7a5c",
+              "Text": {
+                "Handle": "h7f15f36bgc0fbg4e63gaa4dgaea3e9d2104a",
+                "Value": "You could charge gold for hugs, you know. They'd be queuing over the horizon."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N24",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Post-hug contentment (hugger is platonic)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DEFAULT",
+        "position": "1615;-94812",
+        "sourcetemplate": ""
+      }
+    },
+    "12e09065-ef6a-1194-227b-1177fbb21548": {
+      "UUID": "12e09065-ef6a-1194-227b-1177fbb21548",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cf819eb6-87f1-473f-b5a7-4944bbb3970f",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Shadowheart_Event_SkipHugResponse"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a9e3314f-8255-48dc-a764-37ea96d86924",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Shadowheart_State_WasHugged"
+            },
+            {
+              "UUID": "cf819eb6-87f1-473f-b5a7-4944bbb3970f",
+              "value": false,
+              "paramval": null,
+              "Name": "ORI_Shadowheart_Event_SkipHugResponse"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SKIP DEFAULT",
+        "position": "1615;-95688",
+        "sourcetemplate": ""
+      }
+    },
+    "2f72dc03-ca6f-8718-79d0-af20632d3b8d": {
+      "UUID": "2f72dc03-ca6f-8718-79d0-af20632d3b8d",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "12e09065-ef6a-1194-227b-1177fbb21548",
+        "cff26d0c-4c6c-1960-afd6-ef648d0c027a",
+        "4d5ca01d-0dd7-64c8-455a-70e3b7c2ffa4",
+        "788d6997-8ae8-8e1f-0664-f3131e8bf33a",
+        "05ee0346-137b-d7b7-54b6-b14f0e8a5264"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d3116e58-c55a-4853-a700-bee996207397",
+              "value": true,
+              "paramval": 1,
+              "Name": "BODYTYPE_STRONG"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "STRONG HUG",
+        "position": "1295;-95250",
+        "sourcetemplate": ""
+      }
+    },
+    "418ff272-293c-4d63-650c-93995683d52b": {
+      "UUID": "418ff272-293c-4d63-650c-93995683d52b",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "12e09065-ef6a-1194-227b-1177fbb21548",
+        "cff26d0c-4c6c-1960-afd6-ef648d0c027a",
+        "4d5ca01d-0dd7-64c8-455a-70e3b7c2ffa4",
+        "788d6997-8ae8-8e1f-0664-f3131e8bf33a",
+        "05ee0346-137b-d7b7-54b6-b14f0e8a5264"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02e5e9ed-b6b2-4524-99cd-cb2bc84c754a",
+              "value": true,
+              "paramval": 1,
+              "Name": "DRAGONBORN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DRAGONBORN HUG",
+        "position": "1295;-95469",
+        "sourcetemplate": ""
+      }
+    },
+    "4d5ca01d-0dd7-64c8-455a-70e3b7c2ffa4": {
+      "UUID": "4d5ca01d-0dd7-64c8-455a-70e3b7c2ffa4",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3808ae35-ad4e-465b-800b-63d32b77211e",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_State_PartneredWithShadowheart"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "25463d4f-fa9a-48ac-ae6d-a2834b58f5a9",
+              "Text": {
+                "Handle": "h2e10138dgea84g4551gafdeg5679d5136196",
+                "Value": "I could get lost in those arms."
+              }
+            },
+            {
+              "LineId": "80423156-a5bc-4c1c-ac14-87659cd4a850",
+              "Text": {
+                "Handle": "h714be156g6df0g4027gae01g55e7dc00a214",
+                "Value": "Hard to imagine there was a time when I didn't have you to hold me."
+              }
+            },
+            {
+              "LineId": "b14431aa-303e-4b2e-837a-4c0f694db27d",
+              "Text": {
+                "Handle": "h13d42458g955dg46dag9acbg08d2f409091f",
+                "Value": "You'll have me addicted to these embraces, do you know that?"
+              }
+            },
+            {
+              "LineId": "001af130-b986-4de7-a067-de408a500f9c",
+              "Text": {
+                "Handle": "ha028d13ag1b67g4d6agbb7fgd19a577ff478",
+                "Value": "One hug is never enough, is it?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Post-hug contentment (hugger is romantic partner)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "PARTNERED",
+        "position": "1615;-95250",
+        "sourcetemplate": ""
+      }
+    },
+    "5a6f9355-b6f3-af53-1cfd-05e325606af7": {
+      "UUID": "5a6f9355-b6f3-af53-1cfd-05e325606af7",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "12e09065-ef6a-1194-227b-1177fbb21548",
+        "cff26d0c-4c6c-1960-afd6-ef648d0c027a",
+        "4d5ca01d-0dd7-64c8-455a-70e3b7c2ffa4",
+        "788d6997-8ae8-8e1f-0664-f3131e8bf33a",
+        "05ee0346-137b-d7b7-54b6-b14f0e8a5264"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "50e7beca-4e90-43cd-b7c5-c235e236077f",
+              "value": true,
+              "paramval": 1,
+              "Name": "SHORT"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N21",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SHORT HUG",
+        "position": "1295;-95031",
+        "sourcetemplate": ""
+      }
+    },
+    "5df536d1-33bb-448c-a4a4-dea0329b4f6e": {
+      "UUID": "5df536d1-33bb-448c-a4a4-dea0329b4f6e",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "418ff272-293c-4d63-650c-93995683d52b",
+        "2f72dc03-ca6f-8718-79d0-af20632d3b8d",
+        "5a6f9355-b6f3-af53-1cfd-05e325606af7",
+        "755a5814-0e6b-abbb-770e-1de32c6d0208"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "975;-95250",
+        "sourcetemplate": ""
+      }
+    },
+    "755a5814-0e6b-abbb-770e-1de32c6d0208": {
+      "UUID": "755a5814-0e6b-abbb-770e-1de32c6d0208",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "12e09065-ef6a-1194-227b-1177fbb21548",
+        "cff26d0c-4c6c-1960-afd6-ef648d0c027a",
+        "4d5ca01d-0dd7-64c8-455a-70e3b7c2ffa4",
+        "788d6997-8ae8-8e1f-0664-f3131e8bf33a",
+        "05ee0346-137b-d7b7-54b6-b14f0e8a5264"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DEFAULT HUG",
+        "position": "1295;-94812",
+        "sourcetemplate": ""
+      }
+    },
+    "788d6997-8ae8-8e1f-0664-f3131e8bf33a": {
+      "SourceNode": "4d5ca01d-0dd7-64c8-455a-70e3b7c2ffa4",
+      "UUID": "788d6997-8ae8-8e1f-0664-f3131e8bf33a",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e87f1e21-a758-47ae-8c0e-9e715eb289b5",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_State_DatingShadowheart"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N26",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "DATING",
+        "position": "1615;-95031",
+        "sourcetemplate": ""
+      }
+    },
+    "cff26d0c-4c6c-1960-afd6-ef648d0c027a": {
+      "UUID": "cff26d0c-4c6c-1960-afd6-ef648d0c027a",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a9e3314f-8255-48dc-a764-37ea96d86924",
+              "value": false,
+              "paramval": null,
+              "Name": "ORI_Shadowheart_State_WasHugged"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a9e3314f-8255-48dc-a764-37ea96d86924",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Shadowheart_State_WasHugged"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6f61e472-c551-49f4-8092-f3c7bbcd689d",
+              "Text": {
+                "Handle": "h7cc0a098g7cd0g419fga0e2g14719699b80e",
+                "Value": "<i>Finally</i>. I thought I'd never get a hug out of you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Joke-exasperated",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "FIRST TIME HUG",
+        "position": "1615;-95469",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c15775d6-4f49-53bb-17b7-ee5e158912a8",
+      "Index": 0,
+      "List": [
+        "3ed74f06-3c60-42dc-83f6-f034cb47c679"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowheart",
+        "Type": "character",
+        "MapKey": "3ed74f06-3c60-42dc-83f6-f034cb47c679",
+        "Name": "S_Player_ShadowHeart",
+        "ParentTemplateId": null,
+        "TemplateName": "2ac51f22-e357-4639-b81d-022d462c8c6a"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b717e523-f24b-bffe-ee75-2fad9047324e",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "aa164f72-33db-4105-8ce8-73fdbf471d94",
+      "Index": 2,
+      "List": [
+        "c7c13742-bacd-460a-8f65-f864fe41f255"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Astarion",
+        "Type": "character",
+        "MapKey": "c7c13742-bacd-460a-8f65-f864fe41f255",
+        "Name": "S_Player_Astarion",
+        "ParentTemplateId": null,
+        "TemplateName": "5614c25e-0213-479f-864c-e95895adb30f"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d41da066-5acc-44f5-a872-39f47f083c4f",
+      "Index": 3,
+      "List": [
+        "58a69333-40bf-8358-1d17-fff240d7fb12"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lae'zel",
+        "Type": "character",
+        "MapKey": "58a69333-40bf-8358-1d17-fff240d7fb12",
+        "Name": "S_Player_Laezel",
+        "ParentTemplateId": null,
+        "TemplateName": "3a0351bd-0b2f-4fbf-84a6-30ad80bb3100"
+      },
+      "SpeakerGroupName": null
+    },
+    "4": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "0eda8e02-8ca8-4edd-9279-9e151cbe83ad",
+      "Index": 4,
+      "List": [
+        "c774d764-4a17-48dc-b470-32ace9ce447d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Wyll",
+        "Type": "character",
+        "MapKey": "c774d764-4a17-48dc-b470-32ace9ce447d",
+        "Name": "S_Player_Wyll",
+        "ParentTemplateId": null,
+        "TemplateName": "159cdf9e-6665-4450-9375-8494e233b0e4"
+      },
+      "SpeakerGroupName": null
+    },
+    "5": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "16ef348c-d9ef-4f5d-aea6-7087574fbfbd",
+      "Index": 5,
+      "List": [
+        "ad9af97d-75da-406a-ae13-7071c563f604"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Gale",
+        "Type": "character",
+        "MapKey": "ad9af97d-75da-406a-ae13-7071c563f604",
+        "Name": "S_Player_Gale",
+        "ParentTemplateId": null,
+        "TemplateName": "7d427a86-81f0-418d-a32a-3b5676c86bfa"
+      },
+      "SpeakerGroupName": null
+    },
+    "6": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cc9dc2fe-1f9d-46e7-bff0-1790d75ea0be",
+      "Index": 6,
+      "List": [
+        "2c76687d-93a2-477b-8b18-8a14b549304c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Karlach",
+        "Type": "character",
+        "MapKey": "2c76687d-93a2-477b-8b18-8a14b549304c",
+        "Name": "S_Player_Karlach",
+        "ParentTemplateId": null,
+        "TemplateName": "3ab0a797-0904-47cb-955d-cdc3ec32409c"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Default dialogue - the conversation you can have with Shadowheart at any time when she's a member of your party. You can ask her about herself, or events that you've experienced together during your adventures. Her responses to you may differ slightly depending on her current attitude towards you."
+}

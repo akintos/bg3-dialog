@@ -1,0 +1,101 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_JaheirasHouse_PAD_JaheiraGoesHostile.lsj",
+  "UUID": "d5348fbd-2a06-3e13-834e-799a56043d55",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "f26e4e86-2241-49d7-8429-e000676c4973"
+  ],
+  "Nodes": {
+    "f26e4e86-2241-49d7-8429-e000676c4973": {
+      "UUID": "f26e4e86-2241-49d7-8429-e000676c4973",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d8f0c309-193b-eaed-5aaa-812cd137caf2",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Combat"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "69c9641c-dd11-403b-b0d4-103d20face43",
+              "Text": {
+                "Handle": "h720f88cagaac2g428fg8321g885c25826f59",
+                "Value": "I was a fool to trust you, and I paid the fool's price. But I will not pay it alone."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "barely suppressed rage - found her family killed / home destroyed - about to attack us after.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "defaac01-b678-41d0-9b3f-3863e6ed06fe",
+      "Index": 0,
+      "List": [
+        "91b6b200-7d00-4d62-8dc9-99e8339dfa1a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Jaheira",
+        "Type": "character",
+        "MapKey": "91b6b200-7d00-4d62-8dc9-99e8339dfa1a",
+        "Name": "S_Player_Jaheira",
+        "ParentTemplateId": null,
+        "TemplateName": "7c7e6552-3fc0-4495-bb11-4b9f9a8e71fc"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Jaheira AD for when the player attacks Jaheira's family and combat has happened against them. Will also pull double duty for if the player walks her back to find them dead. Minsc has his own that is equally generic. This always ends in combat.\r\n\r\nThis is specifically to capture, from what I can think about, \r\n- Moving Jaheira back into combat with her kids while fighting them\r\n- Moving her back there when the kids are dead on the floor"
+}

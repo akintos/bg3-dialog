@@ -1,0 +1,532 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_NGB_TortureredAdventurer_AssaultCustom.lsj",
+  "UUID": "95178cc4-ef45-a0bb-7723-911aab857bd9",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "8a6f7e9c-8913-bfe8-cc56-7be3d48fc13f",
+    "c3376e59-4783-d792-0d5b-20147d09d7a1",
+    "00ab14bd-7658-459a-9598-ba7643eb02d9",
+    "fb1b7f51-4cac-5f81-31c9-02d9e4f95d58",
+    "0a9ad7ae-3bcf-46e9-92af-806fa7a487d2"
+  ],
+  "Nodes": {
+    "00ab14bd-7658-459a-9598-ba7643eb02d9": {
+      "UUID": "00ab14bd-7658-459a-9598-ba7643eb02d9",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "06207c03-9264-9790-99da-49b1df20be0c",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_KnowDen"
+            },
+            {
+              "UUID": "6208091a-2462-4f0b-abd4-77890be39f11",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_PrisonerDied"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4a1b84d-8c88-8adb-7d5e-9b1383203f81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GEB_TorturedAdventurer_Assault_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ff19d294-eebe-40fd-9e5e-236cbcdd3ef7",
+              "Text": {
+                "Handle": "hf96a8e0age7c1g4840g9d86g57124dfa1852",
+                "Value": "*The goblin appears annoyed. It might be best to leave the prisoner alone.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "Assault - gobs don't know about Den",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "0a9ad7ae-3bcf-46e9-92af-806fa7a487d2": {
+      "UUID": "0a9ad7ae-3bcf-46e9-92af-806fa7a487d2",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "06207c03-9264-9790-99da-49b1df20be0c",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_KnowDen"
+            },
+            {
+              "UUID": "6208091a-2462-4f0b-abd4-77890be39f11",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_PrisonerDied"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fefd5bd1-f206-45d7-9a59-8a92ca4d226e",
+              "Text": {
+                "Handle": "h784e8bedgc6a2g45c3g9dc0g93f3a060a365",
+                "Value": "*It seems the prisoner you killed was rather valuable. Now the price is on your head.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "Murder - gobs don't know about Den",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "8a6f7e9c-8913-bfe8-cc56-7be3d48fc13f": {
+      "UUID": "8a6f7e9c-8913-bfe8-cc56-7be3d48fc13f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "06207c03-9264-9790-99da-49b1df20be0c",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_KnowDen"
+            },
+            {
+              "UUID": "6208091a-2462-4f0b-abd4-77890be39f11",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_PrisonerDied"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "a672ac1d-d088-451a-9537-3da4bf74466c",
+              "value": true,
+              "paramval": 1,
+              "Name": "DROWELF"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4a1b84d-8c88-8adb-7d5e-9b1383203f81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GEB_TorturedAdventurer_Assault_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cb91eadc-5232-4c46-bbf4-48eb05198564",
+              "Text": {
+                "Handle": "h677ac9fbg5cbag4034g8324g507ba0e1ccec",
+                "Value": "*The goblin is uneasy. Drow or not, you aren't supposed to be interfering with the prisoner.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "Assault - gobs don't know about Den",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "They have to warn the drow not to hurt the prisoner again, but they are extremely scared the drow will kill them.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "c3376e59-4783-d792-0d5b-20147d09d7a1": {
+      "UUID": "c3376e59-4783-d792-0d5b-20147d09d7a1",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4a1b84d-8c88-8adb-7d5e-9b1383203f81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GEB_TorturedAdventurer_Assault_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "06207c03-9264-9790-99da-49b1df20be0c",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_KnowDen"
+            },
+            {
+              "UUID": "6208091a-2462-4f0b-abd4-77890be39f11",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_PrisonerDied"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "a672ac1d-d088-451a-9537-3da4bf74466c",
+              "value": true,
+              "paramval": 1,
+              "Name": "DROWELF"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b015d96e-66ef-4ff4-90dc-80424abbc877",
+              "Text": {
+                "Handle": "h59cfd284g8896g436bga4b7gcbef7d9d2abf",
+                "Value": "*You sense you've gone too far. Deference to your kind won't dissuade this goblin from killing you.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N26",
+        "InternalNodeContext": "Assault - gobs don't know about Den",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "They have to kill the drow, but they are terribly scared.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "fb1b7f51-4cac-5f81-31c9-02d9e4f95d58": {
+      "UUID": "fb1b7f51-4cac-5f81-31c9-02d9e4f95d58",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4a1b84d-8c88-8adb-7d5e-9b1383203f81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GEB_TorturedAdventurer_Assault_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "06207c03-9264-9790-99da-49b1df20be0c",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_KnowDen"
+            },
+            {
+              "UUID": "6208091a-2462-4f0b-abd4-77890be39f11",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_Torturers_State_PrisonerDied"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3866ca44-de2e-4c31-b222-c18ab40b3de4",
+              "Text": {
+                "Handle": "h0de5bf43g4752g4a8bga297g17ab424a252d",
+                "Value": "*It seems the goblin is no longer content to let you have your fun. This might get messy.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "Assault - gobs don't know about Den",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "18bedfe4-d465-7d32-f809-8c73c360cac5",
+      "Index": 0,
+      "List": [
+        "f5cc68da-6a71-48f5-a2d6-a3c32f858d18"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Goblins"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e5be10ae-9751-015e-2916-149e4b6e8ef7",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Crime dialogue when a random goblin sees you hurting or killing Liam."
+}

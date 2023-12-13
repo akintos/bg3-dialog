@@ -1,0 +1,298 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_OskarsBeloved_AD_StaffBeratingServant.lsj",
+  "UUID": "4fca60df-e492-86a3-4168-441eaa1170f5",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "bc21b0c3-b967-457c-b9fd-f20312b9b02d"
+  ],
+  "Nodes": {
+    "51934ccd-501e-47ba-aa13-7eed2efa1b8b": {
+      "UUID": "51934ccd-501e-47ba-aa13-7eed2efa1b8b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c2c0d294-a09e-43e8-8e99-32bb01408adc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1a07b82d-fbbe-40b7-ac92-9cf52f643d79",
+              "Text": {
+                "Handle": "h81f71ebeg51e6g4a0ega97agdd61744f173e",
+                "Value": "I'm sorry, Mr Mercer. It was an accident!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Protesting, not very well",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-945;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "8b0f9b83-4721-4f2b-980e-09dcad8363c5": {
+      "UUID": "8b0f9b83-4721-4f2b-980e-09dcad8363c5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "926ec1e2-4ef6-46a2-8a3b-4fc2d4cf975c",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_OskarsBeloved_Event_ServantFired"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a858a4e5-f971-466c-9de5-98aa9b9d976b",
+              "Text": {
+                "Handle": "h4b4d8cafg9acag4547gbc89g32497aae0c2c",
+                "Value": "If you wish to treat this like an alehouse, then go and work in one!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Berating, but not raising his voice",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "bc21b0c3-b967-457c-b9fd-f20312b9b02d": {
+      "UUID": "bc21b0c3-b967-457c-b9fd-f20312b9b02d",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "51934ccd-501e-47ba-aa13-7eed2efa1b8b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "85968e5b-6104-4c7c-b0f2-1a8acd543473",
+              "Text": {
+                "Handle": "h2fbb9989gaa89g4dd2g98efgd878a544326b",
+                "Value": "Pack your things! You're no longer a member of this staff."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Berating, but not raising his voice",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-1265;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "c2c0d294-a09e-43e8-8e99-32bb01408adc": {
+      "UUID": "c2c0d294-a09e-43e8-8e99-32bb01408adc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8b0f9b83-4721-4f2b-980e-09dcad8363c5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ec349d59-1b7d-4302-8fd6-f4e15ff956a3",
+              "Text": {
+                "Handle": "h705a665eg1ad2g4b2fg8f1egdd73ffc433d8",
+                "Value": "Lady Jannath tolerates many things, but your clumsiness... it is <i>unacceptable</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Scolding, like this is the worst possible thing in the world. Not raising his voice.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-625;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "861a16d9-17c1-40c1-a742-4db223020309",
+      "Index": 0,
+      "List": [
+        "ae833e8a-5787-4bd3-950d-b44fbf47df41"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Chamberlain Mercer",
+        "Type": "character",
+        "MapKey": "ae833e8a-5787-4bd3-950d-b44fbf47df41",
+        "Name": "S_LOW_YellingHighServant",
+        "ParentTemplateId": null,
+        "TemplateName": "e8bb6117-3e7b-42b1-be1d-1096bc226ea8"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "be26f240-2a54-46df-966f-15669a54e812",
+      "Index": 1,
+      "List": [
+        "4d568121-69b1-4d39-b948-7eb229ad3805"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Servant Bailey",
+        "Type": "character",
+        "MapKey": "4d568121-69b1-4d39-b948-7eb229ad3805",
+        "Name": "S_LOW_CleaningServant",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Lady Jannath's Chamberlain is in the process of firing a junior servant, Bailey. The servant knows to keep quiet. If the player does not interrupt the firing, then servant Bailey leaves for good."
+}

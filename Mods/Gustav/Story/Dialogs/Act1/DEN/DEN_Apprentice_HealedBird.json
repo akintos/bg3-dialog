@@ -1,0 +1,274 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_Apprentice_HealedBird.lsj",
+  "UUID": "982ad9a5-adba-7fbd-4ffc-7393271350bb",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "85352a36-3ab3-495c-b012-caafb080225d",
+    "69c36eb7-6251-4d8e-8ad9-de96464cb571",
+    "93379be8-cb37-4eaf-9d80-fba5a3ddb7c4"
+  ],
+  "Nodes": {
+    "69c36eb7-6251-4d8e-8ad9-de96464cb571": {
+      "UUID": "69c36eb7-6251-4d8e-8ad9-de96464cb571",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2b892913-c036-78fa-b4a7-a3ffd85aaf14",
+              "value": false,
+              "paramval": 1,
+              "Name": "DEN_Apprentice_HasMet_WoundedBirdVictory"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "c641da6a-b3f5-4873-bd34-c53768d30d6f",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_AttackOnDen_Event_Start"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2b892913-c036-78fa-b4a7-a3ffd85aaf14",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Apprentice_HasMet_WoundedBirdVictory"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cd04e888-d84f-58e8-8bc5-1024e153b3b2",
+              "Text": {
+                "Handle": "h68a565e7g7d2fg4190g9ca2g74882393590d",
+                "Value": "There was so much noise out there. I'm glad you're okay."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "After GobHunt or AttackOnDen",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "85352a36-3ab3-495c-b012-caafb080225d": {
+      "UUID": "85352a36-3ab3-495c-b012-caafb080225d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5bb48fff-9da5-8036-ea1a-c98cf42af6f2",
+              "Text": {
+                "Handle": "hab64f883g43beg4b7eg9d58g65a705ee430c",
+                "Value": "*Chirp!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "The other blue jay have the exact same line",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[Wounded bird] chirps",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "After GobHunt or AttackOnDen",
+        "position": "15;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "93379be8-cb37-4eaf-9d80-fba5a3ddb7c4": {
+      "UUID": "93379be8-cb37-4eaf-9d80-fba5a3ddb7c4",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d9dca256-7e5d-139d-5624-b420017e8bac",
+              "Text": {
+                "Handle": "h76c70f5fg8262g435cgb6d9g9161bf22828a",
+                "Value": "Wing's still a little stiff, but I'm getting stronger!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Bird shows/moves injured wing and looks at it, should be in weak resting pose",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HasMet - GobHunt or AttackOnDen",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a5176e9d-4f61-a87e-46d3-03721f36c490",
+      "Index": 0,
+      "List": [
+        "200bc56e-f3e1-445b-8b75-a5ddb541e123"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Wounded Bird",
+        "Type": "character",
+        "MapKey": "200bc56e-f3e1-445b-8b75-a5ddb541e123",
+        "Name": "S_DEN_WoundedBird",
+        "ParentTemplateId": null,
+        "TemplateName": "e32a1c7a-93db-4a3d-b21f-ca9cbff85190"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b33445af-18d2-8766-82e4-12e0ddb3f743",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The 'Wounded Bird' that Nettie was treating after some time has passed (after Goblin Hunt or Attack on Den). The bird's recovering and feels a bit better."
+}

@@ -1,0 +1,2001 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Companions/Jaheira_Leaving.lsj",
+  "UUID": "59666b57-be1a-8cc5-e764-89d287ad476b",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "1d219ebf-6097-927f-4836-640c48dc2eba",
+    "8ff0dac2-d676-7df4-b207-67bee3975ab2",
+    "dce2f08e-450c-a4e0-af10-49abf237bfcb",
+    "9d9e3dd6-9130-ebdd-f8c2-b2e8b6169eb5",
+    "eea895f7-9e92-5a95-1f65-f37b927cbe19",
+    "cb787641-544b-1eb4-5c4a-c05664f99abf",
+    "0c871f7d-9a6e-3b98-10cc-ad23d3f533fd",
+    "478c9585-d719-7b23-9638-7f6cead6e4cc",
+    "74a15605-dd9d-434a-bb84-2aeddd60cb28"
+  ],
+  "Nodes": {
+    "024f91f4-e500-77f4-b9c7-290d62b6f3e8": {
+      "UUID": "024f91f4-e500-77f4-b9c7-290d62b6f3e8",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "effaf51b-3c32-4efa-8dd1-7f1bc8015612",
+              "Text": {
+                "Handle": "hb093b7e4g1882g478agbdc2g930a34da38d4",
+                "Value": "I thought we fought the same fight. Perhaps we do still - and I was only wrong about which side of it you stood on. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;453",
+        "sourcetemplate": ""
+      }
+    },
+    "0b9c2ed8-e9c2-48c5-a97f-b3ab1d473d7c": {
+      "UUID": "0b9c2ed8-e9c2-48c5-a97f-b3ab1d473d7c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "024f91f4-e500-77f4-b9c7-290d62b6f3e8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "83c663c9-8aed-4a51-92ff-07eccaebe076",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_End_Minsc"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N55",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "5465ceda-821c-43d5-b8fb-57781f8e5505",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "975;15",
+        "sourcetemplate": "INCLUSION_Minsc"
+      }
+    },
+    "0c871f7d-9a6e-3b98-10cc-ad23d3f533fd": {
+      "UUID": "0c871f7d-9a6e-3b98-10cc-ad23d3f533fd",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8fba8545-410e-d9bb-9bfc-b14d575f8517"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f505ff06-486a-4d8d-9986-95f4f91f9094",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_JaheirasHouse_State_PlayerAttackedFamily"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c5daaee1-febe-4362-9851-ec31b326ce84",
+              "Text": {
+                "Handle": "h61e24e3ag40d8g4ca6g8b57g82ce717d2b85",
+                "Value": "You would raise arms in my home? Against my <i>family</i>?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Attacked J's Family - Anyone Else",
+        "position": "-625;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "17872fb5-08e9-7bb1-8695-b1d568040000": {
+      "UUID": "17872fb5-08e9-7bb1-8695-b1d568040000",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9d1824b3-4782-4026-8160-d2eb20388d98",
+              "Text": {
+                "Handle": "h5269582egfc64g4fb8ga24ag6e8c3c86a15c",
+                "Value": "Well, I think this city is finished with me. I am certainly finished with it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N82",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-3270",
+        "sourcetemplate": ""
+      }
+    },
+    "1a723cea-0624-4016-8761-398f6db513c6": {
+      "UUID": "1a723cea-0624-4016-8761-398f6db513c6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bff58829-e187-4149-a77a-ac459dd46931",
+        "91713f36-31a6-d65c-a5be-c07b62abc53c",
+        "a36512b5-d4aa-49fb-9b27-d835ef1b919e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4d56209b-b778-4f03-a67f-0ab763dbdce1",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_Minsc"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N56",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "77be43d3-d7cc-418a-beb7-69fa835134ab",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "MINSC AVERAGE APPROVAL",
+        "position": "15;15",
+        "sourcetemplate": "INCLUSION_Minsc"
+      }
+    },
+    "1d219ebf-6097-927f-4836-640c48dc2eba": {
+      "SourceNode": "eea895f7-9e92-5a95-1f65-f37b927cbe19",
+      "UUID": "1d219ebf-6097-927f-4836-640c48dc2eba",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "441ab42d-47f6-e803-eb7f-16a20caf9549"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5f2602fe-b638-40e1-ae66-43636ebe4648",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Jaheira_State_InPartyNoMinsc"
+            },
+            {
+              "UUID": "8d437b31-7b27-478a-8c76-4cc095006d3f",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Minsc_State_SavedButNotRecruited"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5f2602fe-b638-40e1-ae66-43636ebe4648",
+              "value": false,
+              "paramval": null,
+              "Name": "GLO_Jaheira_State_InPartyNoMinsc"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N89",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (LEFT MINSC BEHIND)",
+        "position": "-625;-3927",
+        "sourcetemplate": ""
+      }
+    },
+    "1dc23b54-1b22-8007-5963-017c658d35c2": {
+      "UUID": "1dc23b54-1b22-8007-5963-017c658d35c2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8d3ffcdd-51a1-a233-8998-012243b845b6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7637c003-e9cb-4367-8bc4-a7e93772c053",
+              "Text": {
+                "Handle": "h7fe40b25gd57bg46a4gacb2ge54fe58316ac",
+                "Value": "I know you did everything you could. More than I had any right to expect. And I have no doubt that you are more than a match for this cult."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N88",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-3270",
+        "sourcetemplate": ""
+      }
+    },
+    "26addbb8-7251-a154-e7f3-d82b55bcee59": {
+      "UUID": "26addbb8-7251-a154-e7f3-d82b55bcee59",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d8660c70-ce3e-91a8-4399-1f9b2fe676aa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3510cd49-7ff6-475c-829b-d4d68a07b085",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Origin_PartOfTheTeam_Minsc"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "41c32830-a9a6-4bcf-9a6d-f230f233e485",
+              "Text": {
+                "Handle": "h07cd4116g8d42g4d37g9957g7197dfd98566",
+                "Value": "And nor will Minsc. You shall have to make do without us, <i>hero</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "2c8917d0-43bd-9d5f-d325-d5553b0ffbac": {
+      "UUID": "2c8917d0-43bd-9d5f-d325-d5553b0ffbac",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bc475820-264d-5cfc-21d1-b2605988e1ec"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2a1dffad-0532-4679-a6e9-e0961b00fbf4",
+              "Text": {
+                "Handle": "h7326f0d5gbec7g4926g99aag3b01b795b75f",
+                "Value": "I cannot give you the death you deserve. Not without damning the city along with you. But I will not stay at your side a moment longer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N43",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "3d047371-49bd-29b8-0a74-084a3ae2579b": {
+      "UUID": "3d047371-49bd-29b8-0a74-084a3ae2579b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "024f91f4-e500-77f4-b9c7-290d62b6f3e8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3510cd49-7ff6-475c-829b-d4d68a07b085",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Origin_PartOfTheTeam_Minsc"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9082889a-fd46-40c7-88d2-9d68cfb627ae",
+              "Text": {
+                "Handle": "h65d2164egadf4g4381g8346g45e65e9a6330",
+                "Value": "Nor will Minsc, I think. His choices are his own, but he has always been swifter to sniff out rot than I."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N61",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "441ab42d-47f6-e803-eb7f-16a20caf9549": {
+      "JumpTarget": "6f72fc93-6024-87df-f76d-3169e850dec0",
+      "JumpTargetPoint": 1,
+      "UUID": "441ab42d-47f6-e803-eb7f-16a20caf9549",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N90",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-305;-3927",
+        "sourcetemplate": ""
+      }
+    },
+    "478c9585-d719-7b23-9638-7f6cead6e4cc": {
+      "UUID": "478c9585-d719-7b23-9638-7f6cead6e4cc",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2c8917d0-43bd-9d5f-d325-d5553b0ffbac"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5bda0a8c-eea3-8403-2965-82d9e8b24bfe",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_MurderTribunal_State_OfferedMinscSacrifice"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "67b18c6f-c7ec-4208-b76c-b74d1d337959",
+              "Text": {
+                "Handle": "hf5716e22g5a43g4ebcg80fbg2fdff0dd6990",
+                "Value": "Was this your purpose all along, then? To aid me in saving my friend, only to trade him like cattle at the first convenience?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SACRIFICED MINSC",
+        "position": "-625;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "4dc8c2ab-3aa2-c07a-a1a4-a11b87270a63": {
+      "UUID": "4dc8c2ab-3aa2-c07a-a1a4-a11b87270a63",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8da10a89-8612-49fb-bc71-f1963761bf38",
+              "Text": {
+                "Handle": "h9db0606bg3a98g46c1gbf8fg5dda06121983",
+                "Value": "I'll keep him out of trouble - but know that when the time to face the Absolute comes, I <i>will</i> be there."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N47",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "5839a96c-aa44-2319-0739-cd44cd083f18": {
+      "UUID": "5839a96c-aa44-2319-0739-cd44cd083f18",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1a723cea-0624-4016-8761-398f6db513c6",
+        "3d047371-49bd-29b8-0a74-084a3ae2579b",
+        "7444e5dd-328b-1de1-d72d-4642f8bd7d15"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6fed032b-a317-4a4c-b0d5-506422d0a3fa",
+              "Text": {
+                "Handle": "h9983ce15g1340g49cfg9965g3e8c25f48058",
+                "Value": "No more. You are free to forge your own path, but I will follow you no further."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;15",
+        "sourcetemplate": ""
+      }
+    },
+    "6f72fc93-6024-87df-f76d-3169e850dec0": {
+      "UUID": "6f72fc93-6024-87df-f76d-3169e850dec0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4dc8c2ab-3aa2-c07a-a1a4-a11b87270a63"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dba2665b-862c-4da4-bade-e217e79c7ab4",
+              "Text": {
+                "Handle": "h6a55cea6gbe9bg4dc3g9a15g399bf71326c8",
+                "Value": "I would journey to this path's end, my friend - but if you will not bring Minsc along... for all my debt to you, I owe him a deeper one."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N46",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "7444e5dd-328b-1de1-d72d-4642f8bd7d15": {
+      "JumpTarget": "024f91f4-e500-77f4-b9c7-290d62b6f3e8",
+      "JumpTargetPoint": 1,
+      "UUID": "7444e5dd-328b-1de1-d72d-4642f8bd7d15",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N84",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    },
+    "74a15605-dd9d-434a-bb84-2aeddd60cb28": {
+      "UUID": "74a15605-dd9d-434a-bb84-2aeddd60cb28",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5839a96c-aa44-2319-0739-cd44cd083f18"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1042e76e-5081-42ec-9596-1b5ee11f3fff",
+              "Text": {
+                "Handle": "h3cc6f1a5g5339g46c1g8357ga4c698a3712d",
+                "Value": "I bear some blame for what you have become. I was so eager to take up my blades again, I did not look hard enough at what use I put them to."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "General Low Approval",
+        "position": "-625;15",
+        "sourcetemplate": ""
+      }
+    },
+    "8d3ffcdd-51a1-a233-8998-012243b845b6": {
+      "UUID": "8d3ffcdd-51a1-a233-8998-012243b845b6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "17872fb5-08e9-7bb1-8695-b1d568040000"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1b55d44c-5917-48c3-84ce-cb160ae0f3cf",
+              "Text": {
+                "Handle": "h2757ba6eg372cg40ffga5a6g1ced17d36467",
+                "Value": "But I think, perhaps, that I have gone as far as I am able. I will take Minsc back to his home, in Rashemen. And after that..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N74",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Low Approval - Minsc dead",
+        "position": "15;-3270",
+        "sourcetemplate": ""
+      }
+    },
+    "8fba8545-410e-d9bb-9bfc-b14d575f8517": {
+      "SourceNode": "2c8917d0-43bd-9d5f-d325-d5553b0ffbac",
+      "UUID": "8fba8545-410e-d9bb-9bfc-b14d575f8517",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "26addbb8-7251-a154-e7f3-d82b55bcee59"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N85",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "-305;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "8ff0dac2-d676-7df4-b207-67bee3975ab2": {
+      "UUID": "8ff0dac2-d676-7df4-b207-67bee3975ab2",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1dc23b54-1b22-8007-5963-017c658d35c2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c8fdabdd-a9fa-4dbb-b693-9c7b12e1f56b",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Minsc_State_NotSavedFromAbsolute"
+            },
+            {
+              "UUID": "e61d7a9c-5c7c-4149-809d-49ca73ebf5ef",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Minsc_State_PermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f4035ef3-2d6a-449d-a6af-f6e78e7a333c",
+              "Text": {
+                "Handle": "hbe30b150gd386g4b77g8ebfg962b3c9db2be",
+                "Value": "I have seen friends die before. But to do the deed myself... "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N70",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "FAILED TO CONVINCE ABSOLUTE",
+        "position": "-625;-3270",
+        "sourcetemplate": ""
+      }
+    },
+    "91713f36-31a6-d65c-a5be-c07b62abc53c": {
+      "SourceNode": "bff58829-e187-4149-a77a-ac459dd46931",
+      "UUID": "91713f36-31a6-d65c-a5be-c07b62abc53c",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9b1310f7-db9d-e8db-6bda-087f965508b7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f1ab5792-7ebe-3021-bb12-e8b749507477",
+              "value": true,
+              "paramval": 1,
+              "Name": "Approval_AtLeast_40_For_Sp3"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N83",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (INCLUSION LINE)",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "9b1310f7-db9d-e8db-6bda-087f965508b7": {
+      "UUID": "9b1310f7-db9d-e8db-6bda-087f965508b7",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0b9c2ed8-e9c2-48c5-a97f-b3ab1d473d7c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 2,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE - FOR MINSC LEAVING",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "9d9e3dd6-9130-ebdd-f8c2-b2e8b6169eb5": {
+      "SourceNode": "eea895f7-9e92-5a95-1f65-f37b927cbe19",
+      "UUID": "9d9e3dd6-9130-ebdd-f8c2-b2e8b6169eb5",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ef7d07f5-d1e7-7c54-02fb-6e5b25335303"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3510cd49-7ff6-475c-829b-d4d68a07b085",
+              "value": false,
+              "paramval": null,
+              "Name": "GLO_Origin_PartOfTheTeam_Minsc"
+            },
+            {
+              "UUID": "62e1d5ec-7c7e-70c2-68de-cadc7c7f5f20",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Minsc_State_SavedFromAbsolute"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N64",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (LEFT MINSC BEHIND)",
+        "position": "-625;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "a36512b5-d4aa-49fb-9b27-d835ef1b919e": {
+      "UUID": "a36512b5-d4aa-49fb-9b27-d835ef1b919e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9b1310f7-db9d-e8db-6bda-087f965508b7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1e3e9473-4277-79b5-42a2-cfd066386593",
+              "value": true,
+              "paramval": 1,
+              "Name": "Approval_AtLeast_20_For_Sp3"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1f5cad7f-5d40-48af-aae1-e1bdca5480bd",
+              "Text": {
+                "Handle": "h31861d85ge7e1g46e0ga86dg81aa725516e8",
+                "Value": "We have followed a little <i>too</i> long, says Boo - and Minsc is in agreement."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N60",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "94387efb-541c-41f5-8611-69311599d68d",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION LINE",
+        "position": "335;234",
+        "sourcetemplate": "INCLUSION_Minsc"
+      }
+    },
+    "bc475820-264d-5cfc-21d1-b2605988e1ec": {
+      "UUID": "bc475820-264d-5cfc-21d1-b2605988e1ec",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4e43320d-70e8-425a-a8cb-1617cec992db",
+              "Text": {
+                "Handle": "h7b0ff2b6g42d9g4792g840dg476f980b276d",
+                "Value": "Kill the Absolute - and should you die in the attempt, it would be a better end than you deserve."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N44",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "bff58829-e187-4149-a77a-ac459dd46931": {
+      "UUID": "bff58829-e187-4149-a77a-ac459dd46931",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9b1310f7-db9d-e8db-6bda-087f965508b7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "379b2a1e-207f-fca8-b2e7-372dc8751a5d",
+              "value": true,
+              "paramval": 1,
+              "Name": "Approval_AtLeast_60_For_Sp3"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "111c0e2e-6135-414b-be13-9e9a793358a6",
+              "Text": {
+                "Handle": "hc6f0a7ddg924ag4bd8gbfa1g024196e12531",
+                "Value": "And where Jaheira goes, so too go Minsc and Boo. Goodbye, my friend."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N41",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "94387efb-541c-41f5-8611-69311599d68d",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION LINE",
+        "position": "335;-204",
+        "sourcetemplate": "INCLUSION_Minsc"
+      }
+    },
+    "cb787641-544b-1eb4-5c4a-c05664f99abf": {
+      "UUID": "cb787641-544b-1eb4-5c4a-c05664f99abf",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8fba8545-410e-d9bb-9bfc-b14d575f8517"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f30bb5a9-ca96-40a5-8eba-30c17930c3c3",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_JaheirasHouse_State_CompanionAttackedFamily"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "32771570-3a46-495f-9e2c-942895a0e950",
+              "Text": {
+                "Handle": "hfc91ec2dgafeeg4968gb229gacd014f4b3f0",
+                "Value": "Was it some trick of the tadpole - to have me turn my blade on my own?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Attacked J's Family - Minsc/Jaheira",
+        "position": "-625;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "cbe18a60-4b2f-5069-074d-d84f00790b29": {
+      "SourceNode": "4dc8c2ab-3aa2-c07a-a1a4-a11b87270a63",
+      "UUID": "cbe18a60-4b2f-5069-074d-d84f00790b29",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N66",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "15;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "d8660c70-ce3e-91a8-4399-1f9b2fe676aa": {
+      "JumpTarget": "bc475820-264d-5cfc-21d1-b2605988e1ec",
+      "JumpTargetPoint": 1,
+      "UUID": "d8660c70-ce3e-91a8-4399-1f9b2fe676aa",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N86",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "dce2f08e-450c-a4e0-af10-49abf237bfcb": {
+      "UUID": "dce2f08e-450c-a4e0-af10-49abf237bfcb",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f6f1c1f5-cc39-ac40-4dcc-63124080a713"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e61d7a9c-5c7c-4149-809d-49ca73ebf5ef",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Minsc_State_PermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b81451c8-2946-401c-a0f6-044b6aa486c5",
+              "Text": {
+                "Handle": "h376aee9fg2318g498cga22eg832cc1c7cb65",
+                "Value": "Why go so far - do so much to save my friend - only to cut him down?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N48",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "KILLED MINSC AT ANY POINT",
+        "position": "-625;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "eea895f7-9e92-5a95-1f65-f37b927cbe19": {
+      "UUID": "eea895f7-9e92-5a95-1f65-f37b927cbe19",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6f72fc93-6024-87df-f76d-3169e850dec0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "036e01e6-181d-404b-8fb2-51f9f93ed666",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_Minsc_State_KnockedOutOnce"
+            },
+            {
+              "UUID": "62e1d5ec-7c7e-70c2-68de-cadc7c7f5f20",
+              "value": false,
+              "paramval": null,
+              "Name": "ORI_Minsc_State_SavedFromAbsolute"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34fab922-279a-4216-b0d2-d0d2d1edd8a9",
+              "Text": {
+                "Handle": "ha7718233g7898g4319gbfd0ge544971d94e9",
+                "Value": "You've freed Minsc from the cult's influence. Now it is for me to ensure that he stays that way for as long as I can."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N45",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LEFT MINSC BEHIND",
+        "position": "-625;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "ef7d07f5-d1e7-7c54-02fb-6e5b25335303": {
+      "SourceNode": "6f72fc93-6024-87df-f76d-3169e850dec0",
+      "UUID": "ef7d07f5-d1e7-7c54-02fb-6e5b25335303",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cbe18a60-4b2f-5069-074d-d84f00790b29"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N65",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "-305;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "f6f1c1f5-cc39-ac40-4dcc-63124080a713": {
+      "JumpTarget": "2c8917d0-43bd-9d5f-d325-d5553b0ffbac",
+      "JumpTargetPoint": 1,
+      "UUID": "f6f1c1f5-cc39-ac40-4dcc-63124080a713",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N87",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-305;-2832",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "22547a10-ad32-4033-80cc-0f0062ae1ef4",
+      "Index": 0,
+      "List": [
+        "91b6b200-7d00-4d62-8dc9-99e8339dfa1a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Jaheira",
+        "Type": "character",
+        "MapKey": "91b6b200-7d00-4d62-8dc9-99e8339dfa1a",
+        "Name": "S_Player_Jaheira",
+        "ParentTemplateId": null,
+        "TemplateName": "7c7e6552-3fc0-4495-bb11-4b9f9a8e71fc"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "90381424-800b-4c97-9960-846784e37931",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "127436ba-906d-4f9f-a94c-426d522d72d4",
+      "Index": 2,
+      "List": [
+        "0de603c5-42e2-4811-9dad-f652de080eba"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Minsc",
+        "Type": "character",
+        "MapKey": "0de603c5-42e2-4811-9dad-f652de080eba",
+        "Name": "S_Player_Minsc",
+        "ParentTemplateId": null,
+        "TemplateName": "9d5f838a-8595-490c-85d5-8a2a69414356"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Jaheira's leaving dialogue for low approval. Should cover all bases - with specific reactivity if she kills/makes Minsc leave."
+}

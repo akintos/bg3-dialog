@@ -1,0 +1,527 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/ADs/GOB_DrunkGoblin_AD_FistFight.lsj",
+  "UUID": "c20369d8-cf4d-450d-45de-c52d31dbecd9",
+  "Category": "Repeated automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "917b5710-5993-18fb-6e30-29ccb5c27a6e",
+    "993b7037-b0e1-e5a6-4922-f4547448d4af",
+    "66ffdf95-268a-347f-448c-df2fe8d63e64",
+    "40c97569-6b7d-228b-7720-34523995f2a7"
+  ],
+  "Nodes": {
+    "2a5d5563-2b56-9c7a-deb9-de7b14b4ada1": {
+      "UUID": "2a5d5563-2b56-9c7a-deb9-de7b14b4ada1",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0715903a-8d76-d4d4-90be-466ccd0308b9",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD2"
+            },
+            {
+              "UUID": "33d1d930-1fec-5fd6-62c6-7e28cd7a9a02",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD3"
+            },
+            {
+              "UUID": "7d582833-03a3-6d8c-91e0-66bfdbed9a83",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD1"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5fc8661a-2c2c-43c1-2a89-502b89aed58a",
+              "Text": {
+                "Handle": "haeef135cgd8f9g4c29g9e6cg1acf466f4974",
+                "Value": "Rip 'em apart!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cheering",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "40c97569-6b7d-228b-7720-34523995f2a7": {
+      "UUID": "40c97569-6b7d-228b-7720-34523995f2a7",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2a5d5563-2b56-9c7a-deb9-de7b14b4ada1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "33d1d930-1fec-5fd6-62c6-7e28cd7a9a02",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD3"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "de190ab2-92f4-c680-5a3e-9a9aa2612c79",
+              "Text": {
+                "Handle": "hc21ed4afg666dg49d4gb6f1gdd1336989253",
+                "Value": "Smash 'em, Crusher!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cheering",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "66ffdf95-268a-347f-448c-df2fe8d63e64": {
+      "UUID": "66ffdf95-268a-347f-448c-df2fe8d63e64",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0715903a-8d76-d4d4-90be-466ccd0308b9",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD2"
+            },
+            {
+              "UUID": "33d1d930-1fec-5fd6-62c6-7e28cd7a9a02",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD3"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "33d1d930-1fec-5fd6-62c6-7e28cd7a9a02",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD3"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b1f3b6a-5d44-7370-ba90-1c4b98c71e0e",
+              "Text": {
+                "Handle": "h89e1bc2egbd66g4e08g9659g60cc74b74273",
+                "Value": "C'mon!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cheering",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "917b5710-5993-18fb-6e30-29ccb5c27a6e": {
+      "UUID": "917b5710-5993-18fb-6e30-29ccb5c27a6e",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d05b0aff-8389-1a00-34de-bf4cf66abcb6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7d582833-03a3-6d8c-91e0-66bfdbed9a83",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD1"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "18b4fd84-658a-d728-9444-3307d067be96",
+              "Text": {
+                "Handle": "hc0d4f2d3g7c83g44d5gb317g0400dc408f4f",
+                "Value": "Show 'em, Crusher!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cheering",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "993b7037-b0e1-e5a6-4922-f4547448d4af": {
+      "UUID": "993b7037-b0e1-e5a6-4922-f4547448d4af",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0715903a-8d76-d4d4-90be-466ccd0308b9",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD2"
+            },
+            {
+              "UUID": "7d582833-03a3-6d8c-91e0-66bfdbed9a83",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD1"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0715903a-8d76-d4d4-90be-466ccd0308b9",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD2"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "df3b03a9-6c43-e9df-c849-1ff666918dd1",
+              "Text": {
+                "Handle": "h38392a32g81a1g46aagbde2ge3f230f3c17a",
+                "Value": "Show us whatcha got!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cheering",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d05b0aff-8389-1a00-34de-bf4cf66abcb6": {
+      "UUID": "d05b0aff-8389-1a00-34de-bf4cf66abcb6",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7d582833-03a3-6d8c-91e0-66bfdbed9a83",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_DrunkGoblin_FightAD1"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0a80bff7-df59-e8c6-92df-4518b539700e",
+              "Text": {
+                "Handle": "ha1df612dg3b03g4c92g86f8gbcbea63285b9",
+                "Value": "Knock their teeth out!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cheering",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1a96862e-8293-fe1c-367c-fbfb1afe2361",
+      "Index": 0,
+      "List": [
+        "1fe911f8-c9c9-4405-83fa-d343d59c7be9"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Tracker Klagga",
+        "Type": "character",
+        "MapKey": "1fe911f8-c9c9-4405-83fa-d343d59c7be9",
+        "Name": "S_GOB_RoastingDwarfOperator_000",
+        "ParentTemplateId": null,
+        "TemplateName": "6a492173-8f18-4dc3-a0bc-fa83b372db9e"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b731e861-c891-9557-7890-38c2e9e9ffaa",
+      "Index": 1,
+      "List": [
+        "3837d519-dc92-459c-ab2d-1eac0b208fc7"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Tracker Grikka",
+        "Type": "character",
+        "MapKey": "3837d519-dc92-459c-ab2d-1eac0b208fc7",
+        "Name": "S_GOB_RoastingDwarfOperator_001",
+        "ParentTemplateId": null,
+        "TemplateName": "6a492173-8f18-4dc3-a0bc-fa83b372db9e"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "A goblin got into a (friendly) fight with the player. The other goblins are cheering him on. The fight is happening a little farther away, so they are shouting."
+}

@@ -1,0 +1,1461 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/UND_ClericPetGrave.lsj",
+  "UUID": "38572951-cd14-d1bf-07c3-38a1598690ea",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "ba770ca4-9e41-4080-f794-fe9f85ebe878",
+    "ff72b8b1-3a76-9057-3eb4-e01d1a67cdc8",
+    "6bcf63c0-a7a6-a843-03f4-2dda2846f322",
+    "c6c55e2d-f184-fe17-fe98-5442fb3ad572"
+  ],
+  "Nodes": {
+    "12a4a88b-10bc-6b55-00a6-abb9ea3baf24": {
+      "RollSuccess": true,
+      "UUID": "12a4a88b-10bc-6b55-00a6-abb9ea3baf24",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cf203ea0-0540-4624-a8c2-dab802887104"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N26",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "14e6997c-07ea-7bf1-486b-b2bcc548d750": {
+      "UUID": "14e6997c-07ea-7bf1-486b-b2bcc548d750",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4705d973-0451-e59d-631d-e2db737d416d",
+        "a7ddb964-85aa-2317-f057-6d4ab022f275"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2f615d8f-084f-fb7c-851b-9406059bc9ab",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_ArcaneTower_Knows_PetGrave"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "95fc000e-ae7f-9d39-4a48-230d0aababe4",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_ClericPetGrave_HasAutumnCrocus"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "674c1ea8-170f-9e62-ec63-9597fa6a9726",
+              "Text": {
+                "Handle": "h0242715bgb1cag4f4dgbd54gae0cea908dc5",
+                "Value": "<i>Put a bundle of autumncrocus next to the tombstone.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Put a bundle of autumncrocus next to the tombstone.",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Sadness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N30",
+        "InternalNodeContext": "NOTE: THIS NODE NEEDS A FIX AFTER VALIDATION FLAGS WILL BE ADDED TO QUESTION NODES.\r\nIt should flow into FallibleQuestionResult nodes and use Validation Flags to check on Autumncrocus",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Read letter about grave",
+        "position": "1935;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "383150d6-5c73-2394-29db-5c7cf4c460be": {
+      "UUID": "383150d6-5c73-2394-29db-5c7cf4c460be",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c66725ba-b813-24f0-6033-67672c44acfa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "38b96730-eb03-455b-ba54-bafc5aa145bd",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CheckHasItemTemplate_3"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "39737622-c9b0-4fb7-900c-27f323fe70ab",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_ClericPetGrave_PutAutumnCrocusBundle"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N45",
+        "InternalNodeContext": "Player puts an autumn crocus flowers bundle on the grave.",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "2575;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "4705d973-0451-e59d-631d-e2db737d416d": {
+      "Result": true,
+      "UUID": "4705d973-0451-e59d-631d-e2db737d416d",
+      "Constructor": "FallibleQuestionResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "383150d6-5c73-2394-29db-5c7cf4c460be",
+        "6373afa0-105e-a9fa-3216-5ff2fa94bbd9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N46",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "FallibleQuestionResult",
+        "position": "2255;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "5de86802-dec4-4b14-9f02-5c8a8a240309": {
+      "UUID": "5de86802-dec4-4b14-9f02-5c8a8a240309",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d2a0fa8b-a1f1-419d-b507-28a3f4f55492"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player looks left, then right and then kneels down. Claws at the dirt in an attempt to dig but quickly becomes frustrated and stops as it's not really doing anything. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "2255;234",
+        "sourcetemplate": "ShovelDigging"
+      }
+    },
+    "6373afa0-105e-a9fa-3216-5ff2fa94bbd9": {
+      "UUID": "6373afa0-105e-a9fa-3216-5ff2fa94bbd9",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c66725ba-b813-24f0-6033-67672c44acfa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a20e81d5-e22e-47ea-a32d-8817932acf8d",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CheckHasItemTemplate_2"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "26f5a9a4-9bad-4e4a-b52e-d8cd03a3e687",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_ClericPetGrave_PutAutumnCrocus"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N36",
+        "InternalNodeContext": "Player puts an autumn crocus flower on the grave.",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "2575;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "6bcf63c0-a7a6-a843-03f4-2dda2846f322": {
+      "UUID": "6bcf63c0-a7a6-a843-03f4-2dda2846f322",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f76aacb9-2800-4d61-f17a-143804720171"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c613f404-683c-4d37-bdde-2ca77893d015",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_ClericPetGrave_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5",
+                  "44ac4317-4d38-4d28-80e2-94024c6e42f0",
+                  "6fe3ae27-dc6c-4fc9-9245-710c790c396c"
+                ],
+                "TagNames": [
+                  "CLERIC",
+                  "DRUID",
+                  "WIZARD"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC or DRUID or WIZARD"
+          },
+          "TagTexts": [
+            {
+              "LineId": "04f5440c-7f9a-daf3-026d-2aa1c263bd0e",
+              "Text": {
+                "Handle": "hf84b0ab9g6fd8g4bc3g9ba7geb06802ca91d",
+                "Value": "*The rock under your feet juts upwards, forming a perfectly engraved tombstone with a small epitaph.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Surprise",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N24",
+        "InternalNodeContext": "This is a duplicate of node N15",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cleric/Druid/Wizard/Artificer",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "6ee58fb3-53f5-435f-a35c-dcdb74e90f6d": {
+      "UUID": "6ee58fb3-53f5-435f-a35c-dcdb74e90f6d",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5de86802-dec4-4b14-9f02-5c8a8a240309"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f1d5554a-2f01-899b-b7b7-84e45aefd76a",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_ClericPetGrave_Event_Dug"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "5df98788-6881-4c28-9b91-ac77d5451bc2",
+              "value": false,
+              "paramval": 1,
+              "Name": "GLO_Shovel_State_HasShovel"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2a0a054f-3c82-497a-a480-af700e3c91ad",
+              "Text": {
+                "Handle": "he221a199g92beg4119g9eeagf7fb54c7578c",
+                "Value": "<i>Dig into the dirt with your hands.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N51",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Without Shovel",
+        "position": "1935;234",
+        "sourcetemplate": "ShovelDigging"
+      }
+    },
+    "93959631-5b2d-a982-d000-2434520441ed": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "8d398021-34e0-40b9-b7b2-0445f38a4c0b",
+      "DifficultyClassValue": 5,
+      "UUID": "93959631-5b2d-a982-d000-2434520441ed",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "12a4a88b-10bc-6b55-00a6-abb9ea3baf24",
+        "c1fd26d0-f779-4e0e-a0b1-c5dc9eeacbfc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Arcana",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "969b42b4-5a22-4884-9233-aafa2c33f21b": {
+      "UUID": "969b42b4-5a22-4884-9233-aafa2c33f21b",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c9f08d65-065f-701c-8b00-59ee77b512d4"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f1d5554a-2f01-899b-b7b7-84e45aefd76a",
+              "value": false,
+              "paramval": null,
+              "Name": "UND_ClericPetGrave_Event_Dug"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "5df98788-6881-4c28-9b91-ac77d5451bc2",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_Shovel_State_HasShovel"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f1d5554a-2f01-899b-b7b7-84e45aefd76a",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_ClericPetGrave_Event_Dug"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "796ce2d0-fda2-c921-1edf-ab00bd0b4fab",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_ClericPetGrave_Digger"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5687e9d7-26dc-9154-a17d-b2c2020436fe",
+              "Text": {
+                "Handle": "h7e52d734g4a47g4925gbd6dg0b77adc8f82a",
+                "Value": "<i>Dig up the grave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Unearth the grave.",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;453",
+        "sourcetemplate": ""
+      }
+    },
+    "a0d0bbd0-414c-b5b4-e79b-6b306d2807ca": {
+      "UUID": "a0d0bbd0-414c-b5b4-e79b-6b306d2807ca",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N44",
+        "InternalNodeContext": "Player had the autumn crocus, but it was stolen/lost between the shown Question node and click on it. So in this cinematic the player must hit its pockets and sigh like something's lost",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "2575;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a7ddb964-85aa-2317-f057-6d4ab022f275": {
+      "Result": false,
+      "UUID": "a7ddb964-85aa-2317-f057-6d4ab022f275",
+      "Constructor": "FallibleQuestionResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a0d0bbd0-414c-b5b4-e79b-6b306d2807ca"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N47",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "FallibleQuestionResult",
+        "position": "2255;15",
+        "sourcetemplate": ""
+      }
+    },
+    "b752d84f-d029-d01f-4dd9-435af222277d": {
+      "JumpTarget": "d4f2447b-920d-014c-49ad-4d123f669ae8",
+      "JumpTargetPoint": 2,
+      "UUID": "b752d84f-d029-d01f-4dd9-435af222277d",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N33",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "ba770ca4-9e41-4080-f794-fe9f85ebe878": {
+      "UUID": "ba770ca4-9e41-4080-f794-fe9f85ebe878",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f1d5554a-2f01-899b-b7b7-84e45aefd76a",
+              "value": true,
+              "paramval": null,
+              "Name": "UND_ClericPetGrave_Event_Dug"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cd92e75f-6a0f-a29f-0b1c-ebf90ceede29",
+              "Text": {
+                "Handle": "h13f3225bg0427g42feg8268g7f8ab31d9d2f",
+                "Value": "*The ground in front of this tombstone has been dug up, exposing the scattered skeleton of a large dog.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Surprise",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Grave uprooted",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "c0328c9a-5862-5fee-6d96-885b4bec2fe1": {
+      "JumpTarget": "d4f2447b-920d-014c-49ad-4d123f669ae8",
+      "JumpTargetPoint": 2,
+      "UUID": "c0328c9a-5862-5fee-6d96-885b4bec2fe1",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N41",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "c1fd26d0-f779-4e0e-a0b1-c5dc9eeacbfc": {
+      "RollSuccess": false,
+      "UUID": "c1fd26d0-f779-4e0e-a0b1-c5dc9eeacbfc",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c0328c9a-5862-5fee-6d96-885b4bec2fe1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N27",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "c66725ba-b813-24f0-6033-67672c44acfa": {
+      "UUID": "c66725ba-b813-24f0-6033-67672c44acfa",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e648340b-af78-56f8-5724-43052f567072",
+              "Text": {
+                "Handle": "hd97a2275g6befg4e2dg8d5egab9208e43511",
+                "Value": "*The wind softly rustles the flower petals. Somehow, the grave feels whole again.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N35",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "c6c55e2d-f184-fe17-fe98-5442fb3ad572": {
+      "UUID": "c6c55e2d-f184-fe17-fe98-5442fb3ad572",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d4f2447b-920d-014c-49ad-4d123f669ae8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c613f404-683c-4d37-bdde-2ca77893d015",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_ClericPetGrave_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f08b8d7b-3931-ea07-db57-87779f42d2d2",
+              "Text": {
+                "Handle": "he1bf6576g037fg4fd4gaf49g7678b8564d52",
+                "Value": "*The rock under your feet juts upwards, forming a perfectly engraved tombstone with a small epitaph.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Surprise",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "c9f08d65-065f-701c-8b00-59ee77b512d4": {
+      "UUID": "c9f08d65-065f-701c-8b00-59ee77b512d4",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d09edbd8-9289-b86f-3afe-a0dcf67f0317"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N37",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "2255;453",
+        "sourcetemplate": ""
+      }
+    },
+    "cf203ea0-0540-4624-a8c2-dab802887104": {
+      "UUID": "cf203ea0-0540-4624-a8c2-dab802887104",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c0328c9a-5862-5fee-6d96-885b4bec2fe1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dc2391e5-5840-367a-9576-63ec0cb378fc",
+              "Text": {
+                "Handle": "hc7a9d756gc6f5g4b23g9403gf159fd7d8b39",
+                "Value": "*You realise it was made with Stone Shape - a powerful spell to waste on a grave.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Awe",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "*You realise it was made with Stone Shape - a powerful spell to waste on a grave.*",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "d09edbd8-9289-b86f-3afe-a0dcf67f0317": {
+      "UUID": "d09edbd8-9289-b86f-3afe-a0dcf67f0317",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "405817a0-fd46-f5a3-1859-b10622f3329a",
+              "Text": {
+                "Handle": "he79e225egd1aeg4c40g9c95g540e94fe2679",
+                "Value": "*As you dig, you slowly expose the skeletal remains of a large dog wearing a chunky leather collar.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N34",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;453",
+        "sourcetemplate": ""
+      }
+    },
+    "d120a907-afd0-4fcf-997f-95ac7adb7e68": {
+      "UUID": "d120a907-afd0-4fcf-997f-95ac7adb7e68",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2257ecc0-7e23-c466-b7e4-4ac491a2ca1b",
+              "Text": {
+                "Handle": "h42165264g39f1g414eg8d47g65777110be23",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;672",
+        "sourcetemplate": ""
+      }
+    },
+    "d2a0fa8b-a1f1-419d-b507-28a3f4f55492": {
+      "UUID": "d2a0fa8b-a1f1-419d-b507-28a3f4f55492",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cb4a5e19-6a37-4675-934c-0e46eb52c2ab",
+              "Text": {
+                "Handle": "h31f373f9gc78bg42fbgb74ag7eb583118b82",
+                "Value": "*Your fingers claw at the dirt, losing purchase. If only you had a tool for this.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N48",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;234",
+        "sourcetemplate": "ShovelDigging"
+      }
+    },
+    "d4f2447b-920d-014c-49ad-4d123f669ae8": {
+      "UUID": "d4f2447b-920d-014c-49ad-4d123f669ae8",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "14e6997c-07ea-7bf1-486b-b2bcc548d750",
+        "6ee58fb3-53f5-435f-a35c-dcdb74e90f6d",
+        "969b42b4-5a22-4884-9233-aafa2c33f21b",
+        "d120a907-afd0-4fcf-997f-95ac7adb7e68"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f77dcfa8-57e3-65e1-ef6d-b8d685b6a36f",
+              "Text": {
+                "Handle": "hd3a55f58ga09dg4505g863bgefeb46bd6e58",
+                "Value": "<i>*In memory of Myrna - a shining light in this dark world. <br>May you forever gaze upon the lake you loved to play in.*</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Sadness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "f76aacb9-2800-4d61-f17a-143804720171": {
+      "SourceNode": "d4f2447b-920d-014c-49ad-4d123f669ae8",
+      "UUID": "f76aacb9-2800-4d61-f17a-143804720171",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "93959631-5b2d-a982-d000-2434520441ed"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N40",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "ff72b8b1-3a76-9057-3eb4-e01d1a67cdc8": {
+      "UUID": "ff72b8b1-3a76-9057-3eb4-e01d1a67cdc8",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b752d84f-d029-d01f-4dd9-435af222277d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c613f404-683c-4d37-bdde-2ca77893d015",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_ClericPetGrave_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1b4640e1-3e2e-5171-5dfd-f61adc658f6a",
+              "Text": {
+                "Handle": "hce397528gf6e2g4dd4g8443gbaf36a152d44",
+                "Value": "<i>*In memory of Myrna - a shining light in this dark world. <br>May you forever gaze upon the lake you loved to play in.*<br></i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Neutral",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Hasmet ",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d79a4220-208d-e627-1c76-595d775ec8f1",
+      "Index": 0,
+      "List": [
+        "28e00450-53d5-4df7-8025-5edb674f7fec"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Tombstone",
+        "Type": "item",
+        "MapKey": "28e00450-53d5-4df7-8025-5edb674f7fec",
+        "Name": "S_UND_ClericPetGrave",
+        "ParentTemplateId": null,
+        "TemplateName": "e01e8706-bac0-483a-9614-4ec78dfc4d80"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fc7a73ff-7042-d325-c8cb-4f10ab3ecb08",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Tombstone on the grave at Sussur Tree. Digging the grave unveils a collar of a pet (cat or dog). The pet was of cleric of Mystra who lived in the Arcane Tower nearby. This collar has no use on the first sight, at least there's no magical properties. But the secret is it allowed cleric's pet to have food or navigate inside the tower."
+}

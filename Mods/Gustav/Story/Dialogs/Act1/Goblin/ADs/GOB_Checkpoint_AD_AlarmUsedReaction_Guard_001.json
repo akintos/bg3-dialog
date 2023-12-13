@@ -1,0 +1,137 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/ADs/GOB_Checkpoint_AD_AlarmUsedReaction_Guard_001.lsj",
+  "UUID": "1a037175-188f-499e-7e6c-613e7832b3aa",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "a5ff9326-1032-3ccb-5170-4ddb3aad6015"
+  ],
+  "Nodes": {
+    "a5ff9326-1032-3ccb-5170-4ddb3aad6015": {
+      "UUID": "a5ff9326-1032-3ccb-5170-4ddb3aad6015",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c"
+                ],
+                "TagNames": [
+                  "DROWELF"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF"
+          },
+          "TagTexts": [
+            {
+              "LineId": "c51df9fc-1026-7754-5446-13138f0e3bad",
+              "Text": {
+                "Handle": "hf6d65d12g31b7g4b6eg9611gcc8231928a59",
+                "Value": "The drow wants to fight, lads!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fad7421d-510d-a465-fa27-693b168bc82f",
+              "Text": {
+                "Handle": "hd57583e1g81e2g4d49g8a87g87e667b36b25",
+                "Value": "This idiot wants to fight, lads!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Leads to combat",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Raised alarm, not a True Soul ",
+        "position": "15;-2175",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "14607424-747a-908a-3ea3-3e699aeaef96",
+      "Index": 0,
+      "List": [
+        "6d69a347-9b3f-4b64-818e-013f849c6ae4"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Sentinel Olak",
+        "Type": "character",
+        "MapKey": "6d69a347-9b3f-4b64-818e-013f849c6ae4",
+        "Name": "S_GOB_Checkpoint_Guard_001",
+        "ParentTemplateId": null,
+        "TemplateName": "6e8c3752-179b-4087-b246-7b6ee362129c"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "24a753d9-7f60-c042-3a37-54cf98c74c39",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The player used the alarm drum. Depending on who the player is and how they performed, the goblins around the alarm will either be impressed, neutral, or willing to fight."
+}

@@ -1,0 +1,274 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_DruidAttack_Pickpocket.lsj",
+  "UUID": "8047de19-b741-d4af-b41c-348f4e41e366",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "fd2d3457-82f5-a249-4289-f2a8a7fba682",
+    "584e49f8-fe9a-a1ab-b0cb-4e4be2785592",
+    "285b945c-72e5-c9cb-dbb5-abe1f96d9802"
+  ],
+  "Nodes": {
+    "285b945c-72e5-c9cb-dbb5-abe1f96d9802": {
+      "UUID": "285b945c-72e5-c9cb-dbb5-abe1f96d9802",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "03de6926-5545-3377-f660-2d90792de57a",
+              "Text": {
+                "Handle": "hf738f4f7g03b5g4eadga623g20b2cd5fdd5d",
+                "Value": "I think we made those animal people mad."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "One of the other tiefling children stole an idol from the druids - she thinks they're attacking because they're mad about that. She's scared.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid Attack is under way.",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "584e49f8-fe9a-a1ab-b0cb-4e4be2785592": {
+      "UUID": "584e49f8-fe9a-a1ab-b0cb-4e4be2785592",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "59a6b5a4-3bcb-8920-d02b-1b66307d9fc5",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_PickpocketAfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "adb38afc-1225-68de-fd3a-63bf6b486ab7",
+              "Text": {
+                "Handle": "h991a84c2g564ag471cg8744g8ebdc602588a",
+                "Value": "I'm glad it's over... those bear people were scary."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The 'bear people' are the druids that tried to kill all of the tieflings. The battle is over.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "fd2d3457-82f5-a249-4289-f2a8a7fba682": {
+      "UUID": "fd2d3457-82f5-a249-4289-f2a8a7fba682",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "59a6b5a4-3bcb-8920-d02b-1b66307d9fc5",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_PickpocketAfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f134775d-4fb1-cc13-08b0-0f3ec68874ed",
+              "Text": {
+                "Handle": "hbb7a3e4eg9e5fg4abbgada5g5621d0bf4d5e",
+                "Value": "Um... thank you for helping us..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "She's thanking the player for fighting against the druids with the tieflings.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b956348a-5cbc-14a5-22ff-df8bc7bb78de",
+      "Index": 0,
+      "List": [
+        "540ddc1f-42c6-4347-ba03-b3cf3d3942ab"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Silfy",
+        "Type": "character",
+        "MapKey": "540ddc1f-42c6-4347-ba03-b3cf3d3942ab",
+        "Name": "S_DEN_Pickpocket",
+        "ParentTemplateId": null,
+        "TemplateName": "a5766603-e5dc-49a2-9856-75383e2279b5"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fe5a8c70-abc9-de1a-eec1-42e8eee54879",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "This dialogue plays either while the druids are attacking the tieflings in the grove, or after the druids have been defeated. During the attack, Silfy is hidden away with the other tiefling children. She's terrified and thinks a theft may have triggered the attack. Afterward, she's back to her shy self."
+}

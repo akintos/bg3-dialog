@@ -1,0 +1,274 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_DruidAttack_RobberKid.lsj",
+  "UUID": "a1506fed-68a9-7e40-6d81-b249fc523021",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "fa58a8f7-f7fc-9865-4669-1c88f2b7190b",
+    "ea6cb360-fef8-9628-a2d5-87cefa277c52",
+    "6a561a3f-c805-c576-8f5f-96f5f128e70f"
+  ],
+  "Nodes": {
+    "6a561a3f-c805-c576-8f5f-96f5f128e70f": {
+      "UUID": "6a561a3f-c805-c576-8f5f-96f5f128e70f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b996b5e6-afb7-c4c9-9562-0213a673b539",
+              "Text": {
+                "Handle": "h75e082c6gc32bg4828ga0edgeca427903360",
+                "Value": "You can beat them, can't you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "nervous but brave",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid Attack is under way.",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ea6cb360-fef8-9628-a2d5-87cefa277c52": {
+      "UUID": "ea6cb360-fef8-9628-a2d5-87cefa277c52",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "59cf969f-e653-ff93-8ac2-00d03c0d6451",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_RobberKidAfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e8c6342f-d8f6-a7f0-a847-4a396f81165a",
+              "Text": {
+                "Handle": "hc6d51d31g4ceag40f0gb329g4364c62d0e1a",
+                "Value": "Is it true some of the <i>rats </i>were druids? I used to have a pet rat."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "perplexed and thoughtful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "fa58a8f7-f7fc-9865-4669-1c88f2b7190b": {
+      "UUID": "fa58a8f7-f7fc-9865-4669-1c88f2b7190b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "59cf969f-e653-ff93-8ac2-00d03c0d6451",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_RobberKidAfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bdfd56fa-179f-a13e-e094-aa3687acc52b",
+              "Text": {
+                "Handle": "h34f5a83bg1f43g4eb4gb0e5g9d25499e9e26",
+                "Value": "Suppose you get first pick of the loot, but leave something for us."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cheeky",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cc55ca31-d2f3-3371-4171-492eea73e613",
+      "Index": 0,
+      "List": [
+        "94e865e9-790d-4633-a378-8fb50832b5e9"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Meli",
+        "Type": "character",
+        "MapKey": "94e865e9-790d-4633-a378-8fb50832b5e9",
+        "Name": "S_DEN_RobberKid",
+        "ParentTemplateId": null,
+        "TemplateName": "80ca9a84-00c2-45c6-892e-bf6f07a5af3e"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cf85b8e2-9f18-f902-226c-ec63efe8055b",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Child pickpocket reacts ot the druid attack, and player's success in that attack."
+}

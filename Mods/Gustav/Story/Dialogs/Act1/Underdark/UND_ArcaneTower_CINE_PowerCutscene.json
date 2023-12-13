@@ -1,0 +1,115 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/UND_ArcaneTower_CINE_PowerCutscene.lsj",
+  "UUID": "554ba2a1-7485-cdde-0f44-4efa3d2bbe7f",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "df72f8d7-07f1-4794-853f-80ef036b84ab"
+  ],
+  "Nodes": {
+    "24947107-1f4c-4239-875a-ae79fc34581f": {
+      "UUID": "24947107-1f4c-4239-875a-ae79fc34581f",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[Turrets]CINE UseDeactivate_01 <CodyM>, [REUSE] Player construction animations for GiveItem, LookingAround <CodyM>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Platform Activation, Lamps light up, Arcane Turrets Deactivation",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Platform Activation, Lamps light up, Arcane Turrets Deactivation - Contact KrisB",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "df72f8d7-07f1-4794-853f-80ef036b84ab": {
+      "UUID": "df72f8d7-07f1-4794-853f-80ef036b84ab",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "24947107-1f4c-4239-875a-ae79fc34581f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "599f5e90-a299-07a7-b5bc-b041bce54cfe",
+      "Index": 0,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "This is a pure cutscene cinematic dialog. After player activates the main generator in Arcane Tower by placing a Sussur Flower in it, there should be a camera flyover showing how all the tower teleport platforms activate, lights turn on, etc.\r\nThis dialog can be easily triggered from console with\r\n    SetGlobalOsirisFlag UND_ArcaneTower_MainPowerOn"
+}

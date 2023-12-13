@@ -1,0 +1,236 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shar/SHA_LastJusticiar_RatsUltimatum.lsj",
+  "UUID": "597a89a5-89c7-7f7b-0f37-68802a149ca9",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "774700ea-422c-047e-d35a-40dab1c2fe4a",
+    "2486284e-770a-e01d-d5b5-d1b3658a1c25"
+  ],
+  "Nodes": {
+    "2486284e-770a-e01d-d5b5-d1b3658a1c25": {
+      "UUID": "2486284e-770a-e01d-d5b5-d1b3658a1c25",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "573f656b-2622-b9c3-000e-ae32d1c237c2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1d272af5-0741-434d-8ecb-0fe745cc2e01",
+              "Text": {
+                "Handle": "h2373ab2fg0da0g43baga1f4g0677845b10c0",
+                "Value": "*The rat utters a defiant hiss. Bloodlust fills its little black eyes.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "573f656b-2622-b9c3-000e-ae32d1c237c2": {
+      "UUID": "573f656b-2622-b9c3-000e-ae32d1c237c2",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "A cacophony of angry hisses and squeaks builds. From the surrounding darkness, a large number of rat eyes glow.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N3",
+        "InternalNodeContext": "Combat ensues after this dialogue.",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "774700ea-422c-047e-d35a-40dab1c2fe4a": {
+      "UUID": "774700ea-422c-047e-d35a-40dab1c2fe4a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "573f656b-2622-b9c3-000e-ae32d1c237c2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ecfdd799-252a-421d-85b1-1d2073a13bfd",
+              "Text": {
+                "Handle": "h7b08e31dg8c44g4adeg810bgc7bc5bca9efe",
+                "Value": "I pleaded, I bargained, I warned. You didn't listen - you made me remember again, hurt again. I am coming for you - <i>all of me</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Harsh, resigned to combat",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2d32f5cb-51c3-4650-a97b-8964ce66276c",
+      "Index": 0,
+      "List": [
+        "592bcace-4efa-61c2-d6b1-5bc81d0cfe04"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Rat",
+        "Type": "character",
+        "MapKey": "ab07a441-2d97-493a-b516-7a4094877303",
+        "Name": "S_SHA_LastJusticiar_Rat_Diplorat",
+        "ParentTemplateId": null,
+        "TemplateName": "aa60d129-8d11-4178-a22b-836062e86010"
+      },
+      "SpeakerGroupName": "GROUP_SHA_LastJusticiar_Rats"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "aa54b683-5e8e-4ac3-ab59-fc6787574fd3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "After killing too many rats, the swarm confronts the player in a chamber beneath the Orthon's lair. A fight ensues immediately afterwards."
+}

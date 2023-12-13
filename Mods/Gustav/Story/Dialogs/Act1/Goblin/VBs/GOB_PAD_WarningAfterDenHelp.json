@@ -1,0 +1,913 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/VBs/GOB_PAD_WarningAfterDenHelp.lsj",
+  "UUID": "a7346fab-bc74-496e-9898-69fba7106423",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1,
+    "7": -1,
+    "8": -1
+  },
+  "RootNodes": [
+    "7d27b7bd-bc12-1d4d-735f-05d6d6e55803"
+  ],
+  "Nodes": {
+    "420d3668-43b1-4e43-b77b-ea35bc84bc0b": {
+      "UUID": "420d3668-43b1-4e43-b77b-ea35bc84bc0b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9fa61b46-04ba-4ff4-ba6e-5c8c20f483a0",
+        "bf027be8-ffac-43ba-91af-d1344e8fcd6c",
+        "8034eb09-0101-4b55-abbe-162000f04e02",
+        "fd3beaa7-efda-4554-b806-7eb0c1aee9ef",
+        "a185876b-bc81-4e11-8de8-76a61c57a754",
+        "c5b05381-5f01-48bf-9f26-52a5a4fde944",
+        "6b00af22-3db9-2580-e5c5-7a216b3e72c9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5c169560-2732-c515-9e73-06ba1fd768f0",
+              "value": true,
+              "paramval": 0,
+              "Name": "ORI_Inclusion_Random"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "335;15",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "6b00af22-3db9-2580-e5c5-7a216b3e72c9": {
+      "UUID": "6b00af22-3db9-2580-e5c5-7a216b3e72c9",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a2f70d6-8ead-4eb5-a824-79ee1971764a",
+              "value": false,
+              "paramval": 3,
+              "Name": "REALLY_KARLACH"
+            },
+            {
+              "UUID": "5f40def5-d3ec-4698-a367-01a339888956",
+              "value": false,
+              "paramval": 5,
+              "Name": "REALLY_WYLL"
+            },
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": false,
+              "paramval": 2,
+              "Name": "REALLY_SHADOWHEART"
+            },
+            {
+              "UUID": "9b0354c0-56d9-4723-8034-918ac9abab19",
+              "value": false,
+              "paramval": 6,
+              "Name": "REALLY_GALE"
+            },
+            {
+              "UUID": "b5682d1d-c395-489c-9675-1f9b0c328ea5",
+              "value": false,
+              "paramval": 1,
+              "Name": "REALLY_LAEZEL"
+            },
+            {
+              "UUID": "ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3",
+              "value": false,
+              "paramval": 4,
+              "Name": "REALLY_ASTARION"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "45de5a36-8950-ac5e-093f-fc108f928c1d",
+              "Text": {
+                "Handle": "h2420cd21g24b6g45d5g975agd8bc0498d1ab",
+                "Value": "Best to stay clear, or be ready for a fight."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "This node triggers on the same character who starts the dialog. This is a backup case when there's no other origins present nearby.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "grim determination - talking about the now-hostile goblin camp",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "7d27b7bd-bc12-1d4d-735f-05d6d6e55803": {
+      "UUID": "7d27b7bd-bc12-1d4d-735f-05d6d6e55803",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "420d3668-43b1-4e43-b77b-ea35bc84bc0b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a9855212-8eb5-b4e9-2e4e-e7f80955a526",
+              "Text": {
+                "Handle": "h1637414cge3f7g4101g890ag5204f48a8835",
+                "Value": "The goblins will be out for blood after what happened at the grove."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "warning - to party or to player. It's a voice bark, delivered as character comes close to the goblin camp after betraying the goblins",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "8034eb09-0101-4b55-abbe-162000f04e02": {
+      "UUID": "8034eb09-0101-4b55-abbe-162000f04e02",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 3,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b3b7a3c6-cb96-4e19-b4e1-29ed92d9efea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 3,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1a2f70d6-8ead-4eb5-a824-79ee1971764a",
+              "value": true,
+              "paramval": 3,
+              "Name": "REALLY_KARLACH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "da47687f-3ba2-bc31-be6f-f8b1ee5eaf33",
+              "Text": {
+                "Handle": "hee81165agb57dg4c0agb0edg6c87005b513d",
+                "Value": "I say we march in there and give the little shits what they want."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "with a grin",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_KARLACH",
+        "position": "655;453",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "9fa61b46-04ba-4ff4-ba6e-5c8c20f483a0": {
+      "UUID": "9fa61b46-04ba-4ff4-ba6e-5c8c20f483a0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b3b7a3c6-cb96-4e19-b4e1-29ed92d9efea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 1,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b5682d1d-c395-489c-9675-1f9b0c328ea5",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_LAEZEL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4446fdb4-d2fa-8392-77da-b60453fa7d12",
+              "Text": {
+                "Handle": "hdbb46c98gc3aeg4e13g8de8g7b15b0b97e75",
+                "Value": "If they want our heads, best we take theirs first."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "relishing the prospect",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_LAE'ZEL",
+        "position": "655;15",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "a185876b-bc81-4e11-8de8-76a61c57a754": {
+      "UUID": "a185876b-bc81-4e11-8de8-76a61c57a754",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 5,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b3b7a3c6-cb96-4e19-b4e1-29ed92d9efea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 5,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "5f40def5-d3ec-4698-a367-01a339888956",
+              "value": true,
+              "paramval": 5,
+              "Name": "REALLY_WYLL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7117380-930d-af48-dc70-9ba254fdbd5c",
+              "Text": {
+                "Handle": "h25c954e9g3ca3g4f96g945eg472e4871c524",
+                "Value": "Stick close. One sight of us, and they'll lash out."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "calm, ready for battle",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_WYLL",
+        "position": "655;891",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "b3b7a3c6-cb96-4e19-b4e1-29ed92d9efea": {
+      "UUID": "b3b7a3c6-cb96-4e19-b4e1-29ed92d9efea",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b5261e06-a89e-0ec8-bab9-2329ff72b6d1",
+              "value": true,
+              "paramval": 0,
+              "Name": "ORI_Inclusion_End_Random"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "975;15",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "bf027be8-ffac-43ba-91af-d1344e8fcd6c": {
+      "UUID": "bf027be8-ffac-43ba-91af-d1344e8fcd6c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b3b7a3c6-cb96-4e19-b4e1-29ed92d9efea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 2,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": true,
+              "paramval": 2,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bbd7de7e-8666-054a-502c-a031d827c5aa",
+              "Text": {
+                "Handle": "h4e44a73dg2e30g4c38g8183g5fe3c5029d23",
+                "Value": "Leftover rats, cornered in their hole. They can still cause trouble for us though."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "with spite and slight concern",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_SHADOWHEART",
+        "position": "655;234",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "c5b05381-5f01-48bf-9f26-52a5a4fde944": {
+      "UUID": "c5b05381-5f01-48bf-9f26-52a5a4fde944",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 6,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b3b7a3c6-cb96-4e19-b4e1-29ed92d9efea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 6,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "9b0354c0-56d9-4723-8034-918ac9abab19",
+              "value": true,
+              "paramval": 6,
+              "Name": "REALLY_GALE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4b588557-a0bd-0648-ef69-51f100996e5f",
+              "Text": {
+                "Handle": "hded1eabcga333g4160g909ag9b77d3d59361",
+                "Value": "Shouldn't be too much trouble. There will be plenty of bark, but little bite left with their leadership gone."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "calmly assessing the situation",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_GALE",
+        "position": "655;1110",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    },
+    "fd3beaa7-efda-4554-b806-7eb0c1aee9ef": {
+      "UUID": "fd3beaa7-efda-4554-b806-7eb0c1aee9ef",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 4,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b3b7a3c6-cb96-4e19-b4e1-29ed92d9efea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "46a601fb-8cb7-46ed-9856-3d4e38c53a02",
+              "value": true,
+              "paramval": 4,
+              "Name": "ORI_Inclusion_PickedAtRandom"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3",
+              "value": true,
+              "paramval": 4,
+              "Name": "REALLY_ASTARION"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ae92468d-a0bf-5806-bfc3-e52130d398be",
+              "Text": {
+                "Handle": "hb621ef74gf01dg4bd1ga078g1ad0a74c59b8",
+                "Value": "They're a leaderless mob. How hard could it be to sneak past them?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cunning",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "INCLUSION_ASTARION",
+        "position": "655;672",
+        "sourcetemplate": "INCLUSION_All"
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b41866f8-9509-e041-d4ba-1f1f92d7f482",
+      "Index": 0,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ec483c59-2b0c-848c-9d3c-92f45e7a1368",
+      "Index": 1,
+      "List": [
+        "58a69333-40bf-8358-1d17-fff240d7fb12"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lae'zel",
+        "Type": "character",
+        "MapKey": "58a69333-40bf-8358-1d17-fff240d7fb12",
+        "Name": "S_Player_Laezel",
+        "ParentTemplateId": null,
+        "TemplateName": "3a0351bd-0b2f-4fbf-84a6-30ad80bb3100"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a630b1b6-796f-28e8-8cf7-637a67a31968",
+      "Index": 2,
+      "List": [
+        "3ed74f06-3c60-42dc-83f6-f034cb47c679"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowheart",
+        "Type": "character",
+        "MapKey": "3ed74f06-3c60-42dc-83f6-f034cb47c679",
+        "Name": "S_Player_ShadowHeart",
+        "ParentTemplateId": null,
+        "TemplateName": "2ac51f22-e357-4639-b81d-022d462c8c6a"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "075bff35-b128-38dd-4a70-6f8f06cac637",
+      "Index": 3,
+      "List": [
+        "2c76687d-93a2-477b-8b18-8a14b549304c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Karlach",
+        "Type": "character",
+        "MapKey": "2c76687d-93a2-477b-8b18-8a14b549304c",
+        "Name": "S_Player_Karlach",
+        "ParentTemplateId": null,
+        "TemplateName": "3ab0a797-0904-47cb-955d-cdc3ec32409c"
+      },
+      "SpeakerGroupName": null
+    },
+    "4": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "6687a2be-e2fd-a40d-1a92-82696e24e62f",
+      "Index": 4,
+      "List": [
+        "c7c13742-bacd-460a-8f65-f864fe41f255"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Astarion",
+        "Type": "character",
+        "MapKey": "c7c13742-bacd-460a-8f65-f864fe41f255",
+        "Name": "S_Player_Astarion",
+        "ParentTemplateId": null,
+        "TemplateName": "5614c25e-0213-479f-864c-e95895adb30f"
+      },
+      "SpeakerGroupName": null
+    },
+    "5": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c737dd36-ae21-6b23-be6f-68512c6d49cd",
+      "Index": 5,
+      "List": [
+        "c774d764-4a17-48dc-b470-32ace9ce447d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Wyll",
+        "Type": "character",
+        "MapKey": "c774d764-4a17-48dc-b470-32ace9ce447d",
+        "Name": "S_Player_Wyll",
+        "ParentTemplateId": null,
+        "TemplateName": "159cdf9e-6665-4450-9375-8494e233b0e4"
+      },
+      "SpeakerGroupName": null
+    },
+    "6": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a4b59c89-ffb3-1281-8dd6-a8ff75f2cbf6",
+      "Index": 6,
+      "List": [
+        "ad9af97d-75da-406a-ae13-7071c563f604"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Gale",
+        "Type": "character",
+        "MapKey": "ad9af97d-75da-406a-ae13-7071c563f604",
+        "Name": "S_Player_Gale",
+        "ParentTemplateId": null,
+        "TemplateName": "7d427a86-81f0-418d-a32a-3b5676c86bfa"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "If players help the tieflings to defend against the goblin raiders during the attack on the grove, this dialog triggers when the party returns to the vicinity of the goblin camp. It serves to warn players that the camp is now hostile"
+}

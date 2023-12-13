@@ -1,0 +1,254 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/HagLair/HAG_HagLair_EntranceDouble_StatusFallback.lsj",
+  "UUID": "2e551233-6477-2795-d5fa-1bab85f6f482",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "e7d8de7c-b697-4bc4-8268-4beea7165510"
+  ],
+  "Nodes": {
+    "0a68d2ae-607d-47bf-8ea4-e99e70c171f2": {
+      "UUID": "0a68d2ae-607d-47bf-8ea4-e99e70c171f2",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "55aa8c88-25f7-9b88-52df-938c2e73e082",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_HagLair_EntranceDouble_Leave"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "59c25780-f7f7-41d8-afcf-f28a1887f9dc",
+              "Text": {
+                "Handle": "h69f61584g8f24g4babg9cfbge79cae0bfa23",
+                "Value": "This is my personal play house. And you don't have an invite. Get. Out. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The player is in a gallery full of your victims - horribly twisted and tortured. You're hinting that they will join them soon. Cruel and malicious. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "d2d34131-924f-413b-b933-8f453da233b0": {
+      "UUID": "d2d34131-924f-413b-b933-8f453da233b0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "0a68d2ae-607d-47bf-8ea4-e99e70c171f2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c1f7de2b-7cc5-41bc-a723-011172bbc4ba",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAGEYED"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "de5d991d-16dc-47b3-8a6a-dda43979db02",
+              "Text": {
+                "Handle": "h309e57a8g30b8g4b80g9193g50011040f335",
+                "Value": "That pretty little eye of yours is <i>mine</i>. Did you think you could sneak down here without my say so?  "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e7d8de7c-b697-4bc4-8268-4beea7165510": {
+      "UUID": "e7d8de7c-b697-4bc4-8268-4beea7165510",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d2d34131-924f-413b-b933-8f453da233b0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a3e5cf24-bfbe-44ca-881b-1f32a9491c7c",
+              "Text": {
+                "Handle": "ha96c39d5gb22bg4a4bgb68bg86609dff346e",
+                "Value": "You are as thick as they come, sweetness."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Threatening smile while taunting player.The old lady act is gone.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a606e9c1-0d9d-c67c-d353-aa9b4e72debe",
+      "Index": 0,
+      "List": [
+        "c6ef4eea-fd50-2b8a-41c8-0fdbad366d67"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Auntie Ethel",
+        "Type": "character",
+        "MapKey": "c457d064-83fb-4ec6-b74d-1f30dfafd12d",
+        "Name": "S_HAG_Hag",
+        "ParentTemplateId": null,
+        "TemplateName": "d4edf374-6efe-463f-8899-889db26dee4e"
+      },
+      "SpeakerGroupName": "GROUP_Act1_GLO_HagHag"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "8d53f331-1147-d666-5935-2848e57261fc",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "This fires when the player enters the victim gallery, if the player can't speak (wildshape, summons, etc.). She appears to taunt them and then vanishes."
+}

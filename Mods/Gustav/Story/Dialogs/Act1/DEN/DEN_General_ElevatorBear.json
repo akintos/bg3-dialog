@@ -1,0 +1,1502 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_General_ElevatorBear.lsj",
+  "UUID": "2fbc72a0-28d8-a966-ccb5-5daac202d031",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "10e79415-a8b7-ec3c-3eac-cfe611ae44e7",
+    "d8738688-91e5-f0e6-6b72-e3278d6d6f45",
+    "97c1c10e-831e-ee10-c804-16da41811d62",
+    "aff3e8a8-051b-2988-b317-4bc37aec8334",
+    "11efeb07-3a62-21c5-89ab-45b7c202c7aa"
+  ],
+  "Nodes": {
+    "0d83f7fd-d0bc-e9e2-f478-32dd972f139f": {
+      "UUID": "0d83f7fd-d0bc-e9e2-f478-32dd972f139f",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e1dca118-d3d4-f792-93f3-ac4f3603497e",
+              "Text": {
+                "Handle": "h88d2c3bbge5d3g4a8eg9715ge25257a412a1",
+                "Value": "*Roar!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] approaches the [Bear] and nudges him. [Bear] looks up and roars at the [Player]. She then goes back to sleep. - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear lifts its head and starts roaring at us. The roar turns into a yawn midway, and he goes back to sleep.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N79",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Bear roar",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "10e79415-a8b7-ec3c-3eac-cfe611ae44e7": {
+      "UUID": "10e79415-a8b7-ec3c-3eac-cfe611ae44e7",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c1694b8-c0b9-edad-9fdc-cdeedff0512e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_General_Event_ElevatorBearMoves"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aae6d263-f9fe-7b81-cea5-20164d1daf78",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_General_Event_GaveBearFish"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9fd8fb7d-9e3e-3670-210c-33ae899e181e",
+              "Text": {
+                "Handle": "h671c7821g2b05g4a3fg8182g8387e60f29a9",
+                "Value": "Hmm... salty fish... three heads..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Bear] licks her lips - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N172",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Talking in his sleep, smacking his lips.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "11efeb07-3a62-21c5-89ab-45b7c202c7aa": {
+      "UUID": "11efeb07-3a62-21c5-89ab-45b7c202c7aa",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e6675faf-51a4-4592-de42-f7c6967dac62",
+        "ed0cb10c-db67-660d-c81c-2a10f419b1e6",
+        "60b5a201-5dea-2326-9278-ddd4a1812dc4",
+        "b496cc2c-299b-d614-56a4-30c73b2952aa"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e29aa392-b9d1-8fd7-6eb0-f490f1f8c0f8",
+              "Text": {
+                "Handle": "hed1a5cf3geb93g4753g8b35g6b4912508895",
+                "Value": "*Sniff.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "The bear looks up, goes back asleep",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear lifts up his head, sniffs the air and goes back to sleep.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N77",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "Bear sniffing",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "655;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "201b3abd-9f5b-e004-29d4-0a564bf316de": {
+      "RollSuccess": true,
+      "UUID": "201b3abd-9f5b-e004-29d4-0a564bf316de",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "40c81304-18ae-c9fe-7f58-39212a4d9c4d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N64",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "40c81304-18ae-c9fe-7f58-39212a4d9c4d": {
+      "UUID": "40c81304-18ae-c9fe-7f58-39212a4d9c4d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c1694b8-c0b9-edad-9fdc-cdeedff0512e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_General_Event_ElevatorBearMoves"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6470c147-9a91-9e2c-9293-de3e4082b743",
+              "Text": {
+                "Handle": "he18e9aa1g4d89g4eb8gbe54g84f91214d78c",
+                "Value": "*Grunt.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] approaches the [Bear] and nudges her. The bear shuffles uncomfortably from being nudged, then gets up. - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear sluggishly gets up. (It moves in scripting, after the dialogue has ended.)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N78",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Bear grunting",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "60b5a201-5dea-2326-9278-ddd4a1812dc4": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "8d398021-34e0-40b9-b7b2-0445f38a4c0b",
+      "DifficultyClassValue": 5,
+      "UUID": "60b5a201-5dea-2326-9278-ddd4a1812dc4",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e707653f-7c60-3d00-78f6-3a57499ee44f",
+        "7705f42a-56af-49dd-4037-9f8d20403b63"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b39656ff-420f-07e6-303b-0b6d11510864",
+              "value": false,
+              "paramval": 1,
+              "Name": "DEN_General_ElevatorBear_Knows_TriedSound"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": true,
+              "paramval": 1,
+              "Name": "RANGER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b39656ff-420f-07e6-303b-0b6d11510864",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_General_ElevatorBear_Knows_TriedSound"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "132c8927-9f92-6253-ad9c-e5e8baac0b8b",
+              "Text": {
+                "Handle": "h5386179cg8cecg468fg84b5gafed0e6290fd",
+                "Value": "<i>Imitate a squirrel's chatter to lure it away.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N137",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Performance",
+        "position": "975;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "61acb198-1d2e-b7c2-3e73-a925d5f2acc1": {
+      "UUID": "61acb198-1d2e-b7c2-3e73-a925d5f2acc1",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c1694b8-c0b9-edad-9fdc-cdeedff0512e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_General_Event_ElevatorBearMoves"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b8286d92-84a4-0590-a160-c04690c2cc87",
+              "Text": {
+                "Handle": "h8b9ead0egc417g4498ga3ccgff661841066c",
+                "Value": "*Roar!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Bear] jumps off platform, looks around and goes back to sleep. - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear jumps off the platform with a roar, hopeing to catch the squirrel, then looks around in confusion as it doesn't see a squirrel and goes back to sleep next to the platform.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N147",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Bear roar",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "62b367f4-fa9b-6df5-aa18-a1fb6a22810f": {
+      "UUID": "62b367f4-fa9b-6df5-aa18-a1fb6a22810f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b38f569f-cef4-2342-9692-4aac8f872862"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c1694b8-c0b9-edad-9fdc-cdeedff0512e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_General_Event_ElevatorBearMoves"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b94887eb-f5a5-28eb-52bc-ae8abd49605d",
+              "Text": {
+                "Handle": "h10fb94cag5e5fg44d4g99d9g283cc620f85a",
+                "Value": "Could you move just a little bit? I need to use the elevator."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N102",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "65611abe-c6b1-b444-d632-89cdb3b95696": {
+      "UUID": "65611abe-c6b1-b444-d632-89cdb3b95696",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "776081b8-7b62-9ba3-ebc3-6b0e3f282bdd",
+              "Text": {
+                "Handle": "hd4f96161g3111g4be3g8a18gee4c54f25119",
+                "Value": "*Hum.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] throws a fish. The bear springs to life and jumps up off the elevator. She grabs the fish off the ground and eats it almost immediately. - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear sniffs, smells the fish and follows it off the platform, eating it in one gulp before going back to sleep next to the platform.",
+        "CinematicObjects": "Fish",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N98",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Bear eating fish",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "7705f42a-56af-49dd-4037-9f8d20403b63": {
+      "RollSuccess": false,
+      "UUID": "7705f42a-56af-49dd-4037-9f8d20403b63",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dec187ed-71e8-8c8d-ecd2-cd2aba96b764"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N141",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "800ada2b-3d09-e08b-bcc5-100c538f3daf": {
+      "UUID": "800ada2b-3d09-e08b-bcc5-100c538f3daf",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c8f2ba2c-00f3-238d-5190-cec43c82aefa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9a83c4a4-952f-4da2-9f92-3692fbe17f10",
+              "value": true,
+              "paramval": 1,
+              "Name": "HasTaggedItem_FISH"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c1694b8-c0b9-edad-9fdc-cdeedff0512e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_General_Event_ElevatorBearMoves"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aae6d263-f9fe-7b81-cea5-20164d1daf78",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_General_Event_GaveBearFish"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1dd1a77a-3eff-af40-b13b-ef302ebd0d8f",
+              "Text": {
+                "Handle": "h3489002fg9fc6g4654ga93bg42d577e8105a",
+                "Value": "<i>Throw a fish next to the elevator.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N101",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "97c1c10e-831e-ee10-c804-16da41811d62": {
+      "UUID": "97c1c10e-831e-ee10-c804-16da41811d62",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c1694b8-c0b9-edad-9fdc-cdeedff0512e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_General_Event_ElevatorBearMoves"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5aaa71b6-37f3-36c5-8137-6cf05816d320",
+              "Text": {
+                "Handle": "ha21416bag3d84g4ea9ga8dag91b92cc77e4f",
+                "Value": "*Snort.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Bear] sleeps *DUPLICATE* - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear is sleeping.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N87",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Snort",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "aff3e8a8-051b-2988-b317-4bc37aec8334": {
+      "UUID": "aff3e8a8-051b-2988-b317-4bc37aec8334",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "800ada2b-3d09-e08b-bcc5-100c538f3daf",
+        "62b367f4-fa9b-6df5-aa18-a1fb6a22810f",
+        "d56695b9-db28-edbe-7b5d-13f48ff3177a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d95ccbf0-2c6e-b75c-a2ba-dd095d738ae5",
+              "Text": {
+                "Handle": "hc3335111gffc5g48b8g90ecg7e90717ca5db",
+                "Value": "Hmmm...? I'm... sleeping..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Bear] raises her head briefly, then lowers it and goes back to sleep. - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear lifts up his head, sniffs the air and goes back to sleep.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N83",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Mumbled - he's still half asleep and doesn't want to wake up. Can be said with a yawn, and have a snore after it.",
+        "Quality": "Silver",
+        "SFXTags": "Bear sniffing",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_SpeakWithAnimals_Spell",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "655;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "b38f569f-cef4-2342-9692-4aac8f872862": {
+      "UUID": "b38f569f-cef4-2342-9692-4aac8f872862",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "59b312cb-7642-036a-23cb-06520c0144d0",
+              "Text": {
+                "Handle": "hd9000a65gcb93g43d2gaaa6g386b0eade04e",
+                "Value": "Uuurghh... okay."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Bear] rises slowly and moves to the side. - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear sluggishly gets up and moves.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N104",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "long groan, then she agrees to move - she's still very sleepy.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Bear gets up",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "b496cc2c-299b-d614-56a4-30c73b2952aa": {
+      "UUID": "b496cc2c-299b-d614-56a4-30c73b2952aa",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a8af5e6d-cb0f-c3aa-86a4-d2d74bb9d1a0",
+              "Text": {
+                "Handle": "h07914aafg1451g43d3gaca4g8c07954c7bf3",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N61",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "c7c594df-a136-07e5-a648-cafa9d302db3": {
+      "RollSuccess": false,
+      "UUID": "c7c594df-a136-07e5-a648-cafa9d302db3",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0d83f7fd-d0bc-e9e2-f478-32dd972f139f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N68",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "c8f2ba2c-00f3-238d-5190-cec43c82aefa": {
+      "UUID": "c8f2ba2c-00f3-238d-5190-cec43c82aefa",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f7ff5c2f-42fe-d55f-ba86-e712e15f2a39",
+              "Text": {
+                "Handle": "hb13e2030gb6b7g4412g9beegb3a685e0add4",
+                "Value": "Huh? What's that?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] throws a fish. The bear springs to life and jumps up off the elevator. She grabs the fish off the ground and eats it almost immediately. - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear sniffs, smells the fish and follows it off the platform, eating it in one gulp before going back to sleep next to the platform.",
+        "CinematicObjects": "Fish - DY",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N158",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "The bear smelled a fish. She's suddenly wide awake.",
+        "Quality": "Silver",
+        "SFXTags": "Bear gets up",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "d56695b9-db28-edbe-7b5d-13f48ff3177a": {
+      "JumpTarget": "b496cc2c-299b-d614-56a4-30c73b2952aa",
+      "JumpTargetPoint": 1,
+      "UUID": "d56695b9-db28-edbe-7b5d-13f48ff3177a",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N106",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "d8738688-91e5-f0e6-6b72-e3278d6d6f45": {
+      "UUID": "d8738688-91e5-f0e6-6b72-e3278d6d6f45",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c1694b8-c0b9-edad-9fdc-cdeedff0512e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_General_Event_ElevatorBearMoves"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fd66be6a-d43b-0d44-3252-f5da7154b48f",
+              "Text": {
+                "Handle": "ha616ceaag4ca5g4b07g9ba8gd3b7493f4bce",
+                "Value": "Hmmmm..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Bear] sleeps - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N91",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "He's sleeping. Can be snoring a little.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    },
+    "dec187ed-71e8-8c8d-ecd2-cd2aba96b764": {
+      "UUID": "dec187ed-71e8-8c8d-ecd2-cd2aba96b764",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3d7d5080-a230-aa4c-adf2-1bf249d0af1b",
+              "Text": {
+                "Handle": "hfbca0353gc1f8g41c8g94b2gbd2e0bab8568",
+                "Value": "*Grunt.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Bear] raises her head briefly, then lowers it and goes back to sleep. *DUPLICATE* - Matt",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The bear looks up lazily and looks around, then grunts and goes back to sleep.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N146",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Bear grunt",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "e6675faf-51a4-4592-de42-f7c6967dac62": {
+      "UUID": "e6675faf-51a4-4592-de42-f7c6967dac62",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "65611abe-c6b1-b444-d632-89cdb3b95696"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9a83c4a4-952f-4da2-9f92-3692fbe17f10",
+              "value": true,
+              "paramval": 1,
+              "Name": "HasTaggedItem_FISH"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1c1694b8-c0b9-edad-9fdc-cdeedff0512e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_General_Event_ElevatorBearMoves"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "aae6d263-f9fe-7b81-cea5-20164d1daf78",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_General_Event_GaveBearFish"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "23534655-5dff-0e58-afa7-9a9f8142b82a",
+              "Text": {
+                "Handle": "h6c4b10a5g2c2fg40a4g975fg7c8c047b804e",
+                "Value": "<i>Throw a fish next to the elevator.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N97",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "e707653f-7c60-3d00-78f6-3a57499ee44f": {
+      "RollSuccess": true,
+      "UUID": "e707653f-7c60-3d00-78f6-3a57499ee44f",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "61acb198-1d2e-b7c2-3e73-a925d5f2acc1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N139",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "ed0cb10c-db67-660d-c81c-2a10f419b1e6": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "ed0cb10c-db67-660d-c81c-2a10f419b1e6",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "201b3abd-9f5b-e004-29d4-0a564bf316de",
+        "c7c594df-a136-07e5-a648-cafa9d302db3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "06dfed51-c123-7a01-0338-a831baa6479a",
+              "value": false,
+              "paramval": 1,
+              "Name": "DEN_General_Event_TriedNudgingBear"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "06dfed51-c123-7a01-0338-a831baa6479a",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_General_Event_TriedNudgingBear"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4025dfa7-10ac-0274-74d0-82b8154d5990",
+              "Text": {
+                "Handle": "h648dfdd6ge928g4116ga3aegc5ecdde90d1f",
+                "Value": "<i>Carefully nudge the bear's flank.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N62",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_AnimalHandling",
+        "position": "975;1986",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "5ac70372-13f3-8cfa-801f-0fc7eb5c2fce",
+      "Index": 0,
+      "List": [
+        "04b7ef23-1002-4682-b962-33a2328bcd5c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Tuffet",
+        "Type": "character",
+        "MapKey": "04b7ef23-1002-4682-b962-33a2328bcd5c",
+        "Name": "S_DEN_ElevatorBear",
+        "ParentTemplateId": null,
+        "TemplateName": "b2754d31-198e-4ae6-87ec-5399a3669639"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cffde744-a278-14f4-ede7-98f06c69c18f",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "A bear is sleeping on the elevator, blocking it off from use. She's very tired and doesn't want to get up"
+}

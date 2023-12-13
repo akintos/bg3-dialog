@@ -1,0 +1,464 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/UND_LoneDuergar_Squad_Wizard.lsj",
+  "UUID": "f880cf08-5b19-3b5d-245a-0264aaa882e1",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "8ae25838-9ed5-aff6-eacd-43796c949970",
+    "4496f644-26fc-c1ac-2d36-a41296d13a9d",
+    "c1801caf-94ad-cdcc-10f4-ce312f52e473",
+    "506d4970-6f82-6d7a-39fc-a6f0b5f154c8"
+  ],
+  "Nodes": {
+    "4496f644-26fc-c1ac-2d36-a41296d13a9d": {
+      "UUID": "4496f644-26fc-c1ac-2d36-a41296d13a9d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "637e0798-2203-61d5-5243-a505d786cc60",
+              "value": false,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_Squad_Wizard_Event_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "637e0798-2203-61d5-5243-a505d786cc60",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_Squad_Wizard_Event_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8f74d144-041e-4035-a9ac-72f41fc32de7"
+                ],
+                "TagNames": [
+                  "MALE"
+                ]
+              },
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c",
+                  "11491bda-fa57-44ed-a306-a13fdf8e3b82"
+                ],
+                "TagNames": [
+                  "DROWELF",
+                  "TRUESOUL"
+                ]
+              }
+            ],
+            "RuleString": "MALE and (DROWELF or TRUESOUL)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "b0716337-2549-5e83-a934-971b83ead475",
+              "Text": {
+                "Handle": "hbbd730adg6ee0g408eg97eeg06dcb08effa3",
+                "Value": "Sir... you'll want to speak to Gekh. He's in charge."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3806477c-65a7-4100-9f92-be4c12c4fa4f"
+                ],
+                "TagNames": [
+                  "FEMALE"
+                ]
+              },
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c",
+                  "11491bda-fa57-44ed-a306-a13fdf8e3b82"
+                ],
+                "TagNames": [
+                  "DROWELF",
+                  "TRUESOUL"
+                ]
+              }
+            ],
+            "RuleString": "FEMALE and (DROWELF or TRUESOUL)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "c0096251-9faf-d831-25b9-b4f7341c676b",
+              "Text": {
+                "Handle": "h8e81cf44g961dg44b5g8bb1g2fbb35fb0cfe",
+                "Value": "Madam... you'll want to speak to Gekh. He's in charge."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c",
+                  "11491bda-fa57-44ed-a306-a13fdf8e3b82"
+                ],
+                "TagNames": [
+                  "DROWELF",
+                  "TRUESOUL"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF or TRUESOUL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "447387e6-3145-4224-919a-d8e12f7126fc",
+              "Text": {
+                "Handle": "hec0484f3gb57dg408egb80eg4bab7e5221c6",
+                "Value": "You'll want to speak to Gekh. He's in charge."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Respectful towards a drow player.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Drow Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "506d4970-6f82-6d7a-39fc-a6f0b5f154c8": {
+      "UUID": "506d4970-6f82-6d7a-39fc-a6f0b5f154c8",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "637e0798-2203-61d5-5243-a505d786cc60",
+              "value": false,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_Squad_Wizard_Event_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "637e0798-2203-61d5-5243-a505d786cc60",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_Squad_Wizard_Event_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7dbb464d-ea17-dedf-16ff-cd6b79b03610",
+              "Text": {
+                "Handle": "h494fe81cge1ecg44bcgb7acg40c649758cae",
+                "Value": "Gekh's the talker, not me. Back off."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "8ae25838-9ed5-aff6-eacd-43796c949970": {
+      "UUID": "8ae25838-9ed5-aff6-eacd-43796c949970",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "637e0798-2203-61d5-5243-a505d786cc60",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_Squad_Wizard_Event_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "a672ac1d-d088-451a-9537-3da4bf74466c",
+                  "11491bda-fa57-44ed-a306-a13fdf8e3b82"
+                ],
+                "TagNames": [
+                  "DROWELF",
+                  "TRUESOUL"
+                ]
+              }
+            ],
+            "RuleString": "DROWELF or TRUESOUL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "46b9e95e-dff2-ba98-7b2a-bd76b421d8ef",
+              "Text": {
+                "Handle": "h2ddfc9e8g5ce6g4f5aga89cg22e7c1adf0ec",
+                "Value": "Praise the Absolute."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Respectful towards a drow player.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Drow Hasmet",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "c1801caf-94ad-cdcc-10f4-ce312f52e473": {
+      "UUID": "c1801caf-94ad-cdcc-10f4-ce312f52e473",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "637e0798-2203-61d5-5243-a505d786cc60",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_Squad_Wizard_Event_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "50d8bad9-5948-f4a0-9f53-f6c3404f7d2f",
+              "Text": {
+                "Handle": "h065fd7a5g4ba3g4d2cg88a9g5bcbb9384049",
+                "Value": "Back off, I said!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Hasmet",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "3c1c69f6-3db6-8ca9-5696-c15172ebec08",
+      "Index": 0,
+      "List": [
+        "ffacce35-8921-429a-8266-6d4a7a98428d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lurgan",
+        "Type": "character",
+        "MapKey": "ffacce35-8921-429a-8266-6d4a7a98428d",
+        "Name": "S_UND_LoneDuergar_Squad_Caster",
+        "ParentTemplateId": null,
+        "TemplateName": "e5a840fd-33e9-4835-b9e1-ab97ffd0bf06"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c1c006e9-b2a7-dbf7-41ba-52674961294c",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "A duergar, part of the cult of the Absolute. He and his brethren are part of a squad sent to track down an escaped deep gnome prisoner from their camp in the Underdark."
+}

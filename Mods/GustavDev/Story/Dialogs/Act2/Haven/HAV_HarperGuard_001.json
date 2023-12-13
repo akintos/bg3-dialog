@@ -1,0 +1,402 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Haven/HAV_HarperGuard_001.lsj",
+  "UUID": "78436cac-83d4-28b0-c358-6774b3f351e2",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "d2a54420-7d28-4a0d-9bdd-778a67b7b0fe",
+    "2903a03b-796f-4b3f-a59d-6a6fac98f4ba",
+    "8c583e2d-371a-452d-a2a5-e7d6eca6fc25",
+    "d56fa89a-1e80-43f6-a16d-9774eb711e6a"
+  ],
+  "Nodes": {
+    "2903a03b-796f-4b3f-a59d-6a6fac98f4ba": {
+      "UUID": "2903a03b-796f-4b3f-a59d-6a6fac98f4ba",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6def3a4b-2ecb-bc03-f2a3-89e7ca029378",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_HarperGuard_001_Protected_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "2ba16a80-e4f8-40b5-aaf5-37791bd76542",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_Protected"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "69cb2636-1fb4-473c-a83f-5c78744647bb",
+              "Text": {
+                "Handle": "h2ca580dfg1b60g40bcgbb3dga235f24fdd2b",
+                "Value": "Glad you made it through the dark."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "Protected state. Barrier is On, nothing bad happened yet. Met.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Sincere - you know what could have happened out there",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "PROTECTED MET",
+        "position": "15;-204",
+        "sourcetemplate": "HavenStates"
+      }
+    },
+    "8c583e2d-371a-452d-a2a5-e7d6eca6fc25": {
+      "UUID": "8c583e2d-371a-452d-a2a5-e7d6eca6fc25",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a11c5de3-b2fc-25f1-5f40-bafcc04331ff",
+              "value": false,
+              "paramval": 1,
+              "Name": "HAV_HarperGuard_001_Alert_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b073eeb9-1d29-449f-baf5-74307e63d085",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_Alert"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a11c5de3-b2fc-25f1-5f40-bafcc04331ff",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_HarperGuard_001_Alert_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bfe51758-6c82-4780-9c86-90d404d6e25e",
+              "Text": {
+                "Handle": "h341b5f7fga31ag470cga9ddg7170267f343f",
+                "Value": "No surprise to find a traitor among the Flaming Fist. Honour isn't their strong suit."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "State after repelling the attack of the Flaming Fist traitor. NPCs are afraid of other possible attacks.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Grim but also you trust your own people to watch your back - you don't need the flaming fists",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ALERT NOT MET",
+        "position": "15;234",
+        "sourcetemplate": "HavenStates"
+      }
+    },
+    "d2a54420-7d28-4a0d-9bdd-778a67b7b0fe": {
+      "UUID": "d2a54420-7d28-4a0d-9bdd-778a67b7b0fe",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6def3a4b-2ecb-bc03-f2a3-89e7ca029378",
+              "value": false,
+              "paramval": 1,
+              "Name": "HAV_HarperGuard_001_Protected_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "2ba16a80-e4f8-40b5-aaf5-37791bd76542",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_Protected"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6def3a4b-2ecb-bc03-f2a3-89e7ca029378",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_HarperGuard_001_Protected_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ab785c31-3db9-4149-82ba-6832c3df5751",
+              "Text": {
+                "Handle": "hf4e3047fg5f64g439cgbb72geb8186531bcc",
+                "Value": "Take it easy while you can - we'll keep the watch.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "Protected state. Barrier is On, nothing bad happened yet. Not Met.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Calm and reassuring",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "PROTECTED NOT MET",
+        "position": "15;-423",
+        "sourcetemplate": "HavenStates"
+      }
+    },
+    "d56fa89a-1e80-43f6-a16d-9774eb711e6a": {
+      "UUID": "d56fa89a-1e80-43f6-a16d-9774eb711e6a",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a11c5de3-b2fc-25f1-5f40-bafcc04331ff",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_HarperGuard_001_Alert_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b073eeb9-1d29-449f-baf5-74307e63d085",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_Alert"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "777e9d9c-e142-40fb-81fd-e27582d1735f",
+              "Text": {
+                "Handle": "h8f80ee6eg9639g49deg8275gb4163467c6c0",
+                "Value": "You're lucky Jaheira gave you the all-clear, or I'd be looking at you next."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "State after repelling the attack of the Flaming Fist traitor. NPCs are afraid of other possible attacks.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "said matter of factly - she trusts jaheira with her life",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ALERT MET",
+        "position": "15;453",
+        "sourcetemplate": "HavenStates"
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "5552ddf1-ed36-f219-b639-8fa1370198e0",
+      "Index": 0,
+      "List": [
+        "8082f1d4-8942-492e-8d26-1e1ed6bd881f"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Harper Mijah",
+        "Type": "character",
+        "MapKey": "8082f1d4-8942-492e-8d26-1e1ed6bd881f",
+        "Name": "S_HAV_HarperGuard_001",
+        "ParentTemplateId": null,
+        "TemplateName": "5d8ed432-0af7-4911-a840-e0f8b6af95ab"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "35873743-2d6d-f436-be01-5c3009a73a5c",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Mijah is calm, cool and collected. Despite her young age Mijah has seen more than her fair share of fights. She is an excellent example of a Harper Veteran. This dialogue covers all main states in Haven."
+}

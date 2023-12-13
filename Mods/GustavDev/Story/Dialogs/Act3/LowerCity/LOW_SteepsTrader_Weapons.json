@@ -1,0 +1,693 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_SteepsTrader_Weapons.lsj",
+  "UUID": "8fb9c4f4-2e4b-dc6f-0274-813f3a9e2a42",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "1b4c6910-fd70-421d-aa17-8e39baf0da6d",
+    "ca247795-7d44-4625-bec3-ab4ee70b89a1"
+  ],
+  "Nodes": {
+    "022420e9-449b-4a8e-837d-8c764790704f": {
+      "JumpTarget": "ca247795-7d44-4625-bec3-ab4ee70b89a1",
+      "JumpTargetPoint": 2,
+      "UUID": "022420e9-449b-4a8e-837d-8c764790704f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N10",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "0bafaca2-ee1e-43bc-8ce5-4ca005550c84": {
+      "UUID": "0bafaca2-ee1e-43bc-8ce5-4ca005550c84",
+      "Constructor": "Trade",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5a816866-530e-5c46-2d12-1fefae757e25"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N4",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Trade",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "1b4c6910-fd70-421d-aa17-8e39baf0da6d": {
+      "UUID": "1b4c6910-fd70-421d-aa17-8e39baf0da6d",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "022420e9-449b-4a8e-837d-8c764790704f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "707bf761-41fa-0bde-7389-3d2845ec0aac",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SteepsTrader_Weapons_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "1a2f70d6-8ead-4eb5-a824-79ee1971764a"
+                ],
+                "TagNames": [
+                  "REALLY_KARLACH"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_KARLACH"
+          },
+          "TagTexts": [
+            {
+              "LineId": "27784f47-f8de-4ae3-863b-4c2770751059",
+              "Text": {
+                "Handle": "h48afc482g66d4g41f7gaa23g8bb02444da42",
+                "Value": "Back already, Kar?"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aede6614-146f-49ce-b757-483b94d54278",
+              "Text": {
+                "Handle": "ha6ebba16g65fag4461g9adfgfe6460a560d7",
+                "Value": "Something caught your eye, then? Careful - most of my wares can take an eye right out."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Slight chuckle to self on the second sentence. Well-worn shopkeeper joke",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1d30aed9-0d53-4ddd-8b4e-3bca7385121d": {
+      "UUID": "1d30aed9-0d53-4ddd-8b4e-3bca7385121d",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1dfd2923-ffec-f27e-d6db-480185f830fe",
+        "d61c2b41-5830-6053-fa52-66a8764acc99"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "af43df04-92a4-4615-95e3-24f860aefbab",
+              "Text": {
+                "Handle": "h9522e35ag96fag43bbg9bc1ga889afb36bf7",
+                "Value": "Let me see what you have to offer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "1dfd2923-ffec-f27e-d6db-480185f830fe": {
+      "UUID": "1dfd2923-ffec-f27e-d6db-480185f830fe",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0bafaca2-ee1e-43bc-8ce5-4ca005550c84"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "add29700-de6c-4b93-b67d-c0774420965e",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Gazette_Headline_Positive"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "3ce9bbc9-e786-4024-b957-f199eeb80296",
+              "value": false,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_State_ReactedToHeadline"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3ce9bbc9-e786-4024-b957-f199eeb80296",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_State_ReactedToHeadline"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5bfc64a0-dc1f-4ac3-84c6-a55d0d2cefb4",
+              "Text": {
+                "Handle": "hf5d946a7g6241g4421gba04g0833fe5e74a7",
+                "Value": "*News of your good deeds has travelled fast. The merchant is all too happy to extend a certain generosity towards you, where the price of goods is concerned.* "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N54",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "POSITIVE ARTICLE + PRICES DOWN",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "5a816866-530e-5c46-2d12-1fefae757e25": {
+      "UUID": "5a816866-530e-5c46-2d12-1fefae757e25",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "1a2f70d6-8ead-4eb5-a824-79ee1971764a"
+                ],
+                "TagNames": [
+                  "REALLY_KARLACH"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_KARLACH"
+          },
+          "TagTexts": [
+            {
+              "LineId": "2619fa51-da92-4495-a27f-8dffcf305b77",
+              "Text": {
+                "Handle": "h783036dag15cfg447agbf3cgd24c686b72ad",
+                "Value": "'Til soon, darling."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "12e2bd67-5aec-4b47-a813-80f2c53ff809",
+              "Text": {
+                "Handle": "h4a3e1736gbb1fg4089gbcc2g74812a15959b",
+                "Value": "Trade's booming - folk are scared. And better to be scared and armed than scared and empty-handed, I always say."
+              }
+            },
+            {
+              "LineId": "a3bb3cbf-7923-4ced-a082-d9120c704d91",
+              "Text": {
+                "Handle": "h1954fad7g330ag4ad6gb6a3g08fa66123f35",
+                "Value": "All of my wares are tried and true - hells, some of them have probably already killed before."
+              }
+            },
+            {
+              "LineId": "aaec3aee-0401-462d-9f53-e8fce25b1bdf",
+              "Text": {
+                "Handle": "hdf42aaadg56bdg40c1gbe4cge21e2d42da0d",
+                "Value": "My weapons won't be beat. Tell your friends - hells, tell your enemies if you like."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "POST-TRADE COMMENTS X3 (RANDOM)",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "8466dae7-9376-44e0-ba27-f6ad30870ba2": {
+      "UUID": "8466dae7-9376-44e0-ba27-f6ad30870ba2",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a39edf0c-0689-425e-a72f-3ec01a152574",
+              "Text": {
+                "Handle": "h783df76egb0cdg4affg8e00gec96a8668256",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "ca247795-7d44-4625-bec3-ab4ee70b89a1": {
+      "UUID": "ca247795-7d44-4625-bec3-ab4ee70b89a1",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1d30aed9-0d53-4ddd-8b4e-3bca7385121d",
+        "8466dae7-9376-44e0-ba27-f6ad30870ba2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "707bf761-41fa-0bde-7389-3d2845ec0aac",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_SteepsTrader_Weapons_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "707bf761-41fa-0bde-7389-3d2845ec0aac",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SteepsTrader_Weapons_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7ed63167-684d-49aa-9112-bd1e7c756e69",
+              "Text": {
+                "Handle": "hbe4d18a4gde3fg495fg9d3ag08b5f58b4810",
+                "Value": "Need something for defence? Or maybe <i>offence</i>? Either way, I've got what you need."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "d61c2b41-5830-6053-fa52-66a8764acc99": {
+      "UUID": "d61c2b41-5830-6053-fa52-66a8764acc99",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0bafaca2-ee1e-43bc-8ce5-4ca005550c84"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "087fb6c3-16d6-473f-818b-85fc16d5a93d",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Gazette_Headline_Negative"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "3ce9bbc9-e786-4024-b957-f199eeb80296",
+              "value": false,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_State_ReactedToHeadline"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3ce9bbc9-e786-4024-b957-f199eeb80296",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_BaldursMouth_State_ReactedToHeadline"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "978d53b3-e7bc-428b-9b06-c90ab9f4db1c",
+              "Text": {
+                "Handle": "ha83bfd9cg7bb9g4eebga4f3g6fea27487743",
+                "Value": "*Your notoriety precedes you. Prices have been moderated to reflect your less than welcome presence in the city.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NEGATIVE ARTICLE + PRICES UP",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ba82c9d1-f343-466e-bcf0-6d913930ed01",
+      "Index": 0,
+      "List": [
+        "3c4ebba4-d2ba-4f07-98ed-bc523845ce3b"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Fytz the Firecracker",
+        "Type": "character",
+        "MapKey": "3c4ebba4-d2ba-4f07-98ed-bc523845ce3b",
+        "Name": "S_LOW_SteepsTrader_Weapons",
+        "ParentTemplateId": null,
+        "TemplateName": "1ad176b6-d4df-49b9-b487-c0751c39e55e"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fbd471f2-a193-4067-a07b-8e80bab549f3",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "One of the traders from Steeps Strake. She will sell weapons to the player. "
+}

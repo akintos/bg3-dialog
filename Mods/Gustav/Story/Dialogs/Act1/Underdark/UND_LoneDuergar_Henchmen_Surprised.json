@@ -1,0 +1,251 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Underdark/UND_LoneDuergar_Henchmen_Surprised.lsj",
+  "UUID": "c8969f15-59f4-3942-e488-29e13191a762",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "ffd36127-db91-4041-9d8f-aff56281b4ad"
+  ],
+  "Nodes": {
+    "0ace0dcf-fbd0-40bc-8e9a-99046806b799": {
+      "UUID": "0ace0dcf-fbd0-40bc-8e9a-99046806b799",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2e032437-900c-7f8c-1cf6-fefb7823a042",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_LoneDuergar_Event_WaitingForMainDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0d5661b7-d0ab-a6f0-a7ef-dcb8bab9a325",
+              "Text": {
+                "Handle": "h93316147g671eg4147g9020gcddc5eae25f7",
+                "Value": "<i>Hold up your palms in peace.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "abdc8879-2f3b-4a27-a127-d21bf9112318": {
+      "UUID": "abdc8879-2f3b-4a27-a127-d21bf9112318",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5b4d1d25-1b70-43b2-b336-2f259eea3fc3",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Event_SetSurprisedNextCombat"
+            },
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b83fa78-8cce-0575-4368-1592f98498c6",
+              "Text": {
+                "Handle": "h26e84de2gb7e2g4307g9f35g16be966718e4",
+                "Value": "<i>Attack</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ffd36127-db91-4041-9d8f-aff56281b4ad": {
+      "UUID": "ffd36127-db91-4041-9d8f-aff56281b4ad",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "0ace0dcf-fbd0-40bc-8e9a-99046806b799",
+        "abdc8879-2f3b-4a27-a127-d21bf9112318"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0380ebfb-6b57-2397-afab-d680ba536fa6",
+              "Text": {
+                "Handle": "h72438e05g7648g4dc7g9f6dg11480716a028",
+                "Value": "What...? <i>Gekh! </i>Got someone sneaking up on us!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[PaulN] [REUSE] Sneak animation for Player",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "Player sneaking.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Raising the alarm. Doesn't need to be shouted - more of an urgent hiss ",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "11687c07-4a44-49bd-17c1-50c6a6a36da8",
+      "Index": 0,
+      "List": [
+        "891b68b5-5bf9-385c-03e4-fe7fb99f0b63"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Act1_UND_LoneDuergar_Henchmen"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "63336901-e6a4-02fd-d6eb-8f765af8a56c",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "An alternate intro to the Gekh Coal scene, where the player manages to sneak up on Gekh's henchmen before Gekh himself managed to confront the player. They call for his attention."
+}

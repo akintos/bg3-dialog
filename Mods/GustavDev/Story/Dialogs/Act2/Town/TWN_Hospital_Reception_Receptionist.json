@@ -1,0 +1,5402 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Town/TWN_Hospital_Reception_Receptionist.lsj",
+  "UUID": "455e3ef7-3354-8b00-05cb-dceedc6582fe",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "2": -1
+  },
+  "RootNodes": [
+    "11eafb0a-9db5-b818-8a40-e97a125c2a28",
+    "4dea850a-c95c-81b2-1995-223b55356a8c",
+    "e85aea40-39bd-6e3d-3bad-d90e5f938f9b",
+    "bb4caae6-f92e-6ed5-dcab-ba7b3960e40a",
+    "e5344322-47a2-4eb6-900e-5b9cc8cef875",
+    "8a49813d-ceb6-6497-3af7-8ca937cd0b62"
+  ],
+  "Nodes": {
+    "02899ec7-994b-7b2c-4c4b-1e3e991c5452": {
+      "JumpTarget": "122d1454-573f-3819-b007-46ae1493b7c7",
+      "JumpTargetPoint": 1,
+      "UUID": "02899ec7-994b-7b2c-4c4b-1e3e991c5452",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N382",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "04ac8fe6-0260-ea77-77fc-e96e31b3bb3d": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "04ac8fe6-0260-ea77-77fc-e96e31b3bb3d",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8a62d3f5-856e-f79d-569e-d07db94a8464",
+        "54a667cd-da61-7973-c51f-0fd9608cbc1d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5804f55a-93f7-4281-9512-8d548a9e2a22",
+              "value": true,
+              "paramval": 1,
+              "Name": "WARLOCK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "cdad1fc1-352b-4441-82f2-73d8433e42ea"
+                ],
+                "TagNames": [
+                  "WARLOCK_GREAT_OLD_ONE"
+                ]
+              }
+            ],
+            "RuleString": "WARLOCK_GREAT_OLD_ONE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "525fdac0-ef3c-479b-b6f9-c4c458246945",
+              "Text": {
+                "Handle": "h6894650fgad7fg49dbg9de3ge2d7e8d91dc4",
+                "Value": "I'm sick with a deep malaise, one that came from a place beyond the stars."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "86de94fa-91a2-4abb-8601-f2ad96c70659"
+                ],
+                "TagNames": [
+                  "WARLOCK_ARCHFEY"
+                ]
+              }
+            ],
+            "RuleString": "WARLOCK_ARCHFEY"
+          },
+          "TagTexts": [
+            {
+              "LineId": "e8a5157f-bb03-491f-a5f5-abc2450ad92c",
+              "Text": {
+                "Handle": "h32ebafd9g4935g4050g8a1fg69372b9805cd",
+                "Value": "I've broken out in weird, singing hives - a sure sign of faerie infection. "
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "fbe3ee5d-1bb8-4c0b-a18c-26386101a680"
+                ],
+                "TagNames": [
+                  "WARLOCK_FIEND"
+                ]
+              }
+            ],
+            "RuleString": "WARLOCK_FIEND"
+          },
+          "TagTexts": [
+            {
+              "LineId": "f7746baf-24cc-4be4-8ff5-dbb223fceda5",
+              "Text": {
+                "Handle": "h9f51dbb7g2537g4dcdg965fg507e7c9b60ea",
+                "Value": "I've picked up a diabolic disease - the symptoms are quite hellish."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N401",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "WARLOCK",
+        "position": "1935;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "06104d58-f9ec-b86e-04dc-896ef71beafa": {
+      "JumpTarget": "401f3f4f-1556-5b4f-4d0c-6921e102fe05",
+      "JumpTargetPoint": 1,
+      "UUID": "06104d58-f9ec-b86e-04dc-896ef71beafa",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N399",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "06202057-e07b-f17a-f084-d60bfb1c30db": {
+      "JumpTarget": "6b8a6074-56c8-b4f0-51c3-bacfa3d6e128",
+      "JumpTargetPoint": 1,
+      "UUID": "06202057-e07b-f17a-f084-d60bfb1c30db",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N423",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "0c5b6c1b-fb49-4469-b537-c40f025cec37": {
+      "JumpTarget": "b84c14d0-9bfd-3008-501a-3843f355a4e2",
+      "JumpTargetPoint": 1,
+      "UUID": "0c5b6c1b-fb49-4469-b537-c40f025cec37",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N332",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1935;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "0c5c17ab-cfda-5b15-3842-04ad53584072": {
+      "UUID": "0c5c17ab-cfda-5b15-3842-04ad53584072",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9ff48b81-3ff4-a8ba-1205-2edd1281a671",
+        "23964e7a-ad05-33fd-2618-c28e1ac2a636"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c99be8ba-9761-45cf-82e6-9769a14e3eed",
+              "Text": {
+                "Handle": "h1993468eg4696g447fga0b2gdcce55db89bb",
+                "Value": "Poor dear. Poor, poor dear. Who did this to you?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Nuse checking the DU's head",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N372",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "0c6ea357-771f-e56a-f856-e1ce80d64443": {
+      "JumpTarget": "9e3171ac-c2a4-fd0e-f3a3-b83831976079",
+      "JumpTargetPoint": 1,
+      "UUID": "0c6ea357-771f-e56a-f856-e1ce80d64443",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N434",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "0f0f6ea7-516f-164d-ad1b-865d455fd81a": {
+      "UUID": "0f0f6ea7-516f-164d-ad1b-865d455fd81a",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "45c6142e-27f7-4593-9cad-483c70da315d",
+              "Text": {
+                "Handle": "h3ed40977gb29eg44d6gb2ebg3b7794ebe933",
+                "Value": "Sisters! Protect the patients!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N259",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "COMBAT",
+        "position": "4175;234",
+        "sourcetemplate": ""
+      }
+    },
+    "11a765ff-8dff-a245-0ece-d317cce36922": {
+      "JumpTarget": "4b51b01d-bee1-d15d-e609-9499321e5859",
+      "JumpTargetPoint": 1,
+      "UUID": "11a765ff-8dff-a245-0ece-d317cce36922",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N338",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "11eafb0a-9db5-b818-8a40-e97a125c2a28": {
+      "UUID": "11eafb0a-9db5-b818-8a40-e97a125c2a28",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0820e94c-7007-4459-b935-2d33fbbf6aa9",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_State_SurgeonPermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0f4d0c74-3187-425c-953a-3f1286d0e6dd",
+              "Text": {
+                "Handle": "h758404ccg3b4eg4b5egb142g3e2e7b08e8f4",
+                "Value": "The doctor is absent today. Come back another time."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N149",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "part wistful, part mournful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "122d1454-573f-3819-b007-46ae1493b7c7": {
+      "UUID": "122d1454-573f-3819-b007-46ae1493b7c7",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9caa8b7a-5d62-427b-bc86-eb615c5b7882",
+              "Text": {
+                "Handle": "hc9d4633fg0d49g479bgbd3ag1bd9d336eb4e",
+                "Value": "Down to the theatre, be swift, be saved. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N219",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;234",
+        "sourcetemplate": ""
+      }
+    },
+    "1860ea4c-4bb5-2e55-0edf-bd69b8b83ad8": {
+      "UUID": "1860ea4c-4bb5-2e55-0edf-bd69b8b83ad8",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "be53e662-a3fb-2d44-7378-68fd33adf03e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "85d0aaab-46fe-4605-937e-47c7b72dc41f",
+              "Text": {
+                "Handle": "h6f73b7b0g05b3g4620gaedbg95e5b45beb39",
+                "Value": "Join the line - you <i>will</i> be seen."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N446",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "with a touch of desperation",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "19bb086b-d08e-1007-36e7-ac84b776ece6": {
+      "UUID": "19bb086b-d08e-1007-36e7-ac84b776ece6",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fd4c6ba1-e9f9-c8f5-e186-de837786d82a",
+              "value": false,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_InLine"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "13ec14ed-2baa-32c2-8945-bda5c463b1f7",
+              "value": true,
+              "paramval": 1,
+              "Name": "TeleportOutOfTrespass"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "85b3bcec-91f5-4c83-87af-596b240a5b44",
+              "Text": {
+                "Handle": "hb824580dg8d7fg4af8gbdc8g73b08353391b",
+                "Value": "No thanks, I'll take my chances out there. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N308",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "1abf725d-6147-b1bd-909d-d19b353e4f48": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "1abf725d-6147-b1bd-909d-d19b353e4f48",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d06313a4-fb35-6ed1-0ce6-0689eaadac78",
+        "72e20ba7-66f2-d3f7-fc8d-6318b22f1671"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": true,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0e5c0399-dfe5-4fdf-9d64-1d6607567546",
+              "Text": {
+                "Handle": "h5acdbabfg1bb9g4089g8f68g0feff13d13c1",
+                "Value": "<b><i>ROAR AT THIS INJUSTICE. </i></b>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N394",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "BARBARIAN",
+        "position": "1935;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "1b17c316-c35a-574c-3110-b6ca0f46cd01": {
+      "UUID": "1b17c316-c35a-574c-3110-b6ca0f46cd01",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "65a389b1-682f-c15c-12a3-92b4478c5cc7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c97e757a-d354-4cfe-8fec-814a55d02695",
+              "Text": {
+                "Handle": "hbed0924fg70adg404cg8170gea5954c8e749",
+                "Value": "Yes yes, but all must wait. The doctor's hands are <i>full</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N239",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "a little frantic, overwhelmed",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1e25522b-f76e-398b-4539-d8ead0463a77": {
+      "JumpTarget": "d06313a4-fb35-6ed1-0ce6-0689eaadac78",
+      "JumpTargetPoint": 1,
+      "UUID": "1e25522b-f76e-398b-4539-d8ead0463a77",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N422",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "1f3a39d3-36d0-c6d2-94d7-96fb929ae78c": {
+      "UUID": "1f3a39d3-36d0-c6d2-94d7-96fb929ae78c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d4f4c43c-7079-c5b3-6d03-1dade19dd23d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c3efd76f-c448-6bb7-58cb-60d348952114",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_FailedPersuasion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "20139014-e4d9-49e0-a4aa-bc3455236f8a",
+              "Text": {
+                "Handle": "h77f530aag74efg423cgaed9g8cfa7cfbaf17",
+                "Value": "Quiet! <i>Quiet!</i> Everyone must wait their turn, wait in line... Doctor's orders."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N398",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "23964e7a-ad05-33fd-2618-c28e1ac2a636": {
+      "UUID": "23964e7a-ad05-33fd-2618-c28e1ac2a636",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2df8c4f8-c8fb-fe3f-930c-4b240efe0ca9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1d1bb8d4-823d-40fc-b277-a2a04efec180",
+              "Text": {
+                "Handle": "hf3a571d7g2927g4fe3gaf93g59f12324be9e",
+                "Value": "Get away from me!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N387",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3215;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "26808e44-baf0-85bc-9058-24e2d1eebd5b": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "26808e44-baf0-85bc-9058-24e2d1eebd5b",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ab90f665-1483-b1d9-09f1-7b7c65e11cff"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f8a0608b-666c-4be6-a49c-03b369c10bd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "ROGUE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ae5c8412-8075-4664-b886-558b3356e443",
+              "Text": {
+                "Handle": "h1a4007bbg6580g4412g9052gb4837a95b016",
+                "Value": "<i>Mimic the symptoms of </i>Assassin's Blood,<i> a well-known poison.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N409",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Rogue_Advantage",
+        "position": "1935;15",
+        "sourcetemplate": ""
+      }
+    },
+    "2c03c807-dc3d-f5fc-2131-a78c05c7873c": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "2c03c807-dc3d-f5fc-2131-a78c05c7873c",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "344475e7-1fdc-6661-14f7-bf516558e094"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5",
+              "value": true,
+              "paramval": 1,
+              "Name": "CLERIC"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "eb89962c-1964-477a-a4d2-643fe5d7c480",
+              "Text": {
+                "Handle": "h6ba16a60g7887g45dcg9ba4g209a2f713101",
+                "Value": "I'm not a patient - I've been hired as a new healer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N440",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "cleric",
+        "position": "1935;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "2c893345-c099-6402-80e5-2b6619fc9c84": {
+      "JumpTarget": "4b51b01d-bee1-d15d-e609-9499321e5859",
+      "JumpTargetPoint": 2,
+      "UUID": "2c893345-c099-6402-80e5-2b6619fc9c84",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N195",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "2df8c4f8-c8fb-fe3f-930c-4b240efe0ca9": {
+      "UUID": "2df8c4f8-c8fb-fe3f-930c-4b240efe0ca9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5a6a3302-45ce-22af-279c-d85eec19d209"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "903a7320-d0b9-4e59-aa23-b7a654a0d78b",
+              "Text": {
+                "Handle": "h1dcf1ef7g97e1g422agb395g06dd430dffde",
+                "Value": "I am but a nurse here, the Surgeon... he will be able to examine you in full."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N389",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "2e83c2f7-3e6e-0fb5-2957-a0fbbaea5acd": {
+      "UUID": "2e83c2f7-3e6e-0fb5-2957-a0fbbaea5acd",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a7d9df91-6d41-2f03-6042-aa5e362700dd"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "23a46e79-e73c-4043-940f-cb0aace9ab2e",
+              "value": true,
+              "paramval": 1,
+              "Name": "ASTARION"
+            },
+            {
+              "UUID": "ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_ASTARION"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3"
+                ],
+                "TagNames": [
+                  "REALLY_ASTARION"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_ASTARION"
+          },
+          "TagTexts": [
+            {
+              "LineId": "4efea999-83f4-4c3b-b713-79953d4250d2",
+              "Text": {
+                "Handle": "hd7cf26bbg6c37g48b3g9792gd754268eecf2",
+                "Value": "My dear lady - look at my complexion. I am at death's door."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N263",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Astarion",
+        "position": "975;672",
+        "sourcetemplate": ""
+      }
+    },
+    "2fd0c7ac-f647-baa4-cedd-7a90206e955f": {
+      "UUID": "2fd0c7ac-f647-baa4-cedd-7a90206e955f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dd0d28c7-9108-f999-0ff8-0dd23cf6da11"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a1c48d75-b95d-4302-9dbc-a6d681304d82",
+              "Text": {
+                "Handle": "h4fc2620bg0aeeg4e21g99degba5657c566ee",
+                "Value": "Enough of this - I'm going in. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N251",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3535;234",
+        "sourcetemplate": ""
+      }
+    },
+    "3342a30f-45fd-dfab-cfab-642e06344d25": {
+      "UUID": "3342a30f-45fd-dfab-cfab-642e06344d25",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2c893345-c099-6402-80e5-2b6619fc9c84"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c3efd76f-c448-6bb7-58cb-60d348952114",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_FailedPersuasion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b60f637c-0b16-4171-8d31-64e369292d21",
+              "Text": {
+                "Handle": "h62af2397ga21eg42f0g948cg7a0406333677",
+                "Value": "Such cruelty, such callousness. And in our time of need. <i>Away</i>. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N194",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "upset, flustered",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "344475e7-1fdc-6661-14f7-bf516558e094": {
+      "JumpTarget": "d9135d04-d8f4-3857-3af2-f4ecc2ef0e51",
+      "JumpTargetPoint": 2,
+      "UUID": "344475e7-1fdc-6661-14f7-bf516558e094",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N432",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "34ca1bc6-489d-758d-077c-4200c1324291": {
+      "RollSuccess": true,
+      "UUID": "34ca1bc6-489d-758d-077c-4200c1324291",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e8d694d3-4d1e-b8da-86c9-08d5c2024917"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N153",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "37544833-5d8d-0d45-6d71-be29be368457": {
+      "RollAdvantageReason": {
+        "Handle": "h0fcbf586gcca1g4474gba15gd2bf9cd8cc6c",
+        "Value": "BARD"
+      },
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "37544833-5d8d-0d45-6d71-be29be368457",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ab90f665-1483-b1d9-09f1-7b7c65e11cff"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d93434bd-6b71-4789-b128-ee24156057cc",
+              "value": true,
+              "paramval": 1,
+              "Name": "BARD"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dca9a27e-ca86-42cb-88e9-1b0ab037d32c",
+              "Text": {
+                "Handle": "h44949806g45e4g4cffgbec7g3fd653402056",
+                "Value": "<i>Feign the symptoms of a disease most terrible.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N247",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Bard_Advantage",
+        "position": "1935;234",
+        "sourcetemplate": ""
+      }
+    },
+    "3830fe89-de2b-1a7b-ed50-d37d38434aa9": {
+      "UUID": "3830fe89-de2b-1a7b-ed50-d37d38434aa9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "920ccec0-e602-b6be-4421-55a2c718f161"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "755ab7fd-3aaa-4e47-a25f-726bdb4287e3",
+              "Text": {
+                "Handle": "hebf05de5gb246g45acgabe9g34481026c910",
+                "Value": "My mind is full of holes, and some of them are still being punched."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N377",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "3d96eca7-d38e-05a4-d0a4-16c86cd6d3a6": {
+      "UUID": "3d96eca7-d38e-05a4-d0a4-16c86cd6d3a6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "766c37ad-6b2d-f61f-f2fd-ccaaa194bbf3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2a6e6bb3-d8ec-4333-8ed7-87296922a89d",
+              "Text": {
+                "Handle": "h605b2c40g50b4g44e6gba0eg2aadeae42409",
+                "Value": "The unseen wounds of war - the doctor's hand will close them. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N325",
+        "InternalNodeContext": "She's familiar with PTSD",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;672",
+        "sourcetemplate": ""
+      }
+    },
+    "3faf4ee5-5e69-68c1-addc-9884f8dc243f": {
+      "SourceNode": "a75ea482-d6d2-9d6b-e531-c01e5e482a3c",
+      "UUID": "3faf4ee5-5e69-68c1-addc-9884f8dc243f",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "13ec14ed-2baa-32c2-8945-bda5c463b1f7",
+              "value": true,
+              "paramval": 1,
+              "Name": "TeleportOutOfTrespass"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N299",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "3855;453",
+        "sourcetemplate": ""
+      }
+    },
+    "401f3f4f-1556-5b4f-4d0c-6921e102fe05": {
+      "UUID": "401f3f4f-1556-5b4f-4d0c-6921e102fe05",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "122d1454-573f-3819-b007-46ae1493b7c7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4e4575fe-f6ce-4b3a-b5f0-26a007c706c0",
+              "Text": {
+                "Handle": "h9c1d64a7g0697g41bagae14g148314480a39",
+                "Value": "The doctor will see you. The doctor will soothe. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N215",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;234",
+        "sourcetemplate": ""
+      }
+    },
+    "40c2b551-484a-e8c3-2da3-564eb43f66ac": {
+      "JumpTarget": "122d1454-573f-3819-b007-46ae1493b7c7",
+      "JumpTargetPoint": 1,
+      "UUID": "40c2b551-484a-e8c3-2da3-564eb43f66ac",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N393",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "459324f6-38b4-ae62-611c-395280560d0a": {
+      "JumpTarget": "b84c14d0-9bfd-3008-501a-3843f355a4e2",
+      "JumpTargetPoint": 1,
+      "UUID": "459324f6-38b4-ae62-611c-395280560d0a",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N294",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;891",
+        "sourcetemplate": ""
+      }
+    },
+    "45a1026e-51eb-8baf-9e14-8fe8629af6a1": {
+      "UUID": "45a1026e-51eb-8baf-9e14-8fe8629af6a1",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4b51b01d-bee1-d15d-e609-9499321e5859"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c3efd76f-c448-6bb7-58cb-60d348952114",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_FailedPersuasion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2179cca0-e4fc-43fd-a18a-ad8fb376738a",
+              "Text": {
+                "Handle": "ha0dba414gde14g43c1ga982ge5bfea0e5ec8",
+                "Value": "You endanger the sick! "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Performance Check FAIL: player attempts to feign illness, but is not very convincing {CodyM}",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Disgusted reaction to player's pretend illness.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N276",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;453",
+        "sourcetemplate": ""
+      }
+    },
+    "4b51b01d-bee1-d15d-e609-9499321e5859": {
+      "UUID": "4b51b01d-bee1-d15d-e609-9499321e5859",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2fd0c7ac-f647-baa4-cedd-7a90206e955f",
+        "b84c14d0-9bfd-3008-501a-3843f355a4e2",
+        "fdf078af-518c-bcc3-7166-b4a76d162c47"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fa3bb617-ec01-4359-b150-81e5d94491da",
+              "Text": {
+                "Handle": "h7f21e558g2d98g43dcg9699g145f08b9189f",
+                "Value": "Plague! Pest! In line, or <i>leave</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N280",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "scathing",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;453",
+        "sourcetemplate": ""
+      }
+    },
+    "4dea850a-c95c-81b2-1995-223b55356a8c": {
+      "UUID": "4dea850a-c95c-81b2-1995-223b55356a8c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7d0210b7-9ba0-e434-895d-fa01e39c0d30"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2988a069-7a79-4958-a00c-4ff2b998d14b",
+              "Text": {
+                "Handle": "h25cd3cd5gcff8g42c7gad39g7a4bb0147239",
+                "Value": "The doctor will see you now."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N162",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "512d60e2-adcb-44e0-6370-0f329c4b464e": {
+      "UUID": "512d60e2-adcb-44e0-6370-0f329c4b464e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "611d97a4-dddd-c7b4-4861-381df8b4597f",
+        "3830fe89-de2b-1a7b-ed50-d37d38434aa9",
+        "a363b9c1-700a-3635-982a-f147ce8b3d05",
+        "f8c62338-e0e3-8a26-2b52-92ddcdaa4920"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "37f23af6-faac-44d7-a493-11152e07699f",
+              "Text": {
+                "Handle": "he2318963g6929g486ega2fag5ccddbfb2880",
+                "Value": "What is the primary symptom?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N375",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "54a667cd-da61-7973-c51f-0fd9608cbc1d": {
+      "RollSuccess": false,
+      "UUID": "54a667cd-da61-7973-c51f-0fd9608cbc1d",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a39ed699-eb04-793c-13ed-c38bb445a6aa"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N403",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "5a6a3302-45ce-22af-279c-d85eec19d209": {
+      "JumpTarget": "122d1454-573f-3819-b007-46ae1493b7c7",
+      "JumpTargetPoint": 1,
+      "UUID": "5a6a3302-45ce-22af-279c-d85eec19d209",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N390",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3855;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "611d97a4-dddd-c7b4-4861-381df8b4597f": {
+      "UUID": "611d97a4-dddd-c7b4-4861-381df8b4597f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b341b2e9-6ab7-a10a-3a58-104ec28a52b0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ceaa5b4a-4b53-4dfe-b252-f19caec32a11",
+              "Text": {
+                "Handle": "ha2f4de8eg421dg4973ga410g19e2b0d5c2d7",
+                "Value": "I'm only truly <i>happy </i>when I'm ending someone's life."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N376",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "6178b2da-0436-9c90-35af-716c24b3f7c0": {
+      "UUID": "6178b2da-0436-9c90-35af-716c24b3f7c0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "401f3f4f-1556-5b4f-4d0c-6921e102fe05"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d4875a66-a2c6-46c9-a288-41da4527b6ac",
+              "Text": {
+                "Handle": "hec56be7fgfe0bg41feg9296gfc32850c611b",
+                "Value": "Poor creature - so sad, so sick. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Performance Check PASS: player successfully feigns being extremely ill. {CodyM}",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Sympathetic reaction to player's 'illness'. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N211",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;234",
+        "sourcetemplate": ""
+      }
+    },
+    "6191f2bf-fabd-3b7e-e626-9022c91b37bb": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "6191f2bf-fabd-3b7e-e626-9022c91b37bb",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9e3171ac-c2a4-fd0e-f3a3-b83831976079",
+        "6b8a6074-56c8-b4f0-51c3-bacfa3d6e128"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d93434bd-6b71-4789-b128-ee24156057cc",
+              "value": false,
+              "paramval": 1,
+              "Name": "BARD"
+            },
+            {
+              "UUID": "f8a0608b-666c-4be6-a49c-03b369c10bd2",
+              "value": false,
+              "paramval": 1,
+              "Name": "ROGUE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e59ae2d4-e54e-4c30-adf6-7ef36c79f825",
+              "Text": {
+                "Handle": "h29cd8f97g0bbdg4a98ga64ag99d541a8cf77",
+                "Value": "<i>Pretend to be ill.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N344",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "non bard/rogue",
+        "position": "1935;453",
+        "sourcetemplate": ""
+      }
+    },
+    "65a389b1-682f-c15c-12a3-92b4478c5cc7": {
+      "UUID": "65a389b1-682f-c15c-12a3-92b4478c5cc7",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2c03c807-dc3d-f5fc-2131-a78c05c7873c",
+        "8ff4a6cb-f80f-409f-9ad5-b557876b1a06",
+        "f4919e09-5134-03c4-5262-41cc477869de",
+        "d9135d04-d8f4-3857-3af2-f4ecc2ef0e51",
+        "26808e44-baf0-85bc-9058-24e2d1eebd5b",
+        "37544833-5d8d-0d45-6d71-be29be368457",
+        "6191f2bf-fabd-3b7e-e626-9022c91b37bb",
+        "ade16ef4-63b5-b12a-5327-a2bc912869ea",
+        "830fff1d-3a26-50fd-338a-a935a4b5495d",
+        "becc4a5b-5938-ee42-e07c-61f990726e0d",
+        "1abf725d-6147-b1bd-909d-d19b353e4f48",
+        "04ac8fe6-0260-ea77-77fc-e96e31b3bb3d",
+        "0c5b6c1b-fb49-4469-b537-c40f025cec37",
+        "93cb73c1-59fa-454d-0044-bc57bcbe726f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3168fb32-889b-4354-a9ff-5bdef45c1780",
+              "Text": {
+                "Handle": "h1a404545g01b1g4b3eg9c77g26703b959f11",
+                "Value": "Join the line - you <i>will</i> be seen."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N243",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "with a touch of desperation",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "67bd6116-53bc-2fa4-ced4-88fb7b7f218f": {
+      "JumpTarget": "6b8a6074-56c8-b4f0-51c3-bacfa3d6e128",
+      "JumpTargetPoint": 1,
+      "UUID": "67bd6116-53bc-2fa4-ced4-88fb7b7f218f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N435",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "6b8a6074-56c8-b4f0-51c3-bacfa3d6e128": {
+      "RollSuccess": false,
+      "UUID": "6b8a6074-56c8-b4f0-51c3-bacfa3d6e128",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "45a1026e-51eb-8baf-9e14-8fe8629af6a1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N272",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;453",
+        "sourcetemplate": ""
+      }
+    },
+    "72e20ba7-66f2-d3f7-fc8d-6318b22f1671": {
+      "RollSuccess": false,
+      "UUID": "72e20ba7-66f2-d3f7-fc8d-6318b22f1671",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1f3a39d3-36d0-c6d2-94d7-96fb929ae78c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N396",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "766c37ad-6b2d-f61f-f2fd-ccaaa194bbf3": {
+      "JumpTarget": "122d1454-573f-3819-b007-46ae1493b7c7",
+      "JumpTargetPoint": 1,
+      "UUID": "766c37ad-6b2d-f61f-f2fd-ccaaa194bbf3",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N326",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3215;672",
+        "sourcetemplate": ""
+      }
+    },
+    "7bffbcec-9811-61e4-db4e-008827b4b0ac": {
+      "JumpTarget": "122d1454-573f-3819-b007-46ae1493b7c7",
+      "JumpTargetPoint": 1,
+      "UUID": "7bffbcec-9811-61e4-db4e-008827b4b0ac",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N436",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "7d0210b7-9ba0-e434-895d-fa01e39c0d30": {
+      "UUID": "7d0210b7-9ba0-e434-895d-fa01e39c0d30",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "86efaafd-c4e2-43a3-9377-c3221583ab9e",
+              "Text": {
+                "Handle": "hed41bc00g6bd8g4523g8a4dg2f46a10db899",
+                "Value": "Down the corridor. Down to theatre you go. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N166",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "830fff1d-3a26-50fd-338a-a935a4b5495d": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "830fff1d-3a26-50fd-338a-a935a4b5495d",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0c6ea357-771f-e56a-f856-e1ce80d64443",
+        "67bd6116-53bc-2fa4-ced4-88fb7b7f218f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": true,
+              "paramval": 1,
+              "Name": "RANGER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f24e2c86-1929-4c6c-8e64-7eff794461a5",
+              "Text": {
+                "Handle": "h267b48a5g801ag4347g831ag35b355bb2a63",
+                "Value": "Every monster you can imagine, man or beast, has tried to kill me. I should really see the doctor."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N427",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "ranger",
+        "position": "1935;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "83b55c89-8a41-0d96-753b-f48536f26489": {
+      "UUID": "83b55c89-8a41-0d96-753b-f48536f26489",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "512d60e2-adcb-44e0-6370-0f329c4b464e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8f423a85-3f5f-4e47-8b43-bfed074de630",
+              "Text": {
+                "Handle": "hdc8e59c3ge299g4af4ga4b8gc9af7766ee46",
+                "Value": "Hrm, hrm. Let me check, let me check."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N374",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "861d2fea-f8c2-9c4c-610a-b7755a28fe4a": {
+      "JumpTarget": "122d1454-573f-3819-b007-46ae1493b7c7",
+      "JumpTargetPoint": 1,
+      "UUID": "861d2fea-f8c2-9c4c-610a-b7755a28fe4a",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N268",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;672",
+        "sourcetemplate": ""
+      }
+    },
+    "8a49813d-ceb6-6497-3af7-8ca937cd0b62": {
+      "UUID": "8a49813d-ceb6-6497-3af7-8ca937cd0b62",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "11a765ff-8dff-a245-0ece-d317cce36922"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "025e590c-7a5d-bf00-c5f7-3c8a12fd2073",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_HasMet"
+            },
+            {
+              "UUID": "c3efd76f-c448-6bb7-58cb-60d348952114",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_FailedPersuasion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a7a2fa9-8d75-412e-8c8b-f3e5752d0e6c",
+              "Text": {
+                "Handle": "h4af341eeg6edbg4b4aga61dg4a436c037820",
+                "Value": "Not sick, not welcome! "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N337",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "8a62d3f5-856e-f79d-569e-d07db94a8464": {
+      "RollSuccess": true,
+      "UUID": "8a62d3f5-856e-f79d-569e-d07db94a8464",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d6cd37ee-de92-4cb7-ae99-6e9eaa3eeef6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N402",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "8e1adbc0-33e3-6d93-926d-698e2508695d": {
+      "UUID": "8e1adbc0-33e3-6d93-926d-698e2508695d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d6131a56-6cc9-6140-0389-211ee61efe5f",
+        "a95a8636-bb41-592b-5554-3b0a2bbc9a2b",
+        "fd672591-91c0-91d6-33dc-cd6db1d24c7c",
+        "2e83c2f7-3e6e-0fb5-2957-a0fbbaea5acd",
+        "459324f6-38b4-ae62-611c-395280560d0a",
+        "19bb086b-d08e-1007-36e7-ac84b776ece6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "49c94af4-756c-fabd-ed7a-a88005598aed",
+              "value": false,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_LowHP"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a3c80e67-7c62-42a3-8421-e4b3b59d5cbf",
+              "Text": {
+                "Handle": "h4eead200g700eg45dagb4c2g6b5db4937962",
+                "Value": "Not so well. But well enough to wait. Join the line, and you will be seen. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The nurse 'looks' you over, assessing your condition.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N231",
+        "InternalNodeContext": "Upon investigation, deduces that you're not that sick. ",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "8ff4a6cb-f80f-409f-9ad5-b557876b1a06": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "8ff4a6cb-f80f-409f-9ad5-b557876b1a06",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "344475e7-1fdc-6661-14f7-bf516558e094"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e1e460bb-d0ae-4452-8529-c9e176558731",
+              "value": true,
+              "paramval": 1,
+              "Name": "MONK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "75f2f152-e62f-43b5-9553-d50e7387a2b0",
+              "Text": {
+                "Handle": "h69aa04b4gc020g4e14g8681g8540711b550f",
+                "Value": "I am no patient - I've been hired as a spiritual advisor."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N431",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "monk",
+        "position": "1935;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "920ccec0-e602-b6be-4421-55a2c718f161": {
+      "UUID": "920ccec0-e602-b6be-4421-55a2c718f161",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0c5c17ab-cfda-5b15-3842-04ad53584072"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "98d28c9a-2ece-48b7-80c4-e4fd8722061c",
+              "Text": {
+                "Handle": "h36b06a5eg43efg465cg821fgaae391f0e096",
+                "Value": "Let me examine your skull."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N381",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "93cb73c1-59fa-454d-0044-bc57bcbe726f": {
+      "JumpTarget": "fdf078af-518c-bcc3-7166-b4a76d162c47",
+      "JumpTargetPoint": 1,
+      "UUID": "93cb73c1-59fa-454d-0044-bc57bcbe726f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N339",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1935;2862",
+        "sourcetemplate": ""
+      }
+    },
+    "9e3171ac-c2a4-fd0e-f3a3-b83831976079": {
+      "RollSuccess": true,
+      "UUID": "9e3171ac-c2a4-fd0e-f3a3-b83831976079",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6178b2da-0436-9c90-35af-716c24b3f7c0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N207",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;234",
+        "sourcetemplate": ""
+      }
+    },
+    "9ff48b81-3ff4-a8ba-1205-2edd1281a671": {
+      "UUID": "9ff48b81-3ff4-a8ba-1205-2edd1281a671",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2df8c4f8-c8fb-fe3f-930c-4b240efe0ca9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f5fc1872-91c1-4d39-9aa0-8286c52d9ef5",
+              "Text": {
+                "Handle": "hf7efff89ga240g4c8cg872fgadd3fa8d6dfa",
+                "Value": "What in the Hells can you see?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N386",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3215;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "a363b9c1-700a-3635-982a-f147ce8b3d05": {
+      "UUID": "a363b9c1-700a-3635-982a-f147ce8b3d05",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f3e9cc97-8977-91c0-ebee-9b9ebfaf5764"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fb35609a-eb6b-463b-818d-cc643b154807",
+              "Text": {
+                "Handle": "h7d0ee329g5cf1g4d55gb40cg51840f3289a8",
+                "Value": "Everything. I lose control of myself, and kill without command."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N378",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "a39ed699-eb04-793c-13ed-c38bb445a6aa": {
+      "JumpTarget": "45a1026e-51eb-8baf-9e14-8fe8629af6a1",
+      "JumpTargetPoint": 1,
+      "UUID": "a39ed699-eb04-793c-13ed-c38bb445a6aa",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N405",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "a5e3e897-f990-1bef-a2c1-6f3cf02cb642": {
+      "UUID": "a5e3e897-f990-1bef-a2c1-6f3cf02cb642",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "40c2b551-484a-e8c3-2da3-564eb43f66ac"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "375441d6-1442-44bb-a11e-77c54d1f998f",
+              "Text": {
+                "Handle": "h0c98358bgac42g430cgb802g612b24134172",
+                "Value": "The Surgeon will be <i>most interested </i>in you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N392",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "a75ea482-d6d2-9d6b-e531-c01e5e482a3c": {
+      "UUID": "a75ea482-d6d2-9d6b-e531-c01e5e482a3c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fd4c6ba1-e9f9-c8f5-e186-de837786d82a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_InLine"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5bb40742-fef2-445a-82d3-c2efc3626c2d",
+              "Text": {
+                "Handle": "ha740a796ga9afg4878gb642g798a8beb2bc0",
+                "Value": "Be patient, be well. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N203",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "a7d9df91-6d41-2f03-6042-aa5e362700dd": {
+      "UUID": "a7d9df91-6d41-2f03-6042-aa5e362700dd",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "861d2fea-f8c2-9c4c-610a-b7755a28fe4a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9774104a-b295-4258-af16-fd80c24df70b",
+              "Text": {
+                "Handle": "h965a0d0egeeceg4ddag9580g4773006d6195",
+                "Value": "As pale as a ghost. You must see the doctor <i>immediately</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "shocked reaction to Astarion's paleness",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N267",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "shocked reaction -the patient is pale as a ghost",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;672",
+        "sourcetemplate": ""
+      }
+    },
+    "a95a8636-bb41-592b-5554-3b0a2bbc9a2b": {
+      "UUID": "a95a8636-bb41-592b-5554-3b0a2bbc9a2b",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a75ea482-d6d2-9d6b-e531-c01e5e482a3c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fd4c6ba1-e9f9-c8f5-e186-de837786d82a",
+              "value": false,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_InLine"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bb81fd4e-b563-4b25-9d8e-e1a12ec387ed",
+              "Text": {
+                "Handle": "h101fca4eg9416g4101gbc3cge0ba37a8f68a",
+                "Value": "Fine fine. I'll get in line."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N199",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ab90f665-1483-b1d9-09f1-7b7c65e11cff": {
+      "JumpTarget": "6191f2bf-fabd-3b7e-e626-9022c91b37bb",
+      "JumpTargetPoint": 2,
+      "UUID": "ab90f665-1483-b1d9-09f1-7b7c65e11cff",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N433",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ade16ef4-63b5-b12a-5327-a2bc912869ea": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "ade16ef4-63b5-b12a-5327-a2bc912869ea",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b68dbbd7-c597-fa9c-d7f6-6945552a6435",
+        "db908f2c-4db4-ec29-248a-ce19ba96ab3f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": false,
+              "paramval": 1,
+              "Name": "RANGER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d85bb384-92f0-4ac5-afd7-596db794400b",
+              "Text": {
+                "Handle": "h269c3d58gd421g4ef1ga8d7ge0c5f5681dc4",
+                "Value": "Wait! My wounds may not be visible on the outside, but I still need help. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N313",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "non ranger",
+        "position": "1935;672",
+        "sourcetemplate": ""
+      }
+    },
+    "b341b2e9-6ab7-a10a-3a58-104ec28a52b0": {
+      "UUID": "b341b2e9-6ab7-a10a-3a58-104ec28a52b0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1860ea4c-4bb5-2e55-0edf-bd69b8b83ad8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4ce5ec3b-7ebe-4252-88df-826fd4035722",
+              "Text": {
+                "Handle": "had70009cg3b38g4a8fg9f78gc7f19e0a8bf8",
+                "Value": "There is no shame in an end. All things come to be lost. But if you wish to be examined..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N383",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "b68dbbd7-c597-fa9c-d7f6-6945552a6435": {
+      "RollSuccess": true,
+      "UUID": "b68dbbd7-c597-fa9c-d7f6-6945552a6435",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ee72ca7f-271a-abd8-a210-ba09f7c8c215"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N317",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;672",
+        "sourcetemplate": ""
+      }
+    },
+    "b78a785c-9208-ce71-8508-bf469c580af6": {
+      "UUID": "b78a785c-9208-ce71-8508-bf469c580af6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e150b5a1-2648-e043-2866-e00c84467685"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "49c94af4-756c-fabd-ed7a-a88005598aed",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_LowHP"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "56b011f1-95aa-46e9-80b8-002a18c0da19",
+              "Text": {
+                "Handle": "h371b9a97gb1a0g43a4g8eb9g0cd5dbf74de0",
+                "Value": "Poorly, quite poorly indeed... "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The nurse 'looks' you over, assessing your condition.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N303",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "If Patient Has Low HP",
+        "position": "335;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "b84c14d0-9bfd-3008-501a-3843f355a4e2": {
+      "UUID": "b84c14d0-9bfd-3008-501a-3843f355a4e2",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3faf4ee5-5e69-68c1-addc-9884f8dc243f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fd4c6ba1-e9f9-c8f5-e186-de837786d82a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_InLine"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c5d03eb4-c2cc-4021-be18-4bf5a18ca6ad",
+              "Text": {
+                "Handle": "h6a551da0g7b33g44f0g97e2g06faf8a840ae",
+                "Value": "Fine, fine. I'll get back in line."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N298",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3535;453",
+        "sourcetemplate": ""
+      }
+    },
+    "bb4caae6-f92e-6ed5-dcab-ba7b3960e40a": {
+      "UUID": "bb4caae6-f92e-6ed5-dcab-ba7b3960e40a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e547f1ca-ae3e-a45f-43ce-150318b87b60"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "025e590c-7a5d-bf00-c5f7-3c8a12fd2073",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "fd4c6ba1-e9f9-c8f5-e186-de837786d82a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_InLine"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1b68b40d-24fa-4c3f-8791-70f83d55593a",
+              "Text": {
+                "Handle": "h38498e02g1ea9g49a4gb228ge400863e2962",
+                "Value": "You're not sick, not sick at all. Wait in line. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N292",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "be53e662-a3fb-2d44-7378-68fd33adf03e": {
+      "JumpTarget": "65a389b1-682f-c15c-12a3-92b4478c5cc7",
+      "JumpTargetPoint": 2,
+      "UUID": "be53e662-a3fb-2d44-7378-68fd33adf03e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N447",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "becc4a5b-5938-ee42-e07c-61f990726e0d": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "becc4a5b-5938-ee42-e07c-61f990726e0d",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1e25522b-f76e-398b-4539-d8ead0463a77",
+        "06202057-e07b-f17a-f084-d60bfb1c30db"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "18266c0b-efbc-4c80-8784-ada4a37218d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "SORCERER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9e7b2636-8bd7-4087-85ba-eebba6d1aeee",
+              "Text": {
+                "Handle": "he53f4d84g54c7g4293g9eadg534c638c35a0",
+                "Value": "You can let me in or I can burn, electrify, or freeze this place - maybe even all three. Your choice."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N421",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Sorcerer",
+        "position": "1935;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "d06313a4-fb35-6ed1-0ce6-0689eaadac78": {
+      "RollSuccess": true,
+      "UUID": "d06313a4-fb35-6ed1-0ce6-0689eaadac78",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ebf14a53-9c9d-e244-31fd-2c2aae2e373b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N395",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "d07daba1-10b2-5ee4-2c4f-7d6673a97318": {
+      "UUID": "d07daba1-10b2-5ee4-2c4f-7d6673a97318",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "02899ec7-994b-7b2c-4c4b-1e3e991c5452"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "abbafae2-10a7-4470-a6ce-b80936d1cc4f",
+              "Text": {
+                "Handle": "h5e5a3206g8ef4g4948g94d8g4812f5831277",
+                "Value": "Too many thoughts - a thrice-cursed ailment. The emptiness you yearn for will be yours again."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N380",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "d4f4c43c-7079-c5b3-6d03-1dade19dd23d": {
+      "JumpTarget": "4b51b01d-bee1-d15d-e609-9499321e5859",
+      "JumpTargetPoint": 2,
+      "UUID": "d4f4c43c-7079-c5b3-6d03-1dade19dd23d",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N400",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "d6131a56-6cc9-6140-0389-211ee61efe5f": {
+      "UUID": "d6131a56-6cc9-6140-0389-211ee61efe5f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "83b55c89-8a41-0d96-753b-f48536f26489"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22dc449c-4033-41bf-a015-f0f24f2181b8",
+              "Text": {
+                "Handle": "h3c8b27fag0e83g44aegb132ga118e1b1a1e8",
+                "Value": "I'm sick as a dog - dark compulsions addle my mind."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N348",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DARK URGE",
+        "position": "975;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "d6cd37ee-de92-4cb7-ae99-6e9eaa3eeef6": {
+      "JumpTarget": "6178b2da-0436-9c90-35af-716c24b3f7c0",
+      "JumpTargetPoint": 1,
+      "UUID": "d6cd37ee-de92-4cb7-ae99-6e9eaa3eeef6",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N404",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "d9135d04-d8f4-3857-3af2-f4ecc2ef0e51": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "d9135d04-d8f4-3857-3af2-f4ecc2ef0e51",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "34ca1bc6-489d-758d-077c-4200c1324291",
+        "e0d7b76c-802d-4a07-3811-599ed6d79dba"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5",
+              "value": false,
+              "paramval": 1,
+              "Name": "CLERIC"
+            },
+            {
+              "UUID": "6fe3ae27-dc6c-4fc9-9245-710c790c396c",
+              "value": false,
+              "paramval": 1,
+              "Name": "WIZARD"
+            },
+            {
+              "UUID": "e1e460bb-d0ae-4452-8529-c9e176558731",
+              "value": false,
+              "paramval": 1,
+              "Name": "MONK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "f8a0608b-666c-4be6-a49c-03b369c10bd2"
+                ],
+                "TagNames": [
+                  "ROGUE"
+                ]
+              }
+            ],
+            "RuleString": "ROGUE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "bb9ef3a0-1342-48b4-8bf1-72c5f4cd3563",
+              "Text": {
+                "Handle": "h4d53d5a3g470fg4deegbbb9gd874856b327e",
+                "Value": "I'm no patient, your surgeon heard I have the steadiest hand this side of Faerûn. "
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "88087243-8335-47ec-8236-344994ec05ab",
+              "Text": {
+                "Handle": "h7a23d8f1g4c57g416fg9eacga5d048a1c33b",
+                "Value": "I'm not a patient - I'm the doctor's new assistant. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N186",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "non wizard/monk/cleric",
+        "position": "1935;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "db908f2c-4db4-ec29-248a-ce19ba96ab3f": {
+      "JumpTarget": "6b8a6074-56c8-b4f0-51c3-bacfa3d6e128",
+      "JumpTargetPoint": 1,
+      "UUID": "db908f2c-4db4-ec29-248a-ce19ba96ab3f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N333",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;891",
+        "sourcetemplate": ""
+      }
+    },
+    "dd0d28c7-9108-f999-0ff8-0dd23cf6da11": {
+      "UUID": "dd0d28c7-9108-f999-0ff8-0dd23cf6da11",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0f0f6ea7-516f-164d-ad1b-865d455fd81a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1b94bda0-b003-4d50-8c99-926019ba1b0e",
+              "Text": {
+                "Handle": "hd057fe66ge9eeg4cd5gb1bcga34ad00bf608",
+                "Value": "Pestilence! Pestilence and sin! "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N255",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "enraged, shrill",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3855;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e0d7b76c-802d-4a07-3811-599ed6d79dba": {
+      "RollSuccess": false,
+      "UUID": "e0d7b76c-802d-4a07-3811-599ed6d79dba",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3342a30f-45fd-dfab-cfab-642e06344d25"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N190",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e150b5a1-2648-e043-2866-e00c84467685": {
+      "JumpTarget": "401f3f4f-1556-5b4f-4d0c-6921e102fe05",
+      "JumpTargetPoint": 1,
+      "UUID": "e150b5a1-2648-e043-2866-e00c84467685",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N304",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "e5344322-47a2-4eb6-900e-5b9cc8cef875": {
+      "UUID": "e5344322-47a2-4eb6-900e-5b9cc8cef875",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e547f1ca-ae3e-a45f-43ce-150318b87b60"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "025e590c-7a5d-bf00-c5f7-3c8a12fd2073",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_HasMet"
+            },
+            {
+              "UUID": "c3efd76f-c448-6bb7-58cb-60d348952114",
+              "value": false,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_FailedPersuasion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6c11c47b-60cc-42cf-87cc-414d9eb896b0",
+              "Text": {
+                "Handle": "h2c5d1b12g33f7g445ag9ccbge0d432b24e02",
+                "Value": "No worse, no better, no need to be here. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N330",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "e547f1ca-ae3e-a45f-43ce-150318b87b60": {
+      "JumpTarget": "e85aea40-39bd-6e3d-3bad-d90e5f938f9b",
+      "JumpTargetPoint": 2,
+      "UUID": "e547f1ca-ae3e-a45f-43ce-150318b87b60",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N293",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "e85aea40-39bd-6e3d-3bad-d90e5f938f9b": {
+      "UUID": "e85aea40-39bd-6e3d-3bad-d90e5f938f9b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8e1adbc0-33e3-6d93-926d-698e2508695d",
+        "b78a785c-9208-ce71-8508-bf469c580af6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "025e590c-7a5d-bf00-c5f7-3c8a12fd2073",
+              "value": false,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "025e590c-7a5d-bf00-c5f7-3c8a12fd2073",
+              "value": true,
+              "paramval": 1,
+              "Name": "TWN_Hospital_Reception_Receptionist_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "16ca4643-d5f7-4ad2-9016-a7382bcde095",
+              "Text": {
+                "Handle": "hbe0fa152gf40bg4339g9ba4g7495cfcbcd70",
+                "Value": "Here to see the doctor? Are we poorly? Are we <i>desperately </i>poorly?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N223",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "e8d694d3-4d1e-b8da-86c9-08d5c2024917": {
+      "UUID": "e8d694d3-4d1e-b8da-86c9-08d5c2024917",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7bffbcec-9811-61e4-db4e-008827b4b0ac"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "09a5b750-ce23-4133-a4bc-3d4f8820c33a",
+              "Text": {
+                "Handle": "h837651e4g5bc5g4de7gb427g81b2a650c67b",
+                "Value": "An answer to our prayers! "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N157",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "ebf14a53-9c9d-e244-31fd-2c2aae2e373b": {
+      "UUID": "ebf14a53-9c9d-e244-31fd-2c2aae2e373b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "06104d58-f9ec-b86e-04dc-896ef71beafa"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3662b79c-b0e7-4f4e-a0da-91210e38795d",
+              "Text": {
+                "Handle": "h5c6e0d23g78a4g4948g8685g3e79da1a3839",
+                "Value": "A most impatient patient... Very well. Still your cries, restless soul."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N397",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "ee72ca7f-271a-abd8-a210-ba09f7c8c215": {
+      "UUID": "ee72ca7f-271a-abd8-a210-ba09f7c8c215",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3d96eca7-d38e-05a4-d0a4-16c86cd6d3a6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34112026-c915-4abe-a957-6370ca9d4b2d",
+              "Text": {
+                "Handle": "h117344a1g5285g4177ga143g46e533949633",
+                "Value": "*There's a hint of recognition in her eyes as she studies you.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N321",
+        "InternalNodeContext": "The receptionist recognises that you're referring to your mental health.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;672",
+        "sourcetemplate": ""
+      }
+    },
+    "f3e9cc97-8977-91c0-ebee-9b9ebfaf5764": {
+      "UUID": "f3e9cc97-8977-91c0-ebee-9b9ebfaf5764",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a5e3e897-f990-1bef-a2c1-6f3cf02cb642"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f2f3f438-e6a4-4114-aaef-777db362be6a",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_GainedAcess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e7181b65-b4dd-43cc-85d4-b528faa39be7",
+              "Text": {
+                "Handle": "ha1db7b47g5ae1g4acaga3a0gf0210ff0edea",
+                "Value": "A unique disease - one which has never passed through this institution before."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N391",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "f4919e09-5134-03c4-5262-41cc477869de": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "f4919e09-5134-03c4-5262-41cc477869de",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "344475e7-1fdc-6661-14f7-bf516558e094"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6fe3ae27-dc6c-4fc9-9245-710c790c396c",
+              "value": true,
+              "paramval": 1,
+              "Name": "WIZARD"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e4c1a1bb-e80a-4e16-82a8-fafefdec731c",
+              "Text": {
+                "Handle": "he4fb2ca7g656dg48d7gb46fg99efaf3bf14d",
+                "Value": "I am no patient - I've just been hired as an expert in maladaptive necromantic malaise."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N417",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "wizard",
+        "position": "1935;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "f8c62338-e0e3-8a26-2b52-92ddcdaa4920": {
+      "UUID": "f8c62338-e0e3-8a26-2b52-92ddcdaa4920",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d07daba1-10b2-5ee4-2c4f-7d6673a97318"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "93541767-4d10-45b2-9250-4078877c3843",
+              "Text": {
+                "Handle": "h63d0e778gf222g4cfcgb391g2c5b36a93119",
+                "Value": "When I try to sleep I am plagued by distressing sights."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N379",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "fd672591-91c0-91d6-33dc-cd6db1d24c7c": {
+      "UUID": "fd672591-91c0-91d6-33dc-cd6db1d24c7c",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1b17c316-c35a-574c-3110-b6ca0f46cd01"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "076eb441-39ab-4c89-99ba-f7bea0ec3556",
+              "Text": {
+                "Handle": "h2d64a905g92f6g4bf1ga31dgd385964e599e",
+                "Value": "I don't have time to wait - I need to see the doctor right now. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N235",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "fdf078af-518c-bcc3-7166-b4a76d162c47": {
+      "UUID": "fdf078af-518c-bcc3-7166-b4a76d162c47",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fd4c6ba1-e9f9-c8f5-e186-de837786d82a",
+              "value": false,
+              "paramval": null,
+              "Name": "TWN_Hospital_Reception_State_InLine"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "13ec14ed-2baa-32c2-8945-bda5c463b1f7",
+              "value": true,
+              "paramval": 1,
+              "Name": "TeleportOutOfTrespass"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ad387868-aa96-40eb-bbb0-9d5de4d21fe7",
+              "Text": {
+                "Handle": "he5d5d520g8963g4cbbgb572g1c028e606092",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N284",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3535;672",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9f367dc7-d4fe-01d9-b490-52ae360e9c15",
+      "Index": 0,
+      "List": [
+        "3baf6794-2c83-4bd3-b2dd-70b4a9f98503"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Sister Sinda",
+        "Type": "character",
+        "MapKey": "3baf6794-2c83-4bd3-b2dd-70b4a9f98503",
+        "Name": "S_TWN_Hospital_Reception_Receptionist",
+        "ParentTemplateId": null,
+        "TemplateName": "e90d8b03-2355-46da-a74a-ad66795759ac"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "17d6f145-2aa8-86a4-936d-a45821689623",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "e56e22a6-09b3-4e37-bb16-26a237b98bd2",
+      "Index": 2,
+      "List": [
+        "c7c13742-bacd-460a-8f65-f864fe41f255"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Astarion",
+        "Type": "character",
+        "MapKey": "c7c13742-bacd-460a-8f65-f864fe41f255",
+        "Name": "S_Player_Astarion",
+        "ParentTemplateId": null,
+        "TemplateName": "5614c25e-0213-479f-864c-e95895adb30f"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Receptionist at the entrance of the Hospital. She's mostly supposed to be there for flavor and to provide directions to the operating room (down the hallway and under the observation area.) If you piss her off or try to circumvent her to see the doctor, she'll fight you."
+}

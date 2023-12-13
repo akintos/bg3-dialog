@@ -1,0 +1,172 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Haven/HAV_TakingIsobel_AD_SpyWaiting.lsj",
+  "UUID": "a0767b53-20b0-ec47-c2db-72971174e171",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "2b2af164-67c0-47e7-b076-4d73124ffa76",
+    "e242a054-8145-d29f-043e-ad56bd9a98a0"
+  ],
+  "Nodes": {
+    "2b2af164-67c0-47e7-b076-4d73124ffa76": {
+      "UUID": "2b2af164-67c0-47e7-b076-4d73124ffa76",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cff275db-2618-fac2-581e-051aca727131",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TakingIsobel_State_IsobelInRoom"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dc9aedd4-3e7d-4f9f-9138-1b119b7b6638",
+              "Text": {
+                "Handle": "hd2755500g5815g4e41gb8a0g7a9a9176a212",
+                "Value": "What's the hold-up?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "e242a054-8145-d29f-043e-ad56bd9a98a0": {
+      "UUID": "e242a054-8145-d29f-043e-ad56bd9a98a0",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cff275db-2618-fac2-581e-051aca727131",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_TakingIsobel_State_IsobelInRoom"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6cd6cc69-5f64-42b9-aebd-4a518c8b709b",
+              "Text": {
+                "Handle": "h3d8d453dg1bddg41aeg970agf28a0f6f4274",
+                "Value": "I need to get back..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d8d6b465-ed11-5984-61d1-dcc378e90859",
+      "Index": 0,
+      "List": [
+        "acb1dd9e-952b-4281-8e30-ec6f671493a6"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Fist Marcus",
+        "Type": "character",
+        "MapKey": "acb1dd9e-952b-4281-8e30-ec6f671493a6",
+        "Name": "S_HAV_FlamingSpy",
+        "ParentTemplateId": null,
+        "TemplateName": "e135793f-301a-47a6-9880-c9d766e17df7"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Fallback AD if the player clicks on the flaming spy while Isobel is unavailable, or he's somehow forced out of Isobel's room while trying to start HAV_TakingIsobel_FlamingSpy."
+}

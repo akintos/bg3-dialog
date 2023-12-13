@@ -1,0 +1,350 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/ADs/GOB_SpiderNest_AD_GoblinExecution.lsj",
+  "UUID": "f26085f0-4ff9-c007-e4d6-987b52e7c403",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "cb4fed1b-7820-8ccf-ec18-25f572bda470"
+  ],
+  "Nodes": {
+    "1c026156-ee9b-274a-5a34-15d9a20a5e9a": {
+      "JumpTarget": "5b76477c-b951-e2e8-3f26-cad3ca159fae",
+      "JumpTargetPoint": 1,
+      "UUID": "1c026156-ee9b-274a-5a34-15d9a20a5e9a",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N18",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "46d8e823-b76a-9939-51bd-a6e3344112fa": {
+      "SourceNode": "c7ac6d22-2484-cfee-c92f-c57ec692a374",
+      "UUID": "46d8e823-b76a-9939-51bd-a6e3344112fa",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1c026156-ee9b-274a-5a34-15d9a20a5e9a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N17",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "5b76477c-b951-e2e8-3f26-cad3ca159fae": {
+      "UUID": "5b76477c-b951-e2e8-3f26-cad3ca159fae",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "802d4c43-f7d8-47b0-aeaa-68e38f032d36",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_SpiderNest_Event_Executioner_Push"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0e6cbc23-6dda-b790-c0c2-1f703702acf5",
+              "Text": {
+                "Handle": "hf22f2b2ag4e4ag44c0g8b30gba0731378b4f",
+                "Value": "Aaahhhh!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A scream, falling into a spider pit. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "c7ac6d22-2484-cfee-c92f-c57ec692a374": {
+      "UUID": "c7ac6d22-2484-cfee-c92f-c57ec692a374",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5b76477c-b951-e2e8-3f26-cad3ca159fae"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7cfd7dfc-dcd8-cc6b-f74b-adb1385380dc",
+              "Text": {
+                "Handle": "hdd6410fdg4d9ag4ca4gab30gd757bde75328",
+                "Value": "Funny how life turns out, innit?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "cruel, amused, about to execute a former ally",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "cb4fed1b-7820-8ccf-ec18-25f572bda470": {
+      "UUID": "cb4fed1b-7820-8ccf-ec18-25f572bda470",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f6dab798-d1a2-4321-4a40-6fb211b995fd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f3c7d68b-027a-6b4d-8354-a6cd2682fa63",
+              "Text": {
+                "Handle": "h1a9b47ffg51cdg484bgaab8g7c56fdd8cd48",
+                "Value": "You can't do this! We grew up together!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Pleading",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Desperate; about to be executed by a former ally",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "f6dab798-d1a2-4321-4a40-6fb211b995fd": {
+      "UUID": "f6dab798-d1a2-4321-4a40-6fb211b995fd",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c7ac6d22-2484-cfee-c92f-c57ec692a374"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0386a120-022f-3240-c6fa-6c37ebaf6d66",
+              "Text": {
+                "Handle": "haec7c930g6609g433fg9e59g99b7377a82f6",
+                "Value": "Yeah, an' now I'm a royal guard, and you're spider bait."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "arrogant, taking cruel pleasure in executing a former ally",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fa0286a3-2483-dd49-a792-4ded216771aa",
+      "Index": 0,
+      "List": [
+        "783d7572-a846-455f-b686-247a95263ebb"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Sazza",
+        "Type": "character",
+        "MapKey": "783d7572-a846-455f-b686-247a95263ebb",
+        "Name": "S_DEN_CapturedGoblin",
+        "ParentTemplateId": null,
+        "TemplateName": "3085c1ef-eb43-4be3-969a-0e89acec99da"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b6893670-c974-c627-31e1-f50bfa8e66b7",
+      "Index": 1,
+      "List": [
+        "56540e3d-f1ac-441b-a690-5f9602c04b86"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Warrior Druk",
+        "Type": "character",
+        "MapKey": "56540e3d-f1ac-441b-a690-5f9602c04b86",
+        "Name": "S_GOB_GuardPolite",
+        "ParentTemplateId": null,
+        "TemplateName": "35e843cf-bc73-4754-aaee-fd8272d99ea6"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "One goblin - Druk - is preparing to throw another - Sazza - into a pit of giant spiders. It's an execution."
+}

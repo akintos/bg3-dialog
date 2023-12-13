@@ -1,0 +1,264 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_General_Refugee1.lsj",
+  "UUID": "140cf29f-f3fe-18ab-f5cd-2e52993c2e37",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 1,
+    "1": 0
+  },
+  "RootNodes": [
+    "a7f16b1d-0e54-3f9d-3d26-aa99d9da596c",
+    "b7e27d1a-9853-42bb-25cc-9035dc724259"
+  ],
+  "Nodes": {
+    "382e4bcf-c1ec-a9e8-0001-99f8b8e446cd": {
+      "UUID": "382e4bcf-c1ec-a9e8-0001-99f8b8e446cd",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8e9cddcd-7c43-def7-0e68-36a88da896f7",
+              "Text": {
+                "Handle": "h15e5251aga9b9g4fc3gaba4g1e9d81d39643",
+                "Value": "Grab what you can and get out, that's my advice."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a7f16b1d-0e54-3f9d-3d26-aa99d9da596c": {
+      "UUID": "a7f16b1d-0e54-3f9d-3d26-aa99d9da596c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "382e4bcf-c1ec-a9e8-0001-99f8b8e446cd"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "344b3d1c-3aac-2c45-3122-12d2b6a0dbb4",
+              "value": false,
+              "paramval": 1,
+              "Name": "DEN_General_Refugee1_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "344b3d1c-3aac-2c45-3122-12d2b6a0dbb4",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_General_Refugee1_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34704f6f-6c88-febd-00ff-eab2f45f6980",
+              "Text": {
+                "Handle": "h3ae41a9bgd725g4c35ga728gc6a0c94a1b40",
+                "Value": "Goblins. Druids. This grove is a death trap."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "b7e27d1a-9853-42bb-25cc-9035dc724259": {
+      "UUID": "b7e27d1a-9853-42bb-25cc-9035dc724259",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "344b3d1c-3aac-2c45-3122-12d2b6a0dbb4",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_General_Refugee1_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bbe026f6-0c45-4096-6465-eae3f3bc26ea",
+              "Text": {
+                "Handle": "h29175bb3g4cc5g4a61g89d5gf191bea03c82",
+                "Value": "I can pack or talk, and right now I'm packing."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Packing",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Packing(Scripted)",
+        "CinematicObjects": "Misc packing objects",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Frustrated, but resigned",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9fe93fee-6a04-a728-7333-9debc2f79e27",
+      "Index": 0,
+      "List": [
+        "637d8d68-2a04-409e-a77d-cf31ac9478ee"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Eramas",
+        "Type": "character",
+        "MapKey": "637d8d68-2a04-409e-a77d-cf31ac9478ee",
+        "Name": "S_DEN_TieflingRefugee_RangerTrader_001",
+        "ParentTemplateId": null,
+        "TemplateName": "9103fce3-6423-4f8a-af04-83ac1af2a1d7"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "75591c37-d1e9-cf0c-3e68-c782879b3bdd",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Frantically packing."
+}

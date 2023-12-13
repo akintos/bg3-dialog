@@ -1,0 +1,259 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_JaheirasHouse_MinscSawFamilyAttacked.lsj",
+  "UUID": "9d831648-dbae-3611-74c2-d342af0c91b4",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "1d649761-a2c3-492d-bf7b-78c7349e008c",
+    "6ea0f7ad-6e84-4d12-9c1c-654f41c9ea6a"
+  ],
+  "Nodes": {
+    "038d1200-008d-4a26-8d24-df8a9b86ae1c": {
+      "UUID": "038d1200-008d-4a26-8d24-df8a9b86ae1c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "End Node",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "1d649761-a2c3-492d-bf7b-78c7349e008c": {
+      "UUID": "1d649761-a2c3-492d-bf7b-78c7349e008c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "038d1200-008d-4a26-8d24-df8a9b86ae1c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f30bb5a9-ca96-40a5-8eba-30c17930c3c3",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_JaheirasHouse_State_CompanionAttackedFamily"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            },
+            {
+              "UUID": "63f9c1c7-1f5e-4c42-8512-0d34334b041e",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_JaheirasHouse_State_CompanionConfrontedParty"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c304fc68-05c5-446d-9c1d-882f9aa104e6",
+              "Text": {
+                "Handle": "h23a00067g67b6g4173gb696g989d0146abc4",
+                "Value": "You... made me <i>do</i> something. Minsc will not become the tool of villainy again! Pray to your tiny gods that you never see my hamster's face again."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Made Minsc Attack",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    },
+    "6ea0f7ad-6e84-4d12-9c1c-654f41c9ea6a": {
+      "UUID": "6ea0f7ad-6e84-4d12-9c1c-654f41c9ea6a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "038d1200-008d-4a26-8d24-df8a9b86ae1c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "363c71f4-8b46-c0c0-4bbb-0e5a85e4652d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GLO_Companion_Leave"
+            },
+            {
+              "UUID": "63f9c1c7-1f5e-4c42-8512-0d34334b041e",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_JaheirasHouse_State_CompanionConfrontedParty"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "03f4fa4b-7337-44cc-92d1-cd83ca5c2b2c",
+              "Text": {
+                "Handle": "h1bd28779gedf6g41c9g8d84g472ad61ad51e",
+                "Value": "Villainy! Boo saw your crimes, and even now squeaks for your blood! But you saved Minsc - for this, you live. <i>Unless</i> we meet again. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Minsc saw you attack",
+        "position": "15;1110",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c62aa60c-361a-4811-9ad4-c3d6b5e1bd91",
+      "Index": 0,
+      "List": [
+        "0de603c5-42e2-4811-9dad-f652de080eba"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Minsc",
+        "Type": "character",
+        "MapKey": "0de603c5-42e2-4811-9dad-f652de080eba",
+        "Name": "S_Player_Minsc",
+        "ParentTemplateId": null,
+        "TemplateName": "9d5f838a-8595-490c-85d5-8a2a69414356"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fef20d15-75a6-49f7-9e34-c5b822ce1f2d",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "If Minsc is in your party, in range, and you attack Jaheira's family like the monster you are. Only fires if Jaheira isn't also there, or she comments instead."
+}

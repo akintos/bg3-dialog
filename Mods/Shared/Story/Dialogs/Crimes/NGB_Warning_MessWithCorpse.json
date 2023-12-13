@@ -1,0 +1,382 @@
+{
+  "Path": "Mods/Shared/Story/Dialogs/Crimes/NGB_Warning_MessWithCorpse.lsj",
+  "UUID": "5772bfaf-5811-b0c3-df61-3f0de6d4917e",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "00221539-f517-441d-af58-7dbeea413417",
+    "a2588b4e-9c70-4f72-9fde-6b6219b69c44",
+    "caf930af-49ee-2df9-eec2-4832ec5e1ad3"
+  ],
+  "Nodes": {
+    "00221539-f517-441d-af58-7dbeea413417": {
+      "UUID": "00221539-f517-441d-af58-7dbeea413417",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "60a1ad4c-ab66-4ca6-973c-a9b49bb84892",
+              "value": false,
+              "paramval": 0,
+              "Name": "GEB_Crime_IsAngry"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "542b58f0-42ad-4157-a28e-27434e0e7b18",
+              "value": false,
+              "paramval": 0,
+              "Name": "NOT_MESSING_AROUND"
+            },
+            {
+              "UUID": "88730ec2-439e-4172-95f4-b7f1875169fa",
+              "value": false,
+              "paramval": 0,
+              "Name": "GOBLIN_KID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b0a52ddb-500d-466d-ab55-7e04402f8802",
+              "Text": {
+                "Handle": "h62a8b06eg7409g4337g9a06g471b40bd7ebc",
+                "Value": "*Interfering with a corpse is frowned upon. Better to let the dead rest.*"
+              }
+            },
+            {
+              "LineId": "b9d8eaeb-0c93-4fe8-ac8e-8c78957b6a63",
+              "Text": {
+                "Handle": "h97d45abeg8e4eg41c9g8227g316dbf3a05cd",
+                "Value": "*Messing with the dead isn't appreciated. Think twice before doing it again.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "Consider NOT_MESSING_AROUND and GOBLIN_KID characters as permanently angry in this context",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Not angry",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a2588b4e-9c70-4f72-9fde-6b6219b69c44": {
+      "UUID": "a2588b4e-9c70-4f72-9fde-6b6219b69c44",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "71120d5d-3853-46e4-9762-33f59aa6b4ae",
+              "value": false,
+              "paramval": 0,
+              "Name": "CIVILIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aae5cbd7-578f-4d87-ae4d-aecaf509e355",
+              "Text": {
+                "Handle": "h176426fbg7935g4c62ga61cgba81bda4258f",
+                "Value": "*You've been caught desecrating a corpse. Prepare to defend yourself.*"
+              }
+            },
+            {
+              "LineId": "c9faf803-5f5f-4042-8b97-6008c8611a99",
+              "Text": {
+                "Handle": "hff323587g45f5g43cdg8d79g43a4bbd3ace0",
+                "Value": "*You've defiled the dead - sparking fury and outrage. It's time to pay the price.*"
+              }
+            },
+            {
+              "LineId": "2cca403f-342f-47ad-bf29-a5202f8d8830",
+              "Text": {
+                "Handle": "h8a1cc90dgc382g487agb549g12952c277793",
+                "Value": "*The dead cannot stop you, but the living can - get ready for a fight.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Greeting needs to be empty. It's used to cut off this flow from the others",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Angry",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ca9e4b99-377c-4562-a6b8-cdddbb27098f": {
+      "UUID": "ca9e4b99-377c-4562-a6b8-cdddbb27098f",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "686bc362-67ee-8d88-384a-25c737aaf740",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FleeHelpFromDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "77e43863-0421-42e4-be4b-ac52347f9ccf",
+              "Text": {
+                "Handle": "h37235022g1803g4bfdgaa65g343f3d791e87",
+                "Value": "*Defiling a corpse is a crime. Guards are being summoned.*"
+              }
+            },
+            {
+              "LineId": "6e89b95b-71fb-414e-842f-f632ed466da4",
+              "Text": {
+                "Handle": "haca3bafegaa4cg4890g80ffg5792b5161198",
+                "Value": "*You've been caught tormenting the dead. The alarm is being sounded.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Afraid -> call guards and run",
+        "position": "15;672",
+        "sourcetemplate": ""
+      }
+    },
+    "caf930af-49ee-2df9-eec2-4832ec5e1ad3": {
+      "SourceNode": "a2588b4e-9c70-4f72-9fde-6b6219b69c44",
+      "UUID": "caf930af-49ee-2df9-eec2-4832ec5e1ad3",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "71120d5d-3853-46e4-9762-33f59aa6b4ae",
+              "value": true,
+              "paramval": 0,
+              "Name": "CIVILIAN"
+            },
+            {
+              "UUID": "91f4b379-63a2-40e9-a509-7b9b2f90e4c8",
+              "value": true,
+              "paramval": 0,
+              "Name": "BADASSCIVILIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N15",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Angry)",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e0c4b8b0-a82b-f4d1-2417-a3d1196b273f",
+      "Index": 0,
+      "List": [
+        "9bc90704-dda4-244a-2f89-26f7470ed54d",
+        "00efc7b5-aa56-44d2-82f2-eff30e451e1e",
+        "6fe77279-1bba-5cc0-a5e0-34beabd2501d",
+        "74890c9b-878d-4346-9ab6-704c108f4230",
+        "3650e5f8-c146-f0f9-2e89-fae58d6795b5",
+        "fcc5f759-3d1a-4088-99d5-a99b4838b285",
+        "3d751bf0-8a47-4855-9392-cab6aad7e89e",
+        "dedfc55f-cde9-4fa9-9566-8670b0c3e324",
+        "c5f7c2b4-d5a9-890a-673d-7eef6774ff49",
+        "93636b10-874e-a985-3c79-4ca9a5953687",
+        "f5cc68da-6a71-48f5-a2d6-a3c32f858d18",
+        "add5addb-5b80-e30a-c455-19f4a7169256",
+        "11c9e4ad-6b39-c107-8b74-263094040c33",
+        "b0b39454-2bf3-d2cd-04e2-0c5cb500e982",
+        "4bdd9996-42f7-47dc-9a2b-1d9bfa2e738f",
+        "ead76f6a-e541-affe-547b-ae6344cdfc95",
+        "c27cf770-ee6a-4206-a97f-62c9d16f6239",
+        "f29dc9dd-c36b-4ce1-8253-93db1c5d4fe1",
+        "6e51f2eb-9fdf-4f95-a66b-7043e700795b",
+        "dac0f3e5-5103-4316-aedf-5272e8f0ab96"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Bugbear"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e06c127c-09bd-9aa9-a14f-89dc3549855b",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "An NPC reacts to a player interfering with a corpse of another NPC to which they are allied or neutral (i.e., not enemy). This is used for any other kind of interference besides looting and moving the corpse (those have custom dialogues). Example: casting Animate Dead on a corpse."
+}

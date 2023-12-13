@@ -1,0 +1,240 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_AttackOnDen_RaiderChieftain.lsj",
+  "UUID": "568b755b-0296-e4d8-e8e0-4eec2a7115b6",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": 0
+  },
+  "RootNodes": [
+    "fc13e64a-ca75-d36e-fdc6-9b9c5786c2ff",
+    "d859c832-114b-0476-d400-1be7d007df88"
+  ],
+  "Nodes": {
+    "c8910c48-73c0-035d-3f71-2fce0ec50c82": {
+      "UUID": "c8910c48-73c0-035d-3f71-2fce0ec50c82",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cc56d7ad-d435-6ea4-e2d8-4af6afb43816",
+              "Text": {
+                "Handle": "hf26b11a1g8e2fg4240g8dc6g27eabefbbd24",
+                "Value": "... gonna try an' catch one. Be a nice plaything for my little 'uns."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "with a cruel smile",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d859c832-114b-0476-d400-1be7d007df88": {
+      "UUID": "d859c832-114b-0476-d400-1be7d007df88",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c8910c48-73c0-035d-3f71-2fce0ec50c82"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2291b2e3-becb-a310-f822-1504fefc6a2c",
+              "Text": {
+                "Handle": "h59323376g65c9g4e27g99ddgff1616b3c901",
+                "Value": "Drow sez they've got kids in there..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "thoughtful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "fc13e64a-ca75-d36e-fdc6-9b9c5786c2ff": {
+      "UUID": "fc13e64a-ca75-d36e-fdc6-9b9c5786c2ff",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ebe2c997-93ae-93f2-7f11-34057122b19b",
+              "value": true,
+              "paramval": 0,
+              "Name": "DEN_AttackOnDen_State_Victorious"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0bdd299a-2c63-2e81-f35c-19a3be64446e",
+              "Text": {
+                "Handle": "h3641e6bdge0b7g49b6g9c23gd0a2be331705",
+                "Value": "Meant to keep one alive fer a pet - they broke too easy."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "disappointed - just slaughtered the inhabitants of a refuge and wishing it had been a harder fight",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "82294188-af50-7c59-3b49-8cc1fe5e930d",
+      "Index": 0,
+      "List": [
+        "5bac0842-c1d4-4358-a85c-24ab745d0280"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Skrut",
+        "Type": "character",
+        "MapKey": "5bac0842-c1d4-4358-a85c-24ab745d0280",
+        "Name": "S_GOB_RaiderChieftain",
+        "ParentTemplateId": null,
+        "TemplateName": "35e843cf-bc73-4754-aaee-fd8272d99ea6"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e206be6b-d8b6-e9f8-e9f0-744b68205b92",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "goblin raider involved in the attack on the grove - some lines before the attack, one in the aftermath"
+}

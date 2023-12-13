@@ -1,0 +1,791 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Swamp/HAG_Hag_AD_TeleportSurrogateMother.lsj",
+  "UUID": "f4dde58e-88be-e3b9-dfd2-127a59d19ccd",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "a057463a-be49-574f-b2b5-10f4e1a78b69",
+    "4afddc62-b38e-cd16-8c55-66d87c648781",
+    "11bf4219-4521-3424-448a-9bf270546f4e",
+    "6b89b429-d4c1-e336-61ad-14e3561d1279",
+    "18b105fc-19ea-7e2e-89ea-1e1304249620",
+    "dce08c0c-317e-ad15-1d3a-7abce658399e",
+    "16d7c0ba-d042-b1b8-fe4c-3b23151473cb",
+    "60afb1bd-6b02-9784-5650-05175c8622cd"
+  ],
+  "Nodes": {
+    "066ddad6-0bd1-3987-86c8-052fc2c1d5ad": {
+      "JumpTarget": "b5a46235-e0bf-38c8-ac1f-07f5c6b79c51",
+      "JumpTargetPoint": 1,
+      "UUID": "066ddad6-0bd1-3987-86c8-052fc2c1d5ad",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N27",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;892",
+        "sourcetemplate": ""
+      }
+    },
+    "11bf4219-4521-3424-448a-9bf270546f4e": {
+      "UUID": "11bf4219-4521-3424-448a-9bf270546f4e",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a135c28f-0812-06f6-af03-5c8977e68058"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "400601e6-9c76-4d93-a4bf-d561de28cc10",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_HagSpawn_SurrogateMother_State_InLair"
+            },
+            {
+              "UUID": "8214a1b0-07b1-1242-f9e5-0699edf5f1fc",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Hag_State_SaidGoodbye"
+            },
+            {
+              "UUID": "dcc3ae1c-b5df-4b1a-82d8-ea94e9f3a37c",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Hag_State_InCombatWhileLeavingWithMayrina"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "69fd1443-7686-4ca9-9516-72ec0b9d94d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "HUMAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3da9b42e-a6e8-471f-9f12-87c2c8cf3885",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_TeleportSurrogateMotherToLair"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1e6a01a3-2fd2-d544-c4b7-c1d2be5ed0de",
+              "Text": {
+                "Handle": "h2f4571b1g304eg4a2aga7a5gbaef0ba0dfa8",
+                "Value": "Come now, Mayrina! Time to go. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "Leaving with Mayrina, i.e. outside of combat.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Hag + Mayrina disappear",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "16d7c0ba-d042-b1b8-fe4c-3b23151473cb": {
+      "UUID": "16d7c0ba-d042-b1b8-fe4c-3b23151473cb",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "256770d9-04b6-4cdb-92db-e14e30b2700d",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_ToLairBecauseCombat"
+            },
+            {
+              "UUID": "6cc9e3e0-4802-49d2-9127-9a42c5ad39fa",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Well_State_Worsened"
+            },
+            {
+              "UUID": "98238136-a633-4bb3-b477-bb9f93d8dc90",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_ForrestIllusion_State_RedcapsDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8214a1b0-07b1-1242-f9e5-0699edf5f1fc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_SaidGoodbye"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a0ddc6e9-a3d8-8427-e952-451c69b6dcfa",
+              "Text": {
+                "Handle": "h161e6b1dgca28g4352ga387gbfbdaeb15dbf",
+                "Value": "Enjoy playing with your new friends. Bye-bye!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "Hag only disappears, no blessings have been turned to curses",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Hag only disappears",
+        "position": "15;673.1892",
+        "sourcetemplate": ""
+      }
+    },
+    "18b105fc-19ea-7e2e-89ea-1e1304249620": {
+      "UUID": "18b105fc-19ea-7e2e-89ea-1e1304249620",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6cc9e3e0-4802-49d2-9127-9a42c5ad39fa",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Well_State_Worsened"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8214a1b0-07b1-1242-f9e5-0699edf5f1fc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_SaidGoodbye"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fcc90cb7-c968-953d-a61c-4be42c7d6d0d",
+              "Text": {
+                "Handle": "he4b7786egf14fg4b61g9d47g2c44bb6317d3",
+                "Value": "Bye-bye, lovelies! Oh, and enjoy my well water. Hah! "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "Hag only disappears, blessings have been turned to poison.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Calling out as you gleefully disappear - adding the water note almost as an 'after thought'. The water the player drank turns to poison in their veins - all part of your plan.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Hag only disappears",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "4afddc62-b38e-cd16-8c55-66d87c648781": {
+      "SourceNode": "11bf4219-4521-3424-448a-9bf270546f4e",
+      "UUID": "4afddc62-b38e-cd16-8c55-66d87c648781",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "400601e6-9c76-4d93-a4bf-d561de28cc10",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_HagSpawn_SurrogateMother_State_InLair"
+            },
+            {
+              "UUID": "8214a1b0-07b1-1242-f9e5-0699edf5f1fc",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Hag_State_SaidGoodbye"
+            },
+            {
+              "UUID": "dcc3ae1c-b5df-4b1a-82d8-ea94e9f3a37c",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_InCombatWhileLeavingWithMayrina"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "69fd1443-7686-4ca9-9516-72ec0b9d94d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "HUMAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3da9b42e-a6e8-471f-9f12-87c2c8cf3885",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_TeleportSurrogateMotherToLair"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N15",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Hag + Mayrina disappear)",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "60afb1bd-6b02-9784-5650-05175c8622cd": {
+      "SourceNode": "dce08c0c-317e-ad15-1d3a-7abce658399e",
+      "UUID": "60afb1bd-6b02-9784-5650-05175c8622cd",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "066ddad6-0bd1-3987-86c8-052fc2c1d5ad"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "256770d9-04b6-4cdb-92db-e14e30b2700d",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_ToLairBecauseCombat"
+            },
+            {
+              "UUID": "6cc9e3e0-4802-49d2-9127-9a42c5ad39fa",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Well_State_Worsened"
+            },
+            {
+              "UUID": "98238136-a633-4bb3-b477-bb9f93d8dc90",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_ForrestIllusion_State_RedcapsDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N26",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Greeting)",
+        "position": "15;892",
+        "sourcetemplate": ""
+      }
+    },
+    "6b89b429-d4c1-e336-61ad-14e3561d1279": {
+      "SourceNode": "11bf4219-4521-3424-448a-9bf270546f4e",
+      "UUID": "6b89b429-d4c1-e336-61ad-14e3561d1279",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "400601e6-9c76-4d93-a4bf-d561de28cc10",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_HagSpawn_SurrogateMother_State_InLair"
+            },
+            {
+              "UUID": "8214a1b0-07b1-1242-f9e5-0699edf5f1fc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_SaidGoodbye"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "69fd1443-7686-4ca9-9516-72ec0b9d94d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "HUMAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3da9b42e-a6e8-471f-9f12-87c2c8cf3885",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_TeleportSurrogateMotherToLair"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N14",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Hag + Mayrina disappear)",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a057463a-be49-574f-b2b5-10f4e1a78b69": {
+      "SourceNode": "11bf4219-4521-3424-448a-9bf270546f4e",
+      "UUID": "a057463a-be49-574f-b2b5-10f4e1a78b69",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "400601e6-9c76-4d93-a4bf-d561de28cc10",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_HagSpawn_SurrogateMother_State_InLair"
+            },
+            {
+              "UUID": "658c4d09-b278-42dd-8f72-b98ec3efd0d5",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Hag_State_ReadyForLair"
+            },
+            {
+              "UUID": "8214a1b0-07b1-1242-f9e5-0699edf5f1fc",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Hag_State_SaidGoodbye"
+            },
+            {
+              "UUID": "dcc3ae1c-b5df-4b1a-82d8-ea94e9f3a37c",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Hag_State_InCombatWhileLeavingWithMayrina"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "69fd1443-7686-4ca9-9516-72ec0b9d94d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "HUMAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3da9b42e-a6e8-471f-9f12-87c2c8cf3885",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_TeleportSurrogateMotherToLair"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N20",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Hag + Mayrina disappear)",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "a135c28f-0812-06f6-af03-5c8977e68058": {
+      "UUID": "a135c28f-0812-06f6-af03-5c8977e68058",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8214a1b0-07b1-1242-f9e5-0699edf5f1fc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_SaidGoodbye"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f17e779a-0927-5add-df86-c2459f13dd3f",
+              "Text": {
+                "Handle": "hed01392bg7adfg4d71ga363g12f9fef110e7",
+                "Value": "Bye-bye, lovelies. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "Mayrina & hag leave together, Hag is not in combat",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Mocking tone and wave as you taunt the player. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "b5a46235-e0bf-38c8-ac1f-07f5c6b79c51": {
+      "SourceNode": "a135c28f-0812-06f6-af03-5c8977e68058",
+      "UUID": "b5a46235-e0bf-38c8-ac1f-07f5c6b79c51",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8214a1b0-07b1-1242-f9e5-0699edf5f1fc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAG_Hag_State_SaidGoodbye"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N18",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "dce08c0c-317e-ad15-1d3a-7abce658399e": {
+      "UUID": "dce08c0c-317e-ad15-1d3a-7abce658399e",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b5a46235-e0bf-38c8-ac1f-07f5c6b79c51"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "256770d9-04b6-4cdb-92db-e14e30b2700d",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Hag_State_ToLairBecauseCombat"
+            },
+            {
+              "UUID": "6cc9e3e0-4802-49d2-9127-9a42c5ad39fa",
+              "value": false,
+              "paramval": null,
+              "Name": "HAG_Well_State_Worsened"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c0ca1c77-86ab-7d8f-09cb-085f5b2f6ffa",
+      "Index": 0,
+      "List": [
+        "c6ef4eea-fd50-2b8a-41c8-0fdbad366d67"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Auntie Ethel",
+        "Type": "character",
+        "MapKey": "c457d064-83fb-4ec6-b74d-1f30dfafd12d",
+        "Name": "S_HAG_Hag",
+        "ParentTemplateId": null,
+        "TemplateName": "d4edf374-6efe-463f-8899-889db26dee4e"
+      },
+      "SpeakerGroupName": "GROUP_Act1_GLO_HagHag"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "77b1a227-dbfe-cc34-7777-6a5bfe037c17",
+      "Index": 1,
+      "List": [
+        "08c970d7-3138-45e8-8965-68eadf4b07cd"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Mayrina",
+        "Type": "character",
+        "MapKey": "08c970d7-3138-45e8-8965-68eadf4b07cd",
+        "Name": "S_HAG_Hagspawn_SurrogateMother",
+        "ParentTemplateId": null,
+        "TemplateName": "4dbce619-49a2-4fae-b3d9-72aeadc0ee38"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Fires as the hag grabs Mayrina and teleports to the lair OR Hag is injured and disappears from the fight alone. "
+}

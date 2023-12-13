@@ -1,0 +1,469 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_SorcerousSundries_LorroakanProjectionWarning.lsj",
+  "UUID": "45e47d04-7e27-ff9b-c1b8-b790abacffe7",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "7fb1562d-62fe-461c-8b25-6b353de601d6",
+    "6385924b-50af-4532-aebc-a0a3c94fbee6"
+  ],
+  "Nodes": {
+    "6385924b-50af-4532-aebc-a0a3c94fbee6": {
+      "UUID": "6385924b-50af-4532-aebc-a0a3c94fbee6",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d15ea6a2-251c-4cfd-9f24-85de76c6a5b4",
+        "8088a05e-6c52-445f-9127-2d72cc30e08f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "21fad8ac-1e02-4c52-8e38-18bb8eba136c",
+              "Text": {
+                "Handle": "h6e03f920gd58cg40d9g9097g28f85a1e93ae",
+                "Value": "I'm sorry, but you have been banned from these premises due to HABITUAL VIOLENCE."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "All-caps text should be read like a call center answering machine with fill-in-the-blanks",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;15",
+        "sourcetemplate": ""
+      }
+    },
+    "7ae10943-4edb-10ef-d1a4-f35ebd56a9f5": {
+      "UUID": "7ae10943-4edb-10ef-d1a4-f35ebd56a9f5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ea992cfc-12df-4a91-9216-cb829ef99655",
+              "Text": {
+                "Handle": "hf1ddfcb6g31aag4742gbff9ga96f93aff91c",
+                "Value": "Thank you for your forbearance."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N21",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "7fb1562d-62fe-461c-8b25-6b353de601d6": {
+      "UUID": "7fb1562d-62fe-461c-8b25-6b353de601d6",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2cea88b0-bc13-4537-a70a-d3f122ed9699",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_BannedPlayer"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "11c39e25-12a2-4c8d-8658-69ca6f4bee1c",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_State_WaitingToBeWarned"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "11c39e25-12a2-4c8d-8658-69ca6f4bee1c",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_State_WaitingToBeWarned"
+            },
+            {
+              "UUID": "591a4170-a732-44a1-aa36-a1be35bf8a28",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_State_Warned"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1fbf9810-8274-47bf-bee4-f423751d27b9",
+              "Text": {
+                "Handle": "hddb3c537g4dd5g485eg81d8g90a679dcab9b",
+                "Value": "Sorcerous Sundries would like to remind you that interfering with its personnel - enchanted or otherwise - is a bannable offence. Take this as your first and final warning."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "8088a05e-6c52-445f-9127-2d72cc30e08f": {
+      "UUID": "8088a05e-6c52-445f-9127-2d72cc30e08f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7ae10943-4edb-10ef-d1a4-f35ebd56a9f5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e4a4d044-123f-4499-8714-9a8dca72a583",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_SorcerousSundries_Event_BlacklistedPlayerTeleported"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "70caadc0-c52b-45f6-bb8e-b88f067fee46",
+              "Text": {
+                "Handle": "h0723bc66gc084g4a40g9e37g863a1bbf64d1",
+                "Value": "Fine. I'll go."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "98d73eea-b0ef-4dd0-9f96-557c16e7a34c": {
+      "UUID": "98d73eea-b0ef-4dd0-9f96-557c16e7a34c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8993fc11-a9c6-4483-80fb-b9f1dc5ea0f4",
+              "Text": {
+                "Handle": "h76c6216egb226g4996gb4ddg2ef6133b3e57",
+                "Value": "I am not alive and cannot be killed. Unlike your unfortunate self. Good-bye and thank you for shopping at Sorcerous Sundries!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d15ea6a2-251c-4cfd-9f24-85de76c6a5b4": {
+      "UUID": "d15ea6a2-251c-4cfd-9f24-85de76c6a5b4",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "98d73eea-b0ef-4dd0-9f96-557c16e7a34c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7972ab1c-e91a-4365-877b-19deb21b8bf0",
+              "Text": {
+                "Handle": "h3825255fgfca4g46d8g8c44g1ceaa730f726",
+                "Value": "You ought to get out of my way, unless you want me to habitually murder you, too."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ca8e9eeb-d1bc-4b19-9843-d97d47969337",
+      "Index": 0,
+      "List": [
+        "7929fdf5-73f4-43e4-9375-13c965685af2"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lorroakan's Projection",
+        "Type": "character",
+        "MapKey": "7929fdf5-73f4-43e4-9375-13c965685af2",
+        "Name": "S_LOW_LorroakanProjection",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "654734b5-cf1a-45c1-9248-21644776d06c",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Dialog in which Lorroakan's Projection, who is substituing Rolan while Lorroakan is still in Ramazith Tower, bars entry to a banned player."
+}

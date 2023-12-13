@@ -1,0 +1,500 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Companions/ORI_Shadowheart_PAD_WolfFearReflection.lsj",
+  "UUID": "3c8a1806-98ef-4352-3f64-493103bc1b20",
+  "Category": "Voice bark",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "f93f4767-bfdd-4853-bd15-634cc5a7756c",
+    "fa5a960f-641b-49ba-ba8c-f4318dda443a"
+  ],
+  "Nodes": {
+    "008090ce-02d6-4e48-9ff8-e8d09006a3d9": {
+      "UUID": "008090ce-02d6-4e48-9ff8-e8d09006a3d9",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6e708b92-1591-47ca-ac32-6bede524e6e9",
+              "Text": {
+                "Handle": "h0a814735g2d19g40a1g89afg97ec6371926a",
+                "Value": "Everyone's frightened of something. My fear's hardly irrational, when you see the fangs on those things."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little shaken after an encounter with a wolf. Refers to a childhood encounter when she believes she was saved from a wolf by Shar worshippers (later, she may realise this was a lie and lose the phobia) Arc - SH is loyal to Shar.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "f93f4767-bfdd-4853-bd15-634cc5a7756c": {
+      "UUID": "f93f4767-bfdd-4853-bd15-634cc5a7756c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "008090ce-02d6-4e48-9ff8-e8d09006a3d9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "25c1ac70-f65f-4869-8a74-eff5827d9cde",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_2"
+            }
+          ],
+          "Type": "Script"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": false,
+              "paramval": 1,
+              "Name": "REALLY_SHADOWHEART"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3"
+                ],
+                "TagNames": [
+                  "REALLY_ASTARION"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_ASTARION"
+          },
+          "TagTexts": [
+            {
+              "LineId": "a525bb9e-9313-4418-934d-030ac96d89e8",
+              "Text": {
+                "Handle": "h636f2025g7912g4189g9759ga9da73439d46",
+                "Value": "In a world of demons and dragons, you're scared of <i>wolves</i>?"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "b5682d1d-c395-489c-9675-1f9b0c328ea5"
+                ],
+                "TagNames": [
+                  "REALLY_LAEZEL"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_LAEZEL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "c929ca9c-d45d-45db-959e-73c16c450d8f",
+              "Text": {
+                "Handle": "hb852feedg9cebg4598g9786g7e03739bd99e",
+                "Value": "Are you so frightened of wolves, Shadowheart?<br>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "9b0354c0-56d9-4723-8034-918ac9abab19"
+                ],
+                "TagNames": [
+                  "REALLY_GALE"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_GALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "8002f0a9-bbb1-4f2e-9188-378cbdc31eb6",
+              "Text": {
+                "Handle": "h572bcdb5g823eg4aa5ga682ga4353815d71c",
+                "Value": "I didn't realise you had a fear of wolves, Shadowheart. Understandable, I suppose."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "5f40def5-d3ec-4698-a367-01a339888956"
+                ],
+                "TagNames": [
+                  "REALLY_WYLL"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_WYLL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "e8bbfa69-a0d6-42bc-985f-48316cee56ef",
+              "Text": {
+                "Handle": "ha797b7f6g713fg47cbgad0fg2933103d1ff5",
+                "Value": "No lover of wolves, I see.<br>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "1a2f70d6-8ead-4eb5-a824-79ee1971764a"
+                ],
+                "TagNames": [
+                  "REALLY_KARLACH"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_KARLACH"
+          },
+          "TagTexts": [
+            {
+              "LineId": "0269b2d4-540a-470c-89cf-b39e20d324ae",
+              "Text": {
+                "Handle": "h98c97ac5g3870g4d7dg8ad4gd1ff7bb5528d",
+                "Value": "You scared of wolves, Shadowheart?<br>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8457eb5f-036c-4143-b6cf-447a9f555c7a"
+                ],
+                "TagNames": [
+                  "REALLY_JAHEIRA"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_JAHEIRA"
+          },
+          "TagTexts": [
+            {
+              "LineId": "47dd8a3c-ef65-44db-89ed-661cc805dd9c",
+              "Text": {
+                "Handle": "hf3ce98cagfaacg4930g9b06g1a68050163c8",
+                "Value": "They are not the wisest beasts to befriend - but I did not think you feared wolves so, Shadowheart.<br>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "9b8709f9-8d2a-4b4e-a465-8505c561d7f5"
+                ],
+                "TagNames": [
+                  "REALLY_HALSIN"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_HALSIN"
+          },
+          "TagTexts": [
+            {
+              "LineId": "7a6dd866-cb6a-442d-9e6e-30d00f26e7cd",
+              "Text": {
+                "Handle": "hfd3c6452g7e30g460bga966geb2ac25826db",
+                "Value": "You fear wolves, Shadowheart? I had not realised."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3e84e1cd-2193-4f9f-80b4-c2ededefaea6"
+                ],
+                "TagNames": [
+                  "REALLY_MINTHARA"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_MINTHARA"
+          },
+          "TagTexts": [
+            {
+              "LineId": "b8960199-dbf8-4c87-b066-59b2b6d7fa80",
+              "Text": {
+                "Handle": "hf8221f73ge7a5g47efg8615g738102cf3a0d",
+                "Value": "Wolves can sense your fear, Shadowheart. It only makes them hungrier.<br>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "aeb694fc-83fb-452d-819a-b97ba442dc42"
+                ],
+                "TagNames": [
+                  "REALLY_MINSC"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_MINSC"
+          },
+          "TagTexts": [
+            {
+              "LineId": "a2c2bb49-0fa4-4f65-9932-9bf7c3a7806d",
+              "Text": {
+                "Handle": "hd47e2408g970cg4984gb9b4g8ef602f1b53b",
+                "Value": "You fear wolves, Shadowheart? But why? They are just like large and ravenous hounds!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4828d3e9-e108-4f8d-81a6-d9536a9f97b6",
+              "Text": {
+                "Handle": "hca94d7a4ge698g4ccega8bdgc88904837313",
+                "Value": "I didn't realise you were frightened of wolves, Shadowheart.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Karalch: Kindly, not teasing",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "8712a021-4221-4dc4-b29c-f6c202926004",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "COMPANION PRESENT",
+        "position": "15;15",
+        "sourcetemplate": "ORIGINS_PAD_Act3"
+      }
+    },
+    "fa5a960f-641b-49ba-ba8c-f4318dda443a": {
+      "UUID": "fa5a960f-641b-49ba-ba8c-f4318dda443a",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ba3441a0-2c16-4314-a82d-6b18716ec1db",
+              "Text": {
+                "Handle": "ha781a730g2ae7g4099gb957g260d7e7436e2",
+                "Value": "Blasted wolves. They always make me feel like that scared little girl all over again..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little shaken after an encounter with a wolf. Refers to a childhood encounter when she believes she was saved from a wolf by Shar worshippers (later, she may realise this was a lie and lose the phobia) Arc - SH is loyal to Shar.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SHADOWHEART SOLO",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "16c88b7a-3b26-4ce5-90a9-6eb4a63badbb",
+      "Index": 0,
+      "List": [
+        "3ed74f06-3c60-42dc-83f6-f034cb47c679"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowheart",
+        "Type": "character",
+        "MapKey": "3ed74f06-3c60-42dc-83f6-f034cb47c679",
+        "Name": "S_Player_ShadowHeart",
+        "ParentTemplateId": null,
+        "TemplateName": "2ac51f22-e357-4639-b81d-022d462c8c6a"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "96465c0c-7d9c-4883-9672-e0f0cea6c095",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Shadowheart is afraid of wolves due her belief that she was being chased by one in her childhood. Should this be revealed to the party after it was triggered, or if Shadowheart by herself she will further relect on it."
+}

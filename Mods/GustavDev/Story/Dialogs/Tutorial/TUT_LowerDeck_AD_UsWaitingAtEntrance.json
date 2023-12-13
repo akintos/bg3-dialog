@@ -1,0 +1,103 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Tutorial/TUT_LowerDeck_AD_UsWaitingAtEntrance.lsj",
+  "UUID": "a95cf991-7c5c-2814-4383-a8c54d82c2bb",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "054b1c9e-7610-0c55-6644-21145a6a0142"
+  ],
+  "Nodes": {
+    "054b1c9e-7610-0c55-6644-21145a6a0142": {
+      "UUID": "054b1c9e-7610-0c55-6644-21145a6a0142",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fdac4665-45bf-40ec-9f87-12674cbad1d6",
+              "value": false,
+              "paramval": null,
+              "Name": "TUT_Lab_DevourerIsFollower"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f3578895-d030-40a7-9fd4-d642668f5121",
+              "Text": {
+                "Handle": "h25d596beg5839g4a16gba38g19dcb99fdfe6",
+                "Value": "<i>We will wait for you.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e0e7ede2-02b2-4548-bebf-341b96f90753",
+      "Index": 0,
+      "List": [
+        "6ca92237-eb1e-4ed8-a1ee-18b3bef21558"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Us",
+        "Type": "character",
+        "MapKey": "6ca92237-eb1e-4ed8-a1ee-18b3bef21558",
+        "Name": "S_TUT_Lab_TrappedDevourer",
+        "ParentTemplateId": null,
+        "TemplateName": "6208a86b-d052-4fc2-ae41-9813eeebbc31"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "One liner AD copying an existing line from TUT_Lab_DevourerFollower dialog. This line gets called when players send Us, as follower, near the entrance of imp room without they themselves going in and triggering Laezel/Losiir recruitment dialog. \r\n\r\nIn order to stop him from going in the imp room before players meet Laezel, he will stop being follower, say this line and stay there until players go where he is, triggering said dialog and making him follower again for imp room combat."
+}

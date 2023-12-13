@@ -1,0 +1,624 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Companions/Origin_Moments/COL_WyllDeath.lsj",
+  "UUID": "f87684c5-0d97-cd6d-4c29-28874548ef64",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1,
+    "7": -1,
+    "8": -1,
+    "9": -1,
+    "10": -1
+  },
+  "RootNodes": [
+    "0e2d23c9-3c7d-f679-66f8-75653e35a85c",
+    "0e2d23c9-3c7d-f679-66f8-75653e35a85c"
+  ],
+  "Nodes": {
+    "0e2d23c9-3c7d-f679-66f8-75653e35a85c": {
+      "UUID": "0e2d23c9-3c7d-f679-66f8-75653e35a85c",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "26c800d6-09d9-74ca-acce-fa29820df59d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[GERRY ]Mizora(REACTION) is sucked downwards from the pod. Blood splatters against the pod's window.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "A psionic blast is released and Mizora is killed.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KrisB] Player presses the 'Annihilate' button, releasing a psionic blast within the pod, killing mizora and sucking her down the pod",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Kill Mizora",
+        "position": "6095;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "26c800d6-09d9-74ca-acce-fa29820df59d": {
+      "UUID": "26c800d6-09d9-74ca-acce-fa29820df59d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "32bf8e10-0b4a-26f3-ca45-e806bb9e33a4",
+        "6886bd9e-a7f7-d8f7-441c-794eb54cd2b5",
+        "8996ecce-6398-749b-b04b-9b8961b4a725"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a0103c05-578b-4d42-b1e2-3b8ded63d0c1",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_CharacterDie"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "68f0def0-6426-4cbd-b87f-af5ddb5cb252",
+              "Text": {
+                "Handle": "h4bcf2dbbg5af8g4191gaf23g851e8546fcfa",
+                "Value": "*Your heart burns red-hot, then goes hollow. A presence disappears from your mind.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6415;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "32bf8e10-0b4a-26f3-ca45-e806bb9e33a4": {
+      "UUID": "32bf8e10-0b4a-26f3-ca45-e806bb9e33a4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "50963817-1334-1713-53a4-cb6a44e3db6d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "80cb617e-e3c3-3386-3919-6caef51bfd5d",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Wyll_State_MizorasCaptureHappened"
+            },
+            {
+              "UUID": "bc19238e-efd0-fb9c-5018-5c2f7fb74f4b",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_MizorasRescue_Event_WalkedAway"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8a0390ca-b207-43fd-a584-8a09f3149b39",
+              "Text": {
+                "Handle": "h6b3fa69bg3eebg4d20ga8f1gd947dbd80ea0",
+                "Value": "*You failed to fulfil Mizora's mission and the Absolute's cult has destroyed her. Wyll has failed his patron, and the Hells have taken the Blade of Frontiers as their own.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N57",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Have Mizora's quest",
+        "position": "6735;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "50963817-1334-1713-53a4-cb6a44e3db6d": {
+      "UUID": "50963817-1334-1713-53a4-cb6a44e3db6d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "55d5833a-c07d-3461-8c88-a98da5207674",
+              "value": true,
+              "paramval": null,
+              "Name": "COL_MizorasRescue_State_KilledMizora"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N36",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Logic node.",
+        "position": "7055;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "6886bd9e-a7f7-d8f7-441c-794eb54cd2b5": {
+      "UUID": "6886bd9e-a7f7-d8f7-441c-794eb54cd2b5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "50963817-1334-1713-53a4-cb6a44e3db6d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "80cb617e-e3c3-3386-3919-6caef51bfd5d",
+              "value": true,
+              "paramval": null,
+              "Name": "TWN_Wyll_State_MizorasCaptureHappened"
+            },
+            {
+              "UUID": "bc19238e-efd0-fb9c-5018-5c2f7fb74f4b",
+              "value": false,
+              "paramval": null,
+              "Name": "MOO_MizorasRescue_Event_WalkedAway"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1ddd1460-b7c8-4c85-b1f3-b3edf3db883d",
+              "Text": {
+                "Handle": "hb4bb02ddg376bg4882g9796g275cd0e7686f",
+                "Value": "*You failed to fulfil Mizora's mission. <i>She</i> was Zariel's asset you were meant to rescue - and the Absolute's cult has destroyed her. Wyll has failed his patron, and the Hells have taken the Blade of Frontiers as their own.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N61",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Have Mizora's quest",
+        "position": "6735;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "8996ecce-6398-749b-b04b-9b8961b4a725": {
+      "UUID": "8996ecce-6398-749b-b04b-9b8961b4a725",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "50963817-1334-1713-53a4-cb6a44e3db6d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "54beca3f-1fb0-4137-9c69-4873c3aeeebb",
+              "Text": {
+                "Handle": "h970d8783g650fg4b2cg9d94g7bc2812fe37f",
+                "Value": "*Mizora was captive in the illithid colony. In your haste, you ignored her and left her for the Absolute's cult to destroy. Wyll has failed his patron, and the Hells have taken the Blade of Frontiers as their own.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N65",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6735;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "d54190dc-ae37-4353-69a8-27770d57bde3": {
+      "UUID": "d54190dc-ae37-4353-69a8-27770d57bde3",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0e2d23c9-3c7d-f679-66f8-75653e35a85c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N53",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "5775;1329",
+        "sourcetemplate": "",
+        "stateContext": "Mizora inside pod"
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "42d52efc-8484-499e-a982-3fd5b4b0db8d",
+      "Index": 0,
+      "List": [
+        "b051e95c-8a5d-4cf3-badd-5c9112cb5739"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Mind Flayer Pod",
+        "Type": "item",
+        "MapKey": "b051e95c-8a5d-4cf3-badd-5c9112cb5739",
+        "Name": "S_COL_TadpoleChamber_Thralls_Pod_003",
+        "ParentTemplateId": null,
+        "TemplateName": "52c5e604-0da1-499b-b08b-35eb39929651"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "396ffc6e-de21-44dc-93fc-4f0634a2321c",
+      "Index": 1,
+      "List": [
+        "491a7686-3081-405b-983c-289ec8781e0a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Mizora",
+        "Type": "character",
+        "MapKey": "491a7686-3081-405b-983c-289ec8781e0a",
+        "Name": "S_GLO_Wyll_Cambion",
+        "ParentTemplateId": null,
+        "TemplateName": "2fbd583e-0507-41c7-be06-15b1f77797d8"
+      },
+      "SpeakerGroupName": null
+    },
+    "10": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "e02477a5-6811-4843-b376-88fdac6275af",
+      "Index": 10,
+      "List": [
+        "91b6b200-7d00-4d62-8dc9-99e8339dfa1a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Jaheira",
+        "Type": "character",
+        "MapKey": "91b6b200-7d00-4d62-8dc9-99e8339dfa1a",
+        "Name": "S_Player_Jaheira",
+        "ParentTemplateId": null,
+        "TemplateName": "7c7e6552-3fc0-4495-bb11-4b9f9a8e71fc"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b38330d9-de19-453d-ad7c-cf566875272a",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "e7c7d43d-f183-43bc-8201-189aed2d0a86",
+      "Index": 3,
+      "List": [
+        "c774d764-4a17-48dc-b470-32ace9ce447d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Wyll",
+        "Type": "character",
+        "MapKey": "c774d764-4a17-48dc-b470-32ace9ce447d",
+        "Name": "S_Player_Wyll",
+        "ParentTemplateId": null,
+        "TemplateName": "159cdf9e-6665-4450-9375-8494e233b0e4"
+      },
+      "SpeakerGroupName": null
+    },
+    "4": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "72954da4-d552-4219-9ef4-c112ee6baa02",
+      "Index": 4,
+      "List": [
+        "58a69333-40bf-8358-1d17-fff240d7fb12"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lae'zel",
+        "Type": "character",
+        "MapKey": "58a69333-40bf-8358-1d17-fff240d7fb12",
+        "Name": "S_Player_Laezel",
+        "ParentTemplateId": null,
+        "TemplateName": "3a0351bd-0b2f-4fbf-84a6-30ad80bb3100"
+      },
+      "SpeakerGroupName": null
+    },
+    "5": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "924d0953-759f-4bce-a76f-3dba14e1bfc4",
+      "Index": 5,
+      "List": [
+        "3ed74f06-3c60-42dc-83f6-f034cb47c679"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowheart",
+        "Type": "character",
+        "MapKey": "3ed74f06-3c60-42dc-83f6-f034cb47c679",
+        "Name": "S_Player_ShadowHeart",
+        "ParentTemplateId": null,
+        "TemplateName": "2ac51f22-e357-4639-b81d-022d462c8c6a"
+      },
+      "SpeakerGroupName": null
+    },
+    "6": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "58f1b688-b7f9-4295-89d9-9650b5cee137",
+      "Index": 6,
+      "List": [
+        "c7c13742-bacd-460a-8f65-f864fe41f255"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Astarion",
+        "Type": "character",
+        "MapKey": "c7c13742-bacd-460a-8f65-f864fe41f255",
+        "Name": "S_Player_Astarion",
+        "ParentTemplateId": null,
+        "TemplateName": "5614c25e-0213-479f-864c-e95895adb30f"
+      },
+      "SpeakerGroupName": null
+    },
+    "7": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "d6c08fbf-eb30-4e1b-b113-a196f5b3708f",
+      "Index": 7,
+      "List": [
+        "ad9af97d-75da-406a-ae13-7071c563f604"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Gale",
+        "Type": "character",
+        "MapKey": "ad9af97d-75da-406a-ae13-7071c563f604",
+        "Name": "S_Player_Gale",
+        "ParentTemplateId": null,
+        "TemplateName": "7d427a86-81f0-418d-a32a-3b5676c86bfa"
+      },
+      "SpeakerGroupName": null
+    },
+    "8": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "59b3103e-2145-487b-a4d3-d0fb75f7139b",
+      "Index": 8,
+      "List": [
+        "2c76687d-93a2-477b-8b18-8a14b549304c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Karlach",
+        "Type": "character",
+        "MapKey": "2c76687d-93a2-477b-8b18-8a14b549304c",
+        "Name": "S_Player_Karlach",
+        "ParentTemplateId": null,
+        "TemplateName": "3ab0a797-0904-47cb-955d-cdc3ec32409c"
+      },
+      "SpeakerGroupName": null
+    },
+    "9": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "7e756f48-309f-42dc-81cd-1b2aa139fb09",
+      "Index": 9,
+      "List": [
+        "7628bc0e-52b8-42a7-856a-13a6fd413323"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Halsin",
+        "Type": "character",
+        "MapKey": "7628bc0e-52b8-42a7-856a-13a6fd413323",
+        "Name": "S_GLO_Halsin",
+        "ParentTemplateId": null,
+        "TemplateName": "1a3d9848-f86e-4f4c-bba5-125ab605c69e"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Wyll companion dies if the party proceeded through the door to Ketheric Showdown, but wasn't together with the party at the moment."
+}

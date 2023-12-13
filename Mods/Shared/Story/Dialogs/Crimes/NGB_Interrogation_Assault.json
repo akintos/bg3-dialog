@@ -1,0 +1,2175 @@
+{
+  "Path": "Mods/Shared/Story/Dialogs/Crimes/NGB_Interrogation_Assault.lsj",
+  "UUID": "45461a7d-18fa-44dc-92e6-ff0ff599cf96",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "49e930df-0d70-4d29-bb82-542f31d7829b"
+  ],
+  "Nodes": {
+    "00314582-dda0-022d-3871-a14a5575d395": {
+      "UUID": "00314582-dda0-022d-3871-a14a5575d395",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "30b21fcf-d1d7-42b3-9ea4-0af3c8f8852a",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_Crime_BribingDisabled_NextTime"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "93147083-af38-43f5-8354-9737c3e928d2",
+              "value": false,
+              "paramval": null,
+              "Name": "No Bribiing"
+            },
+            {
+              "UUID": "e678bd59-74f4-4a7b-8776-aca807d9ef22",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CheckPocketGold"
+            }
+          ],
+          "Type": "Script"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "71120d5d-3853-46e4-9762-33f59aa6b4ae",
+              "value": false,
+              "paramval": 0,
+              "Name": "CIVILIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "41179aa7-bc85-02b5-1399-71a651d9dc85",
+              "value": true,
+              "paramval": 1,
+              "Name": "GEN_TransferNPCPayment"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "efcd69ea-4406-4e0c-9de3-c4a297a8fb5b",
+              "Text": {
+                "Handle": "h61c51728g6f3ag4cb5g88d3g50daf15ba218",
+                "Value": "*Gold may have made your problem go away this time, but next time you won't be so lucky.*"
+              }
+            },
+            {
+              "LineId": "a878b640-a5be-4bab-b88a-70a3f21c2506",
+              "Text": {
+                "Handle": "ha8c5aa67g873eg431dgb667g50b75e4de91e",
+                "Value": "*The benefit of the doubt can only be bought so many times. This was the last of those times.*"
+              }
+            },
+            {
+              "LineId": "8ce17141-e577-4d89-9670-fdddb4b0499c",
+              "Text": {
+                "Handle": "hd82cd8fag2bbdg4bcbg9f16gade3ae90331a",
+                "Value": "*Improperly-acquired coin weighs heavy on the conscience. The bribe may have worked this time, but it won't work the next.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N99",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Bribe success last time",
+        "position": "1615;234",
+        "sourcetemplate": ""
+      }
+    },
+    "1b650cf3-5d3e-43a0-9ae9-aaf4d4ed3009": {
+      "JumpTarget": "6c6e6c48-a5bd-4317-aabd-035fa107a1ae",
+      "JumpTargetPoint": 2,
+      "UUID": "1b650cf3-5d3e-43a0-9ae9-aaf4d4ed3009",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N7",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1935;891",
+        "sourcetemplate": ""
+      }
+    },
+    "1c3dc478-edf6-4bd9-84b8-b13da82e5809": {
+      "UUID": "1c3dc478-edf6-4bd9-84b8-b13da82e5809",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "a3514409-21f1-4d87-93fe-c1d5c61b4dfa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c742b680-a456-82ca-f157-3cd31c099a80",
+              "value": false,
+              "paramval": 0,
+              "Name": "CRIME_GuiltFound"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d6b5ac91-51b8-7011-0378-ed8a4be45be7",
+              "Text": {
+                "Handle": "hd4ff8c45gabbfg4d61gbe49ga218ecec90c6",
+                "Value": "I have no idea what you're talking about."
+              }
+            },
+            {
+              "LineId": "4c58207b-9bbc-40a5-be80-55d1b11ebd71",
+              "Text": {
+                "Handle": "h66e0c79bg7404g46f3ga44egbbdab85fa611",
+                "Value": "Sorry, I haven't seen anything."
+              }
+            },
+            {
+              "LineId": "ea5ede71-e8ca-48ce-a278-41393a36e824",
+              "Text": {
+                "Handle": "h68c1babbg4894g4dcbg8c04g0e49a7147e65",
+                "Value": "That's nothing to do with me."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "28ce9c46-f8a7-4f6f-80a0-49fa06515c9b": {
+      "RollSuccess": false,
+      "UUID": "28ce9c46-f8a7-4f6f-80a0-49fa06515c9b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b7bee853-3d06-4cfe-88ac-66c18be1ca63",
+        "b2531ca4-9bfa-4423-acd9-6ebf92e83a30"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N11",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "PersuasionResult",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "2d424f43-dce2-bdea-a2c5-604112eb8fe5": {
+      "JumpTarget": "6c6e6c48-a5bd-4317-aabd-035fa107a1ae",
+      "JumpTargetPoint": 2,
+      "UUID": "2d424f43-dce2-bdea-a2c5-604112eb8fe5",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N71",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "2ee07105-f420-40f4-aee0-bb90c1d1ad6a": {
+      "UUID": "2ee07105-f420-40f4-aee0-bb90c1d1ad6a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1b650cf3-5d3e-43a0-9ae9-aaf4d4ed3009"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "602741c9-b5be-6479-f456-4781383551ff",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_Arrest_HavePrison"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "69cf6c1f-fc1f-4e22-b55d-dc40768f6669",
+              "value": true,
+              "paramval": null,
+              "Name": "CRIME_IsGuard"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fd76cfa4-004c-9731-abfa-a907d8549d32",
+              "Text": {
+                "Handle": "h09dd65f0gfea3g4a02g8fe7g4b7de41a8a2c",
+                "Value": "*The price of freedom runs higher than you thought. A prison cell beckons...*"
+              }
+            },
+            {
+              "LineId": "f3331488-7dd9-4e6c-8743-8e27d2970b93",
+              "Text": {
+                "Handle": "hcda70f84g6ef2g4b8bg81b1g62594c03faed",
+                "Value": "*Your gold buys contempt, but not freedom. You're about to be detained.*"
+              }
+            },
+            {
+              "LineId": "1109979a-5522-168c-5dc5-34e713dd9158",
+              "Text": {
+                "Handle": "h102f3bccg853bg48c8g80d1g44c82e1e2dd2",
+                "Value": "*If you didn't seem guilty before, you certainly do now. Turn yourself in, or face the consequences.*"
+              }
+            },
+            {
+              "LineId": "501fea88-dde3-8923-4fe6-001ea24d1ca3",
+              "Text": {
+                "Handle": "h2f2ee528g3fc1g4172g88b4g023ef7be834f",
+                "Value": "*Your attempted bribery has caused offence. It looks like you're destined for the cells.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N12",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;891",
+        "sourcetemplate": ""
+      }
+    },
+    "49e930df-0d70-4d29-bb82-542f31d7829b": {
+      "UUID": "49e930df-0d70-4d29-bb82-542f31d7829b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "8e627e32-1724-bd57-1d68-96047dee4eba"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f29f6365-3c39-2075-77c4-2a14e4407200",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_Allow_Search"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f3a93191-d103-8919-f96e-e148b8eef31c",
+              "Text": {
+                "Handle": "h60809e50g2b91g44e7gb940gb72a11964435",
+                "Value": "*There's been an attack nearby. It looks like you're suspected of being involved.*"
+              }
+            },
+            {
+              "LineId": "56133f32-1d65-8116-9aeb-857f5215591d",
+              "Text": {
+                "Handle": "hba226315g415fg417ag9b0agcfbfa8efa6b8",
+                "Value": "*There's been an assault nearby. You might want to explain your presence here.*"
+              }
+            },
+            {
+              "LineId": "1e1ac172-b874-ad0d-2a52-faa018b4a903",
+              "Text": {
+                "Handle": "h33c83cc8gb942g4029g93bbg3ac60a001ced",
+                "Value": "*There's been a violent assault in the area. You may want to confirm your innocence. Or your guilt.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "4f97d566-9d9d-4b05-8067-435626902ed3": {
+      "UUID": "4f97d566-9d9d-4b05-8067-435626902ed3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2a7c4f74-438b-4987-9def-4f918c98b9db",
+              "value": true,
+              "paramval": null,
+              "Name": "Bribing enabled or CIVILIAN"
+            },
+            {
+              "UUID": "e678bd59-74f4-4a7b-8776-aca807d9ef22",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CheckPocketGold"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "41179aa7-bc85-02b5-1399-71a651d9dc85",
+              "value": true,
+              "paramval": 1,
+              "Name": "GEN_TransferNPCPayment"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "63938b4a-9ce4-729b-33fb-97f138afaff5",
+              "Text": {
+                "Handle": "h3e30a3ccgfd40g4331gae8bg93195f74bacf",
+                "Value": "*Your gold was more than enough to defuse the situation. You're free to go.*"
+              }
+            },
+            {
+              "LineId": "38f381d7-1946-a1b4-ec44-925b233a5abb",
+              "Text": {
+                "Handle": "he8fd13c8gcb81g47bcga4b3g575b03d32501",
+                "Value": "*The clink of gold leaving your purse - the sound of repercussions deftly avoided.*"
+              }
+            },
+            {
+              "LineId": "0bb216f5-00db-7789-5e41-0b32346e2a78",
+              "Text": {
+                "Handle": "hafd9420ag3cdfg46a6ga974g1e00b7be4e26",
+                "Value": "*Such a generous individual could never be up to no good. Your donation is gratefully received.*"
+              }
+            },
+            {
+              "LineId": "be105c57-6dbc-d569-2005-a72942664d58",
+              "Text": {
+                "Handle": "h3366546cgd570g4f36ga926g4bfb67f6c029",
+                "Value": "*You're sure the gold will be most useful in catching the one responsible.*"
+              }
+            },
+            {
+              "LineId": "3fb3bca7-19a5-0f4e-de44-fc48919041d0",
+              "Text": {
+                "Handle": "h6a71b6c2g48a8g4933g86fcg07200e547ed4",
+                "Value": "*Your little contribution soon clears things up. You're free to go.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Don't allow infinite bribing for assault, not even for civilians",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;453",
+        "sourcetemplate": ""
+      }
+    },
+    "6c6e6c48-a5bd-4317-aabd-035fa107a1ae": {
+      "UUID": "6c6e6c48-a5bd-4317-aabd-035fa107a1ae",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "dce7d4b8-5ddd-4a9c-899c-8bd3b13eb775",
+        "a90e6655-6e5e-4032-9b09-230c1336e386"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "602741c9-b5be-6479-f456-4781383551ff",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_Arrest_HavePrison"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "69cf6c1f-fc1f-4e22-b55d-dc40768f6669",
+              "value": true,
+              "paramval": null,
+              "Name": "CRIME_IsGuard"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "65040012-add4-05f8-0924-9d2e27c3e7ed",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FoundEvidenceCurrentCrime"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e3f23c47-9a66-949f-f660-04632026a094",
+              "Text": {
+                "Handle": "hf1741058g9d2bg4ea9gb14bg9a659daaa781",
+                "Value": "*Your guilt is unsurprising. It seems you have a choice - the cells, or the sword?*"
+              }
+            },
+            {
+              "LineId": "ec53475d-0140-7e6c-e8e8-34257b2102ed",
+              "Text": {
+                "Handle": "hbd03983cgfbd0g4e99gbe12ge89c36a919eb",
+                "Value": "*Honesty from a criminal - how refreshing. It won't stop you being arrested, though.*"
+              }
+            },
+            {
+              "LineId": "7c6ccbc5-2f6f-5ef7-909e-c474105a1357",
+              "Text": {
+                "Handle": "hf0656344ge449g4fa4gaeb0gf83ef72f5306",
+                "Value": "*Your admission wasn't enough to absolve you of your crimes. Only time in the cells will do that.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N21",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "6e90aff6-662f-5892-b48b-788991119771": {
+      "UUID": "6e90aff6-662f-5892-b48b-788991119771",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3e72e9cf-3199-4a9c-9e21-8e187177a952",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_CharismaDisabled_NextTime"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bdcb6798-b606-5c94-95d1-e03b4414c0af",
+              "value": true,
+              "paramval": 1,
+              "Name": "CRIME_PersuasionSuccess"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "35c21b88-d435-40a4-9371-00844769c762",
+              "Text": {
+                "Handle": "h443122cbg4fefg4f13ga088g60019629d4bf",
+                "Value": "*You've been given the benefit of the doubt this time, but something tells you next time you won't be so lucky.*"
+              }
+            },
+            {
+              "LineId": "963da90e-56fb-4689-aeb2-0e34136f0c76",
+              "Text": {
+                "Handle": "he89dd230g0c32g4576gacbbgea6654c89eac",
+                "Value": "*You may have talked your way out of this one, but there will be no repeat performance.*"
+              }
+            },
+            {
+              "LineId": "9bea7f04-71b4-4abd-b1f1-66c07561e953",
+              "Text": {
+                "Handle": "h90f64026gd2c0g4db7g986bge19b3d506067",
+                "Value": "*You'll walk free, for now, but your stories won't land so well if you're caught again.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N95",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "7215e168-4383-473c-8d7b-df054404fdb8": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "625be976-7a67-4394-97c8-14c69715ae4b",
+      "DifficultyClassValue": 10,
+      "UUID": "7215e168-4383-473c-8d7b-df054404fdb8",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d2519274-42c2-40bf-8eb2-45e57da96f73",
+        "28ce9c46-f8a7-4f6f-80a0-49fa06515c9b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f3349443-077f-9a6a-2666-dfdc9e42c798",
+              "Text": {
+                "Handle": "h69cee992g1c0ag4297gb7b5g6fce018f60da",
+                "Value": "Look elsewhere. Unless you want the eyes torn from your skull."
+              }
+            },
+            {
+              "LineId": "855ab703-8bf5-6337-7eed-d5b074f54acb",
+              "Text": {
+                "Handle": "h35060befg9abeg433fgb12aga386150f252a",
+                "Value": "Say you find this violent thug. Not a great idea to challenge them, is it?"
+              }
+            },
+            {
+              "LineId": "181275af-ecc5-6976-515b-aac2358a77de",
+              "Text": {
+                "Handle": "hbcf709fdgcabdg4312gab26g8b2d0a7f4f96",
+                "Value": "<i>Give a deep and menacing growl.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill Intimidation",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "8e627e32-1724-bd57-1d68-96047dee4eba": {
+      "UUID": "8e627e32-1724-bd57-1d68-96047dee4eba",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1c3dc478-edf6-4bd9-84b8-b13da82e5809",
+        "bbb7caaf-0ecc-979a-c924-220365308c47",
+        "df5e11e5-e3cd-4e57-9c18-cb52902235bd",
+        "93b6fdc5-3220-46ab-ae53-c77f4201acec"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N79",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "90ccd26a-7881-4914-a7bc-493b74da184a": {
+      "UUID": "90ccd26a-7881-4914-a7bc-493b74da184a",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b28f6ce-09ad-9664-9865-6ed4eb69a0b7",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FoundGuiltyPlayer"
+            },
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bdaa5e21-1f3d-0332-47a6-6b2b45b6d97f",
+              "Text": {
+                "Handle": "hb5e52281gc36dg4881ga0a3g2cb4a35cc701",
+                "Value": "*Your confession is accepted. At least you'll die with your conscience clean.*"
+              }
+            },
+            {
+              "LineId": "f9aa815c-7e75-817a-3591-349d6f79f934",
+              "Text": {
+                "Handle": "h7c2498dfg4cabg41d4ga09fg138af1c242e7",
+                "Value": "*That little confession appears to have sealed your fate.*"
+              }
+            },
+            {
+              "LineId": "528572e8-b697-7093-2330-31164f64332e",
+              "Text": {
+                "Handle": "h1dce95dbg01aeg4b2eg99c7g25783c388037",
+                "Value": "*You sense the pleasantries might be over. In fact, this could get very unpleasant indeed.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "93b6fdc5-3220-46ab-ae53-c77f4201acec": {
+      "UUID": "93b6fdc5-3220-46ab-ae53-c77f4201acec",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "6c6e6c48-a5bd-4317-aabd-035fa107a1ae",
+        "90ccd26a-7881-4914-a7bc-493b74da184a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "182337d1-93c0-f0c1-a58b-8868aad6e945",
+              "Text": {
+                "Handle": "hec6705a0gbf97g48b6gbd90g565b313f2c4c",
+                "Value": "You're in luck. I'm the culprit."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "a3514409-21f1-4d87-93fe-c1d5c61b4dfa": {
+      "UUID": "a3514409-21f1-4d87-93fe-c1d5c61b4dfa",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "79b56479-1dae-49e7-0ae7-3348895328f5",
+              "Text": {
+                "Handle": "h49bcf15eg95f1g4d93gb60eg2352288ca1b2",
+                "Value": "*You quickly clear things up. Obviously you aren't the miscreant responsible.*"
+              }
+            },
+            {
+              "LineId": "bcc4b6df-e7e7-22c6-8ca8-95dd89c1d163",
+              "Text": {
+                "Handle": "h7ba21b16g1140g4b8eg99c4g382ee15c7865",
+                "Value": "*Your gentle spirit speaks for itself. You can't be the one responsible.*"
+              }
+            },
+            {
+              "LineId": "dc37f521-697b-674e-5abd-248bf303140c",
+              "Text": {
+                "Handle": "h70cd3150g218cg4bb0ga982ged548c8a721e",
+                "Value": "*Your honesty speaks for itself. It seems you're free to go.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N31",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "a58612f7-f0ab-40e4-a6d1-f49e80c9a0ea": {
+      "UUID": "a58612f7-f0ab-40e4-a6d1-f49e80c9a0ea",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b28f6ce-09ad-9664-9865-6ed4eb69a0b7",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FoundGuiltyPlayer"
+            },
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "db90465d-d9a3-5649-648d-c54ea85e84a8",
+              "Text": {
+                "Handle": "h7bbc8f17gd137g45d9g847dgad7ffb1268ce",
+                "Value": "*Your bribery attempt has caused some offence. Time to fight.*"
+              }
+            },
+            {
+              "LineId": "969d7508-bc89-721f-c253-ae09ce754b98",
+              "Text": {
+                "Handle": "h56e8e2cfg134ag4876gb63ag6fa6c5e696a4",
+                "Value": "*Why would anyone accept such a pittance, when your entire purse could just be looted from your corpse?*"
+              }
+            },
+            {
+              "LineId": "78a85b3a-01ca-585c-2643-1ecd6665b828",
+              "Text": {
+                "Handle": "hbdeec9e7gaf27g4850g8695gbe4e8738eee5",
+                "Value": "*Perhaps it was unwise to reveal just how much gold you have on your person.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N32",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "a90e6655-6e5e-4032-9b09-230c1336e386": {
+      "UUID": "a90e6655-6e5e-4032-9b09-230c1336e386",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b28f6ce-09ad-9664-9865-6ed4eb69a0b7",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FoundGuiltyPlayer"
+            },
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "90fd81eb-8453-c628-650c-167a7952003e",
+              "Text": {
+                "Handle": "hdcd4dfa9g7fb5g4aacga8fcg83d9a09dbe80",
+                "Value": "<i>Attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N33",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "aaf4a100-a0af-411e-b3e4-0848c32278f8": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "625be976-7a67-4394-97c8-14c69715ae4b",
+      "DifficultyClassValue": 10,
+      "UUID": "aaf4a100-a0af-411e-b3e4-0848c32278f8",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d2519274-42c2-40bf-8eb2-45e57da96f73",
+        "28ce9c46-f8a7-4f6f-80a0-49fa06515c9b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "44949784-4348-bf69-56d4-aa38ef84b22b",
+              "Text": {
+                "Handle": "he03805fage111g4a37gaec2g0f298c8a4e0e",
+                "Value": "Are you sure someone was attacked? Perhaps they simply tripped."
+              }
+            },
+            {
+              "LineId": "d0781b91-57fd-cd29-1c43-d5955459c10d",
+              "Text": {
+                "Handle": "h938fdf6dgba52g4a03g94c0g08ef1cfd45e0",
+                "Value": "Are you sure it wasn't merely a lighthearted shove? A playful tickle?"
+              }
+            },
+            {
+              "LineId": "35195dbc-27a0-a872-4fd9-5e28ca667dbc",
+              "Text": {
+                "Handle": "h3709cfacgf113g4a08g8cfegd631d9c4cc94",
+                "Value": "The odd fight is good for you! It gets the blood pumping."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N34",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill Persuasion",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "b2531ca4-9bfa-4423-acd9-6ebf92e83a30": {
+      "UUID": "b2531ca4-9bfa-4423-acd9-6ebf92e83a30",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b28f6ce-09ad-9664-9865-6ed4eb69a0b7",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FoundGuiltyPlayer"
+            },
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b383baba-5d81-65c3-c64f-5fecc8e41d55",
+              "Text": {
+                "Handle": "hf42561d1g7e7cg404fg84fdg488b7e066688",
+                "Value": "*Your speech isn't persuasive. You sense this will be resolved in a more violent manner.*"
+              }
+            },
+            {
+              "LineId": "905eb423-306e-5375-942a-99a59043a348",
+              "Text": {
+                "Handle": "h60e3434dg6478g482fgb159g290ba989655f",
+                "Value": "*Usually this is the point where the guard leaves you alone. But not today.*"
+              }
+            },
+            {
+              "LineId": "0e062b84-d676-9148-6fe1-fbd9bf32e6cc",
+              "Text": {
+                "Handle": "h0c2d8f05geb0bg46bega9e6gc1d95d4c76e5",
+                "Value": "*If your intention was to make the situation worse, you certainly succeeded.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N35",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;15",
+        "sourcetemplate": ""
+      }
+    },
+    "b7bee853-3d06-4cfe-88ac-66c18be1ca63": {
+      "UUID": "b7bee853-3d06-4cfe-88ac-66c18be1ca63",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2d424f43-dce2-bdea-a2c5-604112eb8fe5"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "602741c9-b5be-6479-f456-4781383551ff",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_Arrest_HavePrison"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "69cf6c1f-fc1f-4e22-b55d-dc40768f6669",
+              "value": true,
+              "paramval": null,
+              "Name": "CRIME_IsGuard"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e9ee1a94-d9b0-255c-f73b-afb217a7d231",
+              "Text": {
+                "Handle": "h3d0a70efg4dffg4cd2ga614gec28270f000e",
+                "Value": "*You try to muster a defence, but it's not enough. You're about to be locked up.*"
+              }
+            },
+            {
+              "LineId": "aad8ce84-4404-1415-ad4b-a7459d12da7a",
+              "Text": {
+                "Handle": "h937c33ccg6479g40a1g9585gd001ffe7fc7a",
+                "Value": "*You aren't convincing enough. This guard wants you locked up.*"
+              }
+            },
+            {
+              "LineId": "b04fd272-ae81-fb03-5b2a-23c2709b745a",
+              "Text": {
+                "Handle": "hb4f0b690g1595g48beg8b93g0b95b309f390",
+                "Value": "*Freedom demands a high price, and your speech was not valuable enough. You're headed for the cells.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N36",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "bbb7caaf-0ecc-979a-c924-220365308c47": {
+      "UUID": "bbb7caaf-0ecc-979a-c924-220365308c47",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c39ffcaa-cfcb-4eb2-9987-443a7e3060fe",
+        "7215e168-4383-473c-8d7b-df054404fdb8",
+        "aaf4a100-a0af-411e-b3e4-0848c32278f8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4bed5f63-dbf9-4fb2-be84-c29edf10a96a",
+              "value": false,
+              "paramval": 0,
+              "Name": "GEB_CharismaDisabled"
+            },
+            {
+              "UUID": "c742b680-a456-82ca-f157-3cd31c099a80",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_GuiltFound"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "624beea4-de46-4518-a383-e2e3f7bab93b",
+              "Text": {
+                "Handle": "hac752332g2464g463fg97eeg59f131a0b3cb",
+                "Value": "<i>Try and talk your way out of this.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N73",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "c39ffcaa-cfcb-4eb2-9987-443a7e3060fe": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "625be976-7a67-4394-97c8-14c69715ae4b",
+      "DifficultyClassValue": 10,
+      "UUID": "c39ffcaa-cfcb-4eb2-9987-443a7e3060fe",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d2519274-42c2-40bf-8eb2-45e57da96f73",
+        "28ce9c46-f8a7-4f6f-80a0-49fa06515c9b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b0797061-1315-47cb-b814-e691b3699e73",
+              "Text": {
+                "Handle": "h9d7a14bag3e23g4dc1g90d3gd8fac011adf5",
+                "Value": "I saw everything! The rapscallion responsible already fled!"
+              }
+            },
+            {
+              "LineId": "07b91d19-5562-1160-c383-057e2d64a77f",
+              "Text": {
+                "Handle": "hf71a32f4gc1b9g4485g8ee3gdd0b301ff19b",
+                "Value": "Me? I'm a Chosen of Eldath - I never raise my hand in anger!"
+              }
+            },
+            {
+              "LineId": "136b65c5-e669-0a71-98f5-dba9657b2525",
+              "Text": {
+                "Handle": "hfd6d64aagb358g494egbee9g9c7a6fbf3e1e",
+                "Value": "It was a rogue Mage Hand. I'm sure it's long faded by now."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N37",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill Deception",
+        "position": "1295;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "d2519274-42c2-40bf-8eb2-45e57da96f73": {
+      "RollSuccess": true,
+      "UUID": "d2519274-42c2-40bf-8eb2-45e57da96f73",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6e90aff6-662f-5892-b48b-788991119771",
+        "dc021a87-7736-42a3-a37c-2565ea783bea"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N39",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "PersuasionResult",
+        "position": "1615;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "dc021a87-7736-42a3-a37c-2565ea783bea": {
+      "UUID": "dc021a87-7736-42a3-a37c-2565ea783bea",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bdcb6798-b606-5c94-95d1-e03b4414c0af",
+              "value": true,
+              "paramval": 1,
+              "Name": "CRIME_PersuasionSuccess"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3f19e011-dd7d-0b1b-618a-3bda8930b16e",
+              "Text": {
+                "Handle": "h914916a1g524ag4b25g938ag1bb5b821b76d",
+                "Value": "*Responsibility for this criminal act clearly lies elsewhere. You're free to go.*"
+              }
+            },
+            {
+              "LineId": "7d247089-dac9-9197-e68e-a7766994c40b",
+              "Text": {
+                "Handle": "h1cc1fe0cga5b4g436dgaf03gbad56ef24f1e",
+                "Value": "*Problem solved.*"
+              }
+            },
+            {
+              "LineId": "3c1fb554-a72c-5a9d-8516-6a168d9cabef",
+              "Text": {
+                "Handle": "h93f6b686g2507g477cgbd48ged7600e1e63a",
+                "Value": "*That settles it. You won't be disturbed any further.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N40",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "dce7d4b8-5ddd-4a9c-899c-8bd3b13eb775": {
+      "UUID": "dce7d4b8-5ddd-4a9c-899c-8bd3b13eb775",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "602741c9-b5be-6479-f456-4781383551ff",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_Arrest_HavePrison"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "69cf6c1f-fc1f-4e22-b55d-dc40768f6669",
+              "value": true,
+              "paramval": null,
+              "Name": "CRIME_IsGuard"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b28f6ce-09ad-9664-9865-6ed4eb69a0b7",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FoundGuiltyPlayer"
+            },
+            {
+              "UUID": "2677bf25-03f3-6323-c72a-0ca61fe5ad01",
+              "value": true,
+              "paramval": 1,
+              "Name": "Allow_Arrest"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2b0a81fe-addf-d245-50a2-8e80f1bc5ab1",
+              "Text": {
+                "Handle": "hcb2637d4g03a0g4708g8244g5fdf8bee5cf3",
+                "Value": "<i>Follow to the cells. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N41",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "df5e11e5-e3cd-4e57-9c18-cb52902235bd": {
+      "UUID": "df5e11e5-e3cd-4e57-9c18-cb52902235bd",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "00314582-dda0-022d-3871-a14a5575d395",
+        "4f97d566-9d9d-4b05-8067-435626902ed3",
+        "f6671003-4e31-cd01-2249-45721c82121c",
+        "2ee07105-f420-40f4-aee0-bb90c1d1ad6a",
+        "a58612f7-f0ab-40e4-a6d1-f49e80c9a0ea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c742b680-a456-82ca-f157-3cd31c099a80",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_GuiltFound"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e31a83cf-f9b8-08cf-1e07-34257de9412c",
+              "Text": {
+                "Handle": "h25dfd9b1gbe63g4d30gb137g0b1bfb6eadf6",
+                "Value": "Maybe we can come to an arrangement. ([GEN_CheckMagicPocketGold_6057ad05-9492-4630-9f0a-be548b134c54])"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N42",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "f6671003-4e31-cd01-2249-45721c82121c": {
+      "UUID": "f6671003-4e31-cd01-2249-45721c82121c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2a7c4f74-438b-4987-9def-4f918c98b9db",
+              "value": true,
+              "paramval": null,
+              "Name": "Bribing enabled or CIVILIAN"
+            },
+            {
+              "UUID": "e678bd59-74f4-4a7b-8776-aca807d9ef22",
+              "value": false,
+              "paramval": null,
+              "Name": "GEN_CheckPocketGold"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "60ff7dae-9ca5-414a-98a1-7b1e54b37ee7",
+              "Text": {
+                "Handle": "h11605a0cg5704g4d33ga498ga559407bbe96",
+                "Value": "*You could offer the lint in your purse, but you doubt that's valid currency.*"
+              }
+            },
+            {
+              "LineId": "381a7887-57c4-4176-acff-c20a300ca747",
+              "Text": {
+                "Handle": "hc65c9bb8gb26eg41b2gb2fcgd012a1630542",
+                "Value": "*It's customary to possess gold in order to bribe someone with it.*"
+              }
+            },
+            {
+              "LineId": "b96a5be1-381d-44c9-9b56-d049970a4090",
+              "Text": {
+                "Handle": "ha46e55adg11ccg4bb7g99c7g1e6bf131704b",
+                "Value": "*Perhaps some more gold would be helpful in making your offer.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N78",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Don't allow infinite bribing for assault, not even for civilians",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;672",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "0f48c512-6fcf-2b2c-98a1-09476c48474a",
+      "Index": 0,
+      "List": [
+        "9bc90704-dda4-244a-2f89-26f7470ed54d",
+        "00efc7b5-aa56-44d2-82f2-eff30e451e1e",
+        "6fe77279-1bba-5cc0-a5e0-34beabd2501d",
+        "74890c9b-878d-4346-9ab6-704c108f4230",
+        "3650e5f8-c146-f0f9-2e89-fae58d6795b5",
+        "fcc5f759-3d1a-4088-99d5-a99b4838b285",
+        "3d751bf0-8a47-4855-9392-cab6aad7e89e",
+        "dedfc55f-cde9-4fa9-9566-8670b0c3e324",
+        "c5f7c2b4-d5a9-890a-673d-7eef6774ff49",
+        "93636b10-874e-a985-3c79-4ca9a5953687",
+        "f5cc68da-6a71-48f5-a2d6-a3c32f858d18",
+        "add5addb-5b80-e30a-c455-19f4a7169256",
+        "11c9e4ad-6b39-c107-8b74-263094040c33",
+        "b0b39454-2bf3-d2cd-04e2-0c5cb500e982",
+        "4bdd9996-42f7-47dc-9a2b-1d9bfa2e738f",
+        "ead76f6a-e541-affe-547b-ae6344cdfc95",
+        "c27cf770-ee6a-4206-a97f-62c9d16f6239",
+        "f29dc9dd-c36b-4ce1-8253-93db1c5d4fe1",
+        "6e51f2eb-9fdf-4f95-a66b-7043e700795b",
+        "dac0f3e5-5103-4316-aedf-5272e8f0ab96"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Bugbear"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "6ea5aed3-bc7a-2ec8-d1e0-8e225c4be08e",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "An NPC was told about an assault by another NPC, or was assaulted but did not see who attacked them so they started to investigate, and is interrogating a suspected player."
+}

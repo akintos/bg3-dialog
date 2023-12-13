@@ -1,0 +1,668 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2b/Intermezzo/INT_EmperorRevealed_EmperorDies.lsj",
+  "UUID": "44374794-6096-e99a-2867-41566c5c3445",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "0b9bc036-07d8-4c18-234b-3f388fcfac1b",
+    "e0eb8501-2376-2950-a20e-d5a786d54f2b"
+  ],
+  "Nodes": {
+    "0b9bc036-07d8-4c18-234b-3f388fcfac1b": {
+      "UUID": "0b9bc036-07d8-4c18-234b-3f388fcfac1b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2f73dadc-af46-6fb3-b43e-2cfa9b13efa2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "966ea204-673f-9939-5ac6-4eb8778f3597",
+              "value": true,
+              "paramval": null,
+              "Name": "INT_EmperorRevealed_Event_PlayerWarned"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "99d4a8f9-ba03-dfa6-a300-1b0fd6884eb7",
+              "value": true,
+              "paramval": null,
+              "Name": "INT_EmperorRevealed_Event_EmperorIsDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "15a19246-ff4a-45dd-a4ce-ba246f655107",
+              "Text": {
+                "Handle": "h882b94b2g2cceg4555gac2fgdc0628f41104",
+                "Value": "*Somewhere between pity and disappointment, the Emperor's final gaze cuts through you, signalling your joint downfall.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[CHRIS] [Emperor] On floor, reaches out to player before collapsing dead",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The Emperor lies on the floor, about to die. It looks at you with one last pleading glance.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Astral Plane",
+        "position": "-1265;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "0bd1d713-1a63-04a6-dd88-ff3d89043b5b": {
+      "UUID": "0bd1d713-1a63-04a6-dd88-ff3d89043b5b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3098ef3d-0f07-91b0-f0a2-1ed62cb3e7b8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ec4179d7-7e9e-4c54-91d8-91ef5d42c69a",
+              "Text": {
+                "Handle": "hb7299cbagfcfeg4ce9gb2a2g0e9fee5dc4ce",
+                "Value": "<i>Thank you.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "2f73dadc-af46-6fb3-b43e-2cfa9b13efa2": {
+      "JumpTarget": "6f25886c-0c5c-b7a8-2119-8810d5fa3816",
+      "JumpTargetPoint": 1,
+      "UUID": "2f73dadc-af46-6fb3-b43e-2cfa9b13efa2",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N27",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-945;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "3098ef3d-0f07-91b0-f0a2-1ed62cb3e7b8": {
+      "UUID": "3098ef3d-0f07-91b0-f0a2-1ed62cb3e7b8",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a8997c32-e165-6e7c-888b-b5433c41a8d7",
+              "value": true,
+              "paramval": null,
+              "Name": "INT_EmperorRevealed_State_PlayerAgreedToHelpEmperor"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "697c55ce-81fa-46ea-b615-891b22d612c5",
+              "Text": {
+                "Handle": "h27c3592dge262g401eg9354gd2c0b2d9632b",
+                "Value": "<i>With your help, we will both survive.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "5a4d9e96-d932-c72d-2bf4-fdd3cade3af5": {
+      "UUID": "5a4d9e96-d932-c72d-2bf4-fdd3cade3af5",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0bd1d713-1a63-04a6-dd88-ff3d89043b5b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The Emperor struggles to its feet. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "-305;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "6ca23a52-73c3-ff12-0628-c729667a23cb": {
+      "UUID": "6ca23a52-73c3-ff12-0628-c729667a23cb",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5a4d9e96-d932-c72d-2bf4-fdd3cade3af5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "be7a2d7f-97ab-ef52-9f29-2a58c4d4f5b3",
+              "value": true,
+              "paramval": null,
+              "Name": "INT_EmperorRevealed_Event_EmperorRezzed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1f640baa-48cb-4d81-9abe-34010a19d023",
+              "Text": {
+                "Handle": "h996ca84bgcfecg4a97gb066g0024fc24a846",
+                "Value": "Get up. I'll fight with you. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "-625;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "6f25886c-0c5c-b7a8-2119-8810d5fa3816": {
+      "UUID": "6f25886c-0c5c-b7a8-2119-8810d5fa3816",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0f34a680-9a21-42d7-9a59-25b559108ab3",
+              "Text": {
+                "Handle": "h66bbc5acga15dg4932g9453g4b74e71d58fb",
+                "Value": "<i>You... have... failed us. All. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[CHRIS] *REUSE* [Player] CINE_ArmCoverFace",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The Emperor collapses. Dead. The same instant, a blinding rift opens behind them. Player reacts to that. White out. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KB] Emperor eye glow faded, , Blinding Rift opens under Emperor, , White Out",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KB] Emperor eye glow faded, , Blinding Rift opens under Emperor, , White out",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "76d6b3e5-52c9-04c9-1056-32dcf8840f43": {
+      "UUID": "76d6b3e5-52c9-04c9-1056-32dcf8840f43",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6f25886c-0c5c-b7a8-2119-8810d5fa3816"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "99d4a8f9-ba03-dfa6-a300-1b0fd6884eb7",
+              "value": true,
+              "paramval": null,
+              "Name": "INT_EmperorRevealed_Event_EmperorIsDead"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6c29bc08-4ce8-4dd5-819f-0eb52d637c42",
+              "Text": {
+                "Handle": "he3a31ad0g4ad2g4c38gaa05g5fbdeca11ee7",
+                "Value": "<i>Let the mind flayer die. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "-625;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "822c9e76-d88c-a8de-c610-9dd7ec7d2560": {
+      "UUID": "822c9e76-d88c-a8de-c610-9dd7ec7d2560",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6ca23a52-73c3-ff12-0628-c729667a23cb",
+        "76d6b3e5-52c9-04c9-1056-32dcf8840f43"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "942523e3-d7bc-4f10-8cf4-b5537374cc02",
+              "Text": {
+                "Handle": "h6f44ad6eg4140g47c0g9498ga9169ba4e989",
+                "Value": "*With startling clarity, you realise the mind flayer was telling the truth - if it dies, so do you.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-945;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "e0eb8501-2376-2950-a20e-d5a786d54f2b": {
+      "UUID": "e0eb8501-2376-2950-a20e-d5a786d54f2b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "822c9e76-d88c-a8de-c610-9dd7ec7d2560"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "966ea204-673f-9939-5ac6-4eb8778f3597",
+              "value": true,
+              "paramval": null,
+              "Name": "INT_EmperorRevealed_Event_PlayerWarned"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3e36057a-c51c-4395-b738-2bebc68da5e6",
+              "Text": {
+                "Handle": "hd0c579d8g30a1g420bga63bgf05ee5c73c39",
+                "Value": "*Its laboured breaths resound like a death knell in your mind, tolling for the end of all hopes of survival, and freedom.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[CHRIS] [Emperor] On floor, reaches out to player before collapsing dead",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The Emperor lies on the floor, about to die. It looks at you with one last pleading glance.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KB] Emperor's eye glow fading",
+        "collapsed": "False",
+        "logicalname": "Astral Plane",
+        "position": "-1265;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "fa3cb365-830d-4078-95d3-74aa3592cf92",
+      "Index": 0,
+      "List": [
+        "73d49dc5-8b8b-45dc-a98c-927bb4e3169b"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "The Emperor",
+        "Type": "character",
+        "MapKey": "73d49dc5-8b8b-45dc-a98c-927bb4e3169b",
+        "Name": "S_GLO_Emperor",
+        "ParentTemplateId": null,
+        "TemplateName": "6efb2704-a025-49e0-ba9f-2b4f62dd2195"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d58c4295-c721-4eaf-ba1f-17fdadf09b3c",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "If the player kills the Emperor, the Emperor dies, the portal collapses, all players are pulled through an astral rift, and wind up in the "
+}

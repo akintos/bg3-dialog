@@ -1,0 +1,679 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_DevilsFee_RitualCircle.lsj",
+  "UUID": "b79b0a20-df5a-1684-82bf-4e5c80697e00",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "01c0d8ae-61c9-3bff-592e-6ae06fcf5a71"
+  ],
+  "Nodes": {
+    "01c0d8ae-61c9-3bff-592e-6ae06fcf5a71": {
+      "UUID": "01c0d8ae-61c9-3bff-592e-6ae06fcf5a71",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9ad84cc1-922e-d73f-0e09-2b826fdb66d1",
+        "01d31797-3fb9-2d68-2fcc-552ca290f10f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3bc4c164-0e98-fbc7-0cef-f244e390b3b4",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_DevilsFee_State_RitualAlreadyDone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3bc4c164-0e98-fbc7-0cef-f244e390b3b4",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_DevilsFee_State_RitualAlreadyDone"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[ChristianD] PLYR holding the grimoire opened, take a few steps to approach the blood circle. Then muttering the last line to himself and closes it. Stows the book back",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player approaches the blood circle, grimoire open. Any other party member stands behind them. The player finishes reading the last line, muttering its contents to themselves, and closes it. Ideally we have low infernal music to cover the need for any player lines.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KP] multiple whispers whafting as grimoire is being read. Accompanied by",
+        "collapsed": "False",
+        "logicalname": "cine: intro",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "01d31797-3fb9-2d68-2fcc-552ca290f10f": {
+      "UUID": "01d31797-3fb9-2d68-2fcc-552ca290f10f",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3d909bc3-b713-8d12-a8c6-325e4c7f61ac"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "50d9d3e7-45c3-479c-b7bf-4b0aa40de9fe",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_DevilsFee_State_HasInfernalMarble"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[ChristianD] PLYR reaches their arm out, palm facing downwards. As nothing happens PLYR opens and closes their hand a couiple time expecting something to happen.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player reaches their arm out, palm outstretched, over the ritual circle. Player doesn't have the infernal marble. Nothing happens.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "Maybe we can have a little bit of humour here.",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "cine: no marble",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "0551a07a-fabe-31e6-36dd-0b5bf770a209": {
+      "UUID": "0551a07a-fabe-31e6-36dd-0b5bf770a209",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e59788ef-f4ef-20e7-7fea-c91c39c08353",
+        "7200b1b2-0bbd-96a2-dbd8-5d3d3eec953f",
+        "20b26f22-0470-4a19-9dab-7b8ba66b4df2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a2558e72-a85f-48ca-b950-5e0377fe3143",
+              "Text": {
+                "Handle": "hff2bff85gb86bg456fg9b88g76f632448365",
+                "Value": "*As you approach the ritual circle, you feel the warm crackle of Avernus' flame across your skin.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[kp] reuse of slow walk, look down, nervous anim",
+        "Attitude": "Default",
+        "CinematicNodeContext": "We see the player, the fire flicking shadows against them açs they stare into the portal.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "20b26f22-0470-4a19-9dab-7b8ba66b4df2": {
+      "UUID": "20b26f22-0470-4a19-9dab-7b8ba66b4df2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "238b9a55-b810-fcac-f622-1346aab7d527"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "49de94de-aca1-4c32-b6e3-5b936d7e2297",
+              "Text": {
+                "Handle": "h8f935f52g0799g4137g8e3cg0f7727ec2081",
+                "Value": "<i>There is nothing to be gained by invading the devil's home, and everything to be lost. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N65",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "238b9a55-b810-fcac-f622-1346aab7d527": {
+      "UUID": "238b9a55-b810-fcac-f622-1346aab7d527",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[kp] cautious walking, looking down anim",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Again, shot from above: The other party members gather around the circle's edge. The party takes one step together into the blazing circle. A rush of fire engulfs the group. When it clears, they are gone, only the portal to avernus remains, fiery symbol still glowing atop the Avernus skyscape. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N35",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "PLAYERS ENTERING",
+        "position": "2255;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "3d909bc3-b713-8d12-a8c6-325e4c7f61ac": {
+      "UUID": "3d909bc3-b713-8d12-a8c6-325e4c7f61ac",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "27cac84d-f173-43d2-8479-27a50c248945",
+              "Text": {
+                "Handle": "he1aa0f74geac7g4d1bgb3bfg77eef7f40f88",
+                "Value": "*You feel a thrum across your palm, warm, longing. The ritual requires a component you seem to lack.*<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ChristianD] PLYR pulls back their arm while looking at it and to the floor, confused. Then back to neutral state.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player looks at their hand, confused. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N52",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "7200b1b2-0bbd-96a2-dbd8-5d3d3eec953f": {
+      "UUID": "7200b1b2-0bbd-96a2-dbd8-5d3d3eec953f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "238b9a55-b810-fcac-f622-1346aab7d527"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9b7bce97-a9bd-4ff9-991c-90820230275c",
+              "value": false,
+              "paramval": null,
+              "Name": "GLO_Emperor_Knows_PlayersTookDeal"
+            },
+            {
+              "UUID": "fc0ca3a3-86c7-4f92-bfa9-94d243355567",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Emperor_Knows_RaphaelInvolvement"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b9dc9851-9646-426f-b2c7-3e5cf8b0ab6b",
+              "Text": {
+                "Handle": "h2cd4ff8cgad3fg43d8g8839gd9ba37de4bd5",
+                "Value": "<i>You were wise to reject the devil's offer, but there is no reason to provoke him by invading his home.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N66",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "9ad84cc1-922e-d73f-0e09-2b826fdb66d1": {
+      "UUID": "9ad84cc1-922e-d73f-0e09-2b826fdb66d1",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b941a08b-d94e-987d-8e3f-9864da0676c0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "50d9d3e7-45c3-479c-b7bf-4b0aa40de9fe",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_DevilsFee_State_HasInfernalMarble"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4dfbe814-2457-40ae-bead-b997d0724af2",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_DevilsFee_Event_OpeningPortal"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N49",
+        "InternalNodeContext": "Checking if we have the infernal marble.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGICAL IF HAS MARBLE",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "b941a08b-d94e-987d-8e3f-9864da0676c0": {
+      "UUID": "b941a08b-d94e-987d-8e3f-9864da0676c0",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0551a07a-fabe-31e6-36dd-0b5bf770a209"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4dfbe814-2457-40ae-bead-b997d0724af2",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_DevilsFee_Event_OpeningPortal"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[ChristianD] PLYR takes the marble out from inventory and stretches their arm above the center of the ritual circle. PLYR closes their fist around the marbel and hold for a while. The PLYR then drops the marble to the floor. PLYR startled back, reacting to the floor ripples.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player reaches their arm out, palm outstretched, over the ritual circle. The infernal marble is in it. It begins to glow, and the entire room around it darkens. As the player closes their fist around the infernal marble, we see them from above, and the the blood underneath the player's closed fist lights ablaze, tracing around the ritual circle's outline in fire. The player drops the infernal marble, and the floor within the blazing outline ripples, We are no longer seeing a wooden floor, we see the crackling sky of Avernus.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N54",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KP] fire on sigil, blood on palm, ripple to reveal portal",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "cine: has marble",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "e59788ef-f4ef-20e7-7fea-c91c39c08353": {
+      "UUID": "e59788ef-f4ef-20e7-7fea-c91c39c08353",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "238b9a55-b810-fcac-f622-1346aab7d527"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9b7bce97-a9bd-4ff9-991c-90820230275c",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Emperor_Knows_PlayersTookDeal"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2b766276-754b-44d7-b1f4-51e7b1d108be",
+              "Text": {
+                "Handle": "hc2b65779gb13cg4f2aga57bg519ea30d2786",
+                "Value": "<i>Signing the devil's contract was an impulsive error. Do not seek to correct one mistake with another.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N64",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "bb687c48-64ca-4756-b855-59c6ed05cb87",
+      "Index": 0,
+      "List": [
+        "839e5ee7-1793-4a43-9e91-6da575e188ac"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Portal to the House of Hope",
+        "Type": "item",
+        "MapKey": "839e5ee7-1793-4a43-9e91-6da575e188ac",
+        "Name": "S_LOW_DevilsFee_PortalToHouseOfHope",
+        "ParentTemplateId": null,
+        "TemplateName": "0a0c1e0f-60a9-493f-a98b-d761187c7d38"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1370ddfe-ab6a-4889-9cae-c2ca70271d7b",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9a67e983-a0c8-4a64-a33c-b380381cc5c5",
+      "Index": 2,
+      "List": [
+        "a9edc89f-398b-a703-1a90-7330adb60ed9"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "The Emperor",
+        "Type": "character",
+        "MapKey": "73d49dc5-8b8b-45dc-a98c-927bb4e3169b",
+        "Name": "S_GLO_Emperor",
+        "ParentTemplateId": null,
+        "TemplateName": "6efb2704-a025-49e0-ba9f-2b4f62dd2195"
+      },
+      "SpeakerGroupName": "GROUP_Emperors"
+    }
+  },
+  "Synopsis": "Dialog to invoke the ritual to go to House of Hope from Lower City.\r\n\r\nRELEVANT NOTE: This dialog will only appear at the first time players go to house of hope. Later, this never will be triggered again."
+}

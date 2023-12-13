@@ -1,0 +1,148 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_UndercellarEntrance_AD_DeathReact_Guard001.lsj",
+  "UUID": "2e358f1d-6b89-2e10-882f-bd1a741fe49c",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "c64094ff-8f9f-a88c-9e28-3fa5e4c39a25",
+    "5fb5c1b8-a3b7-4f5c-a755-977e7eff6958"
+  ],
+  "Nodes": {
+    "5fb5c1b8-a3b7-4f5c-a755-977e7eff6958": {
+      "UUID": "5fb5c1b8-a3b7-4f5c-a755-977e7eff6958",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ee132880-1b11-4ea0-aeba-aeae973905bc",
+              "Text": {
+                "Handle": "h3419f30eg286cg4fbeg81a3gb9ab0ad61a86",
+                "Value": "Watch your backs. We've got a sneak-thief hiding in the shadows."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Guarded, looking around for player",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Didn't See Player",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "c64094ff-8f9f-a88c-9e28-3fa5e4c39a25": {
+      "UUID": "c64094ff-8f9f-a88c-9e28-3fa5e4c39a25",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "de50fe3a-67cb-4738-b732-2c9cf89363a0",
+              "Text": {
+                "Handle": "h671850abg5812g45afgae23g86ad98c0bef6",
+                "Value": "There - attack!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Guard spotted player, attacking",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Saw Player",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1f85e7ae-0196-473e-a07d-2244f3dda97f",
+      "Index": 0,
+      "List": [
+        "09c5724d-e1ca-4355-ae24-bd506641a3b9"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Don't-Call-Me-Runt",
+        "Type": "character",
+        "MapKey": "09c5724d-e1ca-4355-ae24-bd506641a3b9",
+        "Name": "S_LOW_UndercellarEntranceGuard_001",
+        "ParentTemplateId": null,
+        "TemplateName": "00eb30d7-79cd-46fc-bcf7-265347630efc"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Reaction AD to any other guard or Tusgront being killed - mostly to cover edge cases so players know that they'll be attacked on sight. (Only one will play, but all the guards need them incase the player wipes anywhere from 1 to all-bar-one out)"
+}

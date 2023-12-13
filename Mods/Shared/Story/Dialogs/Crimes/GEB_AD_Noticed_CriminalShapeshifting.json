@@ -1,0 +1,99 @@
+{
+  "Path": "Mods/Shared/Story/Dialogs/Crimes/GEB_AD_Noticed_CriminalShapeshifting.lsj",
+  "UUID": "ecba58aa-fa34-2708-28cc-3d7388ce4414",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "7ef6f5b3-9472-df63-c728-a14b39c6e39a"
+  ],
+  "Nodes": {
+    "7ef6f5b3-9472-df63-c728-a14b39c6e39a": {
+      "UUID": "7ef6f5b3-9472-df63-c728-a14b39c6e39a",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5786cd8c-b65c-46b4-96c0-7a5b52843ce1",
+              "Text": {
+                "Handle": "h627a4565gfcfcg45a8g99ebg3fe599579cf1",
+                "Value": "That disguise won't fool me!"
+              }
+            },
+            {
+              "LineId": "61aa564f-5c31-4641-bd29-170d7a25cfb5",
+              "Text": {
+                "Handle": "h9dbebe83g3ff8g4edbg8367g20d4ad924aa8",
+                "Value": "Guards! Someone! There's a fugitive in disguise here!"
+              }
+            },
+            {
+              "LineId": "d2c59d32-6cf8-4e67-9e50-f6d3d8804c77",
+              "Text": {
+                "Handle": "hcf56dc8eg299dg4a19g9495gffcec4020c9d",
+                "Value": "I can see right through that disguise, criminal!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Generic crime dialogue - not to be recorded",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "0e437ef4-d164-40a0-bbb6-b49b745fa212",
+      "Index": 0,
+      "List": [
+        "fe80d0b0-8e03-427c-a954-0491f1af07a5"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Civilians"
+    }
+  },
+  "Synopsis": "An NPC comments on a player shapeshifting/disguising/otherwise transforming while that player is wanted or being investigated for a crime. Normally, that player would be ignored for that crime from then on, but due to the NPC witnessing the transformation, they won't be. This dialog should make that clear. It will only trigger for non-GUARD NPCs (guards will arrest/interrogate them on sight)."
+}

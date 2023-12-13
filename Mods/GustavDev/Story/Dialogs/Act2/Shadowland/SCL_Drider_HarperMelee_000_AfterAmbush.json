@@ -1,0 +1,4776 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shadowland/SCL_Drider_HarperMelee_000_AfterAmbush.lsj",
+  "UUID": "a9d4c0b6-b78e-7408-2588-efc9a826c0cf",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1
+  },
+  "RootNodes": [
+    "77b15ad6-b3de-e9cd-0e87-0b2a3480560b",
+    "39dca6e4-eeb2-5ab3-a185-419151f4f872",
+    "9f499401-b83d-c2d6-1aba-f2bcf433e8bd",
+    "ddd8cc43-9fca-29e0-7266-4f486b4ade3c",
+    "81085c9f-2415-2a4b-82e9-5dccdc4b3ac1",
+    "3cf05517-899f-20cf-c060-f4631a13d914",
+    "d802a32e-d69e-8756-839a-0f2e21a3c346"
+  ],
+  "Nodes": {
+    "06921e28-816c-4631-dba6-5450a0a16ec9": {
+      "UUID": "06921e28-816c-4631-dba6-5450a0a16ec9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6f6a290f-37aa-afe0-2b16-0321b7f751d3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": true,
+              "paramval": 0,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5125bf56-3316-48c7-a6aa-03d33ffaf52d",
+              "Text": {
+                "Handle": "h64f33743g54b2g4be4gaaf6g64225509ac4b",
+                "Value": "Lead on, then."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1165",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Harpers have lantern",
+        "position": "5775;-13563",
+        "sourcetemplate": ""
+      }
+    },
+    "0d2105ce-1497-ac93-ad85-836d274b2308": {
+      "RollSuccess": true,
+      "UUID": "0d2105ce-1497-ac93-ad85-836d274b2308",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c1254f57-03cc-9ca9-b5a5-be116fc4aefe"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1172",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "4175;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "121fc084-cd5f-7525-1c77-585cecc2a694": {
+      "UUID": "121fc084-cd5f-7525-1c77-585cecc2a694",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ae156e12-ea59-e195-990c-c0509bf6e1e5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7aedf094-9373-4955-81c3-0c6ff68ac91c",
+              "Text": {
+                "Handle": "h7744957dgfcbbg43d0g9956ga0e34821f3e1",
+                "Value": "*The lantern flickers ever so briefly, and you hear a slight twitter - or perhaps it's simply your imagination.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] Holds lantern into the air then stow it <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Camera shows lantern in player's hand. The light flickers just a little, and you hear a little titter come from it. Player stows the lantern.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1193",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "A slight twitter - [CINE][WI]",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Latern flickers - [CINE] [WI]",
+        "collapsed": "False",
+        "logicalname": "Player hold lantern",
+        "position": "1295;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "1415367c-8882-8f0d-b795-761c9b8e7dbc": {
+      "UUID": "1415367c-8882-8f0d-b795-761c9b8e7dbc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "121fc084-cd5f-7525-1c77-585cecc2a694"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "24c41341-0fc2-4cb2-a1b0-3fbaa595c3dd",
+              "Text": {
+                "Handle": "h3864571ag9168g4af1g988cgc0c1b090984d",
+                "Value": "Incredible. A light so radiant, not even the curse can dim it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Musing, not really said to player.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1188",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Light from lantern - [CINE][WI]",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "148b306b-e17f-a198-f692-3b328d1ef5f6": {
+      "JumpTarget": "8f9bc739-6015-7775-4e86-f9fae439cbf7",
+      "JumpTargetPoint": 1,
+      "UUID": "148b306b-e17f-a198-f692-3b328d1ef5f6",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1591",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "5775;-12906",
+        "sourcetemplate": ""
+      }
+    },
+    "15f38e6b-551e-c7e7-e0c4-dece5e0a48ef": {
+      "UUID": "15f38e6b-551e-c7e7-e0c4-dece5e0a48ef",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e49e7201-d766-6aa2-7dc2-4839df3b5e21"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8d545d20-53e6-4128-a748-f39e8f49b524",
+              "Text": {
+                "Handle": "ha115363bgcc54g4700g90f1gdc767a32775c",
+                "Value": "A prisoner? Then I must be a welcome sight indeed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper] Lower blade to idle pose <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harper lowers blade while speaking.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1148",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "1c861222-94d8-6119-3832-c261dc642004": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "89f0acd4-346f-479d-8b7a-1a3eb5382f6d",
+      "DifficultyClassValue": 14,
+      "UUID": "1c861222-94d8-6119-3832-c261dc642004",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "859ae0c1-c7d6-1f74-2efb-7b51b22d3b8c",
+        "de56a2a6-98d0-bc6c-0530-66fcf8419728"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "95acf5d9-2c97-bb2c-c4e7-bc9ac487947b",
+              "value": false,
+              "paramval": null,
+              "Name": "GLO_Factions_Knows_Harpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1149",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_History",
+        "position": "2895;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "251e0635-bf23-0cac-8984-a50c29a8bd14": {
+      "JumpTarget": "ac398900-f7a1-db5e-7ace-7bc005f8e6b9",
+      "JumpTargetPoint": 1,
+      "UUID": "251e0635-bf23-0cac-8984-a50c29a8bd14",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1200",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3855;-13563",
+        "sourcetemplate": ""
+      }
+    },
+    "2b0e3a3d-32c3-7906-9762-ebeb1a09321b": {
+      "RollSuccess": false,
+      "UUID": "2b0e3a3d-32c3-7906-9762-ebeb1a09321b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "963f49fc-52f9-ed65-2e32-d4eb61856d8b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1173",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "4175;-11811",
+        "sourcetemplate": ""
+      }
+    },
+    "2b45deea-bc0e-4184-9bef-5db00521e4ef": {
+      "UUID": "2b45deea-bc0e-4184-9bef-5db00521e4ef",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e49e7201-d766-6aa2-7dc2-4839df3b5e21"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e4a3d34f-b0d7-4404-a55e-3ac352b6ecea",
+              "Text": {
+                "Handle": "hbc9dd92bg91bbg4107g8e04gf83bfcd07578",
+                "Value": "An cultist apostate - I reckon one of a kind. Curious."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper]*DUPE*Lower blade to idle pose <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harper lowers blade while speaking.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1226",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;-14001",
+        "sourcetemplate": ""
+      }
+    },
+    "2b9633c0-f451-5a5d-7a07-79263dbaf7ff": {
+      "UUID": "2b9633c0-f451-5a5d-7a07-79263dbaf7ff",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7e774574-af7c-15a3-5455-eeda6cd48d77"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1573",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC",
+        "position": "2895;-13782",
+        "sourcetemplate": ""
+      }
+    },
+    "2c194f29-f1f6-30d0-b919-4b853d5fe97d": {
+      "UUID": "2c194f29-f1f6-30d0-b919-4b853d5fe97d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fa545c82-d4a5-4fd2-ab4f-2db24062348c",
+              "Text": {
+                "Handle": "hc2ba6356gde34g40c1ga7a0g31fdba1a84b7",
+                "Value": "But don't linger for long. The shadows are not known to take pity."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1182",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6415;-13344",
+        "sourcetemplate": ""
+      }
+    },
+    "2d5fb2d7-ef2a-fab4-891f-d835723c9f40": {
+      "JumpTarget": "4d983942-19ab-bcc2-6591-bcc17241f223",
+      "JumpTargetPoint": 1,
+      "UUID": "2d5fb2d7-ef2a-fab4-891f-d835723c9f40",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1564",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-14220",
+        "sourcetemplate": ""
+      }
+    },
+    "2e11fb1c-76f4-319c-1298-6ed3230c7ecf": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "2e11fb1c-76f4-319c-1298-6ed3230c7ecf",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "79edbed5-6fb8-3ab2-0ba8-530434a5dbeb",
+        "b0e7dd5c-b3ac-9d81-afa1-879636ea1322"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7c1f63cf-dad1-41e6-bac1-e3be84ca526b",
+              "Text": {
+                "Handle": "h3778cb4egddf5g4cdegaef7gfed84f0e8be6",
+                "Value": "The cult took me prisoner. Thank the gods you came when you did."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1174",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Deception",
+        "position": "3855;-11592",
+        "sourcetemplate": ""
+      }
+    },
+    "2e58143f-9c97-bdbd-3a68-b1a52a412e49": {
+      "UUID": "2e58143f-9c97-bdbd-3a68-b1a52a412e49",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5d52cb6f-2665-8caf-982c-14b8306d3248",
+        "2e11fb1c-76f4-319c-1298-6ed3230c7ecf",
+        "ac398900-f7a1-db5e-7ace-7bc005f8e6b9",
+        "d9d77153-6abe-2428-83c5-b77b7f2d4a5a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "395d4214-abde-4cb3-b034-65ba53ccd948",
+              "Text": {
+                "Handle": "h84b357e4gc3d5g4ce0g94dega0306d0842a6",
+                "Value": "Explain yourself."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1229",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "2fee0574-ef0a-f993-0b67-8538711d6802": {
+      "UUID": "2fee0574-ef0a-f993-0b67-8538711d6802",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ab570205-a72b-bb3a-5501-aedb5382698c",
+        "f1c78ce5-13e3-d4bc-711e-dd1c3a086128",
+        "06921e28-816c-4631-dba6-5450a0a16ec9",
+        "bc19e1b6-09f1-14f6-dbfb-6af53988e590",
+        "c17506de-d9ed-0a37-febd-c6adc838109f",
+        "148b306b-e17f-a198-f692-3b328d1ef5f6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0c66d23e-01c1-4c7b-91b7-adc686e49672",
+              "Text": {
+                "Handle": "h64494125g6ad0g4af6ga807g2afe8aa048f9",
+                "Value": "Follow me. I know a refuge from the darkness. You can rest there."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1046",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Harper has lantern",
+        "position": "5135;-13563",
+        "sourcetemplate": ""
+      }
+    },
+    "300b210b-842f-bec4-4449-36bd39c04202": {
+      "UUID": "300b210b-842f-bec4-4449-36bd39c04202",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "49b22539-d29c-5025-2a79-3b8a24b02291"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4a3fc9b-e00d-7b76-6518-0b5270f6c9d3",
+              "value": true,
+              "paramval": 1,
+              "Name": "UND_DuergarCamp_HarperPin_HistoryPassed"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "95acf5d9-2c97-bb2c-c4e7-bc9ac487947b",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Factions_Knows_Harpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d4704a8c-612d-43df-828a-49dafa460ad3",
+              "Text": {
+                "Handle": "h27224196g748fg4560gbb35ga8fd3df96559",
+                "Value": "*You notice a pin on the man's chest, identical to the one you found in Grymforge. He is a Harper.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1160",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-14658",
+        "sourcetemplate": ""
+      }
+    },
+    "350c8387-eea0-c364-8d80-6853fa495993": {
+      "UUID": "350c8387-eea0-c364-8d80-6853fa495993",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "aeaee22a-1b51-8345-e186-57f94ac78f68"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[Harper] lifts lantern into the air <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harper lifts lantern into the air. Its glow illuminates his face,",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1036",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player didn't take lantern in combat",
+        "position": "335;-15096",
+        "sourcetemplate": ""
+      }
+    },
+    "369a105c-e4f5-c185-63cf-5bc0c7cee6d5": {
+      "UUID": "369a105c-e4f5-c185-63cf-5bc0c7cee6d5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c0f2bbf1-2794-e8df-8d76-63d9af3e28d0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cddeb1bc-c6f3-486a-8277-743df972cc10",
+              "Text": {
+                "Handle": "hc6dacc3cg9df2g489cg9fd6g10874190aebd",
+                "Value": "The lantern is yours to keep - Jaheira's said as much. It will guide your way to the Towers."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1199",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player has Moonalntern",
+        "position": "5135;-12030",
+        "sourcetemplate": ""
+      }
+    },
+    "3781bc5c-9272-5c36-abc8-94467ea9137d": {
+      "JumpTarget": "c9a04622-38d1-0734-fa9b-83cef7210885",
+      "JumpTargetPoint": 1,
+      "UUID": "3781bc5c-9272-5c36-abc8-94467ea9137d",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1566",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-14001",
+        "sourcetemplate": ""
+      }
+    },
+    "39dca6e4-eeb2-5ab3-a185-419151f4f872": {
+      "UUID": "39dca6e4-eeb2-5ab3-a185-419151f4f872",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e476278a-ee5f-de8f-e2ed-7eb8697c6b98"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "26062990-9018-4845-a520-d737837fa207",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_StartCaravanEscort"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1043",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player has lantern - Logic node",
+        "position": "15;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "3cf05517-899f-20cf-c060-f4631a13d914": {
+      "UUID": "3cf05517-899f-20cf-c060-f4631a13d914",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "77f510dc-774f-12bb-c250-6386473b709c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperMelee_000_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "26062990-9018-4845-a520-d737837fa207",
+              "value": false,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_StartCaravanEscort"
+            },
+            {
+              "UUID": "cb3bc317-8358-47f4-831e-44ff812ec2b0",
+              "value": false,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_AcquiredMoonlanternWithoutFight"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fbea5348-9b0e-4926-bb71-5f67d81c8454",
+              "Text": {
+                "Handle": "h1bce9993g3430g416dga310g7bf34ea6bb68",
+                "Value": "Go on. Take the beast's lantern."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N941",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Came with Harpers hasmet",
+        "position": "15;-13125",
+        "sourcetemplate": ""
+      }
+    },
+    "49b22539-d29c-5025-2a79-3b8a24b02291": {
+      "JumpTarget": "49e05457-4fea-6835-ffe6-f5358314b1cb",
+      "JumpTargetPoint": 2,
+      "UUID": "49b22539-d29c-5025-2a79-3b8a24b02291",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1161",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3535;-14658",
+        "sourcetemplate": ""
+      }
+    },
+    "49e05457-4fea-6835-ffe6-f5358314b1cb": {
+      "UUID": "49e05457-4fea-6835-ffe6-f5358314b1cb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fa9eff75-dc2d-8da2-0f78-e3392ed117e1",
+        "e1c22ba9-0cc9-f47a-3a9e-dbab7a2e74ce",
+        "ff90a1e0-f335-cfe5-69b6-a11134d38dfc",
+        "bc565889-9861-dd1b-d4dc-2e2ebb88fc4a",
+        "251e0635-bf23-0cac-8984-a50c29a8bd14",
+        "5e4c8e00-9823-f52a-83d0-f6ce9e870119"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "95acf5d9-2c97-bb2c-c4e7-bc9ac487947b",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Factions_Knows_Harpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "67d11aa6-9c0a-4344-ac89-4d61fcb41347",
+              "Text": {
+                "Handle": "h6d67565cg4e6fg4b03gac48g8e3ccff3cd1e",
+                "Value": "*The pin the man wears is familiar to you. He belongs to the Harpers, a covert organisation dedicated to freedom and balance.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Camera shows the Harper's garb. We see a Harper pin on their chest.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1157",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "4ad795ad-9a52-5abc-1bfc-03f630764758": {
+      "UUID": "4ad795ad-9a52-5abc-1bfc-03f630764758",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ae156e12-ea59-e195-990c-c0509bf6e1e5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "de41f06e-bf56-46ba-a06e-44299546dd42",
+              "Text": {
+                "Handle": "h0287aee0g30f8g4feeg97ebg37fe4a7cdf1c",
+                "Value": "*The lantern flickers ever so briefly, and you hear a slight twitter - or perhaps it's simply your imagination.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper] Holds lantern into the air then stow it <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Camera shows lantern in Harper's hand. The light flickers just a little, and you hear a little titter come from it. Harper stows the lantern.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N994",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "A slight twitter - [CINE][WI]",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Latern flickers - [CINE] [WI]",
+        "collapsed": "False",
+        "logicalname": "Harper holds lantern",
+        "position": "1295;-15096",
+        "sourcetemplate": ""
+      }
+    },
+    "4d983942-19ab-bcc2-6591-bcc17241f223": {
+      "UUID": "4d983942-19ab-bcc2-6591-bcc17241f223",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 1,
+      "Children": [
+        "923b8c29-d588-ec38-fe07-1283dee89f04"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "07c776da-353a-9050-e9be-c42d51a99412",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_EnteringHaven_State_GainedAccess"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a518bf88-b34e-4bd7-bc0d-f4f1a51e0f18",
+              "Text": {
+                "Handle": "h74d865bbga1a8g4190ga508gd9bd09b0368a",
+                "Value": "You. Don't move a godsdamned muscle."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Addressed to player. Harper raises his blade and points at the player.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N998",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Never met",
+        "position": "1935;-14658",
+        "sourcetemplate": ""
+      }
+    },
+    "4df83a26-57ad-d48f-d044-46e8d1e0f6ee": {
+      "UUID": "4df83a26-57ad-d48f-d044-46e8d1e0f6ee",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "61dee75f-31f0-d29c-86ed-96f9f926dec8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "30a016f3-946d-4531-a1ac-04c061e2e125",
+              "Text": {
+                "Handle": "h41a50baag94fcg499bg831egbc4dbca73082",
+                "Value": "We've done only as duty dictates."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper]*DUPE*Lower blade to idle pose <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harper lowers blade while speaking.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1181",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4495;-11592",
+        "sourcetemplate": ""
+      }
+    },
+    "5d52cb6f-2665-8caf-982c-14b8306d3248": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "c44bfd7d-84de-4568-9c57-a059b8df5435",
+      "DifficultyClassValue": 16,
+      "UUID": "5d52cb6f-2665-8caf-982c-14b8306d3248",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0d2105ce-1497-ac93-ad85-836d274b2308",
+        "2b0e3a3d-32c3-7906-9762-ebeb1a09321b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "84480476-98c1-4a31-b476-4ec19ebd77f8",
+              "Text": {
+                "Handle": "h02188dfagaeaeg4db3g978ega85e0f10e28c",
+                "Value": "I meant to infiltrate the cult. You've ruined the mission."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1171",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Deception",
+        "position": "3855;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "5e4c8e00-9823-f52a-83d0-f6ce9e870119": {
+      "JumpTarget": "d9d77153-6abe-2428-83c5-b77b7f2d4a5a",
+      "JumpTargetPoint": 1,
+      "UUID": "5e4c8e00-9823-f52a-83d0-f6ce9e870119",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1202",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3855;-13344",
+        "sourcetemplate": ""
+      }
+    },
+    "61dee75f-31f0-d29c-86ed-96f9f926dec8": {
+      "SourceNode": "e49e7201-d766-6aa2-7dc2-4839df3b5e21",
+      "UUID": "61dee75f-31f0-d29c-86ed-96f9f926dec8",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7c1656ad-2a45-20dc-b905-bd2b9b5ae287"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1232",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Visual State)",
+        "position": "4815;-11592",
+        "sourcetemplate": ""
+      }
+    },
+    "6ce55fca-d51f-d1a7-de48-144497fea0b6": {
+      "UUID": "6ce55fca-d51f-d1a7-de48-144497fea0b6",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1415367c-8882-8f0d-b795-761c9b8e7dbc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1192",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "655;-14439",
+        "sourcetemplate": "",
+        "stateContext": "Player holds lantern aloft"
+      }
+    },
+    "6edc66f2-b518-4868-c0f1-a4047fcfb64b": {
+      "UUID": "6edc66f2-b518-4868-c0f1-a4047fcfb64b",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c482074-29ef-e01d-7b8d-97b9a20cc371",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_PlayersAttackHarpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aa0386a1-c2d4-4855-844b-25a512a6eb9a",
+              "Text": {
+                "Handle": "h0e44ec52g8e65g485cgb625gd866559a54e4",
+                "Value": "You were no prisoner - and I am no fool. Your lies end here, rat."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1185",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4495;-11373",
+        "sourcetemplate": ""
+      }
+    },
+    "6f2d3198-c279-1e8a-5379-2d440d4209a2": {
+      "Result": false,
+      "UUID": "6f2d3198-c279-1e8a-5379-2d440d4209a2",
+      "Constructor": "FallibleQuestionResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "817a2e0e-05dc-837e-0868-22425c9c5f95"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1031",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "FallibleQuestionResult",
+        "position": "6095;-14877",
+        "sourcetemplate": ""
+      }
+    },
+    "6f6a290f-37aa-afe0-2b16-0321b7f751d3": {
+      "JumpTarget": "dba74c15-5bd7-8985-f8ee-6c6bd741b3e8",
+      "JumpTargetPoint": 1,
+      "UUID": "6f6a290f-37aa-afe0-2b16-0321b7f751d3",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1588",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "6095;-13563",
+        "sourcetemplate": ""
+      }
+    },
+    "706adbfa-e712-353a-6e51-1da22b4f9048": {
+      "UUID": "706adbfa-e712-353a-6e51-1da22b4f9048",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e49e7201-d766-6aa2-7dc2-4839df3b5e21"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9d88b2ce-35d0-44fb-88ff-318641f77a0e",
+              "Text": {
+                "Handle": "h95e4fb10g4ed5g46f9ga9f7g15e74a678cc7",
+                "Value": "By the Nine Hells, is that right? Then you are quite the curiosity."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper]*DUPE*Lower blade to idle pose <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harper lowers blade while speaking.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1223",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;-14220",
+        "sourcetemplate": ""
+      }
+    },
+    "719268e6-5dd1-438e-faad-7cb6865f4f7e": {
+      "JumpTarget": "49e05457-4fea-6835-ffe6-f5358314b1cb",
+      "JumpTargetPoint": 2,
+      "UUID": "719268e6-5dd1-438e-faad-7cb6865f4f7e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1162",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3535;-14001",
+        "sourcetemplate": ""
+      }
+    },
+    "77b15ad6-b3de-e9cd-0e87-0b2a3480560b": {
+      "UUID": "77b15ad6-b3de-e9cd-0e87-0b2a3480560b",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "350c8387-eea0-c364-8d80-6853fa495993"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "26062990-9018-4845-a520-d737837fa207",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_StartCaravanEscort"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": true,
+              "paramval": 0,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N925",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player doesn't have lantern - Logic node",
+        "position": "15;-15096",
+        "sourcetemplate": ""
+      }
+    },
+    "79edbed5-6fb8-3ab2-0ba8-530434a5dbeb": {
+      "RollSuccess": true,
+      "UUID": "79edbed5-6fb8-3ab2-0ba8-530434a5dbeb",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4df83a26-57ad-d48f-d044-46e8d1e0f6ee"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1175",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "4175;-11592",
+        "sourcetemplate": ""
+      }
+    },
+    "7c1656ad-2a45-20dc-b905-bd2b9b5ae287": {
+      "JumpTarget": "c1254f57-03cc-9ca9-b5a5-be116fc4aefe",
+      "JumpTargetPoint": 2,
+      "UUID": "7c1656ad-2a45-20dc-b905-bd2b9b5ae287",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1198",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "5135;-11592",
+        "sourcetemplate": ""
+      }
+    },
+    "7e774574-af7c-15a3-5455-eeda6cd48d77": {
+      "JumpTarget": "49e05457-4fea-6835-ffe6-f5358314b1cb",
+      "JumpTargetPoint": 2,
+      "UUID": "7e774574-af7c-15a3-5455-eeda6cd48d77",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1219",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3215;-13782",
+        "sourcetemplate": ""
+      }
+    },
+    "7fe8d6b3-d55b-4537-9a8e-81b8ff29e9f4": {
+      "SourceNode": "923b8c29-d588-ec38-fe07-1283dee89f04",
+      "UUID": "7fe8d6b3-d55b-4537-9a8e-81b8ff29e9f4",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2e58143f-9c97-bdbd-3a68-b1a52a412e49"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1227",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Visual State)",
+        "position": "2255;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "81085c9f-2415-2a4b-82e9-5dccdc4b3ac1": {
+      "UUID": "81085c9f-2415-2a4b-82e9-5dccdc4b3ac1",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "77f510dc-774f-12bb-c250-6386473b709c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperMelee_000_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "26062990-9018-4845-a520-d737837fa207",
+              "value": false,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_StartCaravanEscort"
+            },
+            {
+              "UUID": "cb3bc317-8358-47f4-831e-44ff812ec2b0",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_AcquiredMoonlanternWithoutFight"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a71b2b73-8f69-4b57-9b63-ed99744db0e6",
+              "Text": {
+                "Handle": "hb51c20a6g538dg4d88g9165gb3de515a87d7",
+                "Value": "A pleasure to keep my weapon stayed for once. Go on, the lantern's yours."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1563",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Came with Harpers hasmet - Avoided combat",
+        "position": "15;-13344",
+        "sourcetemplate": ""
+      }
+    },
+    "817a2e0e-05dc-837e-0868-22425c9c5f95": {
+      "UUID": "817a2e0e-05dc-837e-0868-22425c9c5f95",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b4cf990a-5c73-7008-ebf9-495306978a70"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d8c7e59a-921b-4b46-ad0c-bc44401299af",
+              "Text": {
+                "Handle": "h44be9304g97bcg4dafga134gafcfa8961a30",
+                "Value": "No lantern? Damnable cultist. Only a fool would play your bloody games."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1209",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6415;-14877",
+        "sourcetemplate": ""
+      }
+    },
+    "8399c266-b5ab-da04-de0a-b55c2645f735": {
+      "UUID": "8399c266-b5ab-da04-de0a-b55c2645f735",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e87351fe-3825-4c28-df43-ebd2c67c27f4",
+        "6f2d3198-c279-1e8a-5379-2d440d4209a2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "72eba131-690c-4448-b12e-25c4e3a1b88d",
+              "Text": {
+                "Handle": "h66214eefgcfa4g41b2gab78gbddf65e91a66",
+                "Value": "<i>Hand over the lantern.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1206",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player has lantern",
+        "position": "5775;-15096",
+        "sourcetemplate": ""
+      }
+    },
+    "859ae0c1-c7d6-1f74-2efb-7b51b22d3b8c": {
+      "RollSuccess": true,
+      "UUID": "859ae0c1-c7d6-1f74-2efb-7b51b22d3b8c",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "49e05457-4fea-6835-ffe6-f5358314b1cb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1150",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "3215;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "860881e7-9a17-d743-38f9-0151824520fa": {
+      "UUID": "860881e7-9a17-d743-38f9-0151824520fa",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a9ad86d6-0053-9569-03ca-e10f069da9a8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "69ac556a-7c78-43f5-9bea-f8efeda31b42",
+              "value": false,
+              "paramval": 0,
+              "Name": "SCL_Drider_Event_GiveMoonlantern"
+            },
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": false,
+              "paramval": 1,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ca5749b4-1c9d-4bed-bb16-2d0a214b5249",
+              "Text": {
+                "Handle": "ha211d36egab7dg4b89g9781g8b7bfdcb518e",
+                "Value": "Sorry. I don't have it anymore."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1213",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player lost lantern",
+        "position": "5775;-14658",
+        "sourcetemplate": ""
+      }
+    },
+    "8f9bc739-6015-7775-4e86-f9fae439cbf7": {
+      "UUID": "8f9bc739-6015-7775-4e86-f9fae439cbf7",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c698ada0-8cbd-a51a-222c-d47bd2204dfc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c482074-29ef-e01d-7b8d-97b9a20cc371",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_PlayersAttackHarpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f957eb7a-b33f-4d1f-922e-90cc4248b007",
+              "Text": {
+                "Handle": "hf35d4f56gab1bg4046g9af8g663cf567296b",
+                "Value": "How about I just kill you and keep the lantern for myself?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1131",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Harpers have lantern",
+        "position": "5775;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "90902458-4844-f703-35b3-3a92e6b59ff9": {
+      "UUID": "90902458-4844-f703-35b3-3a92e6b59ff9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "300b210b-842f-bec4-4449-36bd39c04202",
+        "1c861222-94d8-6119-3832-c261dc642004",
+        "2b9633c0-f451-5a5d-7a07-79263dbaf7ff"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8f74d144-041e-4035-a9ac-72f41fc32de7"
+                ],
+                "TagNames": [
+                  "MALE"
+                ]
+              }
+            ],
+            "RuleString": "MALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "800ef2a7-deee-4d0f-b115-5f6d8f5d11c8",
+              "Text": {
+                "Handle": "h7bf38ea6g90b6g47f6gabd2g0b8864ac388a",
+                "Value": "Talk. Why in the hells would a cultist turn on his kind?"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3806477c-65a7-4100-9f92-be4c12c4fa4f"
+                ],
+                "TagNames": [
+                  "FEMALE"
+                ]
+              }
+            ],
+            "RuleString": "FEMALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "0ee6dafa-36df-4a6c-b097-dbe5613bd1fd",
+              "Text": {
+                "Handle": "h9c30ed81gdb40g4af8ga1bcge99f15566e4b",
+                "Value": "Talk. Why in the hells would a cultist turn on her kind?"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "587562c5-28d2-4209-9fbb-5761b4d1d90e",
+              "Text": {
+                "Handle": "h7b25f5b2g0967g4379gb941g8fc7b2306af1",
+                "Value": "Talk. Why in the hells would a cultist turn on their kind?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1218",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-14658",
+        "sourcetemplate": ""
+      }
+    },
+    "923b8c29-d588-ec38-fe07-1283dee89f04": {
+      "UUID": "923b8c29-d588-ec38-fe07-1283dee89f04",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "90902458-4844-f703-35b3-3a92e6b59ff9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1220",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "2255;-14658",
+        "sourcetemplate": "",
+        "stateContext": "Harper points blade at the player."
+      }
+    },
+    "963f49fc-52f9-ed65-2e32-d4eb61856d8b": {
+      "UUID": "963f49fc-52f9-ed65-2e32-d4eb61856d8b",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c482074-29ef-e01d-7b8d-97b9a20cc371",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_PlayersAttackHarpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2e4f7ac3-ae01-43dd-82a6-23df941dbf45",
+              "Text": {
+                "Handle": "h6a4ec29cg8c94g40a7gb1c6g477b756b08c6",
+                "Value": "Your mission is fiction, snake - and Harpers do not ally with liars. We silence them."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1183",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4495;-11811",
+        "sourcetemplate": ""
+      }
+    },
+    "9f499401-b83d-c2d6-1aba-f2bcf433e8bd": {
+      "UUID": "9f499401-b83d-c2d6-1aba-f2bcf433e8bd",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2d5fb2d7-ef2a-fab4-891f-d835723c9f40",
+        "3781bc5c-9272-5c36-abc8-94467ea9137d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "26062990-9018-4845-a520-d737837fa207",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_StartCaravanEscort"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1568",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC - None of them has the lantern",
+        "position": "15;-14220",
+        "sourcetemplate": ""
+      }
+    },
+    "a46bc459-6d83-ea33-79c3-194e3d0da91d": {
+      "UUID": "a46bc459-6d83-ea33-79c3-194e3d0da91d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "11c205ce-a3dd-425d-b1db-041c20e5c295",
+              "Text": {
+                "Handle": "h578b5359g99b1g4d73g8287g64f68bf3e5ca",
+                "Value": "It's time you seize what's yours. Check the drider - take the lantern."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1216",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-12906",
+        "sourcetemplate": ""
+      }
+    },
+    "a80376db-fcc1-1481-c4b7-03e33b21d35f": {
+      "UUID": "a80376db-fcc1-1481-c4b7-03e33b21d35f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e02c9749-8a77-467f-9770-a17585e8685e",
+              "Text": {
+                "Handle": "h5a1bcf67g6243g4494g8af3gb38c789d125a",
+                "Value": "An inn - Last Light, it's called. A place you can sigh without the shadow-beasts hearing."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1054",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6095;-15315",
+        "sourcetemplate": ""
+      }
+    },
+    "a9ad86d6-0053-9569-03ca-e10f069da9a8": {
+      "JumpTarget": "817a2e0e-05dc-837e-0868-22425c9c5f95",
+      "JumpTargetPoint": 1,
+      "UUID": "a9ad86d6-0053-9569-03ca-e10f069da9a8",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1214",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "6095;-14658",
+        "sourcetemplate": ""
+      }
+    },
+    "ab570205-a72b-bb3a-5501-aedb5382698c": {
+      "JumpTarget": "ec5125cc-a561-a541-ef4b-498df5fd4134",
+      "JumpTargetPoint": 1,
+      "UUID": "ab570205-a72b-bb3a-5501-aedb5382698c",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1587",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "5775;-14001",
+        "sourcetemplate": ""
+      }
+    },
+    "ac398900-f7a1-db5e-7ace-7bc005f8e6b9": {
+      "UUID": "ac398900-f7a1-db5e-7ace-7bc005f8e6b9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d7988b15-5907-1add-bdf3-9087c4e13969"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "69ac556a-7c78-43f5-9bea-f8efeda31b42",
+              "value": true,
+              "paramval": 0,
+              "Name": "SCL_Drider_Event_GiveMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c482074-29ef-e01d-7b8d-97b9a20cc371",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_PlayersAttackHarpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9ec76a26-af6e-4568-9ed1-b03f6b4d6dec",
+              "Text": {
+                "Handle": "h56a33d76g74dfg4235gbb44g622899fcf1f8",
+                "Value": "I'm not here to explain myself - I just want the lantern. Hand it over, or die."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1145",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Harpers have lantern",
+        "position": "3855;-11154",
+        "sourcetemplate": ""
+      }
+    },
+    "acb584e5-9184-9b54-b79d-0396f2c4f6b5": {
+      "UUID": "acb584e5-9184-9b54-b79d-0396f2c4f6b5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2c194f29-f1f6-30d0-b919-4b853d5fe97d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5565fa4f-ec30-472a-a9ea-7bb7b09390b3",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Harpers_Event_ShowHavenLocation"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3fb8fdf9-0b12-4113-ada3-aa87e1c859c5",
+              "Text": {
+                "Handle": "h5e4072f4g6206g463ag941cg128cd64e5680",
+                "Value": "A dangerous choice - but yours to make. I will mark your map."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1006",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6095;-13344",
+        "sourcetemplate": ""
+      }
+    },
+    "ae156e12-ea59-e195-990c-c0509bf6e1e5": {
+      "UUID": "ae156e12-ea59-e195-990c-c0509bf6e1e5",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4d983942-19ab-bcc2-6591-bcc17241f223",
+        "c9a04622-38d1-0734-fa9b-83cef7210885"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1190",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "1615;-14658",
+        "sourcetemplate": "",
+        "stateContext": "Moonlantern is stowed. Neither Harper nor player holding it"
+      }
+    },
+    "aeaee22a-1b51-8345-e186-57f94ac78f68": {
+      "UUID": "aeaee22a-1b51-8345-e186-57f94ac78f68",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d7855a93-d1c9-a18b-49c2-35257caffcdb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1189",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "655;-15096",
+        "sourcetemplate": "",
+        "stateContext": "Harper holds lantern aloft"
+      }
+    },
+    "b0e7dd5c-b3ac-9d81-afa1-879636ea1322": {
+      "RollSuccess": false,
+      "UUID": "b0e7dd5c-b3ac-9d81-afa1-879636ea1322",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6edc66f2-b518-4868-c0f1-a4047fcfb64b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1176",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "4175;-11373",
+        "sourcetemplate": ""
+      }
+    },
+    "b4cf990a-5c73-7008-ebf9-495306978a70": {
+      "UUID": "b4cf990a-5c73-7008-ebf9-495306978a70",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c482074-29ef-e01d-7b8d-97b9a20cc371",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_PlayersAttackHarpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8a49f2ab-1631-4522-800d-8472627ea6b7",
+              "Text": {
+                "Handle": "h3605d7eega539g4141g96e2ga96bbec0d02a",
+                "Value": "And I am no fool."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1215",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6735;-14877",
+        "sourcetemplate": ""
+      }
+    },
+    "bc19e1b6-09f1-14f6-dbfb-6af53988e590": {
+      "UUID": "bc19e1b6-09f1-14f6-dbfb-6af53988e590",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "acb584e5-9184-9b54-b79d-0396f2c4f6b5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fe3a4379-6d1f-45dd-a223-3e89034ee244",
+              "Text": {
+                "Handle": "h45dd5f11g6e72g4f5eg9cd0g7f4d0e9e7ee3",
+                "Value": "I will make my way there in my own time."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1136",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Harpers have lantern",
+        "position": "5775;-13344",
+        "sourcetemplate": ""
+      }
+    },
+    "bc565889-9861-dd1b-d4dc-2e2ebb88fc4a": {
+      "UUID": "bc565889-9861-dd1b-d4dc-2e2ebb88fc4a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d5242101-96f4-28be-1769-7550621a2d5a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ab00b372-7dc5-48a1-9150-32828211bc22",
+              "Text": {
+                "Handle": "hf8f55584g0d48g44abg8bd5g931455a669cc",
+                "Value": "I'm infected with their parasite, but I'm seeking a cure."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1581",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3855;-13782",
+        "sourcetemplate": ""
+      }
+    },
+    "c0f2bbf1-2794-e8df-8d76-63d9af3e28d0": {
+      "UUID": "c0f2bbf1-2794-e8df-8d76-63d9af3e28d0",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fe519f3f-c08b-41e5-ba73-58168eb90d8f",
+              "Text": {
+                "Handle": "h89482475ge92bg483cgae07g0820dbdb9964",
+                "Value": "But remember: you don't just fight shadows. You fight what hides inside."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1180",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "5455;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "c1254f57-03cc-9ca9-b5a5-be116fc4aefe": {
+      "UUID": "c1254f57-03cc-9ca9-b5a5-be116fc4aefe",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "efca3530-8336-08ec-016d-288eb710a7e8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0deb74c7-aa7e-4ca7-b6a9-a111cd65a041",
+              "Text": {
+                "Handle": "h5d109306g7e41g4ce7g8e47gd24e826a6127",
+                "Value": "Then I can only apologise. I was not aware of this mission."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper]*DUPE*Lower blade to idle pose <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harper lowers blade while speaking.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1177",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4495;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "c17506de-d9ed-0a37-febd-c6adc838109f": {
+      "UUID": "c17506de-d9ed-0a37-febd-c6adc838109f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "acb584e5-9184-9b54-b79d-0396f2c4f6b5"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "306b9b05-1057-4770-aa17-01af21acd650",
+              "value": true,
+              "paramval": 1,
+              "Name": "AVATAR"
+            },
+            {
+              "UUID": "642d2aee-e3df-47e3-9f47-bbcd441bb9e0",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_SHADOWHEART"
+            },
+            {
+              "UUID": "8eca8027-996c-4c61-bec6-77f853de295b",
+              "value": false,
+              "paramval": 1,
+              "Name": "SHADOWHEART_ENEMYOFSHARPATH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6d44047d-c6cc-49aa-954d-93c8de0f03f0",
+              "Text": {
+                "Handle": "h18931d9bg1bbfg4779g97cegc8eff108ef4f",
+                "Value": "My goddess protects me. I'll make my own way there."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1577",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Avatar Shadowheart - Not enemy of Shar",
+        "position": "5775;-13125",
+        "sourcetemplate": ""
+      }
+    },
+    "c4f477cb-a63b-69da-d496-4cb3dad7b153": {
+      "UUID": "c4f477cb-a63b-69da-d496-4cb3dad7b153",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c0f2bbf1-2794-e8df-8d76-63d9af3e28d0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": false,
+              "paramval": 1,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "69ac556a-7c78-43f5-9bea-f8efeda31b42",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_Event_GiveMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "559fd614-eedf-481e-a099-1a83e8248c7c",
+              "Text": {
+                "Handle": "h80813230g156eg47dfg93deg54c4992e781e",
+                "Value": "The lantern is yours - Jaheira's orders. Take it, and it will guide your way to the Towers."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper] hand player the Moomlantern <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harper hands player the Moonlantern",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1178",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Harper has Moonlantern",
+        "position": "5135;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "c698ada0-8cbd-a51a-222c-d47bd2204dfc": {
+      "UUID": "c698ada0-8cbd-a51a-222c-d47bd2204dfc",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8041f5bd-fffe-4f01-b309-55124a65dcd4",
+              "Text": {
+                "Handle": "h701c0f4dg891bg47bagb84eg56002870496f",
+                "Value": "Rotten swine!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1154",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6095;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "c9a04622-38d1-0734-fa9b-83cef7210885": {
+      "UUID": "c9a04622-38d1-0734-fa9b-83cef7210885",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7fe8d6b3-d55b-4537-9a8e-81b8ff29e9f4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4ac092c3-2d44-4959-9a88-30d07e1919be",
+              "Text": {
+                "Handle": "ha70d3276gd5f5g4fdfga350g81c8294b22d0",
+                "Value": "Jaheira's godsend. Such strange company you keep."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper] Draw weapon with his left hand, make stop sign with his right hand <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Addressed to player. Harper raises his blade and points at the player.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1163",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Very suspicious",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Met at Last Light",
+        "position": "1935;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "d5242101-96f4-28be-1769-7550621a2d5a": {
+      "UUID": "d5242101-96f4-28be-1769-7550621a2d5a",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e49e7201-d766-6aa2-7dc2-4839df3b5e21"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harper lowers bow",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1585",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "4175;-13782",
+        "sourcetemplate": ""
+      }
+    },
+    "d7855a93-d1c9-a18b-49c2-35257caffcdb": {
+      "UUID": "d7855a93-d1c9-a18b-49c2-35257caffcdb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4ad795ad-9a52-5abc-1bfc-03f630764758"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8de0290c-96b9-4c3c-abdd-530d7d7d9384",
+              "Text": {
+                "Handle": "h1baec255gf730g43d3gadb4gec6b91465f81",
+                "Value": "Incredible. A light so radiant, not even the curse can dim it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Musing, not really said to player.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1039",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Light from lantern - [CINE][WI]",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-15096",
+        "sourcetemplate": ""
+      }
+    },
+    "d7988b15-5907-1add-bdf3-9087c4e13969": {
+      "JumpTarget": "c698ada0-8cbd-a51a-222c-d47bd2204dfc",
+      "JumpTargetPoint": 1,
+      "UUID": "d7988b15-5907-1add-bdf3-9087c4e13969",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1155",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "4175;-11154",
+        "sourcetemplate": ""
+      }
+    },
+    "d802a32e-d69e-8756-839a-0f2e21a3c346": {
+      "UUID": "d802a32e-d69e-8756-839a-0f2e21a3c346",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a46bc459-6d83-ea33-79c3-194e3d0da91d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "77f510dc-774f-12bb-c250-6386473b709c",
+              "value": false,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperMelee_000_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "26062990-9018-4845-a520-d737837fa207",
+              "value": false,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_StartCaravanEscort"
+            },
+            {
+              "UUID": "cb3bc317-8358-47f4-831e-44ff812ec2b0",
+              "value": false,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_AcquiredMoonlanternWithoutFight"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "77f510dc-774f-12bb-c250-6386473b709c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperMelee_000_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fdc88091-abf1-4ea5-a70f-0cbe848eccc3",
+              "Text": {
+                "Handle": "h5e94156bg34deg4460gb432ga4fd1f9f3c5c",
+                "Value": "Extraordinary. You strike even truer than I'd expected."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N945",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Came with Harpers",
+        "position": "15;-12906",
+        "sourcetemplate": ""
+      }
+    },
+    "d9d77153-6abe-2428-83c5-b77b7f2d4a5a": {
+      "UUID": "d9d77153-6abe-2428-83c5-b77b7f2d4a5a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d7988b15-5907-1add-bdf3-9087c4e13969"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c482074-29ef-e01d-7b8d-97b9a20cc371",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_PlayersAttackHarpers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6e67c667-9930-45fb-bada-780abcbd4d5b",
+              "Text": {
+                "Handle": "h4e769cbegf9d9g49a8g876dg93e09a6f1c24",
+                "Value": "<i>Attack him.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1201",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player has lantern",
+        "position": "3855;-10935",
+        "sourcetemplate": ""
+      }
+    },
+    "dba74c15-5bd7-8985-f8ee-6c6bd741b3e8": {
+      "UUID": "dba74c15-5bd7-8985-f8ee-6c6bd741b3e8",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5565fa4f-ec30-472a-a9ea-7bb7b09390b3",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Harpers_Event_ShowHavenLocation"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3fd2a70c-e023-4f68-bb53-d6194871e45a",
+              "Text": {
+                "Handle": "h2c8cf455g8c94g4a1dga900ga3e448c9055a",
+                "Value": "Let the lantern's light be your guide. I'll mark your map, should you lose the way."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1166",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Harper marks player's map with Last Light",
+        "position": "7055;-15096",
+        "sourcetemplate": ""
+      }
+    },
+    "ddd8cc43-9fca-29e0-7266-4f486b4ade3c": {
+      "UUID": "ddd8cc43-9fca-29e0-7266-4f486b4ade3c",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "77f510dc-774f-12bb-c250-6386473b709c",
+              "value": false,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperMelee_000_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "26062990-9018-4845-a520-d737837fa207",
+              "value": false,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_StartCaravanEscort"
+            },
+            {
+              "UUID": "cb3bc317-8358-47f4-831e-44ff812ec2b0",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_AcquiredMoonlanternWithoutFight"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "77f510dc-774f-12bb-c250-6386473b709c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperMelee_000_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "96e1723e-beeb-4689-84e3-8d1d14dc9ef4",
+              "Text": {
+                "Handle": "h2f67b874gb736g41c6gbf22g37b4db560a51",
+                "Value": "A tongue of pure silver. Take the lantern from the drider - you've earned it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1559",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Came with Harpers - Avoided combat",
+        "position": "15;-13782",
+        "sourcetemplate": ""
+      }
+    },
+    "de56a2a6-98d0-bc6c-0530-66fcf8419728": {
+      "RollSuccess": false,
+      "UUID": "de56a2a6-98d0-bc6c-0530-66fcf8419728",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "719268e6-5dd1-438e-faad-7cb6865f4f7e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1151",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "3215;-14001",
+        "sourcetemplate": ""
+      }
+    },
+    "e011e477-bc37-7414-0830-a5531d73fc50": {
+      "UUID": "e011e477-bc37-7414-0830-a5531d73fc50",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dba74c15-5bd7-8985-f8ee-6c6bd741b3e8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "69ac556a-7c78-43f5-9bea-f8efeda31b42",
+              "value": true,
+              "paramval": 0,
+              "Name": "SCL_Drider_Event_GiveMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "20908138-a9cc-4ea4-819e-0200215fb976",
+              "Text": {
+                "Handle": "hb9ca2a23ge605g4462ga12cge87f1a9e4e0c",
+                "Value": "Thank you. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Harper] motion within mocap <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player hands lantern to Harper, who takes it and puts it in inventory. Fine to show only basic upper-body motions.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1208",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "6415;-15096",
+        "sourcetemplate": ""
+      }
+    },
+    "e1c22ba9-0cc9-f47a-3a9e-dbab7a2e74ce": {
+      "UUID": "e1c22ba9-0cc9-f47a-3a9e-dbab7a2e74ce",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "706adbfa-e712-353a-6e51-1da22b4f9048"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4c2025cd-f8ca-47f0-bfc7-bd2325f0ca27",
+              "Text": {
+                "Handle": "he8aa3ed4gc5efg4fc6gb01bg14a5b661cbd3",
+                "Value": "I couldn't bear the atrocities committed in the Absolute's name."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1144",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3855;-14220",
+        "sourcetemplate": ""
+      }
+    },
+    "e34c348c-6e9a-43c3-4a6a-c9e82ed12595": {
+      "UUID": "e34c348c-6e9a-43c3-4a6a-c9e82ed12595",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ec5125cc-a561-a541-ef4b-498df5fd4134",
+        "8399c266-b5ab-da04-de0a-b55c2645f735",
+        "860881e7-9a17-d743-38f9-0151824520fa",
+        "8f9bc739-6015-7775-4e86-f9fae439cbf7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3233a6a9-12f7-49ca-865a-1f53f33c0195",
+              "Text": {
+                "Handle": "h59a4784eg5d3dg4890gb887g98dcbedcf0d1",
+                "Value": "Give me the lantern, and follow. I know a refuge from the darkness. You can rest there."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1197",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player has lantern",
+        "position": "5135;-14877",
+        "sourcetemplate": ""
+      }
+    },
+    "e476278a-ee5f-de8f-e2ed-7eb8697c6b98": {
+      "UUID": "e476278a-ee5f-de8f-e2ed-7eb8697c6b98",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6ce55fca-d51f-d1a7-de48-144497fea0b6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[Player] lifts lantern into the air <TarikS>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player lifts lantern and illuminates their face.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1044",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player has lantern already",
+        "position": "335;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "e49e7201-d766-6aa2-7dc2-4839df3b5e21": {
+      "UUID": "e49e7201-d766-6aa2-7dc2-4839df3b5e21",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e34c348c-6e9a-43c3-4a6a-c9e82ed12595",
+        "2fee0574-ef0a-f993-0b67-8538711d6802"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1225",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "4495;-14220",
+        "sourcetemplate": "",
+        "stateContext": "Harper no longer points blade at player."
+      }
+    },
+    "e87351fe-3825-4c28-df43-ebd2c67c27f4": {
+      "Result": true,
+      "UUID": "e87351fe-3825-4c28-df43-ebd2c67c27f4",
+      "Constructor": "FallibleQuestionResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e011e477-bc37-7414-0830-a5531d73fc50"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1018",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "FallibleQuestionResult",
+        "position": "6095;-15096",
+        "sourcetemplate": ""
+      }
+    },
+    "ec5125cc-a561-a541-ef4b-498df5fd4134": {
+      "UUID": "ec5125cc-a561-a541-ef4b-498df5fd4134",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a80376db-fcc1-1481-c4b7-03e33b21d35f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e5f53388-cbb3-46b6-a39f-0c3bda1d2661",
+              "Text": {
+                "Handle": "hd60f987agf3f0g40a4gb647g2908d7f3f5aa",
+                "Value": "What sort of refuge do you mean?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1050",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "5775;-15315",
+        "sourcetemplate": ""
+      }
+    },
+    "efca3530-8336-08ec-016d-288eb710a7e8": {
+      "SourceNode": "e49e7201-d766-6aa2-7dc2-4839df3b5e21",
+      "UUID": "efca3530-8336-08ec-016d-288eb710a7e8",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c4f477cb-a63b-69da-d496-4cb3dad7b153",
+        "369a105c-e4f5-c185-63cf-5bc0c7cee6d5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1230",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Visual State)",
+        "position": "4815;-12249",
+        "sourcetemplate": ""
+      }
+    },
+    "f1c78ce5-13e3-d4bc-711e-dd1c3a086128": {
+      "UUID": "f1c78ce5-13e3-d4bc-711e-dd1c3a086128",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a48372d0-609f-48a4-9774-956f6f614c3c",
+              "value": false,
+              "paramval": 0,
+              "Name": "SCL_Drider_State_HasDriderMoonlantern"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5565fa4f-ec30-472a-a9ea-7bb7b09390b3",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Harpers_Event_ShowHavenLocation"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "684ffeea-cacc-49a1-abaf-c9039e27f90b",
+              "Text": {
+                "Handle": "hbff31580gfbdcg4d6dg9ad3g63c4cc1875a1",
+                "Value": "Lead on, then."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1599",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Harper does not have lantern",
+        "position": "5775;-13782",
+        "sourcetemplate": ""
+      }
+    },
+    "fa9eff75-dc2d-8da2-0f78-e3392ed117e1": {
+      "UUID": "fa9eff75-dc2d-8da2-0f78-e3392ed117e1",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "15f38e6b-551e-c7e7-e0c4-dece5e0a48ef"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1f9bd579-3b3e-4fd0-b42d-9c1897493ef7",
+              "Text": {
+                "Handle": "hcd7c0c4bgc7bbg4694ga427gd89d5f3d6b1d",
+                "Value": "I'm not one of them. They took me prisoner."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1143",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3855;-14439",
+        "sourcetemplate": ""
+      }
+    },
+    "ff90a1e0-f335-cfe5-69b6-a11134d38dfc": {
+      "UUID": "ff90a1e0-f335-cfe5-69b6-a11134d38dfc",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2b45deea-bc0e-4184-9bef-5db00521e4ef"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2427dfb2-cee3-4e58-a791-241f96479c56",
+              "Text": {
+                "Handle": "hc8db2daagd8bcg45b3gb184g2eedba2e319a",
+                "Value": "I succumbed to their temptations. You gave me an opportunity to escape."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1221",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3855;-14001",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a3ddf7c3-6d49-64bb-ac22-d39b77cc35b9",
+      "Index": 0,
+      "List": [
+        "b9f6bb1e-f4cd-4bb3-a7f0-80aad9bae8c8"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Harper Branthos",
+        "Type": "character",
+        "MapKey": "b9f6bb1e-f4cd-4bb3-a7f0-80aad9bae8c8",
+        "Name": "S_SCL_Drider_Harper_Melee_000",
+        "ParentTemplateId": null,
+        "TemplateName": "efbe80c5-9d37-4c8c-ba41-746d42586717"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "25fb4326-6a1a-06d9-6633-3edc715e755d",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Harper leader after the fight with the Drider. You started the fight on drider's side, but switched and sided with the Harpers. They take the lantern and if you want it, you need to attack them or convince them to give it to you."
+}

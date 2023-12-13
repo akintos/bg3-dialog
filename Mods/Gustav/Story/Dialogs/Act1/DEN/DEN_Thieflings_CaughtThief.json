@@ -1,0 +1,2955 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_Thieflings_CaughtThief.lsj",
+  "UUID": "734c88bb-38e5-1b9f-0d71-f0bf7ee636d6",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 1,
+    "1": 0
+  },
+  "RootNodes": [
+    "d3264138-86b4-b6f3-e738-97194fc510f3"
+  ],
+  "Nodes": {
+    "06339d92-9cff-5c5c-a36f-a115cd0592e5": {
+      "UUID": "06339d92-9cff-5c5c-a36f-a115cd0592e5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "376c4f4c-251d-1916-8308-a77c0ee339fd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f109378c-e3a0-a0ce-79b0-7938eff72106",
+              "value": true,
+              "paramval": 0,
+              "Name": "DEN_Thieflings_Event_DropPickpocketLoot"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e1cfefd0-9fe9-ee58-a1d7-3bf8ac71697f",
+              "Text": {
+                "Handle": "h4360c3ecg277eg4afeg9cf6g75dad1c2b9fd",
+                "Value": "Aah! Let go of me!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[player] grabs [Silfy], she screams and fights back unsuccesfully",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "Child being shaken by player. She struggles free, and a few trinkets fall to the ground",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N75",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Scared and in pain",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "tears",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "0ff02de3-f153-8ecb-02bc-e9261289d9a2": {
+      "UUID": "0ff02de3-f153-8ecb-02bc-e9261289d9a2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "527d5055-2e82-7d4d-2371-3fdfda3550e4"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ec548492-a88e-ae81-ca4d-7970d804ec5b",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Event_PlayerRobbed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5069e274-6ede-e00d-aa94-784648a0499e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Knows_PlayerRobbed"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "be47ed4b-84ee-4887-920f-0dea18bf2b5f",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Thieflings.ToldRobbed"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "422df997-3fb0-d998-26d2-b327035defaf",
+              "Text": {
+                "Handle": "h1dea86a9g437eg4b47ga787gd2b45aeb3518",
+                "Value": "Right. You def'nately caught me the first and only time I stole. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "Awkward lying",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N56",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "She has stolen from the player before. She is a terrible liar.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "122f65da-6b8f-f666-0baa-822912a18443": {
+      "RollSuccess": false,
+      "UUID": "122f65da-6b8f-f666-0baa-822912a18443",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a73eb6a3-2f4f-962f-00d1-e39afd48fd53"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N411",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;672",
+        "sourcetemplate": ""
+      }
+    },
+    "142845a7-8c32-2a9e-bf4c-de8c8684ac53": {
+      "UUID": "142845a7-8c32-2a9e-bf4c-de8c8684ac53",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5bf31cd4-e497-7ea4-7a4c-699b8579730e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a6f6f8ec-9396-be91-ed34-2b821dc1dc4b",
+              "Text": {
+                "Handle": "hb0789ba9g27e9g432fg863bg7353c89bb479",
+                "Value": "I can't give it back, though. It's already in the stash. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N62",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "199c778f-e5e4-2a80-9927-cbbfad661ad6": {
+      "JumpTarget": "95de4c99-3259-8fe9-7e14-f575c3dca374",
+      "JumpTargetPoint": 1,
+      "UUID": "199c778f-e5e4-2a80-9927-cbbfad661ad6",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N419",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;891",
+        "sourcetemplate": ""
+      }
+    },
+    "1a717060-2920-5b29-4ea8-7a5570d79e5d": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Strength",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "1a717060-2920-5b29-4ea8-7a5570d79e5d",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ba562ab8-f640-ac05-b3d3-52f02a556f03"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "017f7709-c709-acc6-663d-790b9f9da7ec",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_State_MessedWithMolsKids"
+            },
+            {
+              "UUID": "1a4dbc34-b6ce-0225-847e-afa401c5e6c9",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Thieflings_State_PCShookPickpocketSister"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "7b9acbd6-82ea-405f-b1b9-ad46aea15da5",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Thieflings_Event_ShookThief"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b5db887d-46f0-f5fe-f371-aa4d51b12acf",
+              "Text": {
+                "Handle": "h0d3fd5c1g8a4ag44deg9780g0e419036bedd",
+                "Value": "<i>Lunge at her. Remorse or not, she tried to rob you.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N420",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Athletics",
+        "position": "1935;891",
+        "sourcetemplate": ""
+      }
+    },
+    "1bda5a02-7737-be34-b845-f1a229988e10": {
+      "UUID": "1bda5a02-7737-be34-b845-f1a229988e10",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9f10a7d7-9db2-0037-ba17-3ce22d44d038"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ec548492-a88e-ae81-ca4d-7970d804ec5b",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Event_PlayerRobbed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0908b740-5afd-9689-c552-64f3987b4046",
+              "Text": {
+                "Handle": "h0dd6a157g6e72g4726g88d3g14fa75419d4e",
+                "Value": "That's, um, really nice of you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N60",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "1ef95985-81fa-7557-dc7e-ffc758e9123d": {
+      "UUID": "1ef95985-81fa-7557-dc7e-ffc758e9123d",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "79ce40de-0ef7-8236-8acc-2e5b171af01f",
+        "8d00da01-78e6-eebf-d623-37ae48095bb1",
+        "7e5eaa26-5237-adbc-3100-063eb80885a0",
+        "99718224-6911-02b7-e5c3-e0e42caee662",
+        "384728f2-e5b3-90a4-4983-0b2e0cd5594b",
+        "bd0557db-796c-ea64-01ac-712b7b0684e4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Silfy jerks her hand out of the player's pack and stares at them, then she bursts into tears, covering her face.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N659",
+        "InternalNodeContext": "SFX: child crying",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "235f53b0-11db-00d2-d9a4-cbeb277699bf": {
+      "UUID": "235f53b0-11db-00d2-d9a4-cbeb277699bf",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bd734cae-26fd-633d-075b-07c73b121d1b",
+        "3015d682-be01-d256-75fc-4f440ea8a4d2",
+        "1a717060-2920-5b29-4ea8-7a5570d79e5d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3a0b6fa3-21c8-23de-50b4-9264a5a0f9d3",
+              "Text": {
+                "Handle": "h990fb8abgf371g4abega799gae79baa4658d",
+                "Value": "*You see her hand in your bags... and the shame in her heart.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Silfy] puts hand in pcs backpack",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "Player's bag",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N413",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "FX_MindRead_Spell_LeadIn",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_MindRead_Spell_LeadIn",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;453",
+        "sourcetemplate": ""
+      }
+    },
+    "2e1242c1-6422-5c4f-1c10-84fddb7d49d6": {
+      "JumpTarget": "79ce40de-0ef7-8236-8acc-2e5b171af01f",
+      "JumpTargetPoint": 1,
+      "UUID": "2e1242c1-6422-5c4f-1c10-84fddb7d49d6",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N226",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1935;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "3015d682-be01-d256-75fc-4f440ea8a4d2": {
+      "UUID": "3015d682-be01-d256-75fc-4f440ea8a4d2",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3855031c-5980-2909-77a3-dd4da2567433",
+        "199c778f-e5e4-2a80-9927-cbbfad661ad6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a1a932ee-f66a-08af-4bf0-bf77790052f7",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Hideout_Event_BefriendedThieflings"
+            },
+            {
+              "UUID": "fa3e62c7-8eb8-43e5-fbd0-30ce7bfc2bed",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Hideout_Event_EasyOnPickpocket"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34f4e7dc-2211-a728-2772-46696fe03adf",
+              "Text": {
+                "Handle": "h5043a61fgc58ag4558gacdfg47c0555e3982",
+                "Value": "Something tells me the thieving life isn't for you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N414",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;672",
+        "sourcetemplate": ""
+      }
+    },
+    "376c4f4c-251d-1916-8308-a77c0ee339fd": {
+      "UUID": "376c4f4c-251d-1916-8308-a77c0ee339fd",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cd0202d4-9eed-298c-15c5-53895c39799f",
+              "Text": {
+                "Handle": "h0b6eafbbgd5a7g4aaagb7a3g54975911467c",
+                "Value": "Help!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Silfy] runs away",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "Escapes the player's grasp, runs away. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N76",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "[Silfy] runs away",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;15",
+        "sourcetemplate": ""
+      }
+    },
+    "384728f2-e5b3-90a4-4983-0b2e0cd5594b": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Strength",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "384728f2-e5b3-90a4-4983-0b2e0cd5594b",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "edd0cbdd-0a72-bf4f-1b84-42fcd7a50daa",
+        "43126efe-1cd0-1be3-1f91-e12a1d388dbc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "017f7709-c709-acc6-663d-790b9f9da7ec",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_State_MessedWithMolsKids"
+            },
+            {
+              "UUID": "1a4dbc34-b6ce-0225-847e-afa401c5e6c9",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Thieflings_State_PCShookPickpocketSister"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "7b9acbd6-82ea-405f-b1b9-ad46aea15da5",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Thieflings_Event_ShookThief"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5c18292b-5ff9-409a-f448-61c27b4c2910",
+              "Text": {
+                "Handle": "h6c991903g2eb9g4799g88bcg57cccdbc421d",
+                "Value": "<i>Ignore her theatrics and grab her.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N103",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Athletics",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "3855031c-5980-2909-77a3-dd4da2567433": {
+      "JumpTarget": "9ad45696-3a9f-cf9a-7a45-5241bcd32184",
+      "JumpTargetPoint": 1,
+      "UUID": "3855031c-5980-2909-77a3-dd4da2567433",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N417",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;672",
+        "sourcetemplate": ""
+      }
+    },
+    "39698034-57f7-c406-495f-d96152834d01": {
+      "UUID": "39698034-57f7-c406-495f-d96152834d01",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "66c20573-754c-00cd-8c00-ba51222b35e7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "291fe012-cc67-a673-e374-492bc4036f1b",
+              "Text": {
+                "Handle": "h70be8745gcf8fg4d94gbdd8g5025ec823b10",
+                "Value": "One of the big kids. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[player] secures his/her pouches, [Silfy] rubs her eyes and takes a shuddering breath",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "*The child rubbed her eyes and took a shuddering breath.*",
+        "CinematicObjects": "pouches",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "tears",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "399769a4-e546-1a86-d4de-a49b4cdfc14b": {
+      "JumpTarget": "663bba17-8915-a161-ecce-9c68fbf25a5c",
+      "JumpTargetPoint": 2,
+      "UUID": "399769a4-e546-1a86-d4de-a49b4cdfc14b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N170",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1935;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "408f7558-5b57-70a2-ffc2-422e36a67e03": {
+      "UUID": "408f7558-5b57-70a2-ffc2-422e36a67e03",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "61a739d8-aa91-447c-97a3-4356eeaf701d",
+              "Text": {
+                "Handle": "h2aafab2agbbceg416fgb03dg7ce356d51306",
+                "Value": "Help!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Silfy] runs away",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "The player tries to grab her, but she escapes their grasp.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N663",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "[Silfy] runs away",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;234",
+        "sourcetemplate": ""
+      }
+    },
+    "43126efe-1cd0-1be3-1f91-e12a1d388dbc": {
+      "RollSuccess": false,
+      "UUID": "43126efe-1cd0-1be3-1f91-e12a1d388dbc",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "408f7558-5b57-70a2-ffc2-422e36a67e03"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N111",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "527d5055-2e82-7d4d-2371-3fdfda3550e4": {
+      "UUID": "527d5055-2e82-7d4d-2371-3fdfda3550e4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a14b60c6-f84e-ebe9-f540-c2a7a123222c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "44111193-9c34-155b-b574-2fdaf9e95161",
+              "Text": {
+                "Handle": "h60c17edegb670g4653gbfe5g13cfd320483f",
+                "Value": "I guess I'll try harder not to get caught next time. Bye!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "5724e889-5341-22eb-855b-2a9c625e6ccc": {
+      "RollSuccess": false,
+      "UUID": "5724e889-5341-22eb-855b-2a9c625e6ccc",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "984ca6e2-ef29-01fa-24bd-bb40c3b25344"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N161",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "575187d5-04cd-a470-bf9e-bcc22dea59a3": {
+      "UUID": "575187d5-04cd-a470-bf9e-bcc22dea59a3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "527d5055-2e82-7d4d-2371-3fdfda3550e4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "37563649-ffc8-0437-2005-e66664023326",
+              "Text": {
+                "Handle": "he3173e54g785fg4602gb114g5539f9aa0b56",
+                "Value": "Oh. Okay. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N57",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Sadly",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "5bf31cd4-e497-7ea4-7a4c-699b8579730e": {
+      "UUID": "5bf31cd4-e497-7ea4-7a4c-699b8579730e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a14b60c6-f84e-ebe9-f540-c2a7a123222c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "62389f5f-0010-9d02-ab21-72bc9351ee4f",
+              "Text": {
+                "Handle": "h9518d212ga451g436cga6e7g65878fd4e250",
+                "Value": "Um. Gotta go now."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "634d73a8-141e-c87f-8a76-2c3202803735": {
+      "RollSuccess": true,
+      "UUID": "634d73a8-141e-c87f-8a76-2c3202803735",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "663bba17-8915-a161-ecce-9c68fbf25a5c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N159",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "663bba17-8915-a161-ecce-9c68fbf25a5c": {
+      "UUID": "663bba17-8915-a161-ecce-9c68fbf25a5c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "672a360c-c212-c196-8450-1e0e02e215dd",
+        "2e1242c1-6422-5c4f-1c10-84fddb7d49d6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bacd5652-1cef-5fa2-090b-a839fe499731",
+              "Text": {
+                "Handle": "hc3c00e5fg29efg455fga1f3g349de1b5f4fc",
+                "Value": "*You notice she's trembling. The tears streaming down her cheeks are indeed real.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Silfy]  trembling, tears streaming down her cheeks",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N33",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Nervous",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "tears",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "66c20573-754c-00cd-8c00-ba51222b35e7": {
+      "UUID": "66c20573-754c-00cd-8c00-ba51222b35e7",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c0410ba2-20d5-052a-7b8d-b66cd524f4b4",
+        "f4f76fcc-8c25-b574-ea22-7d6c10d44393"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bb498807-b657-ccd6-3043-981b0afbe0e7",
+              "Text": {
+                "Handle": "hb8d56b2cgfc0bg45fagb59eg9cd5c8bd8663",
+                "Value": "How... how did you catch me?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N52",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "672a360c-c212-c196-8450-1e0e02e215dd": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Strength",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "672a360c-c212-c196-8450-1e0e02e215dd",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a0ff86bb-0538-fab8-c8d9-8f16d87b7762"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "017f7709-c709-acc6-663d-790b9f9da7ec",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_State_MessedWithMolsKids"
+            },
+            {
+              "UUID": "1a4dbc34-b6ce-0225-847e-afa401c5e6c9",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Thieflings_State_PCShookPickpocketSister"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "7b9acbd6-82ea-405f-b1b9-ad46aea15da5",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Thieflings_Event_ShookThief"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e54ff882-f73f-1ad1-855e-a0c2649664e8",
+              "Text": {
+                "Handle": "h37f0ee2bgce54g4362gbcc7g08d3bae74359",
+                "Value": "<i>Lunge at her. Real tears or not, she tried to rob you.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N167",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Athletics",
+        "position": "1935;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "79ce40de-0ef7-8236-8acc-2e5b171af01f": {
+      "UUID": "79ce40de-0ef7-8236-8acc-2e5b171af01f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dbef1cfd-eac1-f66f-102a-c1daa9bf3e0b",
+        "b8c0a9a9-f180-77c9-9637-7c946b0dfca4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a1a932ee-f66a-08af-4bf0-bf77790052f7",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Hideout_Event_BefriendedThieflings"
+            },
+            {
+              "UUID": "fa3e62c7-8eb8-43e5-fbd0-30ce7bfc2bed",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Hideout_Event_EasyOnPickpocket"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "61bea5b3-9bac-1de2-7ed3-1027ec311bf5",
+              "Text": {
+                "Handle": "h8b1f0c20ge269g4579ga7d5geb8e49cd4001",
+                "Value": "Relax, I won't get angry. You didn't even manage to get anything from me.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N130",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "7e5eaa26-5237-adbc-3100-063eb80885a0": {
+      "UUID": "7e5eaa26-5237-adbc-3100-063eb80885a0",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "db804665-782a-74f8-da29-9c7d43431a58"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "50c194d8-08f5-bc4f-3aed-f2f011a17654",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_State_CaughtStealing"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c611ee84-f7ab-a9a7-9743-2da76eb6c85a",
+              "Text": {
+                "Handle": "hdd974154ga1b1g46bdgbd3fg46a8035daeca",
+                "Value": "Get out of my sight."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "8d00da01-78e6-eebf-d623-37ae48095bb1": {
+      "UUID": "8d00da01-78e6-eebf-d623-37ae48095bb1",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "39698034-57f7-c406-495f-d96152834d01"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f8a0608b-666c-4be6-a49c-03b369c10bd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "ROGUE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a1a932ee-f66a-08af-4bf0-bf77790052f7",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Hideout_Event_BefriendedThieflings"
+            },
+            {
+              "UUID": "fa3e62c7-8eb8-43e5-fbd0-30ce7bfc2bed",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Hideout_Event_EasyOnPickpocket"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c45623d9-d7d1-78e8-32cd-4528449d36fd",
+              "Text": {
+                "Handle": "hea47c07egb941g4d2bg910dg0a3ef0b7fe46",
+                "Value": "Well now, <i>someone's </i>starting young. Who taught you that?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N48",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Rogue only",
+        "position": "975;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "95de4c99-3259-8fe9-7e14-f575c3dca374": {
+      "UUID": "95de4c99-3259-8fe9-7e14-f575c3dca374",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "996bb64e-9332-d009-775f-a95ccc3c0432"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "878ec1e9-7f81-0fd2-5fc6-e8d00e7a94b2",
+              "Text": {
+                "Handle": "h4d9f9359g6b7eg474egb21cg67bc34cab0a7",
+                "Value": "I can't do this anymore, Mattis! I'm sorry!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "tiefling kid rubs her eyes and takes a shuddering breath",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "*The child rubbed her eyes and took a shuddering breath.*",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N134",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "*The child rubbed her eyes and took a shuddering breath.*",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "984ca6e2-ef29-01fa-24bd-bb40c3b25344": {
+      "UUID": "984ca6e2-ef29-01fa-24bd-bb40c3b25344",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "399769a4-e546-1a86-d4de-a49b4cdfc14b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "79187254-3ec0-3279-2830-1de8595aaf24",
+              "Text": {
+                "Handle": "h45fef8f1g21d8g435aga477g2e88be8948a0",
+                "Value": "*Her hands hide her face, preventing you from reading her expression.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Silfy] rubs her eyes preventing the player to check",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N162",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "tears",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "996bb64e-9332-d009-775f-a95ccc3c0432": {
+      "UUID": "996bb64e-9332-d009-775f-a95ccc3c0432",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "tiefling girl sprints to a hole in the wall and crawls through it",
+        "Attitude": "Default",
+        "CinematicNodeContext": "|CINEMATIC: NODE: *She sprints away and crawls through a crack in a nearby wall.*|",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N272",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Cinematic",
+        "position": "2255;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "99718224-6911-02b7-e5c3-e0e42caee662": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "8d398021-34e0-40b9-b7b2-0445f38a4c0b",
+      "DifficultyClassValue": 5,
+      "UUID": "99718224-6911-02b7-e5c3-e0e42caee662",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "634d73a8-141e-c87f-8a76-2c3202803735",
+        "5724e889-5341-22eb-855b-2a9c625e6ccc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a11d363f-8420-d397-cc72-65f4fdefc8af",
+              "Text": {
+                "Handle": "h7dab46efg5bd5g43c1gbd21gad5438b1b14a",
+                "Value": "<i>Observe her silently. Maybe these are just crocodile tears.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N157",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Insight",
+        "position": "975;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "9acdf443-8d8c-9248-eb32-7ba31353b04b": {
+      "RollSuccess": true,
+      "UUID": "9acdf443-8d8c-9248-eb32-7ba31353b04b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "235f53b0-11db-00d2-d9a4-cbeb277699bf"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N407",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;453",
+        "sourcetemplate": ""
+      }
+    },
+    "9ad45696-3a9f-cf9a-7a45-5241bcd32184": {
+      "UUID": "9ad45696-3a9f-cf9a-7a45-5241bcd32184",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "95de4c99-3259-8fe9-7e14-f575c3dca374"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ec548492-a88e-ae81-ca4d-7970d804ec5b",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Event_PlayerRobbed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5069e274-6ede-e00d-aa94-784648a0499e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Knows_PlayerRobbed"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "be47ed4b-84ee-4887-920f-0dea18bf2b5f",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Thieflings.ToldRobbed"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8027c017-5081-05c9-632b-b353851a1881",
+              "Text": {
+                "Handle": "h385c5eacg1815g4992gb24eg552d1b4bce7e",
+                "Value": "I already took some of your stuff. Brought it back to the hideout. I'm so sorry!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Sadness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N141",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Still weepy.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "She already robbed the player once. ",
+        "position": "1615;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "9e3d8cde-a635-0ffb-a5db-b1df29517da8": {
+      "UUID": "9e3d8cde-a635-0ffb-a5db-b1df29517da8",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "527d5055-2e82-7d4d-2371-3fdfda3550e4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2740b086-e860-4c54-a096-5fcb1066820e",
+              "Text": {
+                "Handle": "h1f2f71bbgc056g4e90gab26gc746c1f14eee",
+                "Value": "Wow. Thank you!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N59",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "9f10a7d7-9db2-0037-ba17-3ce22d44d038": {
+      "UUID": "9f10a7d7-9db2-0037-ba17-3ce22d44d038",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "142845a7-8c32-2a9e-bf4c-de8c8684ac53"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5069e274-6ede-e00d-aa94-784648a0499e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Knows_PlayerRobbed"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "be47ed4b-84ee-4887-920f-0dea18bf2b5f",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Thieflings.ToldRobbed"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fc9c2b85-1776-855d-aa6a-1be28c3e192f",
+              "Text": {
+                "Handle": "h6e96242cgf947g40b0g9fd2gd56f8658b95b",
+                "Value": "I... feel like I should say that I already took some of your stuff. Before now, I mean."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N61",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "a0ff86bb-0538-fab8-c8d9-8f16d87b7762": {
+      "JumpTarget": "384728f2-e5b3-90a4-4983-0b2e0cd5594b",
+      "JumpTargetPoint": 2,
+      "UUID": "a0ff86bb-0538-fab8-c8d9-8f16d87b7762",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N113",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "a14b60c6-f84e-ebe9-f540-c2a7a123222c": {
+      "JumpTarget": "996bb64e-9332-d009-775f-a95ccc3c0432",
+      "JumpTargetPoint": 1,
+      "UUID": "a14b60c6-f84e-ebe9-f540-c2a7a123222c",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N275",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3855;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "a73eb6a3-2f4f-962f-00d1-e39afd48fd53": {
+      "UUID": "a73eb6a3-2f4f-962f-00d1-e39afd48fd53",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "017f7709-c709-acc6-663d-790b9f9da7ec",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_State_MessedWithMolsKids"
+            },
+            {
+              "UUID": "1a4dbc34-b6ce-0225-847e-afa401c5e6c9",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Thieflings_State_PCShookPickpocketSister"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "7b9acbd6-82ea-405f-b1b9-ad46aea15da5",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_Thieflings_Event_ShookThief"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "324bcc22-2806-3ae6-a03a-902435831306",
+              "Text": {
+                "Handle": "hc0dba7fdg7784g4eb7ga8dcg668d096a980a",
+                "Value": "N-no! What are you doing?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N412",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "FX_MindRead_Spell_LeadOut",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_MindRead_Spell_LeadOut tears & tears",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;672",
+        "sourcetemplate": ""
+      }
+    },
+    "b8c0a9a9-f180-77c9-9637-7c946b0dfca4": {
+      "JumpTarget": "95de4c99-3259-8fe9-7e14-f575c3dca374",
+      "JumpTargetPoint": 1,
+      "UUID": "b8c0a9a9-f180-77c9-9637-7c946b0dfca4",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N145",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "ba562ab8-f640-ac05-b3d3-52f02a556f03": {
+      "JumpTarget": "384728f2-e5b3-90a4-4983-0b2e0cd5594b",
+      "JumpTargetPoint": 2,
+      "UUID": "ba562ab8-f640-ac05-b3d3-52f02a556f03",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N422",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;891",
+        "sourcetemplate": ""
+      }
+    },
+    "bd0557db-796c-ea64-01ac-712b7b0684e4": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "00000000-0000-0000-0000-000000000000",
+      "DifficultyClassValue": 0,
+      "UUID": "bd0557db-796c-ea64-01ac-712b7b0684e4",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9acdf443-8d8c-9248-eb32-7ba31353b04b",
+        "122f65da-6b8f-f666-0baa-822912a18443"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "44f9fbf3-735d-8eaf-94dc-6c1d1cf5382d",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CanDetectThoughts_2"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "69be0c2f-d231-ae68-f461-b557ccad3d2c",
+              "Text": {
+                "Handle": "he103afa1g6b01g4dccg94fbg531470c851db",
+                "Value": "<i>Read her thoughts.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N405",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Spell_DetectThoughts",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "bd734cae-26fd-633d-075b-07c73b121d1b": {
+      "UUID": "bd734cae-26fd-633d-075b-07c73b121d1b",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f3a42752-238b-c5f0-1816-352b7ec2a810"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a1a932ee-f66a-08af-4bf0-bf77790052f7",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Hideout_Event_BefriendedThieflings"
+            },
+            {
+              "UUID": "fa3e62c7-8eb8-43e5-fbd0-30ce7bfc2bed",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Hideout_Event_EasyOnPickpocket"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "097bd936-9cb2-43f8-bb2c-8e783f018329",
+              "Text": {
+                "Handle": "h97450b8dgef6ag49dbg9009gb63c2042271d",
+                "Value": "You don't have what it takes to be a villain. Kill while you smile, steal like you <i>breathe</i>. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N664",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;453",
+        "sourcetemplate": ""
+      }
+    },
+    "c0410ba2-20d5-052a-7b8d-b66cd524f4b4": {
+      "UUID": "c0410ba2-20d5-052a-7b8d-b66cd524f4b4",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0ff02de3-f153-8ecb-02bc-e9261289d9a2",
+        "575187d5-04cd-a470-bf9e-bcc22dea59a3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d44e4d2e-9cdd-2af8-891f-ed0848c86742",
+              "Text": {
+                "Handle": "h8eb4ce99g30a8g4d83g9046g52068b1cb08b",
+                "Value": "How else? You're clumsy. A dead man could've caught you.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N53",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2255;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "d3264138-86b4-b6f3-e738-97194fc510f3": {
+      "UUID": "d3264138-86b4-b6f3-e738-97194fc510f3",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1ef95985-81fa-7557-dc7e-ffc758e9123d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "24466df9-c1d7-a6ca-efb7-0e2c839342f3",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Knows_KidsThieves"
+            },
+            {
+              "UUID": "5069e274-6ede-e00d-aa94-784648a0499e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Knows_PlayerRobbed"
+            },
+            {
+              "UUID": "7809528e-70c0-6451-3b7a-d6404ad41834",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_State_PCSawKidThievesGettingCaught"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b3bd28bc-5f6b-4f88-a558-b6073f95bada",
+              "value": true,
+              "paramval": 1,
+              "Name": "HIDDEN_WLD_Boosters.DEN_Thieflings_PersuadedPickpocket"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d76a7e47-497e-d801-f08a-4e34dc55a08f",
+              "Text": {
+                "Handle": "hd50d6146gb634g48f3g9947g909ee9df0d21",
+                "Value": "*You suddenly feel something moving against your back and turn.* "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "pc feels movement behind him and hastily turns around",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "sound that indicates someone sneaking behind player",
+        "StateChangeTags": "tiefling girl appears",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "db804665-782a-74f8-da29-9c7d43431a58": {
+      "JumpTarget": "996bb64e-9332-d009-775f-a95ccc3c0432",
+      "JumpTargetPoint": 1,
+      "UUID": "db804665-782a-74f8-da29-9c7d43431a58",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N626",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "dbef1cfd-eac1-f66f-102a-c1daa9bf3e0b": {
+      "UUID": "dbef1cfd-eac1-f66f-102a-c1daa9bf3e0b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9ad45696-3a9f-cf9a-7a45-5241bcd32184"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ec548492-a88e-ae81-ca4d-7970d804ec5b",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Event_PlayerRobbed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b15d67eb-c2b6-f04f-8a3f-85c71f99b49c",
+              "Text": {
+                "Handle": "hdde62d96gdc36g4ba0gbf61g2595e1888b56",
+                "Value": "Nuh-uh. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "Still covering her face. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Sadness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N132",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Still weepy, muffled",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "tears",
+        "collapsed": "False",
+        "logicalname": "She already robbed the player once. ",
+        "position": "1295;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "edd0cbdd-0a72-bf4f-1b84-42fcd7a50daa": {
+      "RollSuccess": true,
+      "UUID": "edd0cbdd-0a72-bf4f-1b84-42fcd7a50daa",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "06339d92-9cff-5c5c-a36f-a115cd0592e5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N106",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "f3a42752-238b-c5f0-1816-352b7ec2a810": {
+      "JumpTarget": "3015d682-be01-d256-75fc-4f440ea8a4d2",
+      "JumpTargetPoint": 2,
+      "UUID": "f3a42752-238b-c5f0-1816-352b7ec2a810",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N665",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;453",
+        "sourcetemplate": ""
+      }
+    },
+    "f4f76fcc-8c25-b574-ea22-7d6c10d44393": {
+      "UUID": "f4f76fcc-8c25-b574-ea22-7d6c10d44393",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1bda5a02-7737-be34-b845-f1a229988e10",
+        "9e3d8cde-a635-0ffb-a5db-b1df29517da8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8a07f84f-0594-a89d-cc03-6a9c8bed6067",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_Thieflings_Event_SaidGotPickpocketTalent"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4edb33c9-53b1-2874-d399-8db28448107b",
+              "Text": {
+                "Handle": "he8689ed1gf9feg4508g861ag999611dacaa7",
+                "Value": "You were just unlucky this time. But you've got talent - I can tell.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N55",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2255;-1737",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "210d9a34-872b-79df-90a8-005c4a8c12cc",
+      "Index": 0,
+      "List": [
+        "540ddc1f-42c6-4347-ba03-b3cf3d3942ab"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Silfy",
+        "Type": "character",
+        "MapKey": "540ddc1f-42c6-4347-ba03-b3cf3d3942ab",
+        "Name": "S_DEN_Pickpocket",
+        "ParentTemplateId": null,
+        "TemplateName": "a5766603-e5dc-49a2-9856-75383e2279b5"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "da317f73-3d9d-7001-6d0a-4346c271d058",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Non-critpath. Occurs when the player catches the small tiefling girl (7-9 years old) is stealing from them. The player can grab and shake her, as per design. "
+}

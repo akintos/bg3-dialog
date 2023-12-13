@@ -1,0 +1,145 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Camp/CAMP_Jergal_AD_PlayerResurrection.lsj",
+  "UUID": "a204e7b4-5b6e-c2c5-d5ae-085cc531c83a",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "5a7d5502-bdd7-dda4-e0b9-3176c27f54db"
+  ],
+  "Nodes": {
+    "5a7d5502-bdd7-dda4-e0b9-3176c27f54db": {
+      "UUID": "5a7d5502-bdd7-dda4-e0b9-3176c27f54db",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b9a1101a-198c-7158-631d-1bdf355104ab"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "80051792-07c7-0581-b4d4-a308b4eaaaf6",
+              "Text": {
+                "Handle": "h9d60359bgdd2ag4778gbad4g53f0f6d88d5d",
+                "Value": "By doom and dusk, I strike thy name from the archives! Rise!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "b9a1101a-198c-7158-631d-1bdf355104ab": {
+      "UUID": "b9a1101a-198c-7158-631d-1bdf355104ab",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a4d65ce6-df15-6ce8-3aa4-ce7ba678b86a",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Jergal_Event_ResurrectDeadPlayers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC (resurrection flag)",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "aac810a0-24a9-7655-4729-3b0db6a3b5a1",
+      "Index": 0,
+      "List": [
+        "0133f2ad-e121-4590-b5f0-a79413919805"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Withers",
+        "Type": "character",
+        "MapKey": "0133f2ad-e121-4590-b5f0-a79413919805",
+        "Name": "S_GLO_JergalAvatar",
+        "ParentTemplateId": null,
+        "TemplateName": "edb2601b-7f01-44e5-84df-7513a695d4eb"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Jergal resurrects one or multiple players at the camp. "
+}

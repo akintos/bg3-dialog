@@ -1,0 +1,91 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Tutorial/TUT_Helm_AD_CreatureCantUseTransponder.lsj",
+  "UUID": "199ef5d3-c8b6-dd8e-0ee2-3b6aab4dfed7",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "8cf819dd-0634-9573-e9ae-a0156163bf7f"
+  ],
+  "Nodes": {
+    "8cf819dd-0634-9573-e9ae-a0156163bf7f": {
+      "UUID": "8cf819dd-0634-9573-e9ae-a0156163bf7f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d7427f9c-6c32-4cd7-b8a9-f1b8a7089781",
+              "Text": {
+                "Handle": "h927f0d62gd65cg4ee1g8641gc5711111f30f",
+                "Value": "*This creature can't activate the transponder.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-625;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ff5d7fab-7c61-4fed-8e57-7e0816430366",
+      "Index": 0,
+      "List": [
+        "bcbba417-6403-40a6-aef6-6785d585df2a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Transponder",
+        "Type": "item",
+        "MapKey": "bcbba417-6403-40a6-aef6-6785d585df2a",
+        "Name": "S_TUT_Helm_ControlPanel",
+        "ParentTemplateId": null,
+        "TemplateName": "a1087b26-dbe3-43dd-9bc6-7fb4621b985f"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "One liner narrator AD that gets trigger when a summon or Us is used to interact with the transponder. Doing so does nothing, while interacting with Avatars and Companions will start the scene that will transition into act 1, so it needs to be clear that the transponder has been interacted with the wrong creature."
+}

@@ -1,0 +1,274 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_GoblinPriestOgre.lsj",
+  "UUID": "b4c37f02-f99d-9cab-ba4c-0734d85beaa2",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "6cda93b7-e492-6af7-1290-0b8d7e3af989",
+    "69e64410-b525-213d-8f11-c9eb96ae1596",
+    "d2003778-d024-dfc3-d05d-45735d2cc17c"
+  ],
+  "Nodes": {
+    "69e64410-b525-213d-8f11-c9eb96ae1596": {
+      "UUID": "69e64410-b525-213d-8f11-c9eb96ae1596",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "93c5fc69-7c8e-4991-a44c-1b3dbf1880f9",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_GoblinPriest_Quest_PlayersChainedAlone"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f3d570f7-deb2-d18c-1043-c2a49e7d8783",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_GoblinPriest_Quest_WasChained"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "412b2b5b-336f-9788-43b0-9480e963da88",
+              "Text": {
+                "Handle": "hdb183f28g3718g4327ga8bagb2e8a7f874f4",
+                "Value": "You. Not supposed to be here. Leave!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Slow, stupid. Identifying us, pointing on 'you'. Then figuring out we're trespassing before roaring at us to 'leave'.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "6cda93b7-e492-6af7-1290-0b8d7e3af989": {
+      "SourceNode": "69e64410-b525-213d-8f11-c9eb96ae1596",
+      "UUID": "6cda93b7-e492-6af7-1290-0b8d7e3af989",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "93c5fc69-7c8e-4991-a44c-1b3dbf1880f9",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_GoblinPriest_Quest_PlayersChainedAlone"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f3d570f7-deb2-d18c-1043-c2a49e7d8783",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_GoblinPriest_Quest_WasChained"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N11",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "d2003778-d024-dfc3-d05d-45735d2cc17c": {
+      "UUID": "d2003778-d024-dfc3-d05d-45735d2cc17c",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f3d570f7-deb2-d18c-1043-c2a49e7d8783",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GoblinPriest_Quest_WasChained"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b13f1766-2a34-a57e-714a-9fc629b8caf7",
+              "Text": {
+                "Handle": "h91d2628fgf90eg48f1g94b8g057e32c7c610",
+                "Value": "You broke free? You die!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Confused, then furious",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b5b9abc7-a6e2-4292-fa2d-609309c90292",
+      "Index": 0,
+      "List": [
+        "658c5f80-33ea-4f8d-bded-8ef6ac2ed511"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Polma",
+        "Type": "character",
+        "MapKey": "658c5f80-33ea-4f8d-bded-8ef6ac2ed511",
+        "Name": "S_GOB_GoblinPriestOgre",
+        "ParentTemplateId": null,
+        "TemplateName": "512426f2-01fd-405e-9148-8b9e6b10e10c"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9a9ec096-9887-faeb-4ef0-fbbfc497a55b",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "An ogre that acts as a guard in the goblin priestess' chapel. Will warn players away if they enter the chapel area - will attack them if they escape from the priestess' dungeon."
+}

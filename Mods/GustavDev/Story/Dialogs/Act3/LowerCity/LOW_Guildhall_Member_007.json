@@ -1,0 +1,451 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_Guildhall_Member_007.lsj",
+  "UUID": "2ac001e5-805e-aac1-2c9e-912fc0c38c5d",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "0eeaf1d4-9170-5ea7-4e4d-871ff04b0456",
+    "008147a2-b8bc-3338-f695-4405c738f205",
+    "659ab9e8-946c-4038-8244-38b80ee68c56",
+    "750b58a5-0c86-4f25-bc6d-7c4ad78b6dbd",
+    "ecc0b4eb-f137-46a4-ae17-24f6516cef75",
+    "7d89b6bd-e5b6-4f3b-937c-954d39855094"
+  ],
+  "Nodes": {
+    "008147a2-b8bc-3338-f695-4405c738f205": {
+      "SourceNode": "750b58a5-0c86-4f25-bc6d-7c4ad78b6dbd",
+      "UUID": "008147a2-b8bc-3338-f695-4405c738f205",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fd323316-a97e-4b00-8570-50552715b43b",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_Guildhall_State_PostCoup_PlayerControlled"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "756698f5-7d2c-d47e-e339-1d56fb4eb3b3",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_Guildhall_HasMet_PostCoup_Member_007"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N13",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (POST-COUP - GUILD WON (delete if NPC is Zhent))",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "0eeaf1d4-9170-5ea7-4e4d-871ff04b0456": {
+      "SourceNode": "659ab9e8-946c-4038-8244-38b80ee68c56",
+      "UUID": "0eeaf1d4-9170-5ea7-4e4d-871ff04b0456",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "756698f5-7d2c-d47e-e339-1d56fb4eb3b3",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_Guildhall_HasMet_PostCoup_Member_007"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "fd323316-a97e-4b00-8570-50552715b43b",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_Guildhall_State_PostCoup_PlayerControlled"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N12",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (POST-COUP - GUILD WON (delete if NPC is Zhent))",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "659ab9e8-946c-4038-8244-38b80ee68c56": {
+      "UUID": "659ab9e8-946c-4038-8244-38b80ee68c56",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "756698f5-7d2c-d47e-e339-1d56fb4eb3b3",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_Guildhall_HasMet_PostCoup_Member_007"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "596f7f8b-2de2-4550-87fd-9535c2a07635",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_Guildhall_State_PostCoup_GuildControlled"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e2aa845d-6a43-46bd-af93-ce447bbc5796",
+              "Text": {
+                "Handle": "h483c2b66g5688g4be0gb32agdcf02a957965",
+                "Value": "Bastarding Zhent. They hung my brother for a thief, up in Neverwinter. His mistake? Setting his sights on the same score."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Absolute disdain for the Zhent",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "a17fb182-3b83-5c3b-c1f1-58d8053e65a6",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "POST-COUP - GUILD WON (delete if NPC is Zhent)",
+        "position": "15;891",
+        "sourcetemplate": "Guildhall_States"
+      }
+    },
+    "750b58a5-0c86-4f25-bc6d-7c4ad78b6dbd": {
+      "UUID": "750b58a5-0c86-4f25-bc6d-7c4ad78b6dbd",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "596f7f8b-2de2-4550-87fd-9535c2a07635",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_Guildhall_State_PostCoup_GuildControlled"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "756698f5-7d2c-d47e-e339-1d56fb4eb3b3",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_Guildhall_HasMet_PostCoup_Member_007"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5042bbaa-ea9f-4f2c-b834-42f1be45856d",
+              "Text": {
+                "Handle": "h248dd540gd797g4dd3gba2eg0f26e70f2812",
+                "Value": "You won't catch me looting all that shiny Zhent armour. I'd rather go into battle bare-arsed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Absolute disdain for the Zhent",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "b01d22e0-62ba-590a-2392-522d20d5e915",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "POST-COUP - GUILD WON (delete if NPC is Zhent)",
+        "position": "15;1110",
+        "sourcetemplate": "Guildhall_States"
+      }
+    },
+    "7d89b6bd-e5b6-4f3b-937c-954d39855094": {
+      "UUID": "7d89b6bd-e5b6-4f3b-937c-954d39855094",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c940562-db87-4a1d-65b3-6c6adb07accf",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_Guildhall_HasMet_PreCoup_Member_007"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5245d6f5-6ee0-47b1-bdc1-5fe460e40cff",
+              "Text": {
+                "Handle": "ha87d58a8gbcaeg4d42g9d1cgc0a6d1e68ea9",
+                "Value": "You can get near anywhere in the city from here without seeing daylight - once you don't mind the tangy smell of sewer."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "d4c5f951-f24e-d556-e38a-9e63168fe235",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "BASE STATE",
+        "position": "15;1767",
+        "sourcetemplate": "Guildhall_States"
+      }
+    },
+    "ecc0b4eb-f137-46a4-ae17-24f6516cef75": {
+      "UUID": "ecc0b4eb-f137-46a4-ae17-24f6516cef75",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8c940562-db87-4a1d-65b3-6c6adb07accf",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_Guildhall_HasMet_PreCoup_Member_007"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "20bcbee4-2e3f-4734-9b2e-f979753745fe",
+              "Text": {
+                "Handle": "h7a57c44cg0164g4a85gb4efgbda37ab1c422",
+                "Value": "Don't bother scoping out the back-tunnels. Whole place is gone dark until all this drama is over with."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;1548",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "51d986b9-5b4e-4923-952a-cada845f9e25",
+      "Index": 0,
+      "List": [
+        "65a5e1cd-6714-4bf0-babd-80714c993953"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Bad Twin Bubbins",
+        "Type": "character",
+        "MapKey": "65a5e1cd-6714-4bf0-babd-80714c993953",
+        "Name": "S_LOW_Guildhall_Member_007",
+        "ParentTemplateId": null,
+        "TemplateName": "00eb30d7-79cd-46fc-bcf7-265347630efc"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c8f57d4e-5c18-438f-8442-be50f14ab707",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Guildhall member 007"
+}

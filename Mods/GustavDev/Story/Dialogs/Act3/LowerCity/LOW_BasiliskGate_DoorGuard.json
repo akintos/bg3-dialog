@@ -1,0 +1,900 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_BasiliskGate_DoorGuard.lsj",
+  "UUID": "af92b979-9971-59f3-479b-5a61b41ae21a",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "15e70c81-fe39-e1b3-a0a9-bcbe455b8cc7",
+    "4ba3cee3-c9c8-911e-71dc-8f94f5f55680",
+    "2a523de3-a1b9-9174-7763-09e1d2104fce",
+    "8902828e-9def-4169-a390-fe58f6f33d2a",
+    "1ebfc9db-66b2-0f38-2685-4ccc25996944",
+    "f3642298-6d8f-1f42-7922-5e778adafe56"
+  ],
+  "Nodes": {
+    "15e70c81-fe39-e1b3-a0a9-bcbe455b8cc7": {
+      "SourceNode": "1ebfc9db-66b2-0f38-2685-4ccc25996944",
+      "UUID": "15e70c81-fe39-e1b3-a0a9-bcbe455b8cc7",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f0d1b634-3af2-a75c-8bfb-e6a2fcf40804",
+              "value": true,
+              "paramval": 1,
+              "Name": "S_LOW_BasiliskGate_DoorGuard_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "32a5fd87-95c0-255a-3473-ac288c798df8",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_BasiliskGate_State_FlorrickExecuted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N116",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Greeting)",
+        "position": "-305;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "1ebfc9db-66b2-0f38-2685-4ccc25996944": {
+      "UUID": "1ebfc9db-66b2-0f38-2685-4ccc25996944",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e87a3fa0-0be6-061f-6498-842ed0444608",
+              "value": true,
+              "paramval": 1,
+              "Name": "S_LOW_BasiliskGate_HasMet_DoorGuard_PostExecution"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "32a5fd87-95c0-255a-3473-ac288c798df8",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BasiliskGate_State_FlorrickExecuted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3d6ba250-147e-4212-af43-e33206c7f16d",
+              "Text": {
+                "Handle": "hd85607b5g48ecg43a7ga9d0g8de5f725f945",
+                "Value": "Justice is swift and severe in Baldur's Gate - as it should be."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N54",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "20d922d0-1bde-5cf7-a21e-fea1a864478f": {
+      "UUID": "20d922d0-1bde-5cf7-a21e-fea1a864478f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "81528ab9-5547-3560-4ea4-084b34d2aa40"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0a8301ac-7350-47a7-b38b-75bb46e41d4e",
+              "Text": {
+                "Handle": "h28613d0ega11ag4033g9c78gadad20b673f4",
+                "Value": "She didn't deserve to die."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N70",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "2a523de3-a1b9-9174-7763-09e1d2104fce": {
+      "UUID": "2a523de3-a1b9-9174-7763-09e1d2104fce",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f0d1b634-3af2-a75c-8bfb-e6a2fcf40804",
+              "value": false,
+              "paramval": 1,
+              "Name": "S_LOW_BasiliskGate_DoorGuard_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "32a5fd87-95c0-255a-3473-ac288c798df8",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_BasiliskGate_State_FlorrickExecuted"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "3311a9a9-cdbc-4b05-9bf6-e02ba1fc72a3",
+              "value": true,
+              "paramval": 1,
+              "Name": "HALFORC"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f0d1b634-3af2-a75c-8bfb-e6a2fcf40804",
+              "value": true,
+              "paramval": 1,
+              "Name": "S_LOW_BasiliskGate_DoorGuard_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d5873b10-adec-11ed-99d9-33ac06fd9ef1",
+              "Text": {
+                "Handle": "h955c01f5gc560g483ag9c02gfcc6940abc0a",
+                "Value": "A half-orc? Hmm. Keep your head down and your fists to yourself, and we won't have any problems."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N114",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Unimpressed, racist dick about half orcs (thinks they're violent)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "4ba3cee3-c9c8-911e-71dc-8f94f5f55680": {
+      "UUID": "4ba3cee3-c9c8-911e-71dc-8f94f5f55680",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "74dd56ff-7e00-42a6-a0f3-0d122f364769",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Gortash_State_PermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "93940cc4-3398-4ca0-a8a5-7bb4d9348479",
+              "Text": {
+                "Handle": "h604bb8aege794g44fdgab5dg27dd118eaf8f",
+                "Value": "First they took Duke Stelmane, now they've taken Lord Gortash. Count on it - the Flaming Fist will make those Absolute bastards pay. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N115",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "81528ab9-5547-3560-4ea4-084b34d2aa40": {
+      "UUID": "81528ab9-5547-3560-4ea4-084b34d2aa40",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ddf0cebb-5a83-4570-9eae-231bcb4e21cb",
+              "Text": {
+                "Handle": "h1cfb860dg9334g4420g89d1gd3f7bb240e9c",
+                "Value": "Sympathisers have no place in the city - you'd do well to remember that."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N99",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "8902828e-9def-4169-a390-fe58f6f33d2a": {
+      "UUID": "8902828e-9def-4169-a390-fe58f6f33d2a",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f0d1b634-3af2-a75c-8bfb-e6a2fcf40804",
+              "value": false,
+              "paramval": 1,
+              "Name": "S_LOW_BasiliskGate_DoorGuard_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "32a5fd87-95c0-255a-3473-ac288c798df8",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_BasiliskGate_State_FlorrickExecuted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f0d1b634-3af2-a75c-8bfb-e6a2fcf40804",
+              "value": true,
+              "paramval": 1,
+              "Name": "S_LOW_BasiliskGate_DoorGuard_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "159e84a7-eebc-4e15-9e28-49e1240bc408",
+              "Text": {
+                "Handle": "h2b708baagb0b5g4a3cgbb01gf5a9d3566c81",
+                "Value": "Keep crime reports short - do <i>not</i> waste our time with frivolous issues."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "acf8c979-dae2-9994-cc3b-226555edea13": {
+      "UUID": "acf8c979-dae2-9994-cc3b-226555edea13",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d2fb6d48-ba04-4fc0-b104-79ff3f2ad04a",
+              "Text": {
+                "Handle": "hc8b8e554g1511g4288g9ac6g8376881a74e2",
+                "Value": "Well said - order before all."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N100",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "'order before all' is like the fist 'protect and serve'. It's both a farewell and a warning not to step out of line",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "cab47493-0939-36f2-6c53-b85a19212e36": {
+      "UUID": "cab47493-0939-36f2-6c53-b85a19212e36",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e7bc6798-fcc7-2734-da60-cc3e05046cef"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d49283a7-b901-4540-82a8-9ec27b11068c",
+              "Text": {
+                "Handle": "h27e003f6gc791g45aegb737ga4557f1b2553",
+                "Value": "That's a cruel way to talk about her."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "e7bc6798-fcc7-2734-da60-cc3e05046cef": {
+      "UUID": "e7bc6798-fcc7-2734-da60-cc3e05046cef",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2a06e1ee-85c6-47e1-866d-edbfd7e90603",
+              "Text": {
+                "Handle": "h4fb9dbe5g64f1g4d8ag8f36g8427733496c1",
+                "Value": "Traitors deserve no soft hands. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N98",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "f3642298-6d8f-1f42-7922-5e778adafe56": {
+      "UUID": "f3642298-6d8f-1f42-7922-5e778adafe56",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "20d922d0-1bde-5cf7-a21e-fea1a864478f",
+        "fa8f7ba9-73bc-db03-0f9d-2c23e1fa76f5",
+        "cab47493-0939-36f2-6c53-b85a19212e36"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e87a3fa0-0be6-061f-6498-842ed0444608",
+              "value": false,
+              "paramval": 1,
+              "Name": "S_LOW_BasiliskGate_HasMet_DoorGuard_PostExecution"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "32a5fd87-95c0-255a-3473-ac288c798df8",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BasiliskGate_State_FlorrickExecuted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e87a3fa0-0be6-061f-6498-842ed0444608",
+              "value": true,
+              "paramval": 1,
+              "Name": "S_LOW_BasiliskGate_HasMet_DoorGuard_PostExecution"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5f29d51b-77b7-49a5-b13e-11d25ac9e62a",
+              "Text": {
+                "Handle": "h749c850cgd7a9g4d6fgb576g40179dd38ff1",
+                "Value": "Take heed, citizen - the traitor Florrick swings in the square. She won't be missed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N24",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-305;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "fa8f7ba9-73bc-db03-0f9d-2c23e1fa76f5": {
+      "UUID": "fa8f7ba9-73bc-db03-0f9d-2c23e1fa76f5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "acf8c979-dae2-9994-cc3b-226555edea13"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "30eed279-e8e1-4fc2-b0ca-94a5afd48020",
+              "Text": {
+                "Handle": "hd25b9afag9f9bg4229gaa99g13b31b2d8bdb",
+                "Value": "Good riddance."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N97",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ad6f4736-ef90-4fa2-9b2c-aa13507c1379",
+      "Index": 0,
+      "List": [
+        "c14b2865-fd6f-4d52-8e41-b5f8aad97583"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Fist Miller",
+        "Type": "character",
+        "MapKey": "c14b2865-fd6f-4d52-8e41-b5f8aad97583",
+        "Name": "S_LOW_BasiliskGate_DoorGuard",
+        "ParentTemplateId": null,
+        "TemplateName": "ff4900e5-ace9-4582-b1ca-dc144919f27d"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "33d90578-e537-497e-9796-04f8700fce5a",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "This random Fist is standing by the door to Flaming Fist HQ. As opposed to the shame spot at the gate this is an honor spot basically employee of the moth reward. He has some reactions to execution of Florrick. Turns out he's extremely lawful.. and awful."
+}

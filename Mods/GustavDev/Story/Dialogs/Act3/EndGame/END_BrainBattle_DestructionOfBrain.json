@@ -1,0 +1,803 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/EndGame/END_BrainBattle_DestructionOfBrain.lsj",
+  "UUID": "a7c43e1f-43d9-6acf-2c6b-7441b389666b",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1
+  },
+  "RootNodes": [
+    "fbfb7173-8b91-4582-bd65-12ddabc8efed"
+  ],
+  "Nodes": {
+    "08be3d96-d9e6-4fb6-aadb-15e2c9a404af": {
+      "UUID": "08be3d96-d9e6-4fb6-aadb-15e2c9a404af",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ee507908-1215-4aee-9634-e92bc42979c1",
+        "5a3d3406-1c0a-408c-8249-fcf3cbb121c0",
+        "816cf468-854d-4b70-a29a-03231bd1464d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 1,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3"
+                ],
+                "TagNames": [
+                  "REALLY_ASTARION"
+                ]
+              },
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "3797bfc4-8004-4a19-9578-61ce0714cc0b",
+                  "c0cd4ed8-11d1-4fb1-ae3a-3a14e41267c8"
+                ],
+                "TagNames": [
+                  "FULL_CEREMORPH",
+                  "PARTIAL_CEREMORPH"
+                ]
+              }
+            ],
+            "RuleString": "!REALLY_ASTARION or (FULL_CEREMORPH or PARTIAL_CEREMORPH)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "d4a1a13c-2761-4971-9f84-500ee07802d6",
+              "Text": {
+                "Handle": "h78a9db67gc84dg4611gbd92ga540fe75bf07",
+                "Value": "*The pain rips through you, obliterating all thought, all feeling. Your tadpole burns in your brain.*"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "ffd08582-7396-4cac-bcd4-8f9cd0fd8ef3"
+                ],
+                "TagNames": [
+                  "REALLY_ASTARION"
+                ]
+              }
+            ],
+            "RuleString": "REALLY_ASTARION"
+          },
+          "TagTexts": [
+            {
+              "LineId": "6848c6c4-eab5-4508-9b59-f54669a8dfb4",
+              "Text": {
+                "Handle": "h7e249f04g4986g4259g9d9agcf3ea26c1eac",
+                "Value": "*The pain rips through you, obliterating all thought, all feeling. You can feel your tadpole burning, and the power it granted you starting to wane.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[PLAYER] Clutches their head, racked with pain. <CodyM>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "[Player covering ears]\r\nThe player covers their ears and grits their teeth. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N27",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "Player is in extreme pain as the brain destroys itself. The crown lets out one last explositon of energy. It then lies dormant",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Player is in extreme pain as the brain destroys itself. The crown lets out one last explositon of energy. It then lies dormant",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-3505;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "33287c82-09f9-4a1b-87fc-7dc77ef9206b": {
+      "UUID": "33287c82-09f9-4a1b-87fc-7dc77ef9206b",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PLAYERS] looking out, surveying the city.<CodyM>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "[Battle over]\r\nEveryone looks up at the war-torn city. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N127",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Battle over",
+        "position": "-1905;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "5a3d3406-1c0a-408c-8249-fcf3cbb121c0": {
+      "UUID": "5a3d3406-1c0a-408c-8249-fcf3cbb121c0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e2a7c500-0c63-4d2b-b6fd-0bbecf0b5ac0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a0bea44c-be8a-26e4-ded5-c6c5827d4190",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_DarkUrge_State_GoMadEnding"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0be24c7b-4687-495d-ad27-b93034bfb80c",
+              "Text": {
+                "Handle": "hf2f4b9c0g6ed4g4286g889bg12d96ec4bde8",
+                "Value": "*Silence. The overbearing quiet of your Father's disappointment before the rush of your tragic fall.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player stops clutching their head/ears and looks around for just a moment -",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N220",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DARK URGE - NOT CURED",
+        "position": "-3185;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "659a3903-4593-4d99-93d8-9bd754870fe0": {
+      "UUID": "659a3903-4593-4d99-93d8-9bd754870fe0",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "33287c82-09f9-4a1b-87fc-7dc77ef9206b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PLAYERS] Swimming to shore and getting on their feet.<CodyM>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "[Party swims to shore]\r\nThe party swims to shore and join their other allies.\r\n",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N248",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Party swims to shore",
+        "position": "-2225;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "67569d03-7d73-4b81-98f7-5fceff9d8079": {
+      "UUID": "67569d03-7d73-4b81-98f7-5fceff9d8079",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f7b9515e-64ec-4dea-ac86-9cf46b0e1ecd"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3797bfc4-8004-4a19-9578-61ce0714cc0b",
+              "value": true,
+              "paramval": 1,
+              "Name": "FULL_CEREMORPH"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b5d1bc01-e14a-4569-9922-779bb3849a76",
+              "Text": {
+                "Handle": "h355d2417g85b6g4850g85b3gb2c3d4669945",
+                "Value": "*The pain rips through you, obliterating all thought, all feeling.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "[Player covering ears]\r\nThe player covers their ears and grits their teeth. ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N251",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "Player is in extreme pain as the brain destroys itself",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Player is in extreme pain as the brain destroys itself",
+        "collapsed": "False",
+        "logicalname": "PLAYER ILLITHID",
+        "position": "-3505;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "816cf468-854d-4b70-a29a-03231bd1464d": {
+      "UUID": "816cf468-854d-4b70-a29a-03231bd1464d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e2a7c500-0c63-4d2b-b6fd-0bbecf0b5ac0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "88a8f0e4-d3b5-4482-a588-01497b77ef58",
+              "Text": {
+                "Handle": "hce5d5401g4b0fg486cgaaa8gf621cdc7c0fb",
+                "Value": "*Silence. For the first time in a long time, your thoughts are entirely your own. And then - gravity.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*REUSE*[PLAYER]... cont'd Clutches their head, racked with pain. [PLAYER] Falling along with the Brain., [BRAIN] plummets into the bay below. <CodyM>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player stops clutching their head/ears and looks around for just a moment -",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N319",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "A moment of calm, before the brain begins to fall into the bay. While falling the brain The brain is spewing blood and goo",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "A moment of calm, before the brain beginsto fall into the bay. While falling the brain The brain is spewing blood and goo",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-3185;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "cf1f9db7-f374-44a1-be89-b129bcbeab1d": {
+      "UUID": "cf1f9db7-f374-44a1-be89-b129bcbeab1d",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "659a3903-4593-4d99-93d8-9bd754870fe0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[PLAYERS] Surfacing from underwater. <CodyM>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "[Party members surface]\r\nClose up on the dark water, and then the player avatar breaks the surface, drawing breath",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N499",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "After the brain sinks into the bay, the party sufaces on the water, looks around and swims to shore",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "After the brain sinks into the bay, the party sufaces on the water, looks around and swims to shore",
+        "collapsed": "False",
+        "logicalname": "Party members surface",
+        "position": "-2545;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "e2a7c500-0c63-4d2b-b6fd-0bbecf0b5ac0": {
+      "UUID": "e2a7c500-0c63-4d2b-b6fd-0bbecf0b5ac0",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cf1f9db7-f374-44a1-be89-b129bcbeab1d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "[Brain and player fall into bay]\r\n\r\nThe brain, spewing blood and goo, plummets into the bay, sending large waves in every direction. \r\nAt the same time the player and party fall as the thing they were standing on gives way.  ",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N547",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "The brain falls into the bay. A huge impact in the water.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "The brain falls into the bay. A huge impact in the water.",
+        "collapsed": "False",
+        "logicalname": "Brain and player fall into bay",
+        "position": "-2865;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "ee507908-1215-4aee-9634-e92bc42979c1": {
+      "UUID": "ee507908-1215-4aee-9634-e92bc42979c1",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e2a7c500-0c63-4d2b-b6fd-0bbecf0b5ac0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "74944ac3-1ea0-4eae-9653-1f1319f8646b",
+              "value": true,
+              "paramval": null,
+              "Name": "ORI_DarkUrge_State_BhaalResisted"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a521ff2-6f66-45d3-a209-433adf9f17d6",
+              "Text": {
+                "Handle": "hd8145cd1g57a1g4d10g8469g2a36d59e34b2",
+                "Value": "*Silence. Free of Urge and worm, your brain is battered and bruised, but it is <i>yours</i>. Yours at last.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player stops clutching their head/ears and looks around for just a moment -",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N570",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DARK URGE - CURED",
+        "position": "-3185;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "f7b9515e-64ec-4dea-ac86-9cf46b0e1ecd": {
+      "JumpTarget": "08be3d96-d9e6-4fb6-aadb-15e2c9a404af",
+      "JumpTargetPoint": 2,
+      "UUID": "f7b9515e-64ec-4dea-ac86-9cf46b0e1ecd",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N2186",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-3185;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "fbfb7173-8b91-4582-bd65-12ddabc8efed": {
+      "UUID": "fbfb7173-8b91-4582-bd65-12ddabc8efed",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "67569d03-7d73-4b81-98f7-5fceff9d8079",
+        "08be3d96-d9e6-4fb6-aadb-15e2c9a404af"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e20a9d9a-cb63-4d48-937f-5b6504908a10",
+              "Text": {
+                "Handle": "hcfefb000gad62g4440g869ega643351cf3d3",
+                "Value": "*Hopes, nightmares, and the screams of legions upon legions of unborn illithids.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[BRAIN] Writhing in pain. <CodyM>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "[Netherbrain dying in pain]\r\nNetherbrain is in the process of executing the player's order to self-destruct, screaming in otherworldly pain.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N608",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "The Crown Begins building up energy, self destructing and screaming in pain",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "The Crown Begins building up energy, self destructing and screaming in pain",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "-3825;-2832",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "120ad2c7-da2d-45f9-a2d7-c0b981c51d5d",
+      "Index": 0,
+      "List": [
+        "a166ba9b-b29c-4de8-1631-ad7e55fdc1dd"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Disembodied Voice",
+        "Type": "character",
+        "MapKey": "696b6670-c31c-4cfe-a1dd-fa80c3b59dad",
+        "Name": "S_GLO_VoiceOfAbsoluteHelper",
+        "ParentTemplateId": null,
+        "TemplateName": "19dc6cab-aa38-4f09-b9cf-546e1c0ecb8a"
+      },
+      "SpeakerGroupName": "GROUP_GLO_ElderBrain"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "337719db-96ac-4515-b5ae-e40cd6c93bc6",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "090d2a38-eb99-4393-91a4-f448ed2eff1c",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "b6911a48-c5f3-44c8-b6a3-899ee2b4dbb7",
+      "Index": 3,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "4": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "c7032b58-4a30-4c79-9a1f-60eb451b2187",
+      "Index": 4,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "5": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ce4a8e67-4a3b-4636-ab89-d960d81a9815",
+      "Index": 5,
+      "List": [
+        "73d49dc5-8b8b-45dc-a98c-927bb4e3169b"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "The Emperor",
+        "Type": "character",
+        "MapKey": "73d49dc5-8b8b-45dc-a98c-927bb4e3169b",
+        "Name": "S_GLO_Emperor",
+        "ParentTemplateId": null,
+        "TemplateName": "6efb2704-a025-49e0-ba9f-2b4f62dd2195"
+      },
+      "SpeakerGroupName": null
+    },
+    "6": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "8294edb0-736e-4c12-ad5b-a7dcf4f543b1",
+      "Index": 6,
+      "List": [
+        "47c90728-af68-4cbc-baaa-6497eebd8d7e"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Orpheus",
+        "Type": "character",
+        "MapKey": "47c90728-af68-4cbc-baaa-6497eebd8d7e",
+        "Name": "S_GLO_Orpheus",
+        "ParentTemplateId": null,
+        "TemplateName": "be97477c-a045-4d43-b084-b9727d73832b"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Combat with the Netherbrain over, the player has dominated the brain and ordered it to self-destruct. The brain self-destructs, falling into the water (party along with it)."
+}

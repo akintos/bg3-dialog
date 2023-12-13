@@ -1,0 +1,139 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_InsightPuzzle_AD_Fail.lsj",
+  "UUID": "e61962b2-e4d4-2426-7379-c9888d56245d",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "9709ced0-f4d2-ac05-6078-f3ca082ccf14",
+    "dfd81a94-4ad0-68ad-c631-44b2fa19ed4d"
+  ],
+  "Nodes": {
+    "9709ced0-f4d2-ac05-6078-f3ca082ccf14": {
+      "SourceNode": "dfd81a94-4ad0-68ad-c631-44b2fa19ed4d",
+      "UUID": "9709ced0-f4d2-ac05-6078-f3ca082ccf14",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "087ab13e-3e11-b7c1-02a3-b9175292011f",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_InsightTest_State_Statue2Destroyed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N12",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Greeting)",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "dfd81a94-4ad0-68ad-c631-44b2fa19ed4d": {
+      "UUID": "dfd81a94-4ad0-68ad-c631-44b2fa19ed4d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "087ab13e-3e11-b7c1-02a3-b9175292011f",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_InsightTest_State_Statue2Destroyed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fc7ae20c-6f94-4928-a3f1-1bf71fb61a28",
+              "Text": {
+                "Handle": "h91ecdaf0gd546g47c8g99d5gf59b59ed04be",
+                "Value": "In your ignorance, you have chosen poor counsel. <i>Unacceptable.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "8195839c-23da-4911-8533-ac949ee5fcef",
+      "Index": 0,
+      "List": [
+        "15a67462-18cd-b420-1349-561b640cfb6c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Balduran",
+        "Type": "character",
+        "MapKey": "97b22123-6825-4b24-8c47-437b0774e7a1",
+        "Name": "S_WYR_Balduran",
+        "ParentTemplateId": null,
+        "TemplateName": "18148ffa-c1be-475f-bd40-0e9dbf1e95b5"
+      },
+      "SpeakerGroupName": "GROUP_Act3_WYR_WyrmwayAnnouncer"
+    }
+  },
+  "Synopsis": "Announces that the player has failed the puzzle by destroying the wrong statue."
+}

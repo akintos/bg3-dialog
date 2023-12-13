@@ -1,0 +1,398 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/ADs/GOB_SpiderNest_AD_HumanExecution.lsj",
+  "UUID": "8779cb04-0077-732b-6976-7b8095597f35",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 0,
+    "1": 1
+  },
+  "RootNodes": [
+    "4d21a685-b125-88da-dd92-ca394e6d60d7",
+    "237facca-cd6b-9245-5cfa-07ffba0f6895"
+  ],
+  "Nodes": {
+    "237facca-cd6b-9245-5cfa-07ffba0f6895": {
+      "UUID": "237facca-cd6b-9245-5cfa-07ffba0f6895",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8e616315-9cd9-f1bb-b65e-d74624cd4c8e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c41fb37d-7684-4ef8-ac42-bcc1b44342ac",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_SpiderNest_State_PauseExecution"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "89fd477a-566d-8924-35a4-37506ba4203a",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_SpiderNest_State_StartedHumanExecution"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "81e79be9-9929-90c0-8e2e-b3bc7d115859",
+              "Text": {
+                "Handle": "h47f8755dgb87bg4e66gbe4cga568516ed4cb",
+                "Value": "At least give me a sword!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Pleading",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "pleading for his life - he's about to be thrown into a spider pit as a form of execution",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "4d21a685-b125-88da-dd92-ca394e6d60d7": {
+      "UUID": "4d21a685-b125-88da-dd92-ca394e6d60d7",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a2f33991-58a6-8172-62d2-20b0731518be"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "89fd477a-566d-8924-35a4-37506ba4203a",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_SpiderNest_State_StartedHumanExecution"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGICAL",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "54c0d051-54e8-c4df-ada3-7d3af0659603": {
+      "UUID": "54c0d051-54e8-c4df-ada3-7d3af0659603",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "802d4c43-f7d8-47b0-aeaa-68e38f032d36",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_SpiderNest_Event_Executioner_Push"
+            },
+            {
+              "UUID": "c41fb37d-7684-4ef8-ac42-bcc1b44342ac",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_SpiderNest_State_PauseExecution"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d5de4c6d-1925-c2b2-2c0e-4d8b940e93aa",
+              "Text": {
+                "Handle": "hf15b9518g72f3g448bg8892g36279dec4579",
+                "Value": "Aaahhhh!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A scream, falling into a spider pit. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "8e616315-9cd9-f1bb-b65e-d74624cd4c8e": {
+      "UUID": "8e616315-9cd9-f1bb-b65e-d74624cd4c8e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a2f33991-58a6-8172-62d2-20b0731518be"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c41fb37d-7684-4ef8-ac42-bcc1b44342ac",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_SpiderNest_State_PauseExecution"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "169074c5-852e-d6ef-1ac3-09555302dec3",
+              "Text": {
+                "Handle": "h12728ceag5cf2g4602gaae7g1bdc5a24f346",
+                "Value": "We want ya dead, ya dumpknuckle. Not dead an' <i>heroic</i>. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "grimly amused - about to execute somebody",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a2f33991-58a6-8172-62d2-20b0731518be": {
+      "UUID": "a2f33991-58a6-8172-62d2-20b0731518be",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "54c0d051-54e8-c4df-ada3-7d3af0659603"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a0dfd233-afe4-f62e-174e-ea5ff7394da0",
+              "Text": {
+                "Handle": "h60d5b4f6g7192g4d2eg8633gbbb21e6e25b3",
+                "Value": "Get down there an' stop complainin'."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "grimly amused - about to execute somebody by throwing them into a spider pit",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "69a76e41-d590-4e42-c51f-a98237d43162",
+      "Index": 0,
+      "List": [
+        "692ebd77-cfe7-4cac-8022-bd835e9e5a82"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Smythin",
+        "Type": "character",
+        "MapKey": "692ebd77-cfe7-4cac-8022-bd835e9e5a82",
+        "Name": "S_GOB_SpiderNest_Adventurer",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "753a8539-be3d-d895-2e24-2c7326635efa",
+      "Index": 1,
+      "List": [
+        "56540e3d-f1ac-441b-a690-5f9602c04b86"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Warrior Druk",
+        "Type": "character",
+        "MapKey": "56540e3d-f1ac-441b-a690-5f9602c04b86",
+        "Name": "S_GOB_GuardPolite",
+        "ParentTemplateId": null,
+        "TemplateName": "35e843cf-bc73-4754-aaee-fd8272d99ea6"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "A goblin is preparing to throw an adventurer into a spider pit as a form of execution. The adventurer pleads for help."
+}

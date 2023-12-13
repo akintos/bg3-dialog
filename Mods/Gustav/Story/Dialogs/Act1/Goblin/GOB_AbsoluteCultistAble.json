@@ -1,0 +1,832 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_AbsoluteCultistAble.lsj",
+  "UUID": "4792c705-3de9-4e75-5839-6e803cfae16d",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "63d07938-b75a-091f-556d-6ff8b5f6f082",
+    "0de776af-c09d-854e-25ac-d4e18e1f9ffd",
+    "a492a8bd-aca7-dcca-c43f-7597e6ba5e57",
+    "9ec70109-63d4-1ea6-a223-0817ec347443"
+  ],
+  "Nodes": {
+    "0de776af-c09d-854e-25ac-d4e18e1f9ffd": {
+      "UUID": "0de776af-c09d-854e-25ac-d4e18e1f9ffd",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a4929f1-b83a-99ad-1ee0-e740a9573411",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCultistAble_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d4740537-1b80-21d2-f2dc-cc875502139a",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_GoblinKing_Event_ScryingEnded"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7f0a6559-a45d-de5b-367c-373df0643bee",
+              "Text": {
+                "Handle": "hc1ee558eg2216g43f2g8149g0d51169315aa",
+                "Value": "An alien here in Faerûn... I can't believe it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "He's watching a ritual, trying not to disturb it.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Awe",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "A little incredulous, but still with a hushed voice.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HasMet, Scrying Ongoing",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "1c2256a1-77bd-03d7-f51c-e14507e432fa": {
+      "UUID": "1c2256a1-77bd-03d7-f51c-e14507e432fa",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "4c30b8a1-3bd4-5f72-a01f-be2d7894a09d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9746328e-38a8-3608-42d9-2cb78af06710",
+              "Text": {
+                "Handle": "h9b8c143ag001ag49c6g91dfgaf42cca72fde",
+                "Value": "Someone needs to keep an eye on these buggers."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Still a little hushed. He's concentrating more on the ritual that is about to start/just ended.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "2b4821ca-a87f-c875-07d7-cabbe4828ba4": {
+      "UUID": "2b4821ca-a87f-c875-07d7-cabbe4828ba4",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1c2256a1-77bd-03d7-f51c-e14507e432fa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8a37732a-723b-6578-16fb-e782d0e88d4f",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCulstist_Able_Knows_AskedQuestion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8a37732a-723b-6578-16fb-e782d0e88d4f",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCulstist_Able_Knows_AskedQuestion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5300ba79-8990-a71a-ed07-dea7b32ad8a3",
+              "Text": {
+                "Handle": "h38eb527cgdedag4438gb3d0ga79e62022cd1",
+                "Value": "But goblins give you no pause?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "4c30b8a1-3bd4-5f72-a01f-be2d7894a09d": {
+      "UUID": "4c30b8a1-3bd4-5f72-a01f-be2d7894a09d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b7fa14e-1a35-342a-5aa9-6342116578b6",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Absolute_Knows_Name"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "52b34cad-461c-3bc4-ee04-30225e2c20fa",
+              "Text": {
+                "Handle": "h2b4cd6f8gd8d0g48c5gbac3gb79fc3f09472",
+                "Value": "I don't make a habit of questioning the Absolute. Now quiet."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Still a little hushed. Still a little hushed. He's concentrating more on the ritual that is about to start/just ended.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "63d07938-b75a-091f-556d-6ff8b5f6f082": {
+      "UUID": "63d07938-b75a-091f-556d-6ff8b5f6f082",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a4929f1-b83a-99ad-1ee0-e740a9573411",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCultistAble_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d4740537-1b80-21d2-f2dc-cc875502139a",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_GoblinKing_Event_ScryingEnded"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a4929f1-b83a-99ad-1ee0-e740a9573411",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCultistAble_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a8b38b55-32de-9b3c-159e-5c1d255da54f",
+              "Text": {
+                "Handle": "h6d533d0ag32d8g4101g96f3g1e74680efea1",
+                "Value": "Shh. Let's hope this gives us some answers."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "He's watching a ritual, trying not to disturb it.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "a little impatient, but with a hushed voice..",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Scrying Ongoing",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "6b53f8b4-14d8-d231-d9ce-497405ad7449": {
+      "UUID": "6b53f8b4-14d8-d231-d9ce-497405ad7449",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f782206a-4a98-0a96-ad43-3ff3363707e7",
+              "Text": {
+                "Handle": "h220650ecg808fg41a8gacd8g89cf104b2701",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "9d488957-1573-6dfa-cd49-09591cfe9e85": {
+      "UUID": "9d488957-1573-6dfa-cd49-09591cfe9e85",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b7fa14e-1a35-342a-5aa9-6342116578b6",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Absolute_Knows_Name"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0fdf74db-28ab-0882-6b78-3f9a6e35da99",
+              "Text": {
+                "Handle": "h426b81dfgf931g4cfag8786g90abdb5768f3",
+                "Value": "Of course, the Absolute protects us now, but still..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Still a little hushed. He's still a bit awestruck about what just happened.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    },
+    "9ec70109-63d4-1ea6-a223-0817ec347443": {
+      "UUID": "9ec70109-63d4-1ea6-a223-0817ec347443",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5026b470-1af4-9d75-a85d-dd53039e4327",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCultistAble_HasMet2"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d4740537-1b80-21d2-f2dc-cc875502139a",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_GoblinKing_Event_ScryingEnded"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2ee0e45d-633b-ee5d-4145-e1e6bbc51373",
+              "Text": {
+                "Handle": "h559155f7g67d1g4b12ga4cbgeb4404844ccd",
+                "Value": "I'm glad it was dead when we found it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little incredulous. The ritual is done, so he can speak freely.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HasMet, Scrying Ended",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    },
+    "a492a8bd-aca7-dcca-c43f-7597e6ba5e57": {
+      "UUID": "a492a8bd-aca7-dcca-c43f-7597e6ba5e57",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2b4821ca-a87f-c875-07d7-cabbe4828ba4",
+        "f8e3f876-948c-0f3c-d96c-90ba5fc30ea6",
+        "6b53f8b4-14d8-d231-d9ce-497405ad7449"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5026b470-1af4-9d75-a85d-dd53039e4327",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCultistAble_HasMet2"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "d4740537-1b80-21d2-f2dc-cc875502139a",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_GoblinKing_Event_ScryingEnded"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5026b470-1af4-9d75-a85d-dd53039e4327",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCultistAble_HasMet2"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3857e4f6-e4dd-b19d-750e-5770b3bbd2a3",
+              "Text": {
+                "Handle": "h2e8a7536gfb14g4feag9a8eg15b9150c0403",
+                "Value": "That was... intense. Wouldn't want to bump into that thing while it was still alive."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Awe",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little incredulous. The ritual is done, so he can speak freely.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Scrying Ended",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "f8e3f876-948c-0f3c-d96c-90ba5fc30ea6": {
+      "UUID": "f8e3f876-948c-0f3c-d96c-90ba5fc30ea6",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9d488957-1573-6dfa-cd49-09591cfe9e85"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8a37732a-723b-6578-16fb-e782d0e88d4f",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCulstist_Able_Knows_AskedQuestion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8a37732a-723b-6578-16fb-e782d0e88d4f",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_AbsoluteCulstist_Able_Knows_AskedQuestion"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "98c3d632-82a2-07fe-f2e5-d91601f01c2b",
+              "Text": {
+                "Handle": "h5430d738g31c2g40d3gac93gbde5636f305b",
+                "Value": "You really wouldn't."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;672",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "3e1cc79d-f8c8-8425-cfba-7671445f16df",
+      "Index": 0,
+      "List": [
+        "70db5a59-c802-4367-9c60-e25e4a8e3381"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Kagran",
+        "Type": "character",
+        "MapKey": "70db5a59-c802-4367-9c60-e25e4a8e3381",
+        "Name": "S_GOB_AbsoluteCultistAble",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c0984616-e6c1-d498-1323-0a59e453fc54",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Human cultist watching the Goblin King perform the Speak With Dead spell."
+}

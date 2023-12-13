@@ -1,0 +1,162 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Chapel/CHA_LaezelRecruitment_AD_ReturnAnyCombat1.lsj",
+  "UUID": "75451222-1638-2752-9d86-acef5a42d6c0",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "86b8e0f1-a00f-14fe-2a79-3f3a1cc12e6b",
+    "4587bdfb-9037-77f5-5082-49ed39f87383"
+  ],
+  "Nodes": {
+    "4587bdfb-9037-77f5-5082-49ed39f87383": {
+      "UUID": "4587bdfb-9037-77f5-5082-49ed39f87383",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d75431e7-252f-ea35-aceb-f742adfe8102",
+              "Text": {
+                "Handle": "he011800fgbda5g4ea6g9d91g602c192e442c",
+                "Value": "It's over and done with. I've got my eye on you, toad."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Still quite close to Lae'zel",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "86b8e0f1-a00f-14fe-2a79-3f3a1cc12e6b": {
+      "UUID": "86b8e0f1-a00f-14fe-2a79-3f3a1cc12e6b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2d92791a-188a-44b3-8777-22e20cfbda3e",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_LaezelREcruitment_Event_CombatEndedFar"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8a21e822-742a-4c05-ff34-388373020448",
+              "Text": {
+                "Handle": "h6f1364a0g59eeg470cgab56ge3ce12540706",
+                "Value": "Back to the toad-freak. I can't risk it escaping."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "7ae05c9f-f66b-d981-c534-3b2790858203",
+      "Index": 0,
+      "List": [
+        "2c8537fb-bf73-43a2-a8ff-48e41453adea"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Nymessa",
+        "Type": "character",
+        "MapKey": "2c8537fb-bf73-43a2-a8ff-48e41453adea",
+        "Name": "S_CHA_CagerLaezel1",
+        "ParentTemplateId": null,
+        "TemplateName": "9103fce3-6423-4f8a-af04-83ac1af2a1d7"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Damays (and Nymessa) got dragged into a combat from another situation (ex.: the brains at the crash site, the bandits at the chapel). Nymessa plays this AD when the combat ends and while she returns to the cage, if Damays is dead (otherwise Damays is the one doing the AD)."
+}

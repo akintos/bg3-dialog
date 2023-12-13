@@ -1,0 +1,1277 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_BaldursGate_DoorDialog.lsj",
+  "UUID": "a8a2a771-f611-5395-d144-349d8ff3dcb9",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "843930a6-7b86-73c2-f73a-ec0ba1bbf307",
+    "2c335fbd-9558-cdc1-b152-a8f175f495d1",
+    "1cc89741-6fbb-66d0-d4f4-3c633cb479f0"
+  ],
+  "Nodes": {
+    "0842acd9-6b4e-a3ed-99de-5f9e45d66d98": {
+      "UUID": "0842acd9-6b4e-a3ed-99de-5f9e45d66d98",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1bedefcf-98af-58a4-f863-5154e91458a0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1106e99b-273e-4d19-b3cc-7a9667cf3d53",
+              "value": false,
+              "paramval": null,
+              "Name": "GLO_EmperorPrelude_State_AllStonesInPartyInventory"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c7bc46ee-c803-4f78-bb54-369f5a2e3468",
+              "Text": {
+                "Handle": "h8ffa1e8cg61dbg454fg98afgb575405b5db9",
+                "Value": "<i>But you do not have all the Netherstones. You cannot defeat it without them. <b>Turn back.</b></i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player doesn't have all stones",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "0d703369-b8f9-3a90-2360-fbb5b0d5b619": {
+      "JumpTarget": "7b5a8e73-6386-23a5-6075-1c42eaec77e3",
+      "JumpTargetPoint": 2,
+      "UUID": "0d703369-b8f9-3a90-2360-fbb5b0d5b619",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N33",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1bedefcf-98af-58a4-f863-5154e91458a0": {
+      "JumpTarget": "7b5a8e73-6386-23a5-6075-1c42eaec77e3",
+      "JumpTargetPoint": 2,
+      "UUID": "1bedefcf-98af-58a4-f863-5154e91458a0",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N31",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "1cc89741-6fbb-66d0-d4f4-3c633cb479f0": {
+      "UUID": "1cc89741-6fbb-66d0-d4f4-3c633cb479f0",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 1,
+      "Children": [
+        "293d96ca-2d75-123b-16ad-06363ebc9199"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fb98ee6d-5a25-2462-027b-68f67b6eddb4",
+              "value": false,
+              "paramval": 1,
+              "Name": "LOW_BaldursGate_Door_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1eec74e8-3673-4500-abec-57b7ed8469ed",
+              "value": true,
+              "paramval": 1,
+              "Name": "ILLITHID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fb98ee6d-5a25-2462-027b-68f67b6eddb4",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursGate_Door_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a61397f2-c479-466b-8554-a2f61c995abf",
+              "Text": {
+                "Handle": "h14954ba0ge3d5g4430gb619g8246d30c7c4b",
+                "Value": "<i>Stop this madness. Turn back! </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KrisB] Mindmeld on player and pulse from world point",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KrisB] Mindmeld on player",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "27fb2f02-ca75-16d5-f65e-2ba203b21fa2": {
+      "UUID": "27fb2f02-ca75-16d5-f65e-2ba203b21fa2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1bedefcf-98af-58a4-f863-5154e91458a0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "636ea1d3-f53a-41d2-9b96-307622933d33",
+              "Text": {
+                "Handle": "h85e90ed4ge690g47e0g9237gc64c043b9ac6",
+                "Value": "<i>The Morphic Pool is beneath the city. That is where we must go. But you cannot confront the brain without all three Netherstones! Turn back! </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N25",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "293d96ca-2d75-123b-16ad-06363ebc9199": {
+      "UUID": "293d96ca-2d75-123b-16ad-06363ebc9199",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 1,
+      "Children": [
+        "9e5ae94a-886c-f7ac-311f-0d082a96132d",
+        "61b562e0-a6d4-b385-edb2-0b64fe2bb25b",
+        "f29b0393-cc04-9ac5-fdef-bcbda9938072"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "61ba6da3-5162-45dd-af76-c38af4030af8",
+              "Text": {
+                "Handle": "h692b9340gaf17g4dd8g9493g0e645142705b",
+                "Value": "<b>---<i>COME</i>--<br>-obey-  --<i>yield</i>---</b>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KrisB] Heavy mindmelding effect overlay - talk to Kris B",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KrisB] Mindmelding effect - talk to Kris B",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "2c335fbd-9558-cdc1-b152-a8f175f495d1": {
+      "UUID": "2c335fbd-9558-cdc1-b152-a8f175f495d1",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 1,
+      "Children": [
+        "0d703369-b8f9-3a90-2360-fbb5b0d5b619"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "fb98ee6d-5a25-2462-027b-68f67b6eddb4",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BaldursGate_Door_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "1eec74e8-3673-4500-abec-57b7ed8469ed",
+              "value": true,
+              "paramval": 1,
+              "Name": "ILLITHID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6d15a411-b60b-4aa8-9607-97b3524de060",
+              "Text": {
+                "Handle": "hc945e66ag3a18g46f5ga898ge7f0a8fbf6c0",
+                "Value": "<i>Did you not hear me? I said TURN BACK. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KrisB] Mindmeld on player and pulse from world point",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KrisB] Mindmeld on player",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "3c9104db-64d0-939d-6cd2-cbcb936d9f20": {
+      "UUID": "3c9104db-64d0-939d-6cd2-cbcb936d9f20",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ee694fb5-c6d3-4496-ab70-56e7880d429a",
+              "Text": {
+                "Handle": "hc5996de2g948dg470dg9751g976ea3e3a68d",
+                "Value": "<i>The end of EVERYTHING. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "3d77279c-cf9f-a7d0-0a09-369cae02c9f9": {
+      "UUID": "3d77279c-cf9f-a7d0-0a09-369cae02c9f9",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b1e88ff5-c6ba-4bf5-939c-2855271fa038",
+              "Text": {
+                "Handle": "h0468f14ege7fcg4902gb71eg366332b6bf03",
+                "Value": "<i>Once we go in, we'll have mere moments to reach it before we succumb, even with Orpheus' protection!</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "61b562e0-a6d4-b385-edb2-0b64fe2bb25b": {
+      "UUID": "61b562e0-a6d4-b385-edb2-0b64fe2bb25b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 1,
+      "Children": [
+        "9346afd0-192e-d1e8-0199-9206f1486f24"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b8447dab-27cb-430b-ba87-85dacac2c651",
+              "Text": {
+                "Handle": "hfc43f46fg4028g493aga396g086a5673ae14",
+                "Value": "<i>We must discover the brain's hiding place before we can attempt to confront it! </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N8",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Doesnt Know Brain Location",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "7b5a8e73-6386-23a5-6075-1c42eaec77e3": {
+      "UUID": "7b5a8e73-6386-23a5-6075-1c42eaec77e3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e89d5f1e-39e9-0c2d-c407-95068d226113",
+        "7e8dab63-8c0c-04f0-b2bd-1cdf9c87a515",
+        "b0e6d165-e7df-11e0-d0f3-cacebfa265b7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1106e99b-273e-4d19-b3cc-7a9667cf3d53",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_EmperorPrelude_State_AllStonesInPartyInventory"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7575ca78-29f3-4494-92e4-c63f5ce7e3cb",
+              "Text": {
+                "Handle": "hef3a9de7gd4f2g401ag96f5g51f6f079bfa9",
+                "Value": "<i>The Morphic Pool is beneath the city. That is where we must go. Do not waste your time here - turn back! </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player Has All 3 Stones",
+        "position": "1615;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "7e8dab63-8c0c-04f0-b2bd-1cdf9c87a515": {
+      "UUID": "7e8dab63-8c0c-04f0-b2bd-1cdf9c87a515",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9b2c04eb-81fb-4a64-8e38-87483610e4c7",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_ThrallOfTheAbsolute_Event_AttemptedToEnterUppercity"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ff1bbcbb-1b20-419c-944c-805c9b58315b",
+              "Text": {
+                "Handle": "h1eb488b7g55c3g4615ga667g563111abb86a",
+                "Value": "I don't care - let's go through."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;15",
+        "sourcetemplate": ""
+      }
+    },
+    "843930a6-7b86-73c2-f73a-ec0ba1bbf307": {
+      "UUID": "843930a6-7b86-73c2-f73a-ec0ba1bbf307",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1eec74e8-3673-4500-abec-57b7ed8469ed",
+              "value": false,
+              "paramval": 1,
+              "Name": "ILLITHID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9bcf3829-9ddd-4f81-aae0-72782552cfbf",
+              "Text": {
+                "Handle": "h83e0cddag69aag4caag9736gd3c7113635a0",
+                "Value": "*A powerful force emanates from beyond the door. It skims the surface of your mind with frightening speed, and recedes. You are not the one it wants.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N34",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[KrisB] Heavy mindmelding effect overlay - talk to Kris B. Mindmeld on player and pulse from world point",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "[KrisB] Mindmelding effect - talk to Kris B",
+        "collapsed": "False",
+        "logicalname": "NON TADPOLED PLAYER",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "9346afd0-192e-d1e8-0199-9206f1486f24": {
+      "UUID": "9346afd0-192e-d1e8-0199-9206f1486f24",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0842acd9-6b4e-a3ed-99de-5f9e45d66d98"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6f720130-ad91-37e0-6035-4f0e97a49054",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_BaldursGate_Knows_BrainUnderground"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "13e68c04-68b8-4e7a-a2f9-f97663949d9e",
+              "Text": {
+                "Handle": "h9beaebcfg924fg4ec8g87d9g3d5221ef61cf",
+                "Value": "<i>The brainquakes are coming from beneath the city. We should seek it there. </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N26",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "9e5ae94a-886c-f7ac-311f-0d082a96132d": {
+      "UUID": "9e5ae94a-886c-f7ac-311f-0d082a96132d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7b5a8e73-6386-23a5-6075-1c42eaec77e3",
+        "27fb2f02-ca75-16d5-f65e-2ba203b21fa2"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f1c247e9-cf09-5e6e-350a-22d4e49d65f0",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_EmperorPrelude_Knows_BrainLocation"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e0f352b8-586c-49dd-8729-d990d4c194ac",
+              "Text": {
+                "Handle": "h572f7641g2aa7g4723gb1dcg5841c55a7500",
+                "Value": "<i>You know this is not the place!</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Knows Brain Location",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "b0e6d165-e7df-11e0-d0f3-cacebfa265b7": {
+      "UUID": "b0e6d165-e7df-11e0-d0f3-cacebfa265b7",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "61d3130d-3609-4808-ad72-81697278c0ad",
+              "Text": {
+                "Handle": "h676759d7g9870g47a9g82d5g1ce1eb09e276",
+                "Value": "<i>Turn back.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e2df961a-7ec8-6e54-0d45-ddb9c2425c7c": {
+      "UUID": "e2df961a-7ec8-6e54-0d45-ddb9c2425c7c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3c9104db-64d0-939d-6cd2-cbcb936d9f20"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ccfa66d8-3518-412e-a1a9-2b0c773a8763",
+              "Text": {
+                "Handle": "hd440ba01gdf18g4c81gb148gfeb7c998f1a4",
+                "Value": "<i>You will be dominated, enthralled. It will be the end of you, the end of me.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N32",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e89d5f1e-39e9-0c2d-c407-95068d226113": {
+      "UUID": "e89d5f1e-39e9-0c2d-c407-95068d226113",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e2df961a-7ec8-6e54-0d45-ddb9c2425c7c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "36988123-e3e2-4be4-8942-d065e0e08179",
+              "Text": {
+                "Handle": "hd2c8c2begf31fg4c65gb8eege91e5c147594",
+                "Value": "What happens if I keep going? "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f29b0393-cc04-9ac5-fdef-bcbda9938072": {
+      "UUID": "f29b0393-cc04-9ac5-fdef-bcbda9938072",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": 1,
+      "Children": [
+        "3d77279c-cf9f-a7d0-0a09-369cae02c9f9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6e4b66e9-0f72-5171-04ba-441108b45b0e",
+              "value": true,
+              "paramval": null,
+              "Name": "IMPOSSIBLE"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0cd385da-d0b6-4118-a8db-d8e6b71a9368",
+              "Text": {
+                "Handle": "hdce450a5g48efg4decg84c6g9713f7a9e70c",
+                "Value": "<i>It's too strong here - I can't hold it. We need to find another way! </i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "IMPOSSIBLE",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cbf8ef57-4749-474a-83e9-9f47ab95ca77",
+      "Index": 0,
+      "List": [
+        "a166ba9b-b29c-4de8-1631-ad7e55fdc1dd"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Disembodied Voice",
+        "Type": "character",
+        "MapKey": "696b6670-c31c-4cfe-a1dd-fa80c3b59dad",
+        "Name": "S_GLO_VoiceOfAbsoluteHelper",
+        "ParentTemplateId": null,
+        "TemplateName": "19dc6cab-aa38-4f09-b9cf-546e1c0ecb8a"
+      },
+      "SpeakerGroupName": "GROUP_GLO_ElderBrain"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "552db95c-b1e1-434a-af0b-df19dfa2b07e",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "c5d47758-c891-4649-b97b-819b9bc8eda6",
+      "Index": 2,
+      "List": [
+        "a9edc89f-398b-a703-1a90-7330adb60ed9"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "The Emperor",
+        "Type": "character",
+        "MapKey": "73d49dc5-8b8b-45dc-a98c-927bb4e3169b",
+        "Name": "S_GLO_Emperor",
+        "ParentTemplateId": null,
+        "TemplateName": "6efb2704-a025-49e0-ba9f-2b4f62dd2195"
+      },
+      "SpeakerGroupName": "GROUP_Emperors"
+    }
+  },
+  "Synopsis": "In Baldur's Gate (the gate), if players reach the door after the warnings we will start this dialog about voluntarely become a thrall."
+}

@@ -1,0 +1,162 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/HouseOfHope/LOW_HouseOfHope_AD_SoulPillar01.lsj",
+  "UUID": "3bffdc17-a006-853d-b5ad-c99f137660bd",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "4c478659-2b4f-b0ea-eab2-2d6535bced9a",
+    "43a5d363-8785-485a-98c5-1a49a42f034e"
+  ],
+  "Nodes": {
+    "43a5d363-8785-485a-98c5-1a49a42f034e": {
+      "UUID": "43a5d363-8785-485a-98c5-1a49a42f034e",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "219cbd9f-70d7-40d7-8394-797192e5f6d1",
+              "Text": {
+                "Handle": "h0570256cgcd76g4b20g9b73g7e8eee3b0dab",
+                "Value": "*A chill emanates from the pillar, and you sense the sorrow of a thousand damned souls trapped within.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "4c478659-2b4f-b0ea-eab2-2d6535bced9a": {
+      "UUID": "4c478659-2b4f-b0ea-eab2-2d6535bced9a",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7fdafb09-86d8-f9a5-1e30-66bdb8c43c32",
+              "value": false,
+              "paramval": null,
+              "Name": "LOW_HouseOfHope_State_SoulPillarArcanaCheckPassed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "955ed87f-ffba-4b7d-a118-11c2b030f95f",
+              "Text": {
+                "Handle": "hd3a3cbbdg4adfg496cgaee1g13dd554d4448",
+                "Value": "*The surface of the pillar is cool. Unnaturally so, given the heat of Avernus.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a82b8700-f9b7-404d-b7b8-af84a75e4307",
+      "Index": 0,
+      "List": [
+        "d4b6fdb1-4ae1-46de-8ecf-bd233c2961a2"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Pillar of Souls",
+        "Type": "item",
+        "MapKey": "d4b6fdb1-4ae1-46de-8ecf-bd233c2961a2",
+        "Name": "S_LOW_HouseOfHope_SoulPillar01_Deactivated",
+        "ParentTemplateId": null,
+        "TemplateName": "77ee4fd2-b2b0-46f7-8e04-12f28ee3320e"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "An AD that triggers when players interact with a deactivated soul pillar.\r\nThere are four different pillars in Foyer room, each one should have different description of what should happen with the souls inside. \r\nThe idea of AD to hint on what's happening to the souls that Raphael collects.\r\n\r\nIf players didn't succeed on a preceeding skillcheck, they don't learn anything about the souls."
+}

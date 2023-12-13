@@ -1,0 +1,216 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act1b/LowerCreche/CRE_Hatchery_TouchWarning.lsj",
+  "UUID": "1429a4cd-eaba-fc27-79a5-ff031553d5b5",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "40e59d71-741f-3530-8f57-0439bca124af",
+    "893a53ca-9b78-2dc3-a1ce-f8608de58f39"
+  ],
+  "Nodes": {
+    "40e59d71-741f-3530-8f57-0439bca124af": {
+      "UUID": "40e59d71-741f-3530-8f57-0439bca124af",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ac60668-fddc-4d8e-93d7-5df57a2dc033",
+              "value": false,
+              "paramval": 1,
+              "Name": "CRE_Hatchery_HasMet_CaretakerLastWarning"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ac60668-fddc-4d8e-93d7-5df57a2dc033",
+              "value": true,
+              "paramval": 1,
+              "Name": "CRE_Hatchery_HasMet_CaretakerLastWarning"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9f716c35-ede4-420c-840a-7148808e0b84",
+              "Text": {
+                "Handle": "h8f41adfeg90c2g4351ga9acg582dbb6aa60c",
+                "Value": "<i>Do not </i>touch the egg! This is your final warning, <i>k'chakhi</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Aggressive/threatening - he means it",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "893a53ca-9b78-2dc3-a1ce-f8608de58f39": {
+      "UUID": "893a53ca-9b78-2dc3-a1ce-f8608de58f39",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ac60668-fddc-4d8e-93d7-5df57a2dc033",
+              "value": true,
+              "paramval": 1,
+              "Name": "CRE_Hatchery_HasMet_CaretakerLastWarning"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "aa0390d1-0b30-400e-936d-7b5bc21ee03c",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Hatchery_State_HatcheryHostile"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22342495-7ed6-4783-b6d1-84561feb1cbf",
+              "Text": {
+                "Handle": "h078b1ddbga609g4b51g8e1fg61c62a3ca7c0",
+                "Value": "I told you not to touch the egg - this foolishness ends here."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Aggressive; he's about to forcefully expel the player from the hatchery (with violence)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "99337c0b-ab9c-4475-a306-bf463f84dda5",
+      "Index": 0,
+      "List": [
+        "c61ac08e-addf-4f0e-8a0a-2fc026ec0224"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Varsh Ko'kuu",
+        "Type": "character",
+        "MapKey": "c61ac08e-addf-4f0e-8a0a-2fc026ec0224",
+        "Name": "S_CRE_Caretaker",
+        "ParentTemplateId": null,
+        "TemplateName": "366bca00-1c0c-4fba-bb1c-45c6ae20d691"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d0a31557-feb2-4e63-a5a0-10a4310b64d0",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The caretaker warns the player to leave the egg. If it is repeated, he starts a fight."
+}

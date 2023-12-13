@@ -1,0 +1,109 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_Apprentice_CombatStarts.lsj",
+  "UUID": "3584db9a-df61-5083-6a2a-7e7b71bcc88f",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "1b9bfa64-54f6-482f-83c9-24c549f1fe7c"
+  ],
+  "Nodes": {
+    "1b9bfa64-54f6-482f-83c9-24c549f1fe7c": {
+      "UUID": "1b9bfa64-54f6-482f-83c9-24c549f1fe7c",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "04ad0a41-756c-4e59-bed4-4da6ad077c90",
+              "Text": {
+                "Handle": "h62e92bc5g5397g4910g89d3g29a0b495f418",
+                "Value": "I tried to make this easy on you and give you some time. But if you won't stop, I'll have to stop you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Combat will start",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "1da3a4c3-954f-15c2-6587-f16ed93eba01",
+      "Index": 0,
+      "List": [
+        "7cabf226-e34b-4556-8903-a45d0fe26caf"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Nettie",
+        "Type": "character",
+        "MapKey": "7cabf226-e34b-4556-8903-a45d0fe26caf",
+        "Name": "S_DEN_Apprentice",
+        "ParentTemplateId": null,
+        "TemplateName": "1ad176b6-d4df-49b9-b487-c0751c39e55e"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a54cf018-9ce0-afed-c61e-5706a07e9485",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The player is locked in Nettie's lab and has cured themselves before persuading her. Normally, script starts the dialog 'DEN_Apprentice_LockedUp' to react to this, but it can fail if the player is wild shaped for example. This node taken from the dialog 'DEN_CGB_Apprentice' gives the feedback thatNettie is going hostile."
+}

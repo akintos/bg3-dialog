@@ -1,0 +1,203 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_BloodMerchant_AD_PlayersDropPotionGround.lsj",
+  "UUID": "a955982d-07c7-5db3-f374-974eacbb0ea5",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "3ae1fd7b-410f-4ff8-8bf6-61be667503f2"
+  ],
+  "Nodes": {
+    "3ae1fd7b-410f-4ff8-8bf6-61be667503f2": {
+      "UUID": "3ae1fd7b-410f-4ff8-8bf6-61be667503f2",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4a75eaad-a11b-22fb-4045-78a7981e5a6d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2d55695f-cd24-470c-befa-9a0b983ff32c",
+              "Text": {
+                "Handle": "h757dd998g6fecg4149gbf9cg58e1efd047cd",
+                "Value": "BE CAREFUL! That's my only vial!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "4a75eaad-a11b-22fb-4045-78a7981e5a6d": {
+      "UUID": "4a75eaad-a11b-22fb-4045-78a7981e5a6d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "822258b9-7433-a6f6-6c21-d8fbd7ac36a4"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4c34d76d-69e5-4c26-8678-10139002dd9a",
+              "value": true,
+              "paramval": null,
+              "Name": "LOW_BloodMerchant_State_ArajSeesTryMessPotion"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5fc6046f-3fc3-4b42-8bc4-2cdb3083d908",
+              "Text": {
+                "Handle": "h8f46eb44gc777g4bb2g8e11gbb1f0f9a9fe7",
+                "Value": "And that's not for you. Only someone with a mind for illithids should even <i>think </i>to imbibe!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "This node only will be triggered if players try to drink the potion with a non-tadpoled character. This will be triggered only once. Second time players try, fallback to combat.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "822258b9-7433-a6f6-6c21-d8fbd7ac36a4": {
+      "UUID": "822258b9-7433-a6f6-6c21-d8fbd7ac36a4",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGICAL END NODE",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d174514b-8f0d-4256-8b63-c3a45ef04b19",
+      "Index": 0,
+      "List": [
+        "511c9413-25fe-449c-a81d-4b09bc20745a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Araj Oblodra",
+        "Type": "character",
+        "MapKey": "511c9413-25fe-449c-a81d-4b09bc20745a",
+        "Name": "S_MOO_InfernalVendor",
+        "ParentTemplateId": null,
+        "TemplateName": "53325284-e0cb-470e-8576-fb12c494ecd3"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "After getting the explosive potion:\r\n- If players drop the potion (not destroy it) to the ground, Araj will freak out a little bit."
+}

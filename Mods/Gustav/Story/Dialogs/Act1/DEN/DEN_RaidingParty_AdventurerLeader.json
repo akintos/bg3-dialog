@@ -1,0 +1,208 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_RaidingParty_AdventurerLeader.lsj",
+  "UUID": "f8012c02-94ea-3e03-7cb3-d8391dff3d39",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 1,
+    "1": 0
+  },
+  "RootNodes": [
+    "d8bdb6b4-dbf4-09e2-b436-0f9f9867c70d",
+    "60efe26f-9c81-3556-38d0-a1ef615076f6"
+  ],
+  "Nodes": {
+    "60efe26f-9c81-3556-38d0-a1ef615076f6": {
+      "UUID": "60efe26f-9c81-3556-38d0-a1ef615076f6",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "598b7f03-2a98-3bb6-cd21-4e365e48ded2",
+              "Text": {
+                "Handle": "hfeaa9b3fgbdbfg4d98gbff8g14480c577ec3",
+                "Value": "Out of my way. I'll tear the horns off that bloody coward!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Furious at Zevlor, who nearly locked him out of the grove.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (Raiding Party)",
+        "position": "-945;15564",
+        "sourcetemplate": ""
+      }
+    },
+    "d8bdb6b4-dbf4-09e2-b436-0f9f9867c70d": {
+      "UUID": "d8bdb6b4-dbf4-09e2-b436-0f9f9867c70d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc97da68-5ed9-ffe2-7582-2533be0efbcd",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_RaidingParty_Quest_ConfrontationResolved"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "aaef5d43-c6f3-434d-b11e-c763290dbe0c"
+                ],
+                "TagNames": [
+                  "TIEFLING"
+                ]
+              }
+            ],
+            "RuleString": "!TIEFLING"
+          },
+          "TagTexts": [
+            {
+              "LineId": "d7b9e37f-31a2-4e7f-791c-0181960afaa0",
+              "Text": {
+                "Handle": "h1ea959d1gb9c1g4ad1gaf86gab258979068b",
+                "Value": "Pardon."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "16c25cd3-570b-a720-a22d-96f710c64540",
+              "Text": {
+                "Handle": "hd8d156bag7fbcg4a9agbcccgbf5dbdd2a5f6",
+                "Value": "Bloody devils."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "'Pardon' is drected at a tiefling. Full of disdain.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting (Adventurers Quest)",
+        "position": "-945;15345",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b23036df-6cd4-f5ec-d14a-20b90e98a07d",
+      "Index": 0,
+      "List": [
+        "82d1b843-9e8c-48a5-9d87-caddea5c193c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Aradin",
+        "Type": "character",
+        "MapKey": "82d1b843-9e8c-48a5-9d87-caddea5c193c",
+        "Name": "S_DEN_AdventurerLeader",
+        "ParentTemplateId": null,
+        "TemplateName": "3278f064-5353-4c08-ab96-c2f432d0fda0"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f6f3a316-b4e2-5df8-a695-3ae474eb4bf2",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Minor dialogues before and after Aradin/ Zevlor's confrontation insider the camp."
+}

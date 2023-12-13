@@ -1,0 +1,347 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_WolfPens_Beastmaster001.lsj",
+  "UUID": "407c8e17-b172-a37c-2616-8a9af214144c",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "4bea4600-76b8-ca33-0dc0-969ca2decad2",
+    "ee423b34-e0d8-4e19-1f2d-a2fed61f3801",
+    "e22dcd98-1672-1b2f-65fc-fffde8fb6222"
+  ],
+  "Nodes": {
+    "4bea4600-76b8-ca33-0dc0-969ca2decad2": {
+      "UUID": "4bea4600-76b8-ca33-0dc0-969ca2decad2",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a1bd5b3f-c4fe-4fac-b3b6-52367e97b545",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_WolfPens_State_PrisonerPermaDefeated"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bc168610-2cc5-2a29-a3a3-5c1c2e5da6bb",
+              "Text": {
+                "Handle": "hb65bae00gc7d8g451fg92e0g8b3d183d6e9c",
+                "Value": "Damned <i>booyahg</i>. 'Least he's done with his tricks, now."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N17",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "BOO-yawg. (w is silent, as in yawn). Said after a bear turned into an elf, and killed a goblin. In turn, the elf was killed.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "5413ffba-646b-6991-d9bf-6838c6827251": {
+      "UUID": "5413ffba-646b-6991-d9bf-6838c6827251",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "77828f8d-5df9-ce04-faec-2a3136fd498c",
+              "Text": {
+                "Handle": "hf971dbcbg6283g45f2g810bgebbf64c51b6a",
+                "Value": "Just hope these scraps will satisfy the bunch when they're in this state."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Cutting meat",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "e22dcd98-1672-1b2f-65fc-fffde8fb6222": {
+      "UUID": "e22dcd98-1672-1b2f-65fc-fffde8fb6222",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "5413ffba-646b-6991-d9bf-6838c6827251"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b77bf649-77a6-0c37-7c1c-577ebfc0f393",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_WolfPens_Beastmaster001_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b77bf649-77a6-0c37-7c1c-577ebfc0f393",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_WolfPens_Beastmaster001_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "77479645-d24e-900d-ccf9-2ed6d750f978",
+              "Text": {
+                "Handle": "h0c4415eagb06fg4b12g8473gc9e74f4b9191",
+                "Value": "'Ere to see the bear? Just follow the noise. Worgs 'ave been goin' crazy for it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Cutting meat",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "Table, meat, knife",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Thoughtful - worgs are not acting their usual selves.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Cutting meat",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Table, meat, knife",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ee423b34-e0d8-4e19-1f2d-a2fed61f3801": {
+      "UUID": "ee423b34-e0d8-4e19-1f2d-a2fed61f3801",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b77bf649-77a6-0c37-7c1c-577ebfc0f393",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_WolfPens_Beastmaster001_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "118341d6-8821-cd0d-c582-9ace3a6818f6",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Moonrise_Knows_Prisoners"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d9a951d1-cd4f-fee4-fdf3-6fa2b064267c",
+              "Text": {
+                "Handle": "h6074ac04g7e18g4a09g974fgd1d9af83e508",
+                "Value": "Too bad we had to hand everyone at the tavern over to Moonrise Towers - would've been a real feast for the beasts otherwise."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Cutting meat",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "Table, meat, knife",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Cutting meat",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "faf0de25-65a6-2551-6b7b-b7d1386d9235",
+      "Index": 0,
+      "List": [
+        "20383707-2661-4d72-bcba-3aa4b2cbb35b"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Butcher Vrak",
+        "Type": "character",
+        "MapKey": "20383707-2661-4d72-bcba-3aa4b2cbb35b",
+        "Name": "S_GOB_WolfPens_Beastmaster_001",
+        "ParentTemplateId": null,
+        "TemplateName": "35e843cf-bc73-4754-aaee-fd8272d99ea6"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "5c04f546-e73c-527e-b47e-b2c9d98dd0f7",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Goblin beastmaster cutting up meat for the worgs."
+}

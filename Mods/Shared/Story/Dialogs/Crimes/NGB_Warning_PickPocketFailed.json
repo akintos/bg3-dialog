@@ -1,0 +1,490 @@
+{
+  "Path": "Mods/Shared/Story/Dialogs/Crimes/NGB_Warning_PickPocketFailed.lsj",
+  "UUID": "b17d5bbb-5e07-48c4-a314-1ce9830fafff",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {},
+  "RootNodes": [
+    "9f18d8fa-3007-499b-89a6-3e7258d67e43",
+    "02124fa6-7302-4f31-0743-3609cb9b83b3"
+  ],
+  "Nodes": {
+    "02124fa6-7302-4f31-0743-3609cb9b83b3": {
+      "UUID": "02124fa6-7302-4f31-0743-3609cb9b83b3",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7f06950e-6d94-1dae-b7d9-281157f1a036",
+        "7793545c-95ff-13ea-e69d-5f5be9cf2083",
+        "14a5d52a-6380-f318-69c6-e6fa72454f21"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "60a1ad4c-ab66-4ca6-973c-a9b49bb84892",
+              "value": true,
+              "paramval": 0,
+              "Name": "GEB_Crime_IsAngry"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N43",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Greeting needs to be empty. It's used to cut off this flow from the others",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "(Non-Guard) Victim, angry",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "14a5d52a-6380-f318-69c6-e6fa72454f21": {
+      "UUID": "14a5d52a-6380-f318-69c6-e6fa72454f21",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "686bc362-67ee-8d88-384a-25c737aaf740",
+              "value": true,
+              "paramval": 0,
+              "Name": "CRIME_FleeHelpFromDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b7a06bac-acfe-50a4-6041-377604229c61",
+              "Text": {
+                "Handle": "h1dceb863g154fg4e04gbc44g68719bdb3699",
+                "Value": "*Your pickpocketing has caused quite a stir. The alarm is being raised.*"
+              }
+            },
+            {
+              "LineId": "0728afc3-4ac8-05ea-96fc-0f38eb20889b",
+              "Text": {
+                "Handle": "h668fd151g566ag4059g850bgfc51a310de93",
+                "Value": "*The only thing your pickpocketing has earned you is a raised alarm.*"
+              }
+            },
+            {
+              "LineId": "a2c9fcb3-9cb6-b8d7-2861-9fe42d2b9dd8",
+              "Text": {
+                "Handle": "hc8a82344g3d34g4834gbf35g01ee3d27c732",
+                "Value": "*Your pickpocketing has ended in failure - and a raised alarm.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Afraid -> call guards and run",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "7793545c-95ff-13ea-e69d-5f5be9cf2083": {
+      "UUID": "7793545c-95ff-13ea-e69d-5f5be9cf2083",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c2118fb8-3a2e-23ed-f2c1-bfe74f9e5947"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "71120d5d-3853-46e4-9762-33f59aa6b4ae",
+              "value": true,
+              "paramval": 0,
+              "Name": "CIVILIAN"
+            },
+            {
+              "UUID": "91f4b379-63a2-40e9-a509-7b9b2f90e4c8",
+              "value": true,
+              "paramval": 0,
+              "Name": "BADASSCIVILIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N55",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Attack, think they can handle you",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "7f06950e-6d94-1dae-b7d9-281157f1a036": {
+      "UUID": "7f06950e-6d94-1dae-b7d9-281157f1a036",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c2118fb8-3a2e-23ed-f2c1-bfe74f9e5947"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "71120d5d-3853-46e4-9762-33f59aa6b4ae",
+              "value": false,
+              "paramval": 0,
+              "Name": "CIVILIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N47",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Attack, think they can handle you",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "9f18d8fa-3007-499b-89a6-3e7258d67e43": {
+      "UUID": "9f18d8fa-3007-499b-89a6-3e7258d67e43",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "60a1ad4c-ab66-4ca6-973c-a9b49bb84892",
+              "value": false,
+              "paramval": 0,
+              "Name": "GEB_Crime_IsAngry"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "be8275a7-0795-0790-6f08-c0b2bda99914",
+              "Text": {
+                "Handle": "h08e808c8ge784g4c20gbde5g038c791bf78d",
+                "Value": "*Caught in the act. Your touch isn't as light as you'd hoped.*"
+              }
+            },
+            {
+              "LineId": "49313506-efea-76e8-b7f8-8bb7ba705ba2",
+              "Text": {
+                "Handle": "he365276bg7da1g474eg873dg7406aab7c4ec",
+                "Value": "*Caught with your hand in a pocket. Embarrassing - and possibly dangerous.*"
+              }
+            },
+            {
+              "LineId": "32a6dffc-4c69-9f6d-4331-ca5a428bb7c9",
+              "Text": {
+                "Handle": "h9972784fg8840g45b7gb4a2g28d976586991",
+                "Value": "*Crime can pay - but not when you can't pick a pocket correctly.*"
+              }
+            },
+            {
+              "LineId": "48dab2a1-cc88-f551-2ec7-30982f9e0dd2",
+              "Text": {
+                "Handle": "h2b6d8fecg8a37g4ebcgb16dgc0c18ff4aadb",
+                "Value": "*Caught red-handed. Perhaps you should practise on a mannequin, or a corpse.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "c2118fb8-3a2e-23ed-f2c1-bfe74f9e5947": {
+      "UUID": "c2118fb8-3a2e-23ed-f2c1-bfe74f9e5947",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ca0cbe39-d121-069e-b408-c02954b32cf7",
+              "value": true,
+              "paramval": 0,
+              "Name": "TemporaryHostilityAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "caf87b96-99dc-4481-b618-4142a1810795",
+              "Text": {
+                "Handle": "h16712689g9ee2g447bgaf7cg0de7bc1f60a2",
+                "Value": "*You tried to pick the wrong pocket. Now you have a fight on your hands.*"
+              }
+            },
+            {
+              "LineId": "3e707b3e-996e-d2e5-918a-c318660febd8",
+              "Text": {
+                "Handle": "haedb969eg9e4eg44ebg9360g51a1143b4972",
+                "Value": "*Your pickpocketing has yielded a fight. Time to defend yourself.*"
+              }
+            },
+            {
+              "LineId": "ad843aa8-b629-9e42-921a-2e714f803218",
+              "Text": {
+                "Handle": "hc11d5576g2f83g41bbgb47dg1f33ccee1bb0",
+                "Value": "*How unfortunate. You'll need to prove you're a better fighter than you are a pickpocket.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N51",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9ba197b9-6013-f507-9596-43297e16b91e",
+      "Index": 0,
+      "List": [
+        "9bc90704-dda4-244a-2f89-26f7470ed54d",
+        "00efc7b5-aa56-44d2-82f2-eff30e451e1e",
+        "6fe77279-1bba-5cc0-a5e0-34beabd2501d",
+        "74890c9b-878d-4346-9ab6-704c108f4230",
+        "3650e5f8-c146-f0f9-2e89-fae58d6795b5",
+        "fcc5f759-3d1a-4088-99d5-a99b4838b285",
+        "3d751bf0-8a47-4855-9392-cab6aad7e89e",
+        "dedfc55f-cde9-4fa9-9566-8670b0c3e324",
+        "c5f7c2b4-d5a9-890a-673d-7eef6774ff49",
+        "93636b10-874e-a985-3c79-4ca9a5953687",
+        "f5cc68da-6a71-48f5-a2d6-a3c32f858d18",
+        "add5addb-5b80-e30a-c455-19f4a7169256",
+        "11c9e4ad-6b39-c107-8b74-263094040c33",
+        "b0b39454-2bf3-d2cd-04e2-0c5cb500e982",
+        "4bdd9996-42f7-47dc-9a2b-1d9bfa2e738f",
+        "ead76f6a-e541-affe-547b-ae6344cdfc95",
+        "c27cf770-ee6a-4206-a97f-62c9d16f6239",
+        "f29dc9dd-c36b-4ce1-8253-93db1c5d4fe1",
+        "6e51f2eb-9fdf-4f95-a66b-7043e700795b",
+        "dac0f3e5-5103-4316-aedf-5272e8f0ab96"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_Bugbear"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "dcc03923-228f-3415-61f2-29e8e3e90a4a",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Player tried to pickpocket an NPC but got caught.\n-- Can check the GEB_Crime_IsVictim flag on speaker 1 to distinguish the NPC from being the victim or a witness of the crime."
+}

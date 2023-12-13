@@ -1,0 +1,254 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_RaidingParty_OpenGate.lsj",
+  "UUID": "9cc74b65-33d2-1911-fac2-9abcf78fc645",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 1,
+    "1": 2,
+    "2": -1,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "RootNodes": [
+    "fbbe9997-5bcb-dd86-135d-86c17d5f84aa"
+  ],
+  "Nodes": {
+    "b8699c31-bfea-3c46-9cfc-484c0c8c15cd": {
+      "UUID": "b8699c31-bfea-3c46-9cfc-484c0c8c15cd",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1018a5ed-3543-a4c2-9dd7-138517d55e5e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_RaidingParty_Event_OpenDenGate"
+            },
+            {
+              "UUID": "75f932e1-c2ab-c258-dcad-15345c338b92",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_RaidingParty_Event_GatekeeperToLever"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a1d72004-e342-8fed-b8f3-8a28a963c9ff",
+              "Text": {
+                "Handle": "h21f540b7g3978g4f84gbd65g24e4bc1daf50",
+                "Value": "Open the gate!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Zevlor calls for gate to open (custom camera)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N257",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Calling out o someone standing on his level, but not extremely close.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "fbbe9997-5bcb-dd86-135d-86c17d5f84aa": {
+      "UUID": "fbbe9997-5bcb-dd86-135d-86c17d5f84aa",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b8699c31-bfea-3c46-9cfc-484c0c8c15cd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b64ea4de-7527-4a0f-8f6a-84fde9d2776c",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_Tadpole.LearnedGroveSituation"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a33e3d46-904d-0a62-abf0-bd57dc03e670",
+              "Text": {
+                "Handle": "h1e11d56dga750g42bfg8a89g122165becf16",
+                "Value": "That was the last of them. Inside - all of you. More may follow."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N255",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Shouted down to us - at the bottom of the gate",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "720b79a8-99ca-dd02-5808-6c7a4f3d36a2",
+      "Index": 0,
+      "List": [
+        "475200ee-cc3c-4dbe-84b1-1820c02ea26a"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Zevlor",
+        "Type": "character",
+        "MapKey": "475200ee-cc3c-4dbe-84b1-1820c02ea26a",
+        "Name": "S_DEN_TieflingLeader",
+        "ParentTemplateId": null,
+        "TemplateName": "a5856190-08e3-4741-b697-8b1cbf03eaa1"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e64be823-1510-e083-e54a-a96bade0f753",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "3fb7db70-5554-952d-3e5c-7ed4f35dabb4",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "430c6bfe-d55d-be37-7801-97adc3421816",
+      "Index": 3,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "4": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "a10173ab-0117-1ef5-fcba-abe7c9cee605",
+      "Index": 4,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The goblins have been narrowly beaten. From on top of the tall front gate, Zevlor shouts down to us, then to someone relatively on his level to open the gate."
+}

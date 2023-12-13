@@ -1,0 +1,397 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_HarpyMeal_CharmedVictim_Wildshape.lsj",
+  "UUID": "da2fcd30-72ae-3349-b043-2caf9f45c636",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": 1,
+    "1": 0,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1,
+    "7": -1
+  },
+  "RootNodes": [
+    "dbb4564b-b57d-404a-b05d-2237d3c6aa00",
+    "5abeccbf-973d-4e8b-ba32-efcdfc11cd17"
+  ],
+  "Nodes": {
+    "3d353887-4497-4743-a2bd-7491e7a6c1de": {
+      "UUID": "3d353887-4497-4743-a2bd-7491e7a6c1de",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "41e48ea5-6356-4f4e-a295-6db4d545e3d3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4f278b70-889b-c810-7388-b45b0308165b",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_HarpyMeal_Event_LeaderDialogEnter"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "HarpyFlying_ToPerched_Singing, HarpySinging_Idle",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Harpy flies in and perches menacingly on the rock, while she keeps singing",
+        "CinematicObjects": "Rock",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Harpy singing",
+        "StateChangeTags": "Harpy perched on rock",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "Rock",
+        "collapsed": "False",
+        "logicalname": "Harpy Enters",
+        "position": "335;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "41e48ea5-6356-4f4e-a295-6db4d545e3d3": {
+      "UUID": "41e48ea5-6356-4f4e-a295-6db4d545e3d3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b77362e-144d-63a0-bb46-60981e051102",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_HarpyMeal_Event_VictimWalkToWater"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d73592c2-7ecb-412f-9fb1-abeab645dda6",
+              "Text": {
+                "Handle": "h3b309cbegab77g4a0eg9685g247dbb3e7f05",
+                "Value": "Yes, everything's gonna be fine... once I get there..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Mirkon wades into water",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Awe",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "enchanted.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "5abeccbf-973d-4e8b-ba32-efcdfc11cd17": {
+      "UUID": "5abeccbf-973d-4e8b-ba32-efcdfc11cd17",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3d353887-4497-4743-a2bd-7491e7a6c1de"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7a134d9a-7f5b-4b16-ae4e-37846470b504",
+              "Text": {
+                "Handle": "hce378c00gf313g4951gbc34g284e9b491f48",
+                "Value": "Shh! Listen."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The gnome isn't looking at the player, but in the direction the singing comes from.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Awe",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "in awe, entranced. Trying not to disturb the singer.",
+        "Quality": "Bronze",
+        "SFXTags": "Harpy song",
+        "StateChangeTags": "Halflings eyes glow from harpies magic",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "dbb4564b-b57d-404a-b05d-2237d3c6aa00": {
+      "UUID": "dbb4564b-b57d-404a-b05d-2237d3c6aa00",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1b77362e-144d-63a0-bb46-60981e051102",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_HarpyMeal_Event_VictimWalkToWater"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "20ed81af-edd4-4e53-8b80-d742ffe0399e",
+              "Text": {
+                "Handle": "hfb3ff475g207fg4cffg8766gcc94d586512c",
+                "Value": "Shh. I can't hear!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "Not really turning towards the player while he's talking to the player. He keeps looking for the voice while he talks.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Awe",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N45",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Low voice, is trying not to disturb the singer, but is a little irritated with the player.",
+        "Quality": "Silver",
+        "SFXTags": "Harpy song",
+        "StateChangeTags": "Childs eyes glow from harpies magic",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;2862",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "0838d9eb-1412-f4ab-a282-a6b70b308d75",
+      "Index": 0,
+      "List": [
+        "3b92c689-6024-4446-a6c9-584e9e8d77ca"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Mirkon",
+        "Type": "character",
+        "MapKey": "3b92c689-6024-4446-a6c9-584e9e8d77ca",
+        "Name": "S_DEN_CharmedKid",
+        "ParentTemplateId": null,
+        "TemplateName": "80ca9a84-00c2-45c6-892e-bf6f07a5af3e"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b65b993d-d31a-d4b2-df1a-5db9e24b559e",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d140856f-5334-51c8-aa4a-e12c213dfe32",
+      "Index": 2,
+      "List": [
+        "e5f24d94-a1a9-40e0-b3ee-fe0480c408d3"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Harpy",
+        "Type": "character",
+        "MapKey": "e5f24d94-a1a9-40e0-b3ee-fe0480c408d3",
+        "Name": "S_DEN_Harpy_000",
+        "ParentTemplateId": null,
+        "TemplateName": "23afc715-400d-4076-b58e-592381d8d364"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "31625cbd-6fa8-3a1f-fa74-71f2824080c8",
+      "Index": 3,
+      "List": [
+        "0de603c5-42e2-4811-9dad-f652de080eba"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Minsc",
+        "Type": "character",
+        "MapKey": "0de603c5-42e2-4811-9dad-f652de080eba",
+        "Name": "S_Player_Minsc",
+        "ParentTemplateId": null,
+        "TemplateName": "9d5f838a-8595-490c-85d5-8a2a69414356"
+      },
+      "SpeakerGroupName": null
+    },
+    "4": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "32276d56-e7ba-7f5d-5726-8ea44094172a",
+      "Index": 4,
+      "List": [
+        "2c76687d-93a2-477b-8b18-8a14b549304c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Karlach",
+        "Type": "character",
+        "MapKey": "2c76687d-93a2-477b-8b18-8a14b549304c",
+        "Name": "S_Player_Karlach",
+        "ParentTemplateId": null,
+        "TemplateName": "3ab0a797-0904-47cb-955d-cdc3ec32409c"
+      },
+      "SpeakerGroupName": null
+    },
+    "5": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "b07103ae-9c89-7f69-eed6-ebfa0ead9494",
+      "Index": 5,
+      "List": [
+        "c7c13742-bacd-460a-8f65-f864fe41f255"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Astarion",
+        "Type": "character",
+        "MapKey": "c7c13742-bacd-460a-8f65-f864fe41f255",
+        "Name": "S_Player_Astarion",
+        "ParentTemplateId": null,
+        "TemplateName": "5614c25e-0213-479f-864c-e95895adb30f"
+      },
+      "SpeakerGroupName": null
+    },
+    "6": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "cf12aec9-16b1-9fd8-9e55-3efd50c72af6",
+      "Index": 6,
+      "List": [
+        "3ed74f06-3c60-42dc-83f6-f034cb47c679"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Shadowheart",
+        "Type": "character",
+        "MapKey": "3ed74f06-3c60-42dc-83f6-f034cb47c679",
+        "Name": "S_Player_ShadowHeart",
+        "ParentTemplateId": null,
+        "TemplateName": "2ac51f22-e357-4639-b81d-022d462c8c6a"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "Non-critical path. Unless the player has snapped him out of it, the boy will be enchanted and wanting to get closer to the source of the song."
+}

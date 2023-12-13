@@ -1,0 +1,162 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/HagLair/HAG_HagLair_AD_HagAttacksCage.lsj",
+  "UUID": "fa12e7d0-4355-01ce-0193-1ecceb6a0b71",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "33d40067-2d31-f5c0-e5aa-dac1c3b17bc8",
+    "a8d13b6a-cc8d-4df1-a70d-9c350b4b5d8a"
+  ],
+  "Nodes": {
+    "33d40067-2d31-f5c0-e5aa-dac1c3b17bc8": {
+      "UUID": "33d40067-2d31-f5c0-e5aa-dac1c3b17bc8",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3c1c75f3-e91f-3950-ddfe-76337dfc9167",
+              "Text": {
+                "Handle": "hbfd7b4b5ga0ebg42b0gbda3g719cbb16bb0d",
+                "Value": "You want the girl so bad? Fine. Have her roasted!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "You've just set the cage holding a pregnant woman prisoner on fire. Middle of a fight. Laugh and a vicious smile. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Hag Sets Cage on Fire",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "a8d13b6a-cc8d-4df1-a70d-9c350b4b5d8a": {
+      "UUID": "a8d13b6a-cc8d-4df1-a70d-9c350b4b5d8a",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "63d848de-a770-4690-7caa-c6e4432f7a97",
+              "value": true,
+              "paramval": 0,
+              "Name": "HAG_HagLair_QueueMotherDeathReaction"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0c6dbf39-c099-7e2e-8ea1-ecde12272c47",
+              "Text": {
+                "Handle": "h7c319cc3gc79ag4318ga7acg2545fcf993c3",
+                "Value": "Aw, did the girl die? So very sad."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The pregnant woman has died. Utter sarcasm here - taunting the player for failing to save her. ",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Player fails to save Mother from cage",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "f5171b07-3da8-3211-6eb6-2e1bfd7d5d87",
+      "Index": 0,
+      "List": [
+        "c6ef4eea-fd50-2b8a-41c8-0fdbad366d67"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Auntie Ethel",
+        "Type": "character",
+        "MapKey": "c457d064-83fb-4ec6-b74d-1f30dfafd12d",
+        "Name": "S_HAG_Hag",
+        "ParentTemplateId": null,
+        "TemplateName": "d4edf374-6efe-463f-8899-889db26dee4e"
+      },
+      "SpeakerGroupName": "GROUP_Act1_GLO_HagHag"
+    }
+  },
+  "Synopsis": "These are fired during the fight with the hag. The first occurs when Mayrina's cage is set on fire, the second if she dies. "
+}

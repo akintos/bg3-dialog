@@ -1,0 +1,489 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shadowland/SCL_Drider_HarperScout_AfterAmbush.lsj",
+  "UUID": "1f717429-9a12-cc37-ff7a-ed68cbd2ff10",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "41f15183-fc06-f2a7-d95b-4976b0c696fe",
+    "c4500a74-2134-95fb-8dc8-bf492157da6b",
+    "5e05077f-0d04-1fb0-e93c-b8c42bec869a",
+    "0bcf8b61-d3e8-8ba9-7795-bb64a74be850"
+  ],
+  "Nodes": {
+    "08228f45-196c-ad17-800c-7c144d624792": {
+      "JumpTarget": "8fdea777-fb27-d64e-3319-9cbc0ea2ff1e",
+      "JumpTargetPoint": 1,
+      "UUID": "08228f45-196c-ad17-800c-7c144d624792",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N1158",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-12030",
+        "sourcetemplate": ""
+      }
+    },
+    "0bcf8b61-d3e8-8ba9-7795-bb64a74be850": {
+      "UUID": "0bcf8b61-d3e8-8ba9-7795-bb64a74be850",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "446dc9cf-cdbe-d422-59aa-d20af5d545b9",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperScout_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cb3bc317-8358-47f4-831e-44ff812ec2b0",
+              "value": false,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_AcquiredMoonlanternWithoutFight"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0a52a6a3-e8c4-4e8c-b80e-3d5e791651f6",
+              "Text": {
+                "Handle": "h851b5ce0ge331g4aedg8796gbefa1833496a",
+                "Value": "Take the lantern off the corpse. I doubt it will mind."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N903",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Came with Harpers hasmet",
+        "position": "15;-11373",
+        "sourcetemplate": ""
+      }
+    },
+    "41f15183-fc06-f2a7-d95b-4976b0c696fe": {
+      "UUID": "41f15183-fc06-f2a7-d95b-4976b0c696fe",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "08228f45-196c-ad17-800c-7c144d624792"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "446dc9cf-cdbe-d422-59aa-d20af5d545b9",
+              "value": false,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperScout_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cb3bc317-8358-47f4-831e-44ff812ec2b0",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_AcquiredMoonlanternWithoutFight"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "446dc9cf-cdbe-d422-59aa-d20af5d545b9",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperScout_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34960c8c-4116-4912-981b-88f6fbcb0a02",
+              "Text": {
+                "Handle": "hb3872500g8e47g495dgaf0dg8e448ddbf91e",
+                "Value": "Impressive - you've a way with words."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1147",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Came with Harpers - Avoided combat",
+        "position": "15;-12030",
+        "sourcetemplate": ""
+      }
+    },
+    "5e05077f-0d04-1fb0-e93c-b8c42bec869a": {
+      "UUID": "5e05077f-0d04-1fb0-e93c-b8c42bec869a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "8fdea777-fb27-d64e-3319-9cbc0ea2ff1e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "446dc9cf-cdbe-d422-59aa-d20af5d545b9",
+              "value": false,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperScout_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cb3bc317-8358-47f4-831e-44ff812ec2b0",
+              "value": false,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_AcquiredMoonlanternWithoutFight"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "446dc9cf-cdbe-d422-59aa-d20af5d545b9",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperScout_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "842144ba-c8f0-45c8-b58c-fd949123fbed",
+              "Text": {
+                "Handle": "h662e35cfgc4d9g4f77gb492g41ce1482f17d",
+                "Value": "A battle I won't soon forget. And in such favoured company, no less."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N915",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Came with Harpers",
+        "position": "15;-11592",
+        "sourcetemplate": ""
+      }
+    },
+    "8fdea777-fb27-d64e-3319-9cbc0ea2ff1e": {
+      "UUID": "8fdea777-fb27-d64e-3319-9cbc0ea2ff1e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b968ea9-d152-4db6-8b59-43ec056269a7",
+              "Text": {
+                "Handle": "h810cadc1g4377g41c6g8248g38c9781f807c",
+                "Value": "Go ahead, examine the drider. The lantern's there for the taking."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N919",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-11592",
+        "sourcetemplate": ""
+      }
+    },
+    "c4500a74-2134-95fb-8dc8-bf492157da6b": {
+      "UUID": "c4500a74-2134-95fb-8dc8-bf492157da6b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "446dc9cf-cdbe-d422-59aa-d20af5d545b9",
+              "value": true,
+              "paramval": 1,
+              "Name": "SCL_Drider_HarperScout_AtAmbush_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "cb3bc317-8358-47f4-831e-44ff812ec2b0",
+              "value": true,
+              "paramval": null,
+              "Name": "SCL_Drider_Event_AcquiredMoonlanternWithoutFight"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "eed40ec9-441c-4fa2-a2d7-d86677516d6d",
+              "Text": {
+                "Handle": "hc727c199gd4c1g4d10g8688ge0780eda6d4c",
+                "Value": "Take the lantern off the corpse. I doubt it will mind."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1155",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Came with Harpers hasmet - Avoided combat",
+        "position": "15;-11811",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "50e6cf80-2117-f562-db83-8c8c37fc5dac",
+      "Index": 0,
+      "List": [
+        "c6dfb2aa-809f-4b3e-8b32-968c10184ec3"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Harper Lassandra",
+        "Type": "character",
+        "MapKey": "c6dfb2aa-809f-4b3e-8b32-968c10184ec3",
+        "Name": "S_SCL_HarperScout_000",
+        "ParentTemplateId": null,
+        "TemplateName": "285ac2fd-1858-470f-80f5-a120d6ffe13f"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "3cb1460b-fcbf-0563-90ae-9f770f118f64",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Lassandra after the fight with the Drider, triggers only if players started with the harpers and Lassandra was present at Haven."
+}

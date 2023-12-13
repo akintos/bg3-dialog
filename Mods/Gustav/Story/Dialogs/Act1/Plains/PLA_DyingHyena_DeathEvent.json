@@ -1,0 +1,4251 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Plains/PLA_DyingHyena_DeathEvent.lsj",
+  "UUID": "35c2454f-2b3d-c7fd-771f-6bd9f309f395",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "7fcae759-2a3e-9879-c05d-86dd1eb7d2eb",
+    "20f9349e-d78f-0b01-fcc6-f8a26794f393",
+    "c6831948-2bbb-2618-5b36-5e39be2d7523"
+  ],
+  "Nodes": {
+    "057b433a-1294-20ed-e21a-63b77b7b7494": {
+      "UUID": "057b433a-1294-20ed-e21a-63b77b7b7494",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "799a6692-e641-94e4-f41e-6f9edd100e94",
+        "be482a64-a8cb-0f41-c1b4-9fcf73c2f316",
+        "391f65e9-fa68-73ea-51db-a00da6e3f43a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "64dc9d31-db7a-418e-bbbe-6f5b4d32608f",
+                  "2947a463-3c45-4a70-959a-3e81a943ab92",
+                  "7c89622b-4194-41df-b2ff-145a5056ee49",
+                  "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6"
+                ],
+                "TagNames": [
+                  "CLERIC_GOOD",
+                  "CLERIC_NEUTRAL",
+                  "PALADIN_ANCIENTS",
+                  "PALADIN_DEVOTION"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_GOOD or CLERIC_NEUTRAL or PALADIN_ANCIENTS or PALADIN_DEVOTION"
+          },
+          "TagTexts": [
+            {
+              "LineId": "121c599b-987c-b4d0-0ccb-9ca4ca4649c6",
+              "Text": {
+                "Handle": "h818d120ege08bg48b7g855bgcc07c2a66dc4",
+                "Value": "*The realisation hits you - that stench wasn't the dead. You can sense that the hyena's very flesh is desecrated...*"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "64dc9d31-db7a-418e-bbbe-6f5b4d32608f",
+                  "2947a463-3c45-4a70-959a-3e81a943ab92",
+                  "7c89622b-4194-41df-b2ff-145a5056ee49",
+                  "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6"
+                ],
+                "TagNames": [
+                  "CLERIC_GOOD",
+                  "CLERIC_NEUTRAL",
+                  "PALADIN_ANCIENTS",
+                  "PALADIN_DEVOTION"
+                ]
+              }
+            ],
+            "RuleString": "!(CLERIC_GOOD and CLERIC_NEUTRAL and PALADIN_ANCIENTS and PALADIN_DEVOTION)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "2c4747fe-1e97-32fc-d510-d49110bef266",
+              "Text": {
+                "Handle": "h7371baa5ga328g4366g976bg83d7ec6ddd85",
+                "Value": "*You watch with cold realisation - this isn't the end of one life, but the start of another...*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2577",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Agonising Hyena.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "9615;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "05b82e55-446c-9197-81b3-7d51e7904e24": {
+      "JumpTarget": "e84b6131-d482-64ee-8209-b7b742f150fa",
+      "JumpTargetPoint": 1,
+      "UUID": "05b82e55-446c-9197-81b3-7d51e7904e24",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3894",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "11215;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "0a1a3780-7ed4-be9b-8b07-88b688842e87": {
+      "UUID": "0a1a3780-7ed4-be9b-8b07-88b688842e87",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c9cc31e2-1e17-31c5-6bea-1efc26c25579"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5a9b1d68-1109-f5c3-f862-c5425572267c",
+              "Text": {
+                "Handle": "h905129cbgf8abg4501ga765ga41aa9402b71",
+                "Value": "*Slowly, her broken body starts to calm, to stop its wild contortions. She lies still.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Hyena thrashes on the ground.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3520",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Hyena shriek.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - Hyena shrieks and starts thrashing around.",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12175;22791",
+        "sourcetemplate": ""
+      }
+    },
+    "10df3cf3-23c9-1884-e280-1f937fb16ca3": {
+      "JumpTarget": "e84b6131-d482-64ee-8209-b7b742f150fa",
+      "JumpTargetPoint": 1,
+      "UUID": "10df3cf3-23c9-1884-e280-1f937fb16ca3",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3526",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "12495;21696",
+        "sourcetemplate": ""
+      }
+    },
+    "11f13159-b16b-4419-9da7-f1cfea18da14": {
+      "RollSuccess": false,
+      "UUID": "11f13159-b16b-4419-9da7-f1cfea18da14",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bf113d70-5ed1-603d-71d2-71f464c0e067"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3508",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "11855;23010",
+        "sourcetemplate": ""
+      }
+    },
+    "144c4888-ef8f-b9aa-5836-535afa150680": {
+      "JumpTarget": "c97a9dc6-0791-57d9-3f15-ea5abdbb3c1d",
+      "JumpTargetPoint": 1,
+      "UUID": "144c4888-ef8f-b9aa-5836-535afa150680",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3660",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10575;25419",
+        "sourcetemplate": ""
+      }
+    },
+    "1ba196c2-0c69-5238-8891-1880e37fcbd4": {
+      "JumpTarget": "71198f46-3cd7-eb43-5584-8c952c3ff098",
+      "JumpTargetPoint": 1,
+      "UUID": "1ba196c2-0c69-5238-8891-1880e37fcbd4",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3684",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10575;24762",
+        "sourcetemplate": ""
+      }
+    },
+    "1cbed509-a6f2-e110-524f-00f0083532c9": {
+      "RollSuccess": true,
+      "UUID": "1cbed509-a6f2-e110-524f-00f0083532c9",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f240c167-f7ac-f7af-8334-b1d31a8e50ce"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3475",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "11855;23229",
+        "sourcetemplate": ""
+      }
+    },
+    "2079e760-c3a9-d623-24a7-4e4cebfbe39c": {
+      "UUID": "2079e760-c3a9-d623-24a7-4e4cebfbe39c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3890",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "13455;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "20f9349e-d78f-0b01-fcc6-f8a26794f393": {
+      "UUID": "20f9349e-d78f-0b01-fcc6-f8a26794f393",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f030492e-d91f-ac5a-5717-68e0d1af78f9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "215c8169-e425-4ad4-85c8-b819a2b73bae",
+              "Text": {
+                "Handle": "h70ed9443g0f7bg41c1g8eaag032ceca04d97",
+                "Value": "*The beautiful broken heap smells oddly enticing. You find you can't resist inhaling her offals.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The hyena is trying to drag herself to the player, but cannot due to the weight in her stomach.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3885",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "No SwA Greeting - DARK URGE",
+        "position": "7055;23886",
+        "sourcetemplate": ""
+      }
+    },
+    "21147916-aefe-d319-48fc-4214771d8c1e": {
+      "RollSuccess": false,
+      "UUID": "21147916-aefe-d319-48fc-4214771d8c1e",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "43dd0058-1c43-8785-7345-532f27abb46c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3401",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "8975;24324",
+        "sourcetemplate": ""
+      }
+    },
+    "2580e334-50a3-a1b1-1668-6e6a4b451b36": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "2580e334-50a3-a1b1-1668-6e6a4b451b36",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2893de47-4d1b-09cd-681e-54a3a6b7d76f",
+        "11f13159-b16b-4419-9da7-f1cfea18da14"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d85ab2d-5c23-498c-a61e-98f05a00177a",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN"
+            },
+            {
+              "UUID": "c7bdcdf2-15e7-456e-adf1-21dda3172e18",
+              "value": false,
+              "paramval": 1,
+              "Name": "OATHBREAKER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "01e3c975-9d87-b290-243c-4761edb42dbf",
+              "Text": {
+                "Handle": "h467cf33dgdf74g4c04g8998gae9137edbf01",
+                "Value": "<i>Bless the hyena, trying to purge her body of evil.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3504",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Active Roll (paladin)",
+        "position": "11535;22791",
+        "sourcetemplate": ""
+      }
+    },
+    "26b56017-2057-20e0-c8e3-74d7c5603d21": {
+      "UUID": "26b56017-2057-20e0-c8e3-74d7c5603d21",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9b822da6-896f-60da-48bf-7a1c65737b4a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2a7b575d-9d96-3ded-29a6-d34262fbfee3",
+              "Text": {
+                "Handle": "h2c8017d4ga42fg4b4cga05fg2652b9806fc4",
+                "Value": "What's happening to you? Is there any way I can help?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3860",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Petpal only",
+        "position": "10575;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "2893de47-4d1b-09cd-681e-54a3a6b7d76f": {
+      "RollSuccess": true,
+      "UUID": "2893de47-4d1b-09cd-681e-54a3a6b7d76f",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0a1a3780-7ed4-be9b-8b07-88b688842e87"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3506",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "11855;22791",
+        "sourcetemplate": ""
+      }
+    },
+    "2b3c76f6-63b1-9156-479f-6f56e5988768": {
+      "UUID": "2b3c76f6-63b1-9156-479f-6f56e5988768",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5369ae1e-b583-e686-63c1-7845857a1178"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "37a733c1-a862-4157-b92a-9cff46232c6a"
+                ],
+                "TagNames": [
+                  "RANGER"
+                ]
+              }
+            ],
+            "RuleString": "RANGER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "fc81bf94-360a-6392-883a-4c9aca48a47e",
+              "Text": {
+                "Handle": "h08e51c24g2419g462cg8fcfg7f34b4885981",
+                "Value": "<i>Show mercy, ending her life swiftly.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3670",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Ranger",
+        "position": "10575;25200",
+        "sourcetemplate": ""
+      }
+    },
+    "30eae45f-da48-bd48-6172-aa01bb17bf4f": {
+      "JumpTarget": "e84b6131-d482-64ee-8209-b7b742f150fa",
+      "JumpTargetPoint": 1,
+      "UUID": "30eae45f-da48-bd48-6172-aa01bb17bf4f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3529",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "12175;21258",
+        "sourcetemplate": ""
+      }
+    },
+    "316faf01-ae3a-9f84-2480-76d8d1dfefd1": {
+      "UUID": "316faf01-ae3a-9f84-2480-76d8d1dfefd1",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c8c877ca-1a10-df18-f23a-6ae2f3b5d73c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9f0742f6-78fb-9e1d-750b-cbbba54f4a68",
+              "Text": {
+                "Handle": "h329350dcg9660g43dbg9ca4g53f34d595222",
+                "Value": "No. Come closer - feed the new flesh."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3863",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "in agony, but full of glee as she is torn apart by a creature being born from within",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "11855;21477",
+        "sourcetemplate": ""
+      }
+    },
+    "36e03d56-4681-950d-f1fa-42558dbf94e5": {
+      "UUID": "36e03d56-4681-950d-f1fa-42558dbf94e5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4a85d3b9-3166-4a03-03d3-0fb47c2b03e9",
+              "value": false,
+              "paramval": 1,
+              "Name": "PLA_DyingHyena_PCRememberedArcana"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7af9106e-473e-9146-cf96-e9be7acacfca",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_DyingHyena_Event_PeacefulDeath"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "694ddd31-3e9f-8886-01f8-7438c033d2c9",
+              "Text": {
+                "Handle": "h6f345df5g678cg413fg9e30g70a3f1894f9f",
+                "Value": "*Whatever horrific creature was growing inside the hyena dies along with her.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Dead Hyena. <Murat>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3055",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Hyena is dead.",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12815;23229",
+        "sourcetemplate": ""
+      }
+    },
+    "391f65e9-fa68-73ea-51db-a00da6e3f43a": {
+      "UUID": "391f65e9-fa68-73ea-51db-a00da6e3f43a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5c1a8fc3-9dcd-ab34-37c4-283310fe4fb8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c353a7d3-7561-05dc-c725-32e363ce6bf3",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ConflictedFlind_Knows_Gnolls"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4a85d3b9-3166-4a03-03d3-0fb47c2b03e9",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_DyingHyena_PCRememberedArcana"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "709e2277-7fab-17fd-8acc-0a4bfe8dd553",
+              "Text": {
+                "Handle": "ha7a2cd1ag2992g498aga6e3g5cd89de2f777",
+                "Value": "*...Gnolls can spawn from the corpses of dying hyenas.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase 2 <jack>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2613",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Agonising Hyena.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "9935;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "3f3f7260-7c7d-cba3-71ff-acfd2c79268a": {
+      "UUID": "3f3f7260-7c7d-cba3-71ff-acfd2c79268a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "692d376c-de9a-b6cd-8b1e-12a51e159c40"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d85ab2d-5c23-498c-a61e-98f05a00177a",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN"
+            },
+            {
+              "UUID": "c7bdcdf2-15e7-456e-adf1-21dda3172e18",
+              "value": false,
+              "paramval": 1,
+              "Name": "OATHBREAKER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4148e735-0dfe-455c-8793-c57f613a1ec2",
+              "Text": {
+                "Handle": "ha419f8e7ga180g4777g9e7fg5fd110434b39",
+                "Value": "<i>Smite the abomination.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3879",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "PALADIN",
+        "position": "11535;22572",
+        "sourcetemplate": ""
+      }
+    },
+    "415fdb37-80e9-4f5e-4fd0-23c7c69fc774": {
+      "UUID": "415fdb37-80e9-4f5e-4fd0-23c7c69fc774",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "62e8f40c-8d02-1659-686b-8ba44bf184a0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f6b6f2e6-3a15-e68e-559f-81abd0b6b2ed",
+              "Text": {
+                "Handle": "h670aa777g0fefg4de4g9de2gb7d23bb0811f",
+                "Value": "Feel its power, the Butcher is hungry. You, me - all meat."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3857",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "rapturous but in agony as chaos magic tears her apart",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Petpal only",
+        "position": "11855;21915",
+        "sourcetemplate": ""
+      }
+    },
+    "43dd0058-1c43-8785-7345-532f27abb46c": {
+      "JumpTarget": "91e02b6d-17ca-f22c-d0a8-7051b6839ddb",
+      "JumpTargetPoint": 2,
+      "UUID": "43dd0058-1c43-8785-7345-532f27abb46c",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3686",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "9295;24324",
+        "sourcetemplate": ""
+      }
+    },
+    "44db7e2e-4482-f1b3-d901-91d7113184a1": {
+      "JumpTarget": "f240c167-f7ac-f7af-8334-b1d31a8e50ce",
+      "JumpTargetPoint": 1,
+      "UUID": "44db7e2e-4482-f1b3-d901-91d7113184a1",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3496",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "11855;22134",
+        "sourcetemplate": ""
+      }
+    },
+    "45af971d-866f-7575-8ed3-2d65419cf83c": {
+      "RollSuccess": false,
+      "UUID": "45af971d-866f-7575-8ed3-2d65419cf83c",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bfb4c7f9-a291-77c3-8c20-dcf1cf1d3f28"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3477",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "11855;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "4a07bd00-b8c6-4133-d5bb-9886db965413": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "4a07bd00-b8c6-4133-d5bb-9886db965413",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a3f12533-b6f7-317d-5ffd-18645b336f19",
+        "21147916-aefe-d319-48fc-4214771d8c1e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3397",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Arcana",
+        "position": "8335;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "4f3a60f0-d696-85ec-38f2-2a5989c06727": {
+      "UUID": "4f3a60f0-d696-85ec-38f2-2a5989c06727",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e84b6131-d482-64ee-8209-b7b742f150fa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5cbfcfab-efe2-cc82-8102-6e68a0b7c748",
+              "Text": {
+                "Handle": "h0c4c4955ga4dfg4f76g82d3g15ec201e937d",
+                "Value": "Can't leave me - new flesh needs to feed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase 3 <jack>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3854",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "in agony, about to 'become' a gnoll by gruesomely bursting open - still hungry and wants to eat us though",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "11855;23886",
+        "sourcetemplate": ""
+      }
+    },
+    "528e7b14-d12c-e130-c4dc-dac2f21e2b2e": {
+      "UUID": "528e7b14-d12c-e130-c4dc-dac2f21e2b2e",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c8c877ca-1a10-df18-f23a-6ae2f3b5d73c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ac0eb843-d224-d5de-2b24-71d00068ab6a",
+              "Text": {
+                "Handle": "h59e30652ge55ag4221g8f2fg23891c50d6fe",
+                "Value": "<i>Step back to watch the show.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3412",
+        "InternalNodeContext": "Character gains advantage on initiative in the following combat.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Not for Petpal",
+        "position": "11535;21696",
+        "sourcetemplate": ""
+      }
+    },
+    "5369ae1e-b583-e686-63c1-7845857a1178": {
+      "JumpTarget": "b3ccaa8b-bdd1-f5ce-d955-14ba57155814",
+      "JumpTargetPoint": 2,
+      "UUID": "5369ae1e-b583-e686-63c1-7845857a1178",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3682",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10895;25200",
+        "sourcetemplate": ""
+      }
+    },
+    "5c1a8fc3-9dcd-ab34-37c4-283310fe4fb8": {
+      "JumpTarget": "be482a64-a8cb-0f41-c1b4-9fcf73c2f316",
+      "JumpTargetPoint": 2,
+      "UUID": "5c1a8fc3-9dcd-ab34-37c4-283310fe4fb8",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3656",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10255;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "5d490807-30e2-8e22-be7f-416ae049d6dc": {
+      "UUID": "5d490807-30e2-8e22-be7f-416ae049d6dc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "30eae45f-da48-bd48-6172-aa01bb17bf4f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0f27f379-38fd-354d-9283-38fce7ca2609",
+              "Text": {
+                "Handle": "h2dc39f99g53b5g42e3gbc73gd66ad190bfc4",
+                "Value": "Hurts... it hur-hur-hur-ha-ha-ha..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3527",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Pained groan, then attempt to repeat 'hurts' falls away into deranged, pained laughter right before she dies",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "11855;21258",
+        "sourcetemplate": ""
+      }
+    },
+    "62e8f40c-8d02-1659-686b-8ba44bf184a0": {
+      "JumpTarget": "e84b6131-d482-64ee-8209-b7b742f150fa",
+      "JumpTargetPoint": 1,
+      "UUID": "62e8f40c-8d02-1659-686b-8ba44bf184a0",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3510",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "12175;21915",
+        "sourcetemplate": ""
+      }
+    },
+    "692d376c-de9a-b6cd-8b1e-12a51e159c40": {
+      "UUID": "692d376c-de9a-b6cd-8b1e-12a51e159c40",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f0c971e1-f59f-3a24-a282-a77c1fb41cf8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "04fc9913-00b4-4f25-b53c-b59b62bf6aad",
+              "Text": {
+                "Handle": "h52c971dag6039g42degb40cg894beb130180",
+                "Value": "*Radiant power flows through you as you strike the creature down.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "radiant effect as paladin strikes the hyena - re-using animation from other death-blows in this dialogue if possible",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3880",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "11855;22572",
+        "sourcetemplate": ""
+      }
+    },
+    "71198f46-3cd7-eb43-5584-8c952c3ff098": {
+      "RollAdvantageReason": null,
+      "RollAbility": "",
+      "RollAdvantage": 0,
+      "RollType": "MeleeWeaponAttack",
+      "DifficultyClassID": "00000000-0000-0000-0000-000000000000",
+      "DifficultyClassValue": 0,
+      "UUID": "71198f46-3cd7-eb43-5584-8c952c3ff098",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1cbed509-a6f2-e110-524f-00f0083532c9",
+        "45af971d-866f-7575-8ed3-2d65419cf83c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": false,
+              "paramval": 1,
+              "Name": "RANGER"
+            },
+            {
+              "UUID": "44ac4317-4d38-4d28-80e2-94024c6e42f0",
+              "value": false,
+              "paramval": 1,
+              "Name": "DRUID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7f681056-26f3-937f-b7e2-245154ecb681",
+              "Text": {
+                "Handle": "h6b89a302g41eeg4eddg883cg92900dbbcb8d",
+                "Value": "<i>Strike while the beast is vulnerable.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3473",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Attack_Melee_Weapon",
+        "position": "11535;23229",
+        "sourcetemplate": ""
+      }
+    },
+    "74116768-c40e-3005-8606-75af4256dc91": {
+      "UUID": "74116768-c40e-3005-8606-75af4256dc91",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e60a5439-222a-f563-5cf9-827b1f072ca1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ae178a95-7840-5402-76a1-64ba20490e74",
+              "Text": {
+                "Handle": "hc62d204eg9868g4c74g90fbg5d99c77d629f",
+                "Value": "Butcher's stronger than you, meat."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3856",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "rapturous but in agony as chaos magic tears her apart",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12495;23010",
+        "sourcetemplate": ""
+      }
+    },
+    "79753ee0-cb4d-c74a-1548-00d7626fe562": {
+      "JumpTarget": "c8c877ca-1a10-df18-f23a-6ae2f3b5d73c",
+      "JumpTargetPoint": 1,
+      "UUID": "79753ee0-cb4d-c74a-1548-00d7626fe562",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3667",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10895;24543",
+        "sourcetemplate": ""
+      }
+    },
+    "799a6692-e641-94e4-f41e-6f9edd100e94": {
+      "UUID": "799a6692-e641-94e4-f41e-6f9edd100e94",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f9c7e428-a31d-5257-e0c9-c04dec9a49cc"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "51eb181d-a00e-471d-9c3b-7cbc31b5f07f",
+              "Text": {
+                "Handle": "h936a4dd6gaebcg4d45g91b2g62fe97d89652",
+                "Value": "*Her darling pups will not be of her own species. Gnolls bring forth their iniquitous litter from many corpsed wombs - including hyenas.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3887",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DARK URGE",
+        "position": "9935;23229",
+        "sourcetemplate": ""
+      }
+    },
+    "7f3aeb5d-bd90-d60b-044e-05fb887c0113": {
+      "UUID": "7f3aeb5d-bd90-d60b-044e-05fb887c0113",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fa47f807-3b4d-a68d-bf1a-26cd0ba2f2dd"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d7403251-2a87-485c-bc79-b9b1f40e80a8",
+              "Text": {
+                "Handle": "h364833aegf646g407ag80d5g9dfe92c22a40",
+                "Value": "*You engrave her pained mewls upon your heart. Her back arches impossibly - a grace made possible only by it being broken.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3891",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "dark urge",
+        "position": "9935;23886",
+        "sourcetemplate": ""
+      }
+    },
+    "7fcae759-2a3e-9879-c05d-86dd1eb7d2eb": {
+      "UUID": "7fcae759-2a3e-9879-c05d-86dd1eb7d2eb",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c81bb9b3-b37e-192b-bec2-cf6aaca19672",
+        "e10a98c0-2def-1880-5eaa-4ac1ecc887d5"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1361a636-6f91-50ef-bf97-7766b05943bf",
+              "Text": {
+                "Handle": "h36d0f11fgc567g4f5cga3f3g779ee1fc4e65",
+                "Value": "*The creature's eyes roll back in its head - equal parts bliss and agony.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The hyena is trying to drag herself to the player, but cannot due to the weight in her stomach.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3387",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Suffering Hyena.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - The creature's eyes rolled back in its head. FX_SpeakWithAnimal_Spell",
+        "collapsed": "False",
+        "logicalname": "SwA Greeting",
+        "position": "7055;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "806e9297-9880-3ab9-2400-e7729ccc064f": {
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "806e9297-9880-3ab9-2400-e7729ccc064f",
+      "Constructor": "PassiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a3f12533-b6f7-317d-5ffd-18645b336f19",
+        "f7a66e94-5a84-3b44-b1d3-6d8403308790"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3404",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Arcana",
+        "position": "8335;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "91e02b6d-17ca-f22c-d0a8-7051b6839ddb": {
+      "UUID": "91e02b6d-17ca-f22c-d0a8-7051b6839ddb",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "26b56017-2057-20e0-c8e3-74d7c5603d21",
+        "9a55d62a-6dd0-b246-25d1-961ff84790a3",
+        "b496077c-3d62-2072-0225-a4ba867de362",
+        "1ba196c2-0c69-5238-8891-1880e37fcbd4",
+        "9c54a5af-99cd-f2f3-dd69-ec7cf8b37ece",
+        "2b3c76f6-63b1-9156-479f-6f56e5988768",
+        "144c4888-ef8f-b9aa-5836-535afa150680"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b7fb12e1-e16e-7182-94bc-ddc35a8b1f74",
+              "Text": {
+                "Handle": "ha523cbfbg2c11g4cd3gb3edg0a62c5ed3fba",
+                "Value": "*The hyena moans softly as its body contorts, ribs cracking and flesh tearing.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase 2 <jack>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2633",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Moaning hyena, cracking ribs",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - Hyena body contorted, ribs cracking.",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "9935;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "943ee044-4bd8-4c34-e87c-a143d263a779": {
+      "UUID": "943ee044-4bd8-4c34-e87c-a143d263a779",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "afcbad10-9625-3fdf-e3e3-c6fc1dbabb5e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5dc52a15-1bae-4f3e-c999-a4a0efba4698",
+              "Text": {
+                "Handle": "h7121fde0gcb0ag471egab5ag0a74841d6472",
+                "Value": "Come... see. My flesh becomes new flesh."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The hyena is trying to drag herself to the player, but cannot due to the weight in her stomach.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3858",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "rapture and agony combined - she's dying, but also becoming something new",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - The creature's eyes rolled back in its head. FX_SpeakWithAnimal_Spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "7695;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "954c8ce5-6dec-d48d-29e9-f074bd59a38f": {
+      "UUID": "954c8ce5-6dec-d48d-29e9-f074bd59a38f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e84b6131-d482-64ee-8209-b7b742f150fa"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ed3545a7-4aa6-f6f5-07d9-dae6cd7efea5",
+              "Text": {
+                "Handle": "h14d95d81gf172g4c75gaa41ge0d0281c1a12",
+                "Value": "*You move quickly, but not quickly enough.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase 3 <jack>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3673",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Agonising Hyena.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "11855;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "966c4dc6-f73c-4033-aefc-5113dd0b6548": {
+      "JumpTarget": "f240c167-f7ac-f7af-8334-b1d31a8e50ce",
+      "JumpTargetPoint": 1,
+      "UUID": "966c4dc6-f73c-4033-aefc-5113dd0b6548",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3498",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "11855;22353",
+        "sourcetemplate": ""
+      }
+    },
+    "97cc1dc6-581d-74de-cc29-27653312d478": {
+      "UUID": "97cc1dc6-581d-74de-cc29-27653312d478",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2079e760-c3a9-d623-24a7-4e4cebfbe39c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8ddb4643-003e-4512-b883-f52fb45bb68d",
+              "Text": {
+                "Handle": "h109bb9d7gf9afg410dga5d5g395ed986434f",
+                "Value": "*The raw hate of life, reared from the miracle of death. A tear almost springs to your eye.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3889",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DARK URGE",
+        "position": "13135;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "9a55d62a-6dd0-b246-25d1-961ff84790a3": {
+      "JumpTarget": "f05604fe-4e96-e228-f84c-e5f9f3bb9041",
+      "JumpTargetPoint": 1,
+      "UUID": "9a55d62a-6dd0-b246-25d1-961ff84790a3",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3662",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10575;24324",
+        "sourcetemplate": ""
+      }
+    },
+    "9b822da6-896f-60da-48bf-7a1c65737b4a": {
+      "UUID": "9b822da6-896f-60da-48bf-7a1c65737b4a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "05b82e55-446c-9197-81b3-7d51e7904e24"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "96a61745-f7c3-31b0-9f56-d7b43c477caf",
+              "Text": {
+                "Handle": "h4ae4c187g5f61g4ac7g9fc7gaf3a4aaff569",
+                "Value": "Yes - come closer. Feed the new flesh."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Head anim.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3861",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "in agony, but full of glee as she is torn apart by a creature being born from within",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "10895;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "9c54a5af-99cd-f2f3-dd69-ec7cf8b37ece": {
+      "JumpTarget": "cc9765d5-74ca-266f-f550-1d343aac71a5",
+      "JumpTargetPoint": 1,
+      "UUID": "9c54a5af-99cd-f2f3-dd69-ec7cf8b37ece",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3669",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10575;24981",
+        "sourcetemplate": ""
+      }
+    },
+    "a3f12533-b6f7-317d-5ffd-18645b336f19": {
+      "RollSuccess": true,
+      "UUID": "a3f12533-b6f7-317d-5ffd-18645b336f19",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "057b433a-1294-20ed-e21a-63b77b7b7494"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3406",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "8975;23886",
+        "sourcetemplate": ""
+      }
+    },
+    "afcbad10-9625-3fdf-e3e3-c6fc1dbabb5e": {
+      "UUID": "afcbad10-9625-3fdf-e3e3-c6fc1dbabb5e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "806e9297-9880-3ab9-2400-e7729ccc064f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3cea57c8-ec74-d70f-bf95-20ffbdd522b2",
+              "Text": {
+                "Handle": "hcc7e173agfcfcg45f4ga72bgd1d781ef43a5",
+                "Value": "*You hear what comes next before you see it: the sharp snapping of bones and a yelp of pain as her body starts to twist and undulate.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3394",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Snapping of bones and yelp of pain.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - Dying hyena body starting to twist.",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "8015;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "b2b115e2-4df5-bb04-2520-df70648b05fd": {
+      "JumpTarget": "f240c167-f7ac-f7af-8334-b1d31a8e50ce",
+      "JumpTargetPoint": 2,
+      "UUID": "b2b115e2-4df5-bb04-2520-df70648b05fd",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3658",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "12815;22791",
+        "sourcetemplate": ""
+      }
+    },
+    "b3ccaa8b-bdd1-f5ce-d955-14ba57155814": {
+      "UUID": "b3ccaa8b-bdd1-f5ce-d955-14ba57155814",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "44db7e2e-4482-f1b3-d901-91d7113184a1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "37a733c1-a862-4157-b92a-9cff46232c6a"
+                ],
+                "TagNames": [
+                  "RANGER"
+                ]
+              }
+            ],
+            "RuleString": "RANGER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "84c3287e-fbab-b603-8952-f075f2d75090",
+              "Text": {
+                "Handle": "h81c61218g3726g4580ga0b2gb4215aa331fa",
+                "Value": "<i>Show mercy, ending her life swiftly.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3415",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Ranger",
+        "position": "11535;22134",
+        "sourcetemplate": ""
+      }
+    },
+    "b496077c-3d62-2072-0225-a4ba867de362": {
+      "UUID": "b496077c-3d62-2072-0225-a4ba867de362",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "79753ee0-cb4d-c74a-1548-00d7626fe562"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c99bfd4f-de0b-2234-09cd-c9265898e034",
+              "Text": {
+                "Handle": "hfb94e600g577ag4b6egadb5g439292b30d9d",
+                "Value": "<i>Watch the beast die.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3665",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "10575;24543",
+        "sourcetemplate": ""
+      }
+    },
+    "be482a64-a8cb-0f41-c1b4-9fcf73c2f316": {
+      "UUID": "be482a64-a8cb-0f41-c1b4-9fcf73c2f316",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f05604fe-4e96-e228-f84c-e5f9f3bb9041",
+        "ce70932b-da99-762e-9caa-042823633bc5",
+        "528e7b14-d12c-e130-c4dc-dac2f21e2b2e",
+        "e281696a-2a8a-26d1-d2b4-578f7b84293a",
+        "b3ccaa8b-bdd1-f5ce-d955-14ba57155814",
+        "cc9765d5-74ca-266f-f550-1d343aac71a5",
+        "3f3f7260-7c7d-cba3-71ff-acfd2c79268a",
+        "2580e334-50a3-a1b1-1668-6e6a4b451b36",
+        "cb89e426-fbcb-7ebc-10f9-2e2f3fd2d19b",
+        "71198f46-3cd7-eb43-5584-8c952c3ff098",
+        "c97a9dc6-0791-57d9-3f15-ea5abdbb3c1d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c353a7d3-7561-05dc-c725-32e363ce6bf3",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_ConflictedFlind_Knows_Gnolls"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4a85d3b9-3166-4a03-03d3-0fb47c2b03e9",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_DyingHyena_PCRememberedArcana"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "c353a7d3-7561-05dc-c725-32e363ce6bf3",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ConflictedFlind_Knows_Gnolls"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fa181c0c-0353-49cd-0a15-7434de5b2c00",
+              "Text": {
+                "Handle": "h7ce62c56g0487g40b3g80f8g0d49411a9b4a",
+                "Value": "*...Gnolls - vicious, monstrous humanoids - can spawn from the corpses of dying hyenas.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase 2 <jack>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2581",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Agonising Hyena.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "9935;23448",
+        "sourcetemplate": ""
+      }
+    },
+    "bf113d70-5ed1-603d-71d2-71f464c0e067": {
+      "UUID": "bf113d70-5ed1-603d-71d2-71f464c0e067",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "74116768-c40e-3005-8606-75af4256dc91"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "10028606-b4cf-d558-c0bc-cc338d2ece59",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_DyingHyena_PaladinSurge"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "00128faa-83c9-e750-8a30-151d5080fd99",
+              "Text": {
+                "Handle": "ha04d271bg5508g4c2fg98c7gc70da1ed9260",
+                "Value": "*The surge of holy power is rebuked, knocking you back.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase 3 <jack>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3512",
+        "InternalNodeContext": "Player is dazed/stunned when combat begins.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Agonising Hyena.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12175;23010",
+        "sourcetemplate": ""
+      }
+    },
+    "bfb4c7f9-a291-77c3-8c20-dcf1cf1d3f28": {
+      "UUID": "bfb4c7f9-a291-77c3-8c20-dcf1cf1d3f28",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e84b6131-d482-64ee-8209-b7b742f150fa"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "464a4d3a-2726-bbb5-12f3-afc94db8f789",
+              "Text": {
+                "Handle": "h40e61f9cg6cefg455fg9d2fg2b7d2df16144",
+                "Value": "*You strike quickly, but not quickly enough. She shrieks, thrashing helplessly.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase 3 <jack>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Hyena thrashes on the ground.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2995",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Hyena shriek.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - Hyena shrieks and starts thrashing around.",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12175;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "c6831948-2bbb-2618-5b36-5e39be2d7523": {
+      "UUID": "c6831948-2bbb-2618-5b36-5e39be2d7523",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f030492e-d91f-ac5a-5717-68e0d1af78f9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "64dc9d31-db7a-418e-bbbe-6f5b4d32608f",
+                  "2947a463-3c45-4a70-959a-3e81a943ab92"
+                ],
+                "TagNames": [
+                  "CLERIC_GOOD",
+                  "CLERIC_NEUTRAL"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_GOOD or CLERIC_NEUTRAL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "23884869-e079-7bd7-038f-25fccadc1ab6",
+              "Text": {
+                "Handle": "h9a914ff3g2871g4e33g8b85g37e0c993a8f9",
+                "Value": "*The beast reeks of brimstone and offal, every breath thick with blood. Almost gagging, you mutter a quiet prayer to your god.*"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "64dc9d31-db7a-418e-bbbe-6f5b4d32608f",
+                  "2947a463-3c45-4a70-959a-3e81a943ab92"
+                ],
+                "TagNames": [
+                  "CLERIC_GOOD",
+                  "CLERIC_NEUTRAL"
+                ]
+              }
+            ],
+            "RuleString": "!(CLERIC_GOOD and CLERIC_NEUTRAL)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "c5b2fb42-0cc2-6482-6e34-52eb6022a110",
+              "Text": {
+                "Handle": "h0133f014g5419g4cc4gb6e8gd33f9bf7b823",
+                "Value": "*The beast reeks of brimstone and offal. Every breath is thick with blood.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The hyena is trying to drag herself to the player, but cannot due to the weight in her stomach.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3388",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - Breathing with blood",
+        "collapsed": "False",
+        "logicalname": "No SwA Greeting",
+        "position": "7055;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "c81bb9b3-b37e-192b-bec2-cf6aaca19672": {
+      "UUID": "c81bb9b3-b37e-192b-bec2-cf6aaca19672",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "943ee044-4bd8-4c34-e87c-a143d263a779"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 1,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "91801bc0-2af2-497e-be31-fd791a442660",
+              "Text": {
+                "Handle": "h8783f8a0ge1efg4b26gaffcg3901d79d8417",
+                "Value": "*Her offals smell irresistible, and while her bloodfeast has filled her, the hyena is not yet <i>sated</i>.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3886",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DARK URGE",
+        "position": "7375;23448",
+        "sourcetemplate": ""
+      }
+    },
+    "c8c877ca-1a10-df18-f23a-6ae2f3b5d73c": {
+      "UUID": "c8c877ca-1a10-df18-f23a-6ae2f3b5d73c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "10df3cf3-23c9-1884-e280-1f937fb16ca3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "281a2063-8a13-a7e2-9e4e-93cfa3759c65",
+              "Text": {
+                "Handle": "h0ebaa67eg7633g4107g859dgab26c95e1f1c",
+                "Value": "*Bones snap as the hyena is hollowed from the inside out, forming a vessel for something new.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase2",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3524",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - The hyena hollowed from the inside out.",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12175;21696",
+        "sourcetemplate": ""
+      }
+    },
+    "c97a9dc6-0791-57d9-3f15-ea5abdbb3c1d": {
+      "UUID": "c97a9dc6-0791-57d9-3f15-ea5abdbb3c1d",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4f3a60f0-d696-85ec-38f2-2a5989c06727",
+        "954c8ce5-6dec-d48d-29e9-f074bd59a38f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6487abbd-8e8e-7b39-78a9-0c0fa197ac72",
+              "Text": {
+                "Handle": "hf6e4a2f1g0b0ag46d0ga1b0gb7d039057f50",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3500",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "11535;23886",
+        "sourcetemplate": ""
+      }
+    },
+    "c9cc31e2-1e17-31c5-6bea-1efc26c25579": {
+      "UUID": "c9cc31e2-1e17-31c5-6bea-1efc26c25579",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b2b115e2-4df5-bb04-2520-df70648b05fd"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c01c25f2-97ef-ec07-e37e-129974948a32",
+              "Text": {
+                "Handle": "h32920a88gc1a9g4668gbd26gbc583787c0c8",
+                "Value": "Flesh inside is quiet - flesh inside is dead. <i>Murderer.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3855",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "exhausted and accusatory - we just soothed her pain, but she lost her purpose and is dying anyway",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Petpal only",
+        "position": "12495;22791",
+        "sourcetemplate": ""
+      }
+    },
+    "cb89e426-fbcb-7ebc-10f9-2e2f3fd2d19b": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "cb89e426-fbcb-7ebc-10f9-2e2f3fd2d19b",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2893de47-4d1b-09cd-681e-54a3a6b7d76f",
+        "11f13159-b16b-4419-9da7-f1cfea18da14"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "64dc9d31-db7a-418e-bbbe-6f5b4d32608f",
+                  "2947a463-3c45-4a70-959a-3e81a943ab92"
+                ],
+                "TagNames": [
+                  "CLERIC_GOOD",
+                  "CLERIC_NEUTRAL"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_GOOD or CLERIC_NEUTRAL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "0fcb9974-30eb-c13d-ea5b-a8310e512500",
+              "Text": {
+                "Handle": "hd0dd6093g3b14g44c2gae44g3cc555c9bf08",
+                "Value": "<i>Bless the hyena, trying to purge her body of evil.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3872",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Active Roll (cleric)",
+        "position": "11535;23010",
+        "sourcetemplate": ""
+      }
+    },
+    "cc9765d5-74ca-266f-f550-1d343aac71a5": {
+      "UUID": "cc9765d5-74ca-266f-f550-1d343aac71a5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "966c4dc6-f73c-4033-aefc-5113dd0b6548"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "44ac4317-4d38-4d28-80e2-94024c6e42f0",
+              "value": true,
+              "paramval": 1,
+              "Name": "DRUID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c920e305-3c54-436f-66a3-8e08a5f67ba9",
+              "Text": {
+                "Handle": "h7c8596f5g989eg4229gaf54gb65e54d276dd",
+                "Value": "<i>Destroy the abomination.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3416",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid",
+        "position": "11535;22353",
+        "sourcetemplate": ""
+      }
+    },
+    "ce70932b-da99-762e-9caa-042823633bc5": {
+      "UUID": "ce70932b-da99-762e-9caa-042823633bc5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "316faf01-ae3a-9f84-2480-76d8d1dfefd1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d5c39547-d1d8-994c-e905-4e1f25bb615b",
+              "Text": {
+                "Handle": "h30a4acceg751bg46cbga3aeg75c6627a8f6c",
+                "Value": "Is there any way to stop this?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3859",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Petpal only",
+        "position": "11535;21477",
+        "sourcetemplate": ""
+      }
+    },
+    "d80c28bf-6706-f9c3-13ff-5d4c65c6707d": {
+      "UUID": "d80c28bf-6706-f9c3-13ff-5d4c65c6707d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "4a85d3b9-3166-4a03-03d3-0fb47c2b03e9",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_DyingHyena_PCRememberedArcana"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7af9106e-473e-9146-cf96-e9be7acacfca",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_DyingHyena_Event_PeacefulDeath"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dc9540a5-c922-7ba5-482d-2ecb07f4d6bf",
+              "Text": {
+                "Handle": "hc4bbee22g567dg4077g8ee7g115c63b3fa9f",
+                "Value": "*As the life fades from her eyes, the gnoll within her dies too, stillborn.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Dead Hyena. <Murat>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3067",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Hyena is dead.",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12815;23448",
+        "sourcetemplate": ""
+      }
+    },
+    "e10a98c0-2def-1880-5eaa-4ac1ecc887d5": {
+      "UUID": "e10a98c0-2def-1880-5eaa-4ac1ecc887d5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "943ee044-4bd8-4c34-e87c-a143d263a779"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "37a733c1-a862-4157-b92a-9cff46232c6a"
+                ],
+                "TagNames": [
+                  "RANGER"
+                ]
+              }
+            ],
+            "RuleString": "RANGER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "4d7f9974-d443-2979-554a-c53647355b0f",
+              "Text": {
+                "Handle": "hf2893d15ge775g45f9gaa44g6e46338f25a8",
+                "Value": "*Your nostrils fill with the rank smell of death. The hyena has feasted, but looking into her eyes, you know it wasn't enough. She's still hungry.*"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "37a733c1-a862-4157-b92a-9cff46232c6a"
+                ],
+                "TagNames": [
+                  "RANGER"
+                ]
+              }
+            ],
+            "RuleString": "!RANGER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "656051ee-3b49-57b8-02ac-5433166804bc",
+              "Text": {
+                "Handle": "h830ce9a7g1648g4b9fg98b2g1a7bd0cf8b06",
+                "Value": "*She'd eaten. Feasted. And yet, looking into her eyes, you can see it wasn't enough. She's still hungry.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3393",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Suffering Hyena.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "7375;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "e281696a-2a8a-26d1-d2b4-578f7b84293a": {
+      "UUID": "e281696a-2a8a-26d1-d2b4-578f7b84293a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "415fdb37-80e9-4f5e-4fd0-23c7c69fc774"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "aa9f126f-ac9a-48d9-a128-1394fae8f4e8",
+                  "c7bdcdf2-15e7-456e-adf1-21dda3172e18"
+                ],
+                "TagNames": [
+                  "CLERIC_EVIL",
+                  "OATHBREAKER"
+                ]
+              },
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "5a0ebff7-9930-4a99-908b-400fcc2411f0",
+                  "a1aa47b2-4d0a-4c97-931b-2c53353d5b23"
+                ],
+                "TagNames": [
+                  "NOT_FOR_EA",
+                  "PALADIN_VENGEANCE"
+                ]
+              }
+            ],
+            "RuleString": "(CLERIC_EVIL or OATHBREAKER) and (NOT_FOR_EA and PALADIN_VENGEANCE)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "be501af6-e0aa-15cc-f7c1-d80b7577a5d0",
+              "Text": {
+                "Handle": "h93589f14g1440g4a73gbc47g98ba67afe305",
+                "Value": "<i>Revel in the creature's demonic influence.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3414",
+        "InternalNodeContext": "Character gains advantage on initiative in the following combat.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Evil Cler/Pala",
+        "position": "11535;21915",
+        "sourcetemplate": ""
+      }
+    },
+    "e60a5439-222a-f563-5cf9-827b1f072ca1": {
+      "JumpTarget": "e84b6131-d482-64ee-8209-b7b742f150fa",
+      "JumpTargetPoint": 1,
+      "UUID": "e60a5439-222a-f563-5cf9-827b1f072ca1",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3514",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "12815;23010",
+        "sourcetemplate": ""
+      }
+    },
+    "e84b6131-d482-64ee-8209-b7b742f150fa": {
+      "UUID": "e84b6131-d482-64ee-8209-b7b742f150fa",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "97cc1dc6-581d-74de-cc29-27653312d478"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d9c6cee2-e57b-0275-db29-f640f8d3753d",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_DyingHyena_Event_Death"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5df3a23f-59d5-691e-ccec-519820c3d6d6",
+              "Text": {
+                "Handle": "h966c5102g00efg4f0ag92ffg493dc8e0496c",
+                "Value": "*Her belly splits like a rotten fruit, birthing a frenzy of claws and fangs.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase 3 <jack> +  belly birst",
+        "Attitude": "Default",
+        "CinematicNodeContext": "\"Her belly split like a rotten fruit, birthing a frenzy of claws and fangs.\"",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2999",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Splitting flesh, gnoll growls.",
+        "StateChangeTags": "The gnoll is outside the hyana.",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - Hyena body splitting open, blood, guts. the Gnoll come from the Hyena.",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12815;23667",
+        "sourcetemplate": ""
+      }
+    },
+    "f030492e-d91f-ac5a-5717-68e0d1af78f9": {
+      "UUID": "f030492e-d91f-ac5a-5717-68e0d1af78f9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4a07bd00-b8c6-4133-d5bb-9886db965413"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "95c194f0-56d5-899c-b033-a65f5d867932",
+              "Text": {
+                "Handle": "hcf3cee88gc5e2g4c8ag8150g35e37b28504a",
+                "Value": "*You hear what comes next before you see it: the sharp snapping of bones and a yelp of pain as her body starts to twist and undulate.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Hyena writhing phase1",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3389",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Snapping of bones and yelp of pain.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_Special [Murat] - Dying hyena body starting to twist.",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "8015;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "f05604fe-4e96-e228-f84c-e5f9f3bb9041": {
+      "UUID": "f05604fe-4e96-e228-f84c-e5f9f3bb9041",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5d490807-30e2-8e22-be7f-416ae049d6dc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5b4d1d25-1b70-43b2-b336-2f259eea3fc3",
+              "value": true,
+              "paramval": 1,
+              "Name": "GLO_Event_SetSurprisedNextCombat"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "dc860a81-f3c2-4c1a-ab90-e7583324845c"
+                ],
+                "TagNames": [
+                  "PETPAL"
+                ]
+              }
+            ],
+            "RuleString": "PETPAL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "328ac5dc-64ab-0ae0-731d-2a0644571a38",
+              "Text": {
+                "Handle": "h2eb397cdg00f3g4ab9g9a24gbc196b613c20",
+                "Value": "There, now, it's all right. It'll be over soon."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+                  "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2"
+                ],
+                "TagNames": [
+                  "PETPAL",
+                  "REALLY_DARK_URGE"
+                ]
+              }
+            ],
+            "RuleString": "!(PETPAL and REALLY_DARK_URGE)"
+          },
+          "TagTexts": [
+            {
+              "LineId": "5a0f3e28-e43a-4072-903e-0343ea624e8b",
+              "Text": {
+                "Handle": "hb50c42b1g354eg48cfga517gc73fa004682e",
+                "Value": "<i>Try not to be sick.</i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 2,
+                "Tags": [
+                  "dc860a81-f3c2-4c1a-ab90-e7583324845c"
+                ],
+                "TagNames": [
+                  "PETPAL"
+                ]
+              }
+            ],
+            "RuleString": "!PETPAL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "5a3f55c1-9e84-4748-90ef-184c4054d4d4",
+              "Text": {
+                "Handle": "hee7e6034gde25g4adbgad4cg2a0b1e8cf601",
+                "Value": "<i>Stifle your excitement. This is grotesque.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3411",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Petpal / not Petpal",
+        "position": "11535;21258",
+        "sourcetemplate": ""
+      }
+    },
+    "f0c971e1-f59f-3a24-a282-a77c1fb41cf8": {
+      "JumpTarget": "f240c167-f7ac-f7af-8334-b1d31a8e50ce",
+      "JumpTargetPoint": 2,
+      "UUID": "f0c971e1-f59f-3a24-a282-a77c1fb41cf8",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3881",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "12175;22572",
+        "sourcetemplate": ""
+      }
+    },
+    "f240c167-f7ac-f7af-8334-b1d31a8e50ce": {
+      "UUID": "f240c167-f7ac-f7af-8334-b1d31a8e50ce",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "36e03d56-4681-950d-f1fa-42558dbf94e5",
+        "d80c28bf-6706-f9c3-13ff-5d4c65c6707d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3546388c-753b-fb41-1606-c78825004c14",
+              "Text": {
+                "Handle": "hbfb5449bg447ag40c8gb621gd7e4a29f46e5",
+                "Value": "*You land a swift strike against her skull. She yelps, then goes still.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[ANIMALS] - Player strikes hyena in the skull, hyena yelps and dies. <Murat>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "Player weapon.",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3051",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "Weapon hitting skull, Hyena yelp.",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "12175;23229",
+        "sourcetemplate": ""
+      }
+    },
+    "f7a66e94-5a84-3b44-b1d3-6d8403308790": {
+      "RollSuccess": false,
+      "UUID": "f7a66e94-5a84-3b44-b1d3-6d8403308790",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7f3aeb5d-bd90-d60b-044e-05fb887c0113",
+        "91e02b6d-17ca-f22c-d0a8-7051b6839ddb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3408",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "8975;24105",
+        "sourcetemplate": ""
+      }
+    },
+    "f9c7e428-a31d-5257-e0c9-c04dec9a49cc": {
+      "JumpTarget": "be482a64-a8cb-0f41-c1b4-9fcf73c2f316",
+      "JumpTargetPoint": 2,
+      "UUID": "f9c7e428-a31d-5257-e0c9-c04dec9a49cc",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3888",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10255;23229",
+        "sourcetemplate": ""
+      }
+    },
+    "fa47f807-3b4d-a68d-bf1a-26cd0ba2f2dd": {
+      "JumpTarget": "91e02b6d-17ca-f22c-d0a8-7051b6839ddb",
+      "JumpTargetPoint": 2,
+      "UUID": "fa47f807-3b4d-a68d-bf1a-26cd0ba2f2dd",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3892",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "10255;23886",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "aea9c28e-1877-4f92-e115-165cda53e53e",
+      "Index": 0,
+      "List": [
+        "6b8a2426-50be-18bc-77fb-6bf99baddc19"
+      ],
+      "SpeakerCharacter": null,
+      "SpeakerGroupName": "GROUP_DyingHyenas"
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "44186c39-a49e-cb5d-347f-7e321e1e8ebe",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The player encounters a dying hyena that is about to turn into a gnoll. If they discover this in time, they can try to stop the gnoll from being born. Otherwise, the gnoll is born and attacks the player when the dialogue ends. "
+}

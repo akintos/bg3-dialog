@@ -1,0 +1,334 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/DEN/DEN_DruidAttack_SonOfChef.lsj",
+  "UUID": "27526423-daec-7855-0553-03f3c82345ff",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "5ffb4b11-89cb-3e67-b0c0-7b66d537f940",
+    "52c3cb2f-b192-14ee-c923-c008a44c15c1",
+    "7beac7f1-aeef-8b28-58d9-f9729f224029"
+  ],
+  "Nodes": {
+    "52c3cb2f-b192-14ee-c923-c008a44c15c1": {
+      "UUID": "52c3cb2f-b192-14ee-c923-c008a44c15c1",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ab37b65a-816c-0bca-00d3-4f6f09f512f8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "311a8a42-6510-31b6-f3f6-a486f58cd342",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_SonOfChefAfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "74c153cc-6b66-c85e-3c00-283b812b129b",
+              "Text": {
+                "Handle": "ha74bf667g40fcg489eg88efgdaaa0f93f61a",
+                "Value": "We should be used to the knives in our backs by now. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "ChadD: Use Attitude if necessary.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Arms crossed.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "His people have been betrayed - yet again - through no fault of their own. The druids have been dealt with.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "Arms crossed",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "5ffb4b11-89cb-3e67-b0c0-7b66d537f940": {
+      "UUID": "5ffb4b11-89cb-3e67-b0c0-7b66d537f940",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "311a8a42-6510-31b6-f3f6-a486f58cd342",
+              "value": true,
+              "paramval": 1,
+              "Name": "DEN_DruidAttack_HasMet_SonOfChefAfterAttack"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b4754af7-07ec-433c-87d2-e78ef4c79e6e",
+              "value": true,
+              "paramval": null,
+              "Name": "DEN_DruidAttack_State_PrepAfterDeathOfDruids"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "79542681-23cf-bd7a-c58c-837b9909fd51",
+              "Text": {
+                "Handle": "h2cd5ba8bge041g4c47gb31bg4104e0069e46",
+                "Value": "I hope you're here when the goblins make their move."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "He doesn't like their chances, but knows they'd be better with the player to fight with them.The druids have been dealt with, but the goblin attack still looms.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druids are dead and attack is over.",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "7beac7f1-aeef-8b28-58d9-f9729f224029": {
+      "UUID": "7beac7f1-aeef-8b28-58d9-f9729f224029",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3a0fe35e-2a87-5abb-6899-044e99e07dd3",
+              "Text": {
+                "Handle": "h42f9cc71ge189g4da5gbd7dg39795541878f",
+                "Value": "Pick up a weapon and fight, damn it!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "Fighting pose - Elodie",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Weapon drawn.",
+        "CinematicObjects": "Weapon drawn.",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "In the middle of a fight - the druids are attacking.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Weapon drawn.",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid Attack is under way.",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "ab37b65a-816c-0bca-00d3-4f6f09f512f8": {
+      "UUID": "ab37b65a-816c-0bca-00d3-4f6f09f512f8",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "555a060b-9e69-2932-486a-28a596af825a",
+              "Text": {
+                "Handle": "h46384574g71a7g4daeg9fdag8041a294cc41",
+                "Value": "Good thing you were with us."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Sighing a bit, trying to find a positive in the situation. The druids have been dealt with.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "540f4d0f-d9d2-9553-3967-749da71f81bf",
+      "Index": 0,
+      "List": [
+        "03b6fae4-d250-4ce9-9a01-19cb427deb17"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Ikaron",
+        "Type": "character",
+        "MapKey": "03b6fae4-d250-4ce9-9a01-19cb427deb17",
+        "Name": "S_DEN_Tiefling_008",
+        "ParentTemplateId": null,
+        "TemplateName": "80fa035d-5248-45c3-a9c2-1c74749833dc"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "869702b6-aa2e-9e2c-f8ea-e904887ed464",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "This dialogue plays either while the druids are attacking the tieflings in the grove, or after the druids have been defeated. During the attack, Ikaron is entirely focused on saving his people from the druids. Afterward, he's introspective, hurt that he and his people have had another safe harbour turn against him. Still, he is glad the players were there to help win the day."
+}

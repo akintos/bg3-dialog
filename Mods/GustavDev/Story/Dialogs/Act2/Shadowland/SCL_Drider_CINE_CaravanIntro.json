@@ -1,0 +1,244 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shadowland/SCL_Drider_CINE_CaravanIntro.lsj",
+  "UUID": "d053945e-d744-2dc4-4384-e3175f0eeb93",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1,
+    "4": -1,
+    "5": -1,
+    "6": -1,
+    "7": -1,
+    "8": -1,
+    "9": -1
+  },
+  "RootNodes": [
+    "6ac7873a-ec77-4989-407e-32a7152a0eef"
+  ],
+  "Nodes": {
+    "6ac7873a-ec77-4989-407e-32a7152a0eef": {
+      "UUID": "6ac7873a-ec77-4989-407e-32a7152a0eef",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ad5655a0-6d15-f9c4-548a-5bbfba910d98"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[Player] walk forward and crouch down, then he hide behind something and observe the drider caravan pass by. <Choicelyn>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The player pauses as they hear nearby footfalls. They crouch down and observe.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "[WI] might need some audio support to show the caravan's footfalls in the distance",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "CINE: Player stop and hide",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ad5655a0-6d15-f9c4-548a-5bbfba910d98": {
+      "UUID": "ad5655a0-6d15-f9c4-548a-5bbfba910d98",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e40adf34-2570-4225-95c8-bbb8582a4ca2",
+              "Text": {
+                "Handle": "h1f424bd8gbb87g4b72ga7afg050e8255dc28",
+                "Value": "Onwards! The tower awaits us."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*REUSE* [Player] HUM_M_Rig_CINE_SneakPose_Idle_01, *REUSE* [Drider] construction walk <Choicelyn>",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Player observes as the drider caravan moves into frame (wide shot).",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Urging the caravan along.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "193af043-f52d-ae97-f46c-7c0853dc5de5",
+      "Index": 0,
+      "List": [
+        "aa59ce01-3d2e-42e8-a539-c07e0ea292ab"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Kar'niss",
+        "Type": "character",
+        "MapKey": "aa59ce01-3d2e-42e8-a539-c07e0ea292ab",
+        "Name": "S_SCL_Drider",
+        "ParentTemplateId": null,
+        "TemplateName": "6145f104-895d-4023-8fc7-1ba2cea1480a"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "88a42c1f-83d5-8259-659b-301b66758b40",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "5dae0831-7c89-43d3-a6d5-94c7059028b4",
+      "Index": 2,
+      "List": [
+        "c176d94a-eaa6-4869-a344-88e44b31e17d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Brawler Vez",
+        "Type": "character",
+        "MapKey": "c176d94a-eaa6-4869-a344-88e44b31e17d",
+        "Name": "S_SCL_DriderCaravan_GoblinMelee_000",
+        "ParentTemplateId": null,
+        "TemplateName": "32345211-0e02-4bf6-b8de-60ceadfc4a44"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "3d8450f4-4b34-4b5d-9257-24472c22a279",
+      "Index": 3,
+      "List": [
+        "0648b227-b64b-471f-a6ac-d71af926dfb4"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Warrior Gronag",
+        "Type": "character",
+        "MapKey": "0648b227-b64b-471f-a6ac-d71af926dfb4",
+        "Name": "S_SCL_DriderCaravan_GoblinMelee_001",
+        "ParentTemplateId": null,
+        "TemplateName": "35e843cf-bc73-4754-aaee-fd8272d99ea6"
+      },
+      "SpeakerGroupName": null
+    },
+    "4": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2d8366dd-d290-4eba-9616-8602b9021e36",
+      "Index": 4,
+      "List": [
+        "d9efe828-934f-4b38-b741-402001449f0d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Sharp-Eye Lora",
+        "Type": "character",
+        "MapKey": "d9efe828-934f-4b38-b741-402001449f0d",
+        "Name": "S_SCL_DriderCaravan_GoblinRanger",
+        "ParentTemplateId": null,
+        "TemplateName": "6a492173-8f18-4dc3-a0bc-fa83b372db9e"
+      },
+      "SpeakerGroupName": null
+    },
+    "5": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d122b8a4-34f2-4ce4-bd2b-f1495460d66e",
+      "Index": 5,
+      "List": [
+        "8e95a1ed-12f0-4b2e-9d22-d9b4522a1445"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Bedi",
+        "Type": "character",
+        "MapKey": "8e95a1ed-12f0-4b2e-9d22-d9b4522a1445",
+        "Name": "S_SCL_DriderCaravan_HalfOrcMelee",
+        "ParentTemplateId": null,
+        "TemplateName": "2f661afa-d227-447d-ad97-4f0b064ba2d5"
+      },
+      "SpeakerGroupName": null
+    },
+    "6": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "8c435c92-548e-45d3-bccd-df20ce8b068e",
+      "Index": 6,
+      "List": [
+        "f9522205-623f-4a82-904a-128b26182707"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Kansif",
+        "Type": "character",
+        "MapKey": "f9522205-623f-4a82-904a-128b26182707",
+        "Name": "S_SCL_DriderCaravan_HalfOrcCaster",
+        "ParentTemplateId": null,
+        "TemplateName": "35c45e91-ba4b-4016-81ac-82af7754c73b"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "The player spots the drider caravan approaching while exploring SCL (no harpers are present)"
+}

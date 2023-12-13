@@ -1,0 +1,6472 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Haven/HAV_BackupLeader.lsj",
+  "UUID": "40d9200d-1fd2-f480-b097-66189d7184b8",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "bfcddde3-9cb4-de12-c0f7-6e96ab6e3d53",
+    "f6ab8869-7e75-7ba1-49f2-9036686d4867",
+    "fa9e129e-f163-5ede-16b3-ac3c56a7add7",
+    "145f3b7a-e72f-2170-af64-819cf368cbdc",
+    "ad55b60c-11f0-f0c3-6e7d-09b2ebc34ead",
+    "5d222ed9-f183-6a67-6791-2dca412be99b",
+    "ef9ffb60-2916-befc-e96c-015fb0db2045",
+    "d2d8aa8e-8457-ab80-ca3f-2040a696c8d9",
+    "681b125b-b0a9-52d1-0786-e6a7bd626ba4",
+    "00483027-06ae-5a17-97ca-05036a63bc21",
+    "a0229eb6-2da0-4e34-93b2-39076345974f",
+    "52f74817-97f1-4f62-abe3-cbe6675c9b1f",
+    "254cc36a-5f7a-51b1-c7c9-a298c298c073",
+    "17f7e55c-8fe1-9d72-83c4-531dd958b7f4"
+  ],
+  "Nodes": {
+    "00483027-06ae-5a17-97ca-05036a63bc21": {
+      "SourceNode": "254cc36a-5f7a-51b1-c7c9-a298c298c073",
+      "UUID": "00483027-06ae-5a17-97ca-05036a63bc21",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5d975974-58ac-b168-27fc-3da556740b88"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            },
+            {
+              "UUID": "78722161-91a2-e044-ba3a-a79492d6ed18",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_Jailbreak_State_AllPrisonersDied"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N239",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "FAIL / NOT MET / ZEV NOT LEAD",
+        "position": "15;-3489",
+        "sourcetemplate": ""
+      }
+    },
+    "008c1948-3d93-a383-7563-5af465eb90c2": {
+      "UUID": "008c1948-3d93-a383-7563-5af465eb90c2",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f21c4098-93b2-406a-df2c-1004bd33d645"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ce4d0a1-62a0-f40d-a17c-c386609ca570",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_ProdigyLament_State_ToldStory"
+            },
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            },
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c3593acb-535b-40d9-aacb-47e20e358008",
+              "Text": {
+                "Handle": "he2197ae3g40e9g41bbg9fb3g1740a26a2884",
+                "Value": "I don't see Zevlor. Don't tell me he's missing aswell?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N317",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "know about ambush",
+        "position": "975;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "026ed0ae-af49-f0f5-f20a-79b8a8bd3e67": {
+      "UUID": "026ed0ae-af49-f0f5-f20a-79b8a8bd3e67",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e106f25d-21c5-2486-bc0a-0148b0efa4ea",
+        "91530040-e7c7-0a31-b780-2fc7e414811a"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ce4d0a1-62a0-f40d-a17c-c386609ca570",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_ProdigyLament_State_ToldStory"
+            },
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a9798659-f3ae-4c47-96d7-a858a78076c8",
+              "Text": {
+                "Handle": "h6aecb573gb91bg4d4agaca0g5b240202fb00",
+                "Value": "I heard you were ambushed by the cult. It sounded brutal."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N183",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "spoke only to alfira",
+        "position": "975;-3489",
+        "sourcetemplate": ""
+      }
+    },
+    "03e30d4a-61f7-ba7f-eed9-a890dd180bf8": {
+      "UUID": "03e30d4a-61f7-ba7f-eed9-a890dd180bf8",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "700414e5-98ba-7aaf-c945-1fb59bd5ddbf"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1fcd0b77-be5f-4a88-8f99-e09ce2da1ed6",
+              "Text": {
+                "Handle": "h4f7d60dbgb19cg4d57g8e39g0beb67ba3489",
+                "Value": "Aye, I did. Maybe you'd have been the one to save us all, if you'd been there."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N201",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "No pretense - she openly accepts she abandoned some people, but has to be pragmatic.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "04fa325c-28d2-37f0-9750-15b94a41c1d5": {
+      "UUID": "04fa325c-28d2-37f0-9750-15b94a41c1d5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3070e4fa-2de0-7e38-7019-de2d797a8fb9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c7bdcdf2-15e7-456e-adf1-21dda3172e18",
+              "value": true,
+              "paramval": 1,
+              "Name": "OATHBREAKER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b2ebcb3d-d3a2-473d-bf23-5d4796546297",
+              "Text": {
+                "Handle": "h46d0ebe8g25fbg404fg95baga10294734649",
+                "Value": "Your life is your own - you owe these people nothing. You were right to run."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N344",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "oathbreaker",
+        "position": "2575;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "08d8cc31-b497-52f1-f148-4be6ef49988e": {
+      "UUID": "08d8cc31-b497-52f1-f148-4be6ef49988e",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c449a261-62e4-e2d0-5b18-39685a939dde",
+        "324c61fb-e673-d72f-30e2-acf5033cdf9f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ce4d0a1-62a0-f40d-a17c-c386609ca570",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_ProdigyLament_State_ToldStory"
+            },
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "95f60b7e-3820-49e0-873f-ca4994a51759",
+              "Text": {
+                "Handle": "h11bb98c3ge1d9g49b1gbe38g813a52501bc3",
+                "Value": "I heard you were ambushed by the cult. It sounded brutal."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N305",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "spoke to alfira AND rolan",
+        "position": "975;-3051",
+        "sourcetemplate": ""
+      }
+    },
+    "09f8c7e9-8b61-9d7d-db63-c8a8d219c301": {
+      "JumpTarget": "03e30d4a-61f7-ba7f-eed9-a890dd180bf8",
+      "JumpTargetPoint": 1,
+      "UUID": "09f8c7e9-8b61-9d7d-db63-c8a8d219c301",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N346",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "0db25430-5c01-d94b-8fb1-3167019d3166": {
+      "UUID": "0db25430-5c01-d94b-8fb1-3167019d3166",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c30fe82d-812b-b7c7-0d43-5cfb932c1988"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "78fdb5cd-a381-4fbd-8275-6cf878b50004",
+              "Text": {
+                "Handle": "h6afab300g6bb7g4867ga2d8gba2a1b6c4f48",
+                "Value": "Heroism is no comfort to the dead."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N331",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "a touch sharp, she's not annoyed, more surprised the player would be so naive",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "0f4cb49d-8c1a-dbb1-ac76-6b33e5753cf5": {
+      "UUID": "0f4cb49d-8c1a-dbb1-ac76-6b33e5753cf5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4c028bf4-8aea-bd51-0f91-c32427ba0d72",
+        "ccf20331-42fc-1063-992d-f039dac3ef13",
+        "a53d3b32-d82d-4e68-4618-cabd334c315a",
+        "21f2cd60-0182-cd52-8d20-4a368f35597f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6df06cfc-ab0c-45eb-8ef2-0c344ca9a4db",
+              "Text": {
+                "Handle": "h20f6440ag0ac7g439dgacc2g4c08fb456466",
+                "Value": "I owe you an apology. You pulled my people from one death-trap, only for me to land them in another."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N245",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Growing serious - in her mind, she messed up the chance we gave her",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    },
+    "145a1cdb-d163-2d6a-f123-e8ffffca9c92": {
+      "UUID": "145a1cdb-d163-2d6a-f123-e8ffffca9c92",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "37ef2af4-27bf-6b01-18d1-3147f8b036d8"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1ae7017c-4884-4a43-bc4a-742fa0d201c0",
+              "value": true,
+              "paramval": 1,
+              "Name": "FIGHTER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "11434b2a-2d30-4f59-b1f0-0b33fa588277",
+              "Text": {
+                "Handle": "hd4ecf3d2gad6eg42cag9ae7g7b9213f1b557",
+                "Value": "You didn't stand your ground? You deserted your allies? Disgraceful."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N270",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "FIGHTER",
+        "position": "2575;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "145f3b7a-e72f-2170-af64-819cf368cbdc": {
+      "UUID": "145f3b7a-e72f-2170-af64-819cf368cbdc",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3d6f8326-f5cc-c124-b810-3f03fe1d6b62",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_ReturnCompleted"
+            },
+            {
+              "UUID": "3f819a53-2fb8-c9e4-2d9d-1b3280812de7",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_AllTieflingsReturned"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cc7ea17c-f1f2-4822-a662-c24298567e1e",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_SavingPrisoners_HasMet_CerysPostRescue"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "11044b94-b8c4-4939-81ff-56fb05be134f",
+              "Text": {
+                "Handle": "h8d0b10fbgee8fg466dgb879g2df5efc0b361",
+                "Value": "We're bruised, battered... but we're together again. You damn well brought them <i>back.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N48",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Fiercely grateful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "RETURN COMPLETE / ALL TIEFLINGS",
+        "position": "15;-5679",
+        "sourcetemplate": ""
+      }
+    },
+    "17f7e55c-8fe1-9d72-83c4-531dd958b7f4": {
+      "UUID": "17f7e55c-8fe1-9d72-83c4-531dd958b7f4",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0f4cb49d-8c1a-dbb1-ac76-6b33e5753cf5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "502c355b-1e67-48d2-bea5-27f2972c20ba",
+              "Text": {
+                "Handle": "h6d1810b4g3263g4fc4g99bcg3f62d99440da",
+                "Value": "I promised you a drink the next time we met. This inn isn't what I had in mind."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N244",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Smiling, happy to see us, but muted. She's suffered tragedy since we last saw her.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "MET CERYS IN ACT 1",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "21f2cd60-0182-cd52-8d20-4a368f35597f": {
+      "UUID": "21f2cd60-0182-cd52-8d20-4a368f35597f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a5623f0e-4c61-51fb-ad4d-dbf4094d1268"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": true,
+              "paramval": 1,
+              "Name": "RANGER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ccc203e2-7d71-4b9c-873f-f7656b45e0c3",
+              "Text": {
+                "Handle": "h0fe1f7d7gb2a0g4cacg8d89g6cffe02a48a5",
+                "Value": "I prefer setting traps over walking into them - what happened?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N282",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "RANGER",
+        "position": "975;672",
+        "sourcetemplate": ""
+      }
+    },
+    "23667b35-4dfd-ab8c-f757-b3cc447265b7": {
+      "JumpTarget": "c6f0a5d6-1631-2324-6fb7-a2837c4777dc",
+      "JumpTargetPoint": 1,
+      "UUID": "23667b35-4dfd-ab8c-f757-b3cc447265b7",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N327",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;-3270",
+        "sourcetemplate": ""
+      }
+    },
+    "23e1d085-4f3e-9cfc-cac8-4ab72581e5a9": {
+      "UUID": "23e1d085-4f3e-9cfc-cac8-4ab72581e5a9",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f135a99b-a20e-121e-94bc-45d6aada3c92",
+        "9eaeb546-875f-257d-65fb-180b43ca928d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fbb149c4-2fe4-4e56-9904-1bfddf0192e5",
+              "Text": {
+                "Handle": "h2f1174ebgc512g4396g8f2cg0e14bf91b603",
+                "Value": "Still, you're here. Better than being a prisoner of the Absolute."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N214",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3855;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "254cc36a-5f7a-51b1-c7c9-a298c298c073": {
+      "UUID": "254cc36a-5f7a-51b1-c7c9-a298c298c073",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bd5fa149-1a0b-97e5-2495-c54024f0a7ae"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1cad1e3e-d275-4f3a-9779-2a279f532cce",
+              "Text": {
+                "Handle": "h95ecb73dgfc86g4003g92fage5eb38c5764d",
+                "Value": "Thought you'd be ten yards tall, the way my people speak of you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N224",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Blunt, eyeing us up (friendly, not unimpressed - but muted due to circumstances)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT MET / ZEV NOT LEAD",
+        "position": "15;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "3061cda9-e9fb-3d85-b184-41b12c069cf8": {
+      "UUID": "3061cda9-e9fb-3d85-b184-41b12c069cf8",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f21c4098-93b2-406a-df2c-1004bd33d645"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ce4d0a1-62a0-f40d-a17c-c386609ca570",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_ProdigyLament_State_ToldStory"
+            },
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            },
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b618d6ee-c898-4c05-b57c-b639d5f6b523",
+              "Text": {
+                "Handle": "h081e525dg7bbdg47a2g9a6cgff00899e9ceb",
+                "Value": "I don't see Zevlor. Don't tell me he's missing aswell?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N326",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "know about ambush",
+        "position": "975;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "3070e4fa-2de0-7e38-7019-de2d797a8fb9": {
+      "JumpTarget": "23e1d085-4f3e-9cfc-cac8-4ab72581e5a9",
+      "JumpTargetPoint": 2,
+      "UUID": "3070e4fa-2de0-7e38-7019-de2d797a8fb9",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N349",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "324c61fb-e673-d72f-30e2-acf5033cdf9f": {
+      "UUID": "324c61fb-e673-d72f-30e2-acf5033cdf9f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "23667b35-4dfd-ab8c-f757-b3cc447265b7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e78e7c30-4176-422f-948c-ecc6f0529ee2",
+              "Text": {
+                "Handle": "hfc5de3cdg60d2g4272g89f5g09f1315eee0a",
+                "Value": "Aye - brutal is putting it lightly. Maybe we should have just surrendered, but..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N313",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "342d0a51-052b-69d3-6820-3e3b5aae4198": {
+      "UUID": "342d0a51-052b-69d3-6820-3e3b5aae4198",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c48ef568-d3ec-da41-1a4c-879d1c362cde"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e1e460bb-d0ae-4452-8529-c9e176558731",
+              "value": true,
+              "paramval": 1,
+              "Name": "MONK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a6561164-aee5-434b-9206-9c85d634f3ed",
+              "Text": {
+                "Handle": "h8fdd44c2g0b59g42c6g848cg61071a5ca242",
+                "Value": "You let your fear conquer you. Be careful not to let your life be ruled by it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N339",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "monk",
+        "position": "2575;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "37ef2af4-27bf-6b01-18d1-3147f8b036d8": {
+      "JumpTarget": "03e30d4a-61f7-ba7f-eed9-a890dd180bf8",
+      "JumpTargetPoint": 1,
+      "UUID": "37ef2af4-27bf-6b01-18d1-3147f8b036d8",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N271",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "3c3e24f4-2c78-dc36-378b-4f5f08b0c9bd": {
+      "UUID": "3c3e24f4-2c78-dc36-378b-4f5f08b0c9bd",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6160a24a-6955-db94-0f28-11fcad1e80f2",
+        "e48f50cc-71d6-9f49-582f-9948046f3642"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ace07e15-64d5-4674-8875-3c17eb9f139d",
+              "Text": {
+                "Handle": "hd001022bga9e3g4790g9fa4g17ec9933cc45",
+                "Value": "Don't lose hope. The others might still be alive."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N208",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3855;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "3cda13ac-e696-c5fc-0520-126d7b4355bd": {
+      "UUID": "3cda13ac-e696-c5fc-0520-126d7b4355bd",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d750e954-22c5-6c9d-1b4c-f7332ec2d73e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": true,
+              "paramval": 1,
+              "Name": "RANGER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c4503a46-0665-4461-820b-56380bc8d2c7",
+              "Text": {
+                "Handle": "h2b3df469gff74g4bbfg80b8g7140525637c9",
+                "Value": "Do you think the cult planned this? Or was it a surprise attack?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N334",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Ranger",
+        "position": "2575;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "40c6596d-78c4-7906-fc29-3add987148f9": {
+      "UUID": "40c6596d-78c4-7906-fc29-3add987148f9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "41e1527a-ecd9-9e4b-c936-e9c00c22dd64"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "49681fa3-8ec6-4b50-8137-bc5efda7f950",
+              "Text": {
+                "Handle": "hfad4c189g3b75g4db0g9179gbc5e4fc586f5",
+                "Value": "I thought we might pass unnoticed along the fringes of this place. Escape the owlbear by hiding in its shadow, so to speak."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N192",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "41e1527a-ecd9-9e4b-c936-e9c00c22dd64": {
+      "UUID": "41e1527a-ecd9-9e4b-c936-e9c00c22dd64",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3c3e24f4-2c78-dc36-378b-4f5f08b0c9bd",
+        "500cd35b-82fe-1a22-3c0c-4dc39731e6f5",
+        "23e1d085-4f3e-9cfc-cac8-4ab72581e5a9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "122e4fc0-b014-410d-98cb-c4c79d6b8183",
+              "Text": {
+                "Handle": "hd92e3554g88f8g43ebga2c7g10e8dd467f20",
+                "Value": "You can see exactly how well that went."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N193",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Making light of her own foolish plan. Not jokey, just tired - her failure is self-evident",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "44f4f72a-e597-e165-a052-de716cfd445b": {
+      "UUID": "44f4f72a-e597-e165-a052-de716cfd445b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dbc31bf2-1474-c052-54ab-af68017c6c36"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "32ad93f6-a70c-4fd4-a7bc-805184dd2065",
+              "Text": {
+                "Handle": "h28ede578g5d85g4c82ga6ffg062de43aac55",
+                "Value": "I was trying to scout a path for us while you got busy carving one. But don't worry, I've had my fill of fighting since."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N205",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "wry, but ending on a somber note",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "45888644-bd7d-c6a2-849c-bfb2364909d9": {
+      "JumpTarget": "44f4f72a-e597-e165-a052-de716cfd445b",
+      "JumpTargetPoint": 2,
+      "UUID": "45888644-bd7d-c6a2-849c-bfb2364909d9",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N252",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;453",
+        "sourcetemplate": ""
+      }
+    },
+    "45b88072-a8df-89b4-4b84-73ebeee52bba": {
+      "UUID": "45b88072-a8df-89b4-4b84-73ebeee52bba",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "44f4f72a-e597-e165-a052-de716cfd445b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "17188139-0141-427a-9d33-d7b0d894be22",
+              "Text": {
+                "Handle": "h67770b62g4b23g42eag9f45g062bb04a05d4",
+                "Value": "So you managed to miss all that trouble at the grove. Convenient."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N204",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "4a3ea550-5af7-3087-06e5-cabc5d0ab0e8": {
+      "UUID": "4a3ea550-5af7-3087-06e5-cabc5d0ab0e8",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "56b287d0-b53f-434e-23d8-e8ea1e834fb3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "38cb65b2-74e7-496e-9aa6-5c5db993f634",
+              "Text": {
+                "Handle": "hfa195cc1g7debg4f5ag895fg690f0f2c1497",
+                "Value": "The inn is old, but 'death-trap' is a <i>bit </i>much."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N194",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "4af45789-be14-5ef5-c405-801988f477f0": {
+      "JumpTarget": "93ea3be4-ab1d-96c3-7865-db97dca81d32",
+      "JumpTargetPoint": 1,
+      "UUID": "4af45789-be14-5ef5-c405-801988f477f0",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N247",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;15",
+        "sourcetemplate": ""
+      }
+    },
+    "4c028bf4-8aea-bd51-0f91-c32427ba0d72": {
+      "UUID": "4c028bf4-8aea-bd51-0f91-c32427ba0d72",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4af45789-be14-5ef5-c405-801988f477f0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": false,
+              "paramval": 1,
+              "Name": "RANGER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a2500554-f03d-4c84-b2d4-3e667a21aa85",
+              "Text": {
+                "Handle": "h514a70cag033bg4439g8b58g37b628aa0920",
+                "Value": "What the hells happened? Where is everyone?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N246",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "500cd35b-82fe-1a22-3c0c-4dc39731e6f5": {
+      "UUID": "500cd35b-82fe-1a22-3c0c-4dc39731e6f5",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "03e30d4a-61f7-ba7f-eed9-a890dd180bf8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a718226-af25-4ce4-9127-ac2afdedeb13",
+              "Text": {
+                "Handle": "h35fc7752g32abg41cfg8f55gf8e0a615d7d3",
+                "Value": "Sounds like you made a right mess of things."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N213",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "3855;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "50ad2852-7c14-3475-bcb8-9e8a8118d98e": {
+      "UUID": "50ad2852-7c14-3475-bcb8-9e8a8118d98e",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f21c4098-93b2-406a-df2c-1004bd33d645"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ce4d0a1-62a0-f40d-a17c-c386609ca570",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_ProdigyLament_State_ToldStory"
+            },
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            },
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b5e31437-777e-47cb-a4f5-7cd0753425de",
+              "Text": {
+                "Handle": "hcd20d5d7g8ba6g43acgaf3bgddc4e6623f83",
+                "Value": "I don't see Zevlor. Don't tell me he's missing aswell?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N321",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "know about ambush",
+        "position": "975;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "52f74817-97f1-4f62-abe3-cbe6675c9b1f": {
+      "UUID": "52f74817-97f1-4f62-abe3-cbe6675c9b1f",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bd5fa149-1a0b-97e5-2495-c54024f0a7ae"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "34eb4697-14bd-4cea-a29e-f9d637470968",
+              "Text": {
+                "Handle": "h76e2b086gb654g4becg979ag752b7d839943",
+                "Value": "Thought you'd be ten yards tall, the way Zevlor spoke of you."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "Protected state. Barrier is On, nothing bad happened yet. Met.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Blunt, eyeing us up (friendly, not unimpressed - but muted due to circumstances)",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NOT MET / ZEV LEAD",
+        "position": "15;-2613",
+        "sourcetemplate": "HavenStates"
+      }
+    },
+    "56b287d0-b53f-434e-23d8-e8ea1e834fb3": {
+      "UUID": "56b287d0-b53f-434e-23d8-e8ea1e834fb3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dbc31bf2-1474-c052-54ab-af68017c6c36"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5cfe5696-8068-4cc0-a7a2-49d6fbf09705",
+              "Text": {
+                "Handle": "hf6dcacd8g80b2g4ac4g88e2g6a1989e16b9b",
+                "Value": "Glad you've kept your humour. The others could use it - what's left of us."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N195",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Smiling at our joke - less at the content than the fact we can joke at all.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "5a34b1fa-a2a3-9e1d-1c60-9630bf4e546d": {
+      "UUID": "5a34b1fa-a2a3-9e1d-1c60-9630bf4e546d",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e08db587-2194-4caf-ad1d-4f4626683fa2",
+              "Text": {
+                "Handle": "hdcd7259eg8a7dg4644gb87agddfd6a0bf92a",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N150",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-4146",
+        "sourcetemplate": ""
+      }
+    },
+    "5d222ed9-f183-6a67-6791-2dca412be99b": {
+      "UUID": "5d222ed9-f183-6a67-6791-2dca412be99b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            },
+            {
+              "UUID": "3d6f8326-f5cc-c124-b810-3f03fe1d6b62",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_ReturnCompleted"
+            },
+            {
+              "UUID": "78722161-91a2-e044-ba3a-a79492d6ed18",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_Jailbreak_State_AllPrisonersDied"
+            },
+            {
+              "UUID": "eef04b79-3cbe-a552-2748-3f1998670c5f",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_TieflingsReturned"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cc7ea17c-f1f2-4822-a662-c24298567e1e",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_SavingPrisoners_HasMet_CerysPostRescue"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "725353f3-803e-464b-8352-f30647ff1fd8",
+              "Text": {
+                "Handle": "h0ad24db6g9650g406eg9df5g3a283ef78d44",
+                "Value": "Seems not everyone made it out of that tower. But it'd be none at all with you - thank you. Truly."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N243",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little mournful, but still grateful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "RETURN COMPLETE / SOME TIEFLINGS",
+        "position": "15;-5241",
+        "sourcetemplate": ""
+      }
+    },
+    "5d771ce7-d499-1a2f-9ba3-445b48b60572": {
+      "UUID": "5d771ce7-d499-1a2f-9ba3-445b48b60572",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b0bed5ee-4bed-2c70-47c5-0d5bbcd2b17f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a8cb2b67-ec9e-40a2-bbf3-e7aba641c622",
+              "Text": {
+                "Handle": "h64839fd8g3fa4g4305g9e9eg333c19b51ebf",
+                "Value": "...That's that, then."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N220",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-4584",
+        "sourcetemplate": ""
+      }
+    },
+    "5d975974-58ac-b168-27fc-3da556740b88": {
+      "SourceNode": "bd5fa149-1a0b-97e5-2495-c54024f0a7ae",
+      "UUID": "5d975974-58ac-b168-27fc-3da556740b88",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cf0c7d15-8f30-6beb-67ef-e4c13ff27bba"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N218",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "335;-3708",
+        "sourcetemplate": ""
+      }
+    },
+    "5f5af26f-e1f4-6f2a-affe-b35d71dd9979": {
+      "UUID": "5f5af26f-e1f4-6f2a-affe-b35d71dd9979",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c6f0a5d6-1631-2324-6fb7-a2837c4777dc"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            },
+            {
+              "UUID": "9a55df27-5bc7-70ac-a4e8-a98b6912d8b7",
+              "value": true,
+              "paramval": null,
+              "Name": "COL_FindZevlor_Knows_MissingHav"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "97a91686-2ece-4516-88ad-61eda1d0b7b9",
+              "Text": {
+                "Handle": "h04bb5e1ag1d18g4f54gbaebgb02f7a30073e",
+                "Value": "We were ambushed out in the cursed lands - cultists of this Absolute. Zevlor froze, begged us to surrender, but..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N177",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "6160a24a-6955-db94-0f28-11fcad1e80f2": {
+      "UUID": "6160a24a-6955-db94-0f28-11fcad1e80f2",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f90dd55e-3c60-c3ba-0d71-75e6c3b97dcd"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ede53553-04dc-4f01-9512-065a169ce854",
+              "Text": {
+                "Handle": "h4fca1f7eg8e83g4a29g8816g8ba72175ec73",
+                "Value": "Zevlor had hope. It didn't save him. A little sense will serve us better, I think."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N206",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Not overly forceful, just refusing to be swayed from the grim reality. Small sigh.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "67966389-dde7-dc15-10e2-38be15293891": {
+      "UUID": "67966389-dde7-dc15-10e2-38be15293891",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "40c6596d-78c4-7906-fc29-3add987148f9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "7253b35b-2ac8-ce7f-6181-689ef27536d9",
+              "value": true,
+              "paramval": null,
+              "Name": "GLO_Absolute_Knows_MoonriseTowers"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fbc8c0f3-c514-417d-9ae0-11b174ee7bc7",
+              "Text": {
+                "Handle": "h06a721fcg7708g4738ga1b5g45406b4dfaf3",
+                "Value": "This army of the Absolute is growing, and flowing towards Moonrise. There's worse than goblins on the roads now."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N180",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Ominous, frustrated. They met much more resistance than she imagined",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "681b125b-b0a9-52d1-0786-e6a7bd626ba4": {
+      "SourceNode": "52f74817-97f1-4f62-abe3-cbe6675c9b1f",
+      "UUID": "681b125b-b0a9-52d1-0786-e6a7bd626ba4",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5d975974-58ac-b168-27fc-3da556740b88"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "78722161-91a2-e044-ba3a-a79492d6ed18",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_Jailbreak_State_AllPrisonersDied"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N217",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "FAIL / NOT MET / ZEV LEAD",
+        "position": "15;-3708",
+        "sourcetemplate": ""
+      }
+    },
+    "6d06d3c6-ed4c-31ac-3e64-d4d1f6dc1e98": {
+      "UUID": "6d06d3c6-ed4c-31ac-3e64-d4d1f6dc1e98",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7c2e8b27-d8de-4800-958a-d9bfc0ce36ef",
+              "Text": {
+                "Handle": "h01104a2bg4f3fg4715gb7e9g0bce91f5a7ee",
+                "Value": "We were bound for Baldur's Gate, and what's left of us is damn well getting there."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N222",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Fierce - she won't let any more die",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-4365",
+        "sourcetemplate": ""
+      }
+    },
+    "700414e5-98ba-7aaf-c945-1fb59bd5ddbf": {
+      "UUID": "700414e5-98ba-7aaf-c945-1fb59bd5ddbf",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b9118491-5f65-4341-aeac-015e7032fe96",
+              "Text": {
+                "Handle": "h5e327f71g7a28g40adgaca7ga51baef96338",
+                "Value": "Or maybe you'd be missing along with the rest."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N202",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Stark - not trying to provoke or insult us, just stating facts",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4495;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "77e063a5-5606-c6dd-7f27-0ad863767efa": {
+      "UUID": "77e063a5-5606-c6dd-7f27-0ad863767efa",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "83cf181e-dbb1-6c63-966a-2c07b6888928"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5",
+              "value": true,
+              "paramval": 1,
+              "Name": "CLERIC"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "aa9f126f-ac9a-48d9-a128-1394fae8f4e8"
+                ],
+                "TagNames": [
+                  "CLERIC_EVIL"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_EVIL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "f44d3729-0b0c-4cb7-812e-d7a5c0e86542",
+              "Text": {
+                "Handle": "h69f405d2g00c1g494bg9421g98772fc03e0b",
+                "Value": "They are gone, you have been spared. Do not squander the gods' grace. "
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "2947a463-3c45-4a70-959a-3e81a943ab92"
+                ],
+                "TagNames": [
+                  "CLERIC_NEUTRAL"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_NEUTRAL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "1ca4fa39-6536-4e68-87d5-50aa4dfec38f",
+              "Text": {
+                "Handle": "h51155d29gc57bg4983gaec4g08b1ae10e998",
+                "Value": "Cultists, curse - it matters not. The past is done. Focus on moving forward. "
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "64dc9d31-db7a-418e-bbbe-6f5b4d32608f"
+                ],
+                "TagNames": [
+                  "CLERIC_GOOD"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_GOOD"
+          },
+          "TagTexts": [
+            {
+              "LineId": "451e9166-3069-4524-a9ce-25508e0d9f83",
+              "Text": {
+                "Handle": "heaa96030g48b3g40fcg8112g185149341625",
+                "Value": "To despair is fruitless. To hope is divine - do <i>not</i> give up. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N264",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "CLERIC",
+        "position": "2575;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "7ee462c1-eee3-0b6e-91a3-e0bcfe4dcba9": {
+      "UUID": "7ee462c1-eee3-0b6e-91a3-e0bcfe4dcba9",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9a55df27-5bc7-70ac-a4e8-a98b6912d8b7",
+              "value": true,
+              "paramval": null,
+              "Name": "COL_FindZevlor_Knows_MissingHav"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e3810632-1ff0-4475-ace5-184a0dcad828",
+              "Text": {
+                "Handle": "h3d073fa7g3507g4724g9de3gbc198f6f908a",
+                "Value": "I almost hope he never found out why."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N200",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Vaguely shuddering at the thought of what the cult would need prisoners for",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4495;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "83cf181e-dbb1-6c63-966a-2c07b6888928": {
+      "UUID": "83cf181e-dbb1-6c63-966a-2c07b6888928",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "96cc1c64-9589-3c06-a3e7-351b30846ea4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "aa9f126f-ac9a-48d9-a128-1394fae8f4e8"
+                ],
+                "TagNames": [
+                  "CLERIC_EVIL"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_EVIL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "a182d918-605e-4cc2-afa8-7301f25195df",
+              "Text": {
+                "Handle": "hd650cf23ga687g401egbdaeg514c97b080de",
+                "Value": "What exactly have I left to squander? "
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "2947a463-3c45-4a70-959a-3e81a943ab92"
+                ],
+                "TagNames": [
+                  "CLERIC_NEUTRAL"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_NEUTRAL"
+          },
+          "TagTexts": [
+            {
+              "LineId": "df7a053e-1c2d-48d6-a031-968076885cca",
+              "Text": {
+                "Handle": "h7f233ea2ga8beg4043g90d9ge12f2a620408",
+                "Value": "Move forward to <i>what</i> exactly? "
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "64dc9d31-db7a-418e-bbbe-6f5b4d32608f"
+                ],
+                "TagNames": [
+                  "CLERIC_GOOD"
+                ]
+              }
+            ],
+            "RuleString": "CLERIC_GOOD"
+          },
+          "TagTexts": [
+            {
+              "LineId": "0a526c70-64fa-456d-924b-0cc7d11f7b7e",
+              "Text": {
+                "Handle": "h35956caegb7e4g404aga43cg19a615289d09",
+                "Value": "Hope? You would bid me <i>hope?</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N265",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "8567f80a-2b37-78b7-e79c-7a6cb31e6f47": {
+      "JumpTarget": "3c3e24f4-2c78-dc36-378b-4f5f08b0c9bd",
+      "JumpTargetPoint": 2,
+      "UUID": "8567f80a-2b37-78b7-e79c-7a6cb31e6f47",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N253",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-3051",
+        "sourcetemplate": ""
+      }
+    },
+    "91530040-e7c7-0a31-b780-2fc7e414811a": {
+      "UUID": "91530040-e7c7-0a31-b780-2fc7e414811a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "23667b35-4dfd-ab8c-f757-b3cc447265b7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7116c40c-68a4-4c58-b64a-eaf05a4d3eec",
+              "Text": {
+                "Handle": "hf5f0f59fge820g43a1gb3fcgcd600dc90f83",
+                "Value": "Aye. Not a battle she's likely to put to song. Maybe we should have just surrendered, but..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N230",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-3270",
+        "sourcetemplate": ""
+      }
+    },
+    "93ea3be4-ab1d-96c3-7865-db97dca81d32": {
+      "UUID": "93ea3be4-ab1d-96c3-7865-db97dca81d32",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c6f0a5d6-1631-2324-6fb7-a2837c4777dc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9243d385-bd2f-4f5e-b14e-2d8b89a528f9",
+              "Text": {
+                "Handle": "hf9ca6b6bgcafbg4901g9d68g475aeeda9185",
+                "Value": "We were ambushed out in the cursed lands - cultists of this Absolute. Likely we should have surrendered, but..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N231",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "95e59bc5-de0a-af1d-f080-6d637d5ce9ae": {
+      "UUID": "95e59bc5-de0a-af1d-f080-6d637d5ce9ae",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fe28c07e-832f-2d3b-b6ea-846ad9b4648d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ce4d0a1-62a0-f40d-a17c-c386609ca570",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_ProdigyLament_State_ToldStory"
+            },
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            },
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "25977e3a-3c1e-49b5-93cf-480ae4bce81e",
+              "Text": {
+                "Handle": "hdd5cdddbg969eg4486g8419g05a07229a7cb",
+                "Value": "What happened? Where's Zevlor?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N175",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "don't know about ambush",
+        "position": "975;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "96cc1c64-9589-3c06-a3e7-351b30846ea4": {
+      "UUID": "96cc1c64-9589-3c06-a3e7-351b30846ea4",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fee8e394-4c8d-7fe9-762f-b705ce976dd6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ef5cce36-ce0b-41ba-9d98-95f06dcb3c85",
+              "Text": {
+                "Handle": "hd80b02edg78beg479bg8e61gfcd3c021d4a9",
+                "Value": "We've no brighter horizon ahead of us. There's just the city - <i>if </i>I can get us there alive."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N266",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "98421be1-2993-a406-ea73-82af7e8e000d": {
+      "UUID": "98421be1-2993-a406-ea73-82af7e8e000d",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "09f8c7e9-8b61-9d7d-db63-c8a8d219c301"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d85ab2d-5c23-498c-a61e-98f05a00177a",
+              "value": true,
+              "paramval": 1,
+              "Name": "PALADIN"
+            },
+            {
+              "UUID": "c7bdcdf2-15e7-456e-adf1-21dda3172e18",
+              "value": false,
+              "paramval": 1,
+              "Name": "OATHBREAKER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2114aeb7-6265-47e1-9997-33f8717d42fb",
+              "Text": {
+                "Handle": "heb2c2f5fg42a1g4363ga6dfgea3460ee5c0b",
+                "Value": "Have you no shame? You were tasked with protecting these people, yet you <i>ran.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N340",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "paladin/not oathbreaker",
+        "position": "2575;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "98708ee0-934e-f4f4-6e7c-0f94a0cc99c3": {
+      "UUID": "98708ee0-934e-f4f4-6e7c-0f94a0cc99c3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f6c3ad15-e5ec-dbac-d5a1-07998d8ffe32",
+        "a6c9e517-c704-57ae-e08d-2914954ed901",
+        "a829f286-e6ee-e2f7-19b6-e48b9834eeee",
+        "e3d9d172-d8cd-bb78-cd4f-fdd97c78bac3",
+        "77e063a5-5606-c6dd-7f27-0ad863767efa",
+        "145a1cdb-d163-2d6a-f123-e8ffffca9c92",
+        "ca4b9d2b-6b93-1f68-7386-885d7f95a483",
+        "3cda13ac-e696-c5fc-0520-126d7b4355bd",
+        "342d0a51-052b-69d3-6820-3e3b5aae4198",
+        "98421be1-2993-a406-ea73-82af7e8e000d",
+        "04fa325c-28d2-37f0-9750-15b94a41c1d5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "367e8d07-b7ba-44f3-a13a-36473e80f379",
+              "Text": {
+                "Handle": "h6358e74bg90b8g4013g8430gfbcebf253cc9",
+                "Value": "Those of us who cut free just kept running 'til we found this place. The others... maybe the cult got them. Maybe the curse."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N187",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Shrugging, helpless. It's not that she doesn't care what happened to them, but she's exhausted and knows there's little she can do",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "999932af-aa90-2a03-624f-56fa5fddeb6c": {
+      "JumpTarget": "23e1d085-4f3e-9cfc-cac8-4ab72581e5a9",
+      "JumpTargetPoint": 2,
+      "UUID": "999932af-aa90-2a03-624f-56fa5fddeb6c",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N350",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "9cef7522-6ca2-62f8-de9d-4d4f9eb0457c": {
+      "UUID": "9cef7522-6ca2-62f8-de9d-4d4f9eb0457c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8255e50b-c496-47f5-a5a6-3a159d5d5cff",
+              "Text": {
+                "Handle": "hb0fa0e3ag4f7cg40bagb999g764cc0f6fdcc",
+                "Value": "I almost hope the others never found out why."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N238",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Vaguely shuddering at the thought of what the cult would need prisoners for",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4495;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "9eaeb546-875f-257d-65fb-180b43ca928d": {
+      "UUID": "9eaeb546-875f-257d-65fb-180b43ca928d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9cef7522-6ca2-62f8-de9d-4d4f9eb0457c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a17efa36-45e2-4498-b683-5481e7ea2ff2",
+              "Text": {
+                "Handle": "hb2ebb581gf512g46d0g89cbgf0f1cc718e7d",
+                "Value": "Prison's the best I can hope for the ones we left behind. This cult seemed to want us alive."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N237",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Grim, pragmatic",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;-1956",
+        "sourcetemplate": ""
+      }
+    },
+    "a0229eb6-2da0-4e34-93b2-39076345974f": {
+      "UUID": "a0229eb6-2da0-4e34-93b2-39076345974f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e1bcb265-147a-47c2-82f6-07997ab54808",
+              "Text": {
+                "Handle": "hd3656f86g41d6g430bg86fagc7a2d4ff4379",
+                "Value": "Watch your back out there. If it's not the cult coming for you, it'll be the shadows.<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "Protected state. Barrier is On, nothing bad happened yet. Not Met.",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HAS MET",
+        "position": "15;-2832",
+        "sourcetemplate": "HavenStates"
+      }
+    },
+    "a142098e-fc32-7999-3b9d-68465ff93e31": {
+      "UUID": "a142098e-fc32-7999-3b9d-68465ff93e31",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e4a3dce7-a68f-e1a3-f02a-91fa6d5b7484"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cc7ea17c-f1f2-4822-a662-c24298567e1e",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_SavingPrisoners_HasMet_CerysPostRescue"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "3d6f8326-f5cc-c124-b810-3f03fe1d6b62",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_ReturnCompleted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "59f269e8-9060-4a65-aa59-78f302a0035b",
+              "Text": {
+                "Handle": "h5c3d54eegd9f5g4594g9509g97d698bcc8b5",
+                "Value": "I tried, but your people didn't make it out of Moonrise. I'm sorry."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N134",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-4365",
+        "sourcetemplate": ""
+      }
+    },
+    "a53d3b32-d82d-4e68-4618-cabd334c315a": {
+      "UUID": "a53d3b32-d82d-4e68-4618-cabd334c315a",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "acd82961-3113-8c3c-8753-d7ca8782a96a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "36ef7936-b7d7-490e-bc98-42576921c167",
+              "Text": {
+                "Handle": "h3effaeb4gd7aag4688g87cfg6be8213eae59",
+                "Value": "How did you blunder into danger this time?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N250",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;453",
+        "sourcetemplate": ""
+      }
+    },
+    "a5623f0e-4c61-51fb-ad4d-dbf4094d1268": {
+      "JumpTarget": "93ea3be4-ab1d-96c3-7865-db97dca81d32",
+      "JumpTargetPoint": 1,
+      "UUID": "a5623f0e-4c61-51fb-ad4d-dbf4094d1268",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N283",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;672",
+        "sourcetemplate": ""
+      }
+    },
+    "a6c9e517-c704-57ae-e08d-2914954ed901": {
+      "UUID": "a6c9e517-c704-57ae-e08d-2914954ed901",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b1030e27-53bb-f01d-a3aa-bd3e6dd0fe91"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": false,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            },
+            {
+              "UUID": "1671b4bf-4f47-4bb7-9cb9-80bb1f6009d5",
+              "value": false,
+              "paramval": 1,
+              "Name": "CLERIC"
+            },
+            {
+              "UUID": "1ae7017c-4884-4a43-bc4a-742fa0d201c0",
+              "value": false,
+              "paramval": 1,
+              "Name": "FIGHTER"
+            },
+            {
+              "UUID": "2de0a4fc-5831-4439-94d3-a7ff9b7aacf6",
+              "value": false,
+              "paramval": 1,
+              "Name": "PALADIN_DEVOTION"
+            },
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": false,
+              "paramval": 1,
+              "Name": "RANGER"
+            },
+            {
+              "UUID": "7c89622b-4194-41df-b2ff-145a5056ee49",
+              "value": false,
+              "paramval": 1,
+              "Name": "PALADIN_ANCIENTS"
+            },
+            {
+              "UUID": "a1aa47b2-4d0a-4c97-931b-2c53353d5b23",
+              "value": false,
+              "paramval": 1,
+              "Name": "PALADIN_VENGEANCE"
+            },
+            {
+              "UUID": "e1e460bb-d0ae-4452-8529-c9e176558731",
+              "value": false,
+              "paramval": 1,
+              "Name": "MONK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0ae03554-d1d0-4901-a5a9-7d41b5f2239e",
+              "Text": {
+                "Handle": "h6fe4c2bfg62c8g4e4dgaa1fgf97574b29931",
+                "Value": "So you abandoned them."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N188",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "non barb/fighter/cleric/ranger/monk",
+        "position": "2575;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "a829f286-e6ee-e2f7-19b6-e48b9834eeee": {
+      "UUID": "a829f286-e6ee-e2f7-19b6-e48b9834eeee",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "999932af-aa90-2a03-624f-56fa5fddeb6c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "c7bdcdf2-15e7-456e-adf1-21dda3172e18",
+              "value": false,
+              "paramval": 1,
+              "Name": "OATHBREAKER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b2967043-81a5-4ecc-99bf-a5753e34d36c",
+              "Text": {
+                "Handle": "h44165e42gd2bag44dcgae85gfc009039eceb",
+                "Value": "You did right. You do not want to be a prisoner of the Absolute."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N191",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "non oathbreaker",
+        "position": "2575;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "acb3dd1e-f37f-01e9-5da2-f5327e3b100f": {
+      "JumpTarget": "5f5af26f-e1f4-6f2a-affe-b35d71dd9979",
+      "JumpTargetPoint": 1,
+      "UUID": "acb3dd1e-f37f-01e9-5da2-f5327e3b100f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N329",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "acd82961-3113-8c3c-8753-d7ca8782a96a": {
+      "UUID": "acd82961-3113-8c3c-8753-d7ca8782a96a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "45888644-bd7d-c6a2-849c-bfb2364909d9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "560aad78-7a99-4c60-ba8c-3cd3fbcaa586",
+              "Text": {
+                "Handle": "h4f87b8c7gf71bg44d5g9afcga7808569426e",
+                "Value": "...I suppose I deserve that."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N251",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little stiff - primed to take offense but relaxes, accepts the insult is probably warranted",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;453",
+        "sourcetemplate": ""
+      }
+    },
+    "ad55b60c-11f0-f0c3-6e7d-09b2ebc34ead": {
+      "UUID": "ad55b60c-11f0-f0c3-6e7d-09b2ebc34ead",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            },
+            {
+              "UUID": "3d6f8326-f5cc-c124-b810-3f03fe1d6b62",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_ReturnCompleted"
+            },
+            {
+              "UUID": "78722161-91a2-e044-ba3a-a79492d6ed18",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_Jailbreak_State_AllPrisonersDied"
+            },
+            {
+              "UUID": "eef04b79-3cbe-a552-2748-3f1998670c5f",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_TieflingsReturned"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cc7ea17c-f1f2-4822-a662-c24298567e1e",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_SavingPrisoners_HasMet_CerysPostRescue"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f8bdc28b-b0ad-46f3-9be4-d9df7f506765",
+              "Text": {
+                "Handle": "hc72a5217g0689g4658gb0cegdb0b1d498a33",
+                "Value": "I looked for Zevlor among those who came back. No matter his fate... I know he'd be grateful to you. I am too."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N78",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "A little mournful, but still grateful",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "RETURN COMPLETE / SOME TIEFLINGS",
+        "position": "15;-5460",
+        "sourcetemplate": ""
+      }
+    },
+    "b0bed5ee-4bed-2c70-47c5-0d5bbcd2b17f": {
+      "UUID": "b0bed5ee-4bed-2c70-47c5-0d5bbcd2b17f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6d06d3c6-ed4c-31ac-3e64-d4d1f6dc1e98"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4448cc7f-5493-44df-a4f2-8d135d317ab6",
+              "Text": {
+                "Handle": "hc2c58528g47e7g4d10gaec3g49ab0bc48f3d",
+                "Value": "I'll make sure the others know you tried, but nothing's changed."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N221",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Trying to set grief aside.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-4365",
+        "sourcetemplate": ""
+      }
+    },
+    "b1030e27-53bb-f01d-a3aa-bd3e6dd0fe91": {
+      "JumpTarget": "03e30d4a-61f7-ba7f-eed9-a890dd180bf8",
+      "JumpTargetPoint": 1,
+      "UUID": "b1030e27-53bb-f01d-a3aa-bd3e6dd0fe91",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N211",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2895;-2832",
+        "sourcetemplate": ""
+      }
+    },
+    "ba71418a-2f8c-938d-6af8-1d65d6e3e83c": {
+      "JumpTarget": "f21c4098-93b2-406a-df2c-1004bd33d645",
+      "JumpTargetPoint": 2,
+      "UUID": "ba71418a-2f8c-938d-6af8-1d65d6e3e83c",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N351",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;-3708",
+        "sourcetemplate": ""
+      }
+    },
+    "bd5fa149-1a0b-97e5-2495-c54024f0a7ae": {
+      "UUID": "bd5fa149-1a0b-97e5-2495-c54024f0a7ae",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d186e7a1-1130-4789-4051-2acb1db1b36c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "99ebdd7a-506a-4bec-96c9-2ac19355bfe9",
+              "Text": {
+                "Handle": "h1030b646g6996g4111gba96g7016261ac260",
+                "Value": "Cerys. Scout. Seems we missed one another at the grove, but the others told me how you helped us."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N172",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "bd77dbd3-f575-1d0d-6c87-38521410d775": {
+      "UUID": "bd77dbd3-f575-1d0d-6c87-38521410d775",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5d771ce7-d499-1a2f-9ba3-445b48b60572"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cc7ea17c-f1f2-4822-a662-c24298567e1e",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_SavingPrisoners_HasMet_CerysPostRescue"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "3d6f8326-f5cc-c124-b810-3f03fe1d6b62",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_ReturnCompleted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "715afc7f-c027-401f-9c2c-be23176f539b",
+              "Text": {
+                "Handle": "he716896cg5bfbg4b0fg862ag6e2b013af254",
+                "Value": "The others are dead."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N118",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "335;-4584",
+        "sourcetemplate": ""
+      }
+    },
+    "bfcddde3-9cb4-de12-c0f7-6e96ab6e3d53": {
+      "UUID": "bfcddde3-9cb4-de12-c0f7-6e96ab6e3d53",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "102bb1ea-007f-606e-eb66-ab7cbfd2c689",
+              "value": false,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_NightsongFreedHasMet"
+            },
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "92fd7d61-0eec-480f-8c1e-0cabfc4074a6",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_NightsongFreed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "102bb1ea-007f-606e-eb66-ab7cbfd2c689",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_NightsongFreedHasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b8f476a8-d752-4f79-8967-a0ebc0d06301",
+              "Text": {
+                "Handle": "hbbd943edg3b84g44b2ga1c6ge4da034df57f",
+                "Value": "Glad to see you again. I was afraid you'd get swallowed up by the shadows. Instead, you've found us some cavalry. Very well done."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N255",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NS FREED - Has Not Met",
+        "position": "15;-6555",
+        "sourcetemplate": ""
+      }
+    },
+    "c30fe82d-812b-b7c7-0d43-5cfb932c1988": {
+      "JumpTarget": "40c6596d-78c4-7906-fc29-3add987148f9",
+      "JumpTargetPoint": 1,
+      "UUID": "c30fe82d-812b-b7c7-0d43-5cfb932c1988",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N333",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3215;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "c449a261-62e4-e2d0-5b18-39685a939dde": {
+      "UUID": "c449a261-62e4-e2d0-5b18-39685a939dde",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "23667b35-4dfd-ab8c-f757-b3cc447265b7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9a55df27-5bc7-70ac-a4e8-a98b6912d8b7",
+              "value": true,
+              "paramval": null,
+              "Name": "COL_FindZevlor_Knows_MissingHav"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "18ec8f8e-d321-48c2-85d3-aa956ecc6c56",
+              "Text": {
+                "Handle": "hc9a542a1g82a0g49d0ga94eg111cfc9a7045",
+                "Value": "Aye - brutal is putting it lightly. Maybe we should have just surrendered - Zevlor begged us to. But..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N309",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-3051",
+        "sourcetemplate": ""
+      }
+    },
+    "c48ef568-d3ec-da41-1a4c-879d1c362cde": {
+      "UUID": "c48ef568-d3ec-da41-1a4c-879d1c362cde",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c62c58cc-dec7-bcba-8ad8-d1b1db1e1b00"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e59c5f9e-b5f9-419e-9014-0704f955d4cf",
+              "Text": {
+                "Handle": "hfb3b22dag952cg4f2cgbec7gb4e6cbf26e21",
+                "Value": "We're in a dilapidated inn, surrounded by cursed darkness - only a fool wouldn't be afraid."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N347",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "c62c58cc-dec7-bcba-8ad8-d1b1db1e1b00": {
+      "JumpTarget": "96cc1c64-9589-3c06-a3e7-351b30846ea4",
+      "JumpTargetPoint": 1,
+      "UUID": "c62c58cc-dec7-bcba-8ad8-d1b1db1e1b00",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N352",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3215;-1299",
+        "sourcetemplate": ""
+      }
+    },
+    "c6f0a5d6-1631-2324-6fb7-a2837c4777dc": {
+      "UUID": "c6f0a5d6-1631-2324-6fb7-a2837c4777dc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "98708ee0-934e-f4f4-6e7c-0f94a0cc99c3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "02cf1170-3c15-4b6b-90cd-d56559269015",
+              "Text": {
+                "Handle": "h82b02f14gb881g41a5gb4begaa977c431cac",
+                "Value": "They were toying with us. <i>Making examples</i>. And we'd had enough of taking it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N186",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "ca4b9d2b-6b93-1f68-7386-885d7f95a483": {
+      "UUID": "ca4b9d2b-6b93-1f68-7386-885d7f95a483",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0db25430-5c01-d94b-8fb1-3167019d3166"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": true,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b8bf7266-1b85-42e6-a597-a3b12150fde6",
+              "Text": {
+                "Handle": "h36d3dde5gafdfg4900g9c49g635fcffb9c64",
+                "Value": "<i>Coward.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N330",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "barbarian",
+        "position": "2575;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "ccf20331-42fc-1063-992d-f039dac3ef13": {
+      "UUID": "ccf20331-42fc-1063-992d-f039dac3ef13",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d0c59e10-1ff0-8978-6929-b8c560236b86"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6646f51b-107b-4d97-90e4-541f6d5d261d",
+              "Text": {
+                "Handle": "h5eb2d011g5aa5g492dgbb29gcdf7dfea7273",
+                "Value": "'Death-trap'? I've slept in worse inns, trust me."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N248",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "cf0c7d15-8f30-6beb-67ef-e4c13ff27bba": {
+      "JumpTarget": "d2d8aa8e-8457-ab80-ca3f-2040a696c8d9",
+      "JumpTargetPoint": 1,
+      "UUID": "cf0c7d15-8f30-6beb-67ef-e4c13ff27bba",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N219",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;-3708",
+        "sourcetemplate": ""
+      }
+    },
+    "cf5ac6af-e098-0d80-3db9-2e14ead83021": {
+      "UUID": "cf5ac6af-e098-0d80-3db9-2e14ead83021",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cfd04678-9da4-3eee-c05b-80b812e9d2a6"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0ce4d0a1-62a0-f40d-a17c-c386609ca570",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_ProdigyLament_State_ToldStory"
+            },
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": false,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "961b3065-66ed-4c7b-886f-1c4eb68ee0cc",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_Knows_CapturedTieflings"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7010ae1a-f9c4-4624-b238-317d581ff48a",
+              "Text": {
+                "Handle": "h4d78782ag4ddag4e61g8273g4a39d63df359",
+                "Value": "Rolan said his siblings were taken. What happened out there?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N292",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "spoke only to rolan",
+        "position": "975;-3708",
+        "sourcetemplate": ""
+      }
+    },
+    "cfd04678-9da4-3eee-c05b-80b812e9d2a6": {
+      "UUID": "cfd04678-9da4-3eee-c05b-80b812e9d2a6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ba71418a-2f8c-938d-6af8-1d65d6e3e83c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ed3d9692-79d3-4170-a0bf-669502738b30",
+              "Text": {
+                "Handle": "h9156e556g1601g4623g9c04g8bc6014b5654",
+                "Value": "Aye. Don't blame him for drinking this place dry."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N293",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "grim",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-3708",
+        "sourcetemplate": ""
+      }
+    },
+    "d0c59e10-1ff0-8978-6929-b8c560236b86": {
+      "JumpTarget": "56b287d0-b53f-434e-23d8-e8ea1e834fb3",
+      "JumpTargetPoint": 1,
+      "UUID": "d0c59e10-1ff0-8978-6929-b8c560236b86",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N249",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;234",
+        "sourcetemplate": ""
+      }
+    },
+    "d186e7a1-1130-4789-4051-2acb1db1b36c": {
+      "UUID": "d186e7a1-1130-4789-4051-2acb1db1b36c",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cf5ac6af-e098-0d80-3db9-2e14ead83021",
+        "026ed0ae-af49-f0f5-f20a-79b8a8bd3e67",
+        "08d8cc31-b497-52f1-f148-4be6ef49988e",
+        "95e59bc5-de0a-af1d-f080-6d637d5ce9ae",
+        "008c1948-3d93-a383-7563-5af465eb90c2",
+        "50ad2852-7c14-3475-bcb8-9e8a8118d98e",
+        "3061cda9-e9fb-3d85-b184-41b12c069cf8",
+        "4a3ea550-5af7-3087-06e5-cabc5d0ab0e8",
+        "45b88072-a8df-89b4-4b84-73ebeee52bba"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4dba73c0-04f1-4cb2-ac2a-6b0f5b2f7196",
+              "Text": {
+                "Handle": "hc5331282gcd7fg4edeg98d8gb5a3f78528db",
+                "Value": "A pity. You pulled them from one death-trap only for me to land them in this one."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N173",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Sighing, looking around at the inn. She's exhausted and guilty in equal measure.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "d2d8aa8e-8457-ab80-ca3f-2040a696c8d9": {
+      "UUID": "d2d8aa8e-8457-ab80-ca3f-2040a696c8d9",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bd77dbd3-f575-1d0d-6c87-38521410d775",
+        "a142098e-fc32-7999-3b9d-68465ff93e31",
+        "5a34b1fa-a2a3-9e1d-1c60-9630bf4e546d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "78722161-91a2-e044-ba3a-a79492d6ed18",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_Jailbreak_State_AllPrisonersDied"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3ea36b52-7072-4eb4-a010-9c533549dab8",
+              "Text": {
+                "Handle": "ha103c7abgf052g4073g9174g0b63b85c3c6b",
+                "Value": "You've the look of someone with news. Good or bad?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N130",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "FAIL / MET",
+        "position": "15;-4365",
+        "sourcetemplate": ""
+      }
+    },
+    "d750e954-22c5-6c9d-1b4c-f7332ec2d73e": {
+      "UUID": "d750e954-22c5-6c9d-1b4c-f7332ec2d73e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c30fe82d-812b-b7c7-0d43-5cfb932c1988"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aa267ba5-9a45-426d-8466-d100de89af0e",
+              "Text": {
+                "Handle": "h98866051gfe83g4b95gb225g56b4a3319539",
+                "Value": "It's hard to tell. We were alone in the darkness one moment, surrounded the next."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N335",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "dbc31bf2-1474-c052-54ab-af68017c6c36": {
+      "JumpTarget": "f21c4098-93b2-406a-df2c-1004bd33d645",
+      "JumpTargetPoint": 2,
+      "UUID": "dbc31bf2-1474-c052-54ab-af68017c6c36",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N328",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "e106f25d-21c5-2486-bc0a-0148b0efa4ea": {
+      "UUID": "e106f25d-21c5-2486-bc0a-0148b0efa4ea",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "23667b35-4dfd-ab8c-f757-b3cc447265b7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9a55df27-5bc7-70ac-a4e8-a98b6912d8b7",
+              "value": true,
+              "paramval": null,
+              "Name": "COL_FindZevlor_Knows_MissingHav"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e5c4dd53-271f-4b9a-b680-ce5d1852af47",
+              "Text": {
+                "Handle": "h0536c83fgeff0g4b14ga13fg4b51446a0076",
+                "Value": "Aye. Not a battle she's likely to put to song. Maybe we should have just surrendered - Zevlor begged us to. But..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N184",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-3489",
+        "sourcetemplate": ""
+      }
+    },
+    "e3d9d172-d8cd-bb78-cd4f-fdd97c78bac3": {
+      "UUID": "e3d9d172-d8cd-bb78-cd4f-fdd97c78bac3",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "67966389-dde7-dc15-10e2-38be15293891"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cdaa20a6-ebc2-48eb-a57d-ab73e40be9de",
+              "Text": {
+                "Handle": "h00811aedg60ffg4c0cg9ce0gdfc74d1118ac",
+                "Value": "What are you doing out here to begin with? You were bound for Baldur's Gate."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N178",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2575;-2394",
+        "sourcetemplate": ""
+      }
+    },
+    "e48f50cc-71d6-9f49-582f-9948046f3642": {
+      "UUID": "e48f50cc-71d6-9f49-582f-9948046f3642",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f90dd55e-3c60-c3ba-0d71-75e6c3b97dcd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "36f39439-c050-421b-a901-7b24442e684f",
+              "Text": {
+                "Handle": "h3df49bd8g0584g444cgaa59gcbd294936f01",
+                "Value": "The time for hoping is past. I've got to get what's left of us to the city."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N235",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Not overly forceful, just refusing to be swayed from the grim reality. Small sigh.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "e4a3dce7-a68f-e1a3-f02a-91fa6d5b7484": {
+      "UUID": "e4a3dce7-a68f-e1a3-f02a-91fa6d5b7484",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b0bed5ee-4bed-2c70-47c5-0d5bbcd2b17f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "967ead7e-4dba-41b0-9edc-32c990e7b1af",
+              "Text": {
+                "Handle": "hfdcec065gc0aeg407dg9f17g823708811433",
+                "Value": "Sorry for what? Doing more for them than I did?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N126",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Quiet anger and sorrow, but not directed at us",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-4365",
+        "sourcetemplate": ""
+      }
+    },
+    "ef9ffb60-2916-befc-e96c-015fb0db2045": {
+      "UUID": "ef9ffb60-2916-befc-e96c-015fb0db2045",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3d6f8326-f5cc-c124-b810-3f03fe1d6b62",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_SavingPrisoners_State_ReturnCompleted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6521cfe2-effa-4ae7-bad9-f0d6d90d62fb",
+              "Text": {
+                "Handle": "h0a25ea8fge073g4c7egb5a7g0810e883b605",
+                "Value": "I'll catch up with you later. I have some... funeral rites to prepare."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N223",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Bracing herself for a sad task - just heard of the deaths of her friends",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "RETURN COMPLETE / NO TIEFLINGS",
+        "position": "15;-4803",
+        "sourcetemplate": ""
+      }
+    },
+    "f135a99b-a20e-121e-94bc-45d6aada3c92": {
+      "UUID": "f135a99b-a20e-121e-94bc-45d6aada3c92",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7ee462c1-eee3-0b6e-91a3-e0bcfe4dcba9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0d1c95e7-994d-cc63-26ea-5d2ee41d0177",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_TieflingSurvivors_State_ZevlorWasLeader"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0c2a6f6d-1152-466c-90b9-f102634cedc4",
+              "Text": {
+                "Handle": "h70edeae0g8671g4a49gba3bg1e510261d551",
+                "Value": "Prison's the best I can hope for the ones we left behind. Zevlor seemed to think the cult wanted us alive."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N198",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Grim, pragmatic",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4175;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "f21c4098-93b2-406a-df2c-1004bd33d645": {
+      "UUID": "f21c4098-93b2-406a-df2c-1004bd33d645",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5f5af26f-e1f4-6f2a-affe-b35d71dd9979",
+        "93ea3be4-ab1d-96c3-7865-db97dca81d32"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "896e9c59-76d0-468d-b511-f150883b5bc9",
+              "Text": {
+                "Handle": "h9e9fd283g5aa5g46a3ga4eagf6d220669368",
+                "Value": "Aye, and more than half the others with him."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N322",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-2175",
+        "sourcetemplate": ""
+      }
+    },
+    "f6ab8869-7e75-7ba1-49f2-9036686d4867": {
+      "UUID": "f6ab8869-7e75-7ba1-49f2-9036686d4867",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "102bb1ea-007f-606e-eb66-ab7cbfd2c689",
+              "value": false,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_NightsongFreedHasMet"
+            },
+            {
+              "UUID": "a13767b5-9431-fffb-20a8-ef08ca5d8c62",
+              "value": false,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "92fd7d61-0eec-480f-8c1e-0cabfc4074a6",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_NightsongFreed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "102bb1ea-007f-606e-eb66-ab7cbfd2c689",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_NightsongFreedHasMet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4ac024a4-fa8d-49e3-91ce-23645900b411",
+              "Text": {
+                "Handle": "h3e677337gd6b9g47fbg99eeg07050268cd85",
+                "Value": "This place has been buzzing with talk of an adventurer who found us an angel. Sounds like salvation to me, don't you think?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N259",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NS Freed - Has Never Met",
+        "position": "15;-6336",
+        "sourcetemplate": ""
+      }
+    },
+    "f6c3ad15-e5ec-dbac-d5a1-07998d8ffe32": {
+      "UUID": "f6c3ad15-e5ec-dbac-d5a1-07998d8ffe32",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8567f80a-2b37-78b7-e79c-7a6cb31e6f47"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7e3bd988-2a73-4629-ab1b-559670102138",
+              "Text": {
+                "Handle": "h4e70b9e1gab3fg4d4egb3d5g88d9a839e9f3",
+                "Value": "Have hope. You survived - I'm sure the others did too."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N203",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2575;-3051",
+        "sourcetemplate": ""
+      }
+    },
+    "f90dd55e-3c60-c3ba-0d71-75e6c3b97dcd": {
+      "UUID": "f90dd55e-3c60-c3ba-0d71-75e6c3b97dcd",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "20c40ca5-48f1-4e7e-a700-d2613c23bc82",
+              "Text": {
+                "Handle": "hc17f4868ga076g402cg8846g0b57f79ba23a",
+                "Value": "But... thanks. It was sweet of you try."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N207",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Small smile. She's not one for sweetness, but finds our sheer unearned optimism endearing.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "4495;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "fa9e129e-f163-5ede-16b3-ac3c56a7add7": {
+      "UUID": "fa9e129e-f163-5ede-16b3-ac3c56a7add7",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "102bb1ea-007f-606e-eb66-ab7cbfd2c689",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_BackupLeader_NightsongFreedHasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "92fd7d61-0eec-480f-8c1e-0cabfc4074a6",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_NightsongFreed"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1b45d45d-0c25-433c-b99b-e6bcba49697f",
+              "Text": {
+                "Handle": "h22133276gb809g4fa8g9c6eg41e7ae89d13b",
+                "Value": "The end's in sight. I can <i>feel </i>it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N263",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "NS Freed - HasMet",
+        "position": "15;-6117",
+        "sourcetemplate": ""
+      }
+    },
+    "fe28c07e-832f-2d3b-b6ea-846ad9b4648d": {
+      "UUID": "fe28c07e-832f-2d3b-b6ea-846ad9b4648d",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "acb3dd1e-f37f-01e9-5da2-f5327e3b100f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "980179d9-5c2e-438c-9f74-1aeca8702cda",
+              "Text": {
+                "Handle": "h18f00feegdb33g4ffdgbcb3ga38bf41d6aa7",
+                "Value": "Gone, and more than half the others with him. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N176",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-2613",
+        "sourcetemplate": ""
+      }
+    },
+    "fee8e394-4c8d-7fe9-762f-b705ce976dd6": {
+      "JumpTarget": "f90dd55e-3c60-c3ba-0d71-75e6c3b97dcd",
+      "JumpTargetPoint": 1,
+      "UUID": "fee8e394-4c8d-7fe9-762f-b705ce976dd6",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N267",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3535;-2175",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "41ffbc8a-c8d1-40e8-9640-45e5828bf224",
+      "Index": 0,
+      "List": [
+        "b304e07d-019c-4ec6-b5ea-c4ccb29ed892"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Cerys",
+        "Type": "character",
+        "MapKey": "b304e07d-019c-4ec6-b5ea-c4ccb29ed892",
+        "Name": "S_DEN_BackupLeader",
+        "ParentTemplateId": null,
+        "TemplateName": "d0cbec55-ec10-458e-96bb-09edfe2d6b19"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "22077f37-a582-4122-891d-27ae3f2a9c91",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Cerys, a tiefling scout, is now present in Last Light along with the others who evaded capture by the cultists. She has reluctantly assumed the role of leader in Zevlor's absence (assuming she hadn't already). She's exhausted by the responisibility but still capable of a little gallows humour."
+}

@@ -1,0 +1,4171 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Plains/PLA_EscapingZhentarim.lsj",
+  "UUID": "161fa320-2a72-00a0-85b0-d55863ad470a",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "633fe4ec-5ca8-a443-c567-96dcb76a1764",
+    "7d1a70e8-ac55-4b7d-a2f1-dba9686a1b40",
+    "c909de7d-d7eb-f1aa-fbb1-5564f1236585",
+    "fb953d8e-ba3a-ecd4-2969-fe9dc2a6f908"
+  ],
+  "Nodes": {
+    "0050e0cf-6b14-d983-a987-402ce78c5029": {
+      "UUID": "0050e0cf-6b14-d983-a987-402ce78c5029",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "886a1e00-a10f-4e3a-a115-96d27de00176",
+              "value": false,
+              "paramval": 0,
+              "Name": "PLA_EscapingZhentarim_HasItem_HiddenEntranceKey2"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "174507f8-83a6-4bed-4616-398acc1ea372",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_ZhentDungeon_Zhent01_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4af170a8-0c07-bc6e-ef28-3fa3a9eedef2",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_Permitted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0ebb4fee-4acf-bd81-b867-1cd26908db75",
+              "Text": {
+                "Handle": "h5821c767g4db8g4435g95b1g4ba2c88633eb",
+                "Value": "Entrance is hidden behind the wardrobe. You'll find a key in one of the crates."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Wardrobe is behind Salazon",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N343",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is standing up.] Already dismissing us from his mind.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Salazon does not give us key",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "00642ed1-307b-2c44-0dc2-2f98176b5aa8": {
+      "UUID": "00642ed1-307b-2c44-0dc2-2f98176b5aa8",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9dabd783-1f10-c38f-f62b-d879fb57c9df"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8ac97f58-902c-a3b1-d360-e6b5aaa9b54d",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ZhentDungeon_State_SaidPassword"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "331d96d2-93ab-29f4-d05e-9fc7fefc6dd5",
+              "Text": {
+                "Handle": "hff98c1d1g081fg4ec8g8b90g1014d7492306",
+                "Value": "I'm with Zarys - <i>do not cast that spell</i>."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N705",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "-945;453",
+        "sourcetemplate": ""
+      }
+    },
+    "007fde22-826c-05ca-ad20-5e9729ffac1f": {
+      "UUID": "007fde22-826c-05ca-ad20-5e9729ffac1f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9613d1aa-8c88-0f33-0b23-4e2dd29af352",
+        "0050e0cf-6b14-d983-a987-402ce78c5029"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "98f1e971-cf37-01b5-f05d-f37d5d78a127",
+              "Text": {
+                "Handle": "hf24a38b4gcbeeg4759ga49ag9d7d6981a528",
+                "Value": "Down you go, then. They'll be on us soon, so if you're looking to trade you'd best be quick."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Happiness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N342",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is standing up.] He's gone from panicked guard to faux-authority very quickly, as if he's chiding us for having spooked him",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "08d88377-bc17-b7c4-d0b0-91fbedadf667": {
+      "JumpTarget": "00642ed1-307b-2c44-0dc2-2f98176b5aa8",
+      "JumpTargetPoint": 1,
+      "UUID": "08d88377-bc17-b7c4-d0b0-91fbedadf667",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N708",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-1265;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "0b72fe5b-0022-afdd-5ce7-1d0fe81ec21a": {
+      "JumpTarget": "5f1a724e-bf0d-fc97-8d64-e69c1058aa8b",
+      "JumpTargetPoint": 1,
+      "UUID": "0b72fe5b-0022-afdd-5ce7-1d0fe81ec21a",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N159",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "15;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "14559e89-4fbe-2e1a-4ae9-95c8c5c8e3bf": {
+      "UUID": "14559e89-4fbe-2e1a-4ae9-95c8c5c8e3bf",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "05222e53-c29d-39c2-8795-0a18565a7226",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_Escape"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "429e118c-3295-0092-999f-3a1d18f3164f",
+              "Text": {
+                "Handle": "hbcb53b10g8283g4395ga127g148064dfd9dc",
+                "Value": "Zarys! ZARYS, HELP!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] From crouched, Salazon stands up panicked and jumpy, calling out for backup.",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "Fire bolt is still in hand.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N142",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Calling to his boss for protection like a child",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "14e89ebc-aa6b-2872-9b27-77f94e6f9d20": {
+      "UUID": "14e89ebc-aa6b-2872-9b27-77f94e6f9d20",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "05222e53-c29d-39c2-8795-0a18565a7226",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_Escape"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8cfb4557-bf71-2eca-2303-a5bed7ec6684",
+              "Text": {
+                "Handle": "hd50c13cdgc2f5g4e81gbeabg098214e83001",
+                "Value": "That ain't the pass-phrase!<br>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] [DUPE] From crouched, Salazon stands up frantic and aggressive, raising the firebolt spell in a threatening guesture, ready to attack.",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "Fire bolt is still in hand.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N167",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Salazon gets up frantically as he exclaims his line.",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "159f2471-969a-cc16-c1b1-cddc14c257c0": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "159f2471-969a-cc16-c1b1-cddc14c257c0",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "33eb18d0-1dc6-99dc-3383-9c51d10b474e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "042d685a-943a-7e13-bc00-2b20c04f47e9",
+              "Text": {
+                "Handle": "hf494dfb6g6b6bg48c0gb1a7g243dc9a97e39",
+                "Value": "Wait!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N181",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "-1265;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "17374cfd-beb8-adb0-c930-8ad7a14acbc3": {
+      "RollSuccess": false,
+      "UUID": "17374cfd-beb8-adb0-c930-8ad7a14acbc3",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "36bccc35-037e-0402-ec58-c2b7201888f4"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N251",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "-625;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "17b19434-b961-cdfe-6151-4201b3e653a2": {
+      "UUID": "17b19434-b961-cdfe-6151-4201b3e653a2",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "90a4842b-c956-b786-1f67-7e083c65b61c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bf2e9687-2a08-5c3b-c45f-0be1025a4b75",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ZhentShipment_State_RuganToldPassword"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8b10ba24-e056-c51c-b811-a91c24169b7f",
+              "Text": {
+                "Handle": "h2453105aga0d2g47cdgac2dg54003c6e04cb",
+                "Value": "<i>Recite Rugan's pass-phrase: 'Little serpent, long shadow'.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N133",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "-945;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "1c31357f-e241-b49b-d652-c6ff07c88790": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Dexterity",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "1c31357f-e241-b49b-d652-c6ff07c88790",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9045fafe-301d-0aa9-003d-822a1c5db6e6",
+        "6ead9124-5ea0-a9bd-4529-007cf18cf995"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bf2e9687-2a08-5c3b-c45f-0be1025a4b75",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ZhentShipment_State_RuganToldPassword"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f3dd4b4a-0ebb-87d0-65bd-d121280627a0",
+              "Text": {
+                "Handle": "h1ba0af6eg543cg4ab5gaa56g10607ffcbdbb",
+                "Value": "<i>Recite Rugan's pass-phrase: 'Little serpent, long shadow'.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N267",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Ability_Dexterity",
+        "position": "-1265;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "21e0c183-a94e-faf3-cb6c-30ba07057929": {
+      "RollSuccess": true,
+      "UUID": "21e0c183-a94e-faf3-cb6c-30ba07057929",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "799ba900-118a-9e07-5602-62deeed078f0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N138",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "-625;891",
+        "sourcetemplate": ""
+      }
+    },
+    "2493ed7e-84b1-fa2b-403d-f534397a7ac3": {
+      "JumpTarget": "633fe4ec-5ca8-a443-c567-96dcb76a1764",
+      "JumpTargetPoint": 2,
+      "UUID": "2493ed7e-84b1-fa2b-403d-f534397a7ac3",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N704",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-1265;5271",
+        "sourcetemplate": ""
+      }
+    },
+    "2a7b0738-350f-92bb-c482-e8fbefcb4bc5": {
+      "UUID": "2a7b0738-350f-92bb-c482-e8fbefcb4bc5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7be80a47-25fe-0998-1d1f-c148eb6a810c",
+        "c42f1f91-186a-2e34-f0c5-e89fe191d098"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "55006af8-d7f1-0c48-b461-4e2f0fcac819",
+              "Text": {
+                "Handle": "hbde622e2gb168g42cbg86bfg31ea31044672",
+                "Value": "Right, look - if it's business you're about, then be about it. Flaming Fist could be on us any minute."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N400",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Salazon stands up. We've intimidated him but he's trying to cling on to some scrap of authority, letting us down with a warning as if it's his choice.",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "StateChangeTags": "Character stands up",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;453",
+        "sourcetemplate": ""
+      }
+    },
+    "2b15d6b6-e7b6-9d01-a796-994ce7e5d28b": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "2b15d6b6-e7b6-9d01-a796-994ce7e5d28b",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "adcd222b-69bf-3f5f-521f-d3da90b3c839"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "18266c0b-efbc-4c80-8784-ada4a37218d7",
+              "value": true,
+              "paramval": 1,
+              "Name": "SORCERER"
+            },
+            {
+              "UUID": "885f8675-e400-4d53-924d-6204ff1d9558",
+              "value": false,
+              "paramval": 1,
+              "Name": "SORCERER_WILDMAGIC"
+            },
+            {
+              "UUID": "f6d0e042-5b90-41d8-ab4a-a2239e27a13e",
+              "value": false,
+              "paramval": 1,
+              "Name": "SORCERER_DRACONIC"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8a4522bf-7fa8-2255-212f-42a8d33ca0b0",
+              "Text": {
+                "Handle": "h9665fa8agc381g4d5aga2a5g7baa0dfebf4f",
+                "Value": "I <i>am</i> magic. Cast that spell - you'll only hurt yourself."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N359",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Sorcerer",
+        "position": "335;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "32864e54-8c82-3c39-de8b-3a3dbb6fc0d8": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "32864e54-8c82-3c39-de8b-3a3dbb6fc0d8",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "4003c78a-a0bf-447f-8532-922868ab876f",
+        "d491ffc0-8822-460c-813d-310395b76649"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ac3449f7-c09b-4bc0-8634-fcff97d49279",
+              "value": true,
+              "paramval": 1,
+              "Name": "BERSERKER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ddafe881-2c9d-4bbc-8aef-baabd0a1d7f6",
+              "Text": {
+                "Handle": "h9ecd36d4g7907g44edga3c7g0261af79eab0",
+                "Value": "<b><i>Do NOT make me angry!</i></b>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N715",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Barbarian_Skill_Intimidation",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "33eb18d0-1dc6-99dc-3383-9c51d10b474e": {
+      "JumpTarget": "e026a6a5-bdf0-276b-064c-378083e758b2",
+      "JumpTargetPoint": 2,
+      "UUID": "33eb18d0-1dc6-99dc-3383-9c51d10b474e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N281",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-945;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "3498ee3d-5d00-d8b8-8f77-5dbd88ca3131": {
+      "RollSuccess": true,
+      "UUID": "3498ee3d-5d00-d8b8-8f77-5dbd88ca3131",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b57f99e6-f82a-0e20-0fd2-532b1a99d0d1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N363",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "34a42cf4-0bdb-58c8-bae3-ec1bdaf08c1b": {
+      "JumpTarget": "3ea93b62-25b4-456c-aa85-912521397f17",
+      "JumpTargetPoint": 2,
+      "UUID": "34a42cf4-0bdb-58c8-bae3-ec1bdaf08c1b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N424",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1935;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "3521289d-e305-8684-af20-75dc038b337e": {
+      "JumpTarget": "b57f99e6-f82a-0e20-0fd2-532b1a99d0d1",
+      "JumpTargetPoint": 1,
+      "UUID": "3521289d-e305-8684-af20-75dc038b337e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N721",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "36bccc35-037e-0402-ec58-c2b7201888f4": {
+      "UUID": "36bccc35-037e-0402-ec58-c2b7201888f4",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4eae8d75-5df7-7ecc-b678-289ce21cfba9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N692",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "State: Salazon Alerted",
+        "position": "-305;3519",
+        "sourcetemplate": "",
+        "stateContext": "Salazon is standing"
+      }
+    },
+    "381d4573-66e1-3804-bf0c-455069aeb62f": {
+      "UUID": "381d4573-66e1-3804-bf0c-455069aeb62f",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2a7b0738-350f-92bb-c482-e8fbefcb4bc5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N689",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "State: Salazon Relaxes",
+        "position": "975;453",
+        "sourcetemplate": "",
+        "stateContext": "Salazon is standing"
+      }
+    },
+    "3afbac19-e4b0-85e7-28ca-904b7a98c1bb": {
+      "RollSuccess": true,
+      "UUID": "3afbac19-e4b0-85e7-28ca-904b7a98c1bb",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "82c87716-a11f-e08a-c155-974262a6a244"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N155",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;891",
+        "sourcetemplate": ""
+      }
+    },
+    "3e5320a0-f741-91dc-c720-f18c4203c36c": {
+      "UUID": "3e5320a0-f741-91dc-c720-f18c4203c36c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2c0b3970-3f48-4b6b-8b79-410f9222e6c1",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_BarrelGone"
+            },
+            {
+              "UUID": "76470a53-f3f3-48db-9fc9-c203ff9a0d28",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ZhentDungeon_State_PlayerNearBarrel"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "05222e53-c29d-39c2-8795-0a18565a7226",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_Escape"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "36cbbb6b-c9a9-a9a8-9062-b1b6a810dd2c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_EscapingZhentarim_Knows_WasAttacked"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "67b250dd-1b90-af64-8054-1990f4376013",
+              "Text": {
+                "Handle": "he6c2555bgd226g4659g944dg197a9ce1fa63",
+                "Value": "B-burn, bastard!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] From crouched, Salazon stands up frantic and aggressive, raising the firebolt spell in a threatening guesture, ready to attack.",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "Fire bolt is still in hand.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N141",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "We've said the wrong thing, and now he's panicking and setting off a detonation",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "3ea93b62-25b4-456c-aa85-912521397f17": {
+      "RollSuccess": false,
+      "UUID": "3ea93b62-25b4-456c-aa85-912521397f17",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "81ce8cf4-4a36-05d5-7a1c-a6b432eab1c9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N140",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "-625;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "3f1f28e5-b2b2-a725-0e26-6e47884c403e": {
+      "UUID": "3f1f28e5-b2b2-a725-0e26-6e47884c403e",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d1e2f165-9299-6112-4ecf-87d6fa6878e3"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0ac1a278-6645-9b8a-b747-5feda33ec4e1",
+              "Text": {
+                "Handle": "h9adb9388g8e92g458dg88d0g4709f57600c7",
+                "Value": "I just want to trade."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N409",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1615;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "4003c78a-a0bf-447f-8532-922868ab876f": {
+      "RollSuccess": true,
+      "UUID": "4003c78a-a0bf-447f-8532-922868ab876f",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "3521289d-e305-8684-af20-75dc038b337e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N716",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "40dedc5a-6490-bb1a-cd66-d7c5fbe87c54": {
+      "UUID": "40dedc5a-6490-bb1a-cd66-d7c5fbe87c54",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "633fe4ec-5ca8-a443-c567-96dcb76a1764",
+        "c909de7d-d7eb-f1aa-fbb1-5564f1236585"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N685",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "State: Salazon Spotted",
+        "position": "-1905;2643",
+        "sourcetemplate": "",
+        "stateContext": "Salazon is crouching behind the shelves"
+      }
+    },
+    "450826ae-7ce1-9d58-eac9-60c31d50cb2a": {
+      "JumpTarget": "72c813e4-f6c8-508b-9094-25b3e6f9700b",
+      "JumpTargetPoint": 2,
+      "UUID": "450826ae-7ce1-9d58-eac9-60c31d50cb2a",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N678",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "4948851d-fd75-cdd7-ac18-97f669a1b132": {
+      "RollSuccess": false,
+      "UUID": "4948851d-fd75-cdd7-ac18-97f669a1b132",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e6d97db6-c26c-0807-e6c3-13f210c79df5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N379",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    },
+    "49635ee0-f215-f31c-f19f-83510794a4b5": {
+      "UUID": "49635ee0-f215-f31c-f19f-83510794a4b5",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "007fde22-826c-05ca-ad20-5e9729ffac1f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "174507f8-83a6-4bed-4616-398acc1ea372",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_ZhentDungeon_Zhent01_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4af170a8-0c07-bc6e-ef28-3fa3a9eedef2",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_Permitted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bbd7554b-a7be-a486-e0e3-8cc85ccf233c",
+              "Text": {
+                "Handle": "hab9a021dg8c65g44ddg9f54gf2930d676a4b",
+                "Value": "Gah, Helm's <i>orbs</i>. Thought you were Flaming Fist. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N134",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Salazon stands up (relieved), he cancels his fire bolt spell. He goes from jumpy to relieved - we know the pass phrase so he won't have to get in a fight",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "StateChangeTags": "Character stands up (relieved)",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "4eae8d75-5df7-7ecc-b678-289ce21cfba9": {
+      "UUID": "4eae8d75-5df7-7ecc-b678-289ce21cfba9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3e5320a0-f741-91dc-c720-f18c4203c36c",
+        "14559e89-4fbe-2e1a-4ae9-95c8c5c8e3bf"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "91803d3a-c707-24cf-8d7e-0058a4a397f5",
+              "Text": {
+                "Handle": "h8492e5c3g42e6g4bbegbea8g0107b143dd3a",
+                "Value": "Stay out of my head! "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*REUSE* <KrisB> Mind Read",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N261",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": " Panicked, frightened",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "Character is crouching behind shelves with fire bolt spell ready",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "15;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "56a03886-81b5-8ea5-d4ee-db1314871654": {
+      "UUID": "56a03886-81b5-8ea5-d4ee-db1314871654",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d129f96f-698e-0957-8079-9e15bb074cb8",
+        "14e89ebc-aa6b-2872-9b27-77f94e6f9d20"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N691",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "State: Salazon Alerted",
+        "position": "975;1110",
+        "sourcetemplate": "",
+        "stateContext": "Salazon is standing"
+      }
+    },
+    "57e88f37-f5a2-17b5-f2da-859320b94aae": {
+      "UUID": "57e88f37-f5a2-17b5-f2da-859320b94aae",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "34a42cf4-0bdb-58c8-bae3-ec1bdaf08c1b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f089502a-e50f-04b6-13a9-a8d059d70e64",
+              "Text": {
+                "Handle": "he93d4c4agfc48g40e1g8557gbda64558caf5",
+                "Value": "<i>Attack him.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N417",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1615;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "5aa35a30-b612-cc96-bbee-e4696326bacb": {
+      "JumpTarget": "49635ee0-f215-f31c-f19f-83510794a4b5",
+      "JumpTargetPoint": 1,
+      "UUID": "5aa35a30-b612-cc96-bbee-e4696326bacb",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N264",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "5f1a724e-bf0d-fc97-8d64-e69c1058aa8b": {
+      "UUID": "5f1a724e-bf0d-fc97-8d64-e69c1058aa8b",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d71ea58c-abfb-b9fb-6437-59ae27e1585b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "933a7483-245f-8d2c-b8df-a36223da4280",
+              "Text": {
+                "Handle": "hdee3f38agc5c8g404dg9f72g2e09b4386e33",
+                "Value": "<i>Prepare to attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N143",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "-945;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "633fe4ec-5ca8-a443-c567-96dcb76a1764": {
+      "UUID": "633fe4ec-5ca8-a443-c567-96dcb76a1764",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c515eab3-ace0-4831-afeb-a608af90276e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3067640f-3d27-c69c-ade9-9a5e143e11ab",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_NearBreach"
+            },
+            {
+              "UUID": "e0f0653a-1db3-36c9-012b-da237f709fd1",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_Event_Spotted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5567617c-d037-99ef-1cfe-5448ed2995bb",
+              "Text": {
+                "Handle": "hd5827babgcda9g4d04gb3fagc9e92ac8e62d",
+                "Value": "*You spot a man crouching between the shelves - just as he spots you.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] Salazon is crouched behind a crate and is peering over the top, stealthily keeping watch. Looping idle. He notices the player, and readies a firebolt spell in his left hand > idle",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N305",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is crouching behind the shelves].",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Tag Greeting",
+        "position": "-1585;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "6d6b8083-6eab-c540-3316-79c41460e85f": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "6d6b8083-6eab-c540-3316-79c41460e85f",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "adcd222b-69bf-3f5f-521f-d3da90b3c839"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f6d0e042-5b90-41d8-ab4a-a2239e27a13e",
+              "value": true,
+              "paramval": 1,
+              "Name": "SORCERER_DRACONIC"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3a631295-31d5-45f1-bf7f-8948d096a6d5",
+              "Text": {
+                "Handle": "hd9f001c9gdfe8g4a3bg88ebg1218b25a4278",
+                "Value": "Fire is in my blood. Do it. Let's see who survives."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N709",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Draconic Ancestry",
+        "position": "335;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "6ead9124-5ea0-a9bd-4529-007cf18cf995": {
+      "RollSuccess": false,
+      "UUID": "6ead9124-5ea0-a9bd-4529-007cf18cf995",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "800c7fb7-3325-502b-2ca0-a729777bcdcd"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N273",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "-945;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "7209c31a-8a8d-5226-5e71-f04f54728791": {
+      "UUID": "7209c31a-8a8d-5226-5e71-f04f54728791",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f1af4293-0e58-1913-ee22-a0aaca0bc502"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "661cb9c2-10a8-c0c6-8d26-ae5749623670",
+              "Text": {
+                "Handle": "hd72f173bg4e96g4911gb935g43c3317aad48",
+                "Value": "One of our own, eh? All right, down you go."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "<KrisB> [Player] flicks out a single hand-sign: 'profit'",
+        "Attitude": "Friendly",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N419",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is standing]. Realising we're from a similar criminal organisation - trusting us slightly more, but only about as much as one thief ever trusts another",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "StateChangeTags": "Character is standing up",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "72c813e4-f6c8-508b-9094-25b3e6f9700b": {
+      "RollSuccess": false,
+      "UUID": "72c813e4-f6c8-508b-9094-25b3e6f9700b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "56a03886-81b5-8ea5-d4ee-db1314871654"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N157",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "74c80e0c-8304-6737-8508-921d88fc9916": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "74c80e0c-8304-6737-8508-921d88fc9916",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c0ed62ca-c4e1-eb0c-1d72-ccf2ca413e94",
+        "4948851d-fd75-cdd7-ac18-97f669a1b132"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ac3449f7-c09b-4bc0-8634-fcff97d49279",
+              "value": false,
+              "paramval": 1,
+              "Name": "BERSERKER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5ed20a58-f5b4-5bf6-a936-bfe0b1daf1a3",
+              "Text": {
+                "Handle": "h66d7393ag6c97g4640g9f10gd644b74d3d7d",
+                "Value": "Careful. You won't kill me, but you <i>will </i>make me mad."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N371",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Intimidation",
+        "position": "335;453",
+        "sourcetemplate": ""
+      }
+    },
+    "799ba900-118a-9e07-5602-62deeed078f0": {
+      "UUID": "799ba900-118a-9e07-5602-62deeed078f0",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "32864e54-8c82-3c39-de8b-3a3dbb6fc0d8",
+        "74c80e0c-8304-6737-8508-921d88fc9916",
+        "b6a1b9e2-fff8-6fa7-8b3c-095f7c44945a",
+        "c9b7c310-5be6-38a6-8961-6bc55852be2c",
+        "2b15d6b6-e7b6-9d01-a796-994ce7e5d28b",
+        "6d6b8083-6eab-c540-3316-79c41460e85f",
+        "ae9d669d-c611-2808-94df-c4f08ae39409",
+        "f3d31959-5f58-e59d-ad32-246d4d53f0f0",
+        "0b72fe5b-0022-afdd-5ce7-1d0fe81ec21a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6a662d6b-1bd2-ffa8-11b8-0b7e86311bda",
+              "Text": {
+                "Handle": "h66699f2cg3be5g4dccg9161g0e47da79700e",
+                "Value": "*He freezes, waiting on your next word.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "<KrisB> [Salazon] Loop version of the crouching mocap, [Player]  Throwing hands in the air to show Salazon we mean no harm (Need an idle state for this)",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N136",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;891",
+        "sourcetemplate": ""
+      }
+    },
+    "7be80a47-25fe-0998-1d1f-c148eb6a810c": {
+      "UUID": "7be80a47-25fe-0998-1d1f-c148eb6a810c",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "886a1e00-a10f-4e3a-a115-96d27de00176",
+              "value": true,
+              "paramval": 0,
+              "Name": "PLA_EscapingZhentarim_HasItem_HiddenEntranceKey2"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "174507f8-83a6-4bed-4616-398acc1ea372",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_ZhentDungeon_Zhent01_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4af170a8-0c07-bc6e-ef28-3fa3a9eedef2",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_Permitted"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "a85c50aa-acaa-4ef5-89be-50edb7d2bd72",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_EscapingZhentarim_GiveItem_HiddenEntranceKey2"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22eefb84-52a5-3e0e-6f77-1f486ce2e463",
+              "Text": {
+                "Handle": "h0bab8e5dgeb74g478fga09cga3443024ca1b",
+                "Value": "Down you go - entrance is behind the wardrobe. Here's the key."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Wardrobe is behind Salazon",
+        "CinematicObjects": "Key",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N401",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is standing up] He casually chucks the player a key.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Salazon gives us key.",
+        "position": "1615;453",
+        "sourcetemplate": ""
+      }
+    },
+    "7d1a70e8-ac55-4b7d-a2f1-dba9686a1b40": {
+      "UUID": "7d1a70e8-ac55-4b7d-a2f1-dba9686a1b40",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b4320de0-aac7-6155-767a-b14538eb9155",
+        "08d88377-bc17-b7c4-d0b0-91fbedadf667",
+        "1c31357f-e241-b49b-d652-c6ff07c88790",
+        "159f2471-969a-cc16-c1b1-cddc14c257c0"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3067640f-3d27-c69c-ade9-9a5e143e11ab",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_NearBreach"
+            },
+            {
+              "UUID": "e0f0653a-1db3-36c9-012b-da237f709fd1",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_Event_Spotted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bd14b988-71aa-cbda-a852-3762f333ef30",
+              "Text": {
+                "Handle": "h9e6691e9g8faeg4e38ga5a6gc0443ade0a84",
+                "Value": "*A human man awaits you, a spell crackling at his fingertips.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] Salazon is crouched behind a crate and is peering over the top, stealthily keeping watch with a firebolt spell in his hand.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N306",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is crouching behind the shelves with Fire Bolt ready]. ",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Tag Greeting",
+        "position": "-1585;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "800160cf-fe61-c283-4879-6db30057393f": {
+      "RollSuccess": false,
+      "UUID": "800160cf-fe61-c283-4879-6db30057393f",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "450826ae-7ce1-9d58-eac9-60c31d50cb2a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N367",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "800c7fb7-3325-502b-2ca0-a729777bcdcd": {
+      "JumpTarget": "72c813e4-f6c8-508b-9094-25b3e6f9700b",
+      "JumpTargetPoint": 2,
+      "UUID": "800c7fb7-3325-502b-2ca0-a729777bcdcd",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N277",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-625;4176",
+        "sourcetemplate": ""
+      }
+    },
+    "81ce8cf4-4a36-05d5-7a1c-a6b432eab1c9": {
+      "JumpTarget": "4eae8d75-5df7-7ecc-b678-289ce21cfba9",
+      "JumpTargetPoint": 2,
+      "UUID": "81ce8cf4-4a36-05d5-7a1c-a6b432eab1c9",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N681",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-305;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "82c87716-a11f-e08a-c155-974262a6a244": {
+      "JumpTarget": "49635ee0-f215-f31c-f19f-83510794a4b5",
+      "JumpTargetPoint": 1,
+      "UUID": "82c87716-a11f-e08a-c155-974262a6a244",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N169",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;891",
+        "sourcetemplate": ""
+      }
+    },
+    "84e0430a-b389-e393-5585-fbf342f4d85a": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "00000000-0000-0000-0000-000000000000",
+      "DifficultyClassValue": 0,
+      "UUID": "84e0430a-b389-e393-5585-fbf342f4d85a",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "87c1317d-7fd4-560d-b3d4-af723e9e2ce9",
+        "17374cfd-beb8-adb0-c930-8ad7a14acbc3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1e2a9bf8-1b3a-f43e-70a4-dcbdc05f9724",
+              "value": false,
+              "paramval": null,
+              "Name": "d667ac86-b022-ec07-624c-a65971ddd4c3_MindHasBeenRead"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "44f9fbf3-735d-8eaf-94dc-6c1d1cf5382d",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CanDetectThoughts_2"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b240ac69-b393-9494-e163-f65eec9ca805",
+              "Text": {
+                "Handle": "hb2c91734g0d30g42cbg8bc5gb64dd990ba72",
+                "Value": "<i>Read his mind.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N248",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Mindread node",
+        "position": "-945;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "87c1317d-7fd4-560d-b3d4-af723e9e2ce9": {
+      "RollSuccess": true,
+      "UUID": "87c1317d-7fd4-560d-b3d4-af723e9e2ce9",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "e624aec8-9fff-58d6-2ab2-ea4ecea174d1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N247",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "-625;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "9045fafe-301d-0aa9-003d-822a1c5db6e6": {
+      "RollSuccess": true,
+      "UUID": "9045fafe-301d-0aa9-003d-822a1c5db6e6",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cac0fb5b-69f8-4d55-4276-541252db17f2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N271",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "-945;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "90a4842b-c956-b786-1f67-7e083c65b61c": {
+      "UUID": "90a4842b-c956-b786-1f67-7e083c65b61c",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "49635ee0-f215-f31c-f19f-83510794a4b5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N686",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "State: Salazon Relaxes",
+        "position": "-625;-642",
+        "sourcetemplate": "",
+        "stateContext": "Salazon is standing"
+      }
+    },
+    "9221989e-e5ac-cdb7-a0ee-e0268d69c0fe": {
+      "UUID": "9221989e-e5ac-cdb7-a0ee-e0268d69c0fe",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "5aa35a30-b612-cc96-bbee-e4696326bacb"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3c6ca30f-6d83-a31d-fdaa-55400c54d84a",
+              "Text": {
+                "Handle": "h7e34120dge21eg42acg854eg0f820b9a3228",
+                "Value": "I know the pass-phrase: 'Little serpent, long shadow'."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N262",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "15;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "9613d1aa-8c88-0f33-0b23-4e2dd29af352": {
+      "UUID": "9613d1aa-8c88-0f33-0b23-4e2dd29af352",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "886a1e00-a10f-4e3a-a115-96d27de00176",
+              "value": true,
+              "paramval": 0,
+              "Name": "PLA_EscapingZhentarim_HasItem_HiddenEntranceKey2"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "174507f8-83a6-4bed-4616-398acc1ea372",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_ZhentDungeon_Zhent01_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4af170a8-0c07-bc6e-ef28-3fa3a9eedef2",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_Permitted"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "a85c50aa-acaa-4ef5-89be-50edb7d2bd72",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_EscapingZhentarim_GiveItem_HiddenEntranceKey2"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b679608d-8bae-b0fa-adb3-900ecf3d2965",
+              "Text": {
+                "Handle": "h54a3f5e9gc03eg474dgbdc7ge1ba896f90da",
+                "Value": "Entrance is hidden behind the wardrobe - here's the key."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Wardrobe is behind Salazon",
+        "CinematicObjects": "Key",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N509",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is standing up] He casually chucks the player a key.",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Salazon gives us key",
+        "position": "335;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "96640c9b-fdc0-3a83-24b0-b75ceab6049b": {
+      "JumpTarget": "5f1a724e-bf0d-fc97-8d64-e69c1058aa8b",
+      "JumpTargetPoint": 1,
+      "UUID": "96640c9b-fdc0-3a83-24b0-b75ceab6049b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N266",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "15;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "9dabd783-1f10-c38f-f62b-d879fb57c9df": {
+      "SourceNode": "7209c31a-8a8d-5226-5e71-f04f54728791",
+      "UUID": "9dabd783-1f10-c38f-f62b-d879fb57c9df",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N707",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "-625;453",
+        "sourcetemplate": ""
+      }
+    },
+    "ab86865f-c41c-2a64-44b4-972b7f792965": {
+      "UUID": "ab86865f-c41c-2a64-44b4-972b7f792965",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3f1f28e5-b2b2-a725-0e26-6e47884c403e",
+        "e49ac53f-d50c-cb88-4ef4-caa47abcc7be",
+        "57e88f37-f5a2-17b5-f2da-859320b94aae"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8f292514-d3a8-1dae-1b12-9b56b777b8ba",
+              "Text": {
+                "Handle": "h1a2a810egcda5g420bg8a18gcb50147ed7d6",
+                "Value": "... let's say I'd rather not fight, then. What's your business down here?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Neutral",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N404",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Salazon stands up. Frightened and pretending not to be, hearing us out. He doesn't want to fight really.",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "adcd222b-69bf-3f5f-521f-d3da90b3c839": {
+      "JumpTarget": "f3d31959-5f58-e59d-ad32-246d4d53f0f0",
+      "JumpTargetPoint": 2,
+      "UUID": "adcd222b-69bf-3f5f-521f-d3da90b3c839",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N683",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "ae9d669d-c611-2808-94df-c4f08ae39409": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "ae9d669d-c611-2808-94df-c4f08ae39409",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "adcd222b-69bf-3f5f-521f-d3da90b3c839"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "885f8675-e400-4d53-924d-6204ff1d9558",
+              "value": true,
+              "paramval": 1,
+              "Name": "SORCERER_WILDMAGIC"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0eeb94bf-f44f-46ca-b417-54aa9c086584",
+              "Text": {
+                "Handle": "h44f35258gc810g4baag9e36gdbcd38bc251d",
+                "Value": "Every spell I cast could be my last. You think I fear death?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N712",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Wild Magic",
+        "position": "335;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "b4320de0-aac7-6155-767a-b14538eb9155": {
+      "JumpTarget": "5f1a724e-bf0d-fc97-8d64-e69c1058aa8b",
+      "JumpTargetPoint": 1,
+      "UUID": "b4320de0-aac7-6155-767a-b14538eb9155",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N283",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-1265;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "b57f99e6-f82a-0e20-0fd2-532b1a99d0d1": {
+      "UUID": "b57f99e6-f82a-0e20-0fd2-532b1a99d0d1",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ab86865f-c41c-2a64-44b4-972b7f792965"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N687",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "State: Salazon Relaxes",
+        "position": "975;1986",
+        "sourcetemplate": "",
+        "stateContext": "Salazon is standing"
+      }
+    },
+    "b6a1b9e2-fff8-6fa7-8b3c-095f7c44945a": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "b6a1b9e2-fff8-6fa7-8b3c-095f7c44945a",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3afbac19-e4b0-85e7-28ca-904b7a98c1bb",
+        "72c813e4-f6c8-508b-9094-25b3e6f9700b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "18266c0b-efbc-4c80-8784-ada4a37218d7",
+              "value": false,
+              "paramval": 1,
+              "Name": "SORCERER"
+            },
+            {
+              "UUID": "f8a0608b-666c-4be6-a49c-03b369c10bd2",
+              "value": false,
+              "paramval": 1,
+              "Name": "ROGUE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "22209036-3a27-3713-f84e-252c50b19bc5",
+              "Text": {
+                "Handle": "h44c454e4g9c55g4535ga0e6g2be9d3691d0f",
+                "Value": "Just calm down - I'm not here to fight."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N152",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "335;891",
+        "sourcetemplate": ""
+      }
+    },
+    "bada7cf1-1d30-9fd2-825b-5014a2fcef0c": {
+      "JumpTarget": "7d1a70e8-ac55-4b7d-a2f1-dba9686a1b40",
+      "JumpTargetPoint": 2,
+      "UUID": "bada7cf1-1d30-9fd2-825b-5014a2fcef0c",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N703",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-1265;5709",
+        "sourcetemplate": ""
+      }
+    },
+    "c0ed62ca-c4e1-eb0c-1d72-ccf2ca413e94": {
+      "RollSuccess": true,
+      "UUID": "c0ed62ca-c4e1-eb0c-1d72-ccf2ca413e94",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "381d4573-66e1-3804-bf0c-455069aeb62f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N375",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;453",
+        "sourcetemplate": ""
+      }
+    },
+    "c42f1f91-186a-2e34-f0c5-e89fe191d098": {
+      "UUID": "c42f1f91-186a-2e34-f0c5-e89fe191d098",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "886a1e00-a10f-4e3a-a115-96d27de00176",
+              "value": false,
+              "paramval": 0,
+              "Name": "PLA_EscapingZhentarim_HasItem_HiddenEntranceKey2"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "174507f8-83a6-4bed-4616-398acc1ea372",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_ZhentDungeon_Zhent01_HasMet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4af170a8-0c07-bc6e-ef28-3fa3a9eedef2",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_Permitted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7e9e05a9-a28a-de2b-be0a-8f114b1b5448",
+              "Text": {
+                "Handle": "h1b5ab08agd26ag4a4egb37ag77e2bcfdda9c",
+                "Value": "Down you go - entrance is behind the wardrobe. You'll find a key in one of the crates."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Wardrobe is behind Salazon",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "True",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N513",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is standing].",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Salazon does not give us key.",
+        "position": "1615;672",
+        "sourcetemplate": ""
+      }
+    },
+    "c515eab3-ace0-4831-afeb-a608af90276e": {
+      "UUID": "c515eab3-ace0-4831-afeb-a608af90276e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "17b19434-b961-cdfe-6151-4201b3e653a2",
+        "00642ed1-307b-2c44-0dc2-2f98176b5aa8",
+        "e026a6a5-bdf0-276b-064c-378083e758b2",
+        "84e0430a-b389-e393-5585-fbf342f4d85a",
+        "5f1a724e-bf0d-fc97-8d64-e69c1058aa8b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d393a111-0c6a-9657-0d90-e14a56e07476",
+              "Text": {
+                "Handle": "h9ca74d23g6688g43c1ga91fgecb19b4b4ee4",
+                "Value": "Bugger."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N339",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is crouching] Salazon readies fire bolt spell. Surprised, barely suppressed panic",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-1265;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "c909de7d-d7eb-f1aa-fbb1-5564f1236585": {
+      "UUID": "c909de7d-d7eb-f1aa-fbb1-5564f1236585",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2493ed7e-84b1-fa2b-403d-f534397a7ac3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3067640f-3d27-c69c-ade9-9a5e143e11ab",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_NearBreach"
+            },
+            {
+              "UUID": "e0f0653a-1db3-36c9-012b-da237f709fd1",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_Event_Spotted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b391d926-9e98-a94d-320b-44b5ee9dbf1a",
+              "Text": {
+                "Handle": "h3a84f3f7g81e1g4854gb73fga72903937f0d",
+                "Value": "*You spot a man crouching between the shelves - just as he spots you.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] [DUPE] Salazon is crouched behind a crate and is peering over the top, stealthily keeping watch. Looping idle. He notices the player, and readies a firebolt spell in his left hand > idle",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N698",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is crouching behind the shelves].",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Tag Greeting",
+        "position": "-1585;5271",
+        "sourcetemplate": ""
+      }
+    },
+    "c9b7c310-5be6-38a6-8961-6bc55852be2c": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "c9b7c310-5be6-38a6-8961-6bc55852be2c",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "adcd222b-69bf-3f5f-521f-d3da90b3c839"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f8a0608b-666c-4be6-a49c-03b369c10bd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "ROGUE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "dcfc15c0-6e98-cfa9-5239-6370bf396958",
+              "Text": {
+                "Handle": "h6dab45d6g8546g4344g8dcfg295dbce163a5",
+                "Value": "This is all pretty crude, as traps go - you'll probably kill us both."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N383",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "335;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "cac0fb5b-69f8-4d55-4276-541252db17f2": {
+      "JumpTarget": "49635ee0-f215-f31c-f19f-83510794a4b5",
+      "JumpTargetPoint": 1,
+      "UUID": "cac0fb5b-69f8-4d55-4276-541252db17f2",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N275",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-625;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "d129f96f-698e-0957-8079-9e15bb074cb8": {
+      "UUID": "d129f96f-698e-0957-8079-9e15bb074cb8",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2c0b3970-3f48-4b6b-8b79-410f9222e6c1",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_BarrelGone"
+            },
+            {
+              "UUID": "76470a53-f3f3-48db-9fc9-c203ff9a0d28",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_ZhentDungeon_State_PlayerNearBarrel"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "05222e53-c29d-39c2-8795-0a18565a7226",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_Escape"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "36cbbb6b-c9a9-a9a8-9062-b1b6a810dd2c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PLA_EscapingZhentarim_Knows_WasAttacked"
+            }
+          ],
+          "Type": "User"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "64b6e886-9357-ffa3-847c-367d520b8515",
+              "Text": {
+                "Handle": "h47953d76g5d0fg4afdga231g11025e89e45c",
+                "Value": "That ain't the pass-phrase!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] [DUPE] From crouched, Salazon stands up frantic and aggressive, raising the firebolt spell in a threatening guesture, ready to attack.",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "Fire bolt is still in hand.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N163",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Salazon gets up frantically as he exclaims his line.",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;891",
+        "sourcetemplate": ""
+      }
+    },
+    "d1e2f165-9299-6112-4ecf-87d6fa6878e3": {
+      "UUID": "d1e2f165-9299-6112-4ecf-87d6fa6878e3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f1af4293-0e58-1913-ee22-a0aaca0bc502"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1f1ad6ee-373c-472c-80d9-ac961cbdbb27",
+              "Text": {
+                "Handle": "h7be3cc41g961bg472bgbd76ga172516c2c86",
+                "Value": "Your timing ain't the best, but I'm sure Zarys won't turn down a deal. Down you go, then."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N422",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is standing]. Considering us, weighing his options - Zarys is someone he is afraid of, but he also doesn't want to fight us.",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_LeadOut - Cancels spell",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "d491ffc0-8822-460c-813d-310395b76649": {
+      "RollSuccess": false,
+      "UUID": "d491ffc0-8822-460c-813d-310395b76649",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f89f2f26-963c-b88d-d3c4-9b88ec14acf8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N717",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "d71ea58c-abfb-b9fb-6437-59ae27e1585b": {
+      "JumpTarget": "4eae8d75-5df7-7ecc-b678-289ce21cfba9",
+      "JumpTargetPoint": 2,
+      "UUID": "d71ea58c-abfb-b9fb-6437-59ae27e1585b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N684",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "-625;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "e026a6a5-bdf0-276b-064c-378083e758b2": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Dexterity",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "e026a6a5-bdf0-276b-064c-378083e758b2",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "21e0c183-a94e-faf3-cb6c-30ba07057929",
+        "3ea93b62-25b4-456c-aa85-912521397f17"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "554cba53-4fc6-f762-8531-19da9c5879e1",
+              "Text": {
+                "Handle": "hddb4cedfg0882g4f93g9871g24e4295396f2",
+                "Value": "Wait - listen!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N135",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Ability_Dexterity",
+        "position": "-945;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "e49ac53f-d50c-cb88-4ef4-caa47abcc7be": {
+      "UUID": "e49ac53f-d50c-cb88-4ef4-caa47abcc7be",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7209c31a-8a8d-5226-5e71-f04f54728791"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f8a0608b-666c-4be6-a49c-03b369c10bd2",
+              "value": true,
+              "paramval": 1,
+              "Name": "ROGUE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "eeef635f-eb7c-6e86-e0a4-a1601f9d84e4",
+              "Text": {
+                "Handle": "ha6a2c7e0gf9d4g4148gbe6cg33751ffe5b38",
+                "Value": "<i>Flick out a single hand-sign: 'profit'.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] Player makes",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N418",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Rogue",
+        "position": "1615;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "e624aec8-9fff-58d6-2ab2-ea4ecea174d1": {
+      "UUID": "e624aec8-9fff-58d6-2ab2-ea4ecea174d1",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "9221989e-e5ac-cdb7-a0ee-e0268d69c0fe",
+        "96640c9b-fdc0-3a83-24b0-b75ceab6049b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1e2a9bf8-1b3a-f43e-70a4-dcbdc05f9724",
+              "value": true,
+              "paramval": null,
+              "Name": "d667ac86-b022-ec07-624c-a65971ddd4c3_MindHasBeenRead"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "366cd4e2-df3c-febb-8f47-f2dbfc496787",
+              "Text": {
+                "Handle": "ha8d8cec3g1f5cg4fb6g92dcg4d9c7fe44ae1",
+                "Value": "<i>'Little serpent, long shadow.' Don't want to die. 'Little serpent, long shadow.' Just say it!</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*REUSE* <KrisB> Mind Read",
+        "Attitude": "Submissive",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Pleading",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N246",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is crouching behinnd the shelves with Fire Bolt ready]. Frantically repeating this over and over in his mind - it's a pass phrase he is repeating in his head, willing us to say it so he doesn't have ot fight",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "-305;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "e6d97db6-c26c-0807-e6c3-13f210c79df5": {
+      "JumpTarget": "72c813e4-f6c8-508b-9094-25b3e6f9700b",
+      "JumpTargetPoint": 2,
+      "UUID": "e6d97db6-c26c-0807-e6c3-13f210c79df5",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N677",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;672",
+        "sourcetemplate": ""
+      }
+    },
+    "f1af4293-0e58-1913-ee22-a0aaca0bc502": {
+      "JumpTarget": "007fde22-826c-05ca-ad20-5e9729ffac1f",
+      "JumpTargetPoint": 2,
+      "UUID": "f1af4293-0e58-1913-ee22-a0aaca0bc502",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N676",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "f3d31959-5f58-e59d-ad32-246d4d53f0f0": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Intelligence",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "f3d31959-5f58-e59d-ad32-246d4d53f0f0",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3498ee3d-5d00-d8b8-8f77-5dbd88ca3131",
+        "800160cf-fe61-c283-4879-6db30057393f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6fe3ae27-dc6c-4fc9-9245-710c790c396c",
+              "value": true,
+              "paramval": 1,
+              "Name": "WIZARD"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9cd32923-d475-62c8-d272-66df20b07c35",
+              "Text": {
+                "Handle": "h93f249bfge9fdg47e1g8a66g6d84abf7ed76",
+                "Value": "That spell, in close quarters? You're going to hurt yourself."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N399",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "335;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "f89f2f26-963c-b88d-d3c4-9b88ec14acf8": {
+      "JumpTarget": "72c813e4-f6c8-508b-9094-25b3e6f9700b",
+      "JumpTargetPoint": 2,
+      "UUID": "f89f2f26-963c-b88d-d3c4-9b88ec14acf8",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N722",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "fb953d8e-ba3a-ecd4-2969-fe9dc2a6f908": {
+      "UUID": "fb953d8e-ba3a-ecd4-2969-fe9dc2a6f908",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "bada7cf1-1d30-9fd2-825b-5014a2fcef0c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3067640f-3d27-c69c-ade9-9a5e143e11ab",
+              "value": true,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_State_NearBreach"
+            },
+            {
+              "UUID": "e0f0653a-1db3-36c9-012b-da237f709fd1",
+              "value": false,
+              "paramval": null,
+              "Name": "PLA_EscapingZhentarim_Event_Spotted"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b96a5a94-cc96-eb99-2c19-abfca4eaae24",
+              "Text": {
+                "Handle": "hd6db82dbgaf3ag4467gb8b6g772366b1d97f",
+                "Value": "*A human man awaits you, a spell crackling at his fingertips.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Beau] [DUPE] Salazon is crouched behind a crate and is peering over the top, stealthily keeping watch with a firebolt spell in his hand.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "<placeholder>",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N702",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "[Salazon is crouching behind the shelves with Fire Bolt ready]. ",
+        "Quality": "Silver",
+        "SFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "FX_FireBolt_Spell_Prep_Loop (Salazon's Left hand)",
+        "collapsed": "False",
+        "logicalname": "Tag Greeting",
+        "position": "-1585;5709",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "7a6c6142-97ea-63bf-1a9b-8400b7012825",
+      "Index": 0,
+      "List": [
+        "85e11906-83ea-4f2f-b5cb-f1e2a6710513"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Salazon",
+        "Type": "character",
+        "MapKey": "85e11906-83ea-4f2f-b5cb-f1e2a6710513",
+        "Name": "S_PLA_ZhentDungeon_Zhent01",
+        "ParentTemplateId": null,
+        "TemplateName": "b7f6f34b-07e6-4bcc-a4bc-023b25fb6e84"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "dc35d16c-d946-29b8-1e71-e67a4b981cc2",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Salazon is preparing a fire-trap at the entrance to his gang's hideout. We can either sneak up on him or be sneaked up on in turn - either way we have to convince him we should be there or he'll get skittish and blow us all up. In general he's jumpy and suspicious of us, but relieved when we convince him we're a friend. Think an inexperienced guard pointing a gun at us when he's been told to be on alert."
+}

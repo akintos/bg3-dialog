@@ -1,0 +1,295 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_BlushingMermaid_AD_MotherSeesSavedChild.lsj",
+  "UUID": "672a7cf5-426f-1897-9911-86eac41384f0",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "b9f956f0-656e-4955-2409-f741d430119c"
+  ],
+  "Nodes": {
+    "28e15cf0-b36c-cf61-cb9e-d9e2e830c7bc": {
+      "UUID": "28e15cf0-b36c-cf61-cb9e-d9e2e830c7bc",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "095666f1-73da-4c87-a5b5-cade71943653",
+              "Text": {
+                "Handle": "h3f302d19g7d91g4265gb77bg3c24effddf33",
+                "Value": "I've got you, my sweet girl. Mummy is here."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "crying, relieved, never wants to let Vanra out of her sight",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "2a00dc5c-b3e7-0517-2975-d7a67e7c0457": {
+      "UUID": "2a00dc5c-b3e7-0517-2975-d7a67e7c0457",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "28e15cf0-b36c-cf61-cb9e-d9e2e830c7bc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "abd96473-7edd-4bcf-ae28-be59891b437a",
+              "Text": {
+                "Handle": "ha325cf83g03e1g4751g84b4g81880e7cca16",
+                "Value": "MUMMY!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "crying, upset, relief",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "811eefec-44e9-76f1-3419-3d5b38843c99": {
+      "UUID": "811eefec-44e9-76f1-3419-3d5b38843c99",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2a00dc5c-b3e7-0517-2975-d7a67e7c0457"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "25c1ac70-f65f-4869-8a74-eff5827d9cde",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_IsSpeakerPresent_2"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1fac60c6-5d62-41cd-8e51-4d8d53219c8d",
+              "value": true,
+              "paramval": 1,
+              "Name": "LOW_BasiliskGate_Vanra_StartInclusion"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "LOGIC NODE",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "b9f956f0-656e-4955-2409-f741d430119c": {
+      "UUID": "b9f956f0-656e-4955-2409-f741d430119c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "811eefec-44e9-76f1-3419-3d5b38843c99"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "123a0798-20fd-44eb-987d-ca897a8505b0",
+              "Text": {
+                "Handle": "hb41564a7gf47dg480cg8777g6418e2384c3e",
+                "Value": "Vanra? VANRA!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "sees her daughter for the first time since she vanished. Shock, doesn't believe her eyes, then tears - crying out in joy.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e8d97b39-68db-49b4-befa-50e04a83a799",
+      "Index": 0,
+      "List": [
+        "58ece4ba-e097-4b3b-ac71-7abe8706d3a8"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Lora",
+        "Type": "character",
+        "MapKey": "58ece4ba-e097-4b3b-ac71-7abe8706d3a8",
+        "Name": "S_LOW_BlushingMermaid_MissingKidsMother",
+        "ParentTemplateId": null,
+        "TemplateName": "19dc6cab-aa38-4f09-b9cf-546e1c0ecb8a"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "ca0cbbdf-a9fe-4a05-a48c-513ca03d7f24",
+      "Index": 1,
+      "List": [
+        "bfeac6a6-678e-46da-b873-cf7e4c7a1e4c"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Vanra",
+        "Type": "character",
+        "MapKey": "bfeac6a6-678e-46da-b873-cf7e4c7a1e4c",
+        "Name": "S_LOW_BlushingMermaid_Vanra",
+        "ParentTemplateId": null,
+        "TemplateName": "103a2972-63d5-4046-a263-d805a8d672e4"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "AD for when Lora sees Vanra for the first time after she was saved. This is a big tear-filled reunion for the two of them."
+}

@@ -1,0 +1,151 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Shar/SHA_NightsongPrison_AD_EntrancePlaque.lsj",
+  "UUID": "c39ac3e3-3590-e411-6eea-b085643ba7fc",
+  "Category": "Automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "d11668ee-360b-a917-2dbc-1623759656dd",
+    "0447a26c-46ba-72e3-e107-828b6c3d44fc"
+  ],
+  "Nodes": {
+    "0447a26c-46ba-72e3-e107-828b6c3d44fc": {
+      "UUID": "0447a26c-46ba-72e3-e107-828b6c3d44fc",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3599ecf9-382d-46b7-8c72-c7d99303d7c4",
+              "value": false,
+              "paramval": null,
+              "Name": "MOO_BalthazarsSecrets_Knows_NightsongSecret"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8ff6e057-ff4b-a033-870c-8d33a1c444d0",
+              "value": true,
+              "paramval": null,
+              "Name": "SHA_NightsongPrison_Knows_NightsongIsPerson"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a6339951-a4bd-48ef-8cc2-5abcef9a0180",
+              "Text": {
+                "Handle": "hb0887a50gb21dg43dega402gf631fb87724f",
+                "Value": "*Spill the blood of Selûne and rise a warrior of Shar.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "This node if the player didn't already know Nightsong was a living being",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The text of a plaque, instructing initiates in a sharran rite.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d11668ee-360b-a917-2dbc-1623759656dd": {
+      "SourceNode": "0447a26c-46ba-72e3-e107-828b6c3d44fc",
+      "UUID": "d11668ee-360b-a917-2dbc-1623759656dd",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3599ecf9-382d-46b7-8c72-c7d99303d7c4",
+              "value": true,
+              "paramval": null,
+              "Name": "MOO_BalthazarsSecrets_Knows_NightsongSecret"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N3",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (KNEW NIGHTSONG SECRET)",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "d0142048-17b4-464a-9e1d-d3fae18147dc",
+      "Index": 0,
+      "List": [
+        "308f465c-2294-4663-b989-074a258614b8"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Plaque",
+        "Type": "item",
+        "MapKey": "308f465c-2294-4663-b989-074a258614b8",
+        "Name": "S_SHA_NightsongPrison_EntrancePlaque",
+        "ParentTemplateId": null,
+        "TemplateName": "4700caf7-e7cf-4509-a949-c156b0a6066e"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "The player reads the plaque outside Nightsong's chamber. It instructs them to kill Nightsong in order to become a Dark Justiciar"
+}

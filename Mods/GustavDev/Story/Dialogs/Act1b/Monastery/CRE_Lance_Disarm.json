@@ -1,0 +1,591 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act1b/Monastery/CRE_Lance_Disarm.lsj",
+  "UUID": "2eaabda6-3851-2260-f695-3a61b29e5771",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "f372e210-29b0-4e52-ab2b-18e164de6c36",
+    "ce5dd3d6-62aa-432c-8a21-f592578cc411",
+    "e482ea6c-faa3-4b0d-a24a-5169394e4864",
+    "ad7ac07c-62c5-4ad3-b6d4-b28867edbe88",
+    "2f1273f2-04c8-42e4-b1c4-54b3828b4c39"
+  ],
+  "Nodes": {
+    "06d86a7b-1146-78a5-d1ad-65805387074c": {
+      "UUID": "06d86a7b-1146-78a5-d1ad-65805387074c",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "699a48e9-7003-48e9-8814-2772cd8a79ad"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2cf709bf-3276-4710-97ec-346dd28f45a9",
+              "value": false,
+              "paramval": null,
+              "Name": "CRE_Lance_State_DisarmedByDestroy"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The glow from the four crystals fades off each them in quick succession.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N13",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Crystals powering down",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "2f1273f2-04c8-42e4-b1c4-54b3828b4c39": {
+      "UUID": "2f1273f2-04c8-42e4-b1c4-54b3828b4c39",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f5d67eed-19f8-4201-b852-8d9bff29d211"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2cf709bf-3276-4710-97ec-346dd28f45a9",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_DisarmedByDestroy"
+            },
+            {
+              "UUID": "9d239e15-4994-49b1-93dc-a89d37e3bff4",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_WasActive"
+            },
+            {
+              "UUID": "a17b9bbd-43e1-4ba2-8f88-a33ecdb07a96",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_Disarmed"
+            },
+            {
+              "UUID": "ac9084ae-0d0a-49c3-8e5c-d28ad28cd785",
+              "value": false,
+              "paramval": null,
+              "Name": "CRE_Lance_State_BarrierTrapActive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Destroyed crystals shown with small smoke effect and/or sparks, having fizzled out.\r\n\r\n(NO BARRIER / CRYSTALS DESTROYED)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DESTRUCT DISARM + BARRIER DOWN",
+        "position": "-305;453",
+        "sourcetemplate": ""
+      }
+    },
+    "699a48e9-7003-48e9-8814-2772cd8a79ad": {
+      "UUID": "699a48e9-7003-48e9-8814-2772cd8a79ad",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[ChrisD] *DUPE* [Player] Player examines the mace a bit.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The beam turns off, and the portal closes.\r\nThe gyro glow fades and the rings stop spinning, slowly shuddering to a stop.\r\nThe pillars retract back down.\r\n\r\nThe player looks around in relief, and then in admiration at the mace in their hand.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "CINE - End Power Down",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ad7ac07c-62c5-4ad3-b6d4-b28867edbe88": {
+      "UUID": "ad7ac07c-62c5-4ad3-b6d4-b28867edbe88",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f5d67eed-19f8-4201-b852-8d9bff29d211"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2cf709bf-3276-4710-97ec-346dd28f45a9",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_DisarmedByDestroy"
+            },
+            {
+              "UUID": "9d239e15-4994-49b1-93dc-a89d37e3bff4",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_WasActive"
+            },
+            {
+              "UUID": "a17b9bbd-43e1-4ba2-8f88-a33ecdb07a96",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_Disarmed"
+            },
+            {
+              "UUID": "ac9084ae-0d0a-49c3-8e5c-d28ad28cd785",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_BarrierTrapActive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Destroyed crystals shown with small smoke effect and/or sparks, having fizzled out.\r\n\r\n(BARRIER ACTIVE / CRYSTALS DESTROYED)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "DESTRUCT DISARM + BARRIER UP",
+        "position": "-305;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ce5dd3d6-62aa-432c-8a21-f592578cc411": {
+      "UUID": "ce5dd3d6-62aa-432c-8a21-f592578cc411",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f5d67eed-19f8-4201-b852-8d9bff29d211"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2cf709bf-3276-4710-97ec-346dd28f45a9",
+              "value": false,
+              "paramval": null,
+              "Name": "CRE_Lance_State_DisarmedByDestroy"
+            },
+            {
+              "UUID": "9d239e15-4994-49b1-93dc-a89d37e3bff4",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_WasActive"
+            },
+            {
+              "UUID": "a17b9bbd-43e1-4ba2-8f88-a33ecdb07a96",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_Disarmed"
+            },
+            {
+              "UUID": "ac9084ae-0d0a-49c3-8e5c-d28ad28cd785",
+              "value": false,
+              "paramval": null,
+              "Name": "CRE_Lance_State_BarrierTrapActive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The crest clicks into place.\r\n\r\nThe player looks up in the direction of the gyro.\r\n\r\n(NO BARRIER / CRYSTALS LIT)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "CREST DISTARM + BARRIER DOWN",
+        "position": "-305;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "e482ea6c-faa3-4b0d-a24a-5169394e4864": {
+      "UUID": "e482ea6c-faa3-4b0d-a24a-5169394e4864",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f5d67eed-19f8-4201-b852-8d9bff29d211"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2cf709bf-3276-4710-97ec-346dd28f45a9",
+              "value": false,
+              "paramval": null,
+              "Name": "CRE_Lance_State_DisarmedByDestroy"
+            },
+            {
+              "UUID": "9d239e15-4994-49b1-93dc-a89d37e3bff4",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_WasActive"
+            },
+            {
+              "UUID": "a17b9bbd-43e1-4ba2-8f88-a33ecdb07a96",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_Disarmed"
+            },
+            {
+              "UUID": "ac9084ae-0d0a-49c3-8e5c-d28ad28cd785",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_BarrierTrapActive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The crest clicks into place.\r\n\r\nThe player looks up in the direction of the gyro.\r\n\r\n(BARRIER ACTIVE / CRYSTALS LIT)",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "CREST DISARM + BARRIER UP",
+        "position": "-305;15",
+        "sourcetemplate": ""
+      }
+    },
+    "f372e210-29b0-4e52-ab2b-18e164de6c36": {
+      "UUID": "f372e210-29b0-4e52-ab2b-18e164de6c36",
+      "Constructor": "TagCinematic",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9d239e15-4994-49b1-93dc-a89d37e3bff4",
+              "value": false,
+              "paramval": null,
+              "Name": "CRE_Lance_State_WasActive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "[ChrisD] Player inserts the crest inside the pedestal to disarm the trap. Player slowly takes the mace with ease and examines it a bit.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The crest clicks into place, floor hinges unlock, and the ring on the floor begins to spin.\r\n\r\nAny companions step back, and the player looks around in positive anticipation.\r\n\r\nThe floor ring slowly rises up as the four pillars also rise, the crystals they're topped with starting to glow warmly as if suffused with sunlight.\r\n\r\nThe still-spinning floor ring aligns with the gyro, and as it also begins to move and rotate a glow forms at its core.  - The gyro aligns its rings into a flat horizontal plane over the mace.  -  A shaft of light coming down around mace, as the gyro glow fades and the mace’s glow intensifies.\r\n\r\nThe mace unlocks from its rigid upright position and begins floating in the shaft of light in a slanted, bobbing, “take me” manner.\r\n\r\nThe player gently takes the mace as the other glows fade slightly, admiring the mace’s pulsing glow as companions step forward.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "True",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SAFE TAKE",
+        "position": "-305;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "f5d67eed-19f8-4201-b852-8d9bff29d211": {
+      "UUID": "f5d67eed-19f8-4201-b852-8d9bff29d211",
+      "Constructor": "TagCinematic",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "06d86a7b-1146-78a5-d1ad-65805387074c"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ac9084ae-0d0a-49c3-8e5c-d28ad28cd785",
+              "value": true,
+              "paramval": null,
+              "Name": "CRE_Lance_State_BarrierTrapActive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "ac9084ae-0d0a-49c3-8e5c-d28ad28cd785",
+              "value": false,
+              "paramval": null,
+              "Name": "CRE_Lance_State_BarrierTrapActive"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Barrier forcefield turns off and the ring sinks, locking back into the floor.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "True",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Barrier coming down",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "b0fd33fb-7c5b-47a6-97e2-aa2c2a7e5a67",
+      "Index": 0,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "1": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "e623cdf5-77c9-4ba5-afe1-416a9c206dea",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "67da2e3d-3d5e-4e52-9074-ec0694c64f10",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "57c71d4a-6ff5-45e4-b5a5-944aff596d2e",
+      "Index": 3,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The players disarms the lance after having taken or not taken the Blood of Lathander and with or without using the crest."
+}

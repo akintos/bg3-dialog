@@ -1,0 +1,443 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act2/Haven/HAV_Ravengard.lsj",
+  "UUID": "9ac797bd-4151-926b-5b9c-3771838604dd",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "301eb508-563f-320e-f967-7ea5b3e8900d",
+    "6b200007-b8b4-c911-1ff0-3ae6ac33ba13",
+    "4abab708-62f7-1cd1-c1fb-71e8fde73d8b",
+    "2d7ffeee-6c54-4205-e5ce-446ae372ec8e"
+  ],
+  "Nodes": {
+    "0f1828de-9e0f-499a-c60c-22f3c2527881": {
+      "UUID": "0f1828de-9e0f-499a-c60c-22f3c2527881",
+      "Constructor": "Visual State",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "301eb508-563f-320e-f967-7ea5b3e8900d",
+        "6b200007-b8b4-c911-1ff0-3ae6ac33ba13"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N7",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "isCustomNode": "False",
+        "logicalname": "Visual State",
+        "position": "-305;-861",
+        "sourcetemplate": "",
+        "stateContext": "Hiding in the inn cellar during Siege. This is the dialog during that event."
+      }
+    },
+    "2d7ffeee-6c54-4205-e5ce-446ae372ec8e": {
+      "UUID": "2d7ffeee-6c54-4205-e5ce-446ae372ec8e",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "394aed81-6e8a-20bc-0d8e-8474c392e633"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "79d1625f-449a-e6aa-0b39-86e30042851a",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_Ravengard_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "600ae5f4-5a73-4b70-a00d-ed583898d497",
+              "Text": {
+                "Handle": "h2d165c17gf989g4227g836ag2384cb1c2f33",
+                "Value": "| Thank you for rescuing me. |"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "301eb508-563f-320e-f967-7ea5b3e8900d": {
+      "UUID": "301eb508-563f-320e-f967-7ea5b3e8900d",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "79d1625f-449a-e6aa-0b39-86e30042851a",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_Ravengard_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b509af8b-a331-47ac-8230-3b8c5ef9956b",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_Siege"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b71a0cf-9d56-4056-a845-b3876d3677e9",
+              "Text": {
+                "Handle": "hafef9fb4ge63fg476bg9655gdb1d4c390ef7",
+                "Value": "|We're part of the last garrison.|"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N11",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "394aed81-6e8a-20bc-0d8e-8474c392e633": {
+      "UUID": "394aed81-6e8a-20bc-0d8e-8474c392e633",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "19a01a12-9878-4b0a-97cd-a08b01da0963",
+              "Text": {
+                "Handle": "h0cdc910dg8dafg412egb9cfg5da6e5650f35",
+                "Value": "| Once we are in Baldur's Gate, you will be rewarded. |"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "4abab708-62f7-1cd1-c1fb-71e8fde73d8b": {
+      "UUID": "4abab708-62f7-1cd1-c1fb-71e8fde73d8b",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "79d1625f-449a-e6aa-0b39-86e30042851a",
+              "value": true,
+              "paramval": 1,
+              "Name": "HAV_Ravengard_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e5b54a6a-e175-4627-b0e7-e8ce3a35385b",
+              "Text": {
+                "Handle": "h7bd7df28g5d67g4b05g8321g0f1d96e6903e",
+                "Value": "| Good luck out there. |"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "6b200007-b8b4-c911-1ff0-3ae6ac33ba13": {
+      "UUID": "6b200007-b8b4-c911-1ff0-3ae6ac33ba13",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "79d1625f-449a-e6aa-0b39-86e30042851a",
+              "value": false,
+              "paramval": 1,
+              "Name": "HAV_Ravengard_Hasmet"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "b509af8b-a331-47ac-8230-3b8c5ef9956b",
+              "value": true,
+              "paramval": null,
+              "Name": "HAV_Mood_State_Siege"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4483ea69-ca46-44dc-b942-a2b47f0ea86d",
+              "Text": {
+                "Handle": "h1f32f73fg7e1bg412fga5ccg69ae353e666f",
+                "Value": "|We're part of the last garrison.|"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "a23c8620-e71d-56b4-5170-97b95c767f66",
+      "Index": 0,
+      "List": [
+        "f6620372-ebd0-4511-a39d-8c2d4ad03f03"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Duke Ulder Ravengard",
+        "Type": "character",
+        "MapKey": "f6620372-ebd0-4511-a39d-8c2d4ad03f03",
+        "Name": "S_GLO_Ravengard",
+        "ParentTemplateId": null,
+        "TemplateName": "f37e77ff-18f9-466f-a860-53d3edbadcd8"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "9c26544c-e6c2-e226-1600-84d72b01a4d5",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": ""
+}

@@ -1,0 +1,127 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/LowerCity/LOW_Elfsong_AD_Patron_008.lsj",
+  "UUID": "8b010cba-6de1-cb5a-b356-773e683f4172",
+  "Category": "Repeated automated NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1
+  },
+  "RootNodes": [
+    "2edefafa-0f89-4b4e-9416-ecc988462277",
+    "4c9af7e9-a877-48f6-bd37-e63cefe5b164"
+  ],
+  "Nodes": {
+    "2edefafa-0f89-4b4e-9416-ecc988462277": {
+      "UUID": "2edefafa-0f89-4b4e-9416-ecc988462277",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc4b98d6-e7f8-4ba4-98ca-9fdfc43f2f26",
+              "value": true,
+              "paramval": 0,
+              "Name": "LOW_Elfsong_Event_RandomPatronAD_Default"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a6a0bceb-acee-436c-a7fc-a2611bcca4fd",
+              "Text": {
+                "Handle": "ha15da8b0g9104g4eb1gb16bgf13cd3444467",
+                "Value": "I wonder if this was brewed with my barley?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "The base topic of this character. You can choose between: Murders at temple, Steel Watch, Brain-Quakes, Impending coronation of Gortash, Gang war: Guild vs. Stone Men, Approaching Army of the Absolute",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "48d53979-fcae-b383-742b-8495fc467c72",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "BASE TOPIC NO HASMET",
+        "position": "15;672",
+        "sourcetemplate": "Elfsong_States"
+      }
+    },
+    "4c9af7e9-a877-48f6-bd37-e63cefe5b164": {
+      "SourceNode": "2edefafa-0f89-4b4e-9416-ecc988462277",
+      "UUID": "4c9af7e9-a877-48f6-bd37-e63cefe5b164",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N123",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "FALLBACK IF SOMETHING FAILS (BASE TOPIC NO HASMET)",
+        "position": "15;891",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cb3618eb-524f-41dd-8ac3-1ca35e1aada1",
+      "Index": 0,
+      "List": [
+        "a29c8ff1-ce29-42c0-a426-c955cdb485bd"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Dez Kanshaw",
+        "Type": "character",
+        "MapKey": "a29c8ff1-ce29-42c0-a426-c955cdb485bd",
+        "Name": "S_LOW_Elfsong_Patron_008",
+        "ParentTemplateId": null,
+        "TemplateName": "e8bb6117-3e7b-42b1-be1d-1096bc226ea8"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "AD for Dez Kanshaw, a farmer, Patron 008  at Elfsong Tavern"
+}

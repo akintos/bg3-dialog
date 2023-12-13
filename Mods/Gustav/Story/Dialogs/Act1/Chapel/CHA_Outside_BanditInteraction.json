@@ -1,0 +1,3096 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Chapel/CHA_Outside_BanditInteraction.lsj",
+  "UUID": "234c7fe2-d973-4e28-c043-046119c72a0f",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "0920da0b-0ae2-05cc-1059-2a0de5cc46b6"
+  ],
+  "Nodes": {
+    "034090e2-d6e7-9173-e893-5a7dd19f2b1f": {
+      "UUID": "034090e2-d6e7-9173-e893-5a7dd19f2b1f",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "5c2dd205-f535-27bf-55ad-b4ea2d5a86d3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "5804f55a-93f7-4281-9512-8d548a9e2a22",
+              "value": true,
+              "paramval": 2,
+              "Name": "WARLOCK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "db7e48b1-7013-0603-53dc-3e9859d321d4",
+              "Text": {
+                "Handle": "h7c636ccegd96cg4ed4ga8d4g537e8b92310f",
+                "Value": "That ship's full of poisonous vapours. Probably demonic. I'd stay away."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N51",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Warlock",
+        "position": "1935;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "0920da0b-0ae2-05cc-1059-2a0de5cc46b6": {
+      "UUID": "0920da0b-0ae2-05cc-1059-2a0de5cc46b6",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "81323220-a52f-1032-2f37-4f935e72ea1a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "21c98878-7627-0571-2439-ae5d3c4db0c7",
+              "Text": {
+                "Handle": "hdbb75bccgfe5fg48a9g841cgaf93b5d4e30d",
+                "Value": "...You're both twice as tall as me but have half the bloody backbone!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "CMitchell:, TAMAN is being berated by Gimblebock. Whether or not he thinks it's deserved, he doesn't appreciate the scolding., ANIM: _LookDown_Ashamed",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Custom scene setup",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "bandit leader speaking to his crew - annoyed with them. He's a gnome, braver than the taller characters",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Tag Greeting",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "1225ed89-7b32-c9c0-34b5-a8cd39e4c199": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "1225ed89-7b32-c9c0-34b5-a8cd39e4c199",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3d2c9c04-4cde-6973-3211-f0dcf14352b6",
+        "99e747d4-1ab8-beb1-4307-269a1d2daa7d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": false,
+              "paramval": 2,
+              "Name": "BARBARIAN"
+            },
+            {
+              "UUID": "23a46e79-e73c-4043-940f-cb0aace9ab2e",
+              "value": false,
+              "paramval": 2,
+              "Name": "ASTARION"
+            },
+            {
+              "UUID": "6d85ab2d-5c23-498c-a61e-98f05a00177a",
+              "value": false,
+              "paramval": 2,
+              "Name": "PALADIN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f9b1771e-52f2-5e30-784f-2e52d2421658",
+              "Text": {
+                "Handle": "h55c56a87g7e18g46d9g8aabgdc1e6c42afa0",
+                "Value": "The only thing you own is your life. Leave before I take that, too."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N20",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Intimidation",
+        "position": "1935;453",
+        "sourcetemplate": ""
+      }
+    },
+    "12634287-93ab-24a2-85bf-c16aa0db7609": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "5e7ff0e9-6c80-459c-a636-3a3e8417a61a",
+      "DifficultyClassValue": 12,
+      "UUID": "12634287-93ab-24a2-85bf-c16aa0db7609",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3d2c9c04-4cde-6973-3211-f0dcf14352b6",
+        "99e747d4-1ab8-beb1-4307-269a1d2daa7d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "12afada7-91d6-5043-5cdf-7ba4dbf7541c",
+              "Text": {
+                "Handle": "h89f0988ag3592g4d46gbd54g538868e8b10d",
+                "Value": "I think that ship's an invasion force. Run while you can!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N21",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Deception",
+        "position": "1935;234",
+        "sourcetemplate": ""
+      }
+    },
+    "12ffcb1c-18ad-99a5-3148-7c35de7f4bdc": {
+      "UUID": "12ffcb1c-18ad-99a5-3148-7c35de7f4bdc",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "72168b73-8b37-2443-be66-151501e07519"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": false,
+              "paramval": 2,
+              "Name": "BARBARIAN"
+            },
+            {
+              "UUID": "ab3eff19-d094-4102-88bd-d097b6b6e4f0",
+              "value": true,
+              "paramval": 2,
+              "Name": "REALLY_HALFORC"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2cd1fe75-4d6d-652b-c9f5-100a2b7a4032",
+              "Text": {
+                "Handle": "h717494c0g28f2g423cg98d1g4ad8c75d7118",
+                "Value": "Nothing's yours but your life - and I can take that from you just as easily."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N136",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "HALF-ORC",
+        "position": "1935;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "1eadea55-392e-f21f-1122-f23ddcb3f202": {
+      "UUID": "1eadea55-392e-f21f-1122-f23ddcb3f202",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "73b3d154-4b61-d980-2e35-72237b577013"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f4e45bca-71aa-eb04-2ec1-0f78c1e267ca",
+              "Text": {
+                "Handle": "h57adc6fbg90c0g4b00g8dc6ge4c3ed636ba9",
+                "Value": "I mean no harm - I'm just looking around."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N15",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "28470a4f-3f86-b142-1bbf-30332d30f547": {
+      "RollSuccess": true,
+      "UUID": "28470a4f-3f86-b142-1bbf-30332d30f547",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d5ebefc9-ef62-5482-4aec-6c2d27b7039f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N152",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "2a6b410e-8f3e-3958-eb12-959d3a197fb6": {
+      "UUID": "2a6b410e-8f3e-3958-eb12-959d3a197fb6",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ea738c8a-c88b-c322-ad81-0ce4b1e504e9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "92fa2f83-20fd-599e-efae-f7673c76c733",
+              "Text": {
+                "Handle": "h53c3ceceg2cafg4aa6g98a8g39ec5b91a732",
+                "Value": "And the crypt can wait! Mari and Barton have been trying to break in for days. Now we - <i>Stop!</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N135",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "348f2d00-fe6f-94e7-c0fb-3e96961e4d6b": {
+      "UUID": "348f2d00-fe6f-94e7-c0fb-3e96961e4d6b",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e1f79a23-b3a0-1b3f-241f-2d23143dd4c8",
+              "Text": {
+                "Handle": "ha9426b14gc106g430cg9627g33219a395da6",
+                "Value": "<i>Attack.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N18",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "3d2c9c04-4cde-6973-3211-f0dcf14352b6": {
+      "RollSuccess": true,
+      "UUID": "3d2c9c04-4cde-6973-3211-f0dcf14352b6",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c4bfc70b-4eac-398d-5044-17627b415a28"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N25",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;15",
+        "sourcetemplate": ""
+      }
+    },
+    "5c2dd205-f535-27bf-55ad-b4ea2d5a86d3": {
+      "UUID": "5c2dd205-f535-27bf-55ad-b4ea2d5a86d3",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "914318fb-55af-572e-b8dd-2a2b355f801e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a0221ac9-e880-f8e1-8a3c-b87e93050d3b",
+              "Text": {
+                "Handle": "hbcf63513g9c9ag4cbega22fg6fe86cf33eef",
+                "Value": "Poisonous wha...?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Surprise",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N53",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "surprised and a little scared - he was just told that the thing he was going to loot emits poisonous fumes.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "5dcdfbc5-7c8a-19b9-2bef-04b70bb5f632": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "5dcdfbc5-7c8a-19b9-2bef-04b70bb5f632",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3d2c9c04-4cde-6973-3211-f0dcf14352b6",
+        "99e747d4-1ab8-beb1-4307-269a1d2daa7d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "893c0005-f1c1-20b4-eea9-06682120cce2",
+              "Text": {
+                "Handle": "ha6565613gce19g459ag9243gcfc398d41772",
+                "Value": "That ship is full of monsters. I wouldn't go near it."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N49",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "1935;15",
+        "sourcetemplate": ""
+      }
+    },
+    "66dd737d-9291-b021-2b1b-5d457b248ad4": {
+      "UUID": "66dd737d-9291-b021-2b1b-5d457b248ad4",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "72168b73-8b37-2443-be66-151501e07519"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1ae7017c-4884-4a43-bc4a-742fa0d201c0",
+              "value": true,
+              "paramval": 2,
+              "Name": "FIGHTER"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "1ae7017c-4884-4a43-bc4a-742fa0d201c0"
+                ],
+                "TagNames": [
+                  "FIGHTER"
+                ]
+              }
+            ],
+            "RuleString": "FIGHTER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "c2ca9c9d-fd56-4db8-608b-9ac35c393a75",
+              "Text": {
+                "Handle": "hd63438b3g8b9fg4101gb242g59554910c049",
+                "Value": "Take your best shot - you'll only get one."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N50",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Fighter",
+        "position": "1935;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "69bbf2c4-e5b0-f276-6867-326b5075a5c8": {
+      "UUID": "69bbf2c4-e5b0-f276-6867-326b5075a5c8",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "ce616418-8df3-f3ad-f255-20ad1860e2be"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8b4b29f8-93c3-5e65-0122-50f8d90e62f1",
+              "Text": {
+                "Handle": "h6a35ad05g4872g4176g9a4agfeca89230aa7",
+                "Value": "C'mon, you lot, no point in gettin' killed. Second worm gets the cheese, an' all..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "He's still a little bit shaken from our intimidation, but tries to get over it, by proposing to wait the danger out.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;15",
+        "sourcetemplate": ""
+      }
+    },
+    "6d7d956b-e475-5f8b-7c28-ec4a49dc10e7": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "6d7d956b-e475-5f8b-7c28-ec4a49dc10e7",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e2524bf2-ba1d-97a5-3050-2a9d1e9a70b3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e1e460bb-d0ae-4452-8529-c9e176558731",
+              "value": true,
+              "paramval": 2,
+              "Name": "MONK"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9cd5e6dc-09bd-47cc-9ba1-7878e324e9a7",
+              "Text": {
+                "Handle": "h557014d9g97ceg457bga36cg6226c8836d9d",
+                "Value": "Your loud words hide fear, confusion. Looting that ship will bring you no peace. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N147",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "MONK",
+        "position": "1935;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "6ed7eee2-f485-483e-3b84-1a5c5e121b60": {
+      "UUID": "6ed7eee2-f485-483e-3b84-1a5c5e121b60",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "6fe2d59b-a249-ae82-54a0-28b857ebfd79"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8f74d144-041e-4035-a9ac-72f41fc32de7"
+                ],
+                "TagNames": [
+                  "MALE"
+                ]
+              }
+            ],
+            "RuleString": "MALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "47ff47ac-f903-3483-2457-d4675136bfa9",
+              "Text": {
+                "Handle": "h72955042gb763g4b6dgaa87g238fcb959654",
+                "Value": "What's wrong with his face? Freak."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3806477c-65a7-4100-9f92-be4c12c4fa4f"
+                ],
+                "TagNames": [
+                  "FEMALE"
+                ]
+              }
+            ],
+            "RuleString": "FEMALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "c6737098-1459-a98c-24d5-ade9f3988432",
+              "Text": {
+                "Handle": "h4b14ed9dgf6b9g4a54ga860gd0ed01ff3db2",
+                "Value": "What's wrong with her face? Freak."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8bffcebd-5d40-4c0a-ac04-9f1498f84521",
+              "Text": {
+                "Handle": "hc67088b0gc3b0g4279g9ee6g2f935ba46c87",
+                "Value": "What's wrong with their face? Freak."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N72",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Unnerved and hostile upon seeing someone of a species not common to this world (a githyanki - yellow skin, black eyes, pointed ears and high, flat nose).",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "6fe2d59b-a249-ae82-54a0-28b857ebfd79": {
+      "UUID": "6fe2d59b-a249-ae82-54a0-28b857ebfd79",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8f74d144-041e-4035-a9ac-72f41fc32de7"
+                ],
+                "TagNames": [
+                  "MALE"
+                ]
+              }
+            ],
+            "RuleString": "MALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "f803f7ae-4557-8cd4-753b-d98ec1dcf1f1",
+              "Text": {
+                "Handle": "h5ff7516bg1da2g4d3bgaa62g65fcf732a16c",
+                "Value": "<i>Dead</i> freak. Get 'im!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3806477c-65a7-4100-9f92-be4c12c4fa4f"
+                ],
+                "TagNames": [
+                  "FEMALE"
+                ]
+              }
+            ],
+            "RuleString": "FEMALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "2dc82336-420f-f72d-08bf-0e37ebae43c9",
+              "Text": {
+                "Handle": "h28e337dcg65b7g4a08g8b63g6d44b9b76370",
+                "Value": "<i>Dead</i> freak. Get 'er!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1e5a1d60-64c0-4944-8180-e8eeb29c7cb0",
+              "Text": {
+                "Handle": "ha5841d73ge6b7g49f0ga165gf7060b4391ab",
+                "Value": "<i>Dead</i> freak. Get 'em!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N73",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "hostile upon seeing someone of a species not common to this world",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "72168b73-8b37-2443-be66-151501e07519": {
+      "UUID": "72168b73-8b37-2443-be66-151501e07519",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b92de5dc-8b8a-d6cd-e677-4605a8c61d0b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6fcdb8c8-e541-5a77-51f1-9c032b328cad",
+              "Text": {
+                "Handle": "h0b2f3770g23c5g4fd1g9c34g6f172b2bf91c",
+                "Value": "Oh yeah? Well, we're... we're -"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N52",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The player just taunted him, and he's trying to retort, but he's very intimidated.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "73b3d154-4b61-d980-2e35-72237b577013": {
+      "UUID": "73b3d154-4b61-d980-2e35-72237b577013",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "95b7e274-d7b0-e250-c933-f191cb3b5b72"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7635e2d9-e75c-3409-32ba-112448afa0c7",
+              "Text": {
+                "Handle": "h67cc6d57g251ag40efgab63gd0ba81527f4a",
+                "Value": "First you look, then you touch, then you take!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N22",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "He's not happy with the player saying they're just looking around, and he's going to attack soon.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "76379dd9-9fbd-17f2-1686-a5241cecbc51": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Strength",
+      "RollAdvantage": 0,
+      "RollType": "",
+      "DifficultyClassID": "8d398021-34e0-40b9-b7b2-0445f38a4c0b",
+      "DifficultyClassValue": 5,
+      "UUID": "76379dd9-9fbd-17f2-1686-a5241cecbc51",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "28470a4f-3f86-b142-1bbf-30332d30f547",
+        "8d7ae68c-13dc-96f6-221d-e297dbf9a926"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 2,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b0f5d101-d3df-4daa-9c9e-1d750c42e3f1",
+              "Text": {
+                "Handle": "hbc540ccegf1fag4a85g8a81g44f1caa47c45",
+                "Value": "I don't want to hurt you, but provoke me, and I'll keep stabbing long after you're dead."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N151",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Ability_Strength",
+        "position": "1935;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "7a3b0d49-750d-cd3f-0de2-b3f6e7455412": {
+      "UUID": "7a3b0d49-750d-cd3f-0de2-b3f6e7455412",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "6ed7eee2-f485-483e-3b84-1a5c5e121b60"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f73bef12-75e5-68a2-6491-e00629670d1d",
+              "Text": {
+                "Handle": "h8be470cfg7011g4076g946dg60cd9e572178",
+                "Value": "Oh yeah? Well, I don't see any of your kin here to claim it!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N71",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Replying to a player saying the ship he wants is their kin's prize. He thinks he's got the upper hand.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "7c72de5f-efdd-9428-fffd-0cbaae61e20d": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "7c72de5f-efdd-9428-fffd-0cbaae61e20d",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3d2c9c04-4cde-6973-3211-f0dcf14352b6",
+        "99e747d4-1ab8-beb1-4307-269a1d2daa7d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": true,
+              "paramval": 2,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "ac3449f7-c09b-4bc0-8634-fcff97d49279"
+                ],
+                "TagNames": [
+                  "BERSERKER"
+                ]
+              }
+            ],
+            "RuleString": "BERSERKER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7ec6daf-bfc5-4497-8760-b05cb19e763f",
+              "Text": {
+                "Handle": "h4b7887ecgc931g417bg898bga2413ab3db65",
+                "Value": "<b>MINE.</b>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5c46aa28-15c8-4599-94d4-861e1ebbf25c",
+              "Text": {
+                "Handle": "h15a147eeg6621g4d01g9dcdged1eade068e2",
+                "Value": "Not yours - mine. Leave. <b>Now.</b>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N140",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "BARBARIAN Skill_Intimidation",
+        "position": "1935;672",
+        "sourcetemplate": ""
+      }
+    },
+    "81323220-a52f-1032-2f37-4f935e72ea1a": {
+      "UUID": "81323220-a52f-1032-2f37-4f935e72ea1a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "bb514728-0382-076c-3c4d-cf5e7ac29247"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "a3a24dc6-1775-41d7-8b48-cf9f7fb9d9f7",
+              "value": true,
+              "paramval": 2,
+              "Name": "CHA_Chapel.BanditTalking"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4d7af863-1395-ed30-3631-ae3d16671021",
+              "Text": {
+                "Handle": "h44bd974eg7e01g478ag8261g896732fcec2d",
+                "Value": "But we don't know what that <i>thing </i>even is! And what about the crypt?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N3",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Arguing for caution - they've never seen the likes of the ship that crashed before. It could be dangerous.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "655;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "8259d8d3-b028-ebde-487a-00e8dfc77d27": {
+      "UUID": "8259d8d3-b028-ebde-487a-00e8dfc77d27",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "7a3b0d49-750d-cd3f-0de2-b3f6e7455412"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "e49c027c-6ec6-4158-9afb-8b59236d10fd",
+              "value": true,
+              "paramval": 2,
+              "Name": "REALLY_GITHYANKI"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3822387b-8506-bc22-8817-e15a05c7ff1a",
+              "Text": {
+                "Handle": "h549d9f21g90f4g4891gb985g6a2d32d077b2",
+                "Value": "That is my kin's prize, not yours."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N68",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Really Gith",
+        "position": "1935;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "87482a98-79f1-24d8-4084-d3a99c795b7a": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "87482a98-79f1-24d8-4084-d3a99c795b7a",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e2524bf2-ba1d-97a5-3050-2a9d1e9a70b3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "6d85ab2d-5c23-498c-a61e-98f05a00177a",
+              "value": true,
+              "paramval": 2,
+              "Name": "PALADIN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6e4c63ce-1502-4db9-b6c2-c7adf1b33d07",
+              "Text": {
+                "Handle": "h476ce9ccg3728g43a7gae1ega915b7709336",
+                "Value": "Selfish cur - there might be survivors, yet you think only of loot. Leave before I <i>make </i>you leave. "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N143",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "PALADIN Skill_Intimidation",
+        "position": "1935;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "8d7ae68c-13dc-96f6-221d-e297dbf9a926": {
+      "RollSuccess": false,
+      "UUID": "8d7ae68c-13dc-96f6-221d-e297dbf9a926",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ce87eb60-a8a4-15ea-eb16-01b0055d535f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N153",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "914318fb-55af-572e-b8dd-2a2b355f801e": {
+      "UUID": "914318fb-55af-572e-b8dd-2a2b355f801e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "beac49ad-1e9b-0c08-7806-3f99da225a8f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ad99c5c4-a835-7120-6dd7-ecc1a0352ada",
+              "Text": {
+                "Handle": "he045beb3g2726g43ffg83b5g9031150c7cc7",
+                "Value": "See? That thing could be carrying a plague for all we know!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N54",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "His/her fears are validated - they should clear off rather than court danger.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "95b7e274-d7b0-e250-c933-f191cb3b5b72": {
+      "UUID": "95b7e274-d7b0-e250-c933-f191cb3b5b72",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8f74d144-041e-4035-a9ac-72f41fc32de7"
+                ],
+                "TagNames": [
+                  "MALE"
+                ]
+              }
+            ],
+            "RuleString": "MALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "575c151a-e1a8-5fcc-baa2-0caa67cb9d82",
+              "Text": {
+                "Handle": "hf79b4b28g8f43g498aga8e2gfb878f7f6170",
+                "Value": "The only thing we're sharing with you is our pointy ends - get 'im!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3806477c-65a7-4100-9f92-be4c12c4fa4f"
+                ],
+                "TagNames": [
+                  "FEMALE"
+                ]
+              }
+            ],
+            "RuleString": "FEMALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "c37f5cab-9134-1930-2f64-e48efc7ff1c2",
+              "Text": {
+                "Handle": "h61835925gce5dg4a5bg895fg5a5caa04ad33",
+                "Value": "The only thing we're sharing with you is our pointy ends - get 'er!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5ddbe1ad-9d1d-4ed6-9dc9-b751babc6b66",
+              "Text": {
+                "Handle": "hf8a5e868gd936g47e4g9d33g40cb2ba79d1f",
+                "Value": "The only thing we're sharing with you is our pointy ends - get 'em!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N23",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "He's going to attack the player, who just said they were just looking around.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "99e747d4-1ab8-beb1-4307-269a1d2daa7d": {
+      "RollSuccess": false,
+      "UUID": "99e747d4-1ab8-beb1-4307-269a1d2daa7d",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a800c0bf-29e1-3e9f-5ff6-581b7dcf0f2f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N27",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2255;234",
+        "sourcetemplate": ""
+      }
+    },
+    "a800c0bf-29e1-3e9f-5ff6-581b7dcf0f2f": {
+      "UUID": "a800c0bf-29e1-3e9f-5ff6-581b7dcf0f2f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "de5b6976-9695-a66c-fd4c-4194d10c14e2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c5a9d3b3-2e89-3e4d-640b-26fa2a191297",
+              "Text": {
+                "Handle": "hf4bea2aeg3ff9g4a6dgba46g144ef99aa917",
+                "Value": "You're all hot air - think you can get us to leave that bounty to you? Not a chance!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Arrogance",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N78",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Looking down on the player (figuratively, not literally) - we tried to scare him away, but he won't be intimidated. He's going to attack soon.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;234",
+        "sourcetemplate": ""
+      }
+    },
+    "b064bee6-d797-0e86-ae52-6f889771ff96": {
+      "JumpTarget": "a800c0bf-29e1-3e9f-5ff6-581b7dcf0f2f",
+      "JumpTargetPoint": 1,
+      "UUID": "b064bee6-d797-0e86-ae52-6f889771ff96",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N156",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "b92de5dc-8b8a-d6cd-e677-4605a8c61d0b": {
+      "UUID": "b92de5dc-8b8a-d6cd-e677-4605a8c61d0b",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "beac49ad-1e9b-0c08-7806-3f99da225a8f"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8f74d144-041e-4035-a9ac-72f41fc32de7"
+                ],
+                "TagNames": [
+                  "MALE"
+                ]
+              }
+            ],
+            "RuleString": "MALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "028a49eb-9c1c-a292-f2be-e5a08ed7f36d",
+              "Text": {
+                "Handle": "hfb00b3c1g93c1g45eagb62cg6fa6a3b58a12",
+                "Value": "I ain't fighting him. Not a chance."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3806477c-65a7-4100-9f92-be4c12c4fa4f"
+                ],
+                "TagNames": [
+                  "FEMALE"
+                ]
+              }
+            ],
+            "RuleString": "FEMALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "042d22d0-d7b1-cac6-9055-b9b0be477e87",
+              "Text": {
+                "Handle": "h433a75a0g0c20g40feg8dc8g86cbbc6de5e5",
+                "Value": "I ain't fighting her. Not a chance."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b3ef9069-b1b4-44d2-8ea2-d835de18c4d8",
+              "Text": {
+                "Handle": "h10564921g388eg40cdgb555g2053c2d292b3",
+                "Value": "I ain't fighting them. Not a chance."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N58",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Decides that the player isn't someone to mess with; tells his/her superior in no uncertain terms that they don't have his back if a fight breaks out.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "bb514728-0382-076c-3c4d-cf5e7ac29247": {
+      "UUID": "bb514728-0382-076c-3c4d-cf5e7ac29247",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "2a6b410e-8f3e-3958-eb12-959d3a197fb6"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8be0ff41-c3a3-a90f-7a08-5b207544e48e",
+              "Text": {
+                "Handle": "h058eae79g6aa2g491bg8e64gb102c00454ee",
+                "Value": "I'm telling you - it's a ship."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N48",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "the 'crypt' is inside the chapel they're standing outside. 'Thing' refers back to that. 'STOP!\" is him interrupting himself because he's just seen the players approaching",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "beac49ad-1e9b-0c08-7806-3f99da225a8f": {
+      "UUID": "beac49ad-1e9b-0c08-7806-3f99da225a8f",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "afe707eb-108a-d6c0-3c32-69c3eb12a589",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_OUTSIDE_Event_BanditScared"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4fbeb120-7e56-4974-a615-bd65b896ecb0",
+              "value": true,
+              "paramval": 2,
+              "Name": "HIDDEN_WLD_Boosters.CHA_Chapel_BanditTalking"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "18be74cd-c698-489d-16f2-863b45245469",
+              "Text": {
+                "Handle": "hb86b72f8g61fag41e9g9ea2g26eecc609088",
+                "Value": "...We're, uh... we're leaving! C'mon, move it!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N59",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "He's intimidated/scared and his subordunate just told him she doesn't want to fight, so he's backing out of the fight.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "c4bfc70b-4eac-398d-5044-17627b415a28": {
+      "UUID": "c4bfc70b-4eac-398d-5044-17627b415a28",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "69bbf2c4-e5b0-f276-6867-326b5075a5c8"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6108c703-4e5e-cd0f-b0a7-e6f784f344d7",
+              "Text": {
+                "Handle": "he054800ag96b4g4436gb4d8gdd0ad1c1a534",
+                "Value": "Well, uh, in that case..."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Fear",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N83",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "We scared the gnome off from attacking us or investigating the crashed ship, though he doesn't really want to show it too much.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2575;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ce616418-8df3-f3ad-f255-20ad1860e2be": {
+      "UUID": "ce616418-8df3-f3ad-f255-20ad1860e2be",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d0542c18-d9da-6ce5-2a83-5ff434cc6d21"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "df143cef-e3f5-520b-3499-14d3ed479991",
+              "Text": {
+                "Handle": "h73e77ed5g447cg481bgaf05gc7546ab2192e",
+                "Value": "Uh, second <i>mouse </i>gets the cheese, no?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "Underling hesitantly chimes in, correcting the gnome's mixed metaphor.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Neutral",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N64",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "Hesitantly chiming in to correct the boss's mixed metaphor: 'the second worm gets the cheese'.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ce87eb60-a8a4-15ea-eb16-01b0055d535f": {
+      "JumpTarget": "a800c0bf-29e1-3e9f-5ff6-581b7dcf0f2f",
+      "JumpTargetPoint": 1,
+      "UUID": "ce87eb60-a8a4-15ea-eb16-01b0055d535f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N155",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "cf5f7a4c-b478-d65c-ee23-a4357684b0da": {
+      "UUID": "cf5f7a4c-b478-d65c-ee23-a4357684b0da",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "b064bee6-d797-0e86-ae52-6f889771ff96"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cd611d7d-b67d-42b4-a75c-a0c6091ef8a2",
+              "value": true,
+              "paramval": 2,
+              "Name": "REALLY_DARK_URGE"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "bfcd6f43-5aa5-4bcc-871c-b366ea9661b0",
+              "Text": {
+                "Handle": "ha5573e3fg8ed9g4c15ga380g270059b7f63b",
+                "Value": "I am not competition. I am annihilation."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N150",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1935;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "d0542c18-d9da-6ce5-2a83-5ff434cc6d21": {
+      "UUID": "d0542c18-d9da-6ce5-2a83-5ff434cc6d21",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3aa5b4d0-6615-a336-12c5-6519ee1c8200",
+              "value": true,
+              "paramval": 2,
+              "Name": "CHA_Outside_BanditInteraction_SpeakerPersuadedBandits"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "afe707eb-108a-d6c0-3c32-69c3eb12a589",
+              "value": true,
+              "paramval": null,
+              "Name": "CHA_OUTSIDE_Event_BanditScared"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "4fbeb120-7e56-4974-a615-bd65b896ecb0",
+              "value": true,
+              "paramval": 2,
+              "Name": "HIDDEN_WLD_Boosters.CHA_Chapel_BanditTalking"
+            }
+          ],
+          "Type": "Quest"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "69f1f9ff-ca0d-4ed7-7ae9-7d4428f1d802",
+              "Text": {
+                "Handle": "he885a596ge980g4a77g9ab6g7a8c288e812e",
+                "Value": "Nobody's getting any damn cheese! Now move it!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N28",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Annoyed because his underling corrected him on mixing up a methaphor. He isn't shouting too lood, because he just got intimidated and doesn't want to make too big of a scene.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d5ebefc9-ef62-5482-4aec-6c2d27b7039f": {
+      "JumpTarget": "c4bfc70b-4eac-398d-5044-17627b415a28",
+      "JumpTargetPoint": 1,
+      "UUID": "d5ebefc9-ef62-5482-4aec-6c2d27b7039f",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N154",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "de5b6976-9695-a66c-fd4c-4194d10c14e2": {
+      "UUID": "de5b6976-9695-a66c-fd4c-4194d10c14e2",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "8f74d144-041e-4035-a9ac-72f41fc32de7"
+                ],
+                "TagNames": [
+                  "MALE"
+                ]
+              }
+            ],
+            "RuleString": "MALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "89001918-aad1-9470-2ed5-112087a27e62",
+              "Text": {
+                "Handle": "hf23f1752gb942g473egb2d4gf9375f2f22ed",
+                "Value": "What're you lot waiting for? <i>Get 'im!</i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "3806477c-65a7-4100-9f92-be4c12c4fa4f"
+                ],
+                "TagNames": [
+                  "FEMALE"
+                ]
+              }
+            ],
+            "RuleString": "FEMALE"
+          },
+          "TagTexts": [
+            {
+              "LineId": "78b3e6bb-e010-b6c8-2f6e-770dd8d82b1b",
+              "Text": {
+                "Handle": "hba15f002gf6a5g40f4g915ag422cbb4509f7",
+                "Value": "What're you lot waiting for? <i>Get 'er!</i>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0ebce414-ebba-4254-a327-82f77e662cc2",
+              "Text": {
+                "Handle": "h024e3bbbge22ag4b78gaa49gf0d3bd5dfb4f",
+                "Value": "What're you lot waiting for? <i>Get 'em!</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N29",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Ordering his underlings to kill the player.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;234",
+        "sourcetemplate": ""
+      }
+    },
+    "e2524bf2-ba1d-97a5-3050-2a9d1e9a70b3": {
+      "JumpTarget": "5dcdfbc5-7c8a-19b9-2bef-04b70bb5f632",
+      "JumpTargetPoint": 2,
+      "UUID": "e2524bf2-ba1d-97a5-3050-2a9d1e9a70b3",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N146",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "ea738c8a-c88b-c322-ad81-0ce4b1e504e9": {
+      "UUID": "ea738c8a-c88b-c322-ad81-0ce4b1e504e9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "76379dd9-9fbd-17f2-1686-a5241cecbc51",
+        "cf5f7a4c-b478-d65c-ee23-a4357684b0da",
+        "1eadea55-392e-f21f-1122-f23ddcb3f202",
+        "5dcdfbc5-7c8a-19b9-2bef-04b70bb5f632",
+        "12634287-93ab-24a2-85bf-c16aa0db7609",
+        "1225ed89-7b32-c9c0-34b5-a8cd39e4c199",
+        "7c72de5f-efdd-9428-fffd-0cbaae61e20d",
+        "f9392f9d-46e3-3b47-30f8-dee0edfc52fb",
+        "6d7d956b-e475-5f8b-7c28-ec4a49dc10e7",
+        "87482a98-79f1-24d8-4084-d3a99c795b7a",
+        "8259d8d3-b028-ebde-487a-00e8dfc77d27",
+        "12ffcb1c-18ad-99a5-3148-7c35de7f4bdc",
+        "66dd737d-9291-b021-2b1b-5d457b248ad4",
+        "034090e2-d6e7-9173-e893-5a7dd19f2b1f",
+        "348f2d00-fe6f-94e7-c0fb-3e96961e4d6b"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "677ffa76-2562-4217-873e-2253d4720ba4"
+                ],
+                "TagNames": [
+                  "GITHYANKI"
+                ]
+              }
+            ],
+            "RuleString": "GITHYANKI"
+          },
+          "TagTexts": [
+            {
+              "LineId": "43d81b6d-aee6-71cb-2e34-820dcdeb6faf",
+              "Text": {
+                "Handle": "h1cbb2a5fg6c7eg45a4gbb0dg73e8cc2d55c9",
+                "Value": "Got ourselves competition already! I dunno what the hells you are, but that's our ship!"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ed020fa8-0b77-1be0-627b-05b71e07f1ae",
+              "Text": {
+                "Handle": "h1e6e802fgf352g49c6g95bege76a41859a1a",
+                "Value": "Got ourselves competition already! That's our ship!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "'competition' refers to the players. He's seen them coming",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f9392f9d-46e3-3b47-30f8-dee0edfc52fb": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "f9392f9d-46e3-3b47-30f8-dee0edfc52fb",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 2,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "3d2c9c04-4cde-6973-3211-f0dcf14352b6",
+        "99e747d4-1ab8-beb1-4307-269a1d2daa7d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "23a46e79-e73c-4043-940f-cb0aace9ab2e",
+              "value": true,
+              "paramval": 2,
+              "Name": "ASTARION"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f9fb70b8-d20a-689e-5d27-607d441c61f7",
+              "Text": {
+                "Handle": "h39d18368g7d2eg49b4ga457gb185dc674054",
+                "Value": "<i>Just grin, baring your fangs.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N134",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Intimidation",
+        "position": "1935;891",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "2b06f65a-b7b4-0a97-f398-6cd90e3157e5",
+      "Index": 0,
+      "List": [
+        "538e38b9-e3a4-452a-8369-60eb1fe8c40d"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Gimblebock",
+        "Type": "character",
+        "MapKey": "538e38b9-e3a4-452a-8369-60eb1fe8c40d",
+        "Name": "S_CHA_Exterior_Bandit_Melee_01",
+        "ParentTemplateId": null,
+        "TemplateName": "3bb99c77-8d7b-4122-a085-c3bdb4d0d944"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "370a1534-da54-34e5-a6cc-a557f67b83ad",
+      "Index": 1,
+      "List": [
+        "b5c913f9-f081-45bd-8e95-e34d0735b645"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Taman",
+        "Type": "character",
+        "MapKey": "b5c913f9-f081-45bd-8e95-e34d0735b645",
+        "Name": "S_CHA_Exterior_Bandit_Melee_02",
+        "ParentTemplateId": null,
+        "TemplateName": "09355aa0-4e04-4ea7-86dc-928dae84ef12"
+      },
+      "SpeakerGroupName": null
+    },
+    "2": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "4903e721-90c8-6819-dd7e-7fa1b8744774",
+      "Index": 2,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "The bandits are encountered near an abandoned chapel and are in the middle of an argument among themselves about whether or not to investigate (and loot) the crashed nautoloid (a spaceship) when the player approaches them. The player can convince them to clear off via lies or threats, or else is forced to fight them. A gnome named Gimblebock is in charge of this group, with his underlings, Quelanna and/or Taman, chiming in at points with their concerns."
+}

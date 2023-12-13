@@ -1,0 +1,584 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_GoblinPriest_Cellar.lsj",
+  "UUID": "7ff272ea-b561-10e5-7114-1a7c7186a70d",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1
+  },
+  "RootNodes": [
+    "c5c19d01-47d8-024c-5b07-13dcd6a2ddff",
+    "b8e7cac8-2672-e82b-e76c-b49373baf131",
+    "0f2d5806-d325-1319-f6cc-d1007ae43744",
+    "ae548d90-03a4-eb17-63e5-38b3d335da30",
+    "c9d884f5-85a8-c53d-ff78-a21f6cabcb8f"
+  ],
+  "Nodes": {
+    "0f2d5806-d325-1319-f6cc-d1007ae43744": {
+      "UUID": "0f2d5806-d325-1319-f6cc-d1007ae43744",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "5795dead-e436-8412-c60f-608ae21670d3"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cbf4c784-ca27-2ea8-6153-416bd3c48f97",
+              "value": true,
+              "paramval": 0,
+              "Name": "GOB_GoblinPriest_Event_AwaitCeremorphosis"
+            },
+            {
+              "UUID": "f3d570f7-deb2-d18c-1043-c2a49e7d8783",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_GoblinPriest_Quest_WasChained"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2354dfaa-1d7f-9cbe-cd8a-f020b12efecd",
+              "Text": {
+                "Handle": "h5b351a8fgb8d9g4511gb7f2gc052d307e950",
+                "Value": "What are you doing in here?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "Not chained character tries to talk to the priest while he is in his room",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "startled, angry",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Was not chained, priest moved away",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "5795dead-e436-8412-c60f-608ae21670d3": {
+      "UUID": "5795dead-e436-8412-c60f-608ae21670d3",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3f6db03f-81c1-6693-b3c3-070a1176b1db",
+              "Text": {
+                "Handle": "hd4809c7ag103dg425fgafa9g7b950765bcea",
+                "Value": "I'm gonna split your head open!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "yelling across room, attacking",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Priestess Gut draws weapon",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;15",
+        "sourcetemplate": ""
+      }
+    },
+    "ae548d90-03a4-eb17-63e5-38b3d335da30": {
+      "UUID": "ae548d90-03a4-eb17-63e5-38b3d335da30",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e7b370bd-dd98-cc1d-fc5c-86b753aa604f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "cbf4c784-ca27-2ea8-6153-416bd3c48f97",
+              "value": true,
+              "paramval": 0,
+              "Name": "GOB_GoblinPriest_Event_AwaitCeremorphosis"
+            },
+            {
+              "UUID": "f3d570f7-deb2-d18c-1043-c2a49e7d8783",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GoblinPriest_Quest_WasChained"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fc43f198-188a-18a1-1c8f-0dbd974314a1",
+              "Text": {
+                "Handle": "h955cd87eg57ebg4c93g8536gb5ccf5eccccb",
+                "Value": "You ain't going nowhere!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N5",
+        "InternalNodeContext": "Not chained character tries to talk to the priest while he is in his room",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "startled, angry",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Was chained, priest moved away",
+        "position": "15;234",
+        "sourcetemplate": ""
+      }
+    },
+    "b8e7cac8-2672-e82b-e76c-b49373baf131": {
+      "UUID": "b8e7cac8-2672-e82b-e76c-b49373baf131",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "97c3a596-e927-9cfb-b5a7-1c591e7382a2",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_GoblinPriest_Quest_PlayerEscaped"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f3d570f7-deb2-d18c-1043-c2a49e7d8783",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_GoblinPriest_Quest_WasChained"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f020f14c-355c-4069-9e7c-5f4ecf5bf0a4",
+              "Text": {
+                "Handle": "h866b4517g4edeg4fd1ga4fbgc88ae136846a",
+                "Value": "How'd you escape? I'll chop you to messes!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N9",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "startled, attacking",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Priestess Gut draws weapon",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Returned after long rest",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "c5c19d01-47d8-024c-5b07-13dcd6a2ddff": {
+      "UUID": "c5c19d01-47d8-024c-5b07-13dcd6a2ddff",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "97c3a596-e927-9cfb-b5a7-1c591e7382a2",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_GoblinPriest_Quest_PlayerEscaped"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "f3d570f7-deb2-d18c-1043-c2a49e7d8783",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_GoblinPriest_Quest_WasChained"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "aa9e1c4b-0cea-29dd-e594-c4aad197080a",
+              "Text": {
+                "Handle": "h7a544300gad23g425dgb54ege8c43bcbd5ec",
+                "Value": "Careful - there's monsters on the loose. And I ain't talking about worgs and ogres."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N2",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "nervous, warning us",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Returned after long rest",
+        "position": "15;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "c9d884f5-85a8-c53d-ff78-a21f6cabcb8f": {
+      "UUID": "c9d884f5-85a8-c53d-ff78-a21f6cabcb8f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "074c4ce1-f716-84a3-8b19-e992b3148dc3",
+              "Text": {
+                "Handle": "h9081e05eg203dg4be2ga50dg79cdc0881646",
+                "Value": "Clear off!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N6",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "yelling",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Fallback",
+        "position": "15;453",
+        "sourcetemplate": ""
+      }
+    },
+    "e7b370bd-dd98-cc1d-fc5c-86b753aa604f": {
+      "UUID": "e7b370bd-dd98-cc1d-fc5c-86b753aa604f",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "d73ce44b-1b9a-2e02-f29a-d8e9e68c7edc",
+              "value": true,
+              "paramval": 0,
+              "Name": "FactionHostileToPlayerGroupAfterDialog"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4cd581bc-753f-d278-3ca9-c931d9dc1f90",
+              "Text": {
+                "Handle": "h538754e2g4079g4188gb8deg2bcdb93f69c6",
+                "Value": "I'm gonna split your head open!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N4",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "yelling across room, attacking",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "Priestess Gut draws weapon",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;234",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "3be56228-f093-61f8-4e6e-caea3f4f0a9f",
+      "Index": 0,
+      "List": [
+        "b983c336-9a14-4e9b-adb9-4689e7e0afa9"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "True Soul Gut",
+        "Type": "character",
+        "MapKey": "b983c336-9a14-4e9b-adb9-4689e7e0afa9",
+        "Name": "S_GOB_GoblinPriest",
+        "ParentTemplateId": null,
+        "TemplateName": "9e9000e1-c4cf-42cf-8f5c-60e4cda2bca5"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e1da0fa4-5d84-9b02-3c74-73a1f54c845c",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "the priestess reacts to seeing the player when they've either escaped her clutches or trespessed in her private chapel"
+}

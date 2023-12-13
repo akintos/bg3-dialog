@@ -1,0 +1,4957 @@
+{
+  "Path": "Mods/Gustav/Story/Dialogs/Act1/Goblin/GOB_ChickenChase_Owlbear.lsj",
+  "UUID": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1,
+    "2": -1,
+    "3": -1
+  },
+  "RootNodes": [
+    "6e468230-bafc-bdc4-a7a0-0fbebbf798f7",
+    "dab239b8-025b-cf46-1745-d2ebf8cb9d9a",
+    "96e34773-2b73-3ae5-7b2b-1bbb134cb249",
+    "86b0e5af-271c-edfe-4b6b-7b0d51a03f25",
+    "dab0c6d9-f5d1-16f0-ed7d-165cea3948e7",
+    "76e6e917-50e9-1c54-ac32-79d176f4296c",
+    "cbc16f8a-d1a1-3150-ff77-53ae32ad0348",
+    "55395fef-5ce7-0228-0012-e0efb77aadde",
+    "6fda0ccc-c0ca-249d-9a67-ebd4f335840c",
+    "309d5ad1-a0cc-c439-4cfd-2c229a8102a7",
+    "28cceb03-fa8e-86df-ac6a-b3e2b859421c",
+    "aab4a4fb-55b1-3342-f956-2afb0b10a828",
+    "58d942a6-4b53-ce36-476b-69c96c98f29a"
+  ],
+  "Nodes": {
+    "0192183d-d5f7-befe-5a6b-3da3ff82ae04": {
+      "UUID": "0192183d-d5f7-befe-5a6b-3da3ff82ae04",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0096ab76-2cdf-a136-c947-47bb5fd0ae40",
+              "Text": {
+                "Handle": "hde1c1d2dg3463g4a82gb942g67e11adbe0a9",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N276",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "01ed056d-d0d4-024e-da54-7e8a3640a700": {
+      "JumpTarget": "a7f0f83a-bae6-e867-187c-d87d8f6ec264",
+      "JumpTargetPoint": 1,
+      "UUID": "01ed056d-d0d4-024e-da54-7e8a3640a700",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N337",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "0d49aca3-c896-c559-38f0-b71746bfc057": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "0d49aca3-c896-c559-38f0-b71746bfc057",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c66e4277-c654-5a30-c549-2ec2839c9ffd",
+        "d3e19347-c8b0-4b1a-b17b-5368c6e86777"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "00e3ce05-37b6-6205-907f-873da1679b3c",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_Knows_ChaseRules"
+            },
+            {
+              "UUID": "afefbe32-abfc-4bd0-b0f7-d11206a2c7cc",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_BallOnField"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": false,
+              "paramval": 1,
+              "Name": "RANGER"
+            },
+            {
+              "UUID": "44ac4317-4d38-4d28-80e2-94024c6e42f0",
+              "value": false,
+              "paramval": 1,
+              "Name": "DRUID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1833f2f1-f59c-9679-00d1-fbebdb5edb65",
+              "Text": {
+                "Handle": "h1a318daag6544g4999gaacdg0cc849ffdb3d",
+                "Value": "See those posts? Run toward them."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N188",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "1615;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "10402276-5a5b-b905-e8fb-de2daa77a24c": {
+      "UUID": "10402276-5a5b-b905-e8fb-de2daa77a24c",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8a701006-69d0-95c3-6b91-48197dc5bb47",
+        "f3bd5f13-69f5-ff6d-8978-ed8593070008",
+        "9c77ede9-e604-4528-5803-b3282334e686"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2b4acc5e-fe2f-0f0b-8945-043403b50e2f",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_OwlbearCub_Event_InvitedToCamp"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2b4acc5e-fe2f-0f0b-8945-043403b50e2f",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_OwlbearCub_Event_InvitedToCamp"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a342b1d2-b2b4-da42-d3cb-ae162f5c84f1",
+              "Text": {
+                "Handle": "h0f32af83gc1c8g4281gbfb9ga34ebc0502ea",
+                "Value": "<i>Offer him your hand. He can follow your scent to your camp in the wilderness.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N278",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "2575;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "1b20afbd-3a0d-22d2-e2c1-9c40be06b807": {
+      "JumpTarget": "4079d368-c3e2-d6ce-03cf-69b48c76a62e",
+      "JumpTargetPoint": 1,
+      "UUID": "1b20afbd-3a0d-22d2-e2c1-9c40be06b807",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N183",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3215;5271",
+        "sourcetemplate": ""
+      }
+    },
+    "1bc99212-8e05-67f3-57cc-96d50887f007": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "1bc99212-8e05-67f3-57cc-96d50887f007",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7c3f2914-276e-eb81-435c-55db77784195",
+        "fc742314-4f9b-df85-7dc4-2f29c99e2bd5"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "00e3ce05-37b6-6205-907f-873da1679b3c",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_Knows_ChaseRules"
+            },
+            {
+              "UUID": "afefbe32-abfc-4bd0-b0f7-d11206a2c7cc",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_BallOnField"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "44ac4317-4d38-4d28-80e2-94024c6e42f0",
+                  "37a733c1-a862-4157-b92a-9cff46232c6a"
+                ],
+                "TagNames": [
+                  "DRUID",
+                  "RANGER"
+                ]
+              }
+            ],
+            "RuleString": "DRUID or RANGER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "60bf71c6-20b7-c389-fe94-54c010525346",
+              "Text": {
+                "Handle": "h7a4289e8g1122g47b7g9143gcc7eea0def1c",
+                "Value": "<i>Nod to the goalposts - he'll be safe there.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N129",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid / Ranger",
+        "position": "2575;5271",
+        "sourcetemplate": ""
+      }
+    },
+    "1ca11256-ae41-1bbf-457c-996fbaf0e798": {
+      "UUID": "1ca11256-ae41-1bbf-457c-996fbaf0e798",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3495d1c0-f2e7-4dfc-a7e8-890774484fd9",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_AngeredOwlbear"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "6daea63b-c134-7f0c-255c-cf7720d0217d",
+              "Text": {
+                "Handle": "h7a5c27e3gc1aeg452bgbd0fgc3d297a2713d",
+                "Value": "*The cub's feathers ruffle in distrust. With a defiant squawk, he bounds away.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] coaxes [owlbear cub] forward, Owlbear doesnt follow, not trusting the [player]",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N115",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "refusing screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "1ffb2fd9-9dd8-b0b9-c113-a0a3bfa24aac": {
+      "JumpTarget": "6ba808c2-ce68-1838-0c5e-3915d9681233",
+      "JumpTargetPoint": 1,
+      "UUID": "1ffb2fd9-9dd8-b0b9-c113-a0a3bfa24aac",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N345",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;672",
+        "sourcetemplate": ""
+      }
+    },
+    "227dceca-2008-796c-b6a4-4d43af1cfb1b": {
+      "JumpTarget": "6b5ab48e-02cd-ea14-289d-e7b3e8d45e65",
+      "JumpTargetPoint": 1,
+      "UUID": "227dceca-2008-796c-b6a4-4d43af1cfb1b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N328",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;2424",
+        "sourcetemplate": ""
+      }
+    },
+    "28cceb03-fa8e-86df-ac6a-b3e2b859421c": {
+      "UUID": "28cceb03-fa8e-86df-ac6a-b3e2b859421c",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a2db30e-bf5a-4c58-f8df-32a9e0e135ee",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_Chasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": true,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "619f6705-6e99-4bd0-5d4b-94362d15329d",
+              "Text": {
+                "Handle": "hbf38cc0agf92cg47acgbd6cgcb7a8fec21ac",
+                "Value": "*The cub breathes in shallow bursts, his chest heaving with the effort.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [Animal] Owlbea HURT/TIRED idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N273",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "AH - Chase HasMet",
+        "position": "975;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "2d1a8ad2-91fc-2ac2-3ffd-8ab66dbfa0d7": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "2d1a8ad2-91fc-2ac2-3ffd-8ab66dbfa0d7",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d20b77d8-966d-f0fa-0f0e-00221bcccad7",
+        "ecbfa872-2bbb-16a9-acbf-9d20f8021811"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": true,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "ac3449f7-c09b-4bc0-8634-fcff97d49279"
+                ],
+                "TagNames": [
+                  "BERSERKER"
+                ]
+              }
+            ],
+            "RuleString": "BERSERKER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "e2078da5-2d80-e1de-51d1-16aabe2c1cb6",
+              "Text": {
+                "Handle": "hd2cb832dg8b99g4ff1g86d8g9ec043987832",
+                "Value": "The goblins hurt you - <b>CRUSH THEM</b>."
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cd69b62e-5759-4a5d-b432-f188c36d6370",
+              "Text": {
+                "Handle": "h49496033g04a9g4da3gbd88g25f47a6f3a5d",
+                "Value": "The goblins tried to hurt you. Show them what hurt really means."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N128",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Barbarian",
+        "position": "1615;234",
+        "sourcetemplate": ""
+      }
+    },
+    "2d9ff558-b20a-3c60-7e07-6e6fd1eabb06": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "2d9ff558-b20a-3c60-7e07-6e6fd1eabb06",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ab9bec5c-ec82-84e5-70ef-ddb5100a4b0b",
+        "7b9e189b-61df-3639-9d5b-3a39e3817140"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bc5cecac-5a47-ed64-e245-114eb0bfb58c",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_State_FailedAnimalHandling"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": false,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "da4c579f-0481-285c-d5b7-6c3927330ec9",
+              "Text": {
+                "Handle": "hb764a75bg05c7g4dddg9d3dg5ddba90117b8",
+                "Value": "<i>Kneel - you won't hurt it.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N134",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Animal Handling Roll",
+        "position": "1295;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "309d5ad1-a0cc-c439-4cfd-2c229a8102a7": {
+      "UUID": "309d5ad1-a0cc-c439-4cfd-2c229a8102a7",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f9e656cc-b8dc-ee92-bf11-7c18f90074a8",
+        "a7f0f83a-bae6-e867-187c-d87d8f6ec264",
+        "7faad52a-370d-3e64-1f0f-613266942e1e",
+        "6b5ab48e-02cd-ea14-289d-e7b3e8d45e65"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dafc61da-4de5-7d5a-77da-b2af968c4b81",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_NotChasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dafc61da-4de5-7d5a-77da-b2af968c4b81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_NotChasing"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "57b8e654-8d14-a350-f6ca-64472f1e34cf",
+              "Text": {
+                "Handle": "h80722415g4843g4502gaf0eg091961053a4e",
+                "Value": "*Hroo-hoot!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear sad covernstion idle [jack of]",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "Looking about",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N147",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "SFX only",
+        "Quality": "Silver",
+        "SFXTags": "cub screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "No Pet Pal",
+        "position": "975;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "34ccb571-8c09-12b6-2817-d46d164a7238": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "34ccb571-8c09-12b6-2817-d46d164a7238",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8b416f77-e880-d828-45c1-a45e1865719b",
+        "625477c2-7b43-c814-6e79-47d80f263a9b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": false,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "03f56c98-2b01-d53c-ffb6-4dd0bc9c3d4e",
+              "Text": {
+                "Handle": "h13bebbd4g6741g4a9bgbc83g345f1800a7e2",
+                "Value": "<i>Guide his gaze to the goblins - they deserve to die.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N172",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_AnimalHandling",
+        "position": "2575;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "37126ba1-54dd-a983-6e63-9ae400e5ca90": {
+      "JumpTarget": "6b5ab48e-02cd-ea14-289d-e7b3e8d45e65",
+      "JumpTargetPoint": 1,
+      "UUID": "37126ba1-54dd-a983-6e63-9ae400e5ca90",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N281",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;2862",
+        "sourcetemplate": ""
+      }
+    },
+    "37f173b0-353e-21a1-e029-4d2b71d19d3d": {
+      "UUID": "37f173b0-353e-21a1-e029-4d2b71d19d3d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "c8b7255d-46e9-4928-a122-383ae4c42da0",
+              "Text": {
+                "Handle": "hb337e84eg138ag4189gb74age8f6cb10576b",
+                "Value": "*The cub seems anxious to leave, but afraid to defy the goblins. They have to be dealt with, one way or another.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear sadcovernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "The cub looks around, hooting anxiously. Not safe to leave yet.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N343",
+        "InternalNodeContext": "The cub looks around, hooting anxiously. Not safe to leave yet.",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3535;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "4079d368-c3e2-d6ce-03cf-69b48c76a62e": {
+      "UUID": "4079d368-c3e2-d6ce-03cf-69b48c76a62e",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "67c96492-3a87-8278-e2ee-2b0a8bd7aeb7",
+              "value": true,
+              "paramval": 0,
+              "Name": "GOB_Festivities_BallToldAboutGates"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "261e630a-5b20-080c-6263-352e8b5f1a00",
+              "Text": {
+                "Handle": "h088b2ea7g38e3g4833ga86ag854271caf1d1",
+                "Value": "*The owlbear coos softly. He doesn't understand - but he trusts you.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [ANIMAL] [PLAYER] Rub owl bear and, owl bear getting rubbed [jACK]",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Neutral",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N65",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The player has freed the owlbear. It is tentatively following the player but is prepared to attack should it be provoked. ",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "4e395420-0b91-7dc4-af83-3f7baa86b07b": {
+      "JumpTarget": "6b5ab48e-02cd-ea14-289d-e7b3e8d45e65",
+      "JumpTargetPoint": 1,
+      "UUID": "4e395420-0b91-7dc4-af83-3f7baa86b07b",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N285",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "55395fef-5ce7-0228-0012-e0efb77aadde": {
+      "UUID": "55395fef-5ce7-0228-0012-e0efb77aadde",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "9399e1ac-0663-6e46-ffe9-3f544c34a46e",
+        "37126ba1-54dd-a983-6e63-9ae400e5ca90"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dafc61da-4de5-7d5a-77da-b2af968c4b81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_NotChasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": true,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2bfdf540-7a3e-14fa-b63a-eb317dc1f3bb",
+              "Text": {
+                "Handle": "hcf12d41bgef1bg45efg8b12g04e5fc35a8b9",
+                "Value": "*The cub looks at you with dulled eyes. He longs for home.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear sad covernstion idle [jack of]",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N269",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Angry",
+        "Quality": "Silver",
+        "SFXTags": "cub screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "AH - NoChase HasMet",
+        "position": "975;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "5790efbf-a7b1-b6d8-351f-cf3904bb9692": {
+      "UUID": "5790efbf-a7b1-b6d8-351f-cf3904bb9692",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ba0893c9-6a58-b967-26c4-bdff43565ccf",
+        "34ccb571-8c09-12b6-2817-d46d164a7238",
+        "1bc99212-8e05-67f3-57cc-96d50887f007",
+        "f6897026-8d01-3bf0-ce72-a5ff1fdbff1c"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "62de8534-a1cd-42f8-199b-d2f311f35601",
+              "Text": {
+                "Handle": "hb92db106gc424g4d60g86aeg7716a5b21b8c",
+                "Value": "*... it's <i>furious. </i>Rage blazes within it. Tear. Hunt. <i>Kill.*</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "*DUPE* [Owlbear cub] feeling betrayed and angy is ready to attack",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "58d942a6-4b53-ce36-476b-69c96c98f29a": {
+      "UUID": "58d942a6-4b53-ce36-476b-69c96c98f29a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b750a5c0-7299-97cb-4134-217aca2d9cc1",
+        "2d9ff558-b20a-3c60-7e07-6e6fd1eabb06",
+        "9e73c38f-8dfd-3162-8216-bd1958a2c4a9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a2db30e-bf5a-4c58-f8df-32a9e0e135ee",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_Chasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a2db30e-bf5a-4c58-f8df-32a9e0e135ee",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_Chasing"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "2102959a-7418-51c7-6750-6ff2d4d32202",
+              "Text": {
+                "Handle": "h13bfc159g8efbg45b0ga5cdgbfd26dcdf88e",
+                "Value": "*Screech!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [Owlbear cub] feeling betrayed and angy is ready to attack {felix]",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "Angry.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "SFX only - Angry",
+        "Quality": "Silver",
+        "SFXTags": "cub screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Default - Chase",
+        "position": "975;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "5ee7dc26-165b-a9ef-1b21-eec13ac04289": {
+      "RollSuccess": true,
+      "UUID": "5ee7dc26-165b-a9ef-1b21-eec13ac04289",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ce7e99b3-885b-a2bd-b336-66a85896f0ea"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N212",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;453",
+        "sourcetemplate": ""
+      }
+    },
+    "62009c89-dcfc-9661-5c36-5cec1fac0784": {
+      "SourceNode": "37f173b0-353e-21a1-e029-4d2b71d19d3d",
+      "UUID": "62009c89-dcfc-9661-5c36-5cec1fac0784",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "775e6984-4640-41d3-97e5-b1f96c572ddd",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_Event_OwlbearAcquired"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N344",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "3215;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "625477c2-7b43-c814-6e79-47d80f263a9b": {
+      "RollSuccess": false,
+      "UUID": "625477c2-7b43-c814-6e79-47d80f263a9b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c15f6433-eab6-00a5-a398-bea919b0ed81"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N176",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2895;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "667f1f6e-12e9-6a54-5b44-6d62e1b38bc0": {
+      "RollSuccess": true,
+      "UUID": "667f1f6e-12e9-6a54-5b44-6d62e1b38bc0",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8fdcbb8a-2107-bbb5-fc1d-0401d216ee2a"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N240",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1615;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "6b5ab48e-02cd-ea14-289d-e7b3e8d45e65": {
+      "UUID": "6b5ab48e-02cd-ea14-289d-e7b3e8d45e65",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "452c4004-4704-41a6-2d97-9c822251cca6",
+              "Text": {
+                "Handle": "h24884f29g0e97g482dgb189ga576dbe1098d",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N149",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "6ba808c2-ce68-1838-0c5e-3915d9681233": {
+      "UUID": "6ba808c2-ce68-1838-0c5e-3915d9681233",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3495d1c0-f2e7-4dfc-a7e8-890774484fd9",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_AngeredOwlbear"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "707b6dd6-6466-4af7-4b70-eea2bf759952",
+              "Text": {
+                "Handle": "ha1e874ebg10f3g4e34gbb4cg9ab8ea350346",
+                "Value": "No! Hurt! Run!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] coaxes [owlbear cub] forward, Owlbear doesnt follow, not trusting the [player]",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Determination",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N204",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As in: \"No! They'll hurt me! I have to run!\"",
+        "Quality": "Silver",
+        "SFXTags": "refusing screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "6e468230-bafc-bdc4-a7a0-0fbebbf798f7": {
+      "UUID": "6e468230-bafc-bdc4-a7a0-0fbebbf798f7",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "97726f6c-d11c-ab6d-90c2-80e89fba0eff",
+        "b11e73bc-c71e-7e51-0c6a-46598419bbd9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3495d1c0-f2e7-4dfc-a7e8-890774484fd9",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_AngeredOwlbear"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4eb1aa93-4b3b-249f-8bbb-93cf536137bd",
+              "Text": {
+                "Handle": "h5304b562g5bcag405fga823gee6bf28d8d78",
+                "Value": "Go! Bite! <i>Bite</i>!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Animal] Owlbear excited covernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N261",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As in: \"Go away! I'll bite you! I'll really do it!\"",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SwA - Angered",
+        "position": "975;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "6fda0ccc-c0ca-249d-9a67-ebd4f335840c": {
+      "UUID": "6fda0ccc-c0ca-249d-9a67-ebd4f335840c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a7f0f83a-bae6-e867-187c-d87d8f6ec264",
+        "7faad52a-370d-3e64-1f0f-613266942e1e",
+        "6b5ab48e-02cd-ea14-289d-e7b3e8d45e65"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dafc61da-4de5-7d5a-77da-b2af968c4b81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_NotChasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": false,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7de131ac-0e6c-21ff-3a5c-3fe3c844e76d",
+              "Text": {
+                "Handle": "h85f8dc0dgc166g42bfg8d93ge0e48f34a4e4",
+                "Value": "*Hoo!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear excited covernstion idle [jack of]",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "Looking about",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N251",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "SFX only - Exasperated/On-Edge",
+        "Quality": "Silver",
+        "SFXTags": "cub screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Default - NoChase HasMet",
+        "position": "975;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "7642dacd-1a25-d96d-0266-fde25c777da2": {
+      "UUID": "7642dacd-1a25-d96d-0266-fde25c777da2",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9eb04a84-4c3e-6d20-2a19-f3ff09f3047d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GOB_ChickenChase_Event_OwlbearAttack"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "3c6f5057-5d5d-7662-0cc2-44c242e9fc01",
+              "Text": {
+                "Handle": "ha1fd27c7g23e9g4968gb2c9g5cc89a19df49",
+                "Value": "*The cub's beak snaps in the air, eager to rend<i>, yearning </i>for blood and soft belly-flesh.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Animal] Owlbear excited covernstion idle [jack of]",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N168",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The owlbear is furious and about to erupt in a killing spree. ",
+        "Quality": "Silver",
+        "SFXTags": "feather ruffle, screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "76af5775-9960-63d0-d15d-8fc0de99372d": {
+      "RollSuccess": false,
+      "UUID": "76af5775-9960-63d0-d15d-8fc0de99372d",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1ca11256-ae41-1bbf-457c-996fbaf0e798"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N23",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2895;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "76e6e917-50e9-1c54-ac32-79d176f4296c": {
+      "UUID": "76e6e917-50e9-1c54-ac32-79d176f4296c",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a5dbcb82-654e-3003-3bfe-f287a2b65a38",
+        "4e395420-0b91-7dc4-af83-3f7baa86b07b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3495d1c0-f2e7-4dfc-a7e8-890774484fd9",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_AngeredOwlbear"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": true,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "cc42fe55-5bc8-5504-f49a-14c0d50dae59",
+              "Text": {
+                "Handle": "hcdf72064g7233g447cg85bbg696266eb9138",
+                "Value": "*Talons tensed to strike, beak aching to rend - the cub wants you gone.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [Owlbear cub] feeling betrayed and angy is ready to attack {felix]",
+        "Attitude": "Hostile",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N247",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The cub no longer trusts the player and wants him gone. A threat. ",
+        "Quality": "Silver",
+        "SFXTags": "cub screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "AH - Angered",
+        "position": "975;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "7b9e189b-61df-3639-9d5b-3a39e3817140": {
+      "RollSuccess": false,
+      "UUID": "7b9e189b-61df-3639-9d5b-3a39e3817140",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "b9961d21-d56e-a87a-c192-423961648963"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N136",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1615;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "7c3f2914-276e-eb81-435c-55db77784195": {
+      "RollSuccess": true,
+      "UUID": "7c3f2914-276e-eb81-435c-55db77784195",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1b20afbd-3a0d-22d2-e2c1-9c40be06b807"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N181",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2895;5271",
+        "sourcetemplate": ""
+      }
+    },
+    "7faad52a-370d-3e64-1f0f-613266942e1e": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "7faad52a-370d-3e64-1f0f-613266942e1e",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "667f1f6e-12e9-6a54-5b44-6d62e1b38bc0",
+        "f6c10f70-dd9e-d4e5-630b-bca521ebea89"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bc5cecac-5a47-ed64-e245-114eb0bfb58c",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_State_FailedAnimalHandling"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": false,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "31538a67-0379-ac95-22e5-bcc71ceb7c23",
+              "Text": {
+                "Handle": "hae820bafg45e6g497fg8adfg17ad8a6900ff",
+                "Value": "<i>Kneel down - you won't hurt him.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N148",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_AnimalHandling",
+        "position": "1295;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "802232cb-c37f-4648-afc5-97199ebb0d4e": {
+      "UUID": "802232cb-c37f-4648-afc5-97199ebb0d4e",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "10402276-5a5b-b905-e8fb-de2daa77a24c",
+        "c3578da4-d840-1939-8de3-fa06f2854b31"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "44cd5093-0861-01f1-757b-3c038e161987",
+              "Text": {
+                "Handle": "h5da3b8d1g37d4g46e9gb2f6g2edbbae947bc",
+                "Value": "*But his mother is gone - taken. All that's left are these <i>creatures</i>.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear sadcovernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N151",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "86b0e5af-271c-edfe-4b6b-7b0d51a03f25": {
+      "UUID": "86b0e5af-271c-edfe-4b6b-7b0d51a03f25",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "f4b7d544-fb36-9182-1c82-ce6a9623c0b1"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a2db30e-bf5a-4c58-f8df-32a9e0e135ee",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_Chasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "4a2347ad-26f5-f2f7-ee20-1fe62fe5e1f8",
+              "Text": {
+                "Handle": "h9656d835g86d3g4e7egb544g436a113cb4cf",
+                "Value": "Run! Get me!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear excited covernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N265",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As in: \"I have to run! They'll get me!\"",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SwA - Chase HasMet",
+        "position": "975;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "8a701006-69d0-95c3-6b91-48197dc5bb47": {
+      "UUID": "8a701006-69d0-95c3-6b91-48197dc5bb47",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "96a60b0e-8896-5a09-b0f3-d98daaaba56b",
+        "a1ba5ea3-8e4f-7991-9252-94ab78a54dea"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "929c32ea-83a5-9445-9641-8b53a549e34f",
+              "Text": {
+                "Handle": "h03cbc0ddg04a7g4705g9116g645631c30cb2",
+                "Value": "New home...? Maybe."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear sadcovernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Tilts his head and regards the player.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N277",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "SwA line He's considering trusting the player.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2895;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "8b416f77-e880-d828-45c1-a45e1865719b": {
+      "RollSuccess": true,
+      "UUID": "8b416f77-e880-d828-45c1-a45e1865719b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "7642dacd-1a25-d96d-0266-fde25c777da2"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N164",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2895;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "8e9bc462-ba39-71e0-9d5a-ab1a5e2e4c47": {
+      "UUID": "8e9bc462-ba39-71e0-9d5a-ab1a5e2e4c47",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5a4562cd-3bab-aa4e-0cf6-372e577c48d1",
+              "Text": {
+                "Handle": "h28e28b66gb7fbg41c3gb938g70f72a28a764",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N142",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1615;672",
+        "sourcetemplate": ""
+      }
+    },
+    "8ebdb7f2-93a2-bbb3-48b6-e228d47b8664": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "fa621d38-6f83-4e42-a55c-6aa651a75d46",
+      "DifficultyClassValue": 10,
+      "UUID": "8ebdb7f2-93a2-bbb3-48b6-e228d47b8664",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5ee7dc26-165b-a9ef-1b21-eec13ac04289",
+        "c074c324-f28f-6d0e-ea23-583597fb38ce"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "00e3ce05-37b6-6205-907f-873da1679b3c",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_Knows_ChaseRules"
+            },
+            {
+              "UUID": "afefbe32-abfc-4bd0-b0f7-d11206a2c7cc",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_BallOnField"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 1,
+                "Tags": [
+                  "44ac4317-4d38-4d28-80e2-94024c6e42f0",
+                  "37a733c1-a862-4157-b92a-9cff46232c6a"
+                ],
+                "TagNames": [
+                  "DRUID",
+                  "RANGER"
+                ]
+              }
+            ],
+            "RuleString": "DRUID or RANGER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "1eaa9cef-b8d1-d24b-ec44-38e9d05f4263",
+              "Text": {
+                "Handle": "hf4825920gbab1g40f5ga473g05856c074551",
+                "Value": "They won't hurt you if you run to those posts."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N208",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Druid / Ranger",
+        "position": "1615;453",
+        "sourcetemplate": ""
+      }
+    },
+    "8fdcbb8a-2107-bbb5-fc1d-0401d216ee2a": {
+      "UUID": "8fdcbb8a-2107-bbb5-fc1d-0401d216ee2a",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "802232cb-c37f-4648-afc5-97199ebb0d4e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": true,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9090b99c-61aa-077c-a8b8-513e98779b8d",
+              "Text": {
+                "Handle": "h23241cb4g6cb5g47ddg80bega4bdea0198a8",
+                "Value": "*You notice a shiver run through his feathered coat - fear, a desperate longing for the safety of his nest.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [ANIMAL] [PLAYER] Rub owl bear and, owl bear getting rubbed [jACK]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N150",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;3519",
+        "sourcetemplate": ""
+      }
+    },
+    "912f2020-7455-eefb-c469-c0d7e4f6f5af": {
+      "RollSuccess": true,
+      "UUID": "912f2020-7455-eefb-c469-c0d7e4f6f5af",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "4079d368-c3e2-d6ce-03cf-69b48c76a62e"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N21",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2895;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "9399e1ac-0663-6e46-ffe9-3f544c34a46e": {
+      "JumpTarget": "10402276-5a5b-b905-e8fb-de2daa77a24c",
+      "JumpTargetPoint": 1,
+      "UUID": "9399e1ac-0663-6e46-ffe9-3f544c34a46e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N280",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;2643",
+        "sourcetemplate": ""
+      }
+    },
+    "94be6338-7fee-2564-fdd7-923c3d471dcc": {
+      "UUID": "94be6338-7fee-2564-fdd7-923c3d471dcc",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "775e6984-4640-41d3-97e5-b1f96c572ddd",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_Event_OwlbearAcquired"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "5dd8eec8-db8e-202c-7107-fd7478aaa785",
+              "Text": {
+                "Handle": "h7a2c94c0gdbf7g41f2gbb75gf4226a06c2e8",
+                "Value": "*He runs away. Only time will tell if he'll reappear.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "TURNS *He runs away.",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Cub backs away and leaves.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N304",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "AH",
+        "position": "3215;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "96a60b0e-8896-5a09-b0f3-d98daaaba56b": {
+      "SourceNode": "94be6338-7fee-2564-fdd7-923c3d471dcc",
+      "UUID": "96a60b0e-8896-5a09-b0f3-d98daaaba56b",
+      "Constructor": "Alias",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "775e6984-4640-41d3-97e5-b1f96c572ddd",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_Event_OwlbearAcquired"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N341",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (AH)",
+        "position": "3215;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "96e34773-2b73-3ae5-7b2b-1bbb134cb249": {
+      "UUID": "96e34773-2b73-3ae5-7b2b-1bbb134cb249",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "edd6032f-cca5-df56-4acd-dcf09f49041c",
+        "0192183d-d5f7-befe-5a6b-3da3ff82ae04"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dafc61da-4de5-7d5a-77da-b2af968c4b81",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_NotChasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dafc61da-4de5-7d5a-77da-b2af968c4b81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_NotChasing"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1cc86ddd-8398-4d74-5488-ee0420303bbf",
+              "Text": {
+                "Handle": "h0a97bd90g1c01g405dg95e7gcd5b0c8ea8de",
+                "Value": "Mother gone. Hungry!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N222",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As in: \"Mommy's gone. I'm hungry!\"",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SwA - NotChase",
+        "position": "975;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "97726f6c-d11c-ab6d-90c2-80e89fba0eff": {
+      "JumpTarget": "edd6032f-cca5-df56-4acd-dcf09f49041c",
+      "JumpTargetPoint": 1,
+      "UUID": "97726f6c-d11c-ab6d-90c2-80e89fba0eff",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N282",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-1737",
+        "sourcetemplate": ""
+      }
+    },
+    "9c77ede9-e604-4528-5803-b3282334e686": {
+      "UUID": "9c77ede9-e604-4528-5803-b3282334e686",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fb1635bf-2c40-32e5-52c9-37e265631333",
+              "Text": {
+                "Handle": "ha6d7b0bfga2ffg43a9gac5eg643d68683c6a",
+                "Value": "*Screech!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Cub tilts head, considering player, then backs away and leaves.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N334",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "SFX only - do not record.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Default",
+        "position": "2895;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "9e73c38f-8dfd-3162-8216-bd1958a2c4a9": {
+      "UUID": "9e73c38f-8dfd-3162-8216-bd1958a2c4a9",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "e39ab147-41b0-c817-3674-f4c16c6457c4",
+              "Text": {
+                "Handle": "hcbf74d33g5848g44f2gb945g55feb4dea0f0",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N16",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "a1ba5ea3-8e4f-7991-9252-94ab78a54dea": {
+      "UUID": "a1ba5ea3-8e4f-7991-9252-94ab78a54dea",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "37f173b0-353e-21a1-e029-4d2b71d19d3d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "775e6984-4640-41d3-97e5-b1f96c572ddd",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_Event_OwlbearAcquired"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "37c4222e-7646-520c-430c-1d3e6b5b1e4c",
+              "Text": {
+                "Handle": "h4ce68d40g3959g4be3gb120g81fb3f1c3311",
+                "Value": "Got to get away from here first."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear sadcovernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N339",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "a5dbcb82-654e-3003-3bfe-f287a2b65a38": {
+      "JumpTarget": "10402276-5a5b-b905-e8fb-de2daa77a24c",
+      "JumpTargetPoint": 1,
+      "UUID": "a5dbcb82-654e-3003-3bfe-f287a2b65a38",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N284",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "a6064eae-8527-4cdb-1a76-32a7584cecc7": {
+      "JumpTarget": "10402276-5a5b-b905-e8fb-de2daa77a24c",
+      "JumpTargetPoint": 2,
+      "UUID": "a6064eae-8527-4cdb-1a76-32a7584cecc7",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N336",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "a7e701e3-9520-570a-65b3-dc11f5b60e63": {
+      "JumpTarget": "6ba808c2-ce68-1838-0c5e-3915d9681233",
+      "JumpTargetPoint": 1,
+      "UUID": "a7e701e3-9520-570a-65b3-dc11f5b60e63",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N338",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;234",
+        "sourcetemplate": ""
+      }
+    },
+    "a7f0f83a-bae6-e867-187c-d87d8f6ec264": {
+      "UUID": "a7f0f83a-bae6-e867-187c-d87d8f6ec264",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a6064eae-8527-4cdb-1a76-32a7584cecc7"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2b4acc5e-fe2f-0f0b-8945-043403b50e2f",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_OwlbearCub_Event_InvitedToCamp"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2b4acc5e-fe2f-0f0b-8945-043403b50e2f",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_OwlbearCub_Event_InvitedToCamp"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "63c44640-a9ac-615a-c698-2285ef714806",
+              "Text": {
+                "Handle": "hb4585124g4731g4515gac6agd55eccf07b1e",
+                "Value": "<i>Beckon him closer.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N333",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;3300",
+        "sourcetemplate": ""
+      }
+    },
+    "aab4a4fb-55b1-3342-f956-2afb0b10a828": {
+      "UUID": "aab4a4fb-55b1-3342-f956-2afb0b10a828",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "2d9ff558-b20a-3c60-7e07-6e6fd1eabb06",
+        "9e73c38f-8dfd-3162-8216-bd1958a2c4a9"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a2db30e-bf5a-4c58-f8df-32a9e0e135ee",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_Chasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": false,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b665187-8008-6ce3-495b-e0cea366ae35",
+              "Text": {
+                "Handle": "h273a203bg97b1g4f50g9934g157887705590",
+                "Value": "*Squawk!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [Owlbear cub] feeling betrayed and angy is ready to attack {felix]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Angry.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N223",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "SFX only. Angry.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Default - Chase HasMet",
+        "position": "975;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "ab9bec5c-ec82-84e5-70ef-ddb5100a4b0b": {
+      "RollSuccess": true,
+      "UUID": "ab9bec5c-ec82-84e5-70ef-ddb5100a4b0b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cfe7a8a7-9e71-af68-574d-4effcd6febcc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N139",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1615;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "b11e73bc-c71e-7e51-0c6a-46598419bbd9": {
+      "JumpTarget": "0192183d-d5f7-befe-5a6b-3da3ff82ae04",
+      "JumpTargetPoint": 1,
+      "UUID": "b11e73bc-c71e-7e51-0c6a-46598419bbd9",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N283",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-1518",
+        "sourcetemplate": ""
+      }
+    },
+    "b750a5c0-7299-97cb-4134-217aca2d9cc1": {
+      "SourceNode": "cfe7a8a7-9e71-af68-574d-4effcd6febcc",
+      "UUID": "b750a5c0-7299-97cb-4134-217aca2d9cc1",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5790efbf-a7b1-b6d8-351f-cf3904bb9692"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": true,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N154",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias",
+        "position": "1295;4614",
+        "sourcetemplate": ""
+      }
+    },
+    "b9961d21-d56e-a87a-c192-423961648963": {
+      "JumpTarget": "ed56084e-b2fb-7db8-fb34-6e760cca72c5",
+      "JumpTargetPoint": 1,
+      "UUID": "b9961d21-d56e-a87a-c192-423961648963",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N312",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1935;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "ba0893c9-6a58-b967-26c4-bdff43565ccf": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "ba0893c9-6a58-b967-26c4-bdff43565ccf",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "912f2020-7455-eefb-c469-c0d7e4f6f5af",
+        "76af5775-9960-63d0-d15d-8fc0de99372d"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "00e3ce05-37b6-6205-907f-873da1679b3c",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_Knows_ChaseRules"
+            },
+            {
+              "UUID": "afefbe32-abfc-4bd0-b0f7-d11206a2c7cc",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_BallOnField"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "37a733c1-a862-4157-b92a-9cff46232c6a",
+              "value": false,
+              "paramval": 1,
+              "Name": "RANGER"
+            },
+            {
+              "UUID": "44ac4317-4d38-4d28-80e2-94024c6e42f0",
+              "value": false,
+              "paramval": 1,
+              "Name": "DRUID"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f0125eec-e28e-d971-43c9-3f2aac823429",
+              "Text": {
+                "Handle": "hb693ab66ga108g4e81g915bg7ce57f633f12",
+                "Value": "<i>Coax the cub toward the goalposts.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N19",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_AnimalHandling",
+        "position": "2575;4395",
+        "sourcetemplate": ""
+      }
+    },
+    "c05e06f7-7447-5d1e-c3b9-0f8c4b9fe03c": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "831e1fbe-428d-4f4d-bd17-4206d6efea35",
+      "DifficultyClassValue": 15,
+      "UUID": "c05e06f7-7447-5d1e-c3b9-0f8c4b9fe03c",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "d20b77d8-966d-f0fa-0f0e-00221bcccad7",
+        "ecbfa872-2bbb-16a9-acbf-9d20f8021811"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": false,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "54b05229-4691-606c-d2dc-dbe8aeb21111",
+              "Text": {
+                "Handle": "h7f27d155g54c8g4a19gabf7g178b2647b12d",
+                "Value": "The goblins are responsible for your pain. Kill them."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N7",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Persuasion",
+        "position": "1615;15",
+        "sourcetemplate": ""
+      }
+    },
+    "c074c324-f28f-6d0e-ea23-583597fb38ce": {
+      "RollSuccess": false,
+      "UUID": "c074c324-f28f-6d0e-ea23-583597fb38ce",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1ffb2fd9-9dd8-b0b9-c113-a0a3bfa24aac"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N216",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;672",
+        "sourcetemplate": ""
+      }
+    },
+    "c15f6433-eab6-00a5-a398-bea919b0ed81": {
+      "UUID": "c15f6433-eab6-00a5-a398-bea919b0ed81",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3495d1c0-f2e7-4dfc-a7e8-890774484fd9",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_AngeredOwlbear"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0bd721fc-8d5c-c256-405e-41683d1679ab",
+              "Text": {
+                "Handle": "hcb63a8d6g512eg4442gb300g3d12d2c786bc",
+                "Value": "*The cub clicks his beak weakly - more scared than afraid. He has no fight left in him.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [Animal] Owlbea HURT/TIRED idle [jack of]",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Sadness",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N180",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "The owlbear doesn't trust the player and is warding it off. ",
+        "Quality": "Silver",
+        "SFXTags": "sad weak screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "3215;5052",
+        "sourcetemplate": ""
+      }
+    },
+    "c3578da4-d840-1939-8de3-fa06f2854b31": {
+      "JumpTarget": "6b5ab48e-02cd-ea14-289d-e7b3e8d45e65",
+      "JumpTargetPoint": 1,
+      "UUID": "c3578da4-d840-1939-8de3-fa06f2854b31",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N279",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;3957",
+        "sourcetemplate": ""
+      }
+    },
+    "c38b866b-47c2-327e-ae14-02e49cd19bca": {
+      "UUID": "c38b866b-47c2-327e-ae14-02e49cd19bca",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "9eb04a84-4c3e-6d20-2a19-f3ff09f3047d",
+              "value": true,
+              "paramval": 0,
+              "Name": "GOB_ChickenChase_Event_OwlbearAttack"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "313693af-b875-e6a5-8add-d5d1b16b31f2",
+              "Text": {
+                "Handle": "hb7ce7b45g381fg46f7gb4e1g8f83e5027edd",
+                "Value": "Bite. Eat! Bite!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Owlbear cub] tensens its body and prepares to attack",
+        "Attitude": "Negative",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Anger",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N64",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As in: \"I'm going to kill them!\"",
+        "Quality": "Silver",
+        "SFXTags": "feather ruffle, screech",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;15",
+        "sourcetemplate": ""
+      }
+    },
+    "c66e4277-c654-5a30-c549-2ec2839c9ffd": {
+      "RollSuccess": true,
+      "UUID": "c66e4277-c654-5a30-c549-2ec2839c9ffd",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "fc863274-0cfa-866f-f74d-4dd6723f28c5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N192",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;-423",
+        "sourcetemplate": ""
+      }
+    },
+    "cbc16f8a-d1a1-3150-ff77-53ae32ad0348": {
+      "SourceNode": "aab4a4fb-55b1-3342-f956-2afb0b10a828",
+      "UUID": "cbc16f8a-d1a1-3150-ff77-53ae32ad0348",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "01ed056d-d0d4-024e-da54-7e8a3640a700",
+        "227dceca-2008-796c-b6a4-4d43af1cfb1b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3495d1c0-f2e7-4dfc-a7e8-890774484fd9",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_AngeredOwlbear"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": false,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": false,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N252",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias",
+        "position": "975;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "cc947af0-4dd3-d30c-5643-60fc5517e264": {
+      "JumpTarget": "1ca11256-ae41-1bbf-457c-996fbaf0e798",
+      "JumpTargetPoint": 1,
+      "UUID": "cc947af0-4dd3-d30c-5643-60fc5517e264",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N184",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "3215;5490",
+        "sourcetemplate": ""
+      }
+    },
+    "ce7e99b3-885b-a2bd-b336-66a85896f0ea": {
+      "JumpTarget": "fc863274-0cfa-866f-f74d-4dd6723f28c5",
+      "JumpTargetPoint": 1,
+      "UUID": "ce7e99b3-885b-a2bd-b336-66a85896f0ea",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N217",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2255;453",
+        "sourcetemplate": ""
+      }
+    },
+    "cfe7a8a7-9e71-af68-574d-4effcd6febcc": {
+      "UUID": "cfe7a8a7-9e71-af68-574d-4effcd6febcc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "5790efbf-a7b1-b6d8-351f-cf3904bb9692"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": true,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a885ef95-195e-0790-2d50-52806cd6e923",
+              "Text": {
+                "Handle": "h965ce074gc569g4d9fgbef5g71e5fed33a3b",
+                "Value": "*Its talons bite deep into the earth, every muscle trembling. You realise it isn't afraid...*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [Owlbear cub] feeling betrayed and angy is ready to attack {felix]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N140",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Animal Handling Passed",
+        "position": "1935;4833",
+        "sourcetemplate": ""
+      }
+    },
+    "d20b77d8-966d-f0fa-0f0e-00221bcccad7": {
+      "RollSuccess": true,
+      "UUID": "d20b77d8-966d-f0fa-0f0e-00221bcccad7",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "c38b866b-47c2-327e-ae14-02e49cd19bca"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N9",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;15",
+        "sourcetemplate": ""
+      }
+    },
+    "d3e19347-c8b0-4b1a-b17b-5368c6e86777": {
+      "RollSuccess": false,
+      "UUID": "d3e19347-c8b0-4b1a-b17b-5368c6e86777",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "6ba808c2-ce68-1838-0c5e-3915d9681233"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N200",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "dab0c6d9-f5d1-16f0-ed7d-165cea3948e7": {
+      "UUID": "dab0c6d9-f5d1-16f0-ed7d-165cea3948e7",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "0d49aca3-c896-c559-38f0-b71746bfc057",
+        "c05e06f7-7447-5d1e-c3b9-0f8c4b9fe03c",
+        "2d1a8ad2-91fc-2ac2-3ffd-8ab66dbfa0d7",
+        "8ebdb7f2-93a2-bbb3-48b6-e228d47b8664",
+        "8e9bc462-ba39-71e0-9d5a-ab1a5e2e4c47"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a2db30e-bf5a-4c58-f8df-32a9e0e135ee",
+              "value": false,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_Chasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "1a2db30e-bf5a-4c58-f8df-32a9e0e135ee",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_Chasing"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1b236900-c8db-1240-6b52-73fe9ca96f9a",
+              "Text": {
+                "Handle": "hf0389c6dg0e34g4ae4g851dge47ff117bc3a",
+                "Value": "Hurt me! Run! Where?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear excited covernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N133",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As in: \"The goblins are going to hurt me. I have to run! Where can I run?!\"",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SwA - Chase",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "dab239b8-025b-cf46-1745-d2ebf8cb9d9a": {
+      "UUID": "dab239b8-025b-cf46-1745-d2ebf8cb9d9a",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "edd6032f-cca5-df56-4acd-dcf09f49041c",
+        "0192183d-d5f7-befe-5a6b-3da3ff82ae04"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "dafc61da-4de5-7d5a-77da-b2af968c4b81",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_HasMet_NotChasing"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "34de58e6-ca4a-d171-c1ac-32821bb036ed",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_PlayingChase"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "dc860a81-f3c2-4c1a-ab90-e7583324845c",
+              "value": true,
+              "paramval": 1,
+              "Name": "PETPAL"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f6483366-c492-cfe8-be25-72a87a5a10f9",
+              "Text": {
+                "Handle": "h6ff13678gb2e2g4084g94e0gfb0f84fddae3",
+                "Value": "Go home. Cave. Mother!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "-Dupe [Animal] Owlbear excited covernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N256",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As in: \"I want to go home to my cave, to my mother.\"",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "SwA - NotChase HasMet",
+        "position": "975;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "db6f00bc-8355-b532-9148-e447c8a0d749": {
+      "JumpTarget": "10402276-5a5b-b905-e8fb-de2daa77a24c",
+      "JumpTargetPoint": 2,
+      "UUID": "db6f00bc-8355-b532-9148-e447c8a0d749",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N309",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1615;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "ecbfa872-2bbb-16a9-acbf-9d20f8021811": {
+      "RollSuccess": false,
+      "UUID": "ecbfa872-2bbb-16a9-acbf-9d20f8021811",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a7e701e3-9520-570a-65b3-dc11f5b60e63"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N11",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1935;234",
+        "sourcetemplate": ""
+      }
+    },
+    "ed56084e-b2fb-7db8-fb34-6e760cca72c5": {
+      "UUID": "ed56084e-b2fb-7db8-fb34-6e760cca72c5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "bc5cecac-5a47-ed64-e245-114eb0bfb58c",
+              "value": true,
+              "paramval": 1,
+              "Name": "GOB_Owlbear_State_FailedAnimalHandling"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "3495d1c0-f2e7-4dfc-a7e8-890774484fd9",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_ChickenChase_State_AngeredOwlbear"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "ea69d8ac-9c9c-49bb-d048-810d083e71a7",
+              "Text": {
+                "Handle": "h723322bcge5aag4271g8267g9b02065deeaa",
+                "Value": "*Squawk!*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "dupe [Owlbear cub] feeling betrayed and angy is ready to attack {felix]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N242",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "SFX only - do not record",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1935;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "edd6032f-cca5-df56-4acd-dcf09f49041c": {
+      "UUID": "edd6032f-cca5-df56-4acd-dcf09f49041c",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "db6f00bc-8355-b532-9148-e447c8a0d749"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2b4acc5e-fe2f-0f0b-8945-043403b50e2f",
+              "value": false,
+              "paramval": null,
+              "Name": "GOB_OwlbearCub_Event_InvitedToCamp"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "2b4acc5e-fe2f-0f0b-8945-043403b50e2f",
+              "value": true,
+              "paramval": null,
+              "Name": "GOB_OwlbearCub_Event_InvitedToCamp"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b9956d87-caba-56cf-cad5-86ab335777df",
+              "Text": {
+                "Handle": "hed469209g21bdg4dddgae73g30e1f437fdc0",
+                "Value": "I have a camp. You're welcome there."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N275",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "1295;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "f3bd5f13-69f5-ff6d-8978-ed8593070008": {
+      "UUID": "f3bd5f13-69f5-ff6d-8978-ed8593070008",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "94be6338-7fee-2564-fdd7-923c3d471dcc",
+        "62009c89-dcfc-9661-5c36-5cec1fac0784"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": true,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a036eed4-8aeb-f581-98e4-eca5d306892d",
+              "Text": {
+                "Handle": "hb7b3e48bga8a9g4bc2g9cc2g0bcce08ae643",
+                "Value": "*The cub tilts his head. He's considering it.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Animal] Owlbear thinking covernstion idle [jack of]",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Cub tilts head",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N286",
+        "InternalNodeContext": "",
+        "IsCustomNode": "True",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "AH",
+        "position": "2895;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "f4b7d544-fb36-9182-1c82-ce6a9623c0b1": {
+      "JumpTarget": "dab0c6d9-f5d1-16f0-ed7d-165cea3948e7",
+      "JumpTargetPoint": 2,
+      "UUID": "f4b7d544-fb36-9182-1c82-ce6a9623c0b1",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N313",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "1295;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "f6897026-8d01-3bf0-ce72-a5ff1fdbff1c": {
+      "JumpTarget": "9e73c38f-8dfd-3162-8216-bd1958a2c4a9",
+      "JumpTargetPoint": 1,
+      "UUID": "f6897026-8d01-3bf0-ce72-a5ff1fdbff1c",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N143",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "2575;5709",
+        "sourcetemplate": ""
+      }
+    },
+    "f6c10f70-dd9e-d4e5-630b-bca521ebea89": {
+      "RollSuccess": false,
+      "UUID": "f6c10f70-dd9e-d4e5-630b-bca521ebea89",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "ed56084e-b2fb-7db8-fb34-6e760cca72c5"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N241",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "1615;3738",
+        "sourcetemplate": ""
+      }
+    },
+    "f9e656cc-b8dc-ee92-bf11-7c18f90074a8": {
+      "SourceNode": "8fdcbb8a-2107-bbb5-fc1d-0401d216ee2a",
+      "UUID": "f9e656cc-b8dc-ee92-bf11-7c18f90074a8",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "802232cb-c37f-4648-afc5-97199ebb0d4e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "8d5e563f-f9fc-d0b2-eb48-b3252cb931b5",
+              "value": true,
+              "paramval": null,
+              "Name": "7611fa51-4b1b-3d2c-a8a5-74c04d9db7fa_AnimalHandlingSuccess"
+            }
+          ],
+          "Type": "Local"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N153",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias",
+        "position": "1295;3081",
+        "sourcetemplate": ""
+      }
+    },
+    "fc742314-4f9b-df85-7dc4-2f29c99e2bd5": {
+      "RollSuccess": false,
+      "UUID": "fc742314-4f9b-df85-7dc4-2f29c99e2bd5",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "cc947af0-4dd3-d30c-5643-60fc5517e264"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N182",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "2895;5490",
+        "sourcetemplate": ""
+      }
+    },
+    "fc863274-0cfa-866f-f74d-4dd6723f28c5": {
+      "UUID": "fc863274-0cfa-866f-f74d-4dd6723f28c5",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "67c96492-3a87-8278-e2ee-2b0a8bd7aeb7",
+              "value": true,
+              "paramval": 0,
+              "Name": "GOB_Festivities_BallToldAboutGates"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "28c251f5-ebc4-94ba-fcbb-6d8e52f3c11a",
+              "Text": {
+                "Handle": "h9e460c92g5a1fg42bdg8b7cgf1e00bf03133",
+                "Value": "Safe. There? Run!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "[Player] coaxes [owlbear cub] forward, Owlbear cub follows, trusting the [player]",
+        "Attitude": "Neutral",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "True",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Neutral",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N196",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "As in: \"It'll be safe there? I have to run!\"",
+        "Quality": "Silver",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "2255;-423",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "4fd775e8-d12a-0f3a-e970-6a80c43a315a",
+      "Index": 0,
+      "List": [
+        "c66b2865-6613-4372-b97a-e330c1d75d09"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Owlbear Cub",
+        "Type": "character",
+        "MapKey": "c66b2865-6613-4372-b97a-e330c1d75d09",
+        "Name": "S_FOR_OwlBear_Cub_001",
+        "ParentTemplateId": null,
+        "TemplateName": "ffb05cca-cf38-4586-981f-7dca89092ff5"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "e56a9fcf-c3a0-a099-6b17-c2d4baa4db94",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    },
+    "2": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "4246c432-ff16-7f72-39fe-e85e088a78fa",
+      "Index": 2,
+      "List": [
+        "0de603c5-42e2-4811-9dad-f652de080eba"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Minsc",
+        "Type": "character",
+        "MapKey": "0de603c5-42e2-4811-9dad-f652de080eba",
+        "Name": "S_Player_Minsc",
+        "ParentTemplateId": null,
+        "TemplateName": "9d5f838a-8595-490c-85d5-8a2a69414356"
+      },
+      "SpeakerGroupName": null
+    },
+    "3": {
+      "IsPeanutSpeaker": true,
+      "SpeakerMappingId": "bbfd1a18-d357-7c5a-d051-2a042e7140a5",
+      "Index": 3,
+      "List": [
+        "c7c13742-bacd-460a-8f65-f864fe41f255"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Astarion",
+        "Type": "character",
+        "MapKey": "c7c13742-bacd-460a-8f65-f864fe41f255",
+        "Name": "S_Player_Astarion",
+        "ParentTemplateId": null,
+        "TemplateName": "5614c25e-0213-479f-864c-e95895adb30f"
+      },
+      "SpeakerGroupName": null
+    }
+  },
+  "Synopsis": "This owlbear has been captured by the goblins. It is a cub and has been tormented by the goblins. In this dialog the player can reassure it, guide it to safety, or encourage it to attack the goblins. If the player has convinced his captors to release him, they can invite him to their camp. The owlbear refuses - but will show up later on his own."
+}

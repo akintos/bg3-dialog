@@ -1,0 +1,1958 @@
+{
+  "Path": "Mods/GustavDev/Story/Dialogs/Act3/Wyrm/WYR_Circus_FacePainter.lsj",
+  "UUID": "e4881a2d-65e1-96f5-285a-17ec169f3cee",
+  "Category": "Generic NPC Dialog",
+  "DefaultAddressedSpeakers": {
+    "0": -1,
+    "1": -1
+  },
+  "RootNodes": [
+    "b3c91932-3dee-f931-674b-752755ddaf2f",
+    "e6616aee-ff96-ae25-e8fe-c29a18b8dcc2",
+    "d25d7308-ee6d-4d1e-ee67-af90cd149f62",
+    "f9383202-5a86-5910-3dd3-59c76bc7ad80",
+    "446a7c3c-cf37-f17f-181a-5899663af37f"
+  ],
+  "Nodes": {
+    "05b00f37-d281-ffb2-250c-930a65f8543c": {
+      "RollSuccess": true,
+      "UUID": "05b00f37-d281-ffb2-250c-930a65f8543c",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "dbefc289-e4ca-dd86-65b4-be5a0a92d137"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N61",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;672",
+        "sourcetemplate": ""
+      }
+    },
+    "0962411a-380c-c1aa-65b9-7eb8c4823ee5": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Charisma",
+      "RollAdvantage": 1,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "5028066b-6ea0-4a6a-9e3e-53bee62559a7",
+      "DifficultyClassValue": 10,
+      "UUID": "0962411a-380c-c1aa-65b9-7eb8c4823ee5",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "39e65bfd-b11e-f2d7-e068-56c6ec91e073",
+        "ebd62013-b761-763b-7a79-1dfbf7b69eeb"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4edc630-8781-c0aa-2479-67f7fe796931",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Circus_State_UnderstoodMummy"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "02913f9a-f696-40cf-acdf-32032afab32c",
+              "value": true,
+              "paramval": 1,
+              "Name": "BARBARIAN"
+            }
+          ],
+          "Type": "Tag"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": true,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [
+              {
+                "HasChildRules": false,
+                "TagCombineOp": 0,
+                "Tags": [
+                  "ac3449f7-c09b-4bc0-8634-fcff97d49279"
+                ],
+                "TagNames": [
+                  "BERSERKER"
+                ]
+              }
+            ],
+            "RuleString": "BERSERKER"
+          },
+          "TagTexts": [
+            {
+              "LineId": "f86d5ff1-77a2-4662-8dd5-069437103201",
+              "Text": {
+                "Handle": "habb8e918g29e1g4a09ga552g860e448162b1",
+                "Value": "<b><i>ROAAAAR!</i></b>"
+              }
+            }
+          ]
+        },
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "a7b905dd-94e1-4b2c-8e0d-08a645c79ffa",
+              "Text": {
+                "Handle": "hde066526g9ef5g44dbga0e7g8404e37ea7c6",
+                "Value": "<i>Grunt back menacingly at the mummy.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N89",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "BARBARIAN",
+        "position": "655;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "1732945f-ab72-3bd8-5f01-c9849e0642f0": {
+      "SourceNode": "8c8bd53c-27a4-ea20-37ed-70da3dfb9a41",
+      "UUID": "1732945f-ab72-3bd8-5f01-c9849e0642f0",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N97",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "975;234",
+        "sourcetemplate": ""
+      }
+    },
+    "1b2bf37f-8cad-8fec-02f7-b1fa2be44993": {
+      "UUID": "1b2bf37f-8cad-8fec-02f7-b1fa2be44993",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "eb35d02c-b017-4fca-88a1-7447ca6dee2a",
+              "Text": {
+                "Handle": "h50398606gb3edg4976g9eb1g73517565e876",
+                "Value": "*You realise she is trying to tell you something - that is all.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N66",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;891",
+        "sourcetemplate": ""
+      }
+    },
+    "20ae3b64-d513-ece9-8bae-97d8641233fc": {
+      "UUID": "20ae3b64-d513-ece9-8bae-97d8641233fc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "6f8712c1-f254-556a-f032-a448f34f2f7d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f6561165-6919-4f64-a090-30f392759998",
+              "Text": {
+                "Handle": "hacc3053agf4a1g4643g9025gfb827522bbb4",
+                "Value": "Mhm, <i>mhmmmm</i> mhmmm? "
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "miming putting on face paints, same anim as greeting node",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N94",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "slow muffled mumbling of \"would you like to buy some facepaint\", as if explaining it slower for a dullard - exasperated",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "21983979-bddb-094e-5366-622d57c70703": {
+      "UUID": "21983979-bddb-094e-5366-622d57c70703",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "1732945f-ab72-3bd8-5f01-c9849e0642f0"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "9b50d0b5-3d4d-46fa-853b-b59826591e99",
+              "Text": {
+                "Handle": "hc996dc47g6537g4e23ga412g21b1007547c3",
+                "Value": "MMHMMM."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N96",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;234",
+        "sourcetemplate": ""
+      }
+    },
+    "37f6b794-f7f7-ac91-9d97-19768f1ac58e": {
+      "JumpTarget": "446a7c3c-cf37-f17f-181a-5899663af37f",
+      "JumpTargetPoint": 2,
+      "UUID": "37f6b794-f7f7-ac91-9d97-19768f1ac58e",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N81",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "335;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "39e65bfd-b11e-f2d7-e068-56c6ec91e073": {
+      "RollSuccess": true,
+      "UUID": "39e65bfd-b11e-f2d7-e068-56c6ec91e073",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "a33fa531-5940-11d8-b32f-5b85916028a9"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N90",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "41aa070e-9863-05ed-d1b7-5b1baf0c8eaa": {
+      "RollSuccess": false,
+      "UUID": "41aa070e-9863-05ed-d1b7-5b1baf0c8eaa",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "1b2bf37f-8cad-8fec-02f7-b1fa2be44993"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N62",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;891",
+        "sourcetemplate": ""
+      }
+    },
+    "446a7c3c-cf37-f17f-181a-5899663af37f": {
+      "UUID": "446a7c3c-cf37-f17f-181a-5899663af37f",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "fae0c4d2-7911-267d-eae3-953cebf56335",
+        "21983979-bddb-094e-5366-622d57c70703",
+        "45a4e779-9395-dd81-630e-2c6d7f68f6c7",
+        "8ca750ce-0341-b1a5-eb32-23f1b5d7a068",
+        "0962411a-380c-c1aa-65b9-7eb8c4823ee5",
+        "68e63463-7725-2c93-4a70-babd3ded3e52",
+        "7d3e7362-a674-10ff-aa29-61092c1866ef"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3e883427-95f5-217b-3b1f-dcf4b4de6df4",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_Circus_HasMet_FacePainter"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3e883427-95f5-217b-3b1f-dcf4b4de6df4",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Circus_HasMet_FacePainter"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "beaaae5b-1a81-4edb-8989-5f4a9b96115f",
+              "Text": {
+                "Handle": "hec9dffddga099g446bgba17g03cb4e4b6be7",
+                "Value": "Mmhm. Mmmhm?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "She gestures to her face, miming putting on face paint.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N1",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Mumbling heavily through bandages, clearly trying to explain something. (she's trying to say 'would you like to buy some face paints')",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Greeting",
+        "position": "15;15",
+        "sourcetemplate": ""
+      }
+    },
+    "45a4e779-9395-dd81-630e-2c6d7f68f6c7": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "SkillCheck",
+      "DifficultyClassID": "5028066b-6ea0-4a6a-9e3e-53bee62559a7",
+      "DifficultyClassValue": 10,
+      "UUID": "45a4e779-9395-dd81-630e-2c6d7f68f6c7",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "05b00f37-d281-ffb2-250c-930a65f8543c",
+        "41aa070e-9863-05ed-d1b7-5b1baf0c8eaa"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4edc630-8781-c0aa-2479-67f7fe796931",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Circus_State_UnderstoodMummy"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "0b51cd4c-ee6c-a305-f559-4011df1549c2",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_Circus_FacePainter_State_TriedUnderstand"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "0b51cd4c-ee6c-a305-f559-4011df1549c2",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Circus_FacePainter_State_TriedUnderstand"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1ac4709d-e294-43e9-87d4-677fb432f8ec",
+              "Text": {
+                "Handle": "hbe26e2dfgea33g4adfg9238g862476c69ad3",
+                "Value": "<i>Try to to interpret her hand movements.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N60",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Skill_Insight",
+        "position": "655;672",
+        "sourcetemplate": ""
+      }
+    },
+    "4995f2c6-e6da-9273-a33f-fd86626b2b0b": {
+      "RollSuccess": false,
+      "UUID": "4995f2c6-e6da-9273-a33f-fd86626b2b0b",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "8c8bd53c-27a4-ea20-37ed-70da3dfb9a41"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N69",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "68e63463-7725-2c93-4a70-babd3ded3e52": {
+      "UUID": "68e63463-7725-2c93-4a70-babd3ded3e52",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "c247521e-a11e-0f67-aef4-e23f66601fce"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4edc630-8781-c0aa-2479-67f7fe796931",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_State_UnderstoodMummy"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "81134029-7a91-40cd-943f-1688325bda0a",
+              "Text": {
+                "Handle": "h9c8d5ce1ga295g45dcgb50cg4d06c5a2ea2a",
+                "Value": "I'd like to see your face-paints."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N72",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "6f8712c1-f254-556a-f032-a448f34f2f7d": {
+      "SourceNode": "dbefc289-e4ca-dd86-65b4-be5a0a92d137",
+      "UUID": "6f8712c1-f254-556a-f032-a448f34f2f7d",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4edc630-8781-c0aa-2479-67f7fe796931",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_State_UnderstoodMummy"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N95",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "1935;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "724e7c51-5e36-b047-5745-b161dee29dab": {
+      "SourceNode": "8c8bd53c-27a4-ea20-37ed-70da3dfb9a41",
+      "UUID": "724e7c51-5e36-b047-5745-b161dee29dab",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N93",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Answer)",
+        "position": "1295;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "7d3e7362-a674-10ff-aa29-61092c1866ef": {
+      "UUID": "7d3e7362-a674-10ff-aa29-61092c1866ef",
+      "Constructor": "TagQuestion",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "db38bfe3-b911-4793-ad6e-d2ef75b25c73",
+              "Text": {
+                "Handle": "ha8e4ffa0g20ffg48ecga880g8696015eb49a",
+                "Value": "<i>Leave.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N36",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;2205",
+        "sourcetemplate": ""
+      }
+    },
+    "8c8bd53c-27a4-ea20-37ed-70da3dfb9a41": {
+      "UUID": "8c8bd53c-27a4-ea20-37ed-70da3dfb9a41",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "8c852b22-ad12-432b-a25c-6e8e76be809d",
+              "Text": {
+                "Handle": "hc8da621bg234cg4c6ag8af2g9f9ed86347ab",
+                "Value": "Mmmmmhm."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Puts hands to head and then drops them low in furstration",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N71",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Context: frustrated that player can't understand her",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1329",
+        "sourcetemplate": ""
+      }
+    },
+    "8ca750ce-0341-b1a5-eb32-23f1b5d7a068": {
+      "RollAdvantageReason": null,
+      "RollAbility": "Wisdom",
+      "RollAdvantage": 0,
+      "RollType": "RawAbility",
+      "DifficultyClassID": "00000000-0000-0000-0000-000000000000",
+      "DifficultyClassValue": 0,
+      "UUID": "8ca750ce-0341-b1a5-eb32-23f1b5d7a068",
+      "Constructor": "ActiveRoll",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e949d551-6793-5407-7367-f25f662d7845",
+        "4995f2c6-e6da-9273-a33f-fd86626b2b0b"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4edc630-8781-c0aa-2479-67f7fe796931",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Circus_State_UnderstoodMummy"
+            }
+          ],
+          "Type": "Global"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "45321cec-65cf-008e-82e4-91a4005042eb",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_Circus_FacePainter_State_TriedReadThoughts"
+            }
+          ],
+          "Type": "Object"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "44f9fbf3-735d-8eaf-94dc-6c1d1cf5382d",
+              "value": true,
+              "paramval": null,
+              "Name": "GEN_CanDetectThoughts_2"
+            }
+          ],
+          "Type": "Script"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "45321cec-65cf-008e-82e4-91a4005042eb",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Circus_FacePainter_State_TriedReadThoughts"
+            }
+          ],
+          "Type": "Object"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "1ae95ffb-85e7-4d15-88b5-3ed5dbd514f4",
+              "Text": {
+                "Handle": "h057cafcag8f3dg4e81g8ed4gec438ec43eb8",
+                "Value": "<i>Read her thoughts, trying to glean her intentions.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N67",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Spell_DetectThoughts",
+        "position": "655;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "a33fa531-5940-11d8-b32f-5b85916028a9": {
+      "UUID": "a33fa531-5940-11d8-b32f-5b85916028a9",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "20ae3b64-d513-ece9-8bae-97d8641233fc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "823be060-14b9-4e7e-b477-51047e0cb9ef",
+              "Text": {
+                "Handle": "h6b27fa54gc0d1g4f54gb5d8g3b6fc9c620e9",
+                "Value": "MHM, MHM, MHMMMMM!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "she throws her hands up and shakes them in a \"no\" gesture",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N92",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "heavy muffled mumbling of \"no, no, noooo!!!\" - fearful of an angry barbarian",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;1548",
+        "sourcetemplate": ""
+      }
+    },
+    "b3c91932-3dee-f931-674b-752755ddaf2f": {
+      "UUID": "b3c91932-3dee-f931-674b-752755ddaf2f",
+      "Constructor": "TagGreeting",
+      "EndNode": true,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "59c1f674-0985-4d4d-9679-b8a1e4982f45",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_Clown_State_Hostile"
+            },
+            {
+              "UUID": "ee4b2f6e-9d52-4bc5-bde6-bc0e1c015de4",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Circus_State_PostCombat"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "0f57401b-1fea-4eca-b099-008659b227a6",
+              "Text": {
+                "Handle": "hf21ed0eag51c3g4fc6ga57fg2de35bfe77d4",
+                "Value": "MHMH! MHMHMMH!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Throws hands in hair, clearly panicked",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N10",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "mumbling something thorugh bandages (intonation should be 'Oh god, oh god, there's an attack!')",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Combat Ongoing",
+        "position": "15;-1080",
+        "sourcetemplate": ""
+      }
+    },
+    "bd7e4343-2d27-a552-44b6-3f3b91507ebc": {
+      "UUID": "bd7e4343-2d27-a552-44b6-3f3b91507ebc",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4edc630-8781-c0aa-2479-67f7fe796931",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_State_UnderstoodMummy"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d81af57f-8dfe-40eb-8885-80d9be833411",
+              "Text": {
+                "Handle": "hb1b1fa47gdefag475cgac0ag51d87dec393b",
+                "Value": "Does this arsehole not understand Common?! DO. YOU. WANT. TO. BUY. FACE-PAINTS?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N70",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "player has read zara's mind. Zara is furious and is ROARING.",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "read zara's mind",
+        "position": "1295;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "c247521e-a11e-0f67-aef4-e23f66601fce": {
+      "UUID": "c247521e-a11e-0f67-aef4-e23f66601fce",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "d7dc2ccf-93bc-b481-6266-dad76f8aebf1"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "b3c8ea7a-d798-4906-899f-4b9ce2ac7cfb",
+              "Text": {
+                "Handle": "h3f151b2dgcc66g49feg9a01gdd14f85d0a35",
+                "Value": "Mmhm!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Throws her hands up in delight because the player understood her",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N73",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Context: Thankful that player understood her",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "cb678f90-77f6-18f5-84cc-05cf18ae81d7": {
+      "JumpTarget": "446a7c3c-cf37-f17f-181a-5899663af37f",
+      "JumpTargetPoint": 2,
+      "UUID": "cb678f90-77f6-18f5-84cc-05cf18ae81d7",
+      "Constructor": "Jump",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N88",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Jump",
+        "position": "655;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "d25d7308-ee6d-4d1e-ee67-af90cd149f62": {
+      "UUID": "d25d7308-ee6d-4d1e-ee67-af90cd149f62",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f29d8da4-c75c-47ac-f7a9-ddfd19376b3f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "07291d9e-0aa1-acb2-f4f3-fc346b1f096f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Circus_HasMet_FacePainter_PostCombat"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "59c1f674-0985-4d4d-9679-b8a1e4982f45",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_Clown_State_Hostile"
+            },
+            {
+              "UUID": "ee4b2f6e-9d52-4bc5-bde6-bc0e1c015de4",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_State_PostCombat"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "7224faff-25f2-42d2-8c9b-8ab5f7cdebcf",
+              "Text": {
+                "Handle": "h66f4ad59g2de3g4b3bga38dg9e512631c779",
+                "Value": "Mhm. Mhm!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N14",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Mumbling heavily through bandages (intonation should be 'what the hell is going on?!')",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Post combat HasMet",
+        "position": "15;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "d7dc2ccf-93bc-b481-6266-dad76f8aebf1": {
+      "UUID": "d7dc2ccf-93bc-b481-6266-dad76f8aebf1",
+      "Constructor": "Trade",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "e0279640-9e24-9a04-0715-d8148241d13d"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N75",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Trade",
+        "position": "1295;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "dbefc289-e4ca-dd86-65b4-be5a0a92d137": {
+      "UUID": "dbefc289-e4ca-dd86-65b4-be5a0a92d137",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": -666,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4edc630-8781-c0aa-2479-67f7fe796931",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_State_UnderstoodMummy"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "09e842b6-462a-492c-be2a-b5a70e6ec184",
+              "Text": {
+                "Handle": "h037337d1g00c3g4357g88a0g8fad747cc768",
+                "Value": "*You realise she is miming putting on face-paints - she has them to sell.*"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N65",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1295;672",
+        "sourcetemplate": ""
+      }
+    },
+    "e0279640-9e24-9a04-0715-d8148241d13d": {
+      "UUID": "e0279640-9e24-9a04-0715-d8148241d13d",
+      "Constructor": "TagAnswer",
+      "EndNode": true,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "f223f533-bd40-4b29-a6e0-d703e3a527f1",
+              "Text": {
+                "Handle": "hc47a6ef5g6ae7g4cd8ga3deg0c4b274f9fc1",
+                "Value": "Mmhm. MHM."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Bowing low in thanks",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N76",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Context:thanking the player",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "1615;1986",
+        "sourcetemplate": ""
+      }
+    },
+    "e6616aee-ff96-ae25-e8fe-c29a18b8dcc2": {
+      "UUID": "e6616aee-ff96-ae25-e8fe-c29a18b8dcc2",
+      "Constructor": "TagGreeting",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "f29d8da4-c75c-47ac-f7a9-ddfd19376b3f"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "07291d9e-0aa1-acb2-f4f3-fc346b1f096f",
+              "value": false,
+              "paramval": 1,
+              "Name": "WYR_Circus_HasMet_FacePainter_PostCombat"
+            }
+          ],
+          "Type": "Dialog"
+        },
+        {
+          "Flags": [
+            {
+              "UUID": "59c1f674-0985-4d4d-9679-b8a1e4982f45",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_Clown_State_Hostile"
+            },
+            {
+              "UUID": "ee4b2f6e-9d52-4bc5-bde6-bc0e1c015de4",
+              "value": true,
+              "paramval": null,
+              "Name": "WYR_Circus_State_PostCombat"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "07291d9e-0aa1-acb2-f4f3-fc346b1f096f",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Circus_HasMet_FacePainter_PostCombat"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "538972d5-c49c-49d9-a94d-18e45eddd26e",
+              "Text": {
+                "Handle": "h6a19ef15g6367g4213gb6ffg18f1a924f438",
+                "Value": "Mhhhhhm. <i>Mhmm.</i>"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N87",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Mumbling heavily through bandages (intonation should be 'this circus has gone to the dogs')",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Post combat",
+        "position": "15;-861",
+        "sourcetemplate": ""
+      }
+    },
+    "e949d551-6793-5407-7367-f25f662d7845": {
+      "RollSuccess": true,
+      "UUID": "e949d551-6793-5407-7367-f25f662d7845",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "bd7e4343-2d27-a552-44b6-3f3b91507ebc"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N68",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1110",
+        "sourcetemplate": ""
+      }
+    },
+    "ebd62013-b761-763b-7a79-1dfbf7b69eeb": {
+      "RollSuccess": false,
+      "UUID": "ebd62013-b761-763b-7a79-1dfbf7b69eeb",
+      "Constructor": "RollResult",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": 0,
+      "Children": [
+        "724e7c51-5e36-b047-5745-b161dee29dab"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N91",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Roll Result",
+        "position": "975;1767",
+        "sourcetemplate": ""
+      }
+    },
+    "f29d8da4-c75c-47ac-f7a9-ddfd19376b3f": {
+      "UUID": "f29d8da4-c75c-47ac-f7a9-ddfd19376b3f",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "cb678f90-77f6-18f5-84cc-05cf18ae81d7"
+      ],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "fad9b377-bebf-4c41-9258-5b55d76808dd",
+              "Text": {
+                "Handle": "h998b9a1bgd742g48faga21dgcb80f81894e7",
+                "Value": "Mmm. Mhm! Mhhm?"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Sighs, defeated, then gestures to her face, miming putting on makeup.",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N83",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Mumbling heavily through bandages (intonation should be '*sigh*, i have to get back to work. Would you like to buy facepaints?')",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "335;-642",
+        "sourcetemplate": ""
+      }
+    },
+    "f9383202-5a86-5910-3dd3-59c76bc7ad80": {
+      "SourceNode": "446a7c3c-cf37-f17f-181a-5899663af37f",
+      "UUID": "f9383202-5a86-5910-3dd3-59c76bc7ad80",
+      "Constructor": "Alias",
+      "EndNode": false,
+      "Root": true,
+      "ShowOnce": false,
+      "SpeakerNo": -1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "37f6b794-f7f7-ac91-9d97-19768f1ac58e"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "3e883427-95f5-217b-3b1f-dcf4b4de6df4",
+              "value": true,
+              "paramval": 1,
+              "Name": "WYR_Circus_HasMet_FacePainter"
+            }
+          ],
+          "Type": "Dialog"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [],
+      "EditorData": {
+        "ID": "N80",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "collapsed": "False",
+        "logicalname": "Alias (Greeting)",
+        "position": "15;-204",
+        "sourcetemplate": ""
+      }
+    },
+    "faa3fa7c-2718-85f3-3cc1-25d99d93e235": {
+      "UUID": "faa3fa7c-2718-85f3-3cc1-25d99d93e235",
+      "Constructor": "TagAnswer",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": false,
+      "SpeakerNo": 0,
+      "AddressedSpeaker": -1,
+      "Children": [],
+      "CheckFlags": [],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "d24b4049-2ca0-4cca-8e14-8803468f54e8",
+              "Text": {
+                "Handle": "h2bf216f4gcfb7g4239gbe1egf84060541645",
+                "Value": "MHMMMM. MHM!"
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "Throws hands up in defeat and frustration",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "True",
+        "ID": "N63",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "Context: feeling defeated and frustrated that the player can't understand her",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Answer",
+        "position": "975;15",
+        "sourcetemplate": ""
+      }
+    },
+    "fae0c4d2-7911-267d-eae3-953cebf56335": {
+      "UUID": "fae0c4d2-7911-267d-eae3-953cebf56335",
+      "Constructor": "TagQuestion",
+      "EndNode": false,
+      "Root": false,
+      "ShowOnce": true,
+      "SpeakerNo": 1,
+      "AddressedSpeaker": -1,
+      "Children": [
+        "faa3fa7c-2718-85f3-3cc1-25d99d93e235"
+      ],
+      "CheckFlags": [
+        {
+          "Flags": [
+            {
+              "UUID": "f4edc630-8781-c0aa-2479-67f7fe796931",
+              "value": false,
+              "paramval": null,
+              "Name": "WYR_Circus_State_UnderstoodMummy"
+            }
+          ],
+          "Type": "Global"
+        }
+      ],
+      "SetFlags": [],
+      "TaggedTextList": [
+        {
+          "HasTagRule": false,
+          "RuleGroup": {
+            "TagCombineOp": 0,
+            "Rules": [],
+            "RuleString": ""
+          },
+          "TagTexts": [
+            {
+              "LineId": "effa0ecf-20ac-4890-927a-fcd7f5c38f0c",
+              "Text": {
+                "Handle": "hc1ee65c2gde38g4de5g9c1cga19709f39030",
+                "Value": "I don't understand what you're trying to say."
+              }
+            }
+          ]
+        }
+      ],
+      "EditorData": {
+        "AnimationTags": "",
+        "Attitude": "Default",
+        "CinematicNodeContext": "",
+        "CinematicObjects": "",
+        "CustomCineArtKeysPresent": "False",
+        "CustomLightingPresent": "False",
+        "CustomSoundPresent": "False",
+        "CustomVFXPresent": "False",
+        "Emotion": "Default",
+        "ForceDisableIsCustomNode": "False",
+        "ID": "N59",
+        "InternalNodeContext": "",
+        "IsCustomNode": "False",
+        "MusicTags": "",
+        "NodeContext": "",
+        "Quality": "Bronze",
+        "SFXTags": "",
+        "StateChangeTags": "",
+        "TemplateNodeUUID": "00000000-0000-0000-0000-000000000000",
+        "TemplateVersion": "0",
+        "VFXTags": "",
+        "collapsed": "False",
+        "logicalname": "Question",
+        "position": "655;15",
+        "sourcetemplate": ""
+      }
+    }
+  },
+  "SpeakerDict": {
+    "0": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "60c88496-d036-4f75-b295-f378841587fb",
+      "Index": 0,
+      "List": [
+        "1138b56d-1cd2-4c7b-9147-ea77709a85bd"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Zara the Mummy",
+        "Type": "character",
+        "MapKey": "1138b56d-1cd2-4c7b-9147-ea77709a85bd",
+        "Name": "S_WYR_Circus_FacePainter",
+        "ParentTemplateId": null,
+        "TemplateName": "ca08113f-5ed5-42b3-9a50-adf2c1fe6bac"
+      },
+      "SpeakerGroupName": null
+    },
+    "1": {
+      "IsPeanutSpeaker": false,
+      "SpeakerMappingId": "cb66754a-0a69-499c-88ad-7c9555adc6dc",
+      "Index": 1,
+      "List": [
+        "e0d1ff71-04a8-4340-ae64-9684d846eb83"
+      ],
+      "SpeakerCharacter": {
+        "DisplayName": "Player",
+        "Type": "character",
+        "MapKey": "e2badbf0-159a-4ef5-9e73-7bbeb3d1015a",
+        "Name": "S_GLO_CharacterCreationDummy_001",
+        "ParentTemplateId": null,
+        "TemplateName": "fd7f2707-8f86-4836-bda8-e0db99c389cc"
+      },
+      "SpeakerGroupName": "GROUP_Players"
+    }
+  },
+  "Synopsis": "Dialogue for Zara the Mummy. She is heavily wrapped in bandages."
+}
